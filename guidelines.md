@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1273505a2b00913a89606b856d2e7c3811a3bd72
+source-git-commit: 926ecdff624327b0937ec643ce9d8fab957699ef
 translation-type: tm+mt
 
 ---
@@ -17,7 +17,7 @@ För att kontinuerligt förbättra AEM-dokumentationen är hela användargruppen
 
 ## Dokumentationsstandarder
 
-Även om vi välkomnar bidrag till vår dokumentation måste alla bidrag till AEM-dokumentationen, antingen i form av en begäran om att få lämna in en ansökan eller i form av ett problem, överensstämma med våra standarder för bidrag och dokumentation.
+Även om vi välkomnar bidrag till vår dokumentation bör alla bidrag till AEM-dokumentationen, antingen i form av en begäran om att få lämna in en ansökan eller ett problem, överensstämma med våra standarder för bidrag och dokumentation.
 
 Bidrag som inte uppfyller dessa standarder kan avvisas.
 
@@ -25,13 +25,15 @@ Bidrag som inte uppfyller dessa standarder kan avvisas.
 
 AEM-dokumentationen täcker standardanvändningsfall. Användningsfall som inte omfattas av standardinstallation och -användning ingår inte i AEM-dokumentationen.
 
-### Vi dokumenterar inte buggar eller deras tillfälliga lösningar.
+### Vi dokumenterar vanligtvis inte buggar eller deras tillfälliga lösningar.
 
-Eftersom AEM-dokumentationen omfattar standardanvändningsfall, buggar, dokumenteras inte de effekter som orsakas av buggar och tillfälliga lösningar för buggar.
+AEM-dokumentationen täcker standardanvändningsfall. Av den anledningen är buggar, effekter orsakade av buggar och tillfälliga lösningar för buggar i allmänhet inte dokumenterade.
+
+Undantag från den här regeln gäller versionsinformationen där kända problem kan listas med möjliga lösningar som har godkänts av AEM Product Management.
 
 ### Dokumentationsbidragen är inte till för att besvara tekniska frågor.
 
-Alla idéer du kan behöva för att förbättra AEM-dokumentationen är välkomna som bidrag. Kommentarer, frågor och förfrågningar är dock endast avsedda för *bidrag* . De är inte avsedda att användas för att besvara dina frågor om hur du använder AEM eller löser tekniska problem.
+Alla idéer du kan behöva för att förbättra AEM-dokumentationen är välkomna som bidrag. Kommentarer, frågor och förfrågningar är dock endast avsedda för *bidrag* . De är inte avsedda att användas för att besvara dina frågor om hur du använder AEM, implementerar ditt AEM-projekt eller löser tekniska problem.
 
 Frågor om hur du använder AEM eller tekniska fel som du kan ha gjort ska rapporteras via den normala supportprocessen via [Experience Manager Support Portal](https://daycare.day.com/home.html) eller diskuteras i [Experience Manager-communityn](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html).
 
@@ -41,13 +43,13 @@ Frågor om hur du använder AEM eller tekniska fel som du kan ha gjort ska rappo
 
 Om du skapar ett ärende för att föreslå förbättringar av dokumentationen måste du inkludera länkar till de berörda sidorna. Om du skapar ett ärende genom att använda länken **Redigera den här sidan** på en dokumentationssida skapas ärendet automatiskt med en länk till sidan.
 
-Detta gäller inte pull-begäranden eftersom pull-begäranden innehåller de berörda sidorna per definition.
+Detta gäller inte för pull-begäranden eftersom pull-begäranden till sin natur refererar till den eller de berörda sidorna.
 
 ## Riktlinjer för dokumentation
 
 Vi ber att eventuella bidrag till vår dokumentation följer vissa riktlinjer för format.
 
-Genom att följa dessa riktlinjer blir det enklare att granska ditt bidrag och det går därför snabbare att integrera det i vår dokumentation. Bristande efterlevnad eller ofullständig efterlevnad av dessa riktlinjer innebär dock inte att bidraget kommer att refuseras.
+Genom att följa dessa riktlinjer blir det enklare att granska ditt bidrag och det går därför snabbare att integrera det i vår dokumentation.
 
 ### Språk och format
 
