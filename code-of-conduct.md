@@ -1,5 +1,5 @@
 ---
-source-git-commit: 926ecdff624327b0937ec643ce9d8fab957699ef
+source-git-commit: aa978d6ddf04912e3fc108f86450fac6a90d2caf
 translation-type: tm+mt
 
 ---
@@ -45,4 +45,4 @@ Projektledare som inte följer eller tillämpar uppförandekoden i god tro kan d
 
 ## Attribut
 
-Denna uppförandekod har anpassats från [Contributor-konventionen](https://contributor-covenant.org), version 1.4, som finns på [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+Denna uppförandekod har anpassats från [Contributor-konventionen](https://contributor-covenant.org), version 1.4, som finns på [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
