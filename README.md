@@ -1,9 +1,9 @@
 ---
-source-git-commit: 69124c62893f1e74714d04a5edaaa9fe80033c8d
+source-git-commit: aa978d6ddf04912e3fc108f86450fac6a90d2caf
 translation-type: tm+mt
 
 ---
-# AEM Core Components Documentation
+# Adobe Experience Manager Core Components Documentation
 
 ## Dokumentation om viktiga komponenter
 
@@ -15,6 +15,6 @@ Dina bidrag till dokumentationen är välkomna. Se följande resurser:
 * [guidelines.md](guidelines.md) För en översikt över vad som förväntas i bidragen och hur du komponerar dina dokumentationsbidrag.
 * [code-of-behavior.md](code-of-conduct.md) En översikt över de beteendestandarder vi förväntar oss när du bidrar till detta dokumentationsprojekt.
 
-## AEM Core-komponenter
+## Core Components Repository
 
-Kärnkomponenterna [i](https://github.com/adobe/aem-core-wcm-components) Adobe Experience Manager bevaras som separata arkiv. Kolla in det projektet om du behöver teknisk/utvecklardokumentation om komponenterna, vill bidra till själva komponenterna eller behöver lämna in ett problem med funktionaliteten eller funktionerna i kärnkomponenterna.
+Kärnkomponenterna [i](https://github.com/adobe/aem-core-wcm-components) Adobe Experience Manager underhålls som ett projekt i en separat databas. Kolla in det projektet om du behöver teknisk/utvecklardokumentation om komponenterna, vill bidra till själva komponenterna eller behöver lämna in ett problem med funktionaliteten eller funktionerna i kärnkomponenterna.
