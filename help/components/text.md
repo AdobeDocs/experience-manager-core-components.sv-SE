@@ -2,7 +2,7 @@
 title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: 4df8e147fc9d0151c3a211473b067c78b807e52e
 
 ---
 
@@ -171,6 +171,10 @@ Om du vill göra en exakt matchning utifrån skiftläget, markerar du alternativ
 Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Klicka på knappen **Sök** igen i den nedtonade dialogrutan om du vill söka efter nästa förekomst eller markera knappen **Ersätt** om du vill ersätta den markerade, matchade texten. Observera att knappen **Ersätt** bara är aktiv när en matchning har gjorts.
 
 Markera **Ersätt alla** om du vill ersätta alla förekomster av texten samtidigt.
+
+När du använder funktionen Ersätt bör du ange den ersättningssträng som ska ersättas samtidigt som söksträngen. Du kan dock fortfarande klicka på Sök för att söka efter strängen innan du ersätter den. Om ersättningssträngen anges efter att du klickat på Sök återställs sökningen till början av texten.
+
+Dialogrutan Sök och ersätt blir genomskinlig när du klickar på Sök och blir ogenomskinlig när du klickar på Ersätt. Detta gör att författaren kan granska texten som författaren ska ersätta.
 
 ### Vänsterjustera text
 
