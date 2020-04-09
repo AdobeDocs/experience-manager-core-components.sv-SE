@@ -1,8 +1,8 @@
 ---
-sub-product: AEM Core Components
-user-guide-title: AEM Core Components
+sub-product: AEM Core-komponenter
+user-guide-title: AEM Core-komponenter
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 2faa092a075ab0512e9bd5654884534936c0ad53
 
 ---
 
@@ -10,6 +10,7 @@ source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
 # Hjälp om AEM Core-komponenter {#using}
 
 + [Introduktion till kärnkomponenter](introduction.md)
++ [Sökvägar till lyckade](developing/success.md)
 + [Komponentbibliotek](https://adobe.com/go/aem_cmp_library)
 + [Huvudkomponentversioner](versions.md)
 + Kom igång {#get-started}
@@ -60,11 +61,13 @@ source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
          + [Formulärtext (v1)](components/v1/form-text-v1.md)
 + Utveckling {#developing}
    + [Utveckla kärnkomponenter](developing/overview.md)
+   + [Sökvägar till lyckade](developing/success.md)
    + [WKND Developer Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](developing/customizing.md)
    + [Riktlinjer för komponenter](developing/guidelines.md)
    + AEM Project Archetype {#archetype}
       + [Arketype - översikt](developing/archetype/overview.md)
+      + [Använda Arketype](developing/archetype/using.md)
       + [Kärnmodul](developing/archetype/core.md)
       + [ui.apps-modul](developing/archetype/uiapps.md)
       + [ui.content-modul](developing/archetype/uicontent.md)
