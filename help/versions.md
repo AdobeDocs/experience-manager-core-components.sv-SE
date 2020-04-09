@@ -2,7 +2,7 @@
 title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vilka versioner som är tillgängliga och hur man förstår kompatibiliteten med Core Components och AEM.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 6c0dcfbe4af6aeb3bfa69bdbb43edaab273207be
 
 ---
 
@@ -11,45 +11,13 @@ source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
 
 Den aktuella versionen av kärnkomponenterna är 2.8.0 och är kompatibel med [AEM som molntjänst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html) -installationer. Den släpptes i december 2019 som en viktig uppdatering till version 2.0.0. I version 2.0.0 introducerades nya komponenter tillsammans med v2-uppdateringar av befintliga komponenter.
 
-Mer information finns i avsnittet [Versionshistorik och kompatibilitet](#versions-and-releases) för det här dokumentet.
-
-Du kan även ta en titt på [komponentbiblioteket](https://adobe.com/go/aem_cmp_library), som visar den aktuella versionen av kärnkomponenterna och ger exempel på hur de används.
-
-## Versioner och releaser {#versions-and-releases}
-
-Kärnkomponenter distribueras via GitHub. På så sätt kan Adobe snabbare lägga till funktioner i komponenterna och även ge möjlighet till communityfeedback utanför AEM-releasecykeln.
-
-De viktigaste komponenterna är tillgängliga med definierade AEM-versioner som de är kompatibla med. Det innebär att en AEM-version kan ha stöd för flera versioner eller versioner av de centrala komponenterna. Detta ger större flexibilitet än tidigare Foundation Components, som var knutna till en viss version av AEM.
-
-### Versioner {#versions}
-
-Huvudupprepningen av kärnkomponenterna är **versionerna**. Varje komponent har en version. Versioner markeras med **v** med ett positivt heltal som inte är noll, till exempel v1 och v2. Versionerna ökas endast för ändringar som inte är bakåtkompatibla, vilket vanligtvis är fallet när nya funktioner införs.
-
-Utvecklare och administratörer kan känna igen versioner av kärnkomponenterna med ett antal i sina resurstypssökvägar och i de fullständiga Java-klassnamnen för sina implementeringar. Det här versionsnumret representerar en huvudversion enligt riktlinjerna för [semantisk versionshantering](https://semver.org/).
-
-Mer information om grundkomponentversionerna finns i [utvecklardokumentationen för kärnkomponenterna](developing/guidelines.md).
-
-### Utgåvor {#releases}
-
-Kärnkomponenterna görs tillgängliga via **releaser** och [representerar de faktiska publicerade artefakterna som finns på GitHub](https://github.com/adobe/aem-core-wcm-components/releases). Releaser anges med ett decimaltal i formatet X.Y.Z och samlar ihop alla kärnkomponenter som ett slutproduktspaket.
-
-* **Större releaser** kan innehålla nya versioner av befintliga komponenter tillsammans med helt nya komponenter samt standardfelkorrigeringar. Detta representeras av en ökning i X-komponenten i versionsnumret.
-* **Viktiga versioner** kan innehålla nya funktioner för befintliga versioner av komponenter tillsammans med felkorrigeringar. Detta representeras av en ökning i Y-komponenten i versionsnumret.
-* **Mindre versioner** innehåller bara felkorrigeringar. Detta representeras av en ökning i Z-komponenten i versionsnumret.
-
->[!NOTE]
->
->Releaser kan innehålla flera versioner av samma komponent.
->
->Samma version av en komponent kan visas i flera versioner.
-
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
 Core Components släpptes först med AEM 6.3 och är utformade för att vara flexibla och kompatibla med alla AEM-versioner som stöds. På grund av detta kan en version av komponenterna innehålla flera versioner av samma komponent.
 
 I följande tabeller visas kompatibiliteten för de versioner av kärnkomponenterna som ingår i releaserna.
 
-### Versionshistorik och AEM-versioner som stöds {#release-history-supported-aem-versions}
+### Versionshistorik och krav {#release-history-requirements}
 
 Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig versionsinformation](https://github.com/adobe/aem-core-wcm-components/releases), ger en översikt över de olika versionerna av Core Components och deras kompatibilitet med AEM- och Java-versioner.
 
@@ -112,14 +80,51 @@ Tabellen nedan visar vilka versioner av vilka komponenter som ingår i vilka ver
 | **[Experience Fragment](components/experience-fragment.md)** |  |  |  |  |  |  |  |  | v1 | v1 |
 | **[Bädda in](components/embed.md)** |  |  |  |  |  |  |  |  |  | v1 |
 
-## Dokumentation {#documentation}
+## Versioner och releaser {#versions-and-releases}
 
-[När du skriver med kärnkomponenter](get-started/authoring.md) beskrivs användningen av kärnkomponenterna och de funktioner som är tillgängliga för innehållsförfattare och mallskapare. Varje komponent dokumenteras i detalj.
+Kärnkomponenter distribueras via GitHub. På så sätt kan Adobe snabbare lägga till funktioner i komponenterna och även ge möjlighet till communityfeedback utanför AEM-releasecykeln.
 
-[Komponentbiblioteket](https://adobe.com/go/aem_cmp_library) är ett exempel på den aktuella versionen av de flesta kärnkomponenter, som visar hur de kan användas.
+De viktigaste komponenterna är tillgängliga med definierade AEM-versioner som de är kompatibla med. Det innebär att en AEM-version kan ha stöd för flera versioner eller versioner av de centrala komponenterna. Detta ger större flexibilitet än tidigare Foundation Components, som var knutna till en viss version av AEM.
 
-[Utveckla kärnkomponenter](developing/overview.md) beskriver de tekniska funktionerna i kärnkomponenterna, hur du använder dem i dina projekt, hur du anpassar och de bästa metoderna.
+### Versioner {#versions}
 
-[Core Components Introduction](introduction.md) ger en översikt över Core Components-kompatibilitet för olika versioner, användningsfall och support.
+Huvudupprepningen av kärnkomponenterna är **versionerna**. Varje komponent har en version. Versioner markeras med **v** med ett positivt heltal som inte är noll, till exempel v1 och v2. Versionerna ökas endast för ändringar som inte är bakåtkompatibla, vilket vanligtvis är fallet när nya funktioner införs.
 
-[WKND-självstudiekursen](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) är en bra steg-för-steg-introduktion till utveckling för AEM, inklusive användning av kärnkomponenterna.
+Utvecklare och administratörer kan känna igen versioner av kärnkomponenterna med ett antal i sina resurstypssökvägar och i de fullständiga Java-klassnamnen för sina implementeringar. Det här versionsnumret representerar en huvudversion enligt riktlinjerna för [semantisk versionshantering](https://semver.org/).
+
+Mer information om grundkomponentversionerna finns i [utvecklardokumentationen för kärnkomponenterna](developing/guidelines.md).
+
+### Utgåvor {#releases}
+
+Kärnkomponenterna görs tillgängliga via **releaser** och [representerar de faktiska publicerade artefakterna som finns på GitHub](https://github.com/adobe/aem-core-wcm-components/releases). Releaser anges med ett decimaltal i formatet X.Y.Z och samlar ihop alla kärnkomponenter som ett slutproduktspaket.
+
+* **Större releaser** kan innehålla nya versioner av befintliga komponenter tillsammans med helt nya komponenter samt standardfelkorrigeringar. Detta representeras av en ökning i X-komponenten i versionsnumret.
+* **Viktiga versioner** kan innehålla nya funktioner för befintliga versioner av komponenter tillsammans med felkorrigeringar. Detta representeras av en ökning i Y-komponenten i versionsnumret.
+* **Mindre versioner** innehåller bara felkorrigeringar. Detta representeras av en ökning i Z-komponenten i versionsnumret.
+
+>[!NOTE]
+>
+>Releaser kan innehålla flera versioner av samma komponent.
+>
+>Samma version av en komponent kan visas i flera versioner.
+
+## Stöd för kärnkomponenter {#core-components-support}
+
+Core Components är en integrerad del av AEM och stöds i befintligt skick, på samma villkor som om de levererades som en del av QuickStart.
+
+I likhet med andra produktfunktioner är den allmänna regeln om produktlivslängd:
+
+* Komponenterna meddelas först att bli borttagna innan de tas bort
+* Som tidigast tas de bort från AEM-versionen efter meddelandet.
+
+Detta ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan supporten upphör.
+
+Versionen för varje komponent anger tydligt vilka AEM-versioner som stöds. När supporten upphör för en version av AEM gör även stödet för Core Components för den versionen av AEM det.
+
+Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kärnkomponenter](developing/customizing.md) i den relevanta Core Components-versionen.
+
+## Stöd för Foundation Component {#foundation-component-support}
+
+Eftersom Foundation Components har legat till grund för så mycket projektutveckling över många versioner kommer de att fortsätta att stödjas inom överskådlig framtid.
+
+Men Adobes utvecklingstänkande har flyttats till kärnkomponenterna och nya funktioner kommer att läggas till i dem, medan [nästan alla grundkomponenterna har ersatts med AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/default-components-foundation.html) och endast felkorrigeringar kommer att göras för grundkomponenterna i framtiden.
