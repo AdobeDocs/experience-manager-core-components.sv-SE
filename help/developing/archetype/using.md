@@ -2,7 +2,7 @@
 title: Använda AEM Project Archetype
 description: Detaljerade användningsinstruktioner för AEM-projektarkitypen
 translation-type: tm+mt
-source-git-commit: 477a1774a856725f52b9db7a978c534de4700661
+source-git-commit: 0d8089c53d2ef95e88379e6f381738cd137e6b33
 
 ---
 
@@ -166,9 +166,9 @@ Dessa egenskaper är konfigurerade för att distribueras till en lokal AEM-insta
 
 Dessa egenskaper är konfigurerade så att de kan åsidosättas vid distribution till miljöer på högre nivå. På så sätt behöver inte POM-filerna ändras, men variabler som `aem.host` och `sling.password` kan åsidosättas via kommandoradsargument:
 
-````
+```
 mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.password=productionpasswd
-````
+```
 
 ### Modulstruktur {#module-structure}
 
