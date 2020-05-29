@@ -2,7 +2,10 @@
 title: Breadcrumb-komponent
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -48,16 +51,21 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva sidor i vägbeskrivningar samt djupet i den hierarki som ska visas.
 
-![](/help/assets/screen_shot_2018-01-12at124250.png)
+![Dialogruta för redigering av komponenten Breadcrumb](/help/assets/breadcrumb-edit.png)
 
 * **Startnivå** för navigering - Där i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan. Exempel i We.Retail:
 
    * 0 börjar vid `/content`
-   * 1 börjar vid `/content/we-retail`
-   * 2 börjar vid `/content/we-retail/<country>`
+   * 1 börjar vid `/content/<yourSite>`
+   * 2 börjar vid `/content/<yourSite>/<country>`
 
 * **Visa dolda navigeringsobjekt** - Visa sidor som är markerade som dolda i navigeringsfältet (som standard visas de inte)
-* **Dölj aktuell sida**- Utelämna den aktuella sidan i sidutrymmet (som standard visas den)
+* **Dölj aktuell sida** - Utelämna den aktuella sidan i den synliga sökvägen (som standard visas den)
+* **Inaktivera skuggning** - Om sidan i hierarkin är en omdirigering visas namnet på omdirigeringssidan i stället för målet. Mer information finns i [Skuggwebbplatsens strukturstöd](navigation.md#shadow-structure) för navigeringskomponenten.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
@@ -65,7 +73,7 @@ I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska anv
 
 ### Huvudflik {#main-tab}
 
-![](/help/assets/screen_shot_2018-01-12at124437.png)
+![](/help/assets/breadcrumb-design.png)
 
 * **Startnivå** för navigering - Definierar standardvärdet för var i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan när den synliga komponenten läggs till på en sida.
 * **Visa dolda navigeringsobjekt** - Definierar standardvärdet för alternativet **Visa dolda navigeringsobjekt** när den synliga komponenten läggs till på en sida.
@@ -75,6 +83,8 @@ I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska anv
 * **Dölj aktuell sida**- Definierar standardvärdet för alternativet **Dölj aktuell sida** när den synliga komponenten läggs till på en sida.
 
    * Det aktiverar eller inaktiverar inte alternativet för författaren. Det anger bara standardvärdet.
+
+* **Inaktivera skuggning** - Definierar standardvärdet för alternativet **Inaktivera skuggning** när den synliga komponenten läggs till på en sida.
 
 ### Fliken Format {#styles-tab}
 
