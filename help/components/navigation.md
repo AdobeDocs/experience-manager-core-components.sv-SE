@@ -2,7 +2,10 @@
 title: Navigeringskomponent
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '1369'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Låt oss säga att innehållet ser ut ungefär så här:
 
 ```
 /content
-+-- we-retail
++-- wknd
    +-- language-masters
       +-- de
          \-- experience
@@ -58,13 +61,13 @@ Låt oss säga att innehållet ser ut ungefär så här:
 \-- wknd-shop
 ```
 
-För webbplatsen We.Retail vill du förmodligen placera navigeringskomponenten i en sidmall som en del av sidhuvudet. När du är en del av mallen kan du ange komponentens **navigeringsrot** till `/content/we-retail/language-masters/en` , eftersom det är där huvudinnehållet för den platsen börjar. Du kanske också vill ange att **navigeringsstrukturdjupet** ska vara `2` eftersom du antagligen inte vill att hela innehållsträdet ska visas av komponenten, utan i stället de två första nivåerna så att det fungerar som en översikt.
+För webbplatsen We.Retail vill du förmodligen placera navigeringskomponenten i en sidmall som en del av sidhuvudet. När du är en del av mallen kan du ange komponentens **navigeringsrot** till `/content/wknd/language-masters/en` , eftersom det är där huvudinnehållet för den platsen börjar. Du kanske också vill ange att **navigeringsstrukturdjupet** ska vara `2` eftersom du antagligen inte vill att hela innehållsträdet ska visas av komponenten, utan i stället de två första nivåerna så att det fungerar som en översikt.
 
-Med **Navigeringsrotvärdet** vet Navigeringskomponenten att efter `/content/we-retail/language-masters/en` det kan navigeringen starta och navigeringsalternativen genereras genom att platsens struktur repeteras två nivåer nedåt (enligt **värdet för Navigeringsstrukturens djup** ).
+Med **Navigeringsrotvärdet** vet Navigeringskomponenten att efter `/content/wknd/language-masters/en` det kan navigeringen starta och navigeringsalternativen genereras genom att platsens struktur repeteras två nivåer nedåt (enligt **värdet för Navigeringsstrukturens djup** ).
 
 Oavsett vilken lokaliserad sida en användare visar kan navigeringskomponenten hitta motsvarande lokaliserad sida genom att känna till platsen för den aktuella sidan, arbeta bakåt till roten och sedan vidarebefordra till motsvarande sida.
 
-Så om en besökare tittar `/content/ch/de/experience/arctic-surfing-in-lofoten`kan komponenten generera navigeringsstrukturen baserat på `/content/we-retail/language-masters/de`. På samma sätt som om besökaren tittar `/content/us/en/experience/arctic-surfing-in-lofoten`kan komponenten generera navigeringsstrukturen baserat på `/content/we-retail/language-masters/en`.
+Så om en besökare tittar `/content/ch/de/experience/arctic-surfing-in-lofoten`kan komponenten generera navigeringsstrukturen baserat på `/content/wknd/language-masters/de`. På samma sätt som om besökaren tittar `/content/us/en/experience/arctic-surfing-in-lofoten`kan komponenten generera navigeringsstrukturen baserat på `/content/wknd/language-masters/en`.
 
 ## Stöd för Shadow Site Structure {#shadow-structure}
 
@@ -91,9 +94,9 @@ Den aktuella versionen av Navigation Component är v1, som introducerades i vers
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -117,20 +120,25 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera rotsidan för navi
 
 ### Fliken Egenskaper {#properties-tab}
 
-![](/help/assets/screen-shot-2019-12-04at12.50.51.png)
+![Egenskaper för redigeringsdialogruta i navigeringskomponenten](/help/assets/navigation-edit-properties.png)
 
 * **Navigeringsrot** - Rotsidan som ska användas för att generera navigeringsträdet.
-* **Uteslut rotnivåer** - ofta ska roten inte tas med i navigeringen. Med det här alternativet kan du ange hur många nivåer upp från roten som du vill utesluta. Exempel:
+* **Uteslut rotnivåer** - ofta ska roten inte tas med i navigeringen. Med det här alternativet kan du ange hur många nivåer upp från roten som du vill utesluta. Till exempel:
    * 0 = visa rotnivån
    * 1 = utelämna rotnivån
    * 2 = exkludera roten och ytterligare 1 nivå upp
    * osv.
 * **Samla in alla underordnade sidor** - Samla in alla sidor som är underordnade navigeringsroten.
 * **Navigeringsstrukturdjup** - Definierar hur många nivåer i navigeringsträdet som komponenten ska visa i förhållande till navigeringsroten (endast tillgängligt när **Samla alla underordnade sidor** inte är markerat).
+* **Inaktivera skuggning** - Om sidan i hierarkin är en omdirigering visas namnet på omdirigeringssidan i stället för målet. Mer information finns i [Skuggwebbplatsens strukturstöd](#shadow-structure) .
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ### Fliken Tillgänglighet {#accessibility-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.23.53.png)
+![Navigeringskomponentens flik för redigeringsdialogruta för tillgänglighet](/help/assets/navigation-edit-accessibility.png)
 
 På fliken **Tillgänglighet** kan du ange värden för [ARIA-hjälpmedelsetiketter](https://www.w3.org/WAI/standards-guidelines/aria/) för komponenten.
 
@@ -142,16 +150,17 @@ I designdialogrutan kan mallskaparen ange standardvärden för navigeringsrotsid
 
 ### Fliken Egenskaper {#properties-tab-design}
 
-![](/help/assets/screen-shot-2019-12-04at12.53.32.png)
+![Designdialogrutan för navigeringskomponenten](/help/assets/navigation-design.png)
 
 * **Navigeringsrot** - standardvärdet för navigeringsstrukturens rotsida, som används för att generera navigeringsträdet och som standard när innehållsförfattaren lägger till komponenten på sidan.
-* **Uteslut rotnivåer** - ofta ska roten inte tas med i navigeringen. Med det här alternativet kan du ange standardvärdet för hur många nivåer uppåt från roten som du vill utesluta. Exempel:
+* **Uteslut rotnivåer** - ofta ska roten inte tas med i navigeringen. Med det här alternativet kan du ange standardvärdet för hur många nivåer uppåt från roten som du vill utesluta. Till exempel:
    * 0 = visa rotnivån
    * 1 = utelämna rotnivån
    * 2 = exkludera roten och ytterligare 1 nivå upp
    * osv.
 * **Samla in alla underordnade sidor** - Standardvärdet för alternativet att samla alla sidor som är underordnade navigeringsroten.
 * **Navigeringsstrukturdjup** - Standardvärdet för navigeringsstrukturens djup.
+* **Inaktivera skuggning** - Standardvärdet för om skuggning ska inaktiveras när du lägger till en navigeringskomponent
 
 ### Fliken Format {#styles-tab}
 
