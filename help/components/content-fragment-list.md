@@ -2,7 +2,10 @@
 title: Content Fragment List Component
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '762'
+ht-degree: 0%
 
 ---
 
@@ -24,9 +27,9 @@ Den aktuella versionen av Content Fragment Component är v1, som introducerades 
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -36,46 +39,50 @@ Om du vill se komponenterna i listan Innehållsfragmentlista samt se exempel på
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Content Fragment List Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
+The latest technical documentation about the Content Fragment List Component [can be found on GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-I dialogrutan Konfigurera kan innehållsförfattaren definiera vilka innehållsfragment som ska utgöra listan och vilka element i fragmenten som ska inkluderas.
+The configure dialog allows the content author to define the which content fragments comprise the list and the elements of those fragments to be included.
 
 ### Fliken Egenskaper
 
 Fliken **Egenskaper** definierar vilka innehållsfragment som ska tas med i listan. Detta baseras i första hand på en vald modell för innehållsfragment, men det finns andra filteralternativ tillgängliga.
 
-![](/help/assets/screen-shot-2019-09-25-10.32.10.png)
+![Properties tab of the edit dialog of the Content Fragment List Component](/help/assets/content-fragment-list-properties.png)
 
 * **Modell** - Sökväg till innehållsfragmentmodellen som listan baseras på.
-   * Som standard tas alla innehållsfragment i modellen som är definierade som **modellsökväg** med i listan.
-* **Överordnad sökväg** - överordnad sökväg som listan ska skapas från.
-   * Innehållsfragmenten som baseras på den valda **modellsökvägen** filtreras efter dem på den angivna **överordnade sökvägen**.
+   * By default, all content fragments of the model defined as **Model Path** are included in the list.
+* **Parent Path** - Parent path from which the list should be built.
+   * The content fragments based on the selected **Model Path** will be filtered to those on the specified **Parent Path**.
       * Klicka eller tryck på knappen **Öppna dialogrutan** för markering till höger om fältet för att ange sökvägen.
-* **Taggar** - Endast innehållsfragment med de angivna taggarna tas med i listan.
+* **Tags** - Only the Content Fragments with the specified tags will be included in the list.
    * Klicka eller tryck på knappen **Öppna dialogrutan** för markering till höger om fältet för att ange taggarna.
-   * Klicka eller tryck på X bredvid de markerade taggarna för att ta bort dem.
-* **Ordna efter** - Fält i innehållsfragmentmodellen där listan ska sorteras
-   * Endast textfält (inklusive numeriska fält, datum och tid) kan markeras.
-* **Sorteringsordning** - Så här sorteras listan efter fältet **Ordna efter**
-   * Stigande eller fallande
-* **Max Items** - Maximalt antal objekt som ska visas i listan
-   * Inget värde returnerar alla objekt.
+   * Click or tap the X next to selected tags to remove them.
+* **Order By** - Field of the content fragment model by which the list will be ordered
+   * Only text fields (including numeric, date, and time) are selectable.
+* **Sort Order** - How the list will be sorted by the **Order By** field
+   * Ascending or descending
+* **Max Items** - Maximum number of items to be shown in the list
+   * No value will return all items.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 >[!NOTE]
 >Alternativen **Ordna efter**, **Sorteringsordning** och **Max. objekt** introducerades i version 2.7.0 av kärnkomponenterna.
 
 ### Fliken Element
 
-Som standard tas alla element i innehållsfragmentmodellen med i listan (såvida de inte begränsas av fältet **Max. objekt** ). På fliken **Elements** kan du bara ange specifika element som ska inkluderas.
+Som standard tas alla element i innehållsfragmentmodellen med i listan (såvida de inte begränsas av fältet **Max. objekt** ). The **Elements** tab allows you to specify only specific elements to include.
 
-![](/help/assets/screen-shot-2019-05-08-10.47.34.png)
+![Elements tab of the edit dialog of the Content Fragment List Component](/help/assets/content-fragment-list-elements.png)
 
 * **Element** - Endast elementen i innehållsfragmenten i den angivna listan visas.
-   * Klicka eller tryck på knappen **Lägg till** för att lägga till ett nytt element.
+   * Click or tap the **Add** button to add a new element.
    * Klicka eller tryck på knappen **Ta bort** för att ta bort ett markerat element.
    * Dra i **ordningshandtaget** om du vill ändra ordningen på elementen.
 
