@@ -2,7 +2,10 @@
 title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF och eventuellt länka till ytterligare innehåll.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '751'
+ht-degree: 1%
 
 ---
 
@@ -23,9 +26,9 @@ Den aktuella versionen av Teaser Component är v1, som introducerades i version 
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -43,7 +46,7 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 
 ### Bild {#image}
 
-![](/help/assets/screen_shot_2018-07-03at104125.png)
+![Fliken Redigera i dialogrutan Teaser Component](/help/assets/teaser-edit-image.png)
 
 * **Bildresurs**
    * Släpp en resurs från [resursläsaren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddringsalternativet** om du vill överföra den från ett lokalt filsystem.
@@ -52,19 +55,24 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 
 ### Text {#text}
 
-![](/help/assets/screen_shot_2018-07-03at104138.png)
+![Textflik i redigeringsdialogrutan för Teaser Component](/help/assets/teaser-edit-text.png)
 
-* **Titel** Definierar en rubrik som ska visas som rubrik för suddgummit.
-* **Hämta rubrik från länkad sida** När den är markerad fylls rubriken i med den länkade sidans rubrik.
-* **Beskrivning** Definierar en beskrivning som ska visas som underrubrik till suddgummit.
-* **Hämta beskrivning från länkad sida** Om det här alternativet är markerat fylls beskrivningen i med den länkade sidans beskrivning.
+* **Pretitle** - Förrubriken visas före teaser&#39;s title.
+* **Titel** - Definierar en rubrik som ska visas som rubrik för suddgummit.
+   * **Hämta rubrik från länkad sida** - När den är markerad fylls rubriken i med den länkade sidans rubrik.
+* **Beskrivning** - Definierar en beskrivning som ska visas som underrubrik till suddgummit.
+   * **Hämta beskrivning från länkad sida** - Om det här alternativet är markerat fylls beskrivningen i med den länkade sidans beskrivning.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ### Länkar och åtgärder {#links-actions}
 
-![](/help/assets/screen_shot_2018-07-03at104146.png)
+![Länk-flik i redigeringsdialogrutan för Teaser Component](/help/assets/teaser-edit-link.png)
 
-* **Link** Link används på teaser. Använd sökvägsläsaren för att välja länkmålet.
-* **Aktivera anrop till åtgärder** När det här alternativet är markerat aktiveras definitionen av anrop till åtgärder. Den första Call-To-Action-länken i listan används som länk för andra teaserelement.
+* **Link** - Link applied to the teaser. Använd sökvägsläsaren för att välja länkmålet.
+* **Aktivera anrop-till-åtgärder** - När det här alternativet är markerat aktiveras definitionen av anrop-till-åtgärder. Den första Call-To-Action-länken i listan används som länk för andra teaserelement.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -76,19 +84,20 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 
 ### Teaser Tab {#teaser-tab}
 
-![](/help/assets/screen_shot_2018-07-03at105958.png)
+![Teaser Component&#39;s design dialog](/help/assets/teaser-design.png)
 
 * **Call-to-actions**
-   * **Inaktivera Call-to-Actions** Dölj alternativet **Call-To-Actions** för innehållsförfattare
+   * **Inaktivera Call-To-Actions** - Dölj alternativet **Call-To-Actions** för innehållsförfattare
 * **Element**
-   * **Dölj titel**
-      * Döljer alternativet **Titel** för innehållsförfattare
+   * **Dölj pretitel** - Döljer alternativet **Pretitle** för innehållsförfattare
+   * **Dölj rubrik** - Döljer alternativet **Titel** för innehållsförfattare
       * Om du väljer det här alternativet döljs **titeltypen**
-   * **Dölj beskrivning** Dölj alternativet **Beskrivning** för innehållsförfattare
-* **Titeltyp** Definierar H-taggen som ska användas av teaser-titeln.
+   * **Dölj beskrivning** - Dölj alternativet **Beskrivning** för innehållsförfattare
+* **Titeltyp** - Definierar H-taggen som ska användas av teaser-titeln.
 * **Länkar**
-   * **Länka inte bilden** När det här alternativet är markerat är inte suddgummibilden länkad
-   * **Länka inte titeln** När det här alternativet är markerat är inte texten länkad
+   * **Länka inte bilden** - När det här alternativet är markerat är inte suddgummibilden länkad
+   * **Länka inte titeln** - När det här alternativet är markerat är inte lagernamnet länkat
+* **Bilddelegering** - Informativ visning som visar vilken komponent Teaser delegerar bildhantering till.
 
 ### Fliken Format {#styles-tab}
 
