@@ -2,7 +2,10 @@
 title: Snabbsökningskomponent
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 1%
 
 ---
 
@@ -23,55 +26,11 @@ Den aktuella versionen av snabbsökningskomponenten är v1, som introducerades i
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
-
-## Exempel på komponentutdata {#sample-component-output}
-
-Följande är ett exempel från [We.Retail](https://docs.adobe.com/content/help/en/experience-manager-65/developing/bestpractices/we-retail/we-retail.html).
-
-### Skärmbild {#screenshot}
-
-![](/help/assets/screen_shot_2018-01-19at094248.png)
-
-### HTML {#html}
-
-```
-<section class="cmp-search" role="search" data-cmp-is="search" data-cmp-min-length="3" data-cmp-results-size="10">
-    <form class="cmp-search__form" data-cmp-hook-search="form" method="get" action="/content/we-retail/us/en/equipment.searchresults.json/_jcr_content/root/responsivegrid/search" autocomplete="off">
-        <div class="cmp-search__field">
-            <i class="cmp-search__icon" data-cmp-hook-search="icon"></i>
-            <span class="cmp-search__loading-indicator" data-cmp-hook-search="loadingIndicator"></span>
-            <input class="cmp-search__input" data-cmp-hook-search="input" type="text" name="fulltext" placeholder="Search" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-invalid="false">
-            <button class="cmp-search__clear" data-cmp-hook-search="clear">
-                <i class="cmp-search__clear-icon"></i>
-            </button>
-        </div>
-    </form>
-    <div class="cmp-search__results" data-cmp-hook-search="results" role="listbox" aria-multiselectable="false"></div>
-    
-<script data-cmp-hook-search="itemTemplate" type="x-template">
-    <a class="cmp-search__item" data-cmp-hook-search="item">
-        <span class="cmp-search__item-title" data-cmp-hook-search="itemTitle"></span>
-    </a>
-</script>
-</section>
-```
-
-### JSON {#json}
-
-```
-"search":{  
-                     "columnClassNames":"aem-GridColumn aem-GridColumn--default--12",
-                     "relativePath":"/jcr:content/root/responsivegrid/search",
-                     "resultsSize":10,
-                     "searchTermMinimumLength":3,
-                     ":type":"core/wcm/components/search/v1/search"
-                  }
-```
 
 ### Teknisk information {#technical-details}
 
@@ -87,9 +46,13 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera var i innehållsträdet sökningen ska börja.
 
-![](/help/assets/screen_shot_2018-04-03at120132.png)
+![Redigeringsdialogrutan för snabbsökningskomponenten](/help/assets/quick-search-edit.png)
 
 **Sökrot** - Rotsidan som sökningen ska startas från. Sökroten kan vara en överordnad rityta, en mallsida för språk eller en vanlig sida.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
@@ -97,7 +60,7 @@ Med hjälp av designdialogrutan kan mallskaparen ange standardvärdet för var i
 
 ### Fliken Egenskaper {#properties-tab}
 
-![](/help/assets/screen_shot_2018-04-03at120028.png)
+![Snabbsökningskomponentens designdialogruta](/help/assets/quick-search-design.png)
 
 * **Sökrot** Standardvärdet för sökroten när en innehållsförfattare placerar snabbsökningskomponenten på en innehållssida
 * **Resultatstorlek** Det maximala antalet resultat som hämtats av en sökbegäran
