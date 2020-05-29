@@ -2,7 +2,10 @@
 title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '805'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -48,14 +51,10 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera vilka åtgärder som ska vidtas när komponenten skickas.
 
-![](/help/assets/screen_shot_2018-01-12at122046.png)
-
 Beroende på den valda **åtgärdstypen**&#x200B;ändras de tillgängliga alternativen i behållaren. De tillgängliga åtgärdstyperna är:
 
 * [E-post](#mail)
 * [Lagra innehåll](#store-content)
-* [Skicka beställning](#submit-order)
-* [Uppdatera ordning](#update-order)
 
 Oavsett typ finns det [allmänna inställningar](#general-settings) för varje åtgärd.
 
@@ -63,15 +62,14 @@ Oavsett typ finns det [allmänna inställningar](#general-settings) för varje �
 
 När formuläret skickas skickar poståtgärdstypen ett e-postmeddelande till angivna mottagare.
 
-![](/help/assets/screen_shot_2018-01-12at122554.png)
+![E-postalternativ i dialogrutan Redigera i komponenten Formulärbehållare](/help/assets/form-container-edit-mail.png)
 
-* **Ämne**&#x200B;Ämnet för det e-postmeddelande som ska skickas när formulär skickas
-* **Från** e-postadressen som kommer att skickas när formulär skickas
-* **Till** adresserna till mottagarna som får ett e-postmeddelande när formuläret skickas
-
+* **Ämne** - Ämnet för det e-postmeddelande som ska skickas när formulär skickas
+* **Från** - Från-e-postadressen till det e-postmeddelande som ska skickas när formulär skickas
+* **Till** - Adresserna till mottagarna som ska få ett e-postmeddelande när formuläret skickas in
    * Tryck eller klicka på knappen **Lägg till** för att lägga till ytterligare adresser
    * Tryck eller klicka på knappen **Ta bort** för att ta bort en e-postadress
-* **CC** Adresserna till mottagarna som ska få en kopia av e-postmeddelandet som skickas när formuläret skickas in
+* **CC** - Adresserna till mottagarna som ska få en kopia av e-postmeddelandet som skickas när formuläret skickas in
    * Tryck eller klicka på knappen **Lägg till** för att lägga till ytterligare adresser
    * Tryck eller klicka på knappen **Ta bort** för att ta bort en e-postadress
 
@@ -79,36 +77,31 @@ När formuläret skickas skickar poståtgärdstypen ett e-postmeddelande till an
 
 När formuläret skickas kommer innehållet i formuläret att lagras på en angiven plats i databasen.
 
-![](/help/assets/screen_shot_2018-01-12at122538.png)
+![Alternativ för att lagra innehåll i redigeringsdialogrutan för formulärbehållaren](/help/assets/form-container-edit-store.png)
 
-* **Sökväg till innehållsdatabas** Sökväg till innehållsdatabas där skickat innehåll lagras
-* **Visa data** Tryck eller klicka för att visa lagrade skickade data som JSON
-* **Starta arbetsflöde** Konfigurera för att starta ett arbetsflöde med det lagrade innehållet som nyttolast när formuläret skickas
-
-### Skicka beställning {#submit-order}
-
-När formuläret skickas in skickas ordern.
-
-![](/help/assets/chlimage_1-3.png)
-
-### Uppdatera ordning {#update-order}
-
-När formuläret skickas uppdateras ordern.
-
-![](/help/assets/chlimage_1-4.png)
+* **Innehållssökväg** - Sökväg till innehållsdatabas där skickat innehåll lagras
+* **Visa data** - Tryck eller klicka för att visa lagrade skickade data som JSON
+* **Starta arbetsflöde** - Konfigurera för att starta ett arbetsflöde med det lagrade innehållet som nyttolast när formuläret skickas
 
 ### Allmänna inställningar {#general-settings}
 
 Oavsett vilken åtgärdstyp du väljer kan du alltid definiera en tacksida.
 
-![](/help/assets/chlimage_1-5.png)
+![Allmänna alternativ i redigeringsdialogrutan för komponenten Formulärbehållare](/help/assets/form-container-edit-general.png)
 
-Användaren omdirigeras till den angivna sidan när formuläret har skickats.
-
-* Använd dialogrutan Välj för att välja en resurs i AEM.
-* Om tacksidan inte finns i AEM anger du den absoluta URL:en. Icke-absoluta URL:er tolkas i förhållande till AEM.
-* Lämna tomt om du vill visa formuläret igen när det har skickats.
+* **Tack** ! Användaren omdirigeras till den angivna sidan när formuläret har skickats.
+   * Använd dialogrutan Välj för att välja en resurs i AEM.
+   * Om tacksidan inte finns i AEM anger du den absoluta URL:en. Icke-absoluta URL:er tolkas i förhållande till AEM.
+   * Lämna tomt om du vill visa formuläret igen när det har skickats.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+
+### Fliken Format {#styles-tab}
+
+Komponenten Form Container stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
