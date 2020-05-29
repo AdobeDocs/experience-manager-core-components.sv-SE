@@ -2,7 +2,10 @@
 title: ui.apps Module för AEM Project Archetype
 description: ui.apps Module för AEM Project Archetype
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +18,7 @@ Plugin-programmet Apache Jackrabbit FileVault Package används för att kompiler
 
 ## Överordnad POM {#parent-pom}
 
-[Den överordnade POM](overview.md#parent-pom) (`<src>/<project>/pom.xml`) innehåller `<plugin>` avsnitt som definierar olika konfigurationer för de plugin-program som används i projektet. Detta innehåller en konfiguration för plugin-programmet `filterSource` för jacin-paketet FileVault. Detta pekar `filterSource` på platsen för den `filter.xml` fil som används för att definiera jcr-sökvägarna som ingår i paketet.
+[Den överordnade POM](/help/developing/archetype/using.md#parent-pom) (`<src>/<project>/pom.xml`) innehåller `<plugin>` avsnitt som definierar olika konfigurationer för de plugin-program som används i projektet. Detta innehåller en konfiguration för plugin-programmet `filterSource` för jacin-paketet FileVault. Detta pekar `filterSource` på platsen för den `filter.xml` fil som används för att definiera jcr-sökvägarna som ingår i paketet.
 
 Förutom Jackrabbit FileVault Package Plugin är en definition av innehållspaketets plugin som används för att sedan överföra paketet till AEM. Observera att variabler för `aem.host`, `aem.port`, `vault.user`och `vault.password` används som motsvarar de globala egenskaper som definieras i samma överordnade PDF-fil.
 
@@ -25,7 +28,7 @@ Ui.apps pom (`<src>/<project>/ui.apps/pom.xml`) innehåller `embedded` -taggar f
 
 Observera att paketen core.wcm.components.all och core.wcm.components.examples ingår som ett underpaket. Detta distribuerar Core Components-paketet tillsammans med WKND-koden varje gång.
 
-core.wcm.components.all och core.wcm.components.examples ingår som beroenden i beroendelistan. Som en bra metod utelämnas versioner för beroenden här och hanteras i den [överordnade PDF-filen](overview.md#core-components).
+core.wcm.components.all och core.wcm.components.examples ingår som beroenden i beroendelistan. Som en bra metod utelämnas versioner för beroenden här och hanteras i den [överordnade PDF-filen](/help/developing/archetype/using.md#core-components).
 
 ## filter.xml {#filter}
 
