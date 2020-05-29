@@ -2,7 +2,10 @@
 title: Experience Fragment Component
 description: Med Experience Fragment Component kan innehållsförfattaren lägga till en upplevelsefragmentvariant på en sida.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '816'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ Låt oss säga att innehållet ser ut ungefär så här:
 ```
 /content
 +-- experience-fragments
-   \-- we-retail
+   \-- wknd
       +-- language-masters
       +-- us
          +-- en
@@ -59,7 +62,7 @@ Låt oss säga att innehållet ser ut ungefär så här:
          \-- it
             +-- footerTextXf
             \-- headerTextXf
-+-- we-retail
++-- wknd
    +-- language-masters
    +-- us
       +-- en
@@ -72,11 +75,11 @@ Låt oss säga att innehållet ser ut ungefär så här:
 \-- wknd-shop
 ```
 
-Observera att strukturen under `/content/experience-fragments/we-retail` speglar strukturen för `/content/we-retail`.
+Observera att strukturen under `/content/experience-fragments/wknd` speglar strukturen för `/content/wknd`.
 
-Om Experience Fragment-komponenten i det här fallet `/content/experience-fragments/we-retail/us/en/footerTextXf` placeras i en mall, kommer de lokaliserade sidor som skapas baserat på den mallen automatiskt att återge det lokaliserade upplevelsefragment som motsvarar den lokaliserade innehållssidan.
+Om Experience Fragment-komponenten i det här fallet `/content/experience-fragments/wknd/us/en/footerTextXf` placeras i en mall, kommer de lokaliserade sidor som skapas baserat på den mallen automatiskt att återge det lokaliserade upplevelsefragment som motsvarar den lokaliserade innehållssidan.
 
-Om du navigerar till en innehållssida under `/content/we-retail/ch/de` som använder samma mall `/content/experience-fragments/we-retail/ch/de/footerTextXf` återges den i stället för `/content/experience-fragments/we-retail/us/en/footerTextXf`.
+Om du navigerar till en innehållssida under `/content/wknd/ch/de` som använder samma mall `/content/experience-fragments/wknd/ch/de/footerTextXf` återges den i stället för `/content/experience-fragments/wknd/us/en/footerTextXf`.
 
 ### Reserv {#fallback}
 
@@ -93,9 +96,9 @@ Den aktuella versionen av Experience Fragment Component är v1, som introducerad
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -113,16 +116,22 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren välja den variant av upplevelsefragment som ska återges på sidan.
 
-![](/help/assets/screen-shot-2019-08-23-10.49.21.png)
+![Experience Fragment Components redigeringsdialogruta](/help/assets/experience-fragment-edit.png)
 
 Använd knappen **Öppna dialogrutan** Markering för att öppna komponentväljaren och välja vilken typ av upplevelsefragmentkomponent som ska läggas till på innehållssidan.
 
 Om du lägger till Experience Fragment-komponenten i en mall bör du tänka på att den automatiskt lokaliseras, förutsatt att Experience Fragments lokaliseras, så att det som återges på sidan kan variera från den komponent som du uttryckligen väljer. [Se exemplet ovan](#example) för mer information.
 
+Du kan också definiera ett **ID**. Med det här alternativet kan du styra komponentens unika identifierare i HTML-koden och i [datalagret](/help/developing/data-layer/overview.md).
+
+* Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+* Om ett ID anges är det författarens ansvar att se till att det är unikt.
+* Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
+
 ## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängliga för den som använder Experience Fragment-komponenten och de standardvärden som anges när Experience Fragment-komponenten monteras.
 
-![](/help/assets/screen-shot-2019-08-23-10.48.36.png)
+### Fliken Format {#styles-tab}
 
 Experience Fragment-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
