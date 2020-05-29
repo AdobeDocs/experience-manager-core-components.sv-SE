@@ -2,7 +2,10 @@
 title: Dragspelskomponent
 description: Med komponenten Core Component Accordion kan du skapa en samling paneler som ordnas i ett dragspel på en sida.
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '1051'
+ht-degree: 1%
 
 ---
 
@@ -19,15 +22,29 @@ Med komponenten Core Component Accordion kan du skapa en samling komponenter, so
 * Ordningen på panelerna i dragspelet kan definieras i dialogrutan Konfigurera och i [valpanelen](#select-panel-popover).
 * Standardvärden för dragspelskomponenten när du lägger till den på en sida kan definieras i [designdialogrutan](#design-dialog).
 
+## Djuplänkning till en panel {#deep-linking}
+
+Komponenterna [Accordion och](tabs.md) Tabs har stöd för att länka direkt till en panel i komponenten.
+
+Så här gör du:
+
+1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html#view-as-published)**i sidredigeraren.
+1. Granska sidans innehåll och identifiera panelens ID.
+   * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
+1. ID:t blir det ankare som du kan lägga till i URL:en med hash (`#`).
+   * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
+
+Om du navigerar till URL-adressen med panel-ID som ankarpunkt, rullar webbläsaren direkt till den aktuella komponenten och visar den angivna panelen. Om panelen inte är konfigurerad att expanderas som standard kommer den att expanderas automatiskt.
+
 ## Version och kompatibilitet {#version-and-compatibility}
 
 Den aktuella versionen av dragspelskomponenten är v1, som introducerades i version 2.5.0 av kärnkomponenterna i juni 2019, och som beskrivs i det här dokumentet.
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -47,7 +64,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera dragspelsobjektet
 
 ### Fliken Objekt {#items-tab}
 
-![](/help/assets/screen-shot-2019-06-21-08.26.38.png)
+![Fliken Objekt i redigeringsdialogrutan för dragspelskomponenten](/help/assets/accordion-edit-items.png)
 
 Använd knappen **Lägg** till för att öppna komponentväljaren och välja vilken komponent som ska läggas till som en panel. När du har lagt till en post läggs den till i listan, som innehåller följande kolumner:
 
@@ -62,22 +79,26 @@ Använd knappen **Lägg** till för att öppna komponentväljaren och välja vil
 
 ### Fliken Egenskaper {#properties-tab}
 
-![](/help/assets/screen-shot-2019-06-21-08.26.53.png)
+![Fliken Egenskaper i redigeringsdialogrutan för dragspelskomponenten](/help/assets/accordion-edit-properties.png)
 
 * **Expandering** av enstaka objekt - När du väljer det här alternativet utökas ett enskilt dragspelsobjekt i taget. Om du expanderar ett objekt komprimeras alla andra.
 * **Expanderade objekt** - Det här alternativet definierar de objekt som expanderas som standard när sidan läses in.
    * Om du väljer **Utökning** för ett objekt måste du markera en panel. Som standard är den första panelen markerad.
    * När du inte har valt **Utökning** för ett objekt är det här alternativet ett flerval och är valfritt.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Välj panelpekare {#select-panel-popover}
 
 Innehållsförfattaren kan använda alternativet **Välj panel** i komponentens verktygsfält för att ändra till en annan panel för redigering samt för att enkelt ordna om panelerna i dragspelet.
 
-![](/help/assets/screen-shot-2019-06-21-08.49.36.png)
+![Ikonen Välj panel](/help/assets/select-panel-icon.png)
 
 När du har valt alternativet **Välj panel** i komponentverktygsfältet visas de konfigurerade dragspelspanelerna som en listruta.
 
-![](/help/assets/screen-shot-2019-06-21-08.52.14.png)
+![Välj panelpekare](/help/assets/select-panel-popover.png)
 
 * Listan ordnas efter panelernas tilldelade ordning och återspeglas i numreringen.
 * Panelens komponenttyp visas först, följt av panelens beskrivning med ett ljusare teckensnitt.
@@ -90,7 +111,7 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 ### Fliken Egenskaper {#properties-tab-design}
 
-![](/help/assets/screen-shot-2019-06-21-08.58.11.png)
+![Egenskapflik i designdialogrutan](/help/assets/accordion-design-properties.png)
 
 * **Tillåtna rubrikelement** - Den här flervalslistrutan definierar HTML-element för dragspelsobjektsrubriker som tillåts markeras av en författare.
 * **Standardrubrikelement** - Den här listrutan definierar HTML-elementet för standarddragspelsobjektsrubriken.
