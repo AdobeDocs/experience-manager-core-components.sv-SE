@@ -2,7 +2,10 @@
 title: Ladda ned komponent
 description: Med komponenten Core Component Download kan du skapa ett nedladdningsalternativ på en sida.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +27,9 @@ Den aktuella versionen av Download Component är v1, som introducerades i versio
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -44,7 +47,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera nedladdningsobjektet och hur det kommer att fungera och visas för en besökare på sidan.
 
-![](/help/assets/screen-shot-2019-06-17-09.49.14.png)
+![Fliken Resurser i dialogrutan Redigera i nedladdningskomponenten](/help/assets/download-edit-asset.png)
 
 ### Fliken Resurser {#asset-tab}
 
@@ -57,7 +60,7 @@ Valet av en hämtningsresurs liknar funktionen hos [Image Component](image.md) o
 
 ### Fliken Egenskaper {#properties-tab}
 
-![](/help/assets/screen-shot-2019-06-17-09.49.51.png)
+![Egenskaper-fliken i dialogrutan Redigera i Download Component](/help/assets/download-edit-properties.png)
 
 * **Titel** - Visar som rubrik för nedladdningsartikeln
    * **Hämta titel från DAM-resurs** - När du väljer det här alternativet fylls titeln automatiskt i med DAM-resursens titel.
@@ -66,6 +69,10 @@ Valet av en hämtningsresurs liknar funktionen hos [Image Component](image.md) o
 * **Åtgärdstext** - Visar som åtgärdstext för nedladdningsobjektet
    * Det här fältet är obligatoriskt när du överför en resurs från filsystemet.
    * **Visa textbundet** - När du väljer det här alternativet visas den angivna **åtgärdstexten** textbundet.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
@@ -73,9 +80,8 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 ### Fliken Egenskaper {#properties-tab-design}
 
-![](/help/assets/screen-shot-2019-06-17-10.04.31.png)
+![Designdialogrutan för komponenten Download Component](/help/assets/download-design.png)
 
-* **Standardåtgärdstext** - Definierar den **standardåtgärdstext** som ges när en författare lägger till hämtningskomponenten på en sida.
 * **Tillåt överföring från filsystem** - Innehållsförfattaren kan överföra en resurs från sitt lokala filsystem som hämtningsresurs.
    * Standardvärdet är omarkerat.
 * **Titeltyp** - HTML-elementet som används för nedladdningskomponentens titel.
