@@ -2,7 +2,10 @@
 title: Button-komponent
 description: Med komponenten Core Component Button kan du skapa och visa en knapp.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +27,9 @@ Den aktuella versionen av Button-komponenten är v1, som introducerades i versio
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -46,16 +49,20 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappen och hur d
 
 ### Fliken Egenskaper {#properties-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.19.32.png)
+![Fliken Egenskaper i redigeringsdialogrutan för Button-komponenten](/help/assets/button-edit-properties.png)
 
 * **Text** - Den text som ska visas på knappen
 * **Länk** - Länka till en innehållssida i AEM, en extern resurs eller ett ankare
    * Använd dialogrutan **** Markering för att välja en bana i AEM.
 * **Ikon** - Identifierare för att visa en ikon i knappen
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ### Fliken Tillgänglighet {#accessibility-tab}
 
-![](/help/assets/screen-shot-2019-08-29-12.19.43.png)
+![Fliken Tillgänglighet i redigeringsdialogrutan för Button-komponenten](/help/assets/button-edit-accessibility.png)
 
 På fliken **Tillgänglighet** kan du ange värden för [ARIA-hjälpmedelsetiketter](https://www.w3.org/WAI/standards-guidelines/aria/) för komponenten.
 
