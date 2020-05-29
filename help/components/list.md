@@ -2,7 +2,10 @@
 title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/list-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -51,9 +54,9 @@ Listan kan byggas på olika sätt.
 * [Sökning](#search-options)
 * [Taggar](#tags)
 
-Oavsett hur listan är uppbyggd finns det [sorteringsalternativ](#sort-options) som alltid kan konfigureras.
+Oavsett hur listan är uppbyggd finns det alternativ [för](#sort-options) sortering och ID som alltid kan konfigureras.
 
-![](/help/assets/chlimage_1-38.png)
+![Redigeringsdialogrutan för List-komponenten](/help/assets/list-edit.png)
 
 Beroende på hur innehållsförfattaren väljer att skapa listan ändras de ytterligare konfigurationsalternativen.
 
@@ -61,7 +64,7 @@ Beroende på hur innehållsförfattaren väljer att skapa listan ändras de ytte
 
 Listan kan byggas av de underordnade sidorna för den aktuella sidan eller en annan sida.
 
-![](/help/assets/chlimage_1-39.png)
+![Alternativ för underordnade sidor](/help/assets/list-edit-child-pages.png)
 
 * **Överordnad sida**
    * Den sida vars underordnade sidor ska skapa listan
@@ -73,7 +76,7 @@ Listan kan byggas av de underordnade sidorna för den aktuella sidan eller en an
 
 Listan kan skapas med en fast lista med objekt.
 
-![](/help/assets/chlimage_1-40.png)
+![Alternativ för fast lista](/help/assets/list-edit-fixed.png)
 
 Tryck eller klicka på knappen **Lägg till** för att dra in ett nytt objekt i listan.
 
@@ -85,7 +88,7 @@ Tryck eller klicka på knappen **Lägg till** för att dra in ett nytt objekt i 
 
 Listan kan byggas med hjälp av resultaten från en sökning i AEM-innehåll.
 
-![](/help/assets/chlimage_1-41.png)
+![Alternativ för söklistor](/help/assets/list-edit-search.png)
 
 * **Sökfråga** Strängen som en fulltextsökning ska köras för att generera listelementen
 * **Sök i** Där sökningen ska köras
@@ -96,7 +99,7 @@ Listan kan byggas med hjälp av resultaten från en sökning i AEM-innehåll.
 
 Listan kan byggas med sidor som matchar vissa taggar under en viss plats.
 
-![](/help/assets/chlimage_1-42.png)
+![Alternativ för tagglistor](/help/assets/list-edit-tags.png)
 
 * **Överordnad sida** där taggmatchningen ska börja
    * Använd dialogrutan **** Markering för att välja plats i AEM
@@ -111,7 +114,7 @@ Listan kan byggas med sidor som matchar vissa taggar under en viss plats.
 
 Oavsett hur du väljer att skapa listan finns det vissa sorteringsalternativ som alltid kan definieras.
 
-![](/help/assets/chlimage_1-43.png)
+![Sorteringsalternativ](/help/assets/list-edit-sort-options.png)
 
 * **Beställ efter** hur elementen ska ordnas
    * **Titel**
@@ -121,12 +124,16 @@ Oavsett hur du väljer att skapa listan finns det vissa sorteringsalternativ som
    * **fallande**
 * **Maximalt antal objekt** Maximalt antal objekt som visas i listan.
    * Lämna tomt om du vill returnera alla objekt.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ### Fliken Objektinställningar {#item-settings-tab}
 
 På fliken Objektinställningar kan du konfigurera formateringen för listelementen.
 
-![](/help/assets/chlimage_1-44.png)
+![Objektinställningar](/help/assets/list-edit-items.png)
 
 * **Länka objekt** Länka objekt till motsvarande sida
 * **Visa beskrivning** Visa beskrivningar av länkobjektet
@@ -140,11 +147,11 @@ I designdialogrutan kan mallskaparen definiera vilka typer av listor som ska til
 
 På fliken **Listinställningar** kan datumformatet definieras liksom vilken typ av listor som ska vara tillgängliga i komponenten för innehållsförfattarna.
 
-![](/help/assets/chlimage_1-45.png)
+![Listkomponentens inställning för designdialogrutelista](/help/assets/list-design-list-settings.png)
 
 * **Datumformatformat** som ska användas för visning av det senaste ändringsdatumet
 * **Inaktivera underordnade** Inaktivera listtypen för underordnade i komponenten
-* **Inaktivera statisk** Inaktivera den statiska listtypen i komponenten
+* **Inaktivera statisk** inaktivering Inaktivera den statiska listtypen i komponenten
 * **Inaktivera sökning** Inaktivera söklisttypen i komponenten
 * **Inaktivera taggar** Inaktivera tagglisttyp i komponenten
 
@@ -152,11 +159,11 @@ På fliken **Listinställningar** kan datumformatet definieras liksom vilken typ
 
 På fliken **Objektinställningar** kan du definiera formateringsalternativen för de enskilda listelementen som ska vara tillgängliga i komponenten för innehållsförfattarna.
 
-![](/help/assets/chlimage_1-46.png)
+![Inställningar för designdialogruteobjekt i List Components](/help/assets/list-design-item-settings.png)
 
 * **Alternativet Länka objekt** Aktivera länkobjekt i [redigeringsdialogrutan](#edit-dialog)
 * **Visa beskrivningar** Aktivera alternativet Visa beskrivningar i [redigeringsdialogrutan](#edit-dialog)
-* **Visa alternativet Visa datum** Visa datum i dialogrutan [Redigera](#edit-dialog)
+* **Visa datum** Aktivera Visa datum i [redigeringsdialogrutan](#edit-dialog)
 
 ### Fliken Format {#styles-tab}
 
