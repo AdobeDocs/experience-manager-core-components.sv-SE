@@ -2,7 +2,10 @@
 title: Avgränsarkomponent
 description: Avgränsarkomponenten skapar en brytning mellan komponenter på en sida
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 2%
 
 ---
 
@@ -21,9 +24,9 @@ Den aktuella versionen av Separator Component är v1, som introducerades i versi
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -37,7 +40,12 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Separatorkomponenten har ingen konfigurationsdialogruta.
+![Dialogrutan Redigera avgränsningskomponent](/help/assets/separator-edit.png)
+
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
