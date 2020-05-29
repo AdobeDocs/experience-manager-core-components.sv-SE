@@ -2,7 +2,10 @@
 title: Språknavigeringskomponent
 description: Språknavigeringskomponenten tillhandahåller en språk-/landsnavigering för en webbplats, så att besökare kan navigera till samma sida på en annan språkinställning.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '832'
+ht-degree: 1%
 
 ---
 
@@ -26,9 +29,9 @@ Den aktuella versionen av språknavigeringskomponenten är v1, som introducerade
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -50,7 +53,7 @@ Vanligtvis behöver dessa konfigurationer bara göras på sidmallsnivå. De kan 
 
 ### Fliken Egenskaper {#properties-tab}
 
-![](/help/assets/screen_shot_2018-01-12at133642.png)
+![Designdialogrutan för komponenten för språknavigering](/help/assets/language-navigation-design.png)
 
 * **Navigeringsrot**
    * Det är här som webbplatsens språknavigering ska börja.
@@ -67,7 +70,7 @@ Låt oss säga att innehållet ser ut ungefär så här:
 
 ```
 /content
-+-- we-retail
++-- wknd
    +-- language-masters
    +-- us
       +-- en
@@ -80,9 +83,9 @@ Låt oss säga att innehållet ser ut ungefär så här:
 \-- wknd-shop
 ```
 
-För webbplatsen We.Retail vill du förmodligen placera komponenten Language Navigation i en sidmall som en del av sidhuvudet. När du är en del av mallen kan du ange komponentens **navigeringsrot** till `/content/we-retail` , eftersom det är där det lokaliserade innehållet för den platsen börjar. Du bör också ange att **språkstrukturdjupet** ska vara `2` eftersom strukturen är på två nivåer (land och sedan språk).
+För webbplatsen WKND vill du förmodligen placera komponenten Språknavigering i en sidmall som en del av sidhuvudet. När du är en del av mallen kan du ange komponentens **navigeringsrot** till `/content/wknd` , eftersom det är där det lokaliserade innehållet för den platsen börjar. Du bör också ange att **språkstrukturdjupet** ska vara `2` eftersom strukturen är på två nivåer (land och sedan språk).
 
-Med **navigeringsrotvärdet** vet språkkomponenten att efter `/content/we-retail` det kan navigeringen starta och språknavigeringsalternativen genereras genom att de två nästa nivåerna i innehållsträdet identifieras som webbplatsens språknavigeringsstruktur (enligt **språkstrukturdjupets** värde).
+Med **navigeringsrotvärdet** vet språkkomponenten att efter `/content/wknd` det kan navigeringen starta och språknavigeringsalternativen genereras genom att de två nästa nivåerna i innehållsträdet identifieras som webbplatsens språknavigeringsstruktur (enligt **språkstrukturdjupets** värde).
 
 Oavsett vilken sida en användare visar kan komponenten Språknavigering hitta motsvarande sida på ett annat språk genom att känna till platsen för den aktuella sidan och arbeta bakåt till roten och sedan vidarebefordra till motsvarande sida.
 
@@ -94,4 +97,10 @@ Språknavigeringskomponenten har stöd för AEM [Style System](/help/get-started
 
 Vanligtvis behöver komponenten Språknavigering bara läggas till och konfigureras på sidmallarna för en plats. Om komponenten Språknavigering måste läggas till på en enskild innehållssida kan en innehållsförfattare i redigeringsdialogrutan konfigurera samma värden som beskrivs i [designdialogrutan](#design-dialog).
 
-![](/help/assets/screen_shot_2018-01-12at133353.png)
+Dessutom kan du ange ett **ID**. Med det här alternativet kan du styra komponentens unika identifierare i HTML-koden och i [datalagret](/help/developing/data-layer/overview.md).
+
+* Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+* Om ett ID anges är det författarens ansvar att se till att det är unikt.
+* Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
+
+![Redigera-dialogrutan för språknavigeringskomponenten](/help/assets/language-navigation-edit.png)
