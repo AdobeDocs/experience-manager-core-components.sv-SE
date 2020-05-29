@@ -2,7 +2,10 @@
 title: Behållarkomponent
 description: Med komponenten Core Component Container kan du skapa en behållare för flera ytterligare komponenter på en sida.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 1%
 
 ---
 
@@ -24,9 +27,9 @@ Den aktuella versionen av Container Component är v1, som introducerades i versi
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -44,14 +47,17 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera behållarobjektet och hur det fungerar och visas för en besökare på sidan.
 
-![](/help/assets/screen-shot-2019-06-21-13.59.26.png)
+![Dialogrutan Redigera för behållarkomponenten](/help/assets/container-edit.png)
 
 * **Layout** - Det här alternativet definierar beteendet eller layoutbeteendet för Container-komponenten.
    * **Enkel** - definierar en behållare som en enkel samling komponenter
    * **Responsivt rutnät** - Definierar en behållare som en [AEM-responsiv layout](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
-* **ID** - Använd det här alternativet för att definiera det HTML ID-attribut som ska användas för komponenten.
 * **Bakgrundsfärg** - Definierbar antingen som RGB-värden i fri form eller med färgväljaren, [beroende på konfiguration](#background-tab)
 * **Bakgrundsbild** - Definierar en bakgrundsfärg för behållaren, [beroende på konfigurationen](#background-tab)
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
@@ -69,13 +75,13 @@ Fliken Standardkomponenter används för att definiera vilken komponent som läg
 
 ### Fliken Responsiva inställningar {#responsive-settings-tab}
 
-![](/help/assets/screen-shot-2019-06-21-09.33.03.png)
+![Fliken Responsiva inställningar i designdialogrutan för behållarkomponenten](/help/assets/container-design-responsive.png)
 
 * **Kolumner** - Definierar antalet kolumner i rutnätet för den resulterande behållaren.
 
 ### Fliken Bakgrund {#background-tab}
 
-![](/help/assets/screen-shot-2019-06-21-09.42.42.png)
+![Fliken Bakgrund i designdialogrutan för behållarkomponenten](/help/assets/container-design-background.png)
 
 * **Bakgrundsbild**
    * **Aktivera bakgrundsbild** - Välj det här alternativet om du vill att innehållsförfattaren ska kunna definiera en bakgrundsbild för behållaren.
