@@ -2,7 +2,10 @@
 title: Formulärtextkomponent
 description: Med komponenten Core Component Form Text kan du skriva in formulärtext.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](/help/components/v1/form-text-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -42,11 +45,11 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av text som ska matas in samt standardvärden och etiketter.
 
-### Huvudflik {#main-tab}
+### Fliken Egenskaper {#properties-tab}
 
-![](/help/assets/chlimage_1-23.png)
+![Fliken Egenskaper](/help/assets/form-text-edit-properties.png)
 
-* **Begränsning** Den typ av text som ska anges och valideras mot
+* **Begränsning** - Den typ av text som ska anges och valideras mot
    * **Text**
    * **Textområde**
    * **E-post**
@@ -54,29 +57,36 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
    * **Date**
    * **Siffra**
    * **Lösenord**
-* **Textrader** Antal rader som ska visas i textområdet (visas bara när **Begränsning** är inställt på **Textområde**)
-* **Etikett** Den etikett som ska visas för fältet
-* **Dölj etiketten så att den inte visas** Needed om etiketten endast krävs för hjälpmedelsändamål och inte ger någon ytterligare visuell information om fältet
-* **Elementnamn** Namnet på fältet som skickas med formulärdata
-* **Värde** Standardvärde som är förifyllt i fältet
+* **Textrader** - antal rader som ska visas i textområdet (visas bara när **Begränsning** är inställt på **textområde**)
+* **Etikett** - Den etikett som ska visas för fältet
+* **Dölj etiketten så att den inte visas** - Needed if is required only for accessibility purposes and does not import any additional visual information about the field
+* **Elementnamn** - namnet på fältet som skickas med formulärdata
+* **Värde** - standardvärde som är förifyllt i fältet
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ### Fliken Om {#about-tab}
 
-![](/help/assets/chlimage_1-24.png)
+![Fliken Om](/help/assets/form-text-edit-about.png)
 
-* **Hjälpmeddelande** Ett tips till användaren om vad som kan anges i fältet
-* **Visa hjälpmeddelandet som platshållare** Om du vill visa hjälpmeddelandet i formulärindata när det är tomt och inte fokuserat
+* **Hjälpmeddelande** - Ett tips till användaren om vad som kan anges i fältet
+* **Visa hjälpmeddelandet som platshållare** - Om du vill visa hjälpmeddelandet i formulärindata när det är tomt och inte i fokus
 
 ### Fliken Begränsningar {#constraints-tab}
 
-![](/help/assets/chlimage_1-25.png)
+![Fliken Begränsningar](/help/assets/form-text-edit-constraints.png)
 
 * **Begränsningsmeddelande**
    * Meddelande som visas som verktygstips när formuläret skickas om värdet inte validerar vald typ
    * Visas inte för begränsningstyperna **Text** och **Textområde**
-* **Obligatoriskt** Om det här alternativet är markerat måste användaren fylla i ett värde innan formuläret skickas
-* **Gör skrivskyddad** Om du väljer det här alternativet kan användaren inte ändra fältets värde
+* **Obligatoriskt** - Om det här alternativet är markerat måste användaren fylla i ett värde innan formuläret skickas
+   * **Obligatoriskt meddelande** - Meddelande visas som ett verktygstips om fältet lämnas tomt
+* **Gör skrivskyddad** - Om du väljer det här alternativet kan användaren inte ändra fältets värde
 
 ## Designdialogruta {#design-dialog}
 
-Det finns ingen designdialogruta för komponenten Formulärtext.
+### Fliken Format {#styles-tab}
+
+Komponenten Form Text har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
