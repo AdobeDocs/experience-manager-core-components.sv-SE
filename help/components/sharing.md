@@ -2,7 +2,10 @@
 title: Delningskomponent för sociala medier
 description: Den centrala komponenten för delning via sociala medier är en widget för delning via Facebook och Pinterest.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '429'
+ht-degree: 1%
 
 ---
 
@@ -13,7 +16,7 @@ Den centrala komponenten för delning via sociala medier är en widget för deln
 
 ## Användning {#usage}
 
-Delningskomponenten för sociala medier lägger till länkar för delning av Facebook och Pinterest på sidan. Den ingår ofta i sidhuvuden och sidfötter.
+Delningskomponenten för sociala medier lägger till länkar för delning av Facebook och Pinterest på sidan. Det ingår ofta i sidhuvuden och sidfötter.
 
 Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via egenskaperna [för](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) första sidan och av innehållsförfattaren via [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
@@ -23,9 +26,9 @@ Den aktuella versionen av den sociala delningskomponenten är v1, som introducer
 
 Följande tabell visar alla versioner av komponenten som stöds och de AEM-versioner som komponentversionerna är kompatibla med.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -41,7 +44,14 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är redigeringsalternativen för delningskomponenten tillgängliga via fliken Delning i [sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html)för innehållsförfattaren.
+![Redigeringsdialogrutan för delningskomponenten](/help/assets/sharing-edit.png)
+
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
+
+Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Det innebär att ytterligare redigeringsalternativ för delningskomponenten är tillgängliga för innehållsförfattaren via fliken Delning i [sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ## Designdialogruta {#design-dialog}
 
