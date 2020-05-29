@@ -2,7 +2,10 @@
 title: Använda AEM Project Archetype
 description: Detaljerade användningsinstruktioner för AEM-projektarkitypen
 translation-type: tm+mt
-source-git-commit: 0d8089c53d2ef95e88379e6f381738cd137e6b33
+source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+workflow-type: tm+mt
+source-wordcount: '2057'
+ht-degree: 0%
 
 ---
 
@@ -13,7 +16,7 @@ AEM Project Archetype skapar ett minimalt, metodbaserat Adobe Experience Manager
 
 ## Varför använda Arketype {#why-use-the-archetype}
 
-Med AEM Project Archetype kan du skapa ett AEM-projekt med några få tangenttryckningar. Genom att använda arkivtypen kommer alla delar redan att vara på plats, så även om det färdiga projektet är minimalt, implementerar det redan alla [nyckelfunktioner](#features) i AEM så att allt du behöver göra är att bygga vidare och utvidga.
+Med AEM Project Archetype kan du skapa ett AEM-projekt med några få tangenttryckningar. Genom att använda arkivtypen kommer alla delar redan att vara på plats, så även om det färdiga projektet är minimalt, implementerar det redan alla [nyckelfunktioner](#what-you-get) i AEM så att allt du behöver göra är att bygga vidare och utvidga.
 
 Det finns förstås många element som ingår i ett framgångsrikt AEM-projekt, men det är en bra grund att använda AEM Project Archetype och vi rekommenderar starkt för alla AEM-projekt.
 
