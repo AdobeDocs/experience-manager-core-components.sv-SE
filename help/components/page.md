@@ -2,7 +2,10 @@
 title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/page-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -33,14 +36,6 @@ Mer information om Core Component-versioner och -versioner finns i dokumentet [C
 >[!NOTE]
 >
 >För att aktivera omdirigering på `cq:Page` nivå för version 2 av sidkomponenten och AEM 6.3 krävs [Service Pack 2](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp2-release-notes.html) eller senare. En sådan omdirigering var inte tillgänglig i tidigare versioner.
-
-## Exempel på komponentutdata {#sample-component-output}
-
-Följande är ett exempel från [We.Retail](https://docs.adobe.com/content/help/en/experience-manager-65/developing/bestpractices/we-retail/we-retail.html).
-
-### Skärmbild {#screenshot}
-
-![](/help/assets/chlimage_1.png)
 
 ### Teknisk information {#technical-details}
 
@@ -56,7 +51,7 @@ Eftersom komponenten representerar hela sidan finns de inställningar som normal
 
 Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Sidinformation -> Sidprofil** när du redigerar sidmallen.
 
-![](/help/assets/screen_shot_2018-04-03at113410.png)
+![Sidprofil](/help/assets/page-policy.png)
 
 >[!NOTE]
 >
@@ -66,14 +61,16 @@ Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Si
 
 I fönstret Siddesign kan du definiera vilka klientbibliotek som ska läsas in samt webbresursbiblioteket för sidan.
 
-* **Klientbibliotek** Detta definierar vilka klientbibliotekskategorier som ska läsas in. JavaScript läggs till i innehållsslutet och CSS läggs till i sidhuvudet.
-* **Klientbibliotek JavaScript-sidhuvud** Detta definierar de JavaScript-klientbibliotekskategorier som ska läsas in i sidhuvudet.
+* **Klientbibliotek** - Detta definierar de klientbibliotekskategorier som ska läsas in. JavaScript läggs till i innehållsslutet och CSS läggs till i sidhuvudet.
+* **Klientbibliotek, JavaScript-sidhuvud** - Detta definierar de JavaScript-klientbibliotekskategorier som ska läsas in i sidhuvudet.
    * För de kategorier som definieras här och som också finns i fältet **Klientbibliotek** läses JavaScript in i sidhuvudet i stället för i innehållsslutet.
    * Ingen CSS läses in om inte kategorin också finns i fältet **Klientbibliotek** .
 
-* **Klientbibliotek** för webbresurser Klientbibliotekskategorin som används för webbresurser, till exempel favoritikoner.
+* **Klientbibliotek** för webbresurser - Klientbibliotekskategorin som används för webbresurser som till exempel favoritikoner.
 
-![](/help/assets/screenshot_2018-10-19at104949.png)
+* **Hoppa till väljaren** för elementet i huvudinnehållet - Används som hjälpmedelsfunktion för att hoppa direkt till huvudinnehållet på sidan
+
+![Designdialogruta för sidkomponent](/help/assets/page-design.png)
 
 Bibliotek kan konfigureras för både **klientbibliotek** och JavaScript Page Head **-fält för** klientbibliotek enligt följande:
 
