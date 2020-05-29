@@ -2,7 +2,10 @@
 title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
 translation-type: tm+mt
-source-git-commit: c338428a681f652d17bb972fb6a2abf216a338c3
+source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+workflow-type: tm+mt
+source-wordcount: '1425'
+ht-degree: 1%
 
 ---
 
@@ -15,9 +18,9 @@ Eftersom kärnkomponenterna är helt nya och ger flera fördelar rekommenderar v
 
 Därför ger Adobe följande rekommendationer:
 
-* **Nya projekt** Nya projekt ska alltid försöka använda kärnkomponenter. Om kärnkomponenter inte kan användas direkt eller [utökas](customizing.md) för att uppfylla projektkraven skapar du en anpassad komponent enligt komponentarkitekturen som anges i kärnkomponenterna. Undvik att använda [grundkomponenterna](#foundation-component-support), om inte annat är möjligt.
-* **Befintliga projektrekommendationer** fortsätter att använda [grundkomponenterna](#foundation-component-support), såvida inte en omfaktorisering planeras för en plats eller komponent.\
-   Eftersom de används i mycket stor utsträckning av de flesta befintliga projekt [kommer grundkomponenterna att fortsätta att stödjas.](#foundation-component-support)
+* **Nya projekt** Nya projekt ska alltid försöka använda kärnkomponenter. Om kärnkomponenter inte kan användas direkt eller [utökas](customizing.md) för att uppfylla projektkraven skapar du en anpassad komponent enligt komponentarkitekturen som anges i kärnkomponenterna. Undvik att använda [grundkomponenterna](/help/versions.md#foundation-component-support), om inte annat är möjligt.
+* **Befintliga projektrekommendationer** fortsätter att använda [grundkomponenterna](/help/versions.md#foundation-component-support), såvida inte en omfaktorisering planeras för en plats eller komponent.\
+   Eftersom de används i mycket stor utsträckning av de flesta befintliga projekt [kommer grundkomponenterna att fortsätta att stödjas.](/help/versions.md#foundation-component-support)
 * **Nya anpassade komponenter** utvärderas om en befintlig [kärnkomponent kan anpassas](customizing.md).\
    I annat fall rekommenderar vi att du skapar en ny anpassad komponent enligt riktlinjerna [för](guidelines.md)komponenter.
 * **Befintliga anpassade komponenter** Om dina komponenter fungerar som de ska bör du behålla dem som de är.\
@@ -50,7 +53,7 @@ Mer information om hur dessa verktyg används [finns i dokumentationen](http://o
 
 Core Components är en integrerad del av AEM och stöds i befintligt skick, på samma villkor som om de levererades som en del av QuickStart.
 
-Liksom andra AEM-funktioner är den allmänna regeln: Komponenter tillkännages först som borttagna och den tidigaste borttagningen för nästa AEM-version. Det ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan stödet släpps.
+Liksom andra AEM-funktioner är den allmänna regeln: Komponenter tillkännages först som borttagna och den tidigaste borttagningen för följande AEM-version. Det ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan stödet släpps.
 
 Versionen för varje komponent anger tydligt vilka AEM-versioner som stöds. När supporten upphör för en version av AEM gör även stödet för Core Components för den versionen av AEM det.
 
@@ -111,6 +114,7 @@ I följande tabell visas de tillgängliga kärnkomponenterna, som länkar till d
 | [Hämta](https://adobe.com/go/aem_cmp_tech_download_v1) | Lägga till en hämtningsbar resurs på en sida | `-` |
 | [Experience Fragment](https://adobe.com/go/aem_cmp_tech_xf_v1) | Lägga till ett upplevelsefragment på en sida | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
 | [Bädda in](https://adobe.com/go/aem_cmp_tech_embed_v1) | Bädda in en extern resurs på en sida | - |
+| [Förloppsindikator](https://adobe.com/go/aem_cmp_tech_progress_v1) | Ge en visuell representation av framstegen mot ett mål | - |
 
 ### Kommande komponenter {#upcoming-components}
 
