@@ -2,7 +2,10 @@
 title: Komponent för dolt formulär
 description: Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](/help/components/v1/form-hidden-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -44,16 +47,21 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera parametrarna för det dolda fältet.
 
-![](/help/assets/chlimage_1-26.png)
+![Dialogrutan Redigera dolt formulär](/help/assets/form-hidden-edit.png)
 
-* **Namn** Namnet på fältet som skickas med formulärdata
-* **Värde** Fältets värde, som skickas med formulärdata
-* **Identifierare** Identifieraren ska vara unik på sidan och kan användas för att binda skript till det här formulärfältet
+* **Namn** - Namnet på fältet som skickas med formulärdata
+* **Värde** - Fältets värde som skickas med formulärdata
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 Eftersom komponenten Formulär-dold normalt inte har några synliga attribut visar komponentens platshållare i redigeraren fältvärdena **Namn** och **Värde** om de har tilldelats för att hjälpa författaren att identifiera rätt formulärets dolda komponent.
 
-![](/help/assets/screenshot_2018-10-19at094927.png)
+![Exempel på formulärdold komponent](/help/assets/form-hidden-example.png)
 
 ## Designdialogruta {#design-dialog}
 
-Det finns ingen designdialogruta för komponenten Formulär-dold.
+### Fliken Format {#styles-tab}
+
+Komponenten Form Hidden stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
