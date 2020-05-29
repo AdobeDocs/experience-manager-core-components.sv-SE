@@ -1,38 +1,42 @@
 ---
-sub-product: AEM Core-komponenter
-user-guide-title: AEM Core-komponenter
+sub-product: AEM Core Components
+user-guide-title: AEM Core Components
 translation-type: tm+mt
-source-git-commit: 2faa092a075ab0512e9bd5654884534936c0ad53
+source-git-commit: afd846b1f124ac9b326e59ff71b145f7b9efeb11
+workflow-type: tm+mt
+source-wordcount: '182'
+ht-degree: 3%
 
 ---
 
 
-# Hjälp om AEM Core-komponenter {#using}
+# AEM Core Components Help {#using}
 
-+ [Introduktion till kärnkomponenter](introduction.md)
++ [Core Components Introduction](introduction.md)
 + [Sökvägar till lyckade](developing/success.md)
 + [Komponentbibliotek](https://adobe.com/go/aem_cmp_library)
-+ [Huvudkomponentversioner](versions.md)
-+ Kom igång {#get-started}
++ [Core Components Versions](versions.md)
++ Get Started {#get-started}
    + [Skapa med kärnkomponenter](get-started/authoring.md)
-   + [Använda kärnkomponenter](get-started/using.md)
-   + [Lokaliseringsfunktioner](get-started/localization.md)
-+ Komponenterna {#components}
+   + [Using Core Components](get-started/using.md)
+   + [Localization Features](get-started/localization.md)
++ The Components {#components}
    + [Dragspel](components/accordion.md)
    + [Breadcrumb](components/breadcrumb.md)
    + [Knapp](components/button.md)
    + [Carousel](components/carousel.md)
    + [Behållare](components/container.md)
-   + [Innehållsfragment](components/content-fragment-component.md)
-   + [Innehållsfragmentlista](components/content-fragment-list.md)
-   + [Hämta](components/download.md)
+   + [Content Fragment](components/content-fragment-component.md)
+   + [Content Fragment List](components/content-fragment-list.md)
+   + [Download](components/download.md)
    + [Bädda in](components/embed.md)
    + [Experience Fragment](components/experience-fragment.md)
    + [Bild](components/image.md)
-   + [Språknavigering](components/language-navigation.md)
+   + [Language Navigation](components/language-navigation.md)
    + [Lista](components/list.md)
    + [Navigering](components/navigation.md)
    + [Sida](components/page.md)
+   + [Förloppsindikator](components/progress-bar.md)
    + [Snabbsökning](components/quick-search.md)
    + [Avgränsare](components/separator.md)
    + [Delning av sociala medier](components/sharing.md)
@@ -41,20 +45,20 @@ source-git-commit: 2faa092a075ab0512e9bd5654884534936c0ad53
    + [Teaser](components/teaser.md)
    + [Titel](components/title.md)
    + Formulärkomponenter {#forms}
-      + [Formulärknapp](components/forms/form-button.md)
+      + [Form Button](components/forms/form-button.md)
       + [Formulärbehållare](components/forms/form-container.md)
       + [Dolt formulär](components/forms/form-hidden.md)
       + [Formuläralternativ](components/forms/form-options.md)
       + [Formulärtext](components/forms/form-text.md)
    + v1-komponenter {#v1-components}
       + [Breadcrumb (v1)](components/v1/breadcrumb-v1.md)
-      + [Bild (v1)](components/v1/image-v1.md)
-      + [Lista (v1)](components/v1/list-v1.md)
-      + [Sida (v1)](components/v1/page-v1.md)
+      + [Image (v1)](components/v1/image-v1.md)
+      + [List (v1)](components/v1/list-v1.md)
+      + [Page (v1)](components/v1/page-v1.md)
       + [Text (v1)](components/v1/text-v1.md)
-      + [Titel (v1)](components/v1/title-v1.md)
-      + v1-formulärkomponenter {#v1-forms}
-         + [Formulärknapp (v1)](components/v1/form-button-v1.md)
+      + [Title (v1)](components/v1/title-v1.md)
+      + v1 Form Components {#v1-forms}
+         + [Form Button (v1)](components/v1/form-button-v1.md)
          + [Formulärbehållare (v1)](components/v1/form-container-v1.md)
          + [Dolt formulär (v1)](components/v1/form-hidden-v1.md)
          + [Formuläralternativ (v1)](components/v1/form-options-v1.md)
@@ -65,9 +69,13 @@ source-git-commit: 2faa092a075ab0512e9bd5654884534936c0ad53
    + [WKND Developer Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](developing/customizing.md)
    + [Riktlinjer för komponenter](developing/guidelines.md)
+   + [Använda Adobe Client Data Layer]{#data-layer}
+      + [Kärnkomponenter och Adobe Client Data Layer](developing/data-layer/overview.md)
+      + [Integration with Adobe Launch](developing/data-layer/launch-integration.md)
+      + [Integrering med Adobe Analytics](developing/data-layer/analytics-integration.md)
    + AEM Project Archetype {#archetype}
       + [Arketype - översikt](developing/archetype/overview.md)
-      + [Använda Arketype](developing/archetype/using.md)
+      + [Using the Archetype](developing/archetype/using.md)
       + [Kärnmodul](developing/archetype/core.md)
       + [ui.apps-modul](developing/archetype/uiapps.md)
       + [ui.content-modul](developing/archetype/uicontent.md)
