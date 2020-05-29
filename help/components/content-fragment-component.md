@@ -2,7 +2,10 @@
 title: Innehållsfragmentkomponent
 description: Komponenten Core Component Content Fragment gör det möjligt att visa ett innehållsfragment.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 1%
 
 ---
 
@@ -29,9 +32,9 @@ Den aktuella versionen av Content Fragment Component är v1, som introducerades 
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|---|
-| v1 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 >[!NOTE]
 >
@@ -61,14 +64,19 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera vilket innehållsfragment och vilka element i fragmentet som ska inkluderas.
 
-![](/help/assets/chlimage_1-87.png)
+### Fliken Egenskaper {#properties-tab}
+
+![Innehållsfragmentkomponent](/help/assets/content-fragment-edit-properties.png)
 
 * **Innehållsfragment**
 
    * Sökväg till önskat innehållsfragment
    * Du kan använda dialogrutan **** Markering för att hitta fragmentet
 
-* **Element** - det element i innehållsfragmentet som ska inkluderas
+* **Visningsläge**
+   * **Enkelt textelement** - Aktiverar markering av ett flerradigt textelement och aktiverar styckekontrollalternativ
+   * **Flera element** - Tillåter markering av ett eller flera element i det markerade innehållsfragmentet
+* **Element** - det eller de element i innehållsfragmentet som ska inkluderas
 * **Variation** - Vilken variant av innehållsfragmentet som ska användas (standard är **mallsida**)
 
 * **Stycken**
@@ -78,18 +86,25 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilket innehålls
 
       * Ange styckeintervall som ska visas, avgränsade med semikolon
       * Om du `1;3-5;7;9-*` till exempel vill ta med det första, det tredje till femte, det sjunde och det nionde till det sista stycket
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
+### Styckekontrollflik {#paragraph-control-tab}
+
+Den här fliken är inte tillgänglig när läget **Flera element** har valts.
+
+![Innehållsfragmentkomponent](/help/assets/content-fragment-edit-paragraph.png)
+
+* **Stycken** - Tillåt markering av alla stycken eller ett intervall
 * **Hantera rubrik som egna stycken**
 
 ## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de resurstyper som används för att hantera bilder med olika medier och responsiva stödraster.
 
-![](/help/assets/chlimage_1-88.png)
-
-* **Bildtyp med blandade media**
-
-   * En Sling-resurstyp som används för återgivning av blandade mediabilder
+![Designdialogrutan för komponenten Innehållsfragment](/help/assets/content-fragment-design.png)
 
 * **Intern responsiv stödraster**
 
