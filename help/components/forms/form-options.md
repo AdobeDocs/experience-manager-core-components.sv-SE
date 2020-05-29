@@ -2,7 +2,10 @@
 title: Komponent för formuläralternativ
 description: Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
 translation-type: tm+mt
-source-git-commit: 95c0621f5423bfa515fe5e8b693e127ea56b4ae0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](/help/components/v1/form-options-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -44,28 +47,32 @@ Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen til
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av alternativ som ska visas, etiketter och vilka alternativ som är tillgängliga.
 
-![](/help/assets/screen_shot_2018-01-12at113153.png)
+![Formuläralternativ Komponentens redigeringsdialogruta](/help/assets/form-options-edit.png)
 
 * **Typer** - Hur alternativen visas
    * **Kryssrutor**
    * **alternativknappar**
    * **Nedrullningsbar meny**
    * **Listruta för flera val**
-* **Titel** Den rubrik som ska visas som etikett för alternativen
-* **Namn** Namnet på fältet som skickats med formulärdata
-* **Källa** där alternativen definieras
-   * **Lokal** definierad i komponenten
+* **Titel** - Den rubrik som ska visas som etikett för alternativen
+* **Namn** - Namnet på det fält som skickats med formulärdata
+* **Källa** - Där alternativen definieras
+   * **Lokal** - definieras i komponenten
       * Tryck eller klicka på knappen **Lägg till** för att lägga till ett värde, **Ta bort** för att ta bort ett värde
-      * **Värde** Det värde som sparas när det alternativet väljs när formuläret skickas
-      * **Text** Etiketten för alternativet som visas i formuläret
-      * **Aktiv** Alternativet markeras som markerat när formuläret läses in
-      * **Inaktiverat** Alternativet kan inte markeras men visas ändå
-      * **Lista** En statisk lista som definieras någon annanstans i AEM används för alternativen
-         * **Lista** sökvägen till den statiska listan i AEM
-            * Använd knappen Bläddra för att hitta listresursen
-      * **Datakälla** En datakälla används för alternativen
-         * **Datakällans** resurstyp för datakällan
-* **Hjälpmeddelande** Ett tips till användaren om vad som kan anges i fältet
+         * **Värde** - Värdet som sparas när det alternativet väljs när formuläret skickas
+         * **Text** - Etiketten för alternativet som visas i formuläret
+         * **Aktiv** - Alternativet markeras som markerat när formuläret läses in
+         * **Inaktiverad** - alternativet kan inte markeras men visas ändå
+   * **Lista** - En statisk lista som definierats någon annanstans i AEM används för alternativen
+      * **List** - Sökvägen till den statiska listan i AEM
+         * Använd knappen Bläddra för att hitta listresursen
+   * **Datakälla** - En datakälla används för alternativen
+      * **Datakälla** - datakällans resurstyp
+* **Hjälpmeddelande** - Ett tips för användaren om vad som kan anges i fältet
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
