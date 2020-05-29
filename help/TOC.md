@@ -1,38 +1,38 @@
 ---
-sub-product: AEM Core Components
-user-guide-title: AEM Core Components
+sub-product: AEM Core-komponenter
+user-guide-title: AEM Core-komponenter
 translation-type: tm+mt
-source-git-commit: afd846b1f124ac9b326e59ff71b145f7b9efeb11
+source-git-commit: c07dc21b1973ec541a1d96047f8a30aca8cfb886
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '181'
 ht-degree: 3%
 
 ---
 
 
-# AEM Core Components Help {#using}
+# Hjälp om AEM Core-komponenter {#using}
 
-+ [Core Components Introduction](introduction.md)
++ [Introduktion till kärnkomponenter](introduction.md)
 + [Sökvägar till lyckade](developing/success.md)
 + [Komponentbibliotek](https://adobe.com/go/aem_cmp_library)
-+ [Core Components Versions](versions.md)
-+ Get Started {#get-started}
++ [Huvudkomponentversioner](versions.md)
++ Kom igång {#get-started}
    + [Skapa med kärnkomponenter](get-started/authoring.md)
-   + [Using Core Components](get-started/using.md)
-   + [Localization Features](get-started/localization.md)
-+ The Components {#components}
+   + [Använda kärnkomponenter](get-started/using.md)
+   + [Lokaliseringsfunktioner](get-started/localization.md)
++ Komponenterna {#components}
    + [Dragspel](components/accordion.md)
    + [Breadcrumb](components/breadcrumb.md)
    + [Knapp](components/button.md)
    + [Carousel](components/carousel.md)
    + [Behållare](components/container.md)
-   + [Content Fragment](components/content-fragment-component.md)
-   + [Content Fragment List](components/content-fragment-list.md)
-   + [Download](components/download.md)
+   + [Innehållsfragment](components/content-fragment-component.md)
+   + [Innehållsfragmentlista](components/content-fragment-list.md)
+   + [Hämta](components/download.md)
    + [Bädda in](components/embed.md)
    + [Experience Fragment](components/experience-fragment.md)
    + [Bild](components/image.md)
-   + [Language Navigation](components/language-navigation.md)
+   + [Språknavigering](components/language-navigation.md)
    + [Lista](components/list.md)
    + [Navigering](components/navigation.md)
    + [Sida](components/page.md)
@@ -45,20 +45,20 @@ ht-degree: 3%
    + [Teaser](components/teaser.md)
    + [Titel](components/title.md)
    + Formulärkomponenter {#forms}
-      + [Form Button](components/forms/form-button.md)
+      + [Formulärknapp](components/forms/form-button.md)
       + [Formulärbehållare](components/forms/form-container.md)
       + [Dolt formulär](components/forms/form-hidden.md)
       + [Formuläralternativ](components/forms/form-options.md)
       + [Formulärtext](components/forms/form-text.md)
    + v1-komponenter {#v1-components}
       + [Breadcrumb (v1)](components/v1/breadcrumb-v1.md)
-      + [Image (v1)](components/v1/image-v1.md)
-      + [List (v1)](components/v1/list-v1.md)
-      + [Page (v1)](components/v1/page-v1.md)
+      + [Bild (v1)](components/v1/image-v1.md)
+      + [Lista (v1)](components/v1/list-v1.md)
+      + [Sida (v1)](components/v1/page-v1.md)
       + [Text (v1)](components/v1/text-v1.md)
-      + [Title (v1)](components/v1/title-v1.md)
-      + v1 Form Components {#v1-forms}
-         + [Form Button (v1)](components/v1/form-button-v1.md)
+      + [Titel (v1)](components/v1/title-v1.md)
+      + v1-formulärkomponenter {#v1-forms}
+         + [Formulärknapp (v1)](components/v1/form-button-v1.md)
          + [Formulärbehållare (v1)](components/v1/form-container-v1.md)
          + [Dolt formulär (v1)](components/v1/form-hidden-v1.md)
          + [Formuläralternativ (v1)](components/v1/form-options-v1.md)
@@ -69,13 +69,13 @@ ht-degree: 3%
    + [WKND Developer Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](developing/customizing.md)
    + [Riktlinjer för komponenter](developing/guidelines.md)
-   + [Använda Adobe Client Data Layer]{#data-layer}
+   + Adobe Client Data Layer {#data-layer}
       + [Kärnkomponenter och Adobe Client Data Layer](developing/data-layer/overview.md)
-      + [Integration with Adobe Launch](developing/data-layer/launch-integration.md)
+      + [Integration med Adobe Launch](developing/data-layer/launch-integration.md)
       + [Integrering med Adobe Analytics](developing/data-layer/analytics-integration.md)
    + AEM Project Archetype {#archetype}
       + [Arketype - översikt](developing/archetype/overview.md)
-      + [Using the Archetype](developing/archetype/using.md)
+      + [Använda Arketype](developing/archetype/using.md)
       + [Kärnmodul](developing/archetype/core.md)
       + [ui.apps-modul](developing/archetype/uiapps.md)
       + [ui.content-modul](developing/archetype/uicontent.md)
