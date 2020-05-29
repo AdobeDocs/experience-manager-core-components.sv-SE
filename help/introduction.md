@@ -2,9 +2,9 @@
 title: Introduktion till kärnkomponenter
 description: 'Core Components introducerades för att tillhandahålla stabila och utökningsbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: c07dc21b1973ec541a1d96047f8a30aca8cfb886
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '841'
 ht-degree: 2%
 
 ---
@@ -20,6 +20,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 
 * **[Komponentbibliotek:](https://www.adobe.com/go/aem_cmp_library)**En samling exempel som visar komponenterna i deras olika konfigurationer.
 * **Komponentdokumentation (det här dokumentet):** För utvecklare och författare, med information om varje komponent.
+* **[Core Components GitHub Repository:](https://github.com/adobe/aem-core-wcm-components)**Om du vill ha information om varje komponent och nedladdning av projekt får du information om utvecklare.
 * Kom igång:
    * **[Lyckades med kärnkomponenterna:](/help/developing/success.md)**Riktlinjer som ska övervägas långt före början av projekt som ska använda kärnkomponenterna.
    * **[WKND - självstudiekurs:](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)**En tvådagars självstudiekurs för att skapa en ny webbplats.
@@ -32,7 +33,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 |---|---|
 | Produktionsklart | Core Components är 28 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
 | Molnklar | Vare sig de arbetar på [AEM som molntjänst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller på plats fungerar de bara. |
-| Mångsidig | Komponenterna representerar allmänna koncept som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
+| Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | Principer för [innehåll på mallnivå](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#content-policies) definierar vilka funktioner sidförfattarna får använda eller inte använda. |
 | Tillgänglig | De uppfyller [WCAG 2.1-standarden](https://www.w3.org/TR/WCAG21/), tillhandahåller ARIA-etiketter och stöder tangentbordsnavigering ([kända fel](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-vänlig | HTML-utdata är semantiska och innehåller [schema.org](https://schema.org) -mikrodataanteckningar. |
@@ -43,6 +44,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 | Versionshantering | Versionsprincipen [](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din webbplats när du förbättrar saker som kan påverka dig. |
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |
 | Öppna källkod | Om något inte är som det ska, [bidrar du till förbättringarna!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
+| Spårbar | Huvudkomponenterna är [integrerade med Adobe Client Data Layer.](/help/developing/data-layer/overview.md) |
 
 ## Komponenterna {#the-components}
 
