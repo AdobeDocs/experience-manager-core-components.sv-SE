@@ -2,7 +2,10 @@
 title: Introduktion till kärnkomponenter
 description: 'Core Components introducerades för att tillhandahålla stabila och utökningsbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 translation-type: tm+mt
-source-git-commit: 1c6e27c163f72fd66336e8db883144dc4dd60510
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 2%
 
 ---
 
@@ -27,7 +30,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 
 |  |  |
 |---|---|
-| Produktionsklart | Core Components är 27 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
+| Produktionsklart | Core Components är 28 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
 | Molnklar | Vare sig de arbetar på [AEM som molntjänst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller på plats fungerar de bara. |
 | Mångsidig | Komponenterna representerar allmänna koncept som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | Principer för [innehåll på mallnivå](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#content-policies) definierar vilka funktioner sidförfattarna får använda eller inte använda. |
@@ -68,6 +71,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 * [Bädda in](components/embed.md)
 * [Delning av sociala medier](components/sharing.md)
 * [Avgränsare](components/separator.md)
+* [Förloppsindikator](components/progress-bar.md)
 
 ### Behållarkomponenter {#container-components}
 
@@ -96,9 +100,9 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 ## Systemkrav {#system-requirements}
 
-| Kärnkomponenter | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | AEM 6.3 | Java SE | Maven |
----------|---------|---------|---------|---------|---------|---------
-| [2.8.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.8.0) | Kontinuerlig | 6.5.0.0+ | 6.4.4.0+ | 6.3.3.4+ | 8, 11 | 3.3.9+ |
+| Kärnkomponenter | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
+---------|---------|---------|---------|---------|---------
+| [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Kontinuerlig | 6.5.0.0+ | 6.4.4.0+ | 8, 11 | 3.3.9+ |
 
 Krav från tidigare versioner av Core Component finns i [Core Components Versions](versions.md).
 
