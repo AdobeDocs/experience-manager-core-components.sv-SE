@@ -2,7 +2,10 @@
 title: Titelkomponent
 description: Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering på plats.
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/title-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -45,16 +48,20 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och v�
 * **Titel** - Om den är tom används sidans rubrik
 * **Typ/storlek** - definierar rubriknivån för titeln
 * **Länk** - Definierar innehållet som titeln ska länka till. Det kan vara en sökväg till en innehållssida, en extern URL eller en sidankarpunkt.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-![](/help/assets/screenshot_2018-10-19at110055.png)
+![Redigeringsdialogrutan för titelkomponent](/help/assets/title-edit.png)
 
->[!CAUTION]
+>[!NOTE]
 >
 >Möjligheten att definiera en länk för titeln introducerades i version 2.2.0 av Core Components.
 
 Du kan även använda redigeraren på plats för att redigera texten i titelkomponenten.
 
-![](/help/assets/chlimage_1-37.png)
+![In-place editing of Title Component](/help/assets/title-edit-inline.png)
 
 ## Designdialogruta {#design-dialog}
 
@@ -62,13 +69,13 @@ I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titel
 
 ### Fliken Storlekar {#sizes-tab}
 
-![](/help/assets/screenshot_2018-10-19at110120.png)
+![Title Components&#39;&#39;s design dialog](/help/assets/title-design.png)
 
 * **Tillåtna typer/storlekar för författare** - Aktivera eller inaktivera rubriktyper som är tillgängliga för innehållsförfattare när de använder titelkomponenten.
 * **Standardtyp/storlek**- Definiera den rubriktyp som automatiskt tilldelas när en innehållsförfattare lägger till titelkomponenten på en sida.
 * **Inaktivera länk**- Inaktivera stöd för länkar i titelkomponenten för att hindra innehållsförfattare från att länka från titlar.
 
->[!CAUTION]
+>[!NOTE]
 >
 >Möjligheten att definiera en länk för titeln introducerades i version 2.2.0 av Core Components.
 
