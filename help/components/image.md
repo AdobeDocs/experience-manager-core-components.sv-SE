@@ -2,7 +2,10 @@
 title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 translation-type: tm+mt
-source-git-commit: 6be0028c45ce9f8b36ea278f8e569f3d6a626ae2
+source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+workflow-type: tm+mt
+source-wordcount: '1934'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |--- |---|
-| v2 | Kompatibel | Kompatibel | Kompatibel | Kompatibel |
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/image-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
@@ -72,7 +75,7 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 
 ### Fliken Resurser {#asset-tab}
 
-![](/help/assets/screen_shot_2018-01-08at114245.png)
+![Fliken Resurser i dialogrutan Konfigurera för bildkomponenten](/help/assets/image-configure-asset.png)
 
 * **Bildresurs**
    * Släpp en resurs från [resursläsaren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddringsalternativet** om du vill överföra den från ett lokalt filsystem.
@@ -81,7 +84,7 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 
 ### Fliken Metadata {#metadata-tab}
 
-![](/help/assets/screen_shot_2018-01-08at114527.png)
+![Fliken Metadata i dialogrutan Konfigurera för Image Component](/help/assets/image-configure-metadata.png)
 
 * **Bilden är dekorativ** Kontrollera om bilden ska ignoreras av hjälpmedelstekniken och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
 * **Alternativ text** Textuellt alternativ för innebörden eller funktionen i bilden för läsare med nedsatt syn.
@@ -96,15 +99,20 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
    * Använd urvalsdialogrutan för att länka till en annan AEM-resurs.
    * Om du inte länkar till en AEM-resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
 
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
+
 ## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma bilden.
 
-![](/help/assets/chlimage_1-8.png)
+![Redigeringsdialogruta för bildkomponent](/help/assets/image-edit.png)
 
 * Starta beskärning
 
-   ![](/help/assets/chlimage_1-9.png)
+   ![Ikonen Starta beskärning](/help/assets/image-start-crop.png)
 
    Om du väljer det här alternativet öppnas en listruta för fördefinierade beskärningsproportioner.
 
@@ -112,76 +120,43 @@ I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma
    * Välj alternativet **Ta bort beskärning** för att visa den ursprungliga resursen.
    När du har valt ett beskärningsalternativ använder du de blå handtagen för att ändra storlek på beskärningen i bilden.
 
-   ![](/help/assets/chlimage_1-10.png)
+   ![Beskärningsalternativ](/help/assets/image-crop-options.png)
 
 * Rotera åt höger
 
-   ![](/help/assets/chlimage_1-11.png)
+   ![Rotera höger ikon](/help/assets/image-rotate-right.png)
 
    Använd det här alternativet om du vill rotera bilden 90° åt höger (medurs).
 
 * Vänd vågrätt
 
-   ![](/help/assets/screen_shot_2018-04-16at091404.png)
+   ![Ikon för att vända vågrätt](/help/assets/image-flip-horizontal.png)
 
    Använd det här alternativet om du vill vända bilden vågrätt eller vrida bilden 180° längs y-axeln.
 
 * Vänd lodrätt
 
-   ![](/help/assets/screen_shot_2018-04-16at091410.png)
+   ![Vänd lodrätt, ikon](/help/assets/image-flip-vertical.png)
 
    Använd det här alternativet om du vill vända bilden lodrätt eller vrida bilden 180° längs x-axeln.
 
-* Starta karta
-
-   >[!CAUTION]
-   >
-   >Funktionen Launch Map kräver version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller [Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) för AEM 6.3 eller senare för att stödja [nya bildredigeringsfunktioner](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html) i AEM.
-
-   ![](/help/assets/chlimage_1-12.png)
-
-   Använd det här alternativet om du vill använda en startkarta för bilden. Om du väljer det här alternativet öppnas ett nytt fönster där användaren kan välja kartans form:
-
-   * **Lägg till rektangulär karta**
-   * **Lägg till cirkulär karta**
-   * **Lägg till polygonkarta**
-      * Som standard läggs ett triangelschema till. Dubbelklicka på en linje i formen för att lägga till ett nytt blått handtag på en ny sida.
-   När du har markerat en schemaform läggs den ovanpå bilden så att du kan ändra storlek på den. Dra och släpp handtagen för blå storleksändring för att justera formen.
-
-   ![](/help/assets/chlimage_1-13.png)
-
-   När du har ändrat storlek på startkartan klickar du på den för att öppna ett flytande verktygsfält och definiera länkens sökväg.
-
-   * **Bana**
-      * Använd alternativet Banväljaren för att välja en bana i AEM
-      * Om sökvägen inte är i AEM använder du den absoluta URL:en. Icke-absoluta sökvägar tolkas i förhållande till AEM.
-   * **Alternativ text** Alternativ beskrivning av sökvägsmålet
-   * **Mål**
-      * **Samma flik**
-      * **Ny flik**
-      * **Överordnad ram**
-      * **Övre bildruta**
-   Tryck eller klicka på den blå bockmarkeringen för att spara, det svarta x för att avbryta och det röda papperskorgen för att ta bort kartan.
-
-   ![](/help/assets/chlimage_1-14.png)
-
 * Återställ zoomning
 
-   ![](/help/assets/chlimage_1-15.png)
+   ![Återställ zoomningsikon](/help/assets/image-reset-zoom.png)
 
    Om bilden redan har zoomats kan du återställa zoomnivån med det här alternativet.
 
 * Öppna zoomreglaget
 
-   ![](/help/assets/chlimage_1-16.png)
+   ![Öppna zoomskjutningsikonen](/help/assets/image-zoom.png)
 
    Använd det här alternativet om du vill visa ett reglage för att styra bildens zoomnivå.
 
-   ![](/help/assets/chlimage_1-17.png)
+   ![Zoomreglage](/help/assets/image-zoom-slider.png)
 
 Du kan även använda redigeraren på plats för att ändra bilden. På grund av utrymmesbegränsningar är endast grundläggande alternativ tillgängliga. Använd helskärmsläget för redigeringsalternativ.
 
-![](/help/assets/chlimage_1-18.png)
+![Redigeringsalternativ för bilder på plats](/help/assets/image-in-place-edit.png)
 
 >[!NOTE]
 >
@@ -193,11 +168,11 @@ I designdialogrutan kan mallskaparen definiera de alternativ för beskärning, u
 
 ### Huvudflik {#main-tab}
 
-På fliken **Huvudsida** kan du definiera en lista med bredder i pixlar för bilden. Komponenten laddar automatiskt den mest lämpliga bredden baserat på webbläsarens storlek. Detta är en viktig del av de [responsiva funktionerna](#responsive-features) i Image-komponenten.
+På fliken **Huvudsida** kan du definiera en lista med bredder i pixlar för bilden. Komponenten läses automatiskt in med den bredd som passar bäst med hänsyn till webbläsarens storlek. Detta är en viktig del av de [responsiva funktionerna](#responsive-features) i Image-komponenten.
 
 Dessutom kan du definiera vilka allmänna komponentalternativ som automatiskt eller inaktiveras när författaren lägger till komponenten på en sida.
 
-![](/help/assets/screenshot_2018-10-19at102756.png)
+![Huvudflik i designdialogrutan för bildkomponenten](/help/assets/image-design-main.png)
 
 * **Aktivera lazy loading** Definiera om alternativet för lazy loading automatiskt aktiveras när bildkomponenten läggs till på en sida.
 * **Bilden är dekorativ** Definiera om alternativet för dekorativa bilder aktiveras automatiskt när du lägger till bildkomponenten på en sida.
@@ -214,7 +189,7 @@ Dessutom kan du definiera vilka allmänna komponentalternativ som automatiskt el
       * Välj alternativet **Inaktivera lazy loading** för att läsa in bilderna vid sidinläsning.
 * **JPEG-kvalitet** Kvalitetsfaktorn (i procent mellan 0 och 100) för omformade (t.ex. skalade eller beskurna) JPEG-bilder.
 
->[!CAUTION]
+>[!NOTE]
 >
 >Alternativet JPEG-kvalitet är tillgängligt från och med version 2.2.0 av kärnkomponenterna.
 
@@ -228,13 +203,13 @@ På fliken **Funktioner** kan du ange vilka alternativ som är tillgängliga fö
 
 * Källa
 
-   ![](/help/assets/chlimage_1-19.png)
+   ![Dialogrutan Funktioner i Image Components](/help/assets/image-design-features-source.png)
 
    Välj alternativet **Tillåt överföring av resurser från filsystemet** för att tillåta innehållsförfattare att överföra bilder från sin lokala dator. Om du bara vill tvinga innehållsförfattare att välja resurser från AEM avmarkerar du det här alternativet.
 
 * Orientering
 
-   ![](/help/assets/chlimage_1-20.png)
+   ![Dialogrutan Funktioner i Image Components](/help/assets/image-design-features-orientation.png)
 
 * **Rotera** Använd det här alternativet om du vill tillåta innehållsförfattaren att använda alternativet **Rotera åt höger** .
 * **Vänd** Använd det här alternativet om du vill att innehållsförfattaren ska kunna använda alternativen **Vänd vågrätt** och **Vänd lodrätt** .
@@ -245,7 +220,7 @@ På fliken **Funktioner** kan du ange vilka alternativ som är tillgängliga fö
 
 * Beskärning
 
-   ![](/help/assets/chlimage_1-21.png)
+   ![Dialogrutan Funktioner i Image Components](/help/assets/image-design-features-cropping.png)
 
    Välj alternativet **Tillåt beskärning** så att innehållsförfattaren kan beskära bilden i komponenten i redigeringsdialogrutan.
    * Klicka på **Lägg** till för att lägga till en fördefinierad beskärningsproportion.
