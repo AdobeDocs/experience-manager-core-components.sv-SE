@@ -2,7 +2,7 @@
 title: Progress Bar-komponent
 description: Förloppsindikatorkomponenten visar förloppet mot ett mål
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: cba1d898d7789af7f4045ef9aa052b4da6a6b33a
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 2%
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Progress Bar-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_progress).
+Om du vill visa Progress Bar-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_progressbar).
 
 ### Teknisk information {#technical-details}
 
