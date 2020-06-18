@@ -2,9 +2,9 @@
 sub-product: AEM Core-komponenter
 user-guide-title: AEM Core-komponenter
 translation-type: tm+mt
-source-git-commit: c07dc21b1973ec541a1d96047f8a30aca8cfb886
+source-git-commit: d344b5bf90099f9df6284cb097e006feac4973a3
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '183'
 ht-degree: 3%
 
 ---
@@ -36,6 +36,7 @@ ht-degree: 3%
    + [Lista](components/list.md)
    + [Navigering](components/navigation.md)
    + [Sida](components/page.md)
+   + [PDF Viewer](components/pdf-viewer.md)
    + [Förloppsindikator](components/progress-bar.md)
    + [Snabbsökning](components/quick-search.md)
    + [Avgränsare](components/separator.md)
@@ -72,7 +73,7 @@ ht-degree: 3%
    + Adobe Client Data Layer {#data-layer}
       + [Kärnkomponenter och Adobe Client Data Layer](developing/data-layer/overview.md)
       + [Integration med Adobe Launch](developing/data-layer/launch-integration.md)
-      + [Integrering med Adobe Analytics](developing/data-layer/analytics-integration.md)
+      + [Integration med Adobe Analytics](developing/data-layer/analytics-integration.md)
    + AEM Project Archetype {#archetype}
       + [Arketype - översikt](developing/archetype/overview.md)
       + [Använda Arketype](developing/archetype/using.md)
