@@ -2,10 +2,10 @@
 title: Introduktion till kärnkomponenter
 description: 'Core Components introducerades för att tillhandahålla stabila och utökningsbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 translation-type: tm+mt
-source-git-commit: b7e864686f31be8c0342b3f16750d276f554d219
+source-git-commit: bbbd918c7caf508866ae6dadbb8c815dca4e900b
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 2%
+source-wordcount: '848'
+ht-degree: 3%
 
 ---
 
@@ -32,7 +32,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 |  |  |
 |---|---|
 | Produktionsklart | Core Components är 28 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
-| Molnklar | Vare sig de arbetar på [AEM som molntjänst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller på plats fungerar de bara. |
+| Molnklar | Vare sig du arbetar på [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html), på [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller på plats fungerar de bara. |
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | Principer för [innehåll på mallnivå](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#content-policies) definierar vilka funktioner sidförfattarna får använda eller inte använda. |
 | Spårbar | Integreringen [av](/help/developing/data-layer/overview.md) Adobe Client Data Layer möjliggör spårning av alla aspekter av besökarupplevelsen. |
@@ -74,6 +74,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 * [Delning av sociala medier](components/sharing.md)
 * [Avgränsare](components/separator.md)
 * [Förloppsindikator](components/progress-bar.md)
+* [PDF Viewer](components/pdf-viewer.md)
 
 ### Behållarkomponenter {#container-components}
 
@@ -104,10 +105,10 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 | Kärnkomponenter | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
 ---------|---------|---------|---------|---------|---------
-| [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Kontinuerlig | 6.5.0.0+ | 6.4.4.0+ | 8, 11 | 3.3.9+ |
+| [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | Kontinuerlig | 6.5.0.0+ | 6.4.4.0+ | 8, 11 | 3.3.9+ |
 
 Krav från tidigare versioner av Core Component finns i [Core Components Versions](versions.md).
 
 Core-komponenterna kräver [redigerbara mallar](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) och stöder inte klassiska användargränssnitt eller statiska mallar. Om det behövs kan du kolla in [AEM Modernization Tools](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) för att uppdatera projektet med dessa moderna AEM-funktioner.
 
-Om du vill konfigurera din lokala utvecklingsmiljö kan du läsa [den här översikten för AEM som en molntjänst-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller det här dokumentet [för äldre versioner av AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Om du vill konfigurera din lokala utvecklingsmiljö kan du ta en titt på [den här översikten för AEM som en Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller det här dokumentet [för äldre versioner av AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
