@@ -2,10 +2,10 @@
 title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
 translation-type: tm+mt
-source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+source-git-commit: bbbd918c7caf508866ae6dadbb8c815dca4e900b
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 1%
+source-wordcount: '1443'
+ht-degree: 3%
 
 ---
 
@@ -39,9 +39,9 @@ En större insats i ett befintligt projekt (till exempel en omprofilering eller 
 [Med AEM Modernization Tools](http://opensource.adobe.com/aem-modernize-tools/) blir det enkelt att konvertera
 
 * Statiska mallar till redigerbara mallar
-* Utforma konfigurationer enligt policyer
-* Foundation Components to Core Components
-* Klassiskt användargränssnitt till pekaktiverat användargränssnitt
+* Designkonfigurationer till policyer
+* Foundation-komponenter till Core-komponenter
+* Klassiskt användargränssnitt till pekaktiverat användargränssnitt 
 
 Mer information om hur dessa verktyg används [finns i dokumentationen](http://opensource.adobe.com/aem-modernize-tools/)till dem.
 
@@ -53,7 +53,7 @@ Mer information om hur dessa verktyg används [finns i dokumentationen](http://o
 
 Core Components är en integrerad del av AEM och stöds i befintligt skick, på samma villkor som om de levererades som en del av QuickStart.
 
-Liksom andra AEM-funktioner är den allmänna regeln: Komponenter tillkännages först som borttagna och den tidigaste borttagningen för följande AEM-version. Det ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan stödet släpps.
+Liksom andra AEM-funktioner är den allmänna regeln: Komponenter tillkännages först som borttagna och den tidigaste borttagningen för nästa AEM-version. Det ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan stödet släpps.
 
 Versionen för varje komponent anger tydligt vilka AEM-versioner som stöds. När supporten upphör för en version av AEM gör även stödet för Core Components för den versionen av AEM det.
 
@@ -115,6 +115,7 @@ I följande tabell visas de tillgängliga kärnkomponenterna, som länkar till d
 | [Experience Fragment](https://adobe.com/go/aem_cmp_tech_xf_v1) | Lägga till ett upplevelsefragment på en sida | `/libs/cq/experience-fragments/editor/components/experiencefragment` |
 | [Bädda in](https://adobe.com/go/aem_cmp_tech_embed_v1) | Bädda in en extern resurs på en sida | - |
 | [Förloppsindikator](https://adobe.com/go/aem_cmp_tech_progress_v1) | Ge en visuell representation av framstegen mot ett mål | - |
+| [PDF Viewer](https://adobe.com/go/aem_cmp_tech_pdf_viewer_v1) | Presenterar ett PDF-dokument på en sida | - |
 
 ### Kommande komponenter {#upcoming-components}
 
