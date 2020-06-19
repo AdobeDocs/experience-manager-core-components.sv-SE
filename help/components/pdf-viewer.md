@@ -2,9 +2,9 @@
 title: PDF Viewer-komponent
 description: Med PDF Viewer Component kan du visa ett PDF-dokument.
 translation-type: tm+mt
-source-git-commit: 0df759a020020c21d776eb8f45d40cb7aff45cea
+source-git-commit: b08fc5ec49126f7be19b7433a3d71de877d9e442
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 1%
 
 ---
@@ -33,11 +33,11 @@ Mer information om Core Component-versioner och -versioner finns i dokumentet [C
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa komponenterna i PDF Viewer samt se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_pdf_viewer).
+Om du vill visa komponenterna i PDF Viewer samt se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_pdfviewer).
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om PDF Viewer Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_pdf-viewer_v1).
+Den senaste tekniska dokumentationen om PDF Viewer Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
 
