@@ -2,9 +2,9 @@
 title: Använda Adobe Client Data Layer med Core Components
 description: Använda Adobe Client Data Layer med Core Components
 translation-type: tm+mt
-source-git-commit: 539a4250c954ac830731a9ecf010e129b2cf9c3a
+source-git-commit: 57116fa8f8a71259400881609775af4047cd2225
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '418'
 ht-degree: 1%
 
 ---
@@ -33,6 +33,7 @@ Datalagret är dock inte aktiverat som standard. Så här aktiverar du datalagre
 
 1. Skapa följande struktur under `/conf` noden:
    * `/conf/<mySite>/sling:configs/com.adobe.cq.wcm.core.components.internal.DataLayerConfig`
+   * Nodtyp: `nt:unstructured`
 1. Lägg till en boolesk egenskap med namnet `enabled` och ställ in den på `true`.
 1. Lägg till en `sling:configRef` egenskap till `jcr:content` noden på platsen nedan `/content` (t.ex. `/content/<mySite>/jcr:content`) och ställ in den på `/conf/<mySite>`.
 
