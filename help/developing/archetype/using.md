@@ -2,7 +2,7 @@
 title: Använda AEM Project Archetype
 description: Detaljerade användningsinstruktioner för AEM-projektarkitypen
 translation-type: tm+mt
-source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+source-git-commit: 55b4dde320dcb38935b55b273d4df8d0cc2f16e6
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Det finns förstås många element som ingår i ett framgångsrikt AEM-projekt, 
 
 Projektets arkityp gör det enkelt att komma igång med utvecklingen på AEM. Du kan utföra dina första steg på flera olika sätt.
 
-* WKND-självstudiekurs - En bra introduktion till hur du utvecklar med AEM, inklusive hur du utnyttjar typen av arkiv, finns i självstudiekursen [Komma igång med AEM Sites - WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) , där du får ett praktiskt exempel som visar hur du använder typen av arkiv för att implementera ett enkelt projekt.
+* WKND-självstudiekurs - En bra introduktion till hur du utvecklar med AEM, inklusive hur du kan utnyttja arkitypen finns i självstudiekursen [Komma igång med AEM Sites - WKND](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) , som visar hur du använder arkitypen för att implementera ett enkelt projekt.
 * WKND Events-självstudiekurs - Om du är särskilt intresserad av SPA-utveckling (single page application) på AEM, ska du titta på den dedikerade [WKND Events-självstudiekursen](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 * Ladda ned och börja själv! - Du kan enkelt hämta den aktuella projekttypen som finns på GitHub och skapa ditt första projekt genom att [följa de enkla stegen nedan](#how-to-use-the-archetype).
 
@@ -72,7 +72,7 @@ mvn -B archetype:generate \
 
 * Ange `XX` versionsnumret [](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) för den senaste AEM-projektarkitekturen.
 * Set `aemVersion=cloud` for [AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
-   Ange `aemVersion=6.5.0` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt.
+   Ange `aemVersion=6.5.0` för [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt.
 Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM som en CloudService.
 * Justera `appTitle="My Site"` för att definiera webbplatsens titel och komponentgrupper.
 * Justera `appId="mysite"` för att definiera Maven artifactId, komponentens, konfigurations- och innehållsmappens namn samt klientbibliotekens namn.
@@ -97,19 +97,21 @@ Följande egenskaper är tillgängliga när du skapar ett projekt med hjälp av 
 | `groupId` |  | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). |
 | `package` | *`${groupId}`* | Källpaket för Java (t.ex. `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Projektversion (t.ex. `1.0-SNAPSHOT`). |
-| `aemVersion` | `6.5.0` | Målversion (kan vara `cloud` för [AEM som molntjänst](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)). eller `6.5.0`, `6.4.4`eller `6.3.3` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokalt). |
+| `aemVersion` | `6.5.0` | Target AEM-version (kan vara `cloud` för [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)), eller `6.5.0`, `6.4.4`eller `6.3.3` för [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats). |
 | `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) -version kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokal, beroende på värdet för `aemVersion` (kan vara `y` eller `n`). |
 | `frontendModule` | `none` | Innehåller en Webpack-modul för klientbibliotek (kan finnas `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA-redigeraren](https://docs.adobe.com/content/help/en/experience-manager-65/developing/headless/spas/spa-overview.html)). |
 | `languageCountry` | `en_us` | Språk- och landskod för att skapa innehållsstrukturen från (t.ex. `en_us`). |
-| `singleCountry` | `y` | Innehåller en innehållsstruktur för språk-mallsidor (kan vara `y`eller `n`). |
+| `singleCountry` | `y` | Innehåller en innehållsstruktur på överordnad (kan vara `y`eller `n`). |
 | `includeExamples` | `y` | Innehåller en exempelplats för [komponentbibliotek](https://www.aemcomponents.dev/) (kan vara `y`eller `n`). |
 | `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som kommer att vara global för hela instansen (kan vara `y` eller `n`). |
 
 >[!NOTE]
+>
 > Om arkitypen körs i interaktivt läge första gången går det inte att ändra egenskaper med standardvärden (mer information finns i [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) ). Värdet kan ändras när egenskapsbekräftelsen i slutet nekas och enkäten upprepas, eller genom att parametern skickas i kommandoraden (t.ex. `-DoptionIncludeExamples=n`).
 
 >[!NOTE]
+>
 >När du kör i Windows och genererar dispatcherkonfigurationen bör du köra i en förhöjd kommandotolk eller i Windows-undersystemet för Linux (se [problem 329](https://github.com/adobe/aem-project-archetype/issues/329)).
 
 ### Profiler {#profiles}
