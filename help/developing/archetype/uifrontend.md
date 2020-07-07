@@ -2,14 +2,17 @@
 title: AEM Project Archetype Front-End Build
 description: En projektmall för AEM-baserade program
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 55b4dde320dcb38935b55b273d4df8d0cc2f16e6
+workflow-type: tm+mt
+source-wordcount: '1613'
+ht-degree: 0%
 
 ---
 
 
 # ui.frontModule för AEM Project Archetype {#uifrontend-module}
 
-AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir därmed den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. Om du vill utnyttja den här användbara och flexibla funktionen till fullo är det viktigt att du förstår hur frontendutvecklingen passar in i ett AEM-projekt.
+AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir alltså den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. Om du vill utnyttja den här användbara och flexibla funktionen till fullo är det viktigt att du förstår hur frontendutvecklingen passar in i ett AEM-projekt.
 
 ## AEM Projects och Front-End Development {#aem-and-front-end-development}
 
@@ -29,6 +32,7 @@ När du kör `npm run dev` startas frontendkonstruktionsprocessen som samlar de 
 När hela AEM-projekts arketyp körs med `mvn clean install -PautoInstallPackage` alla projektartefakter, inklusive ClientLibs, skickas sedan till AEM-instansen.
 
 >[!TIP]
+>
 >Läs mer om ClientLibs i [AEM-utvecklingsdokumentationen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) och [hur ui.front-modulen använder dem nedan](#clientlib-generation).
 
 ## ClientLibs Overview {#clientlibs}
@@ -145,6 +149,7 @@ Modulen ui.front kompilerar koden under `ui.frontend/src` mappen och matar ut ko
 * Källmappning - endast utvecklingsbygge
 
 >[!NOTE]
+>
 >Det första byggalternativet använder konfigureringsfiler för enbart dev och endast prod, som delar en gemensam konfigurationsfil. På så sätt kan utvecklings- och produktionsinställningarna ändras oberoende av varandra.
 
 ### Generering av klientbibliotek {#clientlib-generation}
