@@ -2,9 +2,9 @@
 title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vilka versioner som är tillgängliga och hur man förstår kompatibiliteten med Core Components och AEM.
 translation-type: tm+mt
-source-git-commit: 5a953588f83e13e50924a2bd9afa2466e3ef6f4d
+source-git-commit: 3136a82a0b523e13227def893d516017873f4365
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1735'
 ht-degree: 12%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 12%
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.10.0 och är kompatibel med [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html) -installationer. Den släpptes i juni 2020 som en viktig uppdatering till version 2.0.0. I version 2.0.0 introducerades nya komponenter tillsammans med v2-uppdateringar av befintliga komponenter.
+Den aktuella versionen av Core Components är 2.11.0 och är kompatibel med [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html) -installationer. Den släpptes i juli 2020 som en viktig uppdatering till version 2.0.0. I version 2.0.0 introducerades nya komponenter tillsammans med v2-uppdateringar av befintliga komponenter.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,6 +26,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|---|
+| [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades AMP-stöd. | - | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 20 juli 2020 |
 | [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | I den här versionen introducerades PDF Viewer-komponenten. | - | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 17 juni 2020 |
 | [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Den här versionen aktiverade integrering med Adobe Client Data Layer och introducerade komponenten Progress Bar. | - | 6.4.8.0+ | 6.5.4.0+ | Kontinuerlig | 8, 11 | 29 maj 2020 |
 | [2.8.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.8.0) | Den här versionen fokuserar på korrigeringar med små förbättringar. | 6.3.3.4+ | 6.4.4.0+ | 6.5.0.0+ | Kontinuerlig | 8, 11 | 5 december 2019 |
