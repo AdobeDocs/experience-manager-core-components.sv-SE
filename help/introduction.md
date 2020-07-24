@@ -2,10 +2,10 @@
 title: Introduktion till kärnkomponenter
 description: 'Core Components introducerades för att tillhandahålla stabila och utökningsbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 translation-type: tm+mt
-source-git-commit: 5a953588f83e13e50924a2bd9afa2466e3ef6f4d
+source-git-commit: 6d21773dbf09b5e6622c51c662c4070e0242b7d6
 workflow-type: tm+mt
-source-wordcount: '848'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -39,6 +39,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 | Tillgänglig | De uppfyller [WCAG 2.1-standarden](https://www.w3.org/TR/WCAG21/), tillhandahåller ARIA-etiketter och stöder tangentbordsnavigering ([kända fel](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-vänlig | HTML-utdata är semantiska och innehåller [schema.org](https://schema.org) -mikrodataanteckningar. |
 | WebApp-Ready | Den [strömlinjeformade JSON-utdata](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) möjliggör rendering på klientsidan, fortfarande med möjlighet till [kontextredigering](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
+| Stöd för AMP | Komponenterna har inbyggt [stöd för AMP-standarden,](/help/developing/amp.md) vilket snabbar upp era mobilupplevelser. |
 | Design Kit | Med ett [gränssnittspaket för Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) kan designers skapa trådramar som de sedan kan [formatera efter behov](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_WKND.xd). |
 | Temaperbar | Komponenterna implementerar [Style System](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/style-system.html)och koden följer [BEM CSS-konventioner](http://getbem.com/). |
 | Anpassningsbar | Flera mönster gör det [enkelt att anpassa](developing/customizing.md), från att justera HTML till avancerad återanvändning av funktioner. |
@@ -105,7 +106,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 | Kärnkomponenter | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
 ---------|---------|---------|---------|---------|---------
-| [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | Kontinuerlig | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
+| [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | Kontinuerlig | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
 
 Krav från tidigare versioner av Core Component finns i [Core Components Versions](versions.md).
 
