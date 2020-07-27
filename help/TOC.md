@@ -1,8 +1,9 @@
 ---
 sub-product: AEM Core-komponenter
 user-guide-title: AEM Core-komponenter
+user-guide-description: Use the extensible Core Components to let authors easily create content.
 translation-type: tm+mt
-source-git-commit: 6d21773dbf09b5e6622c51c662c4070e0242b7d6
+source-git-commit: dc8d63bca14996f230d4f8e68b7706d315955e06
 workflow-type: tm+mt
 source-wordcount: '185'
 ht-degree: 3%
@@ -74,7 +75,7 @@ ht-degree: 3%
    + Adobe Client Data Layer {#data-layer}
       + [Kärnkomponenter och Adobe Client Data Layer](developing/data-layer/overview.md)
       + [Integration med Adobe Launch](developing/data-layer/launch-integration.md)
-      + [Integration med Adobe Analytics](developing/data-layer/analytics-integration.md)
+      + [Integrering med Adobe Analytics](developing/data-layer/analytics-integration.md)
    + AEM Project Archetype {#archetype}
       + [Arketype - översikt](developing/archetype/overview.md)
       + [Använda Arketype](developing/archetype/using.md)
