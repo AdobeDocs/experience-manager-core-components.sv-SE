@@ -1,17 +1,17 @@
 ---
-sub-product: AEM Core-komponenter
-user-guide-title: AEM Core-komponenter
+sub-product: AEM kärnkomponenter
+user-guide-title: AEM kärnkomponenter
 user-guide-description: Use the extensible Core Components to let authors easily create content.
 translation-type: tm+mt
-source-git-commit: dc8d63bca14996f230d4f8e68b7706d315955e06
+source-git-commit: 77123951c73f41f1673c7ca04f3af87f08e73775
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '191'
 ht-degree: 3%
 
 ---
 
 
-# Hjälp om AEM Core-komponenter {#using}
+# Hjälp för AEM Core Components {#using}
 
 + [Introduktion till kärnkomponenter](introduction.md)
 + [Sökvägar till lyckade](developing/success.md)
@@ -72,10 +72,12 @@ ht-degree: 3%
    + [Anpassa kärnkomponenter](developing/customizing.md)
    + [Riktlinjer för komponenter](developing/guidelines.md)
    + [Stöd för AMP](developing/amp.md)
-   + Adobe Client Data Layer {#data-layer}
-      + [Kärnkomponenter och Adobe Client Data Layer](developing/data-layer/overview.md)
-      + [Integration med Adobe Launch](developing/data-layer/launch-integration.md)
+   + [Kontextmedvetna konfigurationer](developing/context-aware-configs.md)
+   + Adobe-klientdatalager {#data-layer}
+      + [Kärnkomponenter och Adobe-klientdatalagret](developing/data-layer/overview.md)
+      + [Integrering med Adobe Launch](developing/data-layer/launch-integration.md)
       + [Integrering med Adobe Analytics](developing/data-layer/analytics-integration.md)
+      + [Utöka datalagret](developing/data-layer/extending.md)
    + AEM Project Archetype {#archetype}
       + [Arketype - översikt](developing/archetype/overview.md)
       + [Använda Arketype](developing/archetype/using.md)
