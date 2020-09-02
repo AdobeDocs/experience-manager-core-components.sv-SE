@@ -2,16 +2,15 @@
 title: PDF Viewer-komponent
 description: Med PDF Viewer Component kan du visa ett PDF-dokument.
 translation-type: tm+mt
-source-git-commit: b08fc5ec49126f7be19b7433a3d71de877d9e442
+source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '705'
 ht-degree: 1%
 
 ---
 
 
 # PDF Viewer-komponent {#pdf-viewer-component}
-
 
 Komponenten Core Component PDF Viewer gör det möjligt att inkludera ett PDF-dokument på en sida.
 
@@ -23,7 +22,7 @@ Komponenten Core Component PDF Viewer bäddar in ett visningsprogram som visar P
 
 Den aktuella versionen av PDF Viewer Component är v1, som introducerades i version 2.10.0 av Core Components i juni 2020, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
@@ -40,6 +39,10 @@ Om du vill visa komponenterna i PDF Viewer samt se exempel på dess konfiguratio
 Den senaste tekniska dokumentationen om PDF Viewer Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+
+>[!NOTE]
+>
+>PDF Viewer-komponenten använder [Adobe Document Services API](https://www.adobe.io/apis/documentcloud/dcsdk.html) och kräver att administratören konfigurerar en [kontextmedveten konfiguration](/help/developing/context-aware-configs.md) för att kunna använda dessa tjänster. Mer [information om konfigurationen finns i komponentens tekniska dokumentation.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/pdfviewer/v1/pdfviewer#context-aware-config)
 
 ## Konfigurera dialogruta {#configure-dialog}
 
