@@ -1,35 +1,34 @@
 ---
-title: Använda Adobe Client Data Layer med Core Components
-description: Använda Adobe Client Data Layer med Core Components
+title: Använda Adobe-klientdatalagret med kärnkomponenterna
+description: Använda Adobe-klientdatalagret med kärnkomponenterna
 translation-type: tm+mt
-source-git-commit: 57116fa8f8a71259400881609775af4047cd2225
+source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '426'
 ht-degree: 1%
 
 ---
 
 
-# Använda Adobe Client Data Layer med Core Components {#data-layer-core-components}
+# Använda Adobe-klientdatalagret med kärnkomponenterna {#data-layer-core-components}
 
-Målet med Adobe Client Data Layer är att minska arbetet med att instrumentera webbplatser genom att tillhandahålla en standardiserad metod för att exponera och få tillgång till alla typer av data för alla typer av skript.
+Målet med Adobe Client Data Layer är att minska ansträngningarna att instrumentera webbplatser genom att tillhandahålla en standardiserad metod för att exponera och få tillgång till alla typer av data för alla typer av skript.
 
-Adobe Client Data Layer är plattformsoberoende, men är helt integrerad i de centrala komponenterna för AEM.
+Adobe Client Data Layer är plattformsoberoende, men är helt integrerad i de centrala komponenterna för användning med AEM.
 
-Precis som Core-komponenterna är koden för Adobe Client Data Layer tillgänglig på GitHub tillsammans med utvecklardokumentationen. Det här dokumentet ger en översikt över hur kärnkomponenterna interagerar med datalagret, men fullständig teknisk information finns i GitHub-dokumentationen.
+Precis som Core-komponenterna är koden för Adobe-klientdatalagret tillgänglig på GitHub tillsammans med utvecklardokumentationen. Det här dokumentet ger en översikt över hur kärnkomponenterna interagerar med datalagret, men fullständig teknisk information finns i GitHub-dokumentationen.
 
 >[!TIP]
 >
 >Mer information om Adobe Client Data Layer [finns i resurserna i dess GitHub-databas.](https://github.com/adobe/adobe-client-data-layer)
 >
->Mer teknisk information om integrationen av Adobe Client Data Layer med Core Components finns i filen i Core Components-databasen. [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)
-
+>Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components finns i filen i Core Components-databasen [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) .
 
 ## Installation och aktivering {#installation-activation}
 
 Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som en clientlib. Ingen installation krävs.
 
-Datalagret är dock inte aktiverat som standard. Så här aktiverar du datalagret
+Datalagret är dock inte aktiverat som standard. Om du vill aktivera datalagret måste du skapa en [kontextmedveten konfiguration](/help/developing/context-aware-configs.md) för det:
 
 1. Skapa följande struktur under `/conf` noden:
    * `/conf/<mySite>/sling:configs/com.adobe.cq.wcm.core.components.internal.DataLayerConfig`
