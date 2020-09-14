@@ -2,7 +2,7 @@
 title: AEM Project Archetype
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: ed8c4609683d8e43ebc6859694ff7b9578fb07ff
+source-git-commit: 1e95666ee58c63fc5dc98821e6424be6acfe4e04
 workflow-type: tm+mt
 source-wordcount: '989'
 ht-degree: 3%
@@ -95,7 +95,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 ## Systemkrav
 
 | Arketyp | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
----------|---------|---------|---------|---------|---------|---------
+|---------|---------|---------|---------|---------|---------|
 | [24](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-24) | Kontinuerlig | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
 
 Konfigurera den lokala utvecklingsmiljön för [AEM som Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
