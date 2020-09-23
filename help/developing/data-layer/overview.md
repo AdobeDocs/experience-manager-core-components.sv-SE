@@ -2,9 +2,9 @@
 title: Använda Adobe-klientdatalagret med kärnkomponenterna
 description: Använda Adobe-klientdatalagret med kärnkomponenterna
 translation-type: tm+mt
-source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
+source-git-commit: 4a44a5f584efa736320556f6b4e2f4126d058a48
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '575'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ Schemat för komponent-/behållarobjekt används i följande komponenter:
 
 Schemat för komponent-/behållarobjektet definieras enligt följande.
 
-```
+```javascript
 id: {                   // component ID
     @type               // resource type
     repo:modifyDate     // last modified date
@@ -69,6 +69,9 @@ id: {                   // component ID
 }
 ```
 
+Följande [händelse](#events) är relevant för schema för komponent-/behållarobjekt:
+
+* `cmp:click`
 
 ### Sidschema {#page}
 
@@ -78,7 +81,7 @@ Sidschemat används av följande komponent:
 
 Sidschemat definieras enligt följande.
 
-```
+```javascript
 id: {
     @type
     repo:modifyDate
@@ -104,7 +107,7 @@ Behållarschemat används av följande komponenter:
 
 Behållarschemat definieras så här.
 
-```
+```javascript
 id: {
     @type
     repo:modifyDate
@@ -117,6 +120,12 @@ id: {
 }
 ```
 
+Följande [händelser](#events) är relevanta för behållarschemat:
+
+* `cmp:click`
+* `cmp:show`
+* `cmp:hide`
+
 ### Bildschema {#image}
 
 Bildschemat används av följande komponent:
@@ -125,7 +134,7 @@ Bildschemat används av följande komponent:
 
 Bildschemat definieras så här.
 
-```
+```javascript
 id: {
     @type
     repo:modifyDate
@@ -138,13 +147,17 @@ id: {
 }
 ```
 
+Följande [händelse](#events) är relevant för Image-schemat:
+
+* `cmp:click`
+
 ### Resursschema {#asset}
 
 Resursschemat används inuti [Image-komponenten.](/help/components/image.md)
 
 Resursschemat definieras så här.
 
-```
+```javascript
 id: {
     repo:id             // asset UUID
     repo:path           // asset path
@@ -154,3 +167,28 @@ id: {
 }
 ```
 
+Följande [händelse](#events) är relevant för resursschemat:
+
+* `cmp:click`
+
+## Händelser {#events}
+
+Det finns ett antal händelser som utlöses av datalagret.
+
+* **`cmp:click`** - Om du klickar på ett klickbart element (ett element som har ett `data-cmp-clickable` attribut) utlöser datalagret en `cmp:click` händelse.
+* **`cmp:show`** och **`cmp:hide`** - Om du ändrar dragspelsfliken (expanderar/komprimerar), karusellen (nästa/föregående knappar) och flikarna (tabbmarkera) utlöses datalagret `cmp:show` respektive en `cmp:hide` händelse.
+* **`cmp:loaded`** - När datalagret har fyllts i med huvudkomponenterna på sidan utlöser datalagret en `cmp:loaded` händelse.
+
+### Händelser utlösta av komponent {#events-components}
+
+I följande tabeller visas de standardkomponenter som utlöser händelser tillsammans med dessa händelser.
+
+| Komponent | Händelser |
+|---|---|
+| [Navigering](/help/components/navigation.md) | `cmp:click` |
+| [Språknavigering](/help/components/language-navigation.md) | `cmp:click` |
+| [Breadcrumb](/help/components/breadcrumb.md) | `cmp:click` |
+| [Knapp](/help/components/button.md) | `cmp:click` |
+| [Carousel](/help/components/carousel.md) | `cmp:show` and `cmp:hide` |
+| [Tabbar](/help/components/tabs.md) | `cmp:show` and `cmp:hide` |
+| [Dragspel](/help/components/accordion.md) | `cmp:show` and `cmp:hide` |
