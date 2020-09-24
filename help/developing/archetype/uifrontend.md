@@ -1,10 +1,10 @@
 ---
 title: AEM Project Archetype Front-End Build
-description: En projektmall för AEM-baserade program
+description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: 55b4dde320dcb38935b55b273d4df8d0cc2f16e6
+source-git-commit: d8503d92c2d4948e54b2ad7d5407e4c7c98ebf83
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # ui.frontModule för AEM Project Archetype {#uifrontend-module}
 
-AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir alltså den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. Om du vill utnyttja den här användbara och flexibla funktionen till fullo är det viktigt att du förstår hur frontendutvecklingen passar in i ett AEM-projekt.
+AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir därmed den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. För att till fullo kunna utnyttja denna användbara och flexibla funktion är det viktigt att förstå hur frontendutvecklingen passar in i ett AEM projekt.
 
-## AEM Projects och Front-End Development {#aem-and-front-end-development}
+## AEM och frontendutvecklingsprojekt {#aem-and-front-end-development}
 
-I betydligt förenklade termer kan man tänka sig att AEM-projekt består av två separata men relaterade delar:
+I betydligt förenklade termer kan man tänka sig att AEM projekt består av två separata men sammanhörande delar:
 
 * Bakgrundsutveckling som driver logiken i AEM och skapar Java-bibliotek, OSGi-tjänster osv.
 * Framtidsutveckling som driver presentationen och beteendet på den slutliga webbplatsen och skapar JavaScript- och CSS-bibliotek
@@ -27,13 +27,13 @@ Eftersom dessa två utvecklingsprocesser är inriktade på olika delar av projek
 
 Alla resulterande projekt måste dock använda resultatet från båda dessa utvecklingssatsningar, dvs. både back end och front end.
 
-När du kör `npm run dev` startas frontendkonstruktionsprocessen som samlar de JavaScript- och CSS-filer som lagras i modulen ui.front och skapar två minifierade klientbibliotek eller ClientLibs som anropas `clientlib-site` och `clientlib-dependencies` placerar dem i modulen ui.apps. ClientLibs kan distribueras till AEM och gör att du kan lagra din klientkod i databasen.
+När du kör `npm run dev` startas frontendkonstruktionsprocessen som samlar de JavaScript- och CSS-filer som lagras i modulen ui.front och skapar två minifierade klientbibliotek eller ClientLibs som anropas `clientlib-site` och `clientlib-dependencies` placerar dem i modulen ui.apps. ClientLibs kan distribueras för att AEM och tillåta dig att lagra din klientkod i databasen.
 
-När hela AEM-projekts arketyp körs med `mvn clean install -PautoInstallPackage` alla projektartefakter, inklusive ClientLibs, skickas sedan till AEM-instansen.
+När hela AEM projekts arkityp körs med `mvn clean install -PautoInstallPackage` alla projektartefakter, inklusive ClientLibs, skickas sedan till AEM.
 
 >[!TIP]
 >
->Läs mer om ClientLibs i [AEM-utvecklingsdokumentationen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) och [hur ui.front-modulen använder dem nedan](#clientlib-generation).
+>Läs mer om hur AEM hanterar ClientLibs i [AEM-utvecklingsdokumentationen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html), hur du [inkluderar dem](/help/developing/including-clientlibs.md)eller se [hur ui.front-modulen använder dem nedan.](#clientlib-generation)
 
 ## ClientLibs Overview {#clientlibs}
 
@@ -42,9 +42,9 @@ Framtend-modulen är tillgänglig med en [AEM ClientLib](https://helpx.adobe.com
 En ClientLib består av följande filer och kataloger:
 
 * `css/`: CSS-filer som kan begäras i HTML
-* `css.txt`: Anger ordning och namn på filer i AEM så `css/` att de kan sammanfogas
+* `css.txt`: AEM ordning och namn på filer i `css/` så att de kan sammanfogas
 * `js/`: JavaScript-filer som kan begäras i HTML
-* `js.txt` Anger ordning och namn på filer i AEM så `js/` att de kan sammanfogas
+* `js.txt` AEM ordning och namn på filer i `js/` så att de kan sammanfogas
 * `resources/`: Källmappningar, kodsegment som inte är ingångspunkter (till följd av koddelning), statiska resurser (t.ex. ikoner) osv.
 
 ## Möjliga arbetsflöden för utveckling i gränssnittet {#possible-workflows}
@@ -53,14 +53,14 @@ Framtidsmodulen är ett användbart och mycket flexibelt verktyg, men har ingen 
 
 ### Använda Statisk utvecklingsserver för Webpack {#using-webpack}
 
-Med Webpack kan du utforma och utveckla baserat på statiska utdata från AEM-webbsidor i modulen ui.front.
+Med Webpack kan du utforma och utveckla baserat på statiska utdata från AEM webbsidor i modulen ui.front.
 
-1. Förhandsgranska sidan i AEM med förhandsgranskningsläget eller skicka `wcmmode=disabled` i URL:en
+1. Förhandsgranska sidan i AEM med förhandsgranskningsläget eller skicka `wcmmode=disabled` i URL-adressen
 1. Visa sidans källa och spara som statisk HTML i modulen ui.front
 1. [Starta webbpaketet](#webpack-dev-server) och börja formatera och generera nödvändigt JavaScript och CSS
 1. Kör `npm run dev` för att generera ClientLibs
 
-I det här flödet kan en AEM-utvecklare utföra steg ett och två och skicka den statiska HTML-koden till den frontutvecklare som utvecklar baserat på AEM HTML-utdata.
+I det här flödet kan en AEM utföra steg ett och två och skicka den statiska HTML-koden till den frontendutvecklare som utvecklar baserat på AEM HTML-utdata.
 
 >[!TIP]
 >
@@ -76,11 +76,11 @@ Med [Storybook](https://storybook.js.org) kan du utföra mer atomiskt framend-ar
 
 ### Bestämma markeringen {#determining-markup}
 
-Oavsett vilket utvecklingsarbetsflöde ni bestämmer er för att implementera för projektet måste backend-utvecklarna och front end-utvecklarna först komma överens om koden. Vanligtvis definierar AEM koden, som tillhandahålls av kärnkomponenterna. [Detta kan dock anpassas vid behov](/help/developing/customizing.md#customizing-the-markup).
+Oavsett vilket utvecklingsarbetsflöde ni bestämmer er för att implementera för projektet måste backend-utvecklarna och front end-utvecklarna först komma överens om koden. AEM definierar vanligtvis koden, som tillhandahålls av kärnkomponenterna. [Detta kan dock anpassas vid behov](/help/developing/customizing.md#customizing-the-markup).
 
 ## Modulen ui.front {#ui-frontend-module}
 
-AEM Project Archetype innehåller en dedikerad frontendkonstruktionsmekanism som bygger på Webpack med följande funktioner.
+AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som är baserad på Webpack med följande funktioner.
 
 * Fullt stöd för TypeScript, ES6 och ES5 (med tillämpliga Webpack-wrappers)
 * TypeScript- och JavaScript-linting med en TSLint-regeluppsättning
@@ -93,7 +93,7 @@ AEM Project Archetype innehåller en dedikerad frontendkonstruktionsmekanism som
    * Globen hämtar alla JS-filer under `/component/` mappen.
       * Med Webpack kan CSS-/SCSS-filer kedjas i via JS-filer.
       * De dras in genom de två ingångspunkterna `sites.js` och `vendors.js`.
-   * Den enda fil som används av AEM är utdatafilerna `site.js` och `site.css` i `/clientlib-site` samt `dependencies.js` och `dependencies.css` i `/clientlib-dependencies`
+   * Den enda fil som AEM använder är utdatafilerna `site.js` och `site.css` i `/clientlib-site` samt `dependencies.js` och `dependencies.css` i `/clientlib-dependencies`
 * Chunks
    * Main (site js/css)
    * Leverantörer (beroenden js/css)
@@ -119,7 +119,7 @@ Följande nPM-skript driver arbetsflödet framåt:
 
 * `npm run dev` - fullständigt bygge med JS-optimering inaktiverad (trädskakning osv.) och källmappningar aktiverade och CSS-optimering inaktiverad.
 * `npm run prod` - fullständigt bygge med JS-optimering aktiverad (trädskakning osv.), källmappningar inaktiverade och CSS-optimering aktiverad.
-* `npm run start` - Startar en statisk webbpaketsutvecklingsserver för lokal utveckling med minimalt beroende av AEM.
+* `npm run start` - Startar en statisk webbpaketsutvecklingsserver för lokal utveckling med minimalt AEM.
 
 ## Output {#output}
 
@@ -191,18 +191,18 @@ I modulen ui.front ingår en webpack-dev-server som tillhandahåller direktladdn
 
 * `ui.frontend/webpack.dev.js`
    * Detta innehåller konfigurationen för webbpack-dev-server och pekar på html-mallen som ska användas.
-   * Den innehåller också en proxykonfiguration för en AEM-instans som körs på localhost:4502.
+   * Den innehåller också en proxykonfiguration för en AEM som körs på localhost:4502.
 * `ui.frontend/src/main/webpack/static/index.html`
    * Det här är den statiska HTML-kod som servern ska köras mot.
    * På så sätt kan utvecklare göra CSS-/JS-ändringar och omedelbart se hur de återspeglas i koden.
-   * Det antas att koden som placeras i den här filen korrekt återger den kod som genereras av AEM-komponenterna.
-   * Markeringar i den här filen synkroniseras inte automatiskt med AEM-komponentkod.
-   * Den här filen innehåller även referenser till klientbibliotek som lagras i AEM, t.ex. Core Component CSS och Responsive Grid CSS.
-   * Webbpaketets utvecklingsserver är konfigurerad för att proxyvisa dessa CSS/JS-inkluderingar från en lokal AEM-instans som körs baserat på konfigurationen som finns i `ui.frontend/webpack.dev.js`.
+   * Det antas att koden som placeras i den här filen korrekt återger den kod som genereras AEM komponenterna.
+   * Markeringar i den här filen synkroniseras inte automatiskt med AEM komponentkod.
+   * Den här filen innehåller även referenser till klientbibliotek som lagras i AEM, som CSS för kärnkomponent och CSS för responsivt stödraster.
+   * Webbpaketets utvecklingsserver är konfigurerad för att proxyta dessa CSS/JS-inkluderingar från en lokal AEM som körs baserat på konfigurationen som finns i `ui.frontend/webpack.dev.js`.
 
 #### Använda {#using-webpack-server}
 
-1. Kör kommandot i projektets rot `mvn -PautoInstallSinglePackage clean install` för att installera hela projektet till en AEM-instans som körs i `localhost:4502`.
+1. Kör kommandot i projektets rot `mvn -PautoInstallSinglePackage clean install` för att installera hela projektet till en AEM som körs i `localhost:4502`.
 1. Navigera i `ui.frontend` mappen.
 1. Kör följande kommando `npm run start` för att starta webbpaketets dev-server. När programmet har startats bör det öppna en webbläsare (`localhost:8080` eller nästa tillgängliga port).
 
