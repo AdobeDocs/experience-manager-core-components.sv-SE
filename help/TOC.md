@@ -4,9 +4,9 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Core Components Guide
 user-guide-description: Use the extensible Core Components to let authors easily create content.
 translation-type: tm+mt
-source-git-commit: b35b951a203b100e296bc3a115e34e27727293ae
+source-git-commit: 81d2282d33ef3f20e4115e38abbd0c801e03c974
 workflow-type: tm+mt
-source-wordcount: '185'
+source-wordcount: '188'
 ht-degree: 3%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 3%
    + [Riktlinjer för komponenter](developing/guidelines.md)
    + [Stöd för AMP](developing/amp.md)
    + [Kontextmedvetna konfigurationer](developing/context-aware-configs.md)
+   + [Inkluderar klientbibliotek](developing/including-clientlibs.md)
    + Adobe-klientdatalager {#data-layer}
       + [Översikt över datalagret](developing/data-layer/overview.md)
       + [Integrering med datalagret](developing/data-layer/integrations.md)
