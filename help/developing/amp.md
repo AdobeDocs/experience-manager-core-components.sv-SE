@@ -2,7 +2,7 @@
 title: AMP-stöd för kärnkomponenterna
 description: Kärnkomponenterna har stöd för AMP - accelererade mobilsidor
 translation-type: tm+mt
-source-git-commit: 24a810ff634f8846881dfa0095e879476d0f16f0
+source-git-commit: d8503d92c2d4948e54b2ad7d5407e4c7c98ebf83
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -60,7 +60,7 @@ AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](htt
 
 ### CSS-krav {#css-requirements}
 
-När du använder AMP med kärnkomponenterna är den största skillnaden att AMP kräver att alla CSS är inbäddade i `<head>` elementet samt optimerade.
+När du använder AMP med Core Components är den största skillnaden att AMP kräver att all [CSS är infogad](including-clientlibs.md#inlining) i `<head>` elementet samt optimerad.
 
 Som stöd för detta används en anpassad sidkomponent, som bara läser in den AMP-specifika CSS:en för komponenter som finns på sidan.
 
