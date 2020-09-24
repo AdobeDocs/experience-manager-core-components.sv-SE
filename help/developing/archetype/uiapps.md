@@ -1,8 +1,8 @@
 ---
-title: ui.apps Module för AEM Project Archetype
-description: ui.apps Module för AEM Project Archetype
+title: ui.apps-modulen för AEM Project Archetype
+description: ui.apps-modulen för AEM Project Archetype
 translation-type: tm+mt
-source-git-commit: 6f7166c46940ed451721e0760d565d58efe412ab
+source-git-commit: a427c2ade8cca69de8e2b59fc3afb4405342909c
 workflow-type: tm+mt
 source-wordcount: '335'
 ht-degree: 0%
@@ -10,11 +10,11 @@ ht-degree: 0%
 ---
 
 
-# ui.apps Module för AEM Project Archetype {#uiapps-module}
+# ui.apps-modulen för AEM Project Archetype {#uiapps-module}
 
-Modulen ui.apps maven (`<src-directory>/<project>/ui.apps`) innehåller all återgivningskod som behövs för webbplatsen under `/apps`. Detta inkluderar CSS/JS som lagras i ett AEM-format som kallas clientlibs. Detta inkluderar även HTML-skript för återgivning av dynamisk HTML. Du kan tänka dig modulen ui.apps som en karta till strukturen i JCR men i ett format som kan lagras i ett filsystem och användas för källkontroll.
+Modulen ui.apps maven (`<src-directory>/<project>/ui.apps`) innehåller all återgivningskod som behövs för webbplatsen under `/apps`. Detta inkluderar CSS/JS som lagras i ett AEM som kallas [clientlibs.](uifrontend.md#clientlibs) Detta inkluderar även HTML-skript för återgivning av dynamisk HTML. Du kan tänka dig modulen ui.apps som en karta till strukturen i JCR men i ett format som kan lagras i ett filsystem och användas för källkontroll.
 
-Plugin-programmet Apache Jackrabbit FileVault Package används för att kompilera innehållet i modulen ui.apps till ett AEM-paket som kan distribueras till AEM. De globala konfigurationerna för plugin-programmet definieras i den överordnade filen pom.xml.
+Plugin-programmet Apache Jackrabbit FileVault Package används för att kompilera innehållet i modulen ui.apps till ett AEM paket som kan distribueras till AEM. De globala konfigurationerna för plugin-programmet definieras i den överordnade filen pom.xml.
 
 ## Överordnad POM {#parent-pom}
 
