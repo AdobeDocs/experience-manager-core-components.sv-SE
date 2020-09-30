@@ -2,9 +2,9 @@
 title: Breadcrumb-komponent
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: ff943aeca0333b13e2b9aaf11f316457f001d507
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '709'
 ht-degree: 1%
 
 ---
@@ -24,12 +24,12 @@ Tillgängliga alternativ, t.ex. standardnavigeringsnivån och möjligheten att v
 
 Den aktuella versionen av Breadcrumb Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- | --- |--- |---|
+| v2 | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -53,7 +53,7 @@ I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva s
 
 ![Dialogruta för redigering av komponenten Breadcrumb](/help/assets/breadcrumb-edit.png)
 
-* **Startnivå** för navigering - Där i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan. Exempel i We.Retail:
+* **Startnivå** för navigering - Där i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan. Till exempel:
 
    * 0 börjar vid `/content`
    * 1 börjar vid `/content/<yourSite>`
