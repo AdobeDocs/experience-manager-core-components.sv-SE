@@ -2,9 +2,9 @@
 title: AEM Project Archetype Front-End Build
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: d8503d92c2d4948e54b2ad7d5407e4c7c98ebf83
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ När hela AEM projekts arkityp körs med `mvn clean install -PautoInstallPackage
 
 ## ClientLibs Overview {#clientlibs}
 
-Framtend-modulen är tillgänglig med en [AEM ClientLib](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html). När NPM-byggskriptet körs skapas appen och paketet aem-clientlib-generator tar det resulterande byggresultatet och omvandlar det till en sådan ClientLib.
+Framtend-modulen är tillgänglig med en [AEM ClientLib](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html). När NPM-byggskriptet körs skapas appen och paketet aem-clientlib-generator tar det resulterande byggresultatet och omvandlar det till en sådan ClientLib.
 
 En ClientLib består av följande filer och kataloger:
 
@@ -161,7 +161,7 @@ Byggningsprocessen för modulen ui.front utnyttjar plugin-programmet [aem-client
 
 ### Inkludera klientbibliotek på sidor {#clientlib-inclusion}
 
-`clientlib-site` och `clientlib-dependencies` kategorier inkluderas på sidor via [sidprincipskonfigurationen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html#template-definitions) som en del av standardmallen. Om du vill visa profilen redigerar du **Innehållssidmall > Sidinformation > Sidprofil**.
+`clientlib-site` och `clientlib-dependencies` kategorier inkluderas på sidor via [sidprincipskonfigurationen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#template-definitions) som en del av standardmallen. Om du vill visa profilen redigerar du **Innehållssidmall > Sidinformation > Sidprofil**.
 
 Klientbibliotek på webbplatssidan inkluderas slutligen på följande sätt:
 
