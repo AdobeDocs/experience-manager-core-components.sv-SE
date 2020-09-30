@@ -2,9 +2,9 @@
 title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '1934'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -30,12 +30,12 @@ Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsn
 
 Den aktuella versionen av Image Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/image-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/image-v1.md) | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -53,7 +53,7 @@ Av säkerhetsskäl anropas aldrig den ursprungliga SVG-filen direkt av bildredig
 
 >[!CAUTION]
 >
->SVG-stöd kräver version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller [Service Pack 3](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp3-release-notes.html) för AEM 6.3 eller senare för att ge stöd åt [nya bildredigeringsfunktioner](https://docs.adobe.com/content/help/en/experience-manager-64/developing/components/image-editor.html) i AEM.
+>SVG-stöd kräver version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för att ge stöd åt [bildredigeringsfunktionerna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/image-editor.html) i AEM.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -91,13 +91,14 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
    * Hämta alternativ text från DAM - När det här alternativet är markerat fylls bildens alternativa text med värdet för `dc:description` metadata i DAM.
 
 * **Bildtext** Ytterligare information om bilden, som visas under bilden som standard.
-   * **Hämta bildtext från DAM** När den är markerad fylls bildtexten i med värdet för `dc:title` metadata i DAM.
+   * **Hämta bildtext från DAM** När den är markerad fylls bildtexten i med bildens värde 
+`dc:title` metadata i DAM.
    * **Visa bildtext som popup** När den är markerad visas inte bildtexten nedanför bilden, utan som en popup-meny som visas i vissa webbläsare när du hovrar över bilden.
 
 * **Länk**
    * Länka bilden till en annan resurs.
-   * Använd urvalsdialogrutan för att länka till en annan AEM-resurs.
-   * Om du inte länkar till en AEM-resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
+   * Använd urvalsdialogrutan för att länka till en annan AEM.
+   * Om du inte länkar till en AEM resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
 
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
@@ -118,6 +119,7 @@ I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma
 
    * Välj alternativet **Free Hand** (Free Hand) för att definiera din egen beskärning.
    * Välj alternativet **Ta bort beskärning** för att visa den ursprungliga resursen.
+
    När du har valt ett beskärningsalternativ använder du de blå handtagen för att ändra storlek på beskärningen i bilden.
 
    ![Beskärningsalternativ](/help/assets/image-crop-options.png)
@@ -168,7 +170,7 @@ I designdialogrutan kan mallskaparen definiera de alternativ för beskärning, u
 
 ### Huvudflik {#main-tab}
 
-På fliken **Huvudsida** kan du definiera en lista med bredder i pixlar för bilden. Komponenten läses automatiskt in med den bredd som passar bäst med hänsyn till webbläsarens storlek. Detta är en viktig del av de [responsiva funktionerna](#responsive-features) i Image-komponenten.
+På fliken **Huvudsida** kan du definiera en lista med bredder i pixlar för bilden. Komponenten laddar automatiskt den mest lämpliga bredden baserat på webbläsarens storlek. Detta är en viktig del av de [responsiva funktionerna](#responsive-features) i Image-komponenten.
 
 Dessutom kan du definiera vilka allmänna komponentalternativ som automatiskt eller inaktiveras när författaren lägger till komponenten på en sida.
 
@@ -211,8 +213,10 @@ På fliken **Funktioner** kan du ange vilka alternativ som är tillgängliga fö
 
    ![Dialogrutan Funktioner i Image Components](/help/assets/image-design-features-orientation.png)
 
-* **Rotera** Använd det här alternativet om du vill tillåta innehållsförfattaren att använda alternativet **Rotera åt höger** .
-* **Vänd** Använd det här alternativet om du vill att innehållsförfattaren ska kunna använda alternativen **Vänd vågrätt** och **Vänd lodrätt** .
+* **Rotera** Använd det här alternativet om du vill tillåta innehållsförfattaren att använda 
+**Alternativet Rotera åt höger** .
+* **Vänd** Använd det här alternativet om du vill tillåta innehållsförfattaren att använda 
+**Alternativen Vänd vågrätt** och **Vänd lodrätt** .
 
    >[!CAUTION]
    >
@@ -228,13 +232,14 @@ På fliken **Funktioner** kan du ange vilka alternativ som är tillgängliga fö
    * Ange proportionerna i siffror.
    * Använd draghandtagen för att ordna om proportionerna
    * Använd papperskorgsikonen för att ta bort proportioner.
+
    >[!CAUTION]
    >
    >Observera att beskärningsproportionerna definieras som **höjd/bredd** i AEM. Detta skiljer sig från den vanliga definitionen av bredd/höjd och görs av kompatibilitetsskäl. Innehållsförfattarna är inte medvetna om några skillnader så länge du anger ett tydligt namn på förhållandet eftersom namnet visas i gränssnittet och inte själva förhållandet.
 
 ### Fliken Format {#styles-tab-1}
 
-Bildkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Bildkomponenten har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ## Adaptiv bildserver {#adaptive-image-servlet}
 
@@ -244,4 +249,4 @@ Bildkomponenten använder kärnkomponentens adaptiva bildserver. [Den adaptiva b
 >
 >Villkorliga begäranden via `Last-Modified` huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` huvudet [måste aktiveras i Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers).
 >
->[Den här konfigurationen finns redan i exempelkonfigurationen för AEM Project Archetype](/help/developing/archetype/overview.md).
+>[Den AEM Project Archetype](/help/developing/archetype/overview.md)-exempelkonfigurationen för Dispatcher innehåller redan den här konfigurationen.
