@@ -2,7 +2,7 @@
 title: Använda Adobe-klientdatalagret med kärnkomponenterna
 description: Använda Adobe-klientdatalagret med kärnkomponenterna
 translation-type: tm+mt
-source-git-commit: 7b0edac1b5ffd068443cc4805a0fa97d243b6e9e
+source-git-commit: 79a063951a790261e2f00c33d8a76f31f781da0c
 workflow-type: tm+mt
 source-wordcount: '868'
 ht-degree: 1%
@@ -35,7 +35,7 @@ Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konf
    * Där varje nod har en `jcr:primaryType` inställning som `nt:unstructured`.
 1. Lägg till en boolesk egenskap med namnet `enabled` och ställ in den på `true`.
 
-   ![Plats för DataLayerConfig i WKND-referensplats](../../assets/datalayer-contextaware-sling-config.png)
+   ![Plats för DataLayerConfig i WKND-referensplats](/help/assets/datalayer-contextaware-sling-config.png)
 
    *Plats för DataLayerConfig i WKND-referensplats*
 
@@ -59,7 +59,7 @@ Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konf
 
 1. Du kan också öppna utvecklarverktygen i webbläsaren och i konsolen ska JavaScript- `adobeDataLayer` objektet vara tillgängligt. Ange följande kommando för att hämta den aktuella sidans datalagerstatus:
 
-   ```js
+   ```javascript
    window.adobeDataLayer.getState();
    ```
 
@@ -238,7 +238,7 @@ Var `<component-path>` är JSON-sökvägen till komponenten i datalagret som utl
 
 Till exempel:
 
-```js
+```javascript
 function logEventObject(event) {
     if(event.hasOwnProperty("eventInfo") && event.eventInfo.hasOwnProperty("path")) {
         var dataObject = window.adobeDataLayer.getState(event.eventInfo.path);
