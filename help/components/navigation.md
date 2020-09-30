@@ -2,7 +2,7 @@
 title: Navigeringskomponent
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: ff943aeca0333b13e2b9aaf11f316457f001d507
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Låt oss säga att innehållet ser ut ungefär så här:
 \-- wknd-shop
 ```
 
-För webbplatsen We.Retail vill du förmodligen placera navigeringskomponenten i en sidmall som en del av sidhuvudet. När du är en del av mallen kan du ange komponentens **navigeringsrot** till `/content/wknd/language-masters/en` , eftersom det är där huvudinnehållet för den platsen börjar. Du kanske också vill ange att **navigeringsstrukturdjupet** ska vara `2` eftersom du antagligen inte vill att hela innehållsträdet ska visas av komponenten, utan i stället de två första nivåerna så att det fungerar som en översikt.
+För platsen WKND vill du förmodligen placera navigeringskomponenten i en sidmall som en del av sidhuvudet. När du är en del av mallen kan du ange komponentens **navigeringsrot** till `/content/wknd/language-masters/en` , eftersom det är där det överordnad innehållet för den platsen börjar. Du kanske också vill ange att **navigeringsstrukturdjupet** ska vara `2` eftersom du antagligen inte vill att hela innehållsträdet ska visas av komponenten, utan i stället de två första nivåerna så att det fungerar som en översikt.
 
 Med **Navigeringsrotvärdet** vet Navigeringskomponenten att efter `/content/wknd/language-masters/en` det kan navigeringen starta och navigeringsalternativen genereras genom att platsens struktur repeteras två nivåer nedåt (enligt **värdet för Navigeringsstrukturens djup** ).
 
@@ -92,7 +92,7 @@ Navigeringskomponenten återger sedan menyn baserat på skuggwebbplatsens strukt
 
 Den aktuella versionen av Navigation Component är v1, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
@@ -152,7 +152,7 @@ I designdialogrutan kan mallskaparen ange standardvärden för navigeringsrotsid
 
 ![Designdialogrutan för navigeringskomponenten](/help/assets/navigation-design.png)
 
-* **Navigeringsrot** - standardvärdet för navigeringsstrukturens rotsida, som används för att generera navigeringsträdet och som standard när innehållsförfattaren lägger till komponenten på sidan.
+* **Navigeringsrot** - standardvärdet för navigeringsstrukturens rotsida, som används för att generera navigeringsträdet och som standardvärde när innehållsförfattaren lägger till komponenten på sidan.
 * **Uteslut rotnivåer** - ofta ska roten inte tas med i navigeringen. Med det här alternativet kan du ange standardvärdet för hur många nivåer uppåt från roten som du vill utesluta. Till exempel:
    * 0 = visa rotnivån
    * 1 = utelämna rotnivån
