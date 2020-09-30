@@ -2,7 +2,10 @@
 title: Riktlinjer för komponenter
 description: Core Components följer moderna implementeringsmönster som skiljer sig mycket från grundkomponenterna.
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+workflow-type: tm+mt
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -82,7 +85,7 @@ Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i 
 
 ![Översikt över resursbindning](/help/assets/chlimage_1-32.png)
 
-Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur associerade [mallar och principer](https://docs.adobe.com/content/help/en/experience-manager-65/developing/platform/templates/page-templates-editable.html) refereras.
+Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur associerade [mallar och principer](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html) refereras.
 
 Egenskapen anger `cq:allowedTemplates` vilka mallar som kan användas för en plats och anger för varje sida vad den associerade mallen `cq:template` är. Varje mall består av följande tre delar:
 
@@ -94,7 +97,7 @@ Egenskapen anger `cq:allowedTemplates` vilka mallar som kan användas för en pl
 
 ## AEM Project Archetype {#aem-project-archetype}
 
-[AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på anpassade HTML-komponenter med SlingModels för en logisk och korrekt implementering av Core Components med det rekommenderade proxymönstret.
+[AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på anpassade HTML-komponenter med SlingModels för logik och korrekt implementering av Core Components med det rekommenderade proxymönstret.
 
 **Läs nästa:**
 
