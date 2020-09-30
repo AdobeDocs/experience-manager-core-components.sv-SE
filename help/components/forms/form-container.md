@@ -2,9 +2,9 @@
 title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '805'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,12 +28,12 @@ Genom att använda dialogrutan [](#configure-dialog) Konfigurera kan innehållsr
 
 Den aktuella versionen av Form Container Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Kompatibel | Kompatibel | Kompatibel |
+| [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -65,7 +65,7 @@ När formuläret skickas skickar poståtgärdstypen ett e-postmeddelande till an
 ![E-postalternativ i dialogrutan Redigera i komponenten Formulärbehållare](/help/assets/form-container-edit-mail.png)
 
 * **Ämne** - Ämnet för det e-postmeddelande som ska skickas när formulär skickas
-* **Från** - Från-e-postadressen till det e-postmeddelande som ska skickas när formulär skickas
+* **Från** - Från-e-postadressen till e-postmeddelandet som ska skickas när formulär skickas
 * **Till** - Adresserna till mottagarna som ska få ett e-postmeddelande när formuläret skickas in
    * Tryck eller klicka på knappen **Lägg till** för att lägga till ytterligare adresser
    * Tryck eller klicka på knappen **Ta bort** för att ta bort en e-postadress
@@ -80,7 +80,7 @@ När formuläret skickas kommer innehållet i formuläret att lagras på en angi
 ![Alternativ för att lagra innehåll i redigeringsdialogrutan för formulärbehållaren](/help/assets/form-container-edit-store.png)
 
 * **Innehållssökväg** - Sökväg till innehållsdatabas där skickat innehåll lagras
-* **Visa data** - Tryck eller klicka för att visa lagrade skickade data som JSON
+* **Visa data** - tryck eller klicka för att visa lagrade skickade data som JSON
 * **Starta arbetsflöde** - Konfigurera för att starta ett arbetsflöde med det lagrade innehållet som nyttolast när formuläret skickas
 
 ### Allmänna inställningar {#general-settings}
@@ -90,7 +90,7 @@ Oavsett vilken åtgärdstyp du väljer kan du alltid definiera en tacksida.
 ![Allmänna alternativ i redigeringsdialogrutan för komponenten Formulärbehållare](/help/assets/form-container-edit-general.png)
 
 * **Tack** ! Användaren omdirigeras till den angivna sidan när formuläret har skickats.
-   * Använd dialogrutan Välj för att välja en resurs i AEM.
+   * Använd dialogrutan Markering för att välja en resurs i AEM.
    * Om tacksidan inte finns i AEM anger du den absoluta URL:en. Icke-absoluta URL:er tolkas i förhållande till AEM.
    * Lämna tomt om du vill visa formuläret igen när det har skickats.
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
