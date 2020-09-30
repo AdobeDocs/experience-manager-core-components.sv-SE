@@ -3,7 +3,10 @@ title: Bildkomponent (v1)
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 index: n
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: 78202dc777b90f795f66873921c55e21ef8a239c
+workflow-type: tm+mt
+source-wordcount: '1229'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ I det här dokumentet beskrivs v1 av Image Component, som ursprungligen introduc
 
 I följande tabell visas kompatibiliteten för v1 för Image-komponenten.
 
-| AEM-version | Bildkomponent v1 |
+| AEM | Bildkomponent v1 |
 |--- |--- |
 | 6.3 | Kompatibel |
 | 6.4 | Kompatibel |
@@ -87,8 +90,8 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 * **Alternativ text** - Textuellt alternativ för innebörden eller funktionen i bilden för läsare med nedsatt syn.
 * **Länk**
    * Länka bilden till en annan resurs.
-   * Använd urvalsdialogrutan för att länka till en annan AEM-resurs.
-   * Om du inte länkar till en AEM-resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
+   * Använd urvalsdialogrutan för att länka till en annan AEM.
+   * Om du inte länkar till en AEM resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
 
 * **Bildtext** - Ytterligare information om bilden, som visas under bilden, är standard.
 * **Visa bildtext som popup** - När den är markerad visas inte bildtexten under bilden, utan som en popup-meny som visas i vissa webbläsare när du hovrar över bilden.
@@ -107,6 +110,7 @@ I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma
 
    * Välj alternativet **Free Hand** (Free Hand) för att definiera din egen beskärning.
    * Välj alternativet **Ta bort beskärning** för att visa den ursprungliga resursen.
+
    När du har valt ett beskärningsalternativ använder du de blå handtagen för att ändra storlek på beskärningen i bilden.
 
    ![](/help/assets/chlimage_1-10.png)
@@ -128,6 +132,7 @@ I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma
    * **Lägg till polygonkarta**
 
       * Som standard läggs ett triangelschema till. Dubbelklicka på en linje i formen för att lägga till ett nytt blått handtag på en ny sida.
+
    När du har markerat en schemaform läggs den ovanpå bilden så att du kan ändra storlek på den. Dra och släpp handtagen för blå storleksändring för att justera formen.
 
    ![](/help/assets/chlimage_1-13.png)
@@ -135,8 +140,8 @@ I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma
    När du har ändrat storlek på startkartan klickar du på den för att öppna ett flytande verktygsfält och definiera länkens sökväg.
 
    * **Bana**
-      * Använd alternativet Banväljaren för att välja en bana i AEM
-      * Om sökvägen inte är i AEM använder du den absoluta URL:en. Icke-absoluta sökvägar tolkas i förhållande till AEM.
+      * Använd alternativet Banväljaren för att markera en bana i AEM
+      * Om sökvägen inte finns i AEM använder du den absoluta URL:en. Icke-absoluta sökvägar tolkas i förhållande till AEM.
 
       * **Alternativ text** Alternativ beskrivning av sökvägsmålet
       * **Mål**
@@ -144,6 +149,7 @@ I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma
          * **Ny flik**
          * **Överordnad ram**
          * **Övre bildruta**
+
    Tryck eller klicka på den blå bockmarkeringen för att spara, det svarta x för att avbryta och det röda papperskorgen för att ta bort kartan.
 
    ![](/help/assets/chlimage_1-14.png)
@@ -202,18 +208,11 @@ På fliken **Funktioner** kan du ange vilka alternativ som är tillgängliga fö
    ![](/help/assets/chlimage_1-20.png)
 
    * **Rotera** - Använd det här alternativet om du vill tillåta innehållsförfattaren att använda alternativet **Rotera åt höger** .
-   * **Vänd** Använd det här alternativet om du vill att innehållsförfattaren ska kunna använda alternativen **Vänd vågrätt** och **Vänd lodrätt** .
+   * **Vänd** Använd det här alternativet om du vill tillåta innehållsförfattaren att använda 
+**Alternativen Vänd vågrätt** och **Vänd lodrätt** .
    >[!CAUTION]
    >
    >Alternativet **Vänd** är inaktiverat som standard. Om du aktiverar det visas knapparna **Vänd lodrätt** och **Vänd vågrätt** i redigeringsdialogrutan för bildkomponenten, men funktionen stöds för närvarande inte av AEM och ändringar som görs med dessa alternativ bevaras inte.
-
-<!-- 
-Comment Type: remark
-Last Modified By: Chris Bohnert (bohnert)
-Last Modified Date: 2017-11-20T05:51:34.378-0500
-
-<p>Added caution based on CQDOC-11457. Hid the flip options in the procedure using the <strong>Draft</strong> option so that when this feature is implemented in CQ-4221539, the <strong>Draft</strong> property can simply be removed along with the caution.</p>
--->
 
 * Beskärning
 
@@ -225,6 +224,7 @@ Last Modified Date: 2017-11-20T05:51:34.378-0500
    * Ange proportionerna i siffror.
    * Använd draghandtagen för att ordna om proportionerna
    * Använd papperskorgsikonen för att ta bort proportioner.
+
    >[!CAUTION]
    >
    >Observera att beskärningsproportionerna definieras som **höjd/bredd** i AEM. Detta skiljer sig från den vanliga definitionen av bredd/höjd och görs av kompatibilitetsskäl. Innehållsförfattarna är inte medvetna om några skillnader så länge du anger ett tydligt namn på förhållandet eftersom namnet visas i gränssnittet och inte själva förhållandet.
