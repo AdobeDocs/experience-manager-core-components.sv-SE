@@ -2,9 +2,9 @@
 title: Skapa med kärnkomponenter
 description: I AEM är komponenterna de strukturella element som utgör innehållet på de sidor som skapas - Core Components erbjuder flexibla och funktionsrika redigeringsfunktioner.
 translation-type: tm+mt
-source-git-commit: 4281f6421482682f603f6a7f5e18df61f9a6d98c
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '778'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Core Components erbjuder flexibla och funktionsrika redigeringsfunktioner. WKND:
 
 Om du vill se exempel på kärnkomponenterna och deras konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library).
 
-En mer detaljerad, utvecklarorienterad introduktion till implementering av kärnkomponenterna i ett AEM-projekt med hjälp av [AEM Project Archetype](/help/developing/archetype/overview.md) , se [självstudiekursen WKND.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+En mer djupgående, utvecklarorienterad introduktion till implementering av kärnkomponenterna i ett AEM projekt med hjälp av [AEM Project Archetype](/help/developing/archetype/overview.md) , se [självstudiekursen WKND.](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ En mer detaljerad, utvecklarorienterad introduktion till implementering av kärn
 
 >[!CAUTION]
 >
->Core Components [kräver AEM 6.3 eller högre](/help/versions.md) och kräver [redigerbara mallar](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html). De fungerar inte med det klassiska användargränssnittet och inte heller med statiska mallar.
+>Core Components [kräver AEM 6.4 eller senare](/help/versions.md) och kräver [redigerbara mallar](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html). De fungerar inte med det klassiska användargränssnittet och inte heller med statiska mallar.
 
 ## Skapa med kärnkomponenter {#authoring-with-core-components}
 
@@ -73,16 +73,12 @@ Eftersom kärnkomponenterna kan förkonfigureras av mallförfattare för att def
 
 ### Komponentformat {#component-styling}
 
-Stilarna för de flesta kärnkomponenter kan definieras med hjälp av AEM-formatsystemet.
+Stilarna för de flesta kärnkomponenter kan definieras med hjälp av det AEM.
 
 * En mallskapare kan definiera vilka format som är tillgängliga för en viss komponent i designdialogrutan för den komponenten.
 * Innehållsförfattaren kan sedan välja vilka format som ska användas när komponenten läggs till och innehållet skapas.
 
 Mer information finns i dokumentationen för [Style System](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/style-system.html) .
-
->[!NOTE]
->
->I AEM 6.3 krävs Service Pack 2 (6.3.2.0) eller senare för att aktivera formatsystemfunktionen.
 
 ## Resurser för utvecklare {#developer-resources}
 
