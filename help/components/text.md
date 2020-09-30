@@ -1,105 +1,105 @@
 ---
-title: Text Component
-description: The Text Component is a rich text editing and composing component that features in-place editing.
+title: Textkomponent
+description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '2202'
+source-wordcount: '2200'
 ht-degree: 0%
 
 ---
 
 
-# Text Component{#text-component}
+# Textkomponent{#text-component}
 
-The Core Component Text Component is a rich text editing and composing component that features in-place editing.
+Core Component Text Component Component Component är en textredigerings- och dispositionskomponent med redigering på plats.
 
 ## Användning {#usage}
 
-The Text Component offers a robust rich text editor that allows for easy text editing in a simplified, in-line editor as well as a full screen format.
+Textkomponenten har en robust textredigerare som gör det enkelt att redigera text i en förenklad, textbunden redigerare och i ett helskärmsformat.
 
-The [edit dialog](#edit-dialog) features in-line editing with limited options with full functionality available in the full-screen edit dialog. Using the [design dialog](#design-dialog), text formatting options such as headings, special characters, and paragraph styles can be configured for the template for the content author.
+I [redigeringsdialogrutan](#edit-dialog) finns redigering direkt med begränsade alternativ med full funktionalitet i redigeringsdialogrutan i helskärmsläge. I [designdialogrutan](#design-dialog)kan du konfigurera textformateringsalternativ som rubriker, specialtecken och styckeformat för mallen för innehållsförfattaren.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-The current version of the Text Component is v2, which was introduced with release 2.0.0 of the Core Components in January 2018, and is described in this document.
+Den aktuella versionen av Text Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|---|
-| v2 | - | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/text-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v2 | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/text-v1.md) | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-To experience the Text Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_text).
+Om du vill se textkomponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_text).
 
 ### Teknisk information {#technical-details}
 
-The latest technical documentation about the Text Component [can be found on GitHub](https://adobe.com/go/aem_cmp_tech_text_v2).
+Den senaste tekniska dokumentationen om textkomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_text_v2).
 
 Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
 
 ## Textkomponenten och RTF-redigeraren {#the-text-component-and-the-rich-text-editor}
 
-The Core Components Text Component leverages the AEM Rich Text Editor (RTE). The RTE provides content authors with a wide range of functionality for editing their text content. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Further details about how the RTE can be configured can be found in the articles [Configure the Rich Text Editor](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/rich-text-editor.html) and [Configure the Rich Text Editor plug-ins](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html).
+Komponenten Core Components Text använder AEM Rich Text Editor (RTE). RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html)för textredigeraren.
 
-The remainder of this article demonstrates the standard configuration of the Core Components Text Component with the out-of-the-box RTE configuration.
+Resten av den här artikeln demonstrerar standardkonfigurationen för textkomponenten för kärnkomponenter med RTE-konfigurationen som är klar att användas.
 
 >[!NOTE]
 >
->Only options enabled by [UI configurations of the RTE](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html) are available by in the Text Component.
+>Endast alternativ som aktiveras av [gränssnittskonfigurationer för textredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i textkomponenten.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-The edit dialog offers the standard rich text formatting tools a user would expect to compose text.
+I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en användare kan förvänta sig att skapa text.
 
-![Text Component&#39;s edit dialog](/help/assets/text-edit.png)
+![Textkomponentens redigeringsdialogruta](/help/assets/text-edit.png)
 
 ### Fet
 
-![Bold icon](/help/assets/text-bold.png)
+![Fet ikon](/help/assets/text-bold.png)
 
 Används för att formatera text fet eller fet formatera text som skrivs efter markören.
 
-**Ctrl+B** can be used as a keyboard shortcut.
+**Ctrl+B** kan användas som kortkommando.
 
 ### Kursiv
 
-![Italic icon](/help/assets/text-italic.png)
+![Kursiv ikon](/help/assets/text-italic.png)
 
-Used to apply italicized formatting to selected text or italicize text entered after the cursor.
+Används för att tillämpa kursiv formatering på markerad text eller kursiv om text som anges efter markören.
 
-**Ctrl+I** can be used as a keyboard shortcut.
+**Ctrl+I** kan användas som kortkommando.
 
 ### Understrykning
 
-![Underline icon](/help/assets/text-underline.png)
+![Understrykningsikon](/help/assets/text-underline.png)
 
-Used to apply underlined formatting to selected text or underline text entered after the cursor.
+Används för att tillämpa understruken formatering på markerad text eller understruken text som anges efter markören.
 
 **Ctrl+U** kan användas som kortkommando.
 
-### Subscript
+### Nedsänkt
 
-![Subscript icon](/help/assets/text-subscript.png)
+![Nedsänkt, ikon](/help/assets/text-subscript.png)
 
 Används för att formatera markerad text eller text som skrivs efter markören som nedsänkt.
 
 ### Upphöjd
 
-![Superscript icon](/help/assets/text-superscript.png)
+![Upphöjd, ikon](/help/assets/text-superscript.png)
 
-Used to format selected text or text entered after the cursor as superscript.
+Används för att formatera markerad text eller text som skrivs efter markören som upphöjd text.
 
 ### Klistra in som text
 
-![Paste as text icon](/help/assets/text-paste-text.png)
+![Ikonen Klistra in som text](/help/assets/text-paste-text.png)
 
-Pastes any copied text as plain text without any formatting.
+Klistrar in kopierad text som oformaterad text utan formatering.
 
 När du väljer det här alternativet öppnas ett fönster där texten kan klistras in som oformaterad text utan formatering som en förhandsvisning innan den infogas i texten. Acceptera genom att trycka eller klicka på bockmarkeringen, avbryt genom att trycka eller klicka på x.
 
@@ -124,7 +124,7 @@ Använd det här alternativet om du vill konvertera den markerade texten till en
 * Ange banan
    * Använd dialogrutan Öppna markering för att välja en bana i AEM
    * Om länken inte finns i AEM anger du den absoluta URL:en
-      * Icke-absoluta sökvägar tolkas som relativa till AEM
+      * Icke-absoluta sökvägar tolkas som relativa AEM
 * Ange alternativ beskrivande text för länken
 * Välj länkbeteende
    * Mål
@@ -132,6 +132,7 @@ Använd det här alternativet om du vill konvertera den markerade texten till en
    * Ny flik
    * Överordnad ram
    * Övre bildruta
+
    Tryck eller klicka på bockmarkeringen för att använda länken eller på krysset för att avbryta.
 
 ### Bryt länk
@@ -257,7 +258,7 @@ Används för att infoga en tabell i texten. Om du väljer det här alternativet
 
 Används för att kontrollera stavningen i textinnehållet. Eventuella felstavningar stryks under med brutna, röda linjer.
 
-Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program](https://docs.adobe.com/content/help/en/experience-manager-65/administering/operations/configure-rich-text-editor-plug-ins.html)för textredigeraren.
+Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html)för textredigeraren.
 
 ### Specialtecken {#special-characters}
 
@@ -367,4 +368,4 @@ Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för kompo
 
 ## Fliken Format {#styles-tab}
 
-Textkomponenten har stöd för AEM- [stilsystemet](/help/get-started/authoring.md#component-styling).
+Textkomponenten har stöd för AEM [formatsystem](/help/get-started/authoring.md#component-styling).
