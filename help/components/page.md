@@ -2,9 +2,9 @@
 title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '631'
 ht-degree: 1%
 
 ---
@@ -24,18 +24,14 @@ Med hjälp av [designdialogrutan](#design-dialog)kan du definiera egna klientbib
 
 Den aktuella versionen av Page Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|---|
-| v2 | - | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/page-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|---|---|---|---|
+| v2 | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/page-v1.md) | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
-
->[!NOTE]
->
->För att aktivera omdirigering på `cq:Page` nivå för version 2 av sidkomponenten och AEM 6.3 krävs [Service Pack 2](https://helpx.adobe.com/experience-manager/6-3/release-notes/sp2-release-notes.html) eller senare. En sådan omdirigering var inte tillgänglig i tidigare versioner.
 
 ### Teknisk information {#technical-details}
 
@@ -55,7 +51,7 @@ Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Si
 
 >[!NOTE]
 >
->I tidigare versioner av AEM kallades **Page Policy** **Page Design**.
+>I tidigare versioner av AEM kallades **sidprincipen** för **siddesign**.
 
 ### Fliken Egenskaper {#properties-tab}
 
@@ -86,4 +82,4 @@ Mer information om hur du använder bibliotek på klientsidan finns i [Använda 
 
 ### Fliken Format {#styles-tab}
 
-Page Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
+Page Component (Sidkomponent) stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
