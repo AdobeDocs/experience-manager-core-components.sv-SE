@@ -2,9 +2,9 @@
 title: Delningskomponent för sociala medier
 description: Den centrala komponenten för delning via sociala medier är en widget för delning via Facebook och Pinterest.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ Till skillnad från andra komponenter görs inställningarna för komponenten f�
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av den sociala delningskomponenten är v1, som introducerades i version 1.0.0 av de centrala komponenterna med AEM 6.3, och som beskrivs i det här dokumentet.
+Den aktuella versionen av den sociala delningskomponenten är v1, som introducerades i version 1.0.0 av de centrala komponenterna, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds och de AEM-versioner som komponentversionerna är kompatibla med.
+Följande tabell visar alla versioner av komponenten som stöds och de AEM versionerna som komponenterna är kompatibla med.
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
