@@ -2,10 +2,10 @@
 title: Tabbar-komponent
 description: Med flikkomponenten kan du skapa flera flikar för att ordna innehåll på en sida.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera fl
 
 >[!TIP]
 >
->Kapslade flikkomponenter (tabbar på flikar) stöds.
+>Kapslade flikkomponenter (tabbar inom tabbar) stöds.
 >
 >Enkla (ej kapslade) flikkomponenter kan hittas/väljas med [innehållsträdet](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html#content-tree), men det går inte att kapsla flikar.
 
@@ -32,8 +32,8 @@ Flikar och [dragspelskomponenter](accordion.md) har stöd för att länka direkt
 
 Så här gör du:
 
-1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/authoring/editing-content.html#view-as-published)**i sidredigeraren.
-1. Granska sidans innehåll och identifiera panelens ID.
+1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
+1. Inspect innehållet på sidan och identifierar panelens ID.
    * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med hash (`#`).
    * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
@@ -44,7 +44,7 @@ Om du navigerar till URL-adressen med panel-ID som ankarpunkt, rullar webbläsar
 
 Den aktuella versionen av komponenten Tabs är v1, som introducerades i version 2.2.0 av Core Components i oktober 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
@@ -118,7 +118,7 @@ När du har valt alternativet **Välj panel** i komponentverktygsfältet visas d
 
 >[!NOTE]
 >
->Flikar kan inte markeras av författaren i **redigeringsläge** . Använd **[förhandsgranskningsläget](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)**eller alternativet**[Visa som publicerat](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med flikarna på samma sätt som en läsare av det publicerade innehållet.
+>Flikar kan inte markeras av författaren i **redigeringsläge** . Använd **[förhandsgranskningsläget](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)** eller alternativet **[Visa som publicerat](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med flikarna på samma sätt som en läsare av det publicerade innehållet.
 
 ## Designdialogruta {#design-dialog}
 
