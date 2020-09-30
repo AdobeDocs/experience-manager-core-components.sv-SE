@@ -2,9 +2,9 @@
 title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
@@ -22,12 +22,12 @@ List-komponenten kan användas för att skapa t.ex. en dynamisk lista med undero
 
 Den aktuella versionen av List Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/list-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/list-v1.md) | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -86,7 +86,7 @@ Tryck eller klicka på knappen **Lägg till** för att dra in ett nytt objekt i 
 
 #### Sökning {#search-options}
 
-Listan kan byggas med hjälp av resultaten från en sökning i AEM-innehåll.
+Listan kan skapas med hjälp av resultatet av en sökning AEM innehåll.
 
 ![Alternativ för söklistor](/help/assets/list-edit-search.png)
 
@@ -119,7 +119,7 @@ Oavsett hur du väljer att skapa listan finns det vissa sorteringsalternativ som
 * **Beställ efter** hur elementen ska ordnas
    * **Titel**
    * **Senast ändrat den**
-* **Sorteringsordning** Den ordning som artiklarna ska sorteras i
+* **Sorteringsordning** Den ordning i vilken artiklarna ska sorteras
    * **stigande**
    * **fallande**
 * **Maximalt antal objekt** Maximalt antal objekt som visas i listan.
@@ -167,4 +167,4 @@ På fliken **Objektinställningar** kan du definiera formateringsalternativen f�
 
 ### Fliken Format {#styles-tab}
 
-Bildkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Bildkomponenten har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
