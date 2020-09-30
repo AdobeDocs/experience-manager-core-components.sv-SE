@@ -1,11 +1,11 @@
 ---
 title: Komponent för formuläralternativ
-description: Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
+description: Komponenten Core Component Form Options gör det möjligt att välja bland fördefinierade alternativ i olika format.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -24,12 +24,12 @@ Presentationen av alternativ, etiketter och enskilda alternativ kan definieras a
 
 Den aktuella versionen av Form Options Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018 och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.3 | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/form-options-v1.md) | Kompatibel | Kompatibel | Kompatibel | - |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
+|--- |--- |--- |---|
+| v2 | Kompatibel | Kompatibel | Kompatibel |
+| [v1](/help/components/v1/form-options-v1.md) | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -63,7 +63,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av alt
          * **Text** - Etiketten för alternativet som visas i formuläret
          * **Aktiv** - Alternativet markeras som markerat när formuläret läses in
          * **Inaktiverad** - alternativet kan inte markeras men visas ändå
-   * **Lista** - En statisk lista som definierats någon annanstans i AEM används för alternativen
+   * **Lista** - En statisk lista som definieras någon annanstans i AEM används för alternativen
       * **List** - Sökvägen till den statiska listan i AEM
          * Använd knappen Bläddra för att hitta listresursen
    * **Datakälla** - En datakälla används för alternativen
