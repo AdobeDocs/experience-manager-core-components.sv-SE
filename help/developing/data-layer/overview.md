@@ -2,9 +2,9 @@
 title: Använda Adobe-klientdatalagret med kärnkomponenterna
 description: Använda Adobe-klientdatalagret med kärnkomponenterna
 translation-type: tm+mt
-source-git-commit: 4a44a5f584efa736320556f6b4e2f4126d058a48
+source-git-commit: 7b0edac1b5ffd068443cc4805a0fa97d243b6e9e
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '868'
 ht-degree: 1%
 
 ---
@@ -26,17 +26,42 @@ Precis som Core-komponenterna är koden för Adobe-klientdatalagret tillgänglig
 
 ## Installation och aktivering {#installation-activation}
 
-Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som en clientlib. Ingen installation krävs.
+Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som ett AEM klientbibliotek och ingen installation behövs. Alla projekt som genereras av [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) innehåller ett aktiverat datalager som standard.
 
-Datalagret är dock inte aktiverat som standard. Om du vill aktivera datalagret måste du skapa en [kontextmedveten konfiguration](/help/developing/context-aware-configs.md) för det:
+Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konfiguration](/help/developing/context-aware-configs.md) för det:
 
-1. Skapa följande struktur under `/conf` noden:
+1. Skapa följande struktur under `/conf/<mySite>` mappen, där `<mySite>` är namnet på Platsens projekt:
    * `/conf/<mySite>/sling:configs/com.adobe.cq.wcm.core.components.internal.DataLayerConfig`
-   * Nodtyp: `nt:unstructured`
+   * Där varje nod har en `jcr:primaryType` inställning som `nt:unstructured`.
 1. Lägg till en boolesk egenskap med namnet `enabled` och ställ in den på `true`.
-1. Lägg till en `sling:configRef` egenskap till `jcr:content` noden på platsen nedan `/content` (t.ex. `/content/<mySite>/jcr:content`) och ställ in den på `/conf/<mySite>`.
 
-När den är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren. När du inspekterar sidan ser du att Adobe-klientdatalagret har lästs in.
+   ![Plats för DataLayerConfig i WKND-referensplats](../../assets/datalayer-contextaware-sling-config.png)
+
+   *Plats för DataLayerConfig i WKND-referensplats*
+
+1. Lägg till en `sling:configRef` egenskap till `jcr:content` noden på platsen nedan `/content` (t.ex. `/content/<mySite>/jcr:content`) och ange det som `/conf/<mySite>` från föregående steg.
+
+1. När den är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren. Inspect, sidkällan och `<body>` -taggen ska innehålla ett attribut `data-cmp-data-layer-enabled`
+
+   ```html
+   <body class="page basicpage" id="page-id" data-cmp-data-layer-enabled>
+       <script>
+         window.adobeDataLayer = window.adobeDataLayer || [];
+         adobeDataLayer.push({
+             page: JSON.parse("{\x22page\u002D6c5d4b9fdd\x22:{\x22xdm:language\x22:\x22en\x22,\x22repo:path\x22:\x22\/content\/wknd\/language\u002Dmasters\/en.html\x22,\x22xdm:tags\x22:[],\x22xdm:template\x22:\x22\/conf\/wknd\/settings\/wcm\/templates\/landing\u002Dpage\u002Dtemplate\x22,\x22@type\x22:\x22wknd\/components\/page\x22,\x22dc:description\x22:\x22WKND is a collective of outdoors, music, crafts, adventure sports, and travel enthusiasts that want to share our experiences, connections, and expertise with the world.\x22,\x22dc:title\x22:\x22WKND Adventures and Travel\x22,\x22repo:modifyDate\x22:\x222020\u002D09\u002D29T07:50:13Z\x22}}"),
+             event:'cmp:show',
+             eventInfo: {
+                 path: 'page.page\u002D6c5d4b9fdd'
+             }
+         });
+       </script>
+   ```
+
+1. Du kan också öppna utvecklarverktygen i webbläsaren och i konsolen ska JavaScript- `adobeDataLayer` objektet vara tillgängligt. Ange följande kommando för att hämta den aktuella sidans datalagerstatus:
+
+   ```js
+   window.adobeDataLayer.getState();
+   ```
 
 ## Datascheman för kärnkomponenter {#data-schemas}
 
@@ -96,6 +121,8 @@ id: {
     xdm:language        // page language
 }
 ```
+
+En `cmp:show` händelse utlöses vid sidinläsning. Den här händelsen skickas från textbundet JavaScript direkt under den inledande `<body>` -taggen, vilket gör den till den tidigaste händelsen i datalagrets händelsekö.
 
 ### Behållarschema {#container}
 
@@ -171,13 +198,15 @@ Följande [händelse](#events) är relevant för resursschemat:
 
 * `cmp:click`
 
-## Händelser {#events}
+## Kärnkomponentshändelser {#events}
 
-Det finns ett antal händelser som utlöses av datalagret.
+Det finns ett antal händelser som kärnkomponenter utlöser via datalagret. Det bästa sättet att interagera med datalagret är att [registrera en händelseavlyssnare](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener) och *sedan* vidta en åtgärd baserat på händelsetypen och/eller komponenten som utlöste händelsen. På så sätt undviks potentiella konkurrensförhållanden med asynkrona skript.
+
+Nedan visas några av de färdiga händelserna som AEM Core Components tillhandahåller:
 
 * **`cmp:click`** - Om du klickar på ett klickbart element (ett element som har ett `data-cmp-clickable` attribut) utlöser datalagret en `cmp:click` händelse.
-* **`cmp:show`** och **`cmp:hide`** - Om du ändrar dragspelsfliken (expanderar/komprimerar), karusellen (nästa/föregående knappar) och flikarna (tabbmarkera) utlöses datalagret `cmp:show` respektive en `cmp:hide` händelse.
-* **`cmp:loaded`** - När datalagret har fyllts i med huvudkomponenterna på sidan utlöser datalagret en `cmp:loaded` händelse.
+* **`cmp:show`** och **`cmp:hide`** - Om du ändrar dragspelsfliken (expanderar/komprimerar), karusellen (nästa/föregående knappar) och flikarna (tabbmarkera) utlöses datalagret `cmp:show` respektive en `cmp:hide` händelse. En `cmp:show` händelse skickas också vid sidinläsning och förväntas vara den första händelsen.
+* **`cmp:loaded`** - När datalagret har fyllts i med kärnkomponenterna på sidan utlöser datalagret en `cmp:loaded` händelse.
 
 ### Händelser utlösta av komponent {#events-components}
 
@@ -185,10 +214,45 @@ I följande tabeller visas de standardkomponenter som utlöser händelser tillsa
 
 | Komponent | Händelser |
 |---|---|
-| [Navigering](/help/components/navigation.md) | `cmp:click` |
-| [Språknavigering](/help/components/language-navigation.md) | `cmp:click` |
-| [Breadcrumb](/help/components/breadcrumb.md) | `cmp:click` |
-| [Knapp](/help/components/button.md) | `cmp:click` |
-| [Carousel](/help/components/carousel.md) | `cmp:show` and `cmp:hide` |
-| [Tabbar](/help/components/tabs.md) | `cmp:show` and `cmp:hide` |
 | [Dragspel](/help/components/accordion.md) | `cmp:show` and `cmp:hide` |
+| [Knapp](/help/components/button.md) | `cmp:click` |
+| [Breadcrumb](/help/components/breadcrumb.md) | `cmp:click` |
+| [Carousel](/help/components/carousel.md) | `cmp:show` and `cmp:hide` |
+| [Språknavigering](/help/components/language-navigation.md) | `cmp:click` |
+| [Navigering](/help/components/navigation.md) | `cmp:click` |
+| [Sida](/help/components/page.md) | `cmp:show` |
+| [Tabbar](/help/components/tabs.md) | `cmp:show` and `cmp:hide` |
+| [Teaser](/help/components/teaser.md) | `cmp:click` |
+
+### Information om händelsens sökväg {#event-path-info}
+
+Varje datalagerhändelse som utlöses av en AEM Core-komponent kommer att innehålla en nyttolast med följande JSON-objekt:
+
+```json
+eventInfo: {
+    path: '<component-path>'
+}
+```
+
+Var `<component-path>` är JSON-sökvägen till komponenten i datalagret som utlöste händelsen.  Värdet, som är tillgängligt via `event.eventInfo.path`, är viktigt eftersom det kan användas som en parameter `adobeDataLayer.getState(<component-path>)` som hämtar det aktuella läget för komponenten som utlöste händelsen, vilket gör att anpassad kod kan komma åt ytterligare data och lägga till dem i datalagret.
+
+Till exempel:
+
+```js
+function logEventObject(event) {
+    if(event.hasOwnProperty("eventInfo") && event.eventInfo.hasOwnProperty("path")) {
+        var dataObject = window.adobeDataLayer.getState(event.eventInfo.path);
+        console.debug("The component that triggered this event: ");
+        console.log(dataObject);
+    }
+}
+
+window.adobeDataLayer = window.adobeDataLayer || [];
+window.adobeDataLayer.push(function (dl) {
+     dl.addEventListener("cmp:show", logEventObject);
+});
+```
+
+## Självstudiekurs
+
+Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Kolla in den här självstudiekursen](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
