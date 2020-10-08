@@ -2,7 +2,7 @@
 title: Inkluderar klientbibliotek
 description: Det finns flera olika sätt att inkludera klientbibliotek beroende på hur du använder dem.
 translation-type: tm+mt
-source-git-commit: 87e39566617f64b91bd8e98b3779b9b5c426c31c
+source-git-commit: f74883359561e5ff6ca679d58bedbdeb100f7b0b
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -84,10 +84,7 @@ Om du vill använda attribut på de genererade CSS- `link` elementen och/eller J
 
 CSS- `link` attribut som kan skickas till `jsAndCssIncludes` och `cssIncludes`:
 
-* `media`: string
-
-JS- `script` attribut som kan skickas till `jsAndCssIncludes` och `jsIncludes`:
-
+* `media`: JS-strängattribut `script` som kan skickas till `jsAndCssIncludes` och `jsIncludes`:
 * `async`: boolean
 * `defer`: boolean
 * `onload`: string
