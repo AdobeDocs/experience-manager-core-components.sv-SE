@@ -2,7 +2,7 @@
 title: Inkluderar klientbibliotek
 description: Det finns flera olika sätt att inkludera klientbibliotek beroende på hur du använder dem.
 translation-type: tm+mt
-source-git-commit: 24f718be2ba66113eda970c213c6ce4baec51752
+source-git-commit: 87e39566617f64b91bd8e98b3779b9b5c426c31c
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 3%
@@ -49,7 +49,7 @@ Om du vill göra samma sak för flera klientbibliotekskategorier samtidigt kan e
 ## Endast CSS eller JS {#css-js-only}
 
 Ofta vill man placera CSS-inkluderingarna i HTML- `head` elementet, och JS-elementet inkluderar precis innan `body` elementet stängs.
-&#x200B;
+
 Om du bara vill ta med CSS `head`i , och inte JS, använder du `cssIncludes`:
 
 ```html
@@ -84,7 +84,9 @@ Om du vill använda attribut på de genererade CSS- `link` elementen och/eller J
 
 CSS- `link` attribut som kan skickas till `jsAndCssIncludes` och `cssIncludes`:
 
-* `media`: sträng &#x200B; JS- `script` attribut som kan skickas till `jsAndCssIncludes` och `jsIncludes`:
+* `media`: string
+
+JS- `script` attribut som kan skickas till `jsAndCssIncludes` och `jsIncludes`:
 
 * `async`: boolean
 * `defer`: boolean
@@ -94,7 +96,7 @@ CSS- `link` attribut som kan skickas till `jsAndCssIncludes` och `cssIncludes`:
 ## Inledande {#inlining}
 
 I vissa fall, antingen för optimering eller för e-post eller [AMP,](amp.md) kan det vara nödvändigt att infoga CSS eller JS i HTML-utdata.
-&#x200B;
+
 Om du vill infoga CSS:en kan `cssInline` användas. I så fall måste du skriva det omgivande `style` elementet:
 
 ```html
