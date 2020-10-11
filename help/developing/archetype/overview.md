@@ -2,9 +2,9 @@
 title: AEM Project Archetype
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: 8b8f0ad528c77cfb6080981438786275bd9fbef1
+source-git-commit: 52f2c4dbba54261863a98fa2b992fe4690da3511
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
@@ -41,6 +41,7 @@ AEM Project Archetype är en Maven-mall som skapar ett minimalt, metodbaserat Ad
 * **Formatsystem:** Undvik att bygga anpassade komponenter genom att låta författarna [använda olika format](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/style-system.html) på dem.
 * **Front-End Build:** Utvecklare kan [skapa AEM sidor](uifrontend.md#webpack-dev-server) och [bygga klientbibliotek](uifrontend.md) med Webpack, TypeScript och SASS.
 * **WebApp-Ready:** För webbplatser som använder [React](uifrontend-react.md) eller [Angular](uifrontend-angular.md)använder du [SPA SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/developing.html) för att bevara utvecklingen [i appen](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
+* **Handel aktiverad:** För projekt som vill integrera [AEM Commerce](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/commerce/home.html) med handelslösningar som [Magento](https://magento.com/) med hjälp av [Commerce Core-komponenter](https://github.com/adobe/aem-core-cif-components).
 * **Exempelkod:** Checka ut HelloWorld-komponenten och exempelmodellerna, servletarna, filtren och schemaläggaren.
 * **Öppen källa:** Om något inte är som det ska [du bidra](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) till förbättringarna!
 
