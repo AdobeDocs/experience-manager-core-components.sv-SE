@@ -1,13 +1,13 @@
 ---
 sub-product: AEM kärnkomponenter
 user-guide-title: AEM kärnkomponenter
-breadcrumb-title: Core Components Guide
-user-guide-description: Use the extensible Core Components to let authors easily create content.
+breadcrumb-title: Guide för kärnkomponenter
+user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 translation-type: tm+mt
 source-git-commit: 81d2282d33ef3f20e4115e38abbd0c801e03c974
 workflow-type: tm+mt
-source-wordcount: '188'
-ht-degree: 3%
+source-wordcount: '202'
+ht-degree: 2%
 
 ---
 
