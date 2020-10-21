@@ -1,13 +1,20 @@
 ---
-source-git-commit: aa978d6ddf04912e3fc108f86450fac6a90d2caf
+source-git-commit: 68b8587bc943d30229d8be742904ebc4b93da9d4
+workflow-type: tm+mt
 translation-type: tm+mt
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 # Adobe Experience Manager Core Components Documentation
 
+| EXL-PR | EXL | Förhandsgranska | Aktivera | Publicerad | Hjälp |
+|--- |--- |--- |--- |--- |--- |
+| [![Byggstatus](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-core-components.en_pr-exl/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-core-components.en_pr-exl/lastBuild/) | [![Byggstatus](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-core-components.en_exl/lastBuild/badge/icon)](https://docs.ci.corp.adobe.com/view/exl-pr/job/experience-manager-core-components.en_exl/lastBuild/lastBuild) | [Förhandsgranska URL](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en) | [activate-exl](https://docs.ci.corp.adobe.com/job/activate-exl/build/) | [Live-URL](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=en) | [Redigeringshandbok](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/home.html?lang=en) |
+
 ## Dokumentation om viktiga komponenter
 
-Det här är databasen för ***dokumentation*** om kärnkomponenter i Adobe Experience Manager. I den här dokumentationen beskrivs installation, redigering och anpassning av kärnkomponenterna.
+Det här är databasen för Adobe Experience Manager Core Components- ***dokumentation***. I den här dokumentationen beskrivs installation, redigering och anpassning av kärnkomponenterna.
 
 Dina bidrag till dokumentationen är välkomna. Se följande resurser:
 
@@ -17,4 +24,4 @@ Dina bidrag till dokumentationen är välkomna. Se följande resurser:
 
 ## Core Components Repository
 
-Kärnkomponenterna [i](https://github.com/adobe/aem-core-wcm-components) Adobe Experience Manager underhålls som ett projekt i en separat databas. Kolla in det projektet om du behöver teknisk/utvecklardokumentation om komponenterna, vill bidra till själva komponenterna eller behöver lämna in ett problem med funktionaliteten eller funktionerna i kärnkomponenterna.
+Själva [Adobe Experience Manager Core Components](https://github.com/adobe/aem-core-wcm-components) underhålls som ett projekt i en separat databas. Kolla in det projektet om du behöver teknisk/utvecklardokumentation om komponenterna, vill bidra till själva komponenterna eller behöver lämna in ett problem med funktionaliteten eller funktionerna i kärnkomponenterna.
