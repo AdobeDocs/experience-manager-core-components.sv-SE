@@ -2,9 +2,9 @@
 title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: 499047a8c15a6423a56b370f41fd020740481f80
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Med komponenten Core Component Form Container Component kan man skapa enkla insk
 
 Med formulärbehållarkomponenten kan du skapa enkla formulär och funktioner för inlämning av information genom att stödja enkla WCM-formulär och använda en kapslad struktur för att tillåta ytterligare formulärkomponenter.
 
-Genom att använda dialogrutan [](#configure-dialog) Konfigurera kan innehållsredigeraren definiera åtgärden som ska aktiveras när formulär skickas, var det skickade innehållet ska lagras och om ett arbetsflöde ska aktiveras. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera de tillåtna komponenterna och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Genom att använda dialogrutan [](#configure-dialog) Konfigurera kan innehållsredigeraren definiera den åtgärd som ska utföras när formulär skickas, vilken URl som ska hantera överföringen och om ett arbetsflöde ska aktiveras. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera de tillåtna komponenterna och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!NOTE]
 >
@@ -53,10 +53,23 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilka åtgärder 
 
 Beroende på den valda **åtgärdstypen**&#x200B;ändras de tillgängliga alternativen i behållaren. De tillgängliga åtgärdstyperna är:
 
+* [Bokför formulärdata](#post-data)
 * [E-post](#mail)
 * [Lagra innehåll](#store-content)
 
 Oavsett typ finns det [allmänna inställningar](#general-settings) för varje åtgärd.
+
+### Bokför formulärdata {#post-data}
+
+När formuläret skickas skickar dataåtgärden post form till en tredje part som JSON för bearbetning.
+
+![Alternativ för att skicka formulärdata i formulärbehållarkomponentens redigeringsdialogruta](/help/assets/form-container-edit-post.png)
+
+* **Slutpunkt** - Den fullständiga HTTPS-tjänsten som bearbetar data
+* **Felmeddelande** - Meddelande som visas om överföringen inte lyckas
+
+>[!TIP]
+>Det finns ytterligare timeout-alternativ som en systemadministratör kan justera för att hantera bearbetningen av vidarebefordrade formulärdata. [Mer information finns i den tekniska dokumentationen om GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
 
 ### E-post {#mail}
 
@@ -82,6 +95,12 @@ När formuläret skickas kommer innehållet i formuläret att lagras på en angi
 * **Innehållssökväg** - Sökväg till innehållsdatabas där skickat innehåll lagras
 * **Visa data** - tryck eller klicka för att visa lagrade skickade data som JSON
 * **Starta arbetsflöde** - Konfigurera för att starta ett arbetsflöde med det lagrade innehållet som nyttolast när formuläret skickas
+
+>[!NOTE]
+>
+>För att förenkla hanteringen av användardata och för att framtvinga olika problemområden rekommenderar vi i allmänhet inte att användargenererat innehåll lagras i databasen.
+>
+>Använd i stället åtgärdstypen [Skicka formulärdata](#post-data) för att skicka användarinnehåll till en dedikerad tjänsteleverantör.
 
 ### Allmänna inställningar {#general-settings}
 
