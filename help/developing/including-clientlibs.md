@@ -2,10 +2,10 @@
 title: Inkluderar klientbibliotek
 description: Det finns flera olika sätt att inkludera klientbibliotek beroende på hur du använder dem.
 translation-type: tm+mt
-source-git-commit: f74883359561e5ff6ca679d58bedbdeb100f7b0b
+source-git-commit: afce571ada011c38c83830628f09a9e268658965
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 3%
+source-wordcount: '394'
+ht-degree: 2%
 
 ---
 
@@ -111,3 +111,26 @@ Om du vill infoga JS-elementet kan du också använda `jsInline` . I så fall m�
     ${clientlibs.jsInline @ context="unsafe"}
 </script>
 ```
+
+## Läsa in sammanhangsberoende CSS och JavaScript {#context-aware-loading}
+
+Page Component ( [sidkomponenten](/help/components/page.md) ) har även stöd för inläsning av utvecklardefinierade sammanhangsberoende CSS-, JavaScript- eller meta-taggar.
+
+Detta görs genom att skapa en [kontextmedveten resurs](context-aware-configs.md) för `com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig` att använda följande struktur:
+
+```text
+com.adobe.cq.wcm.core.components.config.HtmlPageItemsConfig
+    - prefixPath="/some/path"
+    + item01
+        - element=["link"|"script"|"meta"]
+        - location=["header"|"footer"]
+        + attributes
+            - attributeName01="attributeValue01"
+            - attributeName02="attributeValue02"
+            ...
+    + item02
+        ...
+    ...
+```
+
+[Mer information finns i den tekniska dokumentationen för sidkomponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v2/page#loading-of-context-aware-cssjs)
