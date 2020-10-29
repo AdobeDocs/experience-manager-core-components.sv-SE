@@ -2,9 +2,9 @@
 title: Använda Adobe-klientdatalagret med kärnkomponenterna
 description: Använda Adobe-klientdatalagret med kärnkomponenterna
 translation-type: tm+mt
-source-git-commit: 79a063951a790261e2f00c33d8a76f31f781da0c
+source-git-commit: 1ada05d5089ccef95d41d47468776654e397f31d
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '893'
 ht-degree: 1%
 
 ---
@@ -256,3 +256,7 @@ window.adobeDataLayer.push(function (dl) {
 ## Självstudiekurs
 
 Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Kolla in den här självstudiekursen](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
+
+>[!TIP]
+>
+>Om du vill utforska datalagrets flexibilitet ytterligare kan du granska integreringsalternativen, inklusive hur du aktiverar datalagret för dina anpassade komponenter.
