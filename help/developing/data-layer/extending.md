@@ -2,9 +2,9 @@
 title: Utöka datalagret för klienten Adobe
 description: Adobe-klientdatalagret kan utökas efter vissa grundläggande mönster
 translation-type: tm+mt
-source-git-commit: 896ed679ed3351cb309a34b38bf97fe81adc2cfe
+source-git-commit: 1ada05d5089ccef95d41d47468776654e397f31d
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -25,3 +25,7 @@ En Core-komponent som [Title-komponenten](https://github.com/adobe/aem-core-wcm-
 Därför kan din anpassade Sling-modell ha en `getData` metod som returnerar ett objekt som utökas `ComponentData` för att returnera fler fält.
 
 Då läggs ett attribut till i HTML-elementet för komponenten med JSON för de data som ska fyllas i i datalagret. `data-cmp-data-layer` Nu kan du implementera skript som lyssnar på dessa data eller relaterade händelser.
+
+>[!TIP]
+>
+>Om du vill utforska datalagrets flexibilitet ytterligare kan du granska integreringsalternativen, inklusive hur du aktiverar datalagret för dina anpassade komponenter.
