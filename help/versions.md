@@ -2,9 +2,9 @@
 title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 translation-type: tm+mt
-source-git-commit: d815058a1fe295eba5988a283c17de576ef06c5e
+source-git-commit: c64276bb95aeaef4223fc2a0dc2c3cfdf8609f5a
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1848'
 ht-degree: 11%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 11%
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.12.0 och är kompatibel med [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html) installationer. Den släpptes i oktober 2020 som en viktig uppdatering till version 2.0.0. I version 2.0.0 introducerades nya komponenter tillsammans med v2-uppdateringar av befintliga komponenter.
+Den aktuella versionen av Core Components är 2.12.1 och är kompatibel med [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html) installationer. Den släpptes i november 2020 som en patch-version för 2.12.0. I version 2.12.0 introducerades flera nya funktioner för formulär, metadata och datalagret.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,8 +26,9 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
-| [2.12.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades [en ny formulärhanterare för POSTER.](/help/components/forms/form-container.md#post-data) möjlighet att inkludera anpassade CSS-, Javascript- och metadata- [taggar via kontextmedveten konfiguration,](/help/developing/including-clientlibs.md#context-aware-loading) och ett `DataLayerBuilder` verktyg som [förenklar integrering av datalager i anpassade komponenter.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 29 oktober 2020 |
-| [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades stöd för [AMP.](/help/developing/amp.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 20 juli 2020 |
+| [2.12.1](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.1) | Det här var en korrigeringsversion för 2.12.0 som åtgärdar ett större fel i Image Component. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 5 november 2020 |
+| [2.12.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades [en ny formulärhanterare för POSTER.](/help/components/forms/form-container.md#post-data) möjlighet att inkludera anpassade CSS-, Javascript- och metadata- [taggar via kontextmedveten konfiguration,](/help/developing/including-clientlibs.md#context-aware-loading) och ett `DataLayerBuilder` verktyg som [förenklar integrering av datalager i anpassade komponenter.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 29 oktober 2020 |
+| [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades stöd för [AMP.](/help/developing/amp.md) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 20 juli 2020 |
 | [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | I den här versionen introducerades [PDF Viewer-komponenten.](/help/components/pdf-viewer.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 17 juni 2020 |
 | [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Den här versionen aktiverade integrering med [Adobe Client Data Layer](/help/developing/data-layer/overview.md) och introducerade komponenten [Progress Bar.](/help/components/progress-bar.md) | 6.4.8.0+ | 6.5.4.0+ | Kontinuerlig | 8, 11 | 29 maj 2020 |
 | [2.8.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.8.0) | Den här versionen fokuserar på korrigeringar med små förbättringar. | 6.4.4.0+ | 6.5.0.0+ | Kontinuerlig | 8, 11 | 5 december 2019 |
@@ -51,6 +52,10 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 | [1.0.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-1.0.0) | Ursprunglig version av kärnkomponenter. | 6.4.0.0+ | - | - | 7 | 20 mars 2017 |
 
 >[!NOTE]
+>
+>(*) Sedan version 2.11.0 krävs `org.apache.sling.models.impl` version 1.4.12 eller senare (på grund av [SLING-8781](https://issues.apache.org/jira/browse/SLING-8781)). Detta kommer att anges för AEM 6.4 och 6.5 i ett framtida Service Pack. Fram till dess ingår Sling Models-paketet i `core.wcm.components.all` paketet.
+
+>[!TIP]
 >
 >Precis som med AEM rekommenderar Adobe att utvecklare använder den [senaste versionen och de versioner av kärnkomponenterna](https://github.com/adobe/aem-core-wcm-components/releases/latest) som är kompatibla med den version av AEM som de kör för att dra nytta av de senaste korrigeringarna och funktionerna.
 
