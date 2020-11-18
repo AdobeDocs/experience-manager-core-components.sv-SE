@@ -2,9 +2,9 @@
 title: AEM Project Archetype
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: 52f2c4dbba54261863a98fa2b992fe4690da3511
+source-git-commit: c9ec069a9eb12b8625be09d1c38dcaaf437bd5cb
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1280'
 ht-degree: 3%
 
 ---
@@ -80,7 +80,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `aemVersion` | `cloud` | Målversion AEM (kan vara `cloud` för [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)). eller `6.5.0`, eller `6.4.4` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokalt). |
 | `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) -version kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokal, beroende på värdet för `aemVersion` (kan vara `y` eller `n`). |
-| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan finnas `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA-redigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
+| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan finnas `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA Editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
 | `language` | `en` | Språkkod (ISO 639-1) för att skapa innehållsstrukturen från (t.ex. `en`, `deu`). |
 | `country` | `us` | Landskod (ISO 3166-1) för att skapa innehållsstrukturen från (t.ex. `US`). |
 | `singleCountry` | `y` | Innehåller en innehållsstruktur på överordnad (kan vara `y`eller `n`). |
@@ -90,6 +90,21 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för handelssystemet GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
 | `datalayer` | `y` | Aktivera integrering med [Adobe Client Data Layer](/help/developing/data-layer/overview.md). |
 | `amp` | `n` | Aktivera [AMP](/help/developing/amp.md) -stöd för genererade projektmallar. |
+
+## Analysmodul {#analyzer-module}
+
+Plugin-programmet AEM analyzer Maven analyserar strukturen för de olika innehållspaketprojekten.
+
+I dokumentationen [till](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md) AEM Maven Plugin finns information om hur du tar med programmet i ett AEM maven-projekt. Plugin-programmet finns i AEM Maven Archetype version 25 och senare.
+
+Nedan finns en tabell som beskriver de analysatorer som körs som en del av det här steget. Observera att vissa körs i den lokala SDK:n, medan andra bara körs under distributionen av molnhanteraren.
+
+| Modul | Funktion, exempel och felsökning | Lokal SDK | Cloud Manager |
+|---|---|---|---|
+| `api-regions-exportsimports` | Kontrollerar om alla OSGI-paket har sina Import-Package-deklarationer tillgodosedda av exportpaketdeklarationen för andra inkluderade paket i Maven-projektet. <p> </p> Om du vill felsöka kan du titta i manifestet för paketet som du förväntade dig skulle exportera för att avgöra om fel namn eller version användes. | Ja | Ja |
+| `requirements-capabilities` | Kontrollerar om alla kravdeklarationer som gjorts i OSGI-paket uppfylls av kapacitetsdeklarationerna för andra paket som ingår i Maven-projektet. <p> </p> Om du vill felsöka kan du titta i det manifest i paketet som du förväntar dig ska deklarera en funktion som avgör varför det saknas. | Ja | Ja |
+| `bundle-content` | Ger en varning om ett paket innehåller ursprungligt innehåll som anges med Sling-Initial-Content, vilket är problematiskt i AEM som en grupperad Cloud Service-miljö. | Ja | Ja |
+| `api-regions-crossfeature-dups` | Verifierar att kundens OSGI-paket inte har exportpaketdeklarationer som åsidosätter AEM som Cloud Servicens publika API | Ja | Ja |
 
 ## Systemkrav
 
