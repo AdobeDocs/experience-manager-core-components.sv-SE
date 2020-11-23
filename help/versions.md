@@ -2,9 +2,9 @@
 title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 translation-type: tm+mt
-source-git-commit: c64276bb95aeaef4223fc2a0dc2c3cfdf8609f5a
+source-git-commit: 850fbeec3cb31f4ea6873daa2555953684fd5a8d
 workflow-type: tm+mt
-source-wordcount: '1848'
+source-wordcount: '1870'
 ht-degree: 11%
 
 ---
@@ -26,7 +26,8 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
-| [2.12.1](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.1) | Det här var en korrigeringsversion för 2.12.0 som åtgärdar ett större fel i Image Component. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 5 november 2020 |
+| [2.12.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.2) | Det här var en patch-version för 2.12.0 med smärre korrigeringar. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 11 november 2020 |
+| [2.12.1](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.1) | Det här var en korrigeringsversion för 2.12.0 som åtgärdar ett större fel i [Image Component.](/help/components/image.md) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 5 november 2020 |
 | [2.12.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades [en ny formulärhanterare för POSTER.](/help/components/forms/form-container.md#post-data) möjlighet att inkludera anpassade CSS-, Javascript- och metadata- [taggar via kontextmedveten konfiguration,](/help/developing/including-clientlibs.md#context-aware-loading) och ett `DataLayerBuilder` verktyg som [förenklar integrering av datalager i anpassade komponenter.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 29 oktober 2020 |
 | [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades stöd för [AMP.](/help/developing/amp.md) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 20 juli 2020 |
 | [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | I den här versionen introducerades [PDF Viewer-komponenten.](/help/components/pdf-viewer.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 17 juni 2020 |
