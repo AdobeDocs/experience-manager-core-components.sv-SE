@@ -2,9 +2,9 @@
 title: AEM Project Archetype
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: c9ec069a9eb12b8625be09d1c38dcaaf437bd5cb
+source-git-commit: e32521f35f33897cd72892de393073b01ad963f1
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1035'
 ht-degree: 3%
 
 ---
@@ -90,21 +90,6 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för handelssystemet GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
 | `datalayer` | `y` | Aktivera integrering med [Adobe Client Data Layer](/help/developing/data-layer/overview.md). |
 | `amp` | `n` | Aktivera [AMP](/help/developing/amp.md) -stöd för genererade projektmallar. |
-
-## Analysmodul {#analyzer-module}
-
-Plugin-programmet AEM analyzer Maven analyserar strukturen för de olika innehållspaketprojekten.
-
-I dokumentationen [till](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md) AEM Maven Plugin finns information om hur du tar med programmet i ett AEM maven-projekt. Plugin-programmet finns i AEM Maven Archetype version 25 och senare.
-
-Nedan finns en tabell som beskriver de analysatorer som körs som en del av det här steget. Observera att vissa körs i den lokala SDK:n, medan andra bara körs under distributionen av molnhanteraren.
-
-| Modul | Funktion, exempel och felsökning | Lokal SDK | Cloud Manager |
-|---|---|---|---|
-| `api-regions-exportsimports` | Kontrollerar om alla OSGI-paket har sina Import-Package-deklarationer tillgodosedda av exportpaketdeklarationen för andra inkluderade paket i Maven-projektet. <p> </p> Om du vill felsöka kan du titta i manifestet för paketet som du förväntade dig skulle exportera för att avgöra om fel namn eller version användes. | Ja | Ja |
-| `requirements-capabilities` | Kontrollerar om alla kravdeklarationer som gjorts i OSGI-paket uppfylls av kapacitetsdeklarationerna för andra paket som ingår i Maven-projektet. <p> </p> Om du vill felsöka kan du titta i det manifest i paketet som du förväntar dig ska deklarera en funktion som avgör varför det saknas. | Ja | Ja |
-| `bundle-content` | Ger en varning om ett paket innehåller ursprungligt innehåll som anges med Sling-Initial-Content, vilket är problematiskt i AEM som en grupperad Cloud Service-miljö. | Ja | Ja |
-| `api-regions-crossfeature-dups` | Verifierar att kundens OSGI-paket inte har exportpaketdeklarationer som åsidosätter AEM som Cloud Servicens publika API | Ja | Ja |
 
 ## Systemkrav
 
