@@ -4,9 +4,9 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 translation-type: tm+mt
-source-git-commit: 81d2282d33ef3f20e4115e38abbd0c801e03c974
+source-git-commit: e32521f35f33897cd72892de393073b01ad963f1
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '206'
 ht-degree: 2%
 
 ---
@@ -89,3 +89,4 @@ ht-degree: 2%
       + [ui.front.response Module](developing/archetype/uifrontend-react.md)
       + [ui.front.angular-modul](developing/archetype/uifrontend-angular.md)
       + [ui.tests-modul](developing/archetype/uitests.md)
+      + [Build Analyzer Maven Plugin](developing/archetype/build-analyzer-maven-plugin.md)
