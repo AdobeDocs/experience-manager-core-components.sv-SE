@@ -2,9 +2,9 @@
 title: AEM som Cloud Service-SDK Build Analyzer Maven Plugin
 description: Dokumentation för det lokala plugin-programmet Maven build analyzer
 translation-type: tm+mt
-source-git-commit: abb43865278f884555d1bb963686ccc561f319b5
+source-git-commit: b95515dba74486add7f50bc8984f4358090e735c
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 AEM som Cloud Service-SDK Build Analyzer Maven Plugin analyserar strukturen för de olika innehållspaketprojekten.
 
-I dokumentationen [till](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md) AEM Maven Plugin finns information om hur du tar med programmet i ett AEM maven-projekt.
+I dokumentationen [till](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md) Maven Plugin finns mer information om hur du tar med programmet i ett AEM maven-projekt.
 
 Nedan finns en tabell som beskriver de analysatorer som körs som en del av det här steget. <!-- Note that some are executed in the local SDK, while others are only executed during the Cloud Manager pipeline deployment. -->
 
@@ -24,5 +24,5 @@ Nedan finns en tabell som beskriver de analysatorer som körs som en del av det 
 | `requirements-capabilities` | Kontrollerar om alla kravdeklarationer som gjorts i OSGI-paket uppfylls av kapacitetsdeklarationerna för andra paket som ingår i Maven-projektet. Ett fel skulle se ut så här: <p> </p> `[ERROR] org.acme:mybundle:0.0.1-SNAPSHOT: Artifact org.acme:mybundle:0.0.1-SNAPSHOT requires org.foo.bar in start level 20 but no artifact is providing a matching capability in this start level.`<p> </p> Om du vill felsöka kan du titta i det manifest i paketet som du förväntade dig ska deklarera en funktion för att avgöra varför den saknas, eller kontrollera i manifestet för det paket som kräver det för att se att kraven i det är korrekta. | Ja | Ja |
 | `bundle-content` | Ger en varning om ett paket innehåller ursprungligt innehåll som anges med Sling-Initial-Content, vilket är problematiskt i AEM som en grupperad Cloud Service-miljö. Varningen ser ut så här: <p> </p> `[WARNING] org.acme:mybundle:0.0.1-SNAPSHOT: Found initial content : [/]` <p> </p>Information om hur du felsöker konvertering av det ursprungliga innehållet till poinit-satser finns i Referenshandbok. | Ja | Ja |
 | `bundle-resources` | Ger en varning om ett paket innehåller resurser som har angetts med huvudet Sling-Bundle-Resources, vilket är problematiskt i AEM som en Cloud Service i grupperad miljö. Varningen ser ut så här:<p> </p> `[WARNING] org.acme:mybundle:0.0.1-SNAPSHOT: Found bundle resources : [/libs/sling/explorer!/resources/explorer]`<p> </p> Information om hur du felsöker konvertering av resurser för att kommentera satser finns i [Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=en#repo-init). | Ja | Ja |
-| `api-regions`<p> </p>`api-regions-check-order`<p> </p>`api-regions-dependencies`<p> </p>`api-regions-duplicates` | Dessa analysatorer kontrollerar lite information om konfigurationen av API-regionerna i funktionerna. För kunder genereras API-regionskonfigurationen och anges inte direkt av dem. Dessa analysatorer aktiveras eftersom de också aktiveras i AEMaaCS. Ett fel som genererats av någon av dessa skulle emellertid tyda på ett fel i innehållspaketet för att visa konverteringsprocessen för en modell. | Ja | Ja |
+| `api-regions`<p> </p>`api-regions-check-order`<p> </p>`api-regions-dependencies`<p> </p>`api-regions-duplicates` | Dessa analytiker kontrollerar vissa detaljer som rör [innehållspaketet för att inkludera en modellkonverteringsprocess](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying) som skapar artefakter som överensstämmer med Sling-funktionsmodellen. Alla fel ska rapporteras till Adobe kundsupport. | Ja | Ja |
 | `api-regions-crossfeature-dups` | Verifierar att kundens OSGI-paket inte har exportpaketdeklarationer som åsidosätter AEM som Cloud Servicens publika API<p> </p>`[WARNING] org.acme:mybundle:0.0.1-SNAPSHOT: Package overlap found between region global and bundle org.acme:mybundle:0.0.1.SNAPSHOT which comes from feature: [org.acme:myproject.analyse:slingosgifeature:0.0.1-SNAPSHOT]. Both export package: com.day.util`<p> </p>Sluta exportera ett paket som är en del av det AEM offentliga API:t för att åtgärda problemet. | Ja | Ja |
