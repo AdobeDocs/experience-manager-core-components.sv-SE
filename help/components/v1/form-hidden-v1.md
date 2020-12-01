@@ -4,17 +4,20 @@ description: Komponenten Core Component Form Hidden gör det möjligt att visa e
 index: n
 translation-type: tm+mt
 source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 1%
 
 ---
 
 
-# Komponent för dolt formulär (v1) {#form-hidden-component-v}
+# Formulärets dolda komponent (v1) {#form-hidden-component-v}
 
 Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
 
 ## Användning {#usage}
 
-Med den dolda komponenten för kärnkomponentformulär kan du skapa dolda fält som skickar information om den aktuella sidan tillbaka till AEM och som ska användas tillsammans med [formulärbehållarkomponenten](form-container-v1.md).
+Komponenten Core Component Form Hidden gör det möjligt att skapa dolda fält som skickar information om den aktuella sidan tillbaka till AEM och är avsedd att användas tillsammans med [formulärbehållarkomponenten](form-container-v1.md).
 
 Fältegenskaperna kan definieras av innehållsredigeraren i [konfigurationsdialogrutan](#configure-dialog).
 
@@ -24,7 +27,7 @@ I det här dokumentet beskrivs v1 i Form Hidden Component, som ursprungligen int
 
 I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 
-| AEM-version | Formulärets dolda komponent v1 |
+| AEM | Formulärets dolda komponent v1 |
 |--- |--- |
 | 6.3 | Kompatibel |
 | 6.4 | Kompatibel |
@@ -33,9 +36,9 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 >
 >I det här dokumentet beskrivs v1 för komponenten Form Hidden.
 >
->Mer information om den aktuella versionen av Form Hidden Component finns i dokumentet [Form Hidden Component](/help/components/forms/form-hidden.md) .
+>Mer information om den aktuella versionen av komponenten Formulär-Dold finns i dokumentet [Formulärdlig komponent](/help/components/forms/form-hidden.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -77,7 +80,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md#release-history-and-compatibility) .
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md#release-history-and-compatibility).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -86,17 +89,17 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera parametrarna för
 ![](/help/assets/chlimage_1-26.png)
 
 * **Namn** - Namnet på fältet som skickas med formulärdata
-* **Värde** - Fältets värde som skickas med formulärdata
-* **Identifierare** - Identifieraren ska vara unik på sidan och kan användas för att binda skript till det här formulärfältet
+* **Värde**  - Fältets värde som skickas med formulärdata
+* **Identifierare**  - Identifieraren ska vara unik på sidan och kan användas för att binda skript till det här formulärfältet
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 Det finns ingen designdialogruta för komponenten Formulär-dold.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Form Hidden Component [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
+Den senaste tekniska dokumentationen om den dolda formulärkomponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
