@@ -18,11 +18,11 @@ Med komponenten Core Component Form Container Component kan man skapa enkla insk
 
 Med formulärbehållarkomponenten kan du skapa enkla formulär och funktioner för inlämning av information genom att stödja enkla WCM-formulär och använda en kapslad struktur för att tillåta ytterligare formulärkomponenter.
 
-Genom att använda dialogrutan [](#configure-dialog) Konfigurera kan innehållsredigeraren definiera den åtgärd som ska utföras när formulär skickas, vilken URl som ska hantera överföringen och om ett arbetsflöde ska aktiveras. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera de tillåtna komponenterna och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Genom att använda dialogrutan [Konfigurera](#configure-dialog) kan innehållsredigeraren definiera åtgärden som ska aktiveras när formulär skickas, URL:en som ska hantera överföringen och om ett arbetsflöde ska aktiveras. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera de tillåtna komponenterna och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!NOTE]
 >
->Huvudkomponenterna Form Container Component har endast stöd för användning av kärnkomponenter i form av komponenter (knapp, text, dold etc.). Det går inte att använda [baskomponenter](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/default-components-foundation.html) i kärnkomponentens formulärbehållare (och vice versa).
+>Huvudkomponenterna Form Container Component har endast stöd för användning av kärnkomponenter i form av komponenter (knapp, text, dold etc.). Det går inte att använda [grundkomponenter](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/default-components-foundation.html) i kärnkomponentens formulärbehållare (och vice versa).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -35,38 +35,38 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v2 | Kompatibel | Kompatibel | Kompatibel |
 | [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | - |
 
-Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
-Om du vill visa komponenterna i Form Container samt se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_container).
+Om du vill visa Form Container-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_container).
 
 ## Teknisk information {#technical-details}
 
 Den senaste tekniska dokumentationen om Form Container Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_form_container_v2).
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera vilka åtgärder som ska vidtas när komponenten skickas.
 
-Beroende på den valda **åtgärdstypen**&#x200B;ändras de tillgängliga alternativen i behållaren. De tillgängliga åtgärdstyperna är:
+Beroende på vald **åtgärdstyp** ändras de tillgängliga alternativen i behållaren. De tillgängliga åtgärdstyperna är:
 
 * [Bokför formulärdata](#post-data)
 * [E-post](#mail)
 * [Lagra innehåll](#store-content)
 
-Oavsett typ finns det [allmänna inställningar](#general-settings) för varje åtgärd.
+Oavsett typ finns det [allmänna inställningar](#general-settings) som gäller för varje åtgärd.
 
-### Bokför formulärdata {#post-data}
+### Skicka formulärdata {#post-data}
 
 När formuläret skickas skickar dataåtgärden post form till en tredje part som JSON för bearbetning.
 
 ![Alternativ för att skicka formulärdata i formulärbehållarkomponentens redigeringsdialogruta](/help/assets/form-container-edit-post.png)
 
-* **Slutpunkt** - Den fullständiga HTTPS-tjänsten som bearbetar data
-* **Felmeddelande** - Meddelande som visas om överföringen inte lyckas
+* **Slutpunkt**  - Den fullständiga HTTPS-tjänsten som bearbetar data
+* **Felmeddelande**  - Meddelande som visas om överföringen inte lyckas
 
 >[!TIP]
 >Det finns ytterligare timeout-alternativ som en systemadministratör kan justera för att hantera bearbetningen av vidarebefordrade formulärdata. [Mer information finns i den tekniska dokumentationen om GitHub.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/actions/rpc)
@@ -77,13 +77,13 @@ När formuläret skickas skickar poståtgärdstypen ett e-postmeddelande till an
 
 ![E-postalternativ i dialogrutan Redigera i komponenten Formulärbehållare](/help/assets/form-container-edit-mail.png)
 
-* **Ämne** - Ämnet för det e-postmeddelande som ska skickas när formulär skickas
-* **Från** - Från-e-postadressen till e-postmeddelandet som ska skickas när formulär skickas
-* **Till** - Adresserna till mottagarna som ska få ett e-postmeddelande när formuläret skickas in
-   * Tryck eller klicka på knappen **Lägg till** för att lägga till ytterligare adresser
+* **Ämne**  - Ämnet för det e-postmeddelande som ska skickas när formulär skickas
+* **Från** - Från-e-postadressen till det e-postmeddelande som ska skickas när formulär skickas
+* **Till**  - Adresserna till mottagarna som ska få ett e-postmeddelande när formuläret skickas in
+   * Tryck eller klicka på knappen **Lägg till** om du vill lägga till ytterligare adresser
    * Tryck eller klicka på knappen **Ta bort** för att ta bort en e-postadress
 * **CC** - Adresserna till mottagarna som ska få en kopia av e-postmeddelandet som skickas när formuläret skickas in
-   * Tryck eller klicka på knappen **Lägg till** för att lägga till ytterligare adresser
+   * Tryck eller klicka på knappen **Lägg till** om du vill lägga till ytterligare adresser
    * Tryck eller klicka på knappen **Ta bort** för att ta bort en e-postadress
 
 ### Lagra innehåll {#store-content}
@@ -92,8 +92,8 @@ När formuläret skickas kommer innehållet i formuläret att lagras på en angi
 
 ![Alternativ för att lagra innehåll i redigeringsdialogrutan för formulärbehållaren](/help/assets/form-container-edit-store.png)
 
-* **Innehållssökväg** - Sökväg till innehållsdatabas där skickat innehåll lagras
-* **Visa data** - tryck eller klicka för att visa lagrade skickade data som JSON
+* **Sökväg till**  innehåll - Sökväg till innehållsdatabas där skickat innehåll lagras
+* **Visa data**  - Tryck eller klicka för att visa lagrade skickade data som JSON
 * **Starta arbetsflöde** - Konfigurera för att starta ett arbetsflöde med det lagrade innehållet som nyttolast när formuläret skickas
 
 >[!NOTE]
@@ -108,16 +108,16 @@ Oavsett vilken åtgärdstyp du väljer kan du alltid definiera en tacksida.
 
 ![Allmänna alternativ i redigeringsdialogrutan för komponenten Formulärbehållare](/help/assets/form-container-edit-general.png)
 
-* **Tack** ! Användaren omdirigeras till den angivna sidan när formuläret har skickats.
+* **Tack för din sida**  - Användaren omdirigeras till den angivna sidan när formuläret har skickats.
    * Använd dialogrutan Markering för att välja en resurs i AEM.
    * Om tacksidan inte finns i AEM anger du den absoluta URL:en. Icke-absoluta URL:er tolkas i förhållande till AEM.
    * Lämna tomt om du vill visa formuläret igen när det har skickats.
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+* **ID**  - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i  [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
