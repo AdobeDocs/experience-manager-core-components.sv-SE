@@ -18,7 +18,7 @@ Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en 
 
 Komponenten Breadcrumb visar den aktuella sidans position i platshierarkin, vilket gör att sidbesökare kan navigera i sidhierarkin från sin aktuella plats. Detta är ofta integrerat i sidhuvuden och sidfötter.
 
-Tillgängliga alternativ, t.ex. standardnavigeringsnivån och möjligheten att visa den aktuella sidan eller dolda sidor, kan definieras av mallskaparen i [designdialogrutan](#design-dialog). Innehållsredigeraren kan sedan välja om dolda sidor ska visas eller inte och den faktiska navigeringsnivån för komponenten i [redigeringsdialogrutan](#edit-dialog).
+Tillgängliga alternativ, till exempel standardnavigeringsnivån och möjligheten att visa den aktuella sidan eller dolda sidor, kan definieras av mallskaparen i [designdialogrutan](#design-dialog). Innehållsredigeraren kan sedan välja om dolda sidor ska visas eller inte och den faktiska navigeringsnivån för komponenten i [redigeringsdialogrutan](#edit-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -31,43 +31,43 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v2 | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | - |
 
-Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
-Om du vill visa Breadcrumb Component (Breadcrumb-komponenten) och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_breadcrumb).
+Om du vill visa Breadcrumb-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_breadcrumb).
 
 >[!NOTE]
 >
->Från och med Core Components version 2.1.0 stöder Breadcrumb-komponenten [schema.org-mikrodata](https://schema.org/BreadcrumbList).
+>Från och med Core Components version 2.1.0 stöder Breadcrumb Component [schema.org mikrodata](https://schema.org/BreadcrumbList).
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Breadcrumb Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v2).
+Den senaste tekniska dokumentationen om Breadcrumb-komponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v2).
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Dialogrutan Redigera {#edit-dialog}
+## Redigera dialogruta {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva sidor i vägbeskrivningar samt djupet i den hierarki som ska visas.
 
 ![Dialogruta för redigering av komponenten Breadcrumb](/help/assets/breadcrumb-edit.png)
 
-* **Startnivå** för navigering - Där i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan. Till exempel:
+* **Startnivå**  för navigering - Där i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan. Till exempel:
 
    * 0 börjar vid `/content`
-   * 1 börjar vid `/content/<yourSite>`
+   * 1 börjar `/content/<yourSite>`
    * 2 börjar vid `/content/<yourSite>/<country>`
 
 * **Visa dolda navigeringsobjekt** - Visa sidor som är markerade som dolda i navigeringsfältet (som standard visas de inte)
-* **Dölj aktuell sida** - Utelämna den aktuella sidan i den synliga sökvägen (som standard visas den)
-* **Inaktivera skuggning** - Om sidan i hierarkin är en omdirigering visas namnet på omdirigeringssidan i stället för målet. Mer information finns i [Skuggwebbplatsens strukturstöd](navigation.md#shadow-structure) för navigeringskomponenten.
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+* **Dölj aktuell sida** - Utelämna den aktuella sidan i sidutrymmet (som standard visas den)
+* **Inaktivera skuggning**  - Om sidan i hierarkin är en omdirigering visas namnet på omdirigeringssidan i stället för målet. Mer information finns i [Stöd för skuggplatsstruktur](navigation.md#shadow-structure) för navigeringskomponenten.
+* **ID**  - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i  [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska användas för att inaktivera dolda och aktiva sidor i vägbeskrivningarna samt djupet i den hierarki som ska visas.
 
@@ -75,17 +75,17 @@ I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska anv
 
 ![](/help/assets/breadcrumb-design.png)
 
-* **Startnivå** för navigering - Definierar standardvärdet för var i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan när den synliga komponenten läggs till på en sida.
-* **Visa dolda navigeringsobjekt** - Definierar standardvärdet för alternativet **Visa dolda navigeringsobjekt** när den synliga komponenten läggs till på en sida.
+* **Startnivå**  för navigering - Definierar standardvärdet för var i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan när den synliga komponenten läggs till på en sida.
+* **Visa dolda navigeringsobjekt**  - Definierar standardvärdet för alternativet  **Visa dolda** navigeringsobjekt när den synliga komponenten läggs till på en sida.
 
    * Det aktiverar eller inaktiverar inte alternativet för författaren. Det anger bara standardvärdet.
 
-* **Dölj aktuell sida**- Definierar standardvärdet för alternativet **Dölj aktuell sida** när den synliga komponenten läggs till på en sida.
+* **Dölj aktuell sida** - Definierar standardvärdet för alternativet  **Dölj aktuell** sida när den synliga komponenten läggs till på en sida.
 
    * Det aktiverar eller inaktiverar inte alternativet för författaren. Det anger bara standardvärdet.
 
-* **Inaktivera skuggning** - Definierar standardvärdet för alternativet **Inaktivera skuggning** när den synliga komponenten läggs till på en sida.
+* **Inaktivera skuggning**  - Definierar standardvärdet för alternativet  **Inaktivera** skuggning när den synliga komponenten läggs till på en sida.
 
 ### Fliken Format {#styles-tab}
 
-Komponenten Breadcrumb har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
+Breadcrumb-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
