@@ -3,21 +3,24 @@ title: Lokaliseringsfunktioner för kärnkomponenterna
 description: Lokaliseringsfunktioner för kärnkomponenterna
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '725'
+ht-degree: 0%
 
 ---
 
 
 # Lokaliseringsfunktioner för kärnkomponenterna {#localization-features-of-the-core-components}
 
-Många webbplatser kräver att innehåll levereras i ett lokaliserat format på flera språk och i olika länder. De valda kärnkomponenterna har smart referensupplösning som gör det enkelt att skapa en enhetlig mall för allt lokaliserat innehåll som automatiskt anpassas baserat på den lokaliserade webbplatsstrukturen.
+Många webbplatser kräver att innehåll levereras i ett lokaliserat format på flera språk och i olika länder. De valda kärnkomponenterna har en smart referensupplösning som gör det enkelt att skapa en enhetlig mall för allt lokaliserat innehåll som automatiskt anpassas baserat på den lokaliserade webbplatsstrukturen.
 
-## Exempel - Lokaliserad sida med navigering och sidfot {#example}
+## Exempel - Lokaliserad sida med navigering och sidfötter {#example}
 
 De flesta webbplatser kräver att det finns en sidfot på alla sidor. Dessa sidfötter är i allmänhet konsekventa för allt innehåll på sidan. För en lokaliserad innehållssida måste dock en lokaliserad version av sidhuvudet eller sidfoten visas.
 
 På samma sätt måste en navigeringskomponent vanligtvis visas på alla sidor. Det måste dock även återspegla innehållet på de lokaliserade sidorna.
 
-Detta blir en enkel uppgift med lokaliseringsfunktionerna i [Navigation Core Component](/help/components/navigation.md) och [Experience Fragment Core Component](/help/components/experience-fragment.md) tillsammans med de [redigerbara mallarna i AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html). Exemplet kan utökas ytterligare för att även använda [språknavigeringskomponenten](/help/components/language-navigation.md) .
+Det här blir en enkel uppgift med lokaliseringsfunktionerna i [kärnkomponenten för navigering](/help/components/navigation.md) och [kärnkomponenten för upplevelsefragment](/help/components/experience-fragment.md) tillsammans med de redigerbara mallarna för [AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html). Exemplet kan utökas ytterligare för att även använda [språknavigeringskomponenten](/help/components/language-navigation.md).
 
 ## Innehållsstrukturen {#content-structure}
 
@@ -29,7 +32,7 @@ Säg att din webbplats bara heter `my-site` och finns här:
 /content/my-site
 ```
 
-Låt oss också säga att du skriver din webbplats på engelska och erbjuder den på franska också. Om du har en enkel sida som kallas `my-page` finns den i två lokaliseringsgrenar i webbplatsens innehållsträd:
+Låt oss också säga att du skriver din webbplats på engelska och erbjuder den på franska också. Om du har en enkel sida med namnet `my-page` finns den i två lokaliseringsgrenar i webbplatsens innehållsträd:
 
 ```
 /content
@@ -60,11 +63,11 @@ Sidfötter görs vanligtvis med Experience Fragments så att du behöver en enge
 
 Det är via den speglade lokaliseringsstrukturen som kärnkomponenterna kan hitta det lokaliserade innehåll som krävs för en motsvarande sida.
 
-## Sidfot - upplevelsefragment {#xf-footer}
+## Sidfot - Upplevelsefragment {#xf-footer}
 
 Experience Fragment Component är mycket flexibelt och passar bra för sidhuvud och sidfot.
 
-Eftersom vår hypotetiska webbplats erbjuds på engelska och franska måste vi skapa två Experience Fragments, som båda kallas `footer` [för de platser som vi beskrev tidigare.](#content-structure)
+Eftersom vår hypotetiska webbplats finns på engelska och franska måste vi skapa två Experience Fragments som båda kallas `footer` [på de platser vi beskrev tidigare.](#content-structure)
 
 ![](/help/assets/screen-shot-2019-09-09-11.08.28.png)
 
@@ -72,13 +75,13 @@ Eftersom vår hypotetiska webbplats erbjuds på engelska och franska måste vi s
 
 Eftersom sidfoten visas på varje sida måste vi lägga till Experience Fragment i vår standardsidmall.
 
-Vår mall kallas bara `my-template` och finns med i våra andra mallar:
+Vår mall heter bara `my-template` och finns med i våra andra mallar:
 
 ```
 /conf/my-site/settings/wcm/templates/my-template
 ```
 
-I den här mallen ska vi lägga till de grundläggande komponenter som vi vill att våra sidor ska baseras på.
+Till den här mallen ska vi lägga till de grundläggande komponenter som vi vill att våra sidor ska baseras på.
 
 * [Navigeringskomponent](/help/components/navigation.md)
    * Navigeringskomponenten visas överst på varje sida.
@@ -89,6 +92,7 @@ I den här mallen ska vi lägga till de grundläggande komponenter som vi vill a
 * [Experience Fragment](/help/components/experience-fragment.md)
    * Vi pekar Experience Fragment-komponenten mot fragmentsökvägen i vårt redigeringsspråk för det fragment som representerar sidfoten.
    * Baserat på fragmentets sökväg och strukturen för de upplevelsefragment som speglar den lokaliserade sidstrukturen, kan komponenten automatiskt hitta motsvarande lokaliserade innehåll.
+
    ![](/help/assets/screen-shot-2019-09-09-11.20.10.png)
 
 ## Sidor {#pages}
@@ -101,7 +105,7 @@ Navigeringskomponenten och Experience Fragment-komponenten kommer från sidmalle
 
 ![](/help/assets/screen-shot-2019-09-09-11.22.14.png)
 
-## Passar allt tillsammans {#fitting-it-all-together}
+## Passar in allt tillsammans {#fitting-it-all-together}
 
 Här är en komplett bild av hur dessa enkla, men kraftfulla element samverkar för att leverera lokaliserade sidor till innehållsförfattarna.
 
