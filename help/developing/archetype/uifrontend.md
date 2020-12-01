@@ -4,7 +4,7 @@ description: En projektmall för AEM
 translation-type: tm+mt
 source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1622'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir därmed den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. För att till fullo kunna utnyttja denna användbara och flexibla funktion är det viktigt att förstå hur frontendutvecklingen passar in i ett AEM projekt.
 
-## AEM och frontendutvecklingsprojekt {#aem-and-front-end-development}
+## AEM och frontendutveckling {#aem-and-front-end-development}
 
 I betydligt förenklade termer kan man tänka sig att AEM projekt består av två separata men sammanhörande delar:
 
@@ -27,27 +27,27 @@ Eftersom dessa två utvecklingsprocesser är inriktade på olika delar av projek
 
 Alla resulterande projekt måste dock använda resultatet från båda dessa utvecklingssatsningar, dvs. både back end och front end.
 
-När du kör `npm run dev` startas frontendkonstruktionsprocessen som samlar de JavaScript- och CSS-filer som lagras i modulen ui.front och skapar två minifierade klientbibliotek eller ClientLibs som anropas `clientlib-site` och `clientlib-dependencies` placerar dem i modulen ui.apps. ClientLibs kan distribueras för att AEM och tillåta dig att lagra din klientkod i databasen.
+När du kör `npm run dev` startas frontendkonstruktionsprocessen som samlar de JavaScript- och CSS-filer som lagras i modulen ui.front och skapar två minifierade klientbibliotek eller ClientLibs som kallas `clientlib-site` och `clientlib-dependencies` och placerar dem i modulen ui.apps. ClientLibs kan distribueras för att AEM och tillåta dig att lagra din klientkod i databasen.
 
-När hela AEM projekts arkityp körs med `mvn clean install -PautoInstallPackage` alla projektartefakter, inklusive ClientLibs, skickas sedan till AEM.
+När hela AEM projekts arkityp körs med `mvn clean install -PautoInstallPackage` skickas alla projektartefakter, inklusive ClientLibs, till AEM.
 
 >[!TIP]
 >
->Läs mer om hur AEM hanterar ClientLibs i [AEM-utvecklingsdokumentationen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html), hur du [inkluderar dem](/help/developing/including-clientlibs.md)eller se [hur ui.front-modulen använder dem nedan.](#clientlib-generation)
+>Läs mer om hur AEM hanterar ClientLibs i [AEM-utvecklingsdokumentationen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html), hur du [tar med dem](/help/developing/including-clientlibs.md) eller se nedan [hur ui.front-modulen använder dem.](#clientlib-generation)
 
-## ClientLibs Overview {#clientlibs}
+## ClientLibs-översikt {#clientlibs}
 
 Framtend-modulen är tillgänglig med en [AEM ClientLib](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html). När NPM-byggskriptet körs skapas appen och paketet aem-clientlib-generator tar det resulterande byggresultatet och omvandlar det till en sådan ClientLib.
 
 En ClientLib består av följande filer och kataloger:
 
 * `css/`: CSS-filer som kan begäras i HTML
-* `css.txt`: AEM ordning och namn på filer i `css/` så att de kan sammanfogas
+* `css.txt`: AEM ordning och namn på filer i  `css/` så att de kan sammanfogas
 * `js/`: JavaScript-filer som kan begäras i HTML
-* `js.txt` AEM ordning och namn på filer i `js/` så att de kan sammanfogas
+* `js.txt` AEM ordning och namn på filer i  `js/` så att de kan sammanfogas
 * `resources/`: Källmappningar, kodsegment som inte är ingångspunkter (till följd av koddelning), statiska resurser (t.ex. ikoner) osv.
 
-## Möjliga arbetsflöden för utveckling i gränssnittet {#possible-workflows}
+## Möjliga arbetsflöden för frontendutveckling {#possible-workflows}
 
 Framtidsmodulen är ett användbart och mycket flexibelt verktyg, men har ingen särskild åsikt om hur den ska användas. Nedan följer två exempel på *möjlig* användning, men dina individuella projektbehov kan styra andra användningsmodeller.
 
@@ -55,20 +55,20 @@ Framtidsmodulen är ett användbart och mycket flexibelt verktyg, men har ingen 
 
 Med Webpack kan du utforma och utveckla baserat på statiska utdata från AEM webbsidor i modulen ui.front.
 
-1. Förhandsgranska sidan i AEM med förhandsgranskningsläget eller skicka `wcmmode=disabled` i URL-adressen
+1. Förhandsgranska sidan i AEM med förhandsgranskningsläget eller skicka i `wcmmode=disabled` i URL:en
 1. Visa sidans källa och spara som statisk HTML i modulen ui.front
-1. [Starta webbpaketet](#webpack-dev-server) och börja formatera och generera nödvändigt JavaScript och CSS
+1. [Starta ](#webpack-dev-server) webbpaketering och börja formatera och generera nödvändigt JavaScript och CSS
 1. Kör `npm run dev` för att generera ClientLibs
 
 I det här flödet kan en AEM utföra steg ett och två och skicka den statiska HTML-koden till den frontendutvecklare som utvecklar baserat på AEM HTML-utdata.
 
 >[!TIP]
 >
->Man skulle också kunna utnyttja [komponentbiblioteket](https://adobe.com/go/aem_cmp_library) för att hämta exempel från varje komponents markeringar för att arbeta på komponentnivå i stället för på sidnivå.
+>Man kan också utnyttja [komponentbiblioteket](https://adobe.com/go/aem_cmp_library) för att hämta exempel på kodutdata för varje komponent för att arbeta på komponentnivå i stället för på sidnivå.
 
 ### Använda Storybook {#using-storybook}
 
-Med [Storybook](https://storybook.js.org) kan du utföra mer atomiskt framend-arbete. Även om Storybook inte ingår i AEM Project Archetype kan du installera den och lagra dina Storybook-artefakter i modulen ui.front. När de är klara för testning i AEM kan de distribueras som ClientLibs genom att köras `npm run dev`.
+Med [Storybook](https://storybook.js.org) kan du utföra mer atomiska frontstudier. Även om Storybook inte ingår i AEM Project Archetype kan du installera den och lagra dina Storybook-artefakter i modulen ui.front. När de är klara för testning i AEM kan de distribueras som ClientLibs genom att köra `npm run dev`.
 
 >[!NOTE]
 >
@@ -88,12 +88,12 @@ AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism s
 * Globbing
    * Du behöver inte lägga till import överallt
    * Alla JS- och CSS-filer kan nu läggas till i varje komponent.
-      * Bästa praxis är under `/clientlib/js`, `/clientlib/css`eller `/clientlib/scss`
-   * Inga `.content.xml` eller `js.txt`/`css.txt` filer behövs eftersom allt körs via Webpack.
-   * Globen hämtar alla JS-filer under `/component/` mappen.
+      * Bästa praxis är under `/clientlib/js`, `/clientlib/css` eller `/clientlib/scss`
+   * Inga `.content.xml`- eller `js.txt`/`css.txt`-filer behövs eftersom allt körs via Webpack.
+   * Globen hämtar alla JS-filer under mappen `/component/`.
       * Med Webpack kan CSS-/SCSS-filer kedjas i via JS-filer.
-      * De dras in genom de två ingångspunkterna `sites.js` och `vendors.js`.
-   * Den enda fil som AEM använder är utdatafilerna `site.js` och `site.css` i `/clientlib-site` samt `dependencies.js` och `dependencies.css` i `/clientlib-dependencies`
+      * De dras in genom de två startpunkterna `sites.js` och `vendors.js`.
+   * Den enda fil som används av AEM är utdatafilerna `site.js` och `site.css` i `/clientlib-site` samt `dependencies.js` och `dependencies.css` i `/clientlib-dependencies`
 * Chunks
    * Main (site js/css)
    * Leverantörer (beroenden js/css)
@@ -111,7 +111,7 @@ AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism s
 
 >[!NOTE]
 >
->Du måste ha [kört arkivtypen](overview.md) med alternativet `-DoptionIncludeFrontendModule=y` att fylla mappen ui.front.
+>Du måste ha [kör arkivtypen](overview.md) med alternativet `-DoptionIncludeFrontendModule=y` för att fylla mappen ui.front.
 
 ## Användning {#usage}
 
@@ -121,12 +121,12 @@ Följande nPM-skript driver arbetsflödet framåt:
 * `npm run prod` - fullständigt bygge med JS-optimering aktiverad (trädskakning osv.), källmappningar inaktiverade och CSS-optimering aktiverad.
 * `npm run start` - Startar en statisk webbpaketsutvecklingsserver för lokal utveckling med minimalt AEM.
 
-## Output {#output}
+## Utdata {#output}
 
-Modulen ui.front kompilerar koden under `ui.frontend/src` mappen och matar ut kompilerad CSS och JS samt eventuella resurser under en mapp med namnet `ui.frontend/dist`.
+Modulen ui.front kompilerar koden under mappen `ui.frontend/src` och matar ut den kompilerade CSS- och JS-filen samt eventuella resurser under en mapp med namnet `ui.frontend/dist`.
 
-* **Plats** - `site.js`, `site.css` och en `resources/` mapp för layoutberoende bilder och teckensnitt skapas i en mapp `dist/`på klienten.
-* **Beroenden** - `dependencies.js` och `dependencies.css` skapas i en `dist/clientlib-dependencies` mapp.
+* **Plats** -  `site.js`och en  `site.css` mapp för layoutberoende bilder och teckensnitt skapas i en mapp  `resources/`   `dist/`på klienten.
+* **Beroenden**  -  `dependencies.js` och  `dependencies.css` skapas i en  `dist/clientlib-dependencies` mapp.
 
 ### JavaScript {#javascript}
 
@@ -136,7 +136,8 @@ Modulen ui.front kompilerar koden under `ui.frontend/src` mappen och matar ut ko
 
 * Automatisk korrigering - Alla CSS körs via ett prefix och alla egenskaper som kräver prefix läggs automatiskt till i CSS.
 * Optimering - I efterhand körs all CSS via en optimerare (cssnano) som normaliserar den enligt följande standardregler:
-   * Minskar CSS-beräkningsuttrycket där det är möjligt och säkerställer både webbläsarkompatibilitet och compressionConverts mellan likvärdiga värden för längd, tid och vinkel. Observera att längdvärden som standard inte konverteras.
+   * Minskar CSS-beräkningsuttryck där det är möjligt, vilket garanterar både webbläsarkompatibilitet och komprimering
+Konverterar mellan likvärdiga värden för längd, tid och vinkel. Observera att längdvärden som standard inte konverteras.
    * Tar bort kommentarer i och runt regler, väljare och deklarationer
    * Tar bort dubblerade regler, regler och deklarationer
       * Observera att detta bara fungerar för exakta dubbletter.
@@ -152,16 +153,16 @@ Modulen ui.front kompilerar koden under `ui.frontend/src` mappen och matar ut ko
 >
 >Det första byggalternativet använder konfigureringsfiler för enbart dev och endast prod, som delar en gemensam konfigurationsfil. På så sätt kan utvecklings- och produktionsinställningarna ändras oberoende av varandra.
 
-### Generering av klientbibliotek {#clientlib-generation}
+### Klientbiblioteksgenerering {#clientlib-generation}
 
 Byggningsprocessen för modulen ui.front utnyttjar plugin-programmet [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) för att flytta kompilerad CSS, JS och eventuella resurser till modulen ui.apps. Konfigurationen för aem-clientlib-generator definieras i `clientlib.config.js`. Följande klientbibliotek genereras:
 
-* **clientlib-site** - `ui.apps/src/main/content/jcr_root/apps/<app>/clientlibs/clientlib-site`
-* **clientlib-beroenden** - `ui.apps/src/main/content/jcr_root/apps/<app>/clientlibs/clientlib-dependencies`
+* **clientlib-site** -  `ui.apps/src/main/content/jcr_root/apps/<app>/clientlibs/clientlib-site`
+* **clientlib-beroenden** -  `ui.apps/src/main/content/jcr_root/apps/<app>/clientlibs/clientlib-dependencies`
 
-### Inkludera klientbibliotek på sidor {#clientlib-inclusion}
+### Inkluderar klientbibliotek på sidor {#clientlib-inclusion}
 
-`clientlib-site` och `clientlib-dependencies` kategorier inkluderas på sidor via [sidprincipskonfigurationen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#template-definitions) som en del av standardmallen. Om du vill visa profilen redigerar du **Innehållssidmall > Sidinformation > Sidprofil**.
+`clientlib-site` och  `clientlib-dependencies` kategorier inkluderas på sidor via  [sidprincipskonfigurationen ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#template-definitions) som en del av standardmallen. Om du vill visa profilen redigerar du **Innehållssidmall > Sidinformation > Sidprofil**.
 
 Klientbibliotek på webbplatssidan inkluderas slutligen på följande sätt:
 
@@ -198,12 +199,12 @@ I modulen ui.front ingår en webpack-dev-server som tillhandahåller direktladdn
    * Det antas att koden som placeras i den här filen korrekt återger den kod som genereras AEM komponenterna.
    * Markeringar i den här filen synkroniseras inte automatiskt med AEM komponentkod.
    * Den här filen innehåller även referenser till klientbibliotek som lagras i AEM, som CSS för kärnkomponent och CSS för responsivt stödraster.
-   * Webbpaketets utvecklingsserver är konfigurerad för att proxyta dessa CSS/JS-inkluderingar från en lokal AEM som körs baserat på konfigurationen som finns i `ui.frontend/webpack.dev.js`.
+   * Webbpaketets utvecklingsserver är konfigurerad för att proxyvisa dessa CSS/JS-inkluderingar från en lokal AEM som körs baserat på konfigurationen som finns i `ui.frontend/webpack.dev.js`.
 
 #### Använda {#using-webpack-server}
 
-1. Kör kommandot i projektets rot `mvn -PautoInstallSinglePackage clean install` för att installera hela projektet till en AEM som körs i `localhost:4502`.
-1. Navigera i `ui.frontend` mappen.
+1. Kör kommandot `mvn -PautoInstallSinglePackage clean install` i projektets rot för att installera hela projektet i en AEM som körs på `localhost:4502`.
+1. Navigera i mappen `ui.frontend`.
 1. Kör följande kommando `npm run start` för att starta webbpaketets dev-server. När programmet har startats bör det öppna en webbläsare (`localhost:8080` eller nästa tillgängliga port).
 
 Nu kan du ändra CSS-, JS-, SCSS- och TS-filer och se ändringarna direkt på webbpaketets dev-server.
