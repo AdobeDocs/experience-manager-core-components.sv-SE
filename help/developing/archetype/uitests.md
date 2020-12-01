@@ -1,13 +1,16 @@
 ---
 title: ui.tests Module of AEM Project Archetype
-description: Så här använder du AEM Project Archetype JUnit Tests
+description: Så här använder du AEM JUnit Tests för projektarkitektur
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 0%
 
 ---
 
 
-# ui.tests Module of the AEM Project Archetype {#uitests-module}
+# ui.tests-modulen för AEM Project Archetype {#uitests-module}
 
 Det finns tre testnivåer i projektet:
 
@@ -21,7 +24,7 @@ mvn clean test
 
 ## Integrationstester {#integration-tests}
 
-Integrationstesterna på serversidan gör att enhetstester kan köras i AEM-miljön, dvs. på AEM-servern. Testa genom att köra:
+Integrationstesterna på serversidan gör att enhetstester kan köras i AEM-miljön, dvs. på den AEM servern. Testa genom att köra:
 
 ```
 mvn clean verify -PintegrationTests
@@ -29,6 +32,6 @@ mvn clean verify -PintegrationTests
 
 ## Klientsidtester {#client-side-tests}
 
-Testen är JavaScript-baserade `client-side Hobbes.js` webbläsarbaserade tester som verifierar webbläsarsidans beteende.
+`client-side Hobbes.js`-testerna är JavaScript-baserade webbläsarbaserade tester som verifierar webbläsarsidans beteende.
 
-Om du vill testa en AEM-sida som du vill testa i webbläsaren öppnar du sidan i **utvecklarläge** genom att öppna den vänstra panelen och växlar till fliken **Tester** och söker efter de genererade **MyName-testerna** och kör dem.
+När du visar en AEM som du vill testa i webbläsaren öppnar du sidan i **Utvecklarläge** genom att öppna den vänstra panelen och växlar till fliken **Tester** och söker efter de **MyName Tests** som har skapats och kör dem.
