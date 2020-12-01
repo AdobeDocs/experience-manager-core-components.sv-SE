@@ -4,11 +4,14 @@ description: Komponenten Core Component Breadcrumb är en navigeringskomponent s
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '546'
+ht-degree: 0%
 
 ---
 
 
-# Breadcrumb-komponent (v1) {#breadcrumb-component-v}
+# Breadcrumb Component (v1) {#breadcrumb-component-v}
 
 Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 
@@ -16,7 +19,7 @@ Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en 
 
 Komponenten Breadcrumb visar den aktuella sidans position i platshierarkin, vilket gör att sidbesökare kan navigera i sidhierarkin från sin aktuella plats. Detta är ofta integrerat i sidhuvuden och sidfötter.
 
-Tillgängliga alternativ som standardnavigeringsnivån och möjligheten att visa den aktuella sidan eller dolda sidor kan definieras av mallförfattaren i [designdialogrutan](#design-dialog). Innehållsredigeraren kan sedan välja om dolda sidor ska visas eller inte och den faktiska navigeringsnivån för komponenten i [redigeringsdialogrutan](#edit-dialog).
+Tillgängliga alternativ som standardnavigeringsnivån och möjligheten att visa den aktuella sidan eller dolda sidor kan definieras av mallskaparen i [designdialogrutan](#design-dialog). Innehållsredigeraren kan sedan välja om dolda sidor ska visas eller inte och den faktiska navigeringsnivån för komponenten i [redigeringsdialogrutan](#edit-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -24,7 +27,7 @@ I det här dokumentet beskrivs v1 av Breadcrumb Component, som ursprungligen int
 
 I följande tabell visas kompatibiliteten för v1 för Breadcrumb Component.
 
-| AEM-version | Breadcrumb Component v1 |
+| AEM | Breadcrumb Component v1 |
 |--- |--- |
 | 6.3 | Kompatibel |
 | 6.4 | Kompatibel |
@@ -32,9 +35,9 @@ I följande tabell visas kompatibiliteten för v1 för Breadcrumb Component.
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs v1 för Breadcrumb-komponenten.
->Mer information om den aktuella versionen av Breadcrumb Component finns i [Breadcrumb Component](/help/components/breadcrumb.md) -dokumentet.
+>Mer information om den aktuella versionen av Breadcrumb Component finns i [Breadcrumb Component](/help/components/breadcrumb.md)-dokumentet.
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -81,41 +84,41 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md) .
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
-## Dialogrutan Redigera {#edit-dialog}
+## Redigera dialogruta {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva sidor i vägbeskrivningar samt djupet i den hierarki som ska visas.
 
 ![](/help/assets/chlimage_1-34.png)
 
-* **Navigeringsnivå att starta** - Där i hierarkin den synliga sökvägen ska börja gå ned till den aktuella sidan. Exempel i We.Retail:
+* **Navigeringsnivå att starta**  - Där i hierarkin den synliga sökvägen ska börja gå ned till den aktuella sidan. Exempel i We.Retail:
 
-   * 1 börjar vid `/content/we-retail`
+   * 1 börjar `/content/we-retail`
    * 2 börjar vid `/content/we-retail/<country>`
 
-* **Visa dolda** - Visa sidor som markerats som dolda i sidutrymmet (som standard visas de inte)
-* **Dölj aktuell**- Utelämna den aktuella sidan i sidutrymmet (som standard visas den)
+* **Visa dolda**  - Visa sidor som markerats som dolda i sidutrymmet (som standard visas de inte)
+* **Dölj aktuell** - Utelämna den aktuella sidan i sidutrymmet (som standard visas den)
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska användas för att inaktivera dolda och aktiva sidor i vägbeskrivningarna samt djupet i den hierarki som ska visas.
 
 ![](/help/assets/chlimage_1-35.png)
 
-* **Navigeringsnivå att starta** - Definierar standardvärdet för var i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan när den synliga komponenten läggs till på en sida.
-* **Visa dolda** - Definierar standardvärdet för alternativet **Visa dolda** när den synliga komponenten läggs till på en sida.
+* **Navigeringsnivå att starta**  - Definierar standardvärdet för var i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan när den synliga komponenten läggs till på en sida.
+* **Visa dolda**  - Definierar standardvärdet för alternativet  **Visa** dolda när den synliga komponenten läggs till på en sida.
 
    * Det aktiverar eller inaktiverar inte alternativet för författaren. Det anger bara standardvärdet.
 
-* **Dölj aktuell** - Definierar standardvärdet för alternativet **Dölj aktuell** när den synliga komponenten läggs till på en sida.
+* **Dölj aktuell**  - Definierar standardvärdet för alternativet  **Dölj** aktuell när den synliga komponenten läggs till på en sida.
 
    * Det aktiverar eller inaktiverar inte alternativet för författaren. Det anger bara standardvärdet.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Breadcrumb Component [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v1/breadcrumb).
+Den senaste tekniska dokumentationen om Breadcrumb-komponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v1/breadcrumb).
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
