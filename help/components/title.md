@@ -29,26 +29,26 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v2 | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/title-v1.md) | Kompatibel | Kompatibel | - |
 
-Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
-Om du vill se både komponenten Title och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_title).
+Om du vill visa både komponenten Title och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_title).
 
 ### Teknisk information {#technical-details}
 
 Den senaste tekniska dokumentationen om Title Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_title_v2).
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Dialogrutan Redigera {#edit-dialog}
+## Redigera dialogruta {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och välja rubriknivå.
 
-* **Titel** - Om den är tom används sidans rubrik
-* **Typ/storlek** - definierar rubriknivån för titeln
-* **Länk** - Definierar innehållet som titeln ska länka till. Det kan vara en sökväg till en innehållssida, en extern URL eller en sidankarpunkt.
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+* **Titel**  - Om den är tom används sidans rubrik
+* **Typ/storlek**  - Anger rubriknivån för titeln
+* **Länk**  - Definierar innehållet som titeln ska länka till. Det kan vara en sökväg till en innehållssida, en extern URL eller en sidankarpunkt.
+* **ID**  - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i  [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
@@ -63,7 +63,7 @@ Du kan även använda redigeraren på plats för att redigera texten i titelkomp
 
 ![In-place editing of Title Component](/help/assets/title-edit-inline.png)
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titelkomponenter ska ha när de skapas av innehållsförfattarna.
 
@@ -71,9 +71,9 @@ I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titel
 
 ![Title Components&#39;&#39;s design dialog](/help/assets/title-design.png)
 
-* **Tillåtna typer/storlekar för författare** - Aktivera eller inaktivera rubriktyper som är tillgängliga för innehållsförfattare när de använder titelkomponenten.
-* **Standardtyp/storlek**- Definiera den rubriktyp som automatiskt tilldelas när en innehållsförfattare lägger till titelkomponenten på en sida.
-* **Inaktivera länk**- Inaktivera stöd för länkar i titelkomponenten för att hindra innehållsförfattare från att länka från titlar.
+* **Tillåtna typer/storlekar för författare**  - Aktivera eller inaktivera rubriktyper som är tillgängliga för innehållsförfattare när de använder titelkomponenten.
+* **Standardtyp/storlek** - Definiera den rubriktyp som automatiskt tilldelas när en innehållsförfattare lägger till titelkomponenten på en sida.
+* **Inaktivera länk** - Inaktivera stöd för länkar i titelkomponenten för att hindra innehållsförfattare från att länka från titlar.
 
 >[!NOTE]
 >
