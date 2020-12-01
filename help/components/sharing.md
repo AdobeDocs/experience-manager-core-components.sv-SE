@@ -18,7 +18,7 @@ Den centrala komponenten för delning via sociala medier är en widget för deln
 
 Delningskomponenten för sociala medier lägger till länkar för delning av Facebook och Pinterest på sidan. Det ingår ofta i sidhuvuden och sidfötter.
 
-Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via egenskaperna [för](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) första sidan och av innehållsförfattaren via [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
+Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via [Egenskaper för första sidan](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) och av innehållsförfattaren via [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -30,29 +30,29 @@ Följande tabell visar alla versioner av komponenten som stöds och de AEM versi
 |--- |--- |--- |---|
 | v1 | Kompatibel | Kompatibel | Kompatibel |
 
-Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
-Om du vill se komponenterna för delning via sociala medier och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_sharing).
+Om du vill se komponenterna för social delning och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_sharing).
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Sharing Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_sharing_v1).
+Den senaste tekniska dokumentationen om delningskomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_sharing_v1).
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Dialogrutan Redigera {#edit-dialog}
+## Redigera dialogruta {#edit-dialog}
 
 ![Redigeringsdialogrutan för delningskomponenten](/help/assets/sharing-edit.png)
 
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+* **ID**  - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i  [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Det innebär att ytterligare redigeringsalternativ för delningskomponenten är tillgängliga för innehållsförfattaren via fliken Delning i [sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
+Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är ytterligare redigeringsalternativ för delningskomponenten tillgängliga på delningsfliken i [sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) för innehållsförfattaren.
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är designalternativen för delningskomponenten tillgängliga för mallskaparen via de [inledande sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
