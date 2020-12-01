@@ -2,9 +2,9 @@
 title: Sling Context-Aware Configurations and Core Components
 description: Core Components använder kontextmedvetna Sling-konfigurationer för vissa funktioner
 translation-type: tm+mt
-source-git-commit: 11e2c6da0fa93084b601437fd45fd65dd8d73231
+source-git-commit: aff9046008dcea6c0cbda4b3de400df77a507097
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -12,13 +12,13 @@ ht-degree: 0%
 
 # Sling Context-Aware Configurations and Core Components {#sling-context-aware-configurations}
 
-Kontextmedvetna konfigurationer är en funktion i Sling och är konfigurationer som är relaterade till en innehållsresurs eller ett resursträd och som utnyttjas av kärnkomponenterna för att tillåta platsomfattande konfigurationer.
+Kontextmedvetna konfigurationer är en [funktion i Sling](https://sling.apache.org/documentation/bundles/context-aware-configuration/context-aware-configuration.html). De är konfigurationer som är relaterade till en innehållsresurs eller ett resursträd och som utnyttjas av kärnkomponenterna för att tillåta platsomfattande konfigurationer.
 
 ## Sling Context-Aware Configurations {#context-aware-configurations}
 
 Din plats kan behöva olika konfigurationer för olika webbplatsregioner, till exempel där vissa parametrar kan delas, vilket kräver arv för kapslade kontexter och globala reservvärden. AEM utnyttjar konfigurationer som är anpassade till Sling-kontext, vilket möjliggör detta.
 
-Mer information om konfigurationer i AEM [finns i dokumentationen för konfigurationer och Configuration Browser.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)
+Mer information om konfigurationer i AEM [finns i dokumentationen till konfigurations- och konfigurationsläsaren.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)
 
 ## Använd i kärnkomponenterna {#core-components}
 
