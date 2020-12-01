@@ -4,8 +4,8 @@ description: Komponenten Core Component Form Hidden gör det möjligt att inklud
 translation-type: tm+mt
 source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '412'
+ht-degree: 2%
 
 ---
 
@@ -16,7 +16,7 @@ Med komponenten Core Component Form Button Component (Knappkomponent för kärnk
 
 ## Användning {#usage}
 
-Komponenten Core Component Form Button gör det möjligt att skapa knappfält, ofta för att utlösa att formuläret skickas och är avsedd att användas tillsammans med komponenten [](form-container.md)Form Container.
+Komponenten Core Component Form Button gör det möjligt att skapa knappfält, ofta för att utlösa att formuläret skickas och är avsedd att användas tillsammans med [komponenten Formulärbehållare](form-container.md).
 
 Knappegenskaperna kan definieras av innehållsredigeraren i [konfigurationsdialogrutan](#configure-dialog).
 
@@ -31,9 +31,9 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v2 | Kompatibel | Kompatibel | Kompatibel |
 | [v1](/help/components/v1/form-button-v1.md) | Kompatibel | Kompatibel | - |
 
-Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
 Om du vill visa Form Button-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_button).
 
@@ -41,7 +41,7 @@ Om du vill visa Form Button-komponenten och se exempel på dess konfigurationsal
 
 Den senaste tekniska dokumentationen om Form Button-komponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_form_button_v2).
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -56,20 +56,20 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappens parametr
    * **Knapp**
    * **Skicka**
 
-* **Titel** - Den text som visas på knappen
+* **Titel**  - Texten som visas på knappen
 
    * Om inget anges används knapptypen som standard
 
 * **Namn** - Namnet på knappen som skickas med formulärdata
-* **Värde** - Värdet på knappen som skickas med formulärdata
+* **Värde**  - Värdet på knappen som skickas in tillsammans med formulärdata
 
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+* **ID**  - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i  [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 ### Fliken Format {#styles-tab}
 
-Komponenten Form Button har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
+Komponenten Form Button stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
