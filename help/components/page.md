@@ -12,13 +12,13 @@ ht-degree: 1%
 
 # Sidkomponent{#page-component}
 
-Page Component (Sidkomponent) är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
+Sidkomponenten är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
 
 ## Användning {#usage}
 
 Sidkomponenten utgör grunden för alla sidor som utformats med kärnkomponenterna samt redigerbara mallar. Med hjälp av sidkomponenten kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra huvudkomponenterna.
 
-Med hjälp av [designdialogrutan](#design-dialog)kan du definiera egna klientbibliotek för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, är sidkomponentens [redigeringsdialogruta](#edit-dialog) sidegenskapsfönstret eftersom komponenten är själva sidan.
+Med hjälp av [designdialogrutan](#design-dialog) kan anpassade klientbibliotek definieras för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, är [redigeringsdialogrutan](#edit-dialog) för sidkomponenten fönstret sidegenskaper eftersom komponenten är själva sidan.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -31,19 +31,19 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v2 | Kompatibel | Kompatibel | Kompatibel |
 | [v1](v1/page-v1.md) | Kompatibel | Kompatibel | - |
 
-Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Page Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_page_v2).
+Den senaste tekniska dokumentationen om sidkomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_page_v2).
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Dialogrutan Redigera {#edit-dialog}
+## Redigera dialogruta {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan finns de inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) .
+Eftersom komponenten representerar hela sidan finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Sidinformation -> Sidprofil** när du redigerar sidmallen.
 
@@ -51,30 +51,30 @@ Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Si
 
 >[!NOTE]
 >
->I tidigare versioner av AEM kallades **sidprincipen** för **siddesign**.
+>I tidigare versioner av AEM kallades **Page Policy** **Page Design**.
 
 ### Fliken Egenskaper {#properties-tab}
 
 I fönstret Siddesign kan du definiera vilka klientbibliotek som ska läsas in samt webbresursbiblioteket för sidan.
 
-* **Klientbibliotek** - Detta definierar de klientbibliotekskategorier som ska läsas in. JavaScript läggs till i innehållsslutet och CSS läggs till i sidhuvudet.
-* **Klientbibliotek, JavaScript-sidhuvud** - Detta definierar de JavaScript-klientbibliotekskategorier som ska läsas in i sidhuvudet.
+* **Klientbibliotek**  - Detta definierar de klientbibliotekskategorier som ska läsas in. JavaScript läggs till i innehållsslutet och CSS läggs till i sidhuvudet.
+* **Klientbibliotek JavaScript-sidhuvud**  - Detta definierar de JavaScript-bibliotekskategorier som ska läsas in i sidhuvudet.
    * För de kategorier som definieras här och som också finns i fältet **Klientbibliotek** läses JavaScript in i sidhuvudet i stället för i innehållsslutet.
-   * Ingen CSS läses in om inte kategorin också finns i fältet **Klientbibliotek** .
+   * Ingen CSS läses in om inte kategorin också finns i fältet **Klientbibliotek**.
 
-* **Klientbibliotek** för webbresurser - Klientbibliotekskategorin som används för webbresurser som till exempel favoritikoner.
+* **Klientbibliotek**  för webbresurser - Klientbibliotekskategorin som används för webbresurser som till exempel favoritikoner.
 
-* **Hoppa till väljaren** för elementet i huvudinnehållet - Används som hjälpmedelsfunktion för att hoppa direkt till huvudinnehållet på sidan
+* **Hoppa till väljaren**  för elementet i huvudinnehållet - Används som hjälpmedelsfunktion för att hoppa direkt till huvudinnehållet på sidan
 
 ![Designdialogruta för sidkomponent](/help/assets/page-design.png)
 
-Bibliotek kan konfigureras för både **klientbibliotek** och JavaScript Page Head **-fält för** klientbibliotek enligt följande:
+Bibliotek kan konfigureras för både fälten **Client Libraries** och **Client Libraries JavaScript Page Head** enligt följande:
 
-* Om du vill lägga till ett nytt fält klickar du på eller trycker på knappen **Lägg till** under fälten.
+* Klicka eller tryck på knappen **Lägg till** under fälten om du vill lägga till ett nytt fält.
 * Om du vill ta bort ett fält klickar du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)på klientsidan.
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html).
 
 >[!CAUTION]
 >
@@ -82,4 +82,4 @@ Mer information om hur du använder bibliotek på klientsidan finns i [Använda 
 
 ### Fliken Format {#styles-tab}
 
-Page Component (Sidkomponent) stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Sidkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
