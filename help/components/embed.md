@@ -1,6 +1,6 @@
 ---
 title: Bädda in komponent
-description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM-innehållssida.
+description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM innehållssida.
 translation-type: tm+mt
 source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
 workflow-type: tm+mt
@@ -12,11 +12,11 @@ ht-degree: 2%
 
 # Bädda in komponent{#embed-component}
 
-Med Core Components Embed Component (Bädda in kärnkomponenter) kan du bädda in externt innehåll på en AEM-innehållssida.
+Med Core Components Embed Component (Bädda in kärnkomponenter) kan du bädda in externt innehåll på en AEM.
 
 ## Användning {#usage}
 
-Med Core Component Embed Component (Bädda in kärnkomponent) kan innehållsförfattaren definiera valt externt innehåll som ska bäddas in på en AEM-innehållssida. Dessutom finns det ett alternativ för att definiera frihandsbaserad HTML som också ska bäddas in.
+Med Core Component Embed Component (Bädda in kärnkomponent) kan innehållsförfattaren definiera markerat externt innehåll som ska bäddas in på en AEM innehållssida. Dessutom finns det ett alternativ för att definiera frihandsbaserad HTML som också ska bäddas in.
 
 * Komponentens egenskaper kan definieras i [konfigurationsdialogrutan](#configure-dialog).
 * Standardvärden för komponenten när du lägger till den på en sida kan definieras i [designdialogrutan](#design-dialog).
@@ -25,23 +25,23 @@ Med Core Component Embed Component (Bädda in kärnkomponent) kan innehållsför
 
 Den aktuella versionen av Embed Component är v1, som introducerades i version 2.7.0 av Core Components i september 2019, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponentversionerna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |---|---|
 | v1 | Kompatibel | Kompatibel | Kompatibel |
 
-Mer information om Core Component-versioner och -versioner finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
-Om du vill se exempel på den inbäddade komponenten och dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_embed).
+Om du vill visa den inbäddade komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_embed).
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om inbäddningskomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_embed_v1).
+Den senaste tekniska dokumentationen om den inbäddade komponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_embed_v1).
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -51,7 +51,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera den externa resur
 * [Inbäddad](#embeddable)
 * [HTML](#html)
 
-För varje typ av inbäddningsbart kan du definiera annons- **ID**. Med det här alternativet kan du styra komponentens unika identifierare i HTML-koden och i [datalagret](/help/developing/data-layer/overview.md).
+För varje typ av inbäddad kan du definiera och **ID**. Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
 
 * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
@@ -59,14 +59,14 @@ För varje typ av inbäddningsbart kan du definiera annons- **ID**. Med det här
 
 ### Webbadress {#url}
 
-Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resursen som du vill bädda in i **URL** -fältet. Komponenten försöker komma åt resursen och om den kan återges av någon av processorerna visas ett bekräftelsemeddelande under **URL** -fältet. Annars markeras fältet med fel.
+Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resursen som du vill bädda in i fältet **URL**. Komponenten försöker komma åt resursen och om den kan återges av någon av processorerna visas ett bekräftelsemeddelande under fältet **URL**. Annars markeras fältet med fel.
 
 Den inbäddade komponenten levereras med processorer för följande typer av resurser:
 
-* Resurser som följer [inbäddningsstandarden](https://oembed.com/) som Facebook Post, Instagram, SoundCloud, Twitter och YouTube
+* Resurser som följer [inbäddningsstandarden](https://oembed.com/) inklusive Facebook Post, Instagram, SoundCloud, Twitter och YouTube
 * Pinterest
 
-Utvecklare kan lägga till ytterligare URL-processorer genom att [följa utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
+Utvecklare kan lägga till ytterligare URL-processorer av [efter utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
 ![Bädda in komponentens redigeringsdialogruta för URL](/help/assets/embed-url.png)
 
@@ -74,18 +74,18 @@ Utvecklare kan lägga till ytterligare URL-processorer genom att [följa utveckl
 
 Inbäddade tabeller gör det möjligt att anpassa den inbäddade resursen mer, som kan parametriseras och innehålla ytterligare information. En författare kan välja bland förkonfigurerade tillförlitliga inbäddade tabeller och komponenten levereras med ett inbäddat YouTube-program.
 
-Fältet **Inbäddad** anger vilken typ av processor du vill använda. När det gäller den inbäddade YouTube-funktionen kan du definiera:
+Fältet **Embed** anger vilken typ av processor du vill använda. När det gäller den inbäddade YouTube-funktionen kan du definiera:
 
-* **Video-ID** - Det unika video-ID:t från YouTube för resursen som du vill bädda in
-* **Bredd** - Bredden på den inbäddade videon
-* **Höjd** - höjden på den inbäddade videon
+* **Video-ID**  - Det unika video-ID:t från YouTube för resursen som du vill bädda in
+* **Bredd**  - Bredden på den inbäddade videon
+* **Höjd**  - Höjden på den inbäddade videon
 
-Andra inbäddade tabeller kan innehålla liknande fält och kan definieras av en utvecklare genom att [följa utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
+Andra inbäddade tabeller kan innehålla liknande fält och kan definieras av en utvecklare av [efter utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
 ![Bädda in komponentens redigeringsdialogruta för inbäddade tabeller](/help/assets/embed-embeddable.png)
 
 >[!NOTE]
->Inbäddade tabeller måste vara aktiverade på mallnivå via [designdialogrutan](#design-dialog) för att sidans författare ska kunna komma åt dem.
+>Inbäddade tabeller måste aktiveras på mallnivå via [designdialogrutan](#design-dialog) för att vara tillgängliga för sidans författare.
 
 ### HTML {#html}
 
@@ -100,22 +100,22 @@ Du kan lägga till HTML med valfri form på sidan med hjälp av komponenten Embe
 
 Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att undvika serveröverskridande skriptattacker (cross-site scripting) som till exempel skulle kunna ge författare administratörsbehörighet.
 
-*I allmänhet* tas alla skript och `style` element samt alla `on*` - och `style` -attribut bort från utdata.
+*I allmänhet tas* alla skript och  `style` element samt alla  `on*` och  `style` attribut bort från utdata.
 
-Reglerna är dock mer komplicerade eftersom inbäddningskomponenten följer AEM:s globala filterregeluppsättning för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
+Reglerna är dock mer komplicerade eftersom inbäddningskomponenten följer AEM globala filterregeluppsättning för HTML AntiSamy-rendering, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
-Ytterligare säkerhetsinformation finns i [AEM-utvecklardokumentationen för lokala installationer](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/security.html) samt [AEM-installationer och molntjänster.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
+Ytterligare säkerhetsinformation finns i [AEM för lokala installationer](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/security.html) och [AEM som en Cloud Service installationer.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
 
 >[!NOTE]
->Trots att reglerna för antiSamy-sanitets ramverk kan konfigureras genom att täcka över `/libs/cq/xssprotection/config.xml`, påverkar dessa ändringar alla HTML- och JSP-beteenden och inte bara inbäddad kärnkomponent.
+>Trots att reglerna för antiSamys sanitets ramverk kan konfigureras genom att åsidosätta `/libs/cq/xssprotection/config.xml`, påverkar dessa ändringar alla HTML- och JSP-beteenden och inte bara Bädda in kärnkomponent.
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängliga för den som använder den inbäddade komponenten och de standardvärden som anges när den monterar den inbäddade komponenten.
 
 ![Bädda in komponentens designdialogruta](/help/assets/embed-design.png)
 
-* **Inaktivera URL** - Inaktiverar alternativet **URL** för innehållsförfattaren när det är markerat
-* **Inaktivera inbäddade** filer - Inaktiverar alternativet **Inbäddade** för innehållsförfattaren när det är markerat, oavsett vilka inbäddade processorer som är tillåtna.
-* **Inaktivera HTML** - Inaktiverar **HTML** -alternativet för innehållsförfattaren när det är markerat.
-* **Tillåtna inbäddade** tabeller - Multimarkering som definierar vilka inbäddade processorer som är tillgängliga för innehållsförfattaren, förutsatt att alternativet **Inbäddad** är aktivt.
+* **Inaktivera URL** - Inaktiverar  **** alternativet URLoption för innehållsförfattaren när det är markerat
+* **Inaktivera inbäddade**  filer - Inaktiverar alternativet  **** Inbäddning för innehållsförfattaren när det är markerat, oavsett vilka inbäddade processorer som är tillåtna.
+* **Inaktivera HTML** - Inaktiverar  **** HTML-alternativet för innehållsförfattaren när det är markerat.
+* **Tillåtna inbäddade**  tabeller - Multimarkering som definierar vilka inbäddade processorer som är tillgängliga för innehållsförfattaren, förutsatt att alternativet  **** Inbäddad kan användas.
