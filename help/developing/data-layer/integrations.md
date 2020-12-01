@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Integrering med Adobe Client Data Layer {#integrations}
+# Integrering med Adobe-klientdatalagret {#integrations}
 
 Adobe Client Data Layer minskar arbetet med att instrumentera webbplatser genom att tillhandahålla en standardiserad metod för att visa och få tillgång till alla typer av data för alla typer av skript.
 
@@ -21,15 +21,15 @@ Adobe Client Data Layer kan integreras med era anpassade komponenter och integre
 Så här lägger du automatiskt till en anpassad komponent i datalagret:
 
 1. Definiera egenskaperna för den anpassade komponentmodellen som behöver spåras.
-1. Lägg till `data-cmp-data-layer` attributet i den anpassade komponentens HTML-kod. T.ex. `data-cmp-data-layer="${mycomponent.data.json}"`.
+1. Lägg till attributet `data-cmp-data-layer` i den anpassade komponentens HTML-kod. T.ex. `data-cmp-data-layer="${mycomponent.data.json}"`.
 
-Om du automatiskt vill att datalagret ska utlösa en `cmp:click` händelse varje gång du klickar på ett visst element i den anpassade komponenten, lägger du till `data-cmp-clickable` attributet i elementet som ska spåras i den anpassade komponentens HTML-kod.
+Om du automatiskt vill att datalagret ska utlösa en `cmp:click`-händelse varje gång någon klickar på ett visst element i den anpassade komponenten, lägger du till attributet `data-cmp-clickable` till elementet som ska spåras i den anpassade komponentens HTML.
 
-Attributet kan efterfrågas på klientsidan för att kontrollera om datalagret är aktiverat. `data-cmp-data-layer-enabled`
+Attributet `data-cmp-data-layer-enabled` kan efterfrågas på klientsidan för att kontrollera om datalagret är aktiverat.
 
 >[!TIP]
 >
->Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components och om hur du aktiverar datalagret för dina anpassade komponenter finns i [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) filen i Core Components-databasen.
+>Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components och om hur du aktiverar datalagret för dina anpassade komponenter finns i filen [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
 
 ## Integrera med Adobe Analytics och Adobe Target {#analytics-target}
 
