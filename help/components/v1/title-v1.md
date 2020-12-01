@@ -4,6 +4,9 @@ description: Komponenten Core Component Title är en avsnittsrubrikkomponent med
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '337'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ I det här dokumentet beskrivs v1 i Title Component, som ursprungligen introduce
 
 I följande tabell visas kompatibiliteten för v1 för komponenten Title.
 
-| AEM-version | Titelkomponent v1 |
+| AEM | Titelkomponent v1 |
 |--- |--- |
 | 6.3 | Kompatibel |
 | 6.4 | Kompatibel |
@@ -33,9 +36,9 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Title.
 >
 >Det här dokumentet beskriver version 1 av komponenten Title.
 >
->Mer information om den aktuella versionen av komponenten Title finns i [dokumentet Title Component](/help/components/title.md) (Rubrikkomponent).
+>Information om den aktuella versionen av titelkomponenten finns i [Title Component](/help/components/title.md)-dokumentet.
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -64,9 +67,9 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md) .
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
-## Dialogrutan Redigera {#edit-dialog}
+## Redigera dialogruta {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och välja rubriknivå.
 
@@ -80,7 +83,7 @@ Du kan även använda redigeraren på plats för att redigera texten i titelkomp
 
 ![](/help/assets/chlimage_1-37.png)
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titelkomponenter ska ha när de skapas av innehållsförfattarna.
 
@@ -92,4 +95,4 @@ Den senaste tekniska dokumentationen om Title Component [finns på GitHub](https
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
