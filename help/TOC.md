@@ -75,7 +75,7 @@ ht-degree: 2%
    + [Stöd för AMP](developing/amp.md)
    + [Kontextmedvetna konfigurationer](developing/context-aware-configs.md)
    + [Inkluderar klientbibliotek](developing/including-clientlibs.md)
-   + Adobe-klientdatalager {#data-layer}
+   + Adobe-klientdatalagret {#data-layer}
       + [Översikt över datalagret](developing/data-layer/overview.md)
       + [Integrering med datalagret](developing/data-layer/integrations.md)
       + [Utöka datalagret](developing/data-layer/extending.md)
