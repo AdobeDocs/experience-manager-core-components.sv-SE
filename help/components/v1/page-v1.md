@@ -4,27 +4,30 @@ description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 0%
 
 ---
 
 
 # Sidkomponent (v1) {#page-component-v}
 
-Page Component (Sidkomponent) är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
+Sidkomponenten är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) och tillåter att sidhuvud/sidfot och strukturkomponenter sätts ihop med mallredigeraren.
 
 ## Användning {#usage}
 
 Page Component (Sidkomponent) utgör grunden för alla sidor som har utformats med de viktigaste komponenterna samt redigerbara mallar. Med hjälp av sidkomponenten kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra huvudkomponenterna.
 
-Med hjälp av [designdialogrutan](#design-dialog)kan du definiera egna klientbibliotek för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, är sidkomponentens [redigeringsdialogruta](#edit-dialog) sidegenskapsfönstret eftersom komponenten är själva sidan.
+Med hjälp av [designdialogrutan](#design-dialog) kan anpassade klientbibliotek definieras för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, är [redigeringsdialogrutan](#edit-dialog) för sidkomponenten fönstret sidegenskaper eftersom komponenten är själva sidan.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Det här dokumentet beskriver v1 av Page Component, som ursprungligen introducerades i version 1.0.0 av Core Components med AEM 6.3.
+I det här dokumentet beskrivs v1 i Page Component, som ursprungligen introducerades i version 1.0.0 av Core Components med AEM 6.3.
 
 I följande tabell visas kompatibiliteten för v1 för sidkomponenten.
 
-| AEM-version | Sidkomponent v1 |
+| AEM | Sidkomponent v1 |
 |--- |--- |
 | 6.3 | Kompatibel |
 | 6.4 | Kompatibel |
@@ -33,13 +36,13 @@ I följande tabell visas kompatibiliteten för v1 för sidkomponenten.
 >
 >I det här dokumentet beskrivs v1 för sidkomponenten.
 >
->Information om den aktuella versionen av sidkomponenten finns i [dokumentet för sidkomponenten](/help/components/page.md) .
+>Information om den aktuella versionen av sidkomponenten finns i dokumentet [Sidkomponent](/help/components/page.md).
 
 >[!NOTE]
 >
->v1 i sidkomponenten stöder inte sidomdirigering. Använd den [aktuella versionen av sidkomponenten](/help/components/page.md) för stöd för sidomdirigering.
+>v1 i sidkomponenten stöder inte sidomdirigering. Använd den [aktuella versionen av sidkomponenten](/help/components/page.md) om du vill ha stöd för sidomdirigering.
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -675,13 +678,13 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md) .
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
-## Dialogrutan Redigera {#edit-dialog}
+## Redigera dialogruta {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan finns de inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html) .
+Eftersom komponenten representerar hela sidan finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html).
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Sidinformation -> Siddesign**.
 
@@ -689,18 +692,18 @@ Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Si
 
 I fönstret Siddesign kan du definiera klientbibliotek som ska läsas in tillsammans med sidan.
 
-* Om du vill lägga till ett nytt fält klickar du på eller trycker på knappen **Lägg till** under fälten.
+* Klicka eller tryck på knappen **Lägg till** under fälten om du vill lägga till ett nytt fält.
 * Om du vill ta bort ett fält klickar du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html)på klientsidan.
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
 
 ![](/help/assets/chlimage_1-95.png)
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Page Component [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page).
+Den senaste tekniska dokumentationen om sidkomponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page).
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
