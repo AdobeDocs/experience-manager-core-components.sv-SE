@@ -4,7 +4,7 @@ description: Detaljerade användningsinstruktioner för AEM Project Archetype
 translation-type: tm+mt
 source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 AEM Project Archetype skapar ett minimalt, metodbaserat Adobe Experience Manager-projekt som utgångspunkt för dina egna AEM. De egenskaper som måste anges när du använder den här typen av arkivtyp gör att du kan ange namn för alla delar av projektet samt styra vissa valfria funktioner.
 
-## Varför använda Arketype {#why-use-the-archetype}
+## Varför ska du använda arkitypen {#why-use-the-archetype}?
 
-Med den AEM Project Archetype-tekniken kan du skapa ett AEM projekt med bästa praxis och bara några få tangenttryckningar. Genom att använda arkivtypen kommer alla delar redan att vara på plats, så även om det färdiga projektet är minimalt, implementerar det redan alla [nyckelfunktioner](#what-you-get) i AEM så att allt du behöver göra är att bygga vidare och utvidga.
+Med den AEM Project Archetype-tekniken kan du skapa ett AEM projekt med bästa praxis och bara några få tangenttryckningar. Genom att använda arkivtypen kommer alla delar redan att vara på plats, så även om det resulterande projektet är minimalt, implementerar det redan alla [nyckelfunktioner](#what-you-get) i AEM så att allt du behöver göra är att bygga ovanpå och utöka.
 
 Det finns förstås många element som ingår i ett framgångsrikt AEM, men det är en bra grund att använda den AEM Project Archetype-typen och rekommenderas starkt för alla AEM projekt.
 
@@ -24,22 +24,22 @@ Det finns förstås många element som ingår i ett framgångsrikt AEM, men det 
 
 Projektets arkityp gör det enkelt att komma igång med AEM. Du kan utföra dina första steg på flera olika sätt.
 
-* WKND-självstudiekurs - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar typen av arkiv, finns i självstudiekursen [Komma igång med AEM Sites - WKND-självstudiekursen](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) som visar hur du använder typen av arkiv för att implementera ett enkelt projekt.
-* Självstudiekurs om WKND-händelser - Om du är särskilt intresserad av SPA-utveckling (single page application) på AEM ska du kolla in den dedikerade [WKND-självstudiekursen](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
+* WKND-självstudiekurs - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar typen av arkiv, finns i [Komma igång med AEM Sites - WKND-självstudiekurs](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) för ett praktiskt exempel som visar hur du använder arkitypen för att implementera ett enkelt projekt.
+* Självstudiekurs om WKND-händelser - Om du är särskilt intresserad av att utveckla ett enda program (SPA) på AEM ska du titta på den dedikerade självstudiekursen [WKND Events](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 * Ladda ned och börja själv! - Du kan enkelt hämta den aktuella projekttypen som finns på GitHub och skapa ditt första projekt genom att [följa de enkla stegen nedan](#how-to-use-the-archetype).
 
-## What You Get Using the Archetype {#what-you-get}
+## Vad du får med arkitekturen {#what-you-get}
 
 Den AEM arkitekturen består av moduler:
 
 * **[kärna](core.md)**: är ett Java-paket som innehåller alla kärnfunktioner som OSGi-tjänster, avlyssnare och schemaläggare, samt komponentrelaterad Java-kod som servrar och efterfrågningsfilter.
-* **[ui.apps](uiapps.md)**: innehåller `/apps` och `/etc` delar av projektet, dvs. JS- och CSS-klientlibs, komponenter, mallar, runmode-specifika konfigurationer samt Hobbes-tester.
+* **[ui.apps](uiapps.md)**: innehåller projektets innehåll  `/apps` och  `/etc` delar, dvs. JS- och CSS-klientlibs, komponenter, mallar, runmode-specifika konfigurationer samt Hobbes-tester.
 * **[ui.content](uicontent.md)**: innehåller exempelinnehåll med hjälp av komponenterna från modulen ui.apps.
 * **[ui.tests](uitests.md)**: är ett Java-paket som innehåller JUnit-tester som körs på serversidan. Paketet ska inte distribueras till produktionen.
 * **ui.launcher**: innehåller limkod som distribuerar paketet ui.tests (och beroende paket) till servern och utlöser fjärrexekveringen av JUnit.
-* **[ui.front.general](uifrontend.md)**: **(valfritt)** innehåller de artefakter som krävs för att använda den allmänna Webpack-baserade front-end-modulen.
-* **[ui.front.response](uifrontend-react.md)**: **(valfritt)** innehåller de artefakter som krävs när du använder arkitypen för att skapa ett SPA-projekt baserat på React.
-* **[ui.front.angular](uifrontend-angular.md)**: **(valfritt)** innehåller de artefakter som krävs när du använder en arkityp för att skapa ett SPA-projekt baserat på vinkeln.
+* **[ui.front.general](uifrontend.md)**:  **(valfritt)** innehåller de artefakter som krävs för att använda den allmänna Webpack-baserade front-end-modulen.
+* **[ui.front.response](uifrontend-react.md)**:  **(valfritt)** innehåller de artefakter som krävs när du använder arkivtypen för att skapa ett SPA baserat på Reagera.
+* **[ui.front.angular](uifrontend-angular.md)**:  **(valfritt)** innehåller de artefakter som krävs för att skapa ett SPA baserat på vinkeln.
 
 ![](/help/assets/archetype-structure.png)
 
@@ -47,13 +47,13 @@ Modulerna AEM Archetype som representeras i Maven distribueras till AEM som inne
 
 ## Använda arkitekturen {#how-to-use-the-archetype}
 
-Om du vill använda arkitypen måste du först skapa ett projekt som genererar modulerna i en lokal filstruktur som [tidigare beskrivits](#what-you-get). Som en del av projektgenereringen kan du definiera ett antal egenskaper för projektet, till exempel projektnamn, version.
+Om du vill använda arkitypen måste du först skapa ett projekt som genererar modulerna i en lokal filstruktur som [som tidigare beskrivits](#what-you-get). Som en del av projektgenereringen kan du definiera ett antal egenskaper för projektet, till exempel projektnamn, version.
 
 Genom att bygga projektet med Maven skapas artefakter (paket och OSGi-paket) som kan distribueras till AEM. Ytterligare Maven-kommandon och profiler kan användas för att distribuera projektartefakter till en AEM instans.
 
 ### Skapa ett projekt {#create-project}
 
-För att komma igång behöver du bara använda [AEM Eclipse-tillägget](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/aem-eclipse.html) och följa guiden Nytt projekt och välja **AEM Sample Multi-Module Project** för att använda en släppt version av typen.
+För att komma igång behöver du bara använda tillägget [AEM Eclipse](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/aem-eclipse.html) och följa guiden Nytt projekt och välja **AEM Sample Multi-Module Project** för att använda en släppt version av typen.
 
 Naturligtvis kan du också anropa Maven direkt.
 
@@ -70,10 +70,11 @@ mvn -B archetype:generate \
  -D includeExamples=n
 ```
 
-* Ange `XX` versionsnumret [](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) för den senaste AEM Project Archetype.
-* Set `aemVersion=cloud` for [AEM as a Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
-   Ange `aemVersion=6.5.0` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt.
-Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM som en CloudService.
+* Ange `XX` som [versionsnummer](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) för den senaste AEM Project Archetype.
+* Ange `aemVersion=cloud` för [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
+   Ange `aemVersion=6.5.0` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokal.
+Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM som ett moln
+Tjänst.
 * Justera `appTitle="My Site"` för att definiera webbplatsens titel och komponentgrupper.
 * Justera `appId="mysite"` för att definiera Maven artifactId, komponentens, konfigurations- och innehållsmappens namn samt klientbibliotekens namn.
 * Justera `groupId="com.mysite"` för att definiera Maven groupId och Java Source Package.
@@ -81,9 +82,9 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 
 >[!NOTE]
 >
->Det är bäst att lägga till `adobe-public` profilen i Maven- `settings.xml` filen för att automatiskt lägga till repo.adobe.com i maven build-processen.
+>Det är bäst att lägga till profilen `adobe-public` i din Maven `settings.xml`-fil för att automatiskt lägga till repo.adobe.com i maven build-processen.
 >
->Här [finns ett exempel på POM](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
+>Ett exempel på POM [finns här](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
 
 ### Egenskaper {#properties}
 
@@ -97,37 +98,37 @@ Följande egenskaper är tillgängliga när du skapar ett projekt med hjälp av 
 | `groupId` |  | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). |
 | `package` | *`${groupId}`* | Källpaket för Java (t.ex. `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Projektversion (t.ex. `1.0-SNAPSHOT`). |
-| `aemVersion` | `6.5.0` | Målversion AEM (kan vara `cloud` för [AEM som Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html)). eller `6.5.0`, eller `6.4.4` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokalt). |
-| `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) -version kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
-| `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokal, beroende på värdet för `aemVersion` (kan vara `y` eller `n`). |
-| `frontendModule` | `none` | Innehåller en Webpack-modul för klientbibliotek (kan finnas `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA-redigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/introduction.html)). |
+| `aemVersion` | `6.5.0` | AEM (kan vara `cloud` för [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokalt). |
+| `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)-version kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
+| `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokalt, beroende på värdet `aemVersion` (kan vara `y` eller `n`). |
+| `frontendModule` | `none` | Innehåller en Webpack-modul för klientbibliotek (kan vara `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA Editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/introduction.html)). |
 | `languageCountry` | `en_us` | Språk- och landskod för att skapa innehållsstrukturen från (t.ex. `en_us`). |
-| `singleCountry` | `y` | Innehåller en innehållsstruktur på överordnad (kan vara `y`eller `n`). |
-| `includeExamples` | `y` | Innehåller en exempelplats för [komponentbibliotek](https://www.aemcomponents.dev/) (kan vara `y`eller `n`). |
+| `singleCountry` | `y` | Innehåller en innehållsstruktur på överordnad (kan vara `y` eller `n`). |
+| `includeExamples` | `y` | Innehåller en [exempelplats för komponentbibliotek](https://www.aemcomponents.dev/) (kan vara `y` eller `n`). |
 | `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som kommer att vara global för hela instansen (kan vara `y` eller `n`). |
 
 >[!NOTE]
 >
-> Om arkitypen körs i interaktivt läge första gången går det inte att ändra egenskaper med standardvärden (mer information finns i [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) ). Värdet kan ändras när egenskapsbekräftelsen i slutet nekas och enkäten upprepas, eller genom att parametern skickas i kommandoraden (t.ex. `-DoptionIncludeExamples=n`).
+> Om arkitypen körs i interaktivt läge första gången går det inte att ändra egenskaper med standardvärden (mer information finns i [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308)). Värdet kan ändras när egenskapsbekräftelsen i slutet nekas och enkäten upprepas, eller genom att parametern skickas i kommandoraden (t.ex. `-DoptionIncludeExamples=n`).
 
 >[!NOTE]
 >
->När du kör i Windows och genererar dispatcherkonfigurationen bör du köra i en förhöjd kommandotolk eller i Windows-undersystemet för Linux (se [problem 329](https://github.com/adobe/aem-project-archetype/issues/329)).
+>När du kör i Windows och genererar dispatcherkonfigurationen bör du köra i en förhöjd kommandotolk eller i Windows-undersystemet för Linux (se [utgåva 329](https://github.com/adobe/aem-project-archetype/issues/329)).
 
 ### Profiler {#profiles}
 
-Det genererade maven-projektet stöder olika distributionsprofiler när det körs `mvn install`.
+Det genererade maven-projektet stöder olika distributionsprofiler när `mvn install` körs.
 
 | Profil-ID | Beskrivning |
 --------------------------|------------------------------
 | `autoInstallBundle` | Installera kärnpaketet med maven-sling-plugin-programmet i felix-konsolen |
-| `autoInstallPackage` | Installera innehållspaketet ui.content och ui.apps med content-package-maven-plugin i pakethanteraren för att skapa standardförfattarinstansen på localhost, port 4502. Värdnamn och port kan ändras med de `aem.host` - och `aem.port` användardefinierade egenskaperna. |
-| `autoInstallPackagePublish` | Installera innehållspaketet ui.content och ui.apps med content-package-maven-plugin i pakethanteraren om du vill använda standardpubliceringsinstansen på localhost, port 4503. Värdnamn och port kan ändras med de `aem.host` - och `aem.port` användardefinierade egenskaperna. |
-| `autoInstallSinglePackage` | Installera innehållspaketet med `all` content-package-maven-plugin i pakethanteraren för att skapa standardförfattarinstansen på localhost, port 4502. Värdnamn och port kan ändras med de `aem.host` - och `aem.port` användardefinierade egenskaperna. |
-| `autoInstallSinglePackagePublish` | Installera innehållspaketet med `all` content-package-maven-plugin i pakethanteraren för att publicera standardinstansen på localhost, port 4503. Värdnamn och port kan ändras med de `aem.host` - och `aem.port` användardefinierade egenskaperna. |
-| `integrationTests` | Kör de angivna integrationstesterna på AEM (endast för `verify` fasen) |
+| `autoInstallPackage` | Installera innehållspaketet ui.content och ui.apps med content-package-maven-plugin i pakethanteraren för att skapa standardförfattarinstansen på localhost, port 4502. Värdnamn och port kan ändras med de användardefinierade egenskaperna `aem.host` och `aem.port`. |
+| `autoInstallPackagePublish` | Installera innehållspaketet ui.content och ui.apps med content-package-maven-plugin i pakethanteraren om du vill använda standardpubliceringsinstansen på localhost, port 4503. Värdnamn och port kan ändras med de användardefinierade egenskaperna `aem.host` och `aem.port`. |
+| `autoInstallSinglePackage` | Installera `all`-innehållspaketet med content-package-maven-plugin i pakethanteraren till standardförfattarinstansen på localhost, port 4502. Värdnamn och port kan ändras med de användardefinierade egenskaperna `aem.host` och `aem.port`. |
+| `autoInstallSinglePackagePublish` | Installera `all`-innehållspaketet med content-package-maven-plugin i pakethanteraren om du vill använda standardpubliceringsinstansen på localhost, port 4503. Värdnamn och port kan ändras med de användardefinierade egenskaperna `aem.host` och `aem.port`. |
+| `integrationTests` | Kör de angivna integrationstesterna på AEM-instansen (endast för `verify`-fasen) |
 
-### Bygga och installera {#building-and-installing}
+### Bygger och installerar {#building-and-installing}
 
 Om du vill skapa alla moduler som körs i projektets rotkatalog använder du följande Maven-kommando.
 
@@ -161,11 +162,11 @@ mvn clean install -PautoInstallBundle
 
 ## Överordnad POM {#parent-pom}
 
-Det `pom.xml` som ligger till grund för projektet (`<src-directory>/<project>/pom.xml`) kallas överordnad POM och driver projektets struktur samt hanterar beroenden och vissa globala egenskaper för projektet.
+`pom.xml` i projektets rot (`<src-directory>/<project>/pom.xml`) kallas överordnad POM och driver projektets struktur samt hanterar beroenden och vissa globala egenskaper för projektet.
 
-### Egenskaper för globala projekt {#global-properties}
+### Globala projektegenskaper {#global-properties}
 
-Avsnittet `<properties>` i den överordnade POM definierar flera globala egenskaper som är viktiga för distributionen av ditt projekt på en AEM som användarnamn/lösenord, värdnamn/port osv.
+Avsnittet `<properties>` i den överordnade POM definierar flera globala egenskaper som är viktiga för distributionen av ditt projekt på en AEM instans som användarnamn/lösenord, värdnamn/port osv.
 
 Dessa egenskaper är konfigurerade för att distribueras till en lokal AEM, eftersom detta är den vanligaste versionen som utvecklare kommer att göra. Observera att det finns egenskaper att distribuera till en författarinstans samt en publiceringsinstans. Det är också här som inloggningsuppgifterna ställs in för att autentiseras med AEM. Standardautentiseringsuppgifterna för admin:admin används.
 
@@ -177,7 +178,7 @@ mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.pa
 
 ### Modulstruktur {#module-structure}
 
-Avsnittet `<modules>` i den överordnade POM definierar modulerna som projektet ska bygga. Som standard bygger projektet [de standardmoduler som tidigare definierats](#what-you-get): core, ui.apps, ui.content, ui.tests och it.launcher. Fler moduler kan alltid läggas till när ett projekt utvecklas.
+Avsnittet `<modules>` i den överordnade POM definierar modulerna som projektet ska bygga. Som standard skapar projektet [standardmoduler som tidigare definierats](#what-you-get): core, ui.apps, ui.content, ui.tests och it.launcher. Fler moduler kan alltid läggas till när ett projekt utvecklas.
 
 ### Beroenden {#dependencies}
 
@@ -185,7 +186,7 @@ Avsnittet `<dependencyManagement>` i den överordnade POM definierar alla beroen
 
 #### Uber-Jar {#uber-jar}
 
-Ett av de viktigaste beroendena är [AEM burk](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#ExperienceManagerAPIDependencies). Detta inkluderar alla AEM API:er med bara en enda beroendepost för AEM.
+Ett av nyckelberoendena är [AEM uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#ExperienceManagerAPIDependencies). Detta inkluderar alla AEM API:er med bara en enda beroendepost för AEM.
 
 >[!NOTE]
 >
@@ -219,9 +220,9 @@ Det finns tre testnivåer i projektet och eftersom de är olika typer av tester 
    * `mvn clean verify -PintegrationTests`
 * Hobbes.js-tester på klientsidan: Detta är JavaScript-baserade webbläsarbaserade tester som verifierar webbläsarsidans beteende. Så här testar du:
    1. Läs in AEM i webbläsaren på samma sätt som du skapar en sida.
-   1. Öppna sidan i [utvecklarläget](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/developer-mode.html)
-   1. Öppna den vänstra panelen och växla till fliken **Test** .
-   1. Leta reda på de genererade **MyName-testerna** och kör dem.
+   1. Öppna sidan i [Utvecklarläge](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/developer-mode.html)
+   1. Öppna den vänstra panelen och växla till fliken **Test**.
+   1. Hitta de genererade **MyName-testerna** och kör dem.
 
 ## Nästa steg {#next-steps}
 
