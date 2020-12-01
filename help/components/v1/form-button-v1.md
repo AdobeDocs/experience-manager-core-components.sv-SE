@@ -4,6 +4,9 @@ description: Komponenten Core Component Form Hidden gör det möjligt att inklud
 index: n
 translation-type: tm+mt
 source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 2%
 
 ---
 
@@ -20,11 +23,11 @@ Knappegenskaperna kan definieras av innehållsredigeraren i [konfigurationsdialo
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-I det här dokumentet beskrivs v1 för Form Button Component, som ursprungligen introducerades i version 1.0.0 av Core Components med AEM 6.3.
+I det här dokumentet beskrivs v1 för komponenten Form Button, som ursprungligen introducerades i version 1.0.0 av Core Components med AEM 6.3.
 
 I följande tabell visas kompatibiliteten för v1 för komponenten Formulärknapp.
 
-| AEM-version | Komponent för formulärknapp v1 |
+| AEM | Komponent för formulärknapp v1 |
 |--- |--- |
 | 6.3 | Kompatibel |
 | 6.4 | Kompatibel |
@@ -33,9 +36,9 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Formulärknap
 >
 >I det här dokumentet beskrivs v1 för komponenten Form Button.
 >
->Mer information om den aktuella versionen av komponenten Formulärknapp finns i dokumentet [Komponent](/help/components/forms/form-button.md) för formulärknapp.
+>Mer information om den aktuella versionen av komponenten Formulärknapp finns i dokumentet [Komponent för formulärknapp](/help/components/forms/form-button.md).
 
-## Exempel på komponentutdata {#sample-component-output}
+## Exempelkomponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -81,7 +84,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md) .
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -93,13 +96,13 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappens parametr
    * **Knapp**
    * **Skicka**
 
-* **Titel** - Den text som visas på knappen
+* **Titel**  - Texten som visas på knappen
    * Om inget anges används knapptypen som standard
 
 * **Namn** - Namnet på knappen som skickas med formulärdata
-* **Värde** - Värdet på knappen som skickas med formulärdata
+* **Värde**  - Värdet på knappen som skickas in tillsammans med formulärdata
 
-## Designdialogruta {#design-dialog}
+## Designdialog {#design-dialog}
 
 Det finns ingen designdialogruta för komponenten Formulärknapp.
 
@@ -109,4 +112,4 @@ Den senaste tekniska dokumentationen om Form Button-komponenten [finns på GitHu
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i dokumentationen till [Core Components Developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
