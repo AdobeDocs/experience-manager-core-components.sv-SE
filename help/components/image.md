@@ -2,9 +2,9 @@
 title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: c20d02aa93cce60b583a2d22c77b08ca7eb9b765
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '2157'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,12 @@ Bildbredderna, beskärningen och de ytterligare inställningarna kan definieras 
 Image Component har robusta responsiva funktioner som är klara direkt vid leverans. På sidmallsnivå kan du använda [designdialogrutan](#design-dialog) för att definiera standardbredderna för bildresursen. Bildkomponenten läser sedan automatiskt in rätt bredd för visning beroende på storleken på webbläsarfönstret. När fönstrets storlek ändras läser Image Component in rätt bildstorlek dynamiskt i farten. Komponentutvecklare behöver inte bekymra sig om att definiera anpassade mediefrågor eftersom Image Component redan är optimerat för att läsa in ditt innehåll.
 
 Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsningen av den faktiska bildresursen tills den syns i webbläsaren, vilket gör sidorna mer responsiva.
+
+## Stöd för dynamiska media {#dynamic-media}
+
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) stöder [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia)-resurser. [När ](#design-dialog) de här funktionerna är aktiverade kan du lägga till dynamiska medieresurser med en enkel dra och släpp-funktion eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+
+Dina webbupplevelser som skapats med Core Components har inga avancerade, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -65,9 +71,7 @@ Den senaste tekniska dokumentationen om Image Component [finns på GitHub](https
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
->[!NOTE]
->
->Från och med Core Components version 2.1.0 stöder Image Component [schema.org microdata](https://schema.org).
+Image Component har stöd för [schema.org microdata](https://schema.org).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -86,33 +90,35 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 
 ![Fliken Metadata i dialogrutan Konfigurera för Image Component](/help/assets/image-configure-metadata.png)
 
-* **Bilden är**
-dekorativKontrollera om bilden ska ignoreras av hjälpmedelstekniken och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
-* **Alternativ**
-textTextuellt alternativ för innebörden eller funktionen i bilden för läsare med nedsatt syn.
-   * Hämta alternativ text från DAM - När det här alternativet är markerat fylls bildens alternativa text med värdet för `dc:description`-metadata i DAM.
-
-* **Bildtext**
-Ytterligare information om bilden, som visas under bilden som standard.
-   * **Hämta bildtext från**
-DAMWet checked the image&#39;s caption text will be populed with the value of the 
-`dc:title` metadata i DAM.
-   * **Visa bildtext som popup-**
-rutaOm det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som en popup-meny som visas i vissa webbläsare när du hovrar över bilden.
-
-* **Länk**
-   * Länka bilden till en annan resurs.
+* **Förinställningstyp**  - Detta definierar de typer av bildförinställningar som är tillgängliga, antingen  **bildförinställning** eller  **smart beskärning**, och är bara tillgängligt när funktionen  [Dynamic Media är ](#dynamic-meida) aktiverad.
+   * **Bildförinställning**  - När  **förinställningstypen** för  **bildförinställningar är** markerat är  **bildförinställningarna tillgängliga, vilket gör att du kan välja bland de tillgängliga dynamiska** medieförinställningarna. Detta är bara tillgängligt om förinställningar har definierats för den valda resursen.
+   * **Smart beskärning**  - När  **förinställd** typ av  **smart** beskärning har valts är den nedrullningsbara  **** återgivningen tillgänglig, vilket gör att du kan välja bland de tillgängliga återgivningarna för den valda resursen. Detta är bara tillgängligt om återgivningar har definierats för den valda resursen.
+   * **Bildmodifierare**  - Ytterligare kommandon för visning av dynamiska media kan definieras här avgränsade med  `&`, oavsett vilken  **förinställd** typ som har valts.
+* **Bilden är dekorativ**  - Kontrollera om bilden ska ignoreras av hjälpmedelstekniken och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
+* **Alternativ text**  - Textuellt alternativ för innebörden eller funktionen i bilden för läsare med nedsatt syn.
+   * **Hämta alternativ text från DAM**  - När det här alternativet är markerat fylls bildens alternativa text med värdet för  `dc:description` metadata i DAM.
+* **Bildtext**  - Ytterligare information om bilden, som visas under bilden som standard.
+   * **Hämta bildtext från DAM**  - När den är markerad fylls bildtexten i med värdet för  `dc:title` metadata i DAM.
+   * **Visa bildtext som popup** -fönster - Om det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som en popup-meny som visas i vissa webbläsare när du hovrar över bilden.
+* **Länk**  - Länka bilden till en annan resurs.
    * Använd urvalsdialogrutan för att länka till en annan AEM.
    * Om du inte länkar till en AEM resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
-
 * **ID**  - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i  [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
+>[!TIP]
+>
+>**Förinställningar för smart** beskärning  **av** bilder utesluter varandra. Om en författare behöver använda en bildförinställning tillsammans med en rendering för smart beskärning måste författaren använda **bildmodifierare** för att lägga till förinställningar manuellt.
+
 ## Redigera dialogruta {#edit-dialog}
 
 I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma bilden.
+
+>[!NOTE]
+>
+>Funktionerna för beskärning, rotering och zoomning gäller inte för Dynamic Media-resurser. Om [Dynamiska mediefunktioner](#dynamic-media) är aktiverade bör all sådan redigering till dynamiska medieresurser utföras via [dialogrutan Konfigurera.](#configure-dialog)
 
 ![Redigeringsdialogruta för bildkomponent](/help/assets/image-edit.png)
 
@@ -181,36 +187,20 @@ Dessutom kan du definiera vilka allmänna komponentalternativ som automatiskt el
 
 ![Huvudflik i designdialogrutan för bildkomponenten](/help/assets/image-design-main.png)
 
-* **Aktivera lat**
-inläsningsalternativDefiniera om alternativet för lat inläsningsalternativ automatiskt aktiveras när du lägger till bildkomponenten på en sida.
-* **Bilden är**
-dekorativeDefine om alternativet för dekorativa bilder aktiveras automatiskt när bildkomponenten läggs till på en sida.
-* **Hämta alternativ text från**
-DAMDefine om alternativet att hämta alternativ text från DAM automatiskt aktiveras när bildkomponenten läggs till på en sida.
-* **Hämta bildtext från**
-DAMDefine om alternativet att hämta bildtexten från DAM automatiskt aktiveras när bildkomponenten läggs till på en sida.
-* **Visa bildtext som popup-**
-rutaDefiniera om alternativet att visa bildtexten som en popup-ruta automatiskt aktiveras när bildkomponenten läggs till på en sida.
-* **Inaktivera UUID-**
-spårning för att inaktivera spårning av bildresursens UUID.
-
-* **Bredder**
-Definierar en lista med bredder i pixlar för bilden och komponenten läser automatiskt in den mest lämpliga bredden baserat på webbläsarens storlek.
+* **Aktivera DM-funktioner**  - När det här alternativet är markerat är funktionen aktivera  [dynamiska media ](#dynamic-media) tillgänglig.
+* **Aktivera lazy loading**  - Ange om alternativet för lazy loading automatiskt ska aktiveras när du lägger till bildkomponenten på en sida.
+* **Bilden är dekorativ**  - Ange om dekorationsbilden ska aktiveras automatiskt när du lägger till bildkomponenten på en sida.
+* **Hämta alternativ text från DAM** - Ange om alternativet att hämta alternativ text från DAM automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
+* **Hämta bildtext från DAM**  - Ange om alternativet att hämta bildtexten från DAM automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
+* **Visa bildtext som popup** -fönster - Ange om alternativet att visa bildtexten som en popup-ruta automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
+* **Inaktivera UUID-spårning**  - Markera för att inaktivera spårning av bildresursens UUID.
+* **Bredder**  - Definierar en lista med bredder i pixlar för bilden och komponenten läser automatiskt in den mest lämpliga bredden baserat på webbläsarens storlek.
    * Tryck eller klicka på knappen **Lägg till** om du vill lägga till en annan storlek.
       * Använd handtagen för att ordna om storlekarna.
       * Använd ikonen **Ta bort** för att ta bort en bredd.
    * Som standard skjuts inläsningen av bilder tills de blir synliga.
       * Välj alternativet **Inaktivera lazy loading** för att läsa in bilderna vid sidinläsning.
-* **JPEG-**
-kvalitet Kvalitetsfaktorn (i procent mellan 0 och 100) för omformade (t.ex. skalade eller beskurna) JPEG-bilder.
-
->[!NOTE]
->
->Alternativet JPEG-kvalitet är tillgängligt från och med version 2.2.0 av kärnkomponenterna.
-
->[!NOTE]
->
->Från och med version 2.2.0 av Core Components lägger Image Component till det unika UUID-attributet `data-asset-id` i bildresursen för att tillåta spårning och analys av antalet vyer som enskilda resurser får.
+* **JPEG-kvalitet**  - Kvalitetsfaktorn (i procent mellan 0 och 100) för omformade (t.ex. skalade eller beskurna) JPEG-bilder.
 
 ### Fliken Funktioner {#features-tab}
 
@@ -262,6 +252,6 @@ Bildkomponenten använder kärnkomponentens adaptiva bildserver. [Den adaptiva b
 
 >[!NOTE]
 >
->Villkorliga begäranden via rubriken `Last-Modified` stöds av Adaptive Image Servlet, men cachelagring av rubriken `Last-Modified` [måste aktiveras i Dispatcher](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-http-response-headers).
+>Villkorliga begäranden via rubriken `Last-Modified` stöds av Adaptive Image Servlet, men cachelagring av rubriken `Last-Modified` [måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
 >
 >[Den AEM Project Archetype](/help/developing/archetype/overview.md)-exempelkonfigurationen för Dispatcher innehåller redan den här konfigurationen.
