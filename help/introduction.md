@@ -2,9 +2,9 @@
 title: Introduktion till kärnkomponenter
 description: 'Core Components ger robusta och utbyggbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 translation-type: tm+mt
-source-git-commit: 882c67a5a1b0d52c21180d4100f16aa663385c86
+source-git-commit: 456bd449f5776355923bcd859a2afb6b00f33d5c
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '889'
 ht-degree: 3%
 
 ---
@@ -40,7 +40,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 | SEO-vänlig | HTML-utdata är semantiska och innehåller [schema.org](https://schema.org) mikrodataanteckningar. |
 | WebApp-Ready | Med [strömlinjeformade JSON-utdata](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) kan klientsidan renderas, fortfarande med möjligheten [kontextredigering](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
 | Stöd för AMP | Komponenterna har inbyggt [stöd för AMP-standarden,](/help/developing/amp.md) som snabbar upp mobilupplevelserna. |
-| Design Kit | Med ett [gränssnittspaket för Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) kan designers skapa trådramar som de sedan kan [formatera efter behov](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_WKND.xd). |
+| Design Kit | Med ett [gränssnittspaket för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) kan designers skapa trådramar som de sedan kan [formatera efter behov](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
 | Temaperbar | Komponenterna implementerar [Style System](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/style-system.html) och koden följer [BEM CSS-konventioner](http://getbem.com/). |
 | Anpassningsbar | Flera mönster gör det möjligt att [enkelt anpassa](developing/customizing.md), från att justera HTML till avancerad återanvändning av funktioner. |
 | Versionshantering | Med versionsprincipen [Versionshantering](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställs att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
