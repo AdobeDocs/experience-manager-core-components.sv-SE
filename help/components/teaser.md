@@ -2,9 +2,9 @@
 title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF och eventuellt länka till ytterligare innehåll.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: e7aeff3a24cff14fbcd468561632ee1927c07b4e
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -52,6 +52,10 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
    * Släpp en resurs från [resursläsaren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Rensa** för att avmarkera den markerade bilden.
    * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
+
+>[!NOTE]
+>
+>[Dynamic Media-](image.md#dynamic-media) funktioner är för närvarande inte tillgängliga i Teaser Component.
 
 ### Text {#text}
 
