@@ -2,7 +2,7 @@
 title: Använda den AEM projekttypen
 description: Detaljerade användningsinstruktioner för AEM Project Archetype
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: 794408e8b643de2234664e69e59e1108cf286cd7
 workflow-type: tm+mt
 source-wordcount: '2057'
 ht-degree: 0%
@@ -57,9 +57,9 @@ För att komma igång behöver du bara använda tillägget [AEM Eclipse](https:/
 
 Naturligtvis kan du också anropa Maven direkt.
 
-```
+```shell
 mvn -B archetype:generate \
- -D archetypeGroupId=com.adobe.granite.archetypes \
+ -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
  -D archetypeVersion=XX \
  -D aemVersion=cloud \
@@ -132,31 +132,31 @@ Det genererade maven-projektet stöder olika distributionsprofiler när `mvn ins
 
 Om du vill skapa alla moduler som körs i projektets rotkatalog använder du följande Maven-kommando.
 
-```
+```shell
 mvn clean install
 ```
 
 Om du har en AEM som körs kan du skapa och paketera hela projektet och distribuera det till AEM med följande Maven-kommando.
 
-```
+```shell
 mvn clean install -PautoInstallPackage
 ```
 
 Kör det här kommandot om du vill distribuera den till en publiceringsinstans.
 
-```
+```shell
 mvn clean install -PautoInstallPackagePublish
 ```
 
 Om du vill distribuera till en publiceringsinstans kör du det här kommandot.
 
-```
+```shell
 mvn clean install -PautoInstallPackage -Daem.port=4503
 ```
 
 Eller kör det här kommandot om du bara vill distribuera paketet till författaren.
 
-```
+```shell
 mvn clean install -PautoInstallBundle
 ```
 
@@ -172,7 +172,7 @@ Dessa egenskaper är konfigurerade för att distribueras till en lokal AEM, efte
 
 Dessa egenskaper är konfigurerade så att de kan åsidosättas vid distribution till miljöer på högre nivå. På så sätt behöver inte POM-filerna ändras, men variabler som `aem.host` och `sling.password` kan åsidosättas via kommandoradsargument:
 
-```
+```shell
 mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.password=productionpasswd
 ```
 
