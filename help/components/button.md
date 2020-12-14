@@ -2,7 +2,7 @@
 title: Button-komponent
 description: Med komponenten Core Component Button kan du skapa och visa en knapp.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: df42f9e3fa26cbb26aa44688e26e5c9a7de4752e
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 1%
@@ -72,4 +72,4 @@ På fliken **Accessibility** kan värden anges för [ARIA accessibility](https:/
 
 ### Fliken Format {#styles-tab}
 
-Bildkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Button-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
