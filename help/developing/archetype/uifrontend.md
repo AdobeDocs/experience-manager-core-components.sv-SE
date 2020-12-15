@@ -2,9 +2,9 @@
 title: AEM Project Archetype Front-End Build
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+source-git-commit: 10090b836397af3c9428f99bba72313263f34596
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,11 @@ När hela AEM projekts arkityp körs med `mvn clean install -PautoInstallPackage
 
 >[!TIP]
 >
->Läs mer om hur AEM hanterar ClientLibs i [AEM-utvecklingsdokumentationen](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html), hur du [tar med dem](/help/developing/including-clientlibs.md) eller se nedan [hur ui.front-modulen använder dem.](#clientlib-generation)
+>Läs mer om hur AEM hanterar ClientLibs i [AEM-utvecklingsdokumentationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html), hur du [tar med dem](/help/developing/including-clientlibs.md) eller se nedan [hur ui.front-modulen använder dem.](#clientlib-generation)
 
 ## ClientLibs-översikt {#clientlibs}
 
-Framtend-modulen är tillgänglig med en [AEM ClientLib](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html). När NPM-byggskriptet körs skapas appen och paketet aem-clientlib-generator tar det resulterande byggresultatet och omvandlar det till en sådan ClientLib.
+Framtend-modulen är tillgänglig med en [AEM ClientLib](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html). När NPM-byggskriptet körs skapas appen och paketet aem-clientlib-generator tar det resulterande byggresultatet och omvandlar det till en sådan ClientLib.
 
 En ClientLib består av följande filer och kataloger:
 
