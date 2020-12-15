@@ -2,9 +2,9 @@
 title: Använda kärnkomponenter
 description: '"För att komma igång med Core Components i ditt eget projekt finns det tre steg: ladda ned och installera, skapa proxykomponenter, ladda ned huvudformaten och tillåt komponenterna i mallarna."'
 translation-type: tm+mt
-source-git-commit: 78202dc777b90f795f66873921c55e21ef8a239c
+source-git-commit: 10090b836397af3c9428f99bba72313263f34596
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Titta till exempel på titelkomponenten [för WKND-platsen](https://github.com/a
 
 ## Läs in kärnformat {#load-the-core-styles}
 
-1. Om det inte är klart än skapar du ett [klientbibliotek](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/clientlibs.html) som innehåller alla CSS- och JS-filer som behövs för platsen.
+1. Om det inte är klart än skapar du ett [klientbibliotek](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html) som innehåller alla CSS- och JS-filer som behövs för platsen.
 1. Lägg till beroenden till de kärnkomponenter som kan behövas i webbplatsens klientbibliotek. Detta görs genom att en `embed`-egenskap läggs till.
 
    Om du till exempel vill inkludera klientbiblioteken för alla v1 Core-komponenter blir den egenskap som ska läggas till:
