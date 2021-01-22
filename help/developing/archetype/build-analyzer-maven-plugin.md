@@ -2,9 +2,9 @@
 title: AEM som Cloud Service-SDK Build Analyzer Maven Plugin
 description: Dokumentation för det lokala plugin-programmet Maven build analyzer
 translation-type: tm+mt
-source-git-commit: 37ec5c245d3806d98dd8a8538c81fc10154a2dfc
+source-git-commit: 42a9dcd64ed8a9c70ec0f72dac50bf88111b703b
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '470'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 3%
 AEM som Cloud Service-SDK Build Analyzer Maven Plugin analyserar strukturen för de olika innehållspaketprojekten.
 
 Se [Maven Plugin-dokumentationen](https://github.com/adobe/aemanalyser-maven-plugin/blob/main/aemanalyser-maven-plugin/README.md) för information om hur du tar med den i ett AEM maven-projekt.
+
+>[!NOTE]
+>
+>Vi rekommenderar att du uppdaterar ditt Maven-projekt så att det refererar till den senaste versionen av plugin-programmet som finns i Maven Central-databasen på följande plats: https://repo1.maven.org/maven2/com/adobe/aem/aemanalyser-maven-plugin/
 
 Nedan finns en tabell som beskriver de analysatorer som körs som en del av det här steget. <!-- Note that some are executed in the local SDK, while others are only executed during the Cloud Manager pipeline deployment. -->
 
@@ -27,3 +31,4 @@ Nedan finns en tabell som beskriver de analysatorer som körs som en del av det 
 | `api-regions`<p> </p>`api-regions-check-order`<p> </p>`api-regions-dependencies`<p> </p>`api-regions-duplicates` | Dessa analytiker kontrollerar viss information om [innehållspaketet till modellkonverteringsprocessen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html?lang=en#deploying) som skapar artefakter som överensstämmer med Sling-funktionsmodellen. Alla fel ska rapporteras till Adobe kundsupport. | Ja | Ja |
 | `api-regions-crossfeature-dups` | Verifierar att kundens OSGI-paket inte har exportpaketdeklarationer som åsidosätter AEM som Cloud Servicens publika API<p> </p>`[WARNING] org.acme:mybundle:0.0.1-SNAPSHOT: Package overlap found between region global and bundle org.acme:mybundle:0.0.1.SNAPSHOT which comes from feature: [org.acme:myproject.analyse:slingosgifeature:0.0.1-SNAPSHOT]. Both export package: com.day.util`<p> </p>Sluta exportera ett paket som är en del av det AEM offentliga API:t för att åtgärda problemet. | Ja | Ja |
 | `repoinit` | Kontrollerar syntaxen för alla ompekande avsnitt | Ja | Ja |
+| `bundle-nativecode` | Verifierar att OSGI-paket inte installerar systemspecifik kod. | Ja | Ja |
