@@ -2,9 +2,9 @@
 title: AMP-stöd för kärnkomponenterna
 description: Kärnkomponenterna har stöd för AMP - accelererade mobilsidor
 translation-type: tm+mt
-source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+source-git-commit: a4df0c8603614cf831ffd66cbcfc1f7ef964c25b
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -63,5 +63,9 @@ AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](htt
 När du använder AMP med Core Components är den största skillnaden att AMP kräver att alla [CSS är infogade](including-clientlibs.md#inlining) i `<head>`-elementet samt optimerade.
 
 Som stöd för detta används en anpassad sidkomponent, som bara läser in den AMP-specifika CSS:en för komponenter som finns på sidan.
+
+>[!NOTE]
+>
+>På grund av begränsningar i AMP-design stöder inte Adobe användning av det responsiva rutnätet med AMP-versionen av din sida.
 
 Mer information om krav och teknisk information finns i dokumentationen för [GitHub-utvecklaren.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
