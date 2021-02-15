@@ -4,9 +4,9 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 translation-type: tm+mt
-source-git-commit: e32521f35f33897cd72892de393073b01ad963f1
+source-git-commit: f4bed5d9d0f5387259d083fe46220208347052b3
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '214'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 2%
          + [Formulärtext (v1)](components/v1/form-text-v1.md)
 + Utveckling {#developing}
    + [Utveckla kärnkomponenter](developing/overview.md)
-   + [Sökvägar till lyckade](developing/success.md)
+   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
    + [WKND Developer Tutorial](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](developing/customizing.md)
    + [Riktlinjer för komponenter](developing/guidelines.md)
@@ -89,4 +89,5 @@ ht-degree: 2%
       + [ui.front.response Module](developing/archetype/uifrontend-react.md)
       + [ui.front.angular-modul](developing/archetype/uifrontend-angular.md)
       + [ui.tests-modul](developing/archetype/uitests.md)
+      + [it.tests-modul](developing/archetype/ittests.md)
       + [Build Analyzer Maven Plugin](developing/archetype/build-analyzer-maven-plugin.md)
