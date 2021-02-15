@@ -2,9 +2,9 @@
 title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF och eventuellt länka till ytterligare innehåll.
 translation-type: tm+mt
-source-git-commit: e7aeff3a24cff14fbcd468561632ee1927c07b4e
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '775'
 ht-degree: 1%
 
 ---
@@ -106,3 +106,7 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 ### Fliken Format {#styles-tab}
 
 Teaser Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Teaser Component (Teaser-komponenten) stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
