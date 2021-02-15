@@ -2,9 +2,9 @@
 title: Använda Adobe-klientdatalagret med kärnkomponenterna
 description: Använda Adobe-klientdatalagret med kärnkomponenterna
 translation-type: tm+mt
-source-git-commit: 1ada05d5089ccef95d41d47468776654e397f31d
+source-git-commit: 57582c5c938e0f345b27785bd6fd6d5ed5454bd0
 workflow-type: tm+mt
-source-wordcount: '893'
+source-wordcount: '974'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konf
 
 1. Lägg till en `sling:configRef`-egenskap i `jcr:content`-noden för platsen under `/content` (t.ex. `/content/<mySite>/jcr:content`) och ställ in det på `/conf/<mySite>` från föregående steg.
 
-1. När den är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren. Inspect sidkällan och `<body>`-taggen ska innehålla attributet `data-cmp-data-layer-enabled`
+1. När den är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren, till exempel med alternativet **Visa som publicerad** i redigeraren. Inspect sidkällan och `<body>`-taggen ska innehålla attributet `data-cmp-data-layer-enabled`
 
    ```html
    <body class="page basicpage" id="page-id" data-cmp-data-layer-enabled>
@@ -62,6 +62,28 @@ Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konf
    ```javascript
    window.adobeDataLayer.getState();
    ```
+
+## Komponenter som stöds {#supported-components}
+
+Följande komponenter har stöd för datalagret.
+
+* [Dragspel](/help/components/accordion.md)
+* [Breadcrumb](/help/components/breadcrumb.md)
+* [Knapp](/help/components/button.md)
+* [Carousel](/help/components/carousel.md)
+* [Innehållsfragment](/help/components/content-fragment-component.md)
+* [Bild](/help/components/image.md)
+* [Språknavigering](/help/components/language-navigation.md)
+* [Lista](/help/components/list.md)
+* [Navigering](/help/components/navigation.md)
+* [Sida](/help/components/page.md)
+* [Förloppsindikator](/help/components/progress-bar.md)
+* [Tabbar](/help/components/tabs.md)
+* [Teaser](/help/components/teaser.md)
+* [Text](/help/components/text.md)
+* [Titel](/help/components/title.md)
+
+Se även [händelserna som utlöses av komponenterna.](#events-components)
 
 ## Grundkomponentdatascheman {#data-schemas}
 
@@ -197,6 +219,34 @@ id: {
 Följande [händelse](#events) är relevant för resursschemat:
 
 * `cmp:click`
+
+### Innehållsfragmentschema {#content-fragment}
+
+Schemat Innehållsfragment används av komponenten [Innehållsfragment.](/help/components/content-fragment-component.md)
+
+Schemat Innehållsfragment definieras så här.
+
+```javascript
+id: {
+    @type
+    repo:modifyDate
+    dc:title
+    dc:description
+    xdm:text
+    xdm:linkURL
+    parentId
+    elements            // array of the Content Fragment elements
+}
+```
+
+Schemat som används för elementet Content Fragment är följande.
+
+```javascript
+{
+    xdm:title           // title
+    xdm:text            // text
+}
+```
 
 ## Kärnkomponenthändelser {#events}
 
