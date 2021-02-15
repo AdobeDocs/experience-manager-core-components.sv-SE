@@ -2,9 +2,9 @@
 title: Carousel-komponent
 description: Med Carousel Component kan innehållsförfattaren presentera innehållet i en roterande karusell.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '1112'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
@@ -128,3 +128,7 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 ### Fliken Format {#styles-tab}
 
 Carousel-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Carousel-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
