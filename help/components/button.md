@@ -2,9 +2,9 @@
 title: Button-komponent
 description: Med komponenten Core Component Button kan du skapa och visa en knapp.
 translation-type: tm+mt
-source-git-commit: df42f9e3fa26cbb26aa44688e26e5c9a7de4752e
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '451'
 ht-degree: 1%
 
 ---
@@ -73,3 +73,7 @@ På fliken **Accessibility** kan värden anges för [ARIA accessibility](https:/
 ### Fliken Format {#styles-tab}
 
 Button-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Button-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
