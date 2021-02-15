@@ -2,9 +2,9 @@
 title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '2200'
+source-wordcount: '2213'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Core Component Text Component Component Component är en textredigerings- och di
 
 Textkomponenten har en robust textredigerare som gör det enkelt att redigera text i en förenklad, textbunden redigerare och i ett helskärmsformat.
 
-I [redigeringsdialogrutan](#edit-dialog) finns det infogad redigering med begränsade alternativ med full funktionalitet i redigeringsdialogrutan i helskärmsläge. Med hjälp av [designdialogrutan](#design-dialog) kan du konfigurera textformateringsalternativ som rubriker, specialtecken och styckeformat för mallen för innehållsförfattaren.
+I [redigeringsdialogrutan](#edit-dialog) finns det infogad redigering med begränsade alternativ och full funktionalitet i redigeringsdialogrutan i helskärmsläge. Med hjälp av [designdialogrutan](#design-dialog) kan du konfigurera textformateringsalternativ som rubriker, specialtecken och styckeformat för mallen för innehållsförfattaren.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -369,3 +369,7 @@ Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för kompo
 ## Fliken Format {#styles-tab}
 
 Textkomponenten stöder AEM [style system](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Textkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
