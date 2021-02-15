@@ -2,7 +2,7 @@
 title: Front-End Build för vinkelrät SPA
 description: En beskrivning av den inledande konstruktionsprocessen för vinkelbaserade SPA
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Om du får felmeddelanden relaterade till CORS kan du konfigurera AEM enligt fö
 
 ### npm test {#npm-test}
 
-```
+```shell
 npm test
 ```
 
@@ -53,7 +53,7 @@ Detta kommando startar Karma test runner. Mer information finns i [vinkeldokumen
 
 ### npm run test:debug {#npm-run-test-debug}
 
-```
+```shell
 npm run test:debug
 ```
 
@@ -61,7 +61,7 @@ Det här kommandot startar Karma-testkörningen i interaktivt bevakningsläge.
 
 ### npm run build {#npm-run-build}
 
-```
+```shell
 npm run build
 ```
 
