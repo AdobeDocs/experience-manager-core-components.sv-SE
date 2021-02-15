@@ -2,7 +2,7 @@
 title: Front-End Build för SPA
 description: En beskrivning av den inledande processen för React-baserade SPA
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
@@ -26,7 +26,7 @@ I projektkatalogen kan du köra följande kommandon:
 
 ### npm start {#npm-start}
 
-```
+```shell
 npm start
 ```
 
@@ -45,7 +45,7 @@ Om du får felmeddelanden relaterade till CORS kan du konfigurera AEM enligt fö
 
 ### npm test {#npm-test}
 
-```
+```shell
 npm test
 ```
 
@@ -53,7 +53,7 @@ Det här kommandot startar testköraren i interaktivt bevakningsläge. Mer infor
 
 ### npm run build {#npm-run-build}
 
-```
+```shell
 npm run build
 ```
 
@@ -69,7 +69,7 @@ Som standard används standardalternativet [BrowserList](https://github.com/brow
 
 Appen React är konfigurerad att använda [koddelning](https://webpack.js.org/guides/code-splitting) som standard. När du skapar en app för produktion kommer koden att skrivas ut i flera segment:
 
-```
+```shell
 $ ls build/static/js
 2.5b77f553.chunk.js
 2.5b77f553.chunk.js.map
