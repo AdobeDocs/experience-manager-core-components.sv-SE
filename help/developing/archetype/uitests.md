@@ -1,10 +1,10 @@
 ---
 title: ui.tests Module of AEM Project Archetype
-description: Så här använder du AEM JUnit Tests för projektarkitektur
+description: Så här använder du AEM projektarkitekturens gränssnittstester
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -14,24 +14,22 @@ ht-degree: 0%
 
 Det finns tre testnivåer i projektet:
 
-## Enhetstester {#unit-tests}
+* [Enhetstester](core.md#unit-tests)
+* [Integrationstester](ittests.md)
+* UI-tester
 
-Enhetstestet i [kärnmodulen](core.md) visar klassiska enhetstestningar av koden i paketet. Testa genom att köra:
+I den här artikeln beskrivs de UI-tester som är tillgängliga som en del av modulen ui.tests.
 
-```
-mvn clean test
-```
+## Kör gränssnittstester {#running-tests}
 
-## Integrationstester {#integration-tests}
+Testa genom att köra:
 
-Integrationstesterna på serversidan gör att enhetstester kan köras i AEM-miljön, dvs. på den AEM servern. Testa genom att köra:
-
-```
-mvn clean verify -PintegrationTests
+```shell
+mvn verify -Pui-tests-local-execution
 ```
 
-## Klientsidtester {#client-side-tests}
+Efter körningen är rapporter och loggar tillgängliga i mappen `target/reports`.
 
-`client-side Hobbes.js`-testerna är JavaScript-baserade webbläsarbaserade tester som verifierar webbläsarsidans beteende.
+## Ytterligare alternativ {#additional-options}
 
-När du visar en AEM som du vill testa i webbläsaren öppnar du sidan i **Utvecklarläge** genom att öppna den vänstra panelen och växlar till fliken **Tester** och söker efter de **MyName Tests** som har skapats och kör dem.
+Gränssnittstester kan köras med många olika alternativ, bland annat för headless-testning mot en lokal webbläsare och som en Docker-bild. Mer information finns i filen [README.md i modulen ui.tests](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/ui.tests).
