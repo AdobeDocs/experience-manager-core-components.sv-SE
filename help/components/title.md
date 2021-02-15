@@ -2,9 +2,9 @@
 title: Titelkomponent
 description: Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering på plats.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
@@ -82,3 +82,7 @@ I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titel
 ### Fliken Format {#styles-tab}
 
 Title Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Titelkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
