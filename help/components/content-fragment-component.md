@@ -2,9 +2,9 @@
 title: Innehållsfragmentkomponent
 description: Komponenten Core Component Content Fragment gör det möjligt att visa ett innehållsfragment.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
@@ -110,3 +110,6 @@ I designdialogrutan kan mallskaparen definiera de resurstyper som används för 
 
    * Den Sling-resurstyp som används för det interna responsiva rutnätet
 
+## Adobe-klientdatalagret {#data-layer}
+
+Komponenten för innehållsfragment stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
