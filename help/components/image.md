@@ -2,9 +2,9 @@
 title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 translation-type: tm+mt
-source-git-commit: c20d02aa93cce60b583a2d22c77b08ca7eb9b765
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ Image Component har robusta responsiva funktioner som är klara direkt vid lever
 
 Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsningen av den faktiska bildresursen tills den syns i webbläsaren, vilket gör sidorna mer responsiva.
 
-## Stöd för dynamiska media {#dynamic-media}
+## Dynamic Media Support {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) stöder [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia)-resurser. [När ](#design-dialog) de här funktionerna är aktiverade kan du lägga till dynamiska medieresurser med en enkel dra och släpp-funktion eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) stöder [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan ](#design-dialog) du lägga till Dynamic Media-bildresurser med en enkel dra och släpp-funktion eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina webbupplevelser som skapats med Core Components har inga avancerade, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
@@ -90,10 +90,10 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 
 ![Fliken Metadata i dialogrutan Konfigurera för Image Component](/help/assets/image-configure-metadata.png)
 
-* **Förinställningstyp**  - Detta definierar de typer av bildförinställningar som är tillgängliga, antingen  **bildförinställning** eller  **smart beskärning**, och är bara tillgängligt när funktionen  [Dynamic Media är ](#dynamic-meida) aktiverad.
-   * **Bildförinställning**  - När  **förinställningstypen** för  **bildförinställningar är** markerat är  **bildförinställningarna tillgängliga, vilket gör att du kan välja bland de tillgängliga dynamiska** medieförinställningarna. Detta är bara tillgängligt om förinställningar har definierats för den valda resursen.
+* **Förinställningstyp**  - Detta definierar de typer av bildförinställningar som är tillgängliga, antingen  **bildförinställning** eller  **smart beskärning**, och är bara tillgängligt när  [Dynamic Media-](#dynamic-meida) funktioner är aktiverade.
+   * **Bildförinställning**  - När  **Förinställningstyp** för  **bildförinställningar är** valt är  **den nedrullningsbara** bildförinställningen tillgänglig och du kan välja bland de tillgängliga Dynamic Media-förinställningarna. Detta är bara tillgängligt om förinställningar har definierats för den valda resursen.
    * **Smart beskärning**  - När  **förinställd** typ av  **smart** beskärning har valts är den nedrullningsbara  **** återgivningen tillgänglig, vilket gör att du kan välja bland de tillgängliga återgivningarna för den valda resursen. Detta är bara tillgängligt om återgivningar har definierats för den valda resursen.
-   * **Bildmodifierare**  - Ytterligare kommandon för visning av dynamiska media kan definieras här avgränsade med  `&`, oavsett vilken  **förinställd** typ som har valts.
+   * **Bildmodifierare**  - Ytterligare Dynamic Media-kommandon för bildvisning kan definieras här avgränsade med  `&`, oavsett vilken  **förinställd** typ som har valts.
 * **Bilden är dekorativ**  - Kontrollera om bilden ska ignoreras av hjälpmedelstekniken och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
 * **Alternativ text**  - Textuellt alternativ för innebörden eller funktionen i bilden för läsare med nedsatt syn.
    * **Hämta alternativ text från DAM**  - När det här alternativet är markerat fylls bildens alternativa text med värdet för  `dc:description` metadata i DAM.
@@ -118,7 +118,7 @@ I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma
 
 >[!NOTE]
 >
->Funktionerna för beskärning, rotering och zoomning gäller inte för Dynamic Media-resurser. Om [Dynamiska mediefunktioner](#dynamic-media) är aktiverade bör all sådan redigering till dynamiska medieresurser utföras via [dialogrutan Konfigurera.](#configure-dialog)
+>Funktionerna för beskärning, rotering och zoomning gäller inte för Dynamic Media-resurser. Om [Dynamic Media-funktionerna](#dynamic-media) är aktiverade bör all sådan redigering av Dynamic Media-resurser utföras via [dialogrutan Konfigurera.](#configure-dialog)
 
 ![Redigeringsdialogruta för bildkomponent](/help/assets/image-edit.png)
 
@@ -187,7 +187,7 @@ Dessutom kan du definiera vilka allmänna komponentalternativ som automatiskt el
 
 ![Huvudflik i designdialogrutan för bildkomponenten](/help/assets/image-design-main.png)
 
-* **Aktivera DM-funktioner**  - När det här alternativet är markerat är funktionen aktivera  [dynamiska media ](#dynamic-media) tillgänglig.
+* **Aktivera DM-funktioner**  - När det här alternativet är markerat är  [Dynamic Media-](#dynamic-media) funktionerna tillgängliga.
 * **Aktivera lazy loading**  - Ange om alternativet för lazy loading automatiskt ska aktiveras när du lägger till bildkomponenten på en sida.
 * **Bilden är dekorativ**  - Ange om dekorationsbilden ska aktiveras automatiskt när du lägger till bildkomponenten på en sida.
 * **Hämta alternativ text från DAM** - Ange om alternativet att hämta alternativ text från DAM automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
@@ -255,3 +255,7 @@ Bildkomponenten använder kärnkomponentens adaptiva bildserver. [Den adaptiva b
 >Villkorliga begäranden via rubriken `Last-Modified` stöds av Adaptive Image Servlet, men cachelagring av rubriken `Last-Modified` [måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
 >
 >[Den AEM Project Archetype](/help/developing/archetype/overview.md)-exempelkonfigurationen för Dispatcher innehåller redan den här konfigurationen.
+
+## Adobe-klientdatalagret {#data-layer}
+
+Bildkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
