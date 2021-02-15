@@ -2,9 +2,9 @@
 title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '644'
 ht-degree: 1%
 
 ---
@@ -83,3 +83,7 @@ Mer information om hur du använder bibliotek på klientsidan finns i [Använda 
 ### Fliken Format {#styles-tab}
 
 Sidkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Sidkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
