@@ -2,7 +2,7 @@
 title: AEM Project Archetype Front-End Build
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: 10090b836397af3c9428f99bba72313263f34596
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 0%
@@ -166,7 +166,7 @@ Byggningsprocessen för modulen ui.front utnyttjar plugin-programmet [aem-client
 
 Klientbibliotek på webbplatssidan inkluderas slutligen på följande sätt:
 
-```
+```html
 <HTML>
     <head>
         <link rel="stylesheet" href="clientlib-base.css" type="text/css">
