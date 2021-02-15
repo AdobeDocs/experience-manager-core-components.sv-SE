@@ -2,10 +2,10 @@
 title: Bädda in komponent
 description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM innehållssida.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: 601bee9df2a82255c92fcf30b8dacde70b0583dc
 workflow-type: tm+mt
-source-wordcount: '944'
-ht-degree: 2%
+source-wordcount: '1341'
+ht-degree: 1%
 
 ---
 
@@ -72,13 +72,20 @@ Utvecklare kan lägga till ytterligare URL-processorer av [efter utvecklardokume
 
 ### Inbäddad {#embeddable}
 
-Inbäddade tabeller gör det möjligt att anpassa den inbäddade resursen mer, som kan parametriseras och innehålla ytterligare information. En författare kan välja bland förkonfigurerade tillförlitliga inbäddade tabeller och komponenten levereras med ett inbäddat YouTube-program.
+Inbäddade tabeller gör det möjligt att anpassa den inbäddade resursen mer, som kan parametriseras och innehålla ytterligare information. En författare kan välja bland förkonfigurerade tillförlitliga inbäddade tabeller och komponenten levereras med en YouTube-inbäddad som är färdig att användas.
 
 Fältet **Embed** anger vilken typ av processor du vill använda. När det gäller den inbäddade YouTube-funktionen kan du definiera:
 
 * **Video-ID**  - Det unika video-ID:t från YouTube för resursen som du vill bädda in
 * **Bredd**  - Bredden på den inbäddade videon
 * **Höjd**  - Höjden på den inbäddade videon
+* **Aktivera ljud**  av - Den här parametern anger om videon spelas upp som standard. Om du aktiverar det här alternativet ökar risken för att Autoplay fungerar i moderna webbläsare.
+* **Aktivera automatisk uppspelning**  - Den här parametern anger om den inledande videon automatiskt ska börja spelas upp när spelaren läses in. Detta gäller endast för publiceringsinstansen eller när du använder alternativet **Visa som publicerad** i redigeringsinstansen.
+* **Aktivera slinga**  - I en enda video anger den här parametern om spelaren ska spela upp den inledande videon upprepade gånger. När det gäller en spellista spelar spelaren upp hela spellistan och startar sedan igen vid den första videon.
+* **Aktivera textbunden uppspelning (iOS)**  - Den här parametern kontrollerar om videoklipp spelas upp textbundet (på) eller helskärm (av) i en HTML5-spelare på iOS.
+* **Obegränsade relaterade videoklipp**  - Om det här alternativet är inaktiverat kommer relaterade videoklipp från samma kanal som videon som just spelades upp, annars kommer de från vilken kanal som helst.
+
+Observera att&quot;aktivera&quot;-alternativen måste aktiveras via [designdialogrutan](#design-dialog) och kan anges som standardvärden.
 
 Andra inbäddade tabeller kan innehålla liknande fält och kan definieras av en utvecklare av [efter utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
@@ -102,7 +109,7 @@ Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att und
 
 *I allmänhet tas* alla skript och  `style` element samt alla  `on*` och  `style` attribut bort från utdata.
 
-Reglerna är dock mer komplicerade eftersom inbäddningskomponenten följer AEM globala filterregeluppsättning för HTML AntiSamy-rendering, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
+Reglerna är dock mer komplicerade eftersom inbäddningskomponenten följer AEM globala filterregeluppsättningen för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
 Ytterligare säkerhetsinformation finns i [AEM för lokala installationer](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/security.html) och [AEM som en Cloud Service installationer.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
 
@@ -113,9 +120,26 @@ Ytterligare säkerhetsinformation finns i [AEM för lokala installationer](https
 
 I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängliga för den som använder den inbäddade komponenten och de standardvärden som anges när den monterar den inbäddade komponenten.
 
+### Fliken Inbäddade typer {#embeddable-types-tab}
+
 ![Bädda in komponentens designdialogruta](/help/assets/embed-design.png)
 
 * **Inaktivera URL** - Inaktiverar  **** alternativet URLoption för innehållsförfattaren när det är markerat
 * **Inaktivera inbäddade**  filer - Inaktiverar alternativet  **** Inbäddning för innehållsförfattaren när det är markerat, oavsett vilka inbäddade processorer som är tillåtna.
 * **Inaktivera HTML** - Inaktiverar  **** HTML-alternativet för innehållsförfattaren när det är markerat.
-* **Tillåtna inbäddade**  tabeller - Multimarkering som definierar vilka inbäddade processorer som är tillgängliga för innehållsförfattaren, förutsatt att alternativet  **** Inbäddad kan användas.
+* **Tillåtna inbäddade**  tabeller - Multimarkering som definierar vilka inbäddade processorer som är tillgängliga för innehållsförfattaren, förutsatt att alternativet  **** EmbedTable är aktivt.
+
+### YouTube-flik {#youtube-tab}
+
+![Fliken YouTube i dialogrutan Bädda in komponent](/help/assets/embed-design-youtube.png)
+
+* **Tillåt konfiguration av ljudavstängningsbeteende**  - Innehållsförfattaren kan konfigurera alternativet  **Aktivera** aktivering i komponenten när YouTube-inbäddningstypen har valts
+   * **Standardvärde för ljud**  av/på - Anger automatiskt  **Aktivera** alternativ när YouTubes inbäddningstyp har valts
+* **Tillåt konfiguration av automatiskt uppspelningsbeteende**  - Innehållsförfattaren kan konfigurera alternativet  **Aktivera** automatisk uppspelning i komponenten när YouTube-inbäddningstypen har valts
+   * **Standardvärdet för automatisk uppspelning**  - Anger automatiskt  **Aktivera** automatisk uppspelning när inbäddningstypen YouTube är vald
+* **Tillåt konfiguration av loopbeteende**  - Innehållsförfattaren kan konfigurera  **Aktivera** loop i komponenten när YouTube-inbäddningstypen har valts
+   * **Standardvärde för slinga**  - Anger automatiskt  **Aktivera** loop när inbäddningstypen YouTube är vald
+* **Tillåt konfiguration av intern uppspelning (iOS)**  - Innehållsförfattaren kan konfigurera  **alternativet** Aktivera intern uppspelning (iOS) i komponenten när YouTube-inbäddningstypen har valts
+   * **Standardvärde för direktuppspelning (iOS)**  - Anger automatiskt  **alternativet** Aktivera textbunden uppspelning (iOS) när YouTube-inbäddningstypen är vald
+* **Tillåt konfiguration av textbundna videor**  - Innehållsförfattaren kan konfigurera alternativet  **Obegränsade relaterade** videoklipp i komponenten när YouTube-inbäddningstypen är vald
+   * **Standardvärde för obegränsade relaterade videoklipp**  - Anger automatiskt alternativet  **Obegränsade relaterade** videoklipp när YouTubes inbäddningstyp har valts
