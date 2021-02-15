@@ -2,9 +2,9 @@
 title: Använda den AEM projekttypen
 description: Detaljerade användningsinstruktioner för AEM Project Archetype
 translation-type: tm+mt
-source-git-commit: 10090b836397af3c9428f99bba72313263f34596
+source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
 workflow-type: tm+mt
-source-wordcount: '2055'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,16 @@ Projektets arkityp gör det enkelt att komma igång med AEM. Du kan utföra dina
 Den AEM arkitekturen består av moduler:
 
 * **[kärna](core.md)**: är ett Java-paket som innehåller alla kärnfunktioner som OSGi-tjänster, avlyssnare och schemaläggare, samt komponentrelaterad Java-kod som servrar och efterfrågningsfilter.
-* **[ui.apps](uiapps.md)**: innehåller projektets innehåll  `/apps` och  `/etc` delar, dvs. JS- och CSS-klientlibs, komponenter, mallar, runmode-specifika konfigurationer samt Hobbes-tester.
+* **[it.tests](ittests.md)**: är Java-baserade integreringstester.
+* **[ui.apps](uiapps.md)**: innehåller projektets innehåll  `/apps` och  `/etc` delar, dvs. JS- och CSS-klientlibs, komponenter och mallar.
 * **[ui.content](uicontent.md)**: innehåller exempelinnehåll med hjälp av komponenterna från modulen ui.apps.
-* **[ui.tests](uitests.md)**: är ett Java-paket som innehåller JUnit-tester som körs på serversidan. Paketet ska inte distribueras till produktionen.
-* **ui.launcher**: innehåller limkod som distribuerar paketet ui.tests (och beroende paket) till servern och utlöser fjärrexekveringen av JUnit.
+* **ui.config**: innehåller runmode-specifika OSGi-konfigurationer för projektet.
 * **[ui.front.general](uifrontend.md)**:  **(valfritt)** innehåller de artefakter som krävs för att använda den allmänna Webpack-baserade front-end-modulen.
 * **[ui.front.response](uifrontend-react.md)**:  **(valfritt)** innehåller de artefakter som krävs när du använder arkivtypen för att skapa ett SPA baserat på Reagera.
 * **[ui.front.angular](uifrontend-angular.md)**:  **(valfritt)** innehåller de artefakter som krävs för att skapa ett SPA baserat på vinkeln.
+* **[ui.tests](uitests.md)**: innehåller selenbaserade UI-tester.
+* **alla**: är ett enda innehållspaket som bäddar in alla kompilerade moduler (paket och innehållspaket) inklusive eventuella leverantörsberoenden.
+* **analysera**: kör en analys av projektet, som ger ytterligare validering för att distribuera till AEM som en Cloud Service.
 
 ![](/help/assets/archetype-structure.png)
 
