@@ -2,9 +2,9 @@
 title: Navigeringskomponent
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 translation-type: tm+mt
-source-git-commit: ff943aeca0333b13e2b9aaf11f316457f001d507
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -165,3 +165,7 @@ I designdialogrutan kan mallskaparen ange standardvärden för navigeringsrotsid
 ### Fliken Format {#styles-tab}
 
 Navigeringskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Navigeringskomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
