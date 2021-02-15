@@ -2,9 +2,9 @@
 title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 translation-type: tm+mt
-source-git-commit: 4813748bcfa83ce7c73e81d4e4d445ecc8215d26
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '966'
+source-wordcount: '979'
 ht-degree: 1%
 
 ---
@@ -188,3 +188,7 @@ datumAktivera alternativet Visa datum i  [redigeringsdialogrutan](#edit-dialog)
 ### Fliken Format {#styles-tab}
 
 Bildkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+List-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
