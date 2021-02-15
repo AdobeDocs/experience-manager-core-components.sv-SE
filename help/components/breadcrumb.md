@@ -2,9 +2,9 @@
 title: Breadcrumb-komponent
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 translation-type: tm+mt
-source-git-commit: ff943aeca0333b13e2b9aaf11f316457f001d507
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '722'
 ht-degree: 1%
 
 ---
@@ -89,3 +89,7 @@ I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska anv
 ### Fliken Format {#styles-tab}
 
 Breadcrumb-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Breadcrumb-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
