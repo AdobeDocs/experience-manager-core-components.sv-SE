@@ -2,9 +2,9 @@
 title: Språknavigeringskomponent
 description: Språknavigeringskomponenten tillhandahåller en språk-/landsnavigering för en webbplats, så att besökare kan navigera till samma sida på en annan språkinställning.
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '846'
 ht-degree: 1%
 
 ---
@@ -104,3 +104,7 @@ Dessutom kan du ange ett **ID**. Med det här alternativet kan du styra den unik
 * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ![Redigera-dialogrutan för språknavigeringskomponenten](/help/assets/language-navigation-edit.png)
+
+## Adobe-klientdatalagret {#data-layer}
+
+Språknavigeringskomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
