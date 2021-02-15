@@ -2,9 +2,9 @@
 title: Dragspelskomponent
 description: Med komponenten Core Component Accordion kan du skapa en samling paneler som ordnas i ett dragspel på en sida.
 translation-type: tm+mt
-source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1067'
 ht-degree: 1%
 
 ---
@@ -125,3 +125,7 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 ### Fliken Format {#styles-tab}
 
 Dragspelskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+
+## Adobe-klientdatalagret {#data-layer}
+
+Accordion-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
