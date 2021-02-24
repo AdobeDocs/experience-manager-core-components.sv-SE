@@ -2,7 +2,7 @@
 title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 translation-type: tm+mt
-source-git-commit: 0f188a1d380e29674c8c8c6a6c9e773e0276743f
+source-git-commit: 3c5749d6660af1ad94f4911f261951e0369fa139
 workflow-type: tm+mt
 source-wordcount: '1971'
 ht-degree: 11%
@@ -12,7 +12,7 @@ ht-degree: 11%
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.14.0 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
+Den aktuella versionen av Core Components är 2.15.0 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
