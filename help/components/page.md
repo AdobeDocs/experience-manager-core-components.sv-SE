@@ -2,9 +2,9 @@
 title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 translation-type: tm+mt
-source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
+source-git-commit: 2748fea0aca82b1262585b3f8c191f61607f7735
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -16,9 +16,13 @@ Sidkomponenten är en utökningsbar sidkomponent som är utformad för att funge
 
 ## Användning {#usage}
 
-Sidkomponenten utgör grunden för alla sidor som utformats med kärnkomponenterna samt redigerbara mallar. Med hjälp av sidkomponenten kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra huvudkomponenterna.
+Page Component (Sidkomponent) utgör grunden för alla sidor som utformats med Core Components (kärnkomponenter) samt redigerbara mallar. Med hjälp av sidkomponenten kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra kärnkomponenterna.
 
-Med hjälp av [designdialogrutan](#design-dialog) kan anpassade klientbibliotek definieras för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, är [redigeringsdialogrutan](#edit-dialog) för sidkomponenten fönstret sidegenskaper eftersom komponenten är själva sidan.
+Med hjälp av [designdialogrutan](#design-dialog) kan anpassade klientbibliotek definieras för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, eftersom sidkomponenten är själva sidan, är [redigeringsdialogrutan](#edit-dialog) för sidkomponenten sidegenskapsfönstret.
+
+## Progressivt stöd för webbappar {#pwa-support}
+
+I version 2.15.0 av Core Components introducerades stöd för AEM inbyggda [progressiva webbappar (PWA) funktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html) i Page Component. Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM till en PWA!
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
