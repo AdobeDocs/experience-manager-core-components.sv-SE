@@ -2,9 +2,9 @@
 title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 translation-type: tm+mt
-source-git-commit: 2748fea0aca82b1262585b3f8c191f61607f7735
+source-git-commit: f4a45b2af87e5a5f0396b335c65856ce821455c9
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Med hjälp av [designdialogrutan](#design-dialog) kan anpassade klientbibliotek 
 
 ## Progressivt stöd för webbappar {#pwa-support}
 
-I version 2.15.0 av Core Components introducerades stöd för AEM inbyggda [progressiva webbappar (PWA) funktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html) i Page Component. Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM till en PWA!
+I version 2.15.0 av Core Components introducerades stöd för AEM som en Cloud Services inbyggda Progressiva webbprogram (PWA). Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM till en PWA!
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
