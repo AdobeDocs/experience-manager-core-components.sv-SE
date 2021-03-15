@@ -39,7 +39,7 @@ Den AEM arkitekturen består av moduler:
 * **ui.config**: innehåller runmode-specifika OSGi-konfigurationer för projektet.
 * **[ui.front.general](uifrontend.md)**:  **(valfritt)** innehåller de artefakter som krävs för att använda den allmänna Webpack-baserade front-end-modulen.
 * **[ui.front.response](uifrontend-react.md)**:  **(valfritt)** innehåller de artefakter som krävs när du använder arkivtypen för att skapa ett SPA baserat på Reagera.
-* **[ui.front.angular](uifrontend-angular.md)**:  **(valfritt)** innehåller de artefakter som krävs för att skapa ett SPA baserat på vinkeln.
+* **[ui.front.angular](uifrontend-angular.md)**:  **(valfritt)** innehåller de artefakter som krävs när du använder en arkivtyp för att skapa ett SPA baserat på Angular.
 * **[ui.tests](uitests.md)**: innehåller selenbaserade UI-tester.
 * **alla**: är ett enda innehållspaket som bäddar in alla kompilerade moduler (paket och innehållspaket) inklusive eventuella leverantörsberoenden.
 * **analysera**: kör en analys av projektet, som ger ytterligare validering för att distribuera till AEM som en Cloud Service.
