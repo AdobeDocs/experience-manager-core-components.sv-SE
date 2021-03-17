@@ -2,7 +2,7 @@
 title: AEM Project Archetype
 description: En projektmall för AEM
 translation-type: tm+mt
-source-git-commit: 794408e8b643de2234664e69e59e1108cf286cd7
+source-git-commit: 4ea3f1da41d9dd63707135c9eb9466c31d3dbe51
 workflow-type: tm+mt
 source-wordcount: '1035'
 ht-degree: 3%
@@ -53,7 +53,7 @@ Om du vill generera ett projekt justerar du följande kommandorad efter dina beh
 mvn -B archetype:generate \
  -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=24 \
+ -D archetypeVersion=26 \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
@@ -95,7 +95,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 
 | Arketyp | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
 |---------|---------|---------|---------|---------|---------|
-| [24](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-24) | Kontinuerlig | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
+| [26](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-26) | Kontinuerlig | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
 
 Konfigurera den lokala utvecklingsmiljön för [AEM som Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
