@@ -1,10 +1,11 @@
 ---
 title: Riktlinjer för komponenter
 description: Core Components följer moderna implementeringsmönster som skiljer sig mycket från grundkomponenterna.
+role: Arkitekt, utvecklare, administratör
 translation-type: tm+mt
-source-git-commit: 2926c51c2ab97b50b9ec4942cd5415c15a1411b6
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1262'
 ht-degree: 1%
 
 ---
@@ -48,7 +49,7 @@ För att göra komponenterna så återanvändbara som möjligt bör de ha mening
 
 ### Proxykomponentmönster {#proxy-component-pattern}
 
-Eftersom varje innehållsresurs har en `sling:resourceType`-egenskap som refererar till komponenten för att återge den, är det oftast bra att låta dessa egenskaper peka mot platsspecifika komponenter, i stället för att peka på komponenter som delas av flera platser. Detta ger större flexibilitet och undviker innehållsomfaktorisering om en webbplats behöver ett annat beteende för en komponent, eftersom den här anpassningen då kan göras på den platsspecifika komponenten och inte påverkar de andra platserna.
+Eftersom varje innehållsresurs har en `sling:resourceType`-egenskap som refererar till komponenten för att återge den, är det oftast bra att låta dessa egenskaper peka på platsspecifika komponenter, i stället för att peka på komponenter som delas av flera platser. Detta ger större flexibilitet och undviker innehållsomfaktorisering om en webbplats behöver ett annat beteende för en komponent, eftersom den här anpassningen då kan göras på den platsspecifika komponenten och inte påverkar de andra platserna.
 
 Om de projektspecifika komponenterna inte ska duplicera någon kod bör de referera till den delade överordnade komponenten med egenskapen `sling:resourceSuperType`. Dessa projektspecifika komponenter som oftast bara refererar till överordnade komponenter kallas&quot;proxykomponenter&quot;. Proxykomponenter kan vara helt tomma om de helt ärver funktionaliteten, eller så kan de definiera om vissa aspekter av komponenten.
 
