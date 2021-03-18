@@ -1,10 +1,11 @@
 ---
 title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
+role: Arkitekt, utvecklare, administratör, affärsansvarig
 translation-type: tm+mt
-source-git-commit: 499047a8c15a6423a56b370f41fd020740481f80
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '961'
 ht-degree: 0%
 
 ---
