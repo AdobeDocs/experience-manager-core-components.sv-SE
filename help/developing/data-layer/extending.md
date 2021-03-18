@@ -1,10 +1,12 @@
 ---
 title: Utöka datalagret för klienten Adobe
 description: Adobe-klientdatalagret kan utökas efter vissa grundläggande mönster
+feature: Kärnkomponenter, Adobe-klientdatalager
+role: Arkitekt, utvecklare, administratör
 translation-type: tm+mt
-source-git-commit: 1ada05d5089ccef95d41d47468776654e397f31d
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
