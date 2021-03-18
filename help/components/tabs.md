@@ -1,10 +1,11 @@
 ---
 title: Tabbar-komponent
 description: Med flikkomponenten kan du skapa flera flikar för att ordna innehåll på en sida.
+role: Arkitekt, utvecklare, administratör, affärsansvarig
 translation-type: tm+mt
-source-git-commit: d3ebcea5fa1523c1a986841cd3d1a64e16e85f6d
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1045'
 ht-degree: 1%
 
 ---
