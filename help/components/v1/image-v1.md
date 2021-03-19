@@ -2,10 +2,11 @@
 title: Bildkomponent (v1)
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 index: n
+role: Arkitekt, utvecklare, administratör, affärsansvarig
 translation-type: tm+mt
-source-git-commit: 78202dc777b90f795f66873921c55e21ef8a239c
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '1229'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
