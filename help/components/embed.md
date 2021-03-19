@@ -1,10 +1,11 @@
 ---
 title: Bädda in komponent
 description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM innehållssida.
+role: Arkitekt, utvecklare, administratör, affärsansvarig
 translation-type: tm+mt
-source-git-commit: 601bee9df2a82255c92fcf30b8dacde70b0583dc
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1346'
 ht-degree: 1%
 
 ---
