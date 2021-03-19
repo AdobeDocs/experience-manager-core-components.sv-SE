@@ -1,10 +1,11 @@
 ---
 title: Sling Context-Aware Configurations and Core Components
 description: Core Components använder kontextmedvetna Sling-konfigurationer för vissa funktioner
+role: Arkitekt, utvecklare, administratör
 translation-type: tm+mt
-source-git-commit: aff9046008dcea6c0cbda4b3de400df77a507097
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '203'
 ht-degree: 0%
 
 ---
