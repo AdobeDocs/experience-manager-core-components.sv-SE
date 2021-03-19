@@ -1,10 +1,12 @@
 ---
 title: ui.apps-modulen för AEM Project Archetype
 description: ui.apps-modulen för AEM Project Archetype
+feature: Kärnkomponenter, AEM projekttyp
+role: Arkitekt, utvecklare, administratör
 translation-type: tm+mt
-source-git-commit: a427c2ade8cca69de8e2b59fc3afb4405342909c
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
