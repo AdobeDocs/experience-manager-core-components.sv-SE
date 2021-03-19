@@ -2,10 +2,11 @@
 title: Formuläralternativkomponent (v1)
 description: Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
 index: n
+role: Arkitekt, utvecklare, administratör, affärsansvarig
 translation-type: tm+mt
-source-git-commit: 93a7ba6b8a972d111fb723cb40b0380cea9b5a9a
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '481'
 ht-degree: 1%
 
 ---
