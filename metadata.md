@@ -1,19 +1,15 @@
 ---
-product: Adobe Experience Manager
+product: adobe experience manager
+solution: Experience Manager Sites
+type: Dokumentation
 description: Dokumentation för Adobe Experience Manager Core Components
 git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-core-components.sv-SE
 index: y
-solution-title: Lär dig mer och support för AEM
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/home.html
-getting-started-title: Komma igång med utveckling för AEM
-getting-started-url: https://docs.adobe.com/content/help/en/experience-manager-cloud-service/core-concepts/home.html
-tutorials-title: AEM Tutorials
-tutorials-url: https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/overview.html
 translation-type: tm+mt
-source-git-commit: f109463f1942349c300600acf6b94f268e8aa60e
+source-git-commit: 290423c39b925ea8cf4077f31a76ecf01167f344
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 16%
+source-wordcount: '113'
+ht-degree: 0%
 
 ---
 
