@@ -1,10 +1,11 @@
 ---
 title: Anpassa kärnkomponenter
 description: Core Components implementerar flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
+role: Arkitekt, utvecklare, administratör
 translation-type: tm+mt
-source-git-commit: fe8a121520000ffd56ae3347469590e89121eaf0
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '1106'
+source-wordcount: '1109'
 ht-degree: 1%
 
 ---
