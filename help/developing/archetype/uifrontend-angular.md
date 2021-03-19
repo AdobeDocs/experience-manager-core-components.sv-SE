@@ -1,22 +1,24 @@
 ---
-title: Front-End Build för vinkelrät SPA
-description: En beskrivning av den inledande konstruktionsprocessen för vinkelbaserade SPA
+title: Front-End Build för Angular SPA
+description: En beskrivning av utvecklingsprocessen för Angular-baserade SPA
+feature: Kärnkomponenter, AEM projekttyp
+role: Arkitekt, utvecklare, administratör
 translation-type: tm+mt
-source-git-commit: 9d737b31efc8c346775ea5296f7599295af07cf1
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
 
 
-# Front-End Build för vinkelrät SPA {#frontend-angular}
+# Front-End Build för Angular SPA {#frontend-angular}
 
-I det här dokumentet förklaras detaljerna för det projekt som skapades när du använde arkitypen för att skapa ett ensidigt program (SPA) baserat på vinkelramverket. Det vill säga när du anger `frontendModule` som `angular`.
+I det här dokumentet beskrivs detaljerna för det projekt som skapas när du använder en arkivtyp för att skapa ett enda SPA baserat på ramverket för Angular. Det vill säga när du anger `frontendModule` som `angular`.
 
 ## Översikt {#overview}
 
-Det här projektet startades med [vinkeln CLI](https://github.com/angular/angular-cli).
+Det här projektet startades med [Angular-CLI](https://github.com/angular/angular-cli).
 
 Det här programmet är utformat för att förbruka en webbplats AEM modell. Layouten genereras automatiskt med hjälpkomponenterna från [@adobe/cq-angular-editable-components](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)-paketet.
 
@@ -49,7 +51,7 @@ Om du får felmeddelanden relaterade till CORS kan du konfigurera AEM enligt fö
 npm test
 ```
 
-Detta kommando startar Karma test runner. Mer information finns i [vinkeldokumentationen om hur du kör test](https://angular.io/guide/testing).
+Detta kommando startar Karma test runner. Mer information finns i [dokumentationen till Angularna om hur du kör test](https://angular.io/guide/testing).
 
 ### npm run test:debug {#npm-run-test-debug}
 
@@ -65,7 +67,7 @@ Det här kommandot startar Karma-testkörningen i interaktivt bevakningsläge.
 npm run build
 ```
 
-Med det här kommandot byggs programmet för produktion till byggmappen. Det paketerar Angular i produktionsläge och optimerar bygget för bästa prestanda. Mer information finns i [vinkeldokumentationen om distribution](https://angular.io/guide/deployment).
+Med det här kommandot byggs programmet för produktion till byggmappen. Det paketerar Angular i produktionsläge och optimerar bygget för bästa prestanda. Mer information finns i [Angularnas dokumentation om distribution](https://angular.io/guide/deployment).
 
 Dessutom genereras en AEM ClientLib från programmet med [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)-paketet.
 
