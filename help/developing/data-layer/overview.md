@@ -1,10 +1,12 @@
 ---
 title: Använda Adobe-klientdatalagret med kärnkomponenterna
 description: Använda Adobe-klientdatalagret med kärnkomponenterna
+feature: Kärnkomponenter, Adobe-klientdatalager
+role: Arkitekt, utvecklare, administratör
 translation-type: tm+mt
-source-git-commit: 57582c5c938e0f345b27785bd6fd6d5ed5454bd0
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '974'
+source-wordcount: '983'
 ht-degree: 1%
 
 ---
