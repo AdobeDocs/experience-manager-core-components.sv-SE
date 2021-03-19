@@ -1,10 +1,11 @@
 ---
 title: Content Fragment List Component
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
+role: Arkitekt, utvecklare, administratör, affärsansvarig
 translation-type: tm+mt
-source-git-commit: c186e9ec3944d785ab0376769cf7f2307049a809
+source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -77,7 +78,7 @@ På fliken **Egenskaper** definieras vilka innehållsfragment som ska tas med i 
 
 ### Fliken Element
 
-Som standard tas alla element i innehållsfragmentmodellen med med i listan (såvida de inte begränsas av fältet **Max. objekt**). På fliken **Elements** kan du bara ange specifika element som ska inkluderas.
+Som standard tas alla element i innehållsfragmentmodellen med i listan (såvida de inte begränsas av fältet **Max. objekt**). På fliken **Elements** kan du bara ange specifika element som ska inkluderas.
 
 ![Fliken Element i redigeringsdialogrutan för komponenten Innehållsfragmentlista](/help/assets/content-fragment-list-elements.png)
 
