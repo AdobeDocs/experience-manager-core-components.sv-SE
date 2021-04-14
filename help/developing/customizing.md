@@ -1,15 +1,15 @@
 ---
 title: Anpassa kärnkomponenter
 description: Core Components implementerar flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
-role: Arkitekt, utvecklare, administratör
+role: Architect, Developer, Administrator
+exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1106'
 ht-degree: 1%
 
 ---
-
 
 # Anpassa kärnkomponenter{#customizing-core-components}
 
@@ -105,7 +105,7 @@ Mer information om delegeringsmönstret finns i Wiki-artikeln Core Components Gi
 
 Ibland kräver avancerad formatering en annan kodstruktur för komponenten.
 
-Detta kan du enkelt göra genom att kopiera HTML-filerna som behöver ändras från Core-komponenten till proxykomponenten.
+Detta kan du enkelt göra genom att kopiera HTML-filerna som behöver ändras från Core-komponenten till [proxykomponenten.](guidelines.md#proxy-component-pattern)
 
 Om du än en gång tar exemplet med kärnkomponenten Breadcrumb Component och anpassar markeringsutdata, måste `breadcrumb.html`-filen kopieras till den platsspecifika komponenten som har en `sling:resourceSuperTypes` som pekar på kärnkomponenten Breadcrumb.
 
