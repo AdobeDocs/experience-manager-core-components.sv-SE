@@ -1,15 +1,15 @@
 ---
 title: Introduktion till kärnkomponenter
 description: 'Core Components ger robusta och utbyggbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
-role: Arkitekt, utvecklare, administratör, affärsansvarig
+role: Architect, Developer, Administrator, Business Practitioner
+exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 translation-type: tm+mt
-source-git-commit: fa8ead438093681071b6b6f8ccfbba523f6d3bee
+source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '936'
 ht-degree: 3%
 
 ---
-
 
 # Introduktion till kärnkomponenter{#core-components-introduction}
 
@@ -118,3 +118,9 @@ Krav från tidigare versioner av Core Component finns i [Core Components Version
 Core-komponenterna kräver [redigerbara mallar](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) och stöder inte klassiska användargränssnitt eller statiska mallar. Om det behövs kan du titta på [AEM Moderniseringsverktyg](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) för att uppdatera projektet med dessa moderna AEM funktioner.
 
 Om du vill konfigurera din lokala utvecklingsmiljö går du till [den här översikten för AEM som en Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller det här dokumentet [för äldre versioner av AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+
+>[!TIP]
+>
+>Core Components är automatiskt en del av AEM som en Cloud Service och du har alltid den senaste versionen av Core Components.
+>
+>Se dokumentet [Använda kärnkomponenter](/help/get-started/using.md) för mer information om hur du kommer igång med kärnkomponenterna både i AEMaaCS och lokalt.
