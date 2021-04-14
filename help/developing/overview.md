@@ -1,15 +1,15 @@
 ---
 title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
-role: Arkitekt, utvecklare, administratör
+role: Architect, Developer, Administrator
+exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: b01fdc7ab6b4d4bb4200d28aaa3706c58ccdea9f
 workflow-type: tm+mt
-source-wordcount: '1445'
-ht-degree: 3%
+source-wordcount: '1591'
+ht-degree: 2%
 
 ---
-
 
 # Utveckla kärnkomponenter {#developing-core-components}
 
@@ -40,6 +40,8 @@ Core Components är kraftfulla, flexibla och enkla att använda och anpassa. [Om
 
 Alla nya projekt ska implementeras med kärnkomponenter. Befintliga projekt har dock oftast omfattande implementeringar av Foundation Components.
 
+### Migrerar från Foundation Components {#from-foundation}
+
 En större insats i ett befintligt projekt (till exempel en omprofilering eller en övergripande omfaktorisering) ger ofta möjlighet att migrera till kärnkomponenterna. För att underlätta denna migration har Adobe tillhandahållit ett antal migreringsverktyg för att uppmuntra till användning av kärnkomponenterna och den senaste AEM tekniken.
 
 [Med AEM Moderniseringsverktyg ](http://opensource.adobe.com/aem-modernize-tools/) kan du enkelt konvertera:
@@ -54,6 +56,23 @@ Mer information om hur dessa verktyg används finns i [dokumentationen](http://o
 >[!NOTE]
 >
 >De AEM verktygen är en del av communityn och stöds inte eller motiveras inte av Adobe.
+
+## Migrering via Flytta till AEM som en Cloud Service {#via-aemaacs}
+
+Eftersom AEM som Cloud Service har den senaste versionen av Core Components automatiskt måste du ta bort alla beroenden till Core Components i dina projekt `pom.xml`-filen när du går från en lokal AEM.
+
+Proxykomponenterna fungerar fortfarande som de gjorde tidigare eftersom   utkast pekar på den nödvändiga supertypen och den överordnade textbanan har versionen i den. På så sätt kan du bara ta bort beroendet och få Core Components att fungera i AEMaaCS på samma sätt som lokalt.
+
+Precis som andra AEMaaCS-projekt måste du också lägga till ett beroende i AEM SDK jar. Detta är inte specifikt för kärnkomponenterna, men krävs.
+
+```xml
+<dependency>
+   <groupId>com.adobe.aem</groupId>
+   <artifactId>aem-sdk-api</artifactId>
+</dependency>
+```
+
+Mer information om AEMaaCS-projekt finns i dokumentet [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
 
 ## Stöd för kärnkomponent {#core-component-support}
 
