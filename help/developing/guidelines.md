@@ -1,15 +1,15 @@
 ---
 title: Riktlinjer för komponenter
 description: Core Components följer moderna implementeringsmönster som skiljer sig mycket från grundkomponenterna.
-role: Arkitekt, utvecklare, administratör
+role: Architect, Developer, Administrator
+exl-id: e8c58fa5-c991-433c-8d38-575dacfc3433
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
 workflow-type: tm+mt
-source-wordcount: '1262'
+source-wordcount: '1272'
 ht-degree: 1%
 
 ---
-
 
 # Riktlinjer för komponenter {#component-guidelines}
 
@@ -52,6 +52,10 @@ För att göra komponenterna så återanvändbara som möjligt bör de ha mening
 Eftersom varje innehållsresurs har en `sling:resourceType`-egenskap som refererar till komponenten för att återge den, är det oftast bra att låta dessa egenskaper peka på platsspecifika komponenter, i stället för att peka på komponenter som delas av flera platser. Detta ger större flexibilitet och undviker innehållsomfaktorisering om en webbplats behöver ett annat beteende för en komponent, eftersom den här anpassningen då kan göras på den platsspecifika komponenten och inte påverkar de andra platserna.
 
 Om de projektspecifika komponenterna inte ska duplicera någon kod bör de referera till den delade överordnade komponenten med egenskapen `sling:resourceSuperType`. Dessa projektspecifika komponenter som oftast bara refererar till överordnade komponenter kallas&quot;proxykomponenter&quot;. Proxykomponenter kan vara helt tomma om de helt ärver funktionaliteten, eller så kan de definiera om vissa aspekter av komponenten.
+
+>[!TIP]
+>
+>Mer information om hur du skapar proxykomponenter finns i [Använda kärnkomponenter](/help/get-started/using.md#create-proxy-components).
 
 ### Komponentversionshantering {#component-versioning}
 
