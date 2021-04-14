@@ -1,15 +1,15 @@
 ---
 title: Använda kärnkomponenter
 description: '"För att komma igång med Core Components i ditt eget projekt finns det tre steg: ladda ned och installera, skapa proxykomponenter, ladda ned huvudformaten och tillåt komponenterna i mallarna."'
-role: Arkitekt, utvecklare, administratör, affärsansvarig
+role: Architect, Developer, Administrator, Business Practitioner
+exl-id: ee2d25e4-e2b8-4ecc-a62c-f0066de2bf2d
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: 45a17fe42146516f351f897e85a4a48dcf3aadab
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
-
 
 # Använda kärnkomponenter{#using-core-components}
 
@@ -20,16 +20,36 @@ För att komma igång med Core Components i ditt eget projekt finns det fyra ste
 1. [Läs in kärnformat](#load-the-core-styles)
 1. [Aktivera komponenterna](#allow-the-components)
 
->[!NOTE]
+>[!TIP]
 >
->Om du vill ha mer omfattande anvisningar om hur du kommer igång från grunden med projektkonfigurationen, kärnkomponenter, redigerbara mallar, klientbibliotek och komponentutveckling kan följande självstudiekurs i flera delar vara av intresse:\
+>För mer omfattande instruktioner om hur du kommer igång från grunden med projektkonfigurationen, kärnkomponenter, redigerbara mallar, klientbibliotek och komponentutveckling kan följande självstudiekurs i flera delar vara av intresse:\
 >[Komma igång med AEM Sites - WKND självstudiekurs](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+
+>[!TIP]
+>
+>Om du använder [AEM Project Archetype](/help/developing/archetype/overview.md) inkluderas kärnkomponenterna automatiskt i ditt projekt baserat på rekommendationer för bästa praxis i Adobe.
 
 ## Hämta och installera {#download-and-install}
 
-En av de drivande idéerna bakom kärnkomponenterna är flexibilitet. Genom att lansera nya versioner av de centrala komponenterna oftare kan Adobe bli mer flexibelt när det gäller att leverera nya funktioner. Utvecklarna kan i sin tur vara flexibla när det gäller vilka komponenter de väljer att integrera i sina projekt och hur ofta de vill uppdatera dem.
+En av de drivande idéerna bakom kärnkomponenterna är flexibilitet. Genom att lansera nya versioner av de centrala komponenterna oftare kan Adobe bli mer flexibelt när det gäller att leverera nya funktioner. Utvecklarna kan i sin tur vara flexibla när det gäller vilka komponenter de väljer att integrera i sina projekt och hur ofta de vill uppdatera dem. Detta resulterar i en separat versionsprocess för både AEM och kärnkomponenterna.
 
-Därför ingår inte kärnkomponenterna i snabbstarten när du startar i produktionsläge (utan exempelinnehåll). Därför är det första steget att [hämta det senaste släppta innehållspaketet från GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) och installera det i dina AEM miljöer.
+Därför avgör installationsstegen om du kör AEM som en molntjänst eller en lokal tjänst.
+
+### AEM as a Cloud Service {#aemaacs}
+
+Det finns inget steg ett! AEM som Cloud Service levereras automatiskt med den senaste versionen av Core Components. Precis som AEMaaCS erbjuder de senaste funktionerna i AEM håller AEMaaCS automatiskt dig uppdaterad med den senaste versionen av Core Components.
+
+Tänk på några saker när du använder kärnkomponenterna i AEMaaCS:
+
+* Kärnkomponenterna ingår i `/libs`.
+* Projektets produktionsflöde genererar varningar i loggen om den innehåller kärnkomponenterna igen som en del av `/apps` och ignorerar den version som är inbäddad som en del av ditt projekt.
+   * I en kommande version, inklusive Core Components igen, kommer pipeline-bygget att misslyckas.
+* Om ditt projekt tidigare innehöll kärnkomponenterna i `/apps`, [kan du behöva justera ditt projekt.](/help/developing/overview.md#via-aemaacs)
+* Även om kärnkomponenterna nu finns i `/libs` rekommenderar vi inte att du skapar någon övertäckning med samma sökväg i `/apps`. [Proxykomponentmönstret bör ](/help/developing/guidelines.md#proxy-component-pattern) användas i stället om någon aspekt av komponenterna behöver anpassas.
+
+### AEM 6.5 och tidigare {#aem-65}
+
+Kärnkomponenterna är inte en del av snabbstarten när de startas i produktionsläge (utan exempelinnehåll). Därför är det första steget att [hämta det senaste släppta innehållspaketet från GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) och installera det i dina AEM miljöer.
 
 Det finns flera sätt att automatisera detta, men det enklaste sättet att snabbt installera ett innehållspaket på en instans är att använda pakethanteraren. se [Installera paket](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html#installing-packages). När du också har en publiceringsinstans som körs måste du replikera paketet till utgivaren. se [Replikera paket](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html#replicating-packages).
 
