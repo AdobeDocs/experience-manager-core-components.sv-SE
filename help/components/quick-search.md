@@ -4,7 +4,7 @@ description: Komponenten för snabbsökning innehåller sökfunktioner för en w
 role: Architect, Developer, Administrator, Business Practitioner
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
 translation-type: tm+mt
-source-git-commit: 72b8864a5dca24b938cecd808ab4cdededb1abec
+source-git-commit: 6eff0c8584605e034fc6516416783715fce10095
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 1%
@@ -50,7 +50,7 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera var i innehållstr
 ![Redigeringsdialogrutan för snabbsökningskomponenten](/help/assets/quick-search-edit.png)
 
 **Sökrot**  - Rotsidan som sökningen ska startas från. Sökroten kan vara en överordnad, överordnad eller vanlig sida i utkast.
-* **ID**  - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i  [datalagret](/help/developing/data-layer/overview.md).
+* **ID**  - Det här alternativet tillåter kontroll av komponentens unika identifierare i HTML-koden och i  [datalagret.](/help/developing/data-layer/overview.md)
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
