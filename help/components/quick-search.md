@@ -1,15 +1,15 @@
 ---
 title: Snabbsökningskomponent
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
-role: Arkitekt, utvecklare, administratör, affärsansvarig
+role: Architect, Developer, Administrator, Business Practitioner
+exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: 72b8864a5dca24b938cecd808ab4cdededb1abec
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '614'
 ht-degree: 1%
 
 ---
-
 
 # Snabbsökningskomponent {#quick-search-component}
 
@@ -54,6 +54,10 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera var i innehållstr
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
+
+>[!NOTE]
+>
+>Om **sökroten** inte är konfigurerad eller inte kan matchas är snabbsökningen som standard sökbar under den aktuella sidan.
 
 ## Designdialog {#design-dialog}
 
