@@ -2,7 +2,7 @@
 title: Formulärtextkomponent (v1)
 description: Med komponenten Core Component Form Text kan du skriva in formulärtext.
 index: n
-role: Arkitekt, utvecklare, administratör, affärsansvarig
+role: Architect, Developer, Administrator, Business Practitioner
 translation-type: tm+mt
 source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
 workflow-type: tm+mt
