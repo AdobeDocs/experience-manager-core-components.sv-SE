@@ -5,9 +5,9 @@ breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 feature-set: Experience Manager Sites
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: 74cbb94c35e7b62332f88245ed48c72d1ac07796
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '216'
 ht-degree: 2%
 
 ---
@@ -92,3 +92,4 @@ ht-degree: 2%
       + [ui.tests-modul](developing/archetype/uitests.md)
       + [it.tests-modul](developing/archetype/ittests.md)
       + [Build Analyzer Maven Plugin](developing/archetype/build-analyzer-maven-plugin.md)
++ [Dold sida](hidden.md)
