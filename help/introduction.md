@@ -4,7 +4,7 @@ description: 'Core Components ger robusta och utbyggbara baskomponenter som bygg
 role: Architect, Developer, Administrator, Business Practitioner
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
 translation-type: tm+mt
-source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
+source-git-commit: f151a70c5ff7db042d4e10adc7ed8a9752ea9c87
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 3%
@@ -107,7 +107,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 | Kärnkomponenter | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
 |---------|---------|---------|---------|---------|---------|
-| [2.15.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.2) | Kontinuerlig | 6.5.5.0+ * | 6.4.8.1+ * | 8, 11 | 3.3.9+ |
+| [2.16.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.0) | Kontinuerlig | 6.5.5.0+ * | 6.4.8.1+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
