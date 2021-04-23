@@ -2,18 +2,18 @@
 title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Administrator, Business Practitioner
+exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
 translation-type: tm+mt
-source-git-commit: fa8ead438093681071b6b6f8ccfbba523f6d3bee
+source-git-commit: f151a70c5ff7db042d4e10adc7ed8a9752ea9c87
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2034'
 ht-degree: 11%
 
 ---
 
-
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.15.2 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
+Den aktuella versionen av Core Components är 2.16.0 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -27,6 +27,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.16.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.0) | Den här versionen fokuserar på tillgänglighetsförbättringar och introducerar en ny länkhanterare för befintliga komponenter. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 22 april 2021 |
 | [2.15.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.2) | Det här var en korrigeringsrelease som huvudsakligen åtgärdar problem med [bakåtkompatibilitet för datalager](/help/developing/data-layer/overview.md) och IT-tester misslyckades i vissa situationer. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 16 mars 2021 |
 | [2.15.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Den här versionen innehåller stöd för progressiva webbprogram i [sidkomponenten](/help/components/page.md) och stöder version 2.0.0 av [datalagret Adobe.](/help/developing/data-layer/overview.md) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 23 februari 2021 |
 | [2.14.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.14.0) | Den här versionen innehåller nya alternativ för [Embed Component](/help/components/embed.md) och introducerar Brand Slug på [sidnivå](/help/components/page.md) samt åtgärdar många problem. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 9 februari 2021 |
