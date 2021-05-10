@@ -2,14 +2,14 @@
 title: Sökvägar till framgång med kärnkomponenterna
 description: Så här lyckas du när du implementerar ditt projekt med Core Components
 role: Architect, Developer, Administrator, Business Practitioner
+exl-id: 1ea8cd1c-8435-4ded-82dc-5a7896c53e0c
 translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+source-git-commit: 056c5bc15ac9e669c3bf6d5da7f060d6eef02608
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '564'
 ht-degree: 0%
 
 ---
-
 
 # Sökvägar till lyckade med kärnkomponenterna {#paths-to-success}
 
@@ -41,7 +41,7 @@ Referera till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library) som r
 
 ### Använd UI Kit för Adobe XD {#ui-kit}
 
-Så snart det finns ett bevisat behov av en anpassad komponent kan du använda [UI-paketet för Adobe XD](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/assets/overview/AEM_UI-kit_Wireframe.xd) så att designers kan börja skapa trådramar och designer med Core Components som byggstenar.
+Så snart det finns ett bevisat behov av en anpassad komponent kan du använda [UI-paketet för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) så att designers kan börja skapa trådramar och designer med Core Components som byggstenar.
 
 ## Glöm inte kraftfulla funktioner {#powerful-features}
 
@@ -59,4 +59,4 @@ Om en författare vill återanvända delar (ett fragment av en upplevelse) av en
 
 ### Den inbäddade komponenten {#embed-component}
 
-[Med Embed-](/help/components/embed.md) komponenten kan du inte bara inkludera externa resurser som YouTube-videoinnehåll, utan det kan också byggas ut så att det kan rymma innehåll som är specifikt för ett projekts behov.
+[Med Embed-](/help/components/embed.md) komponenten kan du enkelt inkludera externa resurser som YouTube-videoinnehåll, men den kan också byggas ut för att rymma innehåll som är specifikt för ett projekts behov.
