@@ -3,9 +3,9 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Administrator, Business Practitioner
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 46d97324ed1b903c315725429fe36b11a1856aa9
+source-git-commit: 6dc5c5959410f643ff169989d4d98c6f65f98076
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2072'
 ht-degree: 11%
 
 ---
@@ -26,10 +26,10 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
-| [2.16.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.2) | Det här var en korrigeringsversion för att åtgärda problem med länkhanteraren. Även små förbättringar gjordes i PWA. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 15 maj 2021 |
+| [2.16.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.2) | Det här var en korrigeringsrelease som huvudsakligen åtgärdade ett problem med den nya länkhanteraren och lade till en förbättring som stöder flersidiga program för [PWA.](/help/components/page.md#pwa-support) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 15 maj 2021 |
 | [2.16.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.0) | Den här versionen fokuserar på tillgänglighetsförbättringar och introducerar en ny länkhanterare för befintliga komponenter. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 22 april 2021 |
 | [2.15.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.2) | Det här var en korrigeringsrelease som huvudsakligen åtgärdar problem med [bakåtkompatibilitet för datalager](/help/developing/data-layer/overview.md) och IT-tester misslyckades i vissa situationer. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 16 mars 2021 |
-| [2.15.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Den här versionen innehåller stöd för progressiva webbprogram i [sidkomponenten](/help/components/page.md) och stöder version 2.0.0 av [datalagret Adobe.](/help/developing/data-layer/overview.md) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 23 februari 2021 |
+| [2.15.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Den här versionen innehåller stöd för [progressiva webbprogram (PWA) i Page Component](/help/components/page.md#pwa-support) och stöder version 2.0.0 i [datalagret Adobe.](/help/developing/data-layer/overview.md) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 23 februari 2021 |
 | [2.14.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.14.0) | Den här versionen innehåller nya alternativ för [Embed Component](/help/components/embed.md) och introducerar Brand Slug på [sidnivå](/help/components/page.md) samt åtgärdar många problem. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 9 februari 2021 |
 | [2.13.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.2) | Det här var en patch som åtgärdade ett problem med RTE när den användes i AEMaaCS | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 16 december 2020 |
 | [2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0) | Den här versionen innehåller nya Dynamic Media-funktioner för [Image Component.](/help/components/image.md) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 4 december 2020 |
