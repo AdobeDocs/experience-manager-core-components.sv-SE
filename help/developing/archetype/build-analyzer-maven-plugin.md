@@ -1,16 +1,15 @@
 ---
 title: AEM som Cloud Service-SDK Build Analyzer Maven Plugin
 description: Dokumentation för det lokala plugin-programmet Maven build analyzer
-feature: Core Components, AEM Project Archetype
+feature: Kärnkomponenter, AEM projekttyp
 role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+exl-id: de26b310-a294-42d6-a0db-91f6036a328c
+source-git-commit: de1bb63dc965e6674652bc3e61b515f8f045c6bc
 workflow-type: tm+mt
-source-wordcount: '478'
-ht-degree: 3%
+source-wordcount: '510'
+ht-degree: 4%
 
 ---
-
 
 # AEM som Cloud Service-SDK Build Analyzer Maven Plugin {#maven-analyzer-plugin}
 
@@ -21,6 +20,8 @@ Se [Maven Plugin-dokumentationen](https://github.com/adobe/aemanalyser-maven-plu
 >[!NOTE]
 >
 >Vi rekommenderar att du uppdaterar ditt Maven-projekt så att det refererar till den senaste versionen av plugin-programmet som finns i Maven Central-databasen på följande plats: https://repo1.maven.org/maven2/com/adobe/aem/aemanalyser-maven-plugin/
+
+Plugin-programmet använder den senaste tillgängliga SDK:n i stället för den som konfigurerats i projektet.
 
 Nedan finns en tabell som beskriver de analysatorer som körs som en del av det här steget. <!-- Note that some are executed in the local SDK, while others are only executed during the Cloud Manager pipeline deployment. -->
 
@@ -34,3 +35,6 @@ Nedan finns en tabell som beskriver de analysatorer som körs som en del av det 
 | `api-regions-crossfeature-dups` | Verifierar att kundens OSGI-paket inte har exportpaketdeklarationer som åsidosätter AEM som Cloud Servicens publika API<p> </p>`[WARNING] org.acme:mybundle:0.0.1-SNAPSHOT: Package overlap found between region global and bundle org.acme:mybundle:0.0.1.SNAPSHOT which comes from feature: [org.acme:myproject.analyse:slingosgifeature:0.0.1-SNAPSHOT]. Both export package: com.day.util`<p> </p>Sluta exportera ett paket som är en del av det AEM offentliga API:t för att åtgärda problemet. | Ja | Ja |
 | `repoinit` | Kontrollerar syntaxen för alla ompekande avsnitt | Ja | Ja |
 | `bundle-nativecode` | Verifierar att OSGI-paket inte installerar systemspecifik kod. | Ja | Ja |
+| `configuration-api` | Validerar viktiga OSGi-konfigurationer. <p> </p> `Configuration org.apache.felix.webconsole.internal.servlet.OsgiManager: Configuration is not allowed (com.mysite:mysite.all:1.0.0-SNAPSHOT\|com.mysite:mysite.ui.config:1.0.0-SNAPSHOT)` | Ja | Ja |
+| `region-deprecated-api` | Kontrollerar om [api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-apis.html) används som föråldrat <p> </p>`[WARNING] com.mysite:mysite.core:1.0.0-SNAPSHOT: Usage of deprecated package found : org.apache.sling.settings : Avoid these features at runtime: run modes, file system access (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Ja | Ja |
+
