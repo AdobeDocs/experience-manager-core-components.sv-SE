@@ -4,11 +4,10 @@ description: En projektmall för AEM
 feature: Kärnkomponenter, AEM projekttyp
 role: Architect, Developer, Administrator
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-translation-type: tm+mt
-source-git-commit: 32679158dd71c361f01904b4462a6ec8b33d305c
+source-git-commit: 8b3f98d5087ddca6928950daf2db1eb7728fa44e
 workflow-type: tm+mt
-source-wordcount: '1040'
-ht-degree: 3%
+source-wordcount: '1111'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +17,7 @@ AEM Project Archetype är en Maven-mall som skapar ett minimalt, metodbaserat Ad
 
 >[!TIP]
 >
->Den senaste AEM Project Archetype [finns på GitHub](https://github.com/adobe/aem-project-archetype).
+>Den senaste AEM Project Archetype [finns på GitHub.](https://github.com/adobe/aem-project-archetype)
 
 ## Resurser {#resources}
 
@@ -47,7 +46,7 @@ AEM Project Archetype är en Maven-mall som skapar ett minimalt, metodbaserat Ad
 * **Exempelkod:** Checka ut HelloWorld-komponenten och exempelmodellerna, servletarna, filtren och schemaläggaren.
 * **Öppna källa:** Bifoga  [](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) förbättringarna om något inte är som det ska!
 
-## Användning
+## Användning {#usage}
 
 Om du vill generera ett projekt justerar du följande kommandorad efter dina behov:
 
@@ -69,10 +68,10 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 * Justera `groupId="com.mysite"` för att definiera Maven groupId och Java Source Package.
 * Leta upp listan med tillgängliga egenskaper för att se om det finns mer att justera.
 
-## Tillgängliga egenskaper
+## Tillgängliga egenskaper {#available-properties}
 
 | Namn | Standard | Beskrivning |
---------------------------|----------------|--------------------
+|---------------------------|----------------|--------------------|
 | `appTitle` |  | Programtitel, kommer att användas för webbplatsens titel och komponentgrupper (t.ex. `"My Site"`). |
 | `appId` |  | Tekniskt namn, kommer att användas för komponentnamn, konfigurations- och innehållsmappnamn samt klientbiblioteksnamn (t.ex. `"mysite"`). |
 | `artifactId` | *`${appId}`* | Base Maven artifact ID (t.ex. `"mysite"`). |
@@ -92,21 +91,25 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för handelssystemet GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
 | `datalayer` | `y` | Aktivera integrering med [Adobe Client Data Layer](/help/developing/data-layer/overview.md). |
 | `amp` | `n` | Aktivera stöd för [AMP](/help/developing/amp.md) för genererade projektmallar. |
+| `enableDynamicMedia` | `n` | Aktiverar basen för DynamicMedia-komponenter i projektpolicyinställningar och aktiverar Dynamic Media-funktioner i huvudbildkomponentens policy. |
+| `enableSSR` | `n` | Möjlighet att aktivera SSR för front-end-projektet |
 
-## Systemkrav
+## Systemkrav {#requirements}
 
-| Arketyp | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
-|---------|---------|---------|---------|---------|---------|
-| [26](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-27) | Kontinuerlig | 6.5.5.0+ | 6.4.8.1+ | 8, 11 | 3.3.9+ |
+| Arketyp | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
+|---------|---------|---------|---------|---------|
+| [28](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-28) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Konfigurera den lokala utvecklingsmiljön för [AEM som Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
-### Kända fel
+### Kända fel {#known-issues}
 
 När du kör i Windows och genererar dispatcherkonfigurationen bör du köra i en förhöjd kommandotolk eller i Windows-undersystemet för Linux (se [#329](https://github.com/adobe/aem-project-archetype/issues/329)).
 
 När arketypen körs i interaktivt läge (utan parametern `-B`) kan egenskaperna med standardvärden inte ändras, såvida inte den slutliga bekräftelsen stängs, vilket sedan upprepar frågorna genom att egenskaperna med standardvärden inkluderas i frågorna (se
 [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) för mer information).
+
+Du kan inte använda den här typen av arkivering i Eclipse när du startar ett nytt projekt med `File -> New -> Maven Project` eftersom eftergenereringsskriptet `archetype-post-generate.groovy` inte kommer att köras på grund av ett [Eclipse-problem.](https://bugs.eclipse.org/bugs/show_bug.cgi?id=514993) Du kan lösa problemet genom att använda ovanstående kommandorad och sedan använda den i Eclipse  `File -> Import -> Existing Maven Project`.
 
 ## Ytterligare läsning {#further-reading}
 
