@@ -2,17 +2,16 @@
 title: Komponent för dolt formulär (v1)
 description: Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 8e30dac0-5b4b-4fc7-af99-5791c98c90bf
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '335'
 ht-degree: 1%
 
 ---
 
-
-# Formulärets dolda komponent (v1) {#form-hidden-component-v}
+# Komponent för dolt formulär (v1) {#form-hidden-component-v}
 
 Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
 
@@ -39,7 +38,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 >
 >Mer information om den aktuella versionen av komponenten Formulär-Dold finns i dokumentet [Formulärdlig komponent](/help/components/forms/form-hidden.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -93,7 +92,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera parametrarna för
 * **Värde**  - Fältets värde som skickas med formulärdata
 * **Identifierare**  - Identifieraren ska vara unik på sidan och kan användas för att binda skript till det här formulärfältet
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Det finns ingen designdialogruta för komponenten Formulär-dold.
 
