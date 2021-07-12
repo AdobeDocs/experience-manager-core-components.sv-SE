@@ -1,15 +1,14 @@
 ---
 title: Skapa med kärnkomponenter
 description: I AEM är komponenterna de strukturella element som utgör innehållet på de sidor som skapas - Core Components erbjuder flexibla och funktionsrika redigeringsfunktioner.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 56e58303-a178-45ab-b59d-e374c9cf90cf
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
-
 
 # Skapa med kärnkomponenter
 
@@ -55,7 +54,7 @@ Komponenterna grupperas enligt kategorier som kallas komponentgrupper för att e
 >
 >Lägg till de nödvändiga komponenterna i en synlig grupp eller anpassa dem så att de blir tillgängliga för författare.
 
-## Förkonfigurerar kärnkomponenter {#pre-configuring-core-components}
+## Förkonfigurering av kärnkomponenter {#pre-configuring-core-components}
 
 Att konfigurera Foundation Components var en uppgift för en utvecklare. Men med Core Components kan mallskapare nu konfigurera ett antal funktioner via mallredigeraren.
 
@@ -63,7 +62,7 @@ Om en bildkomponent t.ex. inte ska tillåta bildöverföring från filsystemet, 
 
 Mer information finns i [Skapa sidmallar](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
-### Redigera och utforma dialogrutor {#edit-and-design-dialogs}
+### Redigera och designa dialogrutor {#edit-and-design-dialogs}
 
 Eftersom kärnkomponenterna kan förkonfigureras av mallförfattare för att definiera vilka alternativ som tillåts som en del av en mall, och sedan konfigureras ytterligare av sidförfattaren för att definiera det faktiska sidinnehållet, kan varje komponent ha alternativ i två olika dialogrutor.
 
@@ -72,7 +71,7 @@ Eftersom kärnkomponenterna kan förkonfigureras av mallförfattare för att def
 | **Dialogrutan Redigera** | Alternativ som en **sidförfattare** kan ändra under normal sidredigering för de monterade komponenterna | Innehållet som visas av komponenten och hur det slutligen visas på sidan. | Formatering av innehållstext, rotera en bild på en sida |
 | **Designdialogruta** | Alternativ som en **mallskapare** kan ändra när en sidmall konfigureras. | Vilka alternativ sidförfattaren har tillgängliga när komponenten redigeras | Vilka textformateringsalternativ som är tillgängliga, vilka bildmonteringsalternativ som är tillgängliga |
 
-### Komponentformatering {#component-styling}
+### Komponentformat {#component-styling}
 
 Stilarna för de flesta kärnkomponenter kan definieras med hjälp av det AEM.
 
