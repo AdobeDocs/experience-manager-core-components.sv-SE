@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Administrator, Business Practitioner
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: e62bb19a487e337c1ea5994d9fbfc845145ae19d
+source-git-commit: 85904d334091f1b9345023a84e8f12abeeb54692
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2174'
 ht-degree: 11%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.17.0 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
+Den aktuella versionen av Core Components är 2.17.2 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,6 +26,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.17.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.2) | Den här korrigeringsversionen innehåller en korrigering för [datalagret](/help/developing/data-layer/overview.md) som inte fungerar med AEMaaCS. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 2 juli 2021 |
 | [2.17.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.0) | Den här versionen innehåller tekniska förhandsvisningar av många nya komponentversioner med stöd för länkhanterarfunktioner samt en teknisk förhandsvisning av en aktuell bildfunktion för [sidkomponenten.](/help/components/page.md) Flera felkorrigeringar ingår också. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 16 juni 2021 |
 | [2.16.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.4) | Det här är en korrigeringsversion som åtgärdar ett problem med den nya länkhanteraren. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 19 maj 2021 |
 | [2.16.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.2) | Det här var en korrigeringsrelease som huvudsakligen åtgärdade ett problem med den nya länkhanteraren och lade till en förbättring som stöder flersidiga program för [PWA.](/help/components/page.md#pwa-support) | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 15 maj 2021 |
@@ -69,7 +70,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 >
 >Precis som med AEM rekommenderar Adobe att utvecklare använder den [senaste versionen av de kärnkomponenter](https://github.com/adobe/aem-core-wcm-components/releases/latest) som är tillgängliga och kompatibla med den version av AEM som de kör för att dra nytta av de senaste korrigeringarna och funktionerna.
 
-### Komponentversioner och -versioner {#component-versions-and-releases}
+### Komponentversioner och releaser {#component-versions-and-releases}
 
 Tabellen nedan visar vilka versioner av vilka komponenter som ingår i vilka versioner av kärnkomponenterna släpps.
 
@@ -147,7 +148,7 @@ Versionen för varje komponent anger tydligt vilka AEM som stöds. När stödet 
 
 Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kärnkomponenter](developing/customizing.md) i den relevanta Core Components Version.
 
-## Foundation Component Support {#foundation-component-support}
+## Stöd för Foundation Component {#foundation-component-support}
 
 Adobe-utvecklingsbetoningen har flyttats till kärnkomponenterna och nya funktioner kommer att läggas till även i fortsättningen.
 
