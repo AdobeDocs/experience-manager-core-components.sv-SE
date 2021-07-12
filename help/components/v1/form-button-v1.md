@@ -2,15 +2,14 @@
 title: Komponent för formulärknapp (v1)
 description: Komponenten Core Component Form Hidden gör det möjligt att inkludera ett dolt fält i ett formulär.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 2c06a942-7ac5-4847-9d11-7bbcd0ea51bd
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '342'
 ht-degree: 2%
 
 ---
-
 
 # Komponent för formulärknapp (v1) {#form-button-component-v}
 
@@ -39,7 +38,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Formulärknap
 >
 >Mer information om den aktuella versionen av komponenten Formulärknapp finns i dokumentet [Komponent för formulärknapp](/help/components/forms/form-button.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -103,7 +102,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappens parametr
 * **Namn** - Namnet på knappen som skickas med formulärdata
 * **Värde**  - Värdet på knappen som skickas in tillsammans med formulärdata
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Det finns ingen designdialogruta för komponenten Formulärknapp.
 
