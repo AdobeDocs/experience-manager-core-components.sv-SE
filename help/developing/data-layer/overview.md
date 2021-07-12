@@ -1,16 +1,15 @@
 ---
 title: Använda Adobe-klientdatalagret med kärnkomponenterna
 description: Använda Adobe-klientdatalagret med kärnkomponenterna
-feature: Core Components, Adobe Client Data Layer
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Kärnkomponenter, Adobe-klientdatalager
+role: Architect, Developer, Admin
+exl-id: 55c984d3-deb7-4eda-a81d-7768791d2b46
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '980'
 ht-degree: 1%
 
 ---
-
 
 # Använda Adobe-klientdatalagret med kärnkomponenterna {#data-layer-core-components}
 
@@ -78,7 +77,7 @@ Följande komponenter har stöd för datalagret.
 * [Språknavigering](/help/components/language-navigation.md)
 * [Lista](/help/components/list.md)
 * [Navigering](/help/components/navigation.md)
-* [Sida](/help/components/page.md)
+* [Sidan](/help/components/page.md)
 * [Förloppsindikator](/help/components/progress-bar.md)
 * [Tabbar](/help/components/tabs.md)
 * [Teaser](/help/components/teaser.md)
@@ -87,11 +86,11 @@ Följande komponenter har stöd för datalagret.
 
 Se även [händelserna som utlöses av komponenterna.](#events-components)
 
-## Grundkomponentdatascheman {#data-schemas}
+## Datascheman för kärnkomponenter {#data-schemas}
 
 Här följer en lista med scheman som kärnkomponenterna använder med datalagret.
 
-### Schema för komponent-/behållarobjekt {#item}
+### Komponent-/behållarobjektschema {#item}
 
 Schemat för komponent-/behållarobjekt används i följande komponenter:
 
@@ -126,7 +125,7 @@ Följande [händelse](#events) är relevant för schema för komponent-/behålla
 
 Sidschemat används av följande komponent:
 
-* [Sida](/help/components/page.md)
+* [Sidan](/help/components/page.md)
 
 Sidschemat definieras enligt följande.
 
@@ -250,7 +249,7 @@ Schemat som används för elementet Content Fragment är följande.
 }
 ```
 
-## Kärnkomponenthändelser {#events}
+## Kärnkomponentshändelser {#events}
 
 Det finns ett antal händelser som kärnkomponenter utlöser via datalagret. Det bästa sättet att interagera med datalagret är att [registrera en händelseavlyssnare](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener) och *sedan utföra en åtgärd baserat på händelsetypen och/eller komponenten som utlöste händelsen.* På så sätt undviks potentiella konkurrensförhållanden med asynkrona skript.
 
@@ -260,7 +259,7 @@ Nedan visas några av de färdiga händelserna som AEM Core Components tillhanda
 * **`cmp:show`** och  **`cmp:hide`** - Om du ändrar dragspelsfliken (expanderar/komprimerar), karusellen (nästa/föregående knappar) och flikarna (tabbmarkera) aktiveras datalagret  `cmp:show` och en  `cmp:hide` händelse. En `cmp:show`-händelse skickas också vid sidinläsning och förväntas vara den första händelsen.
 * **`cmp:loaded`** - När datalagret har fyllts i med kärnkomponenterna på sidan utlöser datalagret en  `cmp:loaded` händelse.
 
-### Händelser som utlösts av komponenten {#events-components}
+### Händelser utlösta av komponent {#events-components}
 
 I följande tabeller visas de standardkomponenter som utlöser händelser tillsammans med dessa händelser.
 
