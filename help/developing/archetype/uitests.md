@@ -1,18 +1,17 @@
 ---
 title: ui.tests Module of AEM Project Archetype
 description: Så här använder du AEM projektarkitekturens gränssnittstester
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Kärnkomponenter, AEM projekttyp
+role: Architect, Developer, Admin
+exl-id: eb3c9b34-f10e-410f-bcf3-34f94f124c7c
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '120'
+source-wordcount: '117'
 ht-degree: 0%
 
 ---
 
-
-# ui.tests-modulen för AEM Project Archetype {#uitests-module}
+# ui.tests Module of the AEM Project Archetype {#uitests-module}
 
 Det finns tre testnivåer i projektet:
 
