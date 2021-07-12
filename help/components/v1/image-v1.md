@@ -2,15 +2,14 @@
 title: Bildkomponent (v1)
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 625ce8de-5c4a-476d-b749-895493d169b1
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1229'
 ht-degree: 0%
 
 ---
-
 
 # Bildkomponent (v1) {#image-component-v}
 
@@ -39,7 +38,7 @@ I följande tabell visas kompatibiliteten för v1 för Image-komponenten.
 >
 >Information om den aktuella versionen av bildkomponenten finns i dokumentet [Bildkomponent](/help/components/image.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -97,7 +96,7 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 * **Bildtext**  - Ytterligare information om bilden, som visas under bilden, är standard.
 * **Visa bildtext som popup** -fönster - Om det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som en popup-meny som visas i vissa webbläsare när du hovrar över bilden.
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma bilden.
 
@@ -178,7 +177,7 @@ Du kan även använda redigeraren på plats för att ändra bilden. På grund av
 >
 >Bildredigeringsåtgärder (beskärning, vändning, rotering) stöds inte för GIF-bilder. Alla sådana ändringar som görs i redigeringsläget för GIF-filer bevaras inte.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera den beskärning, överföring och rotation som innehållsförfattaren har när den här komponenten används.
 
