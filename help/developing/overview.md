@@ -1,10 +1,9 @@
 ---
 title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
-role: Architect, Developer, Administrator
+role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-translation-type: tm+mt
-source-git-commit: b01fdc7ab6b4d4bb4200d28aaa3706c58ccdea9f
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '1591'
 ht-degree: 2%
@@ -57,7 +56,7 @@ Mer information om hur dessa verktyg används finns i [dokumentationen](http://o
 >
 >De AEM verktygen är en del av communityn och stöds inte eller motiveras inte av Adobe.
 
-## Migrering via Flytta till AEM som en Cloud Service {#via-aemaacs}
+## Migrering via Flytta till AEM som Cloud Service {#via-aemaacs}
 
 Eftersom AEM som Cloud Service har den senaste versionen av Core Components automatiskt måste du ta bort alla beroenden till Core Components i dina projekt `pom.xml`-filen när du går från en lokal AEM.
 
@@ -74,7 +73,7 @@ Precis som andra AEMaaCS-projekt måste du också lägga till ett beroende i AEM
 
 Mer information om AEMaaCS-projekt finns i dokumentet [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
 
-## Stöd för kärnkomponent {#core-component-support}
+## Stöd för kärnkomponenter {#core-component-support}
 
 Kärnkomponenter är en integrerad del av AEM och stöds som de är, på samma villkor som om de levererades som en del av QuickStart.
 
@@ -118,7 +117,7 @@ I följande tabell visas de tillgängliga kärnkomponenterna, som länkar till d
 | [Text](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/text/v2/text) | RTF | `/libs/foundation/components/text /libs/foundation/components/table /libs/wcm/foundation/components/text` |
 | [Bild](https://adobe.com/go/aem_cmp_tech_image_v2) | Smart och lat inläsning av optimal återgivningsstorlek | `/libs/foundation/components/image /libs/foundation/components/adaptiveimage /libs/foundation/components/logo /libs/foundation/components/mobileimage  /libs/foundation/components/mobilelogo /libs/wcm/foundation/components/image` |
 | [Lista](https://adobe.com/go/aem_cmp_tech_list_v2) | Lista över sidor | `/libs/foundation/components/list /libs/foundation/components/mobilelist /libs/wcm/foundation/components/list` |
-| [Delning av sociala medier](https://adobe.com/go/aem_cmp_tech_sharing_v1) | Widgeten för delning av Facebook och Pinterest | `-` |
+| [Delning av sociala medier](https://adobe.com/go/aem_cmp_tech_sharing_v1) | Delningswidgeten facebook och Pinterest | `-` |
 | [Formulärbehållare](https://adobe.com/go/aem_cmp_tech_form_container_v2) | Styckesystem för responsiva formulär | `/libs/foundation/components/form/start /libs/foundation/components/form/end` |
 | [Formulärtext](https://adobe.com/go/aem_cmp_tech_form_text_v2) | Textinmatningsfält | `/libs/foundation/components/form/text /libs/foundation/components/form/password` |
 | [Formuläralternativ](https://adobe.com/go/aem_cmp_tech_form_options_v2) | Indatafält för flera alternativ | `/libs/foundation/components/form/checkbox /libs/foundation/components/form/radio /libs/foundation/components/form/dropdown` |
