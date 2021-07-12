@@ -2,19 +2,18 @@
 title: Formuläralternativkomponent (v1)
 description: Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: a5e8656b-eddd-48ec-876b-39bbaa70edf6
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '476'
 ht-degree: 1%
 
 ---
 
-
 # Formuläralternativkomponent (v1) {#form-options-component-v}
 
-Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
+Komponenten Core Component Form Options gör det möjligt att välja bland fördefinierade alternativ i olika format.
 
 ## Användning {#usage}
 
@@ -39,7 +38,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Formuläralte
 >
 >Mer information om den aktuella versionen av formuläralternativskomponenten finns i [Formuläralternativkomponenten](/help/components/forms/form-options.md)-dokumentet.
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -144,7 +143,7 @@ TyperHur alternativen visas
          * **Datakälla**  - datakällans resurstyp
 * **Hjälpmeddelande**  - Ett tips för användaren om vad som kan anges i fältet
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Det finns ingen designdialogruta för komponenten Formuläralternativ.
 
