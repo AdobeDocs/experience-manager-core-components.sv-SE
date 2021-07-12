@@ -1,15 +1,14 @@
 ---
 title: Carousel-komponent
 description: Med Carousel Component kan innehållsförfattaren presentera innehållet i en roterande karusell.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1130'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
-
 
 # Carousel-komponent{#carousel-component}
 
@@ -33,7 +32,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Carousel-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_carousel).
 
@@ -43,7 +42,7 @@ Den senaste tekniska dokumentationen om Carousel-komponenten [finns på GitHub](
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren lägga till, byta namn på och ordna om bilder samt definiera inställningarna för automatisk övergång.
 
@@ -82,7 +81,7 @@ På fliken **Egenskaper** kan författaren ange att bildrutorna ska övergå aut
 >
 >Funktionen för automatiskt framflyttning är inte aktiverad i **redigeringsläget**. Använd alternativet **[Visa som publicerat](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill se funktionen för automatiskt fortsättning som en läsare av det publicerade innehållet skulle göra.
 
-### Hjälpmedelsfliken {#accessibility-tab}
+### Fliken Tillgänglighet {#accessibility-tab}
 
 ![Fliken Tillgänglighet i redigeringsdialogrutan för Carousel-komponenten](/help/assets/carousel-edit-accessibility.png)
 
@@ -106,7 +105,7 @@ När du har valt alternativet **Välj panel** i komponentverktygsfältet visas d
 * Om du trycker eller klickar på en post i listrutan växlar vyn i redigeraren till den bildrutan.
 * Du kan ordna om bilden på plats med hjälp av draghandtagen.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka komponenter som kan läggas till som bilder i karusellkomponenten samt definiera standardvärden för automatisk övergång och vilka anpassade format som är tillgängliga för innehållsförfattaren.
 
@@ -130,6 +129,6 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 
 Carousel-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Carousel-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
