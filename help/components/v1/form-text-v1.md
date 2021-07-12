@@ -2,15 +2,14 @@
 title: Formulärtextkomponent (v1)
 description: Med komponenten Core Component Form Text kan du skriva in formulärtext.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: d6fbc596-cb42-4478-8a3c-aa5aead3be0a
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '496'
+source-wordcount: '491'
 ht-degree: 1%
 
 ---
-
 
 # Formulärtextkomponent (v1) {#form-text-component-v}
 
@@ -39,7 +38,7 @@ I följande tabell visas kompatibiliteten för v1 för Form Text Component.
 >
 >Information om den aktuella versionen av formulärtextkomponenten finns i dokumentet [Formulärtextkomponent](/help/components/forms/form-text.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -135,7 +134,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
 * **Obligatoriskt**  - Om det här alternativet är markerat måste användaren fylla i ett värde innan formuläret skickas
 * **Gör skrivskyddad** - Om du väljer det här alternativet kan användaren inte ändra fältets värde
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Det finns ingen designdialogruta för komponenten Formulärtext.
 
