@@ -1,15 +1,14 @@
 ---
 title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: fa8ead438093681071b6b6f8ccfbba523f6d3bee
+role: Architect, Developer, Admin, User
+exl-id: 2503e067-abed-427d-8a54-8b79e3451487
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
-
 
 # Sidkomponent{#page-component}
 
@@ -44,11 +43,11 @@ Den senaste tekniska dokumentationen om sidkomponenten [finns på GitHub](https:
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 Eftersom komponenten representerar hela sidan finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Sidinformation -> Sidprofil** när du redigerar sidmallen.
 
@@ -89,6 +88,6 @@ Mer information om hur du använder bibliotek på klientsidan finns i [Använda 
 
 Sidkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Sidkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
