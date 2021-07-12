@@ -1,19 +1,18 @@
 ---
 title: Komponent för formuläralternativ
 description: Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 8a74bd37-9b12-4fa6-bff2-53e337b16251
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '545'
 ht-degree: 1%
 
 ---
 
+# Komponent för formuläralternativ {#form-options-component}
 
-# Formuläralternativkomponent {#form-options-component}
-
-Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
+Komponenten Core Component Form Options gör det möjligt att välja bland fördefinierade alternativ i olika format.
 
 ## Användning {#usage}
 
@@ -34,7 +33,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa komponenterna för formuläralternativ, samt se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_options).
 
@@ -75,7 +74,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av alt
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 ### Fliken Format {#styles-tab}
 
