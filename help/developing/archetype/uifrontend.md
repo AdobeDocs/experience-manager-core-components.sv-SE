@@ -1,22 +1,21 @@
 ---
 title: AEM Project Archetype Front-End Build
 description: En projektmall för AEM
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Kärnkomponenter, AEM projekttyp
+role: Architect, Developer, Admin
+exl-id: 99132b49-bd06-4ac2-9348-12c0dfdfe8b2
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1628'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
-
 
 # ui.frontModule för AEM Project Archetype {#uifrontend-module}
 
 AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir därmed den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. För att till fullo kunna utnyttja denna användbara och flexibla funktion är det viktigt att förstå hur frontendutvecklingen passar in i ett AEM projekt.
 
-## AEM och frontendutveckling {#aem-and-front-end-development}
+## AEM och frontendutvecklingsprojekt {#aem-and-front-end-development}
 
 I betydligt förenklade termer kan man tänka sig att AEM projekt består av två separata men sammanhörande delar:
 
@@ -37,7 +36,7 @@ När hela AEM projekts arkityp körs med `mvn clean install -PautoInstallPackage
 >
 >Läs mer om hur AEM hanterar ClientLibs i [AEM-utvecklingsdokumentationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html), hur du [tar med dem](/help/developing/including-clientlibs.md) eller se nedan [hur ui.front-modulen använder dem.](#clientlib-generation)
 
-## ClientLibs-översikt {#clientlibs}
+## ClientLibs Overview {#clientlibs}
 
 Framtend-modulen är tillgänglig med en [AEM ClientLib](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html). När NPM-byggskriptet körs skapas appen och paketet aem-clientlib-generator tar det resulterande byggresultatet och omvandlar det till en sådan ClientLib.
 
@@ -49,7 +48,7 @@ En ClientLib består av följande filer och kataloger:
 * `js.txt` AEM ordning och namn på filer i  `js/` så att de kan sammanfogas
 * `resources/`: Källmappningar, kodsegment som inte är ingångspunkter (till följd av koddelning), statiska resurser (t.ex. ikoner) osv.
 
-## Möjliga arbetsflöden för frontendutveckling {#possible-workflows}
+## Möjliga arbetsflöden för utveckling i gränssnittet {#possible-workflows}
 
 Framtidsmodulen är ett användbart och mycket flexibelt verktyg, men har ingen särskild åsikt om hur den ska användas. Nedan följer två exempel på *möjlig* användning, men dina individuella projektbehov kan styra andra användningsmodeller.
 
@@ -155,14 +154,14 @@ Konverterar mellan likvärdiga värden för längd, tid och vinkel. Observera at
 >
 >Det första byggalternativet använder konfigureringsfiler för enbart dev och endast prod, som delar en gemensam konfigurationsfil. På så sätt kan utvecklings- och produktionsinställningarna ändras oberoende av varandra.
 
-### Klientbiblioteksgenerering {#clientlib-generation}
+### Generering av klientbibliotek {#clientlib-generation}
 
 Byggningsprocessen för modulen ui.front utnyttjar plugin-programmet [aem-clientlib-generator](https://www.npmjs.com/package/aem-clientlib-generator) för att flytta kompilerad CSS, JS och eventuella resurser till modulen ui.apps. Konfigurationen för aem-clientlib-generator definieras i `clientlib.config.js`. Följande klientbibliotek genereras:
 
 * **clientlib-site** -  `ui.apps/src/main/content/jcr_root/apps/<app>/clientlibs/clientlib-site`
 * **clientlib-beroenden** -  `ui.apps/src/main/content/jcr_root/apps/<app>/clientlibs/clientlib-dependencies`
 
-### Inkluderar klientbibliotek på sidor {#clientlib-inclusion}
+### Inkludera klientbibliotek på sidor {#clientlib-inclusion}
 
 `clientlib-site` och  `clientlib-dependencies` kategorier inkluderas på sidor via  [sidprincipskonfigurationen ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#template-definitions) som en del av standardmallen. Om du vill visa profilen redigerar du **Innehållssidmall > Sidinformation > Sidprofil**.
 
