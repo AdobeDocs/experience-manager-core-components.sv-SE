@@ -1,15 +1,14 @@
 ---
 title: Navigeringskomponent
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
-
 
 # Navigeringskomponent{#navigation-component}
 
@@ -23,7 +22,7 @@ Navigeringskomponenten kan automatiskt identifiera platsens globaliserade strukt
 
 I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera navigeringsrotsidan tillsammans med navigeringsdjupet. I [designdialogrutan](#design-dialog) kan mallskaparen definiera standardvärden för navigeringsroten och -djupet.
 
-## Lokaliserat stöd för platsstruktur {#localized-site-structure}
+## Lokaliserat stöd för webbplatsstruktur {#localized-site-structure}
 
 Webbplatser finns ofta på flera språk för olika regioner. Vanligtvis innehåller varje lokaliserad sida ett navigeringselement som ingår i sidmallen. Med navigeringskomponenten kan du placera den en gång i en mall för alla sidor på platsen, och den anpassas sedan automatiskt för de enskilda lokaliserade sidorna baserat på den globaliserade webbplatsstrukturen.
 
@@ -70,7 +69,7 @@ Oavsett vilken lokaliserad sida en användare visar kan navigeringskomponenten h
 
 Om en besökare visar `/content/ch/de/experience/arctic-surfing-in-lofoten` kan komponenten generera navigeringsstrukturen baserat på `/content/wknd/language-masters/de`. På samma sätt kan komponenten generera navigeringsstrukturen baserat på `/content/wknd/language-masters/en` om besökaren visar `/content/us/en/experience/arctic-surfing-in-lofoten`.
 
-## Stöd för skuggwebbplatsens struktur {#shadow-structure}
+## Stöd för Shadow Site Structure {#shadow-structure}
 
 Ibland är det nödvändigt att skapa en navigeringsmeny för besökaren som skiljer sig från den faktiska platsstrukturen. En kampanj kanske ska lyfta fram visst innehåll på menyn genom att ordna om innehållslistan. Med hjälp av skuggsidor, som helt enkelt omdirigeras till andra innehållssidor, kan navigeringskomponenten generera en godtycklig navigeringsstruktur som behövs.
 
@@ -101,7 +100,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa navigeringskomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_navigation).
 
@@ -115,7 +114,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen ti
 >
 >Från och med Core Components version 2.1.0 stöder Navigation Component [schema.org microdata](https://schema.org).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera rotsidan för navigering och navigeringsstrukturens djup.
 
@@ -137,7 +136,7 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera rotsidan för navi
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-### Hjälpmedelsfliken {#accessibility-tab}
+### Fliken Tillgänglighet {#accessibility-tab}
 
 ![Navigeringskomponentens flik för redigeringsdialogruta för tillgänglighet](/help/assets/navigation-edit-accessibility.png)
 
@@ -145,7 +144,7 @@ På fliken **Accessibility** kan värden anges för [ARIA accessibility](https:/
 
 * **Etikett**  - Värdet för ett ARIA-etikettattribut för komponenten
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen ange standardvärden för navigeringsrotsidan och navigeringsdjupet som presenteras för innehållsförfattarna.
 
@@ -167,6 +166,6 @@ I designdialogrutan kan mallskaparen ange standardvärden för navigeringsrotsid
 
 Navigeringskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Navigeringskomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
