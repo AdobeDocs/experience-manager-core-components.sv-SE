@@ -1,17 +1,16 @@
 ---
 title: Tabbar-komponent
 description: Med flikkomponenten kan du skapa flera flikar för att ordna innehåll på en sida.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 0031c5f3-447c-4932-898f-2f453801e492
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1040'
 ht-degree: 1%
 
 ---
 
-
-# Tabb-komponent {#tabs-component}
+# Tabbar-komponent {#tabs-component}
 
 Med komponenten Core Component Tabs kan du ordna innehåll på flera flikar.
 
@@ -53,7 +52,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa flikkomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_tabs).
 
@@ -63,7 +62,7 @@ Den senaste tekniska dokumentationen om flikkomponenten [finns på GitHub](https
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan författaren skapa, byta namn på och ordna om flikar samt definiera den aktiva fliken.
 
@@ -93,7 +92,7 @@ Använd knappen **Lägg till** för att öppna komponentväljaren och välja vil
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-### Hjälpmedelsfliken {#accessibility-tab}
+### Fliken Tillgänglighet {#accessibility-tab}
 
 ![Flikkomponentens flik i dialogrutan Redigera hjälpmedel](/help/assets/tabs-edit-accessibility.png)
 
@@ -121,7 +120,7 @@ När du har valt alternativet **Välj panel** i komponentverktygsfältet visas d
 >
 >Flikar kan inte markeras av författaren i **redigeringsläget**. Använd **[Förhandsgranska](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)** eller **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med flikarna som en läsare av det publicerade innehållet skulle göra.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka komponenter som kan läggas till som objekt i flikkomponenten samt definiera vilka anpassade format som är tillgängliga för innehållsförfattaren.
 
@@ -135,6 +134,6 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 
 Tabbar-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Tabb-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
