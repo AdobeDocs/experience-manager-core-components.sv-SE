@@ -1,15 +1,14 @@
 ---
 title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '2218'
+source-wordcount: '2213'
 ht-degree: 0%
 
 ---
-
 
 # Textkomponent{#text-component}
 
@@ -34,7 +33,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa textkomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_text).
 
@@ -54,7 +53,7 @@ Resten av den här artikeln demonstrerar standardkonfigurationen för textkompon
 >
 >Endast alternativ som är aktiverade av [gränssnittskonfigurationer för RTE](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i textkomponenten.
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en användare kan förvänta sig att skapa text.
 
@@ -311,7 +310,7 @@ Med det här alternativet kan du styra den unika identifieraren för komponenten
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
 * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka textformateringsalternativ som är tillgängliga för innehållsförfattarna.
 
@@ -371,6 +370,6 @@ Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för kompo
 
 Textkomponenten stöder AEM [style system](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Textkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
