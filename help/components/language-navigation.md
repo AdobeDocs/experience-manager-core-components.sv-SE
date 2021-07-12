@@ -1,15 +1,14 @@
 ---
 title: Språknavigeringskomponent
 description: Språknavigeringskomponenten tillhandahåller en språk-/landsnavigering för en webbplats, så att besökare kan navigera till samma sida på en annan språkinställning.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 10b218b4-c439-4a0f-a46f-0b15d78b0360
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '851'
+source-wordcount: '846'
 ht-degree: 1%
 
 ---
-
 
 # Språknavigeringskomponent{#language-navigation-component}
 
@@ -36,7 +35,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa språknavigeringskomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_langnav).
 
@@ -46,7 +45,7 @@ Den senaste tekniska dokumentationen om språknavigeringskomponenten [finns på 
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I redigeringsdialogrutan kan du definiera den globala platsnavigeringsroten samt hur djupt in i strukturen navigeringen ska gå.
 
@@ -94,7 +93,7 @@ Oavsett vilken sida en användare visar kan komponenten Språknavigering hitta m
 
 Språknavigeringskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 Vanligtvis behöver komponenten Språknavigering bara läggas till och konfigureras på sidmallarna för en plats. Om komponenten Språknavigering måste läggas till på en enskild innehållssida kan en innehållsförfattare i redigeringsdialogrutan konfigurera samma värden som beskrivs i [designdialogrutan](#design-dialog).
 
@@ -106,6 +105,6 @@ Dessutom kan du ange ett **ID**. Med det här alternativet kan du styra den unik
 
 ![Redigera-dialogrutan för språknavigeringskomponenten](/help/assets/language-navigation-edit.png)
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Språknavigeringskomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
