@@ -1,10 +1,9 @@
 ---
 title: Snabbsökningskomponent
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
-role: Architect, Developer, Administrator, Business Practitioner
+role: Architect, Developer, Admin, User
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
-translation-type: tm+mt
-source-git-commit: 6eff0c8584605e034fc6516416783715fce10095
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '614'
 ht-degree: 1%
@@ -43,7 +42,7 @@ Den senaste tekniska dokumentationen om snabbsökningskomponenten [finns på Git
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera var i innehållsträdet sökningen ska börja.
 
@@ -59,7 +58,7 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera var i innehållstr
 >
 >Om **sökroten** inte är konfigurerad eller inte kan matchas är snabbsökningen som standard sökbar under den aktuella sidan.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Med hjälp av designdialogrutan kan mallskaparen ange standardvärdet för var i innehållsträdet sökningen ska börja samt en maximal resultatmängdsstorlek och minsta söktermslängd. I designdialogrutan kan mallskaparen definiera vilka textformateringsalternativ som är tillgängliga för innehållsförfattarna.
 
