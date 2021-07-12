@@ -1,15 +1,14 @@
 ---
 title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 552f9dd5-6a3a-42d9-9969-e62a1f36e811
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
-
 
 # Formulärbehållarkomponent {#form-container-component}
 
@@ -38,7 +37,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Form Container-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_container).
 
@@ -60,7 +59,7 @@ Beroende på vald **åtgärdstyp** ändras de tillgängliga alternativen i behå
 
 Oavsett typ finns det [allmänna inställningar](#general-settings) som gäller för varje åtgärd.
 
-### Skicka formulärdata {#post-data}
+### Bokför formulärdata {#post-data}
 
 När formuläret skickas skickar dataåtgärden post form till en tredje part som JSON för bearbetning.
 
@@ -118,7 +117,7 @@ Oavsett vilken åtgärdstyp du väljer kan du alltid definiera en tacksida.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
