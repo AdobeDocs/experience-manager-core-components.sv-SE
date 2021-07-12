@@ -1,10 +1,9 @@
 ---
 title: Riktlinjer för komponenter
 description: Core Components följer moderna implementeringsmönster som skiljer sig mycket från grundkomponenterna.
-role: Architect, Developer, Administrator
+role: Architect, Developer, Admin
 exl-id: e8c58fa5-c991-433c-8d38-575dacfc3433
-translation-type: tm+mt
-source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '1272'
 ht-degree: 1%
@@ -84,7 +83,7 @@ I kombination med [Proxy Component Pattern](#proxy-component-pattern) som beskri
 1. En webbplats kan definiera om implementeringen av en Sling-modell genom att registrera den i proxykomponentens resurstyp, utan att behöva tänka på HTML-filen, som fortfarande kan peka på gränssnittet.
 1. En webbplats kan definiera om HTML-koden för en komponent, utan att behöva tänka på vilken implementeringslogik den ska peka på.
 
-## Samla allt {#putting-it-all-together}
+## Sammanställ allt {#putting-it-all-together}
 
 Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i exemplet med kärnkomponenten Title. Det visar hur en platsspecifik proxykomponent kan lösa komponentversionshantering, så att innehållsresursen inte innehåller något versionsnummer. Sedan visas hur komponentens `title.html` [HTML](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)-fil använder i modellgränssnittet, medan implementeringen binder till den specifika versionen av komponenten via [Sling Model](https://sling.apache.org/documentation/bundles/models.html)-anteckningar.
 
