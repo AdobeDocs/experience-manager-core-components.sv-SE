@@ -1,15 +1,14 @@
 ---
 title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF och eventuellt länka till ytterligare innehåll.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '775'
 ht-degree: 1%
 
 ---
-
 
 # Teaser Component {#teaser-component}
 
@@ -31,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |---|---|---|---|
 | v1 | Kompatibel | Kompatibel | Kompatibel |
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Teaser Component (Teaser-komponenten) och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_teaser).
 
@@ -79,11 +78,11 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 * **Link** - Link applied to the teaser. Använd sökvägsläsaren för att välja länkmålet.
 * **Aktivera anrop-till-åtgärder** - När det här alternativet är markerat aktiveras definitionen av anrop-till-åtgärder. Den första Call-To-Action-länken i listan används som länk för andra teaserelement.
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 Teaser Component (Teaser-komponenten) delegerar bildåtergivning till [Image Component](image.md). Därför är dialogrutan [redigera](image.md#edit-dialog för Image Component tillgänglig för innehållsförfattaren så att den kan manipulera teaserbilden.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de laseralternativ som innehållsförfattaren har när den här komponenten används.
 
@@ -108,6 +107,6 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 
 Teaser Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Teaser Component (Teaser-komponenten) stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
