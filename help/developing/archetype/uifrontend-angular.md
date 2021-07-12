@@ -1,16 +1,15 @@
 ---
 title: Front-End Build för Angular SPA
 description: En beskrivning av utvecklingsprocessen för Angular-baserade SPA
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Kärnkomponenter, AEM projekttyp
+role: Architect, Developer, Admin
+exl-id: 5726e29d-081c-42bb-bf4e-2852043b21d6
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
-
 
 # Front-End Build för Angular SPA {#frontend-angular}
 
@@ -45,7 +44,7 @@ Om du får felmeddelanden relaterade till CORS kan du konfigurera AEM enligt fö
    * Rubriker som stöds: Behörighet
    * Tillåtna metoder: OPTIONS
 
-### npm test {#npm-test}
+### npm-provning {#npm-test}
 
 ```shell
 npm test
