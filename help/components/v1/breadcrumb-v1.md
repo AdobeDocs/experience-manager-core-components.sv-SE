@@ -2,17 +2,16 @@
 title: Breadcrumb-komponent (v1)
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 4845e649-033a-43a8-b5ee-892a3f2a8b98
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '546'
 ht-degree: 0%
 
 ---
 
-
-# Breadcrumb Component (v1) {#breadcrumb-component-v}
+# Breadcrumb-komponent (v1) {#breadcrumb-component-v}
 
 Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 
@@ -38,7 +37,7 @@ I följande tabell visas kompatibiliteten för v1 för Breadcrumb Component.
 >I det här dokumentet beskrivs v1 för Breadcrumb-komponenten.
 >Mer information om den aktuella versionen av Breadcrumb Component finns i [Breadcrumb Component](/help/components/breadcrumb.md)-dokumentet.
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -87,7 +86,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 >
 >JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva sidor i vägbeskrivningar samt djupet i den hierarki som ska visas.
 
@@ -101,7 +100,7 @@ I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva s
 * **Visa dolda**  - Visa sidor som markerats som dolda i sidutrymmet (som standard visas de inte)
 * **Dölj aktuell** - Utelämna den aktuella sidan i sidutrymmet (som standard visas den)
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska användas för att inaktivera dolda och aktiva sidor i vägbeskrivningarna samt djupet i den hierarki som ska visas.
 
