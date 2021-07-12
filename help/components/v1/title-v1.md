@@ -2,15 +2,14 @@
 title: Titelkomponent (v1)
 description: Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering på plats.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 79549ac0-82f2-4ea0-9cce-d534d0b47b5c
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '337'
 ht-degree: 1%
 
 ---
-
 
 # Titelkomponent (v1) {#title-component-v}
 
@@ -39,7 +38,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Title.
 >
 >Information om den aktuella versionen av titelkomponenten finns i [Title Component](/help/components/title.md)-dokumentet.
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -70,7 +69,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 >
 >JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och välja rubriknivå.
 
@@ -84,7 +83,7 @@ Du kan även använda redigeraren på plats för att redigera texten i titelkomp
 
 ![](/help/assets/chlimage_1-37.png)
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titelkomponenter ska ha när de skapas av innehållsförfattarna.
 
