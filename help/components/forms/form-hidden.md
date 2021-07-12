@@ -1,17 +1,16 @@
 ---
 title: Komponent för dolt formulär
 description: Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 0364cd3b-3c09-46db-9392-a67e3f9ea7a5
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '428'
 ht-degree: 1%
 
 ---
 
-
-# Formulärets dolda komponent{#form-hidden-component}
+# Komponent för dolt formulär{#form-hidden-component}
 
 Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
 
@@ -34,7 +33,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Form Hidden Component och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_hidden).
 
@@ -61,7 +60,7 @@ Eftersom komponenten Form Hidden normalt inte har några synliga attribut visar 
 
 ![Exempel på formulärdold komponent](/help/assets/form-hidden-example.png)
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 ### Fliken Format {#styles-tab}
 
