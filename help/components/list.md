@@ -1,17 +1,16 @@
 ---
 title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '979'
 ht-degree: 1%
 
 ---
 
-
-# List Component{#list-component}
+# List-komponent{#list-component}
 
 Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 
@@ -32,7 +31,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa List-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_list).
 
@@ -42,7 +41,7 @@ Den senaste tekniska dokumentationen om List-komponenten [finns på GitHub](http
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren konfigurera listan och listobjekten.
 
@@ -152,7 +151,7 @@ beskrivningVisa beskrivningar av läntobjektet
 * **Visa**
 datumVisa ändringsdatum för länkobjektet
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka typer av listor som ska tillåtas för innehållsförfattarna samt de tillgängliga objektinställningarna.
 
@@ -190,6 +189,6 @@ datumAktivera alternativet Visa datum i  [redigeringsdialogrutan](#edit-dialog)
 
 Bildkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 List-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
