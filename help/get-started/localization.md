@@ -1,21 +1,20 @@
 ---
 title: Lokaliseringsfunktioner för kärnkomponenterna
 description: Lokaliseringsfunktioner för kärnkomponenterna
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 9140b65a-6dd7-4ec9-9095-6e8243ec8424
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
-
 
 # Lokaliseringsfunktioner för kärnkomponenterna {#localization-features-of-the-core-components}
 
 Många webbplatser kräver att innehåll levereras i ett lokaliserat format på flera språk och i olika länder. De valda kärnkomponenterna har en smart referensupplösning som gör det enkelt att skapa en enhetlig mall för allt lokaliserat innehåll som automatiskt anpassas baserat på den lokaliserade webbplatsstrukturen.
 
-## Exempel - Lokaliserad sida med navigering och sidfötter {#example}
+## Exempel - Lokaliserad sida med navigering och sidfot {#example}
 
 De flesta webbplatser kräver att det finns en sidfot på alla sidor. Dessa sidfötter är i allmänhet konsekventa för allt innehåll på sidan. För en lokaliserad innehållssida måste dock en lokaliserad version av sidhuvudet eller sidfoten visas.
 
@@ -64,7 +63,7 @@ Sidfötter görs vanligtvis med Experience Fragments så att du behöver en enge
 
 Det är via den speglade lokaliseringsstrukturen som kärnkomponenterna kan hitta det lokaliserade innehåll som krävs för en motsvarande sida.
 
-## Sidfot - Upplevelsefragment {#xf-footer}
+## Sidfot - upplevelsefragment {#xf-footer}
 
 Experience Fragment Component är mycket flexibelt och passar bra för sidhuvud och sidfot.
 
@@ -106,7 +105,7 @@ Navigeringskomponenten och Experience Fragment-komponenten kommer från sidmalle
 
 ![](/help/assets/screen-shot-2019-09-09-11.22.14.png)
 
-## Passar in allt tillsammans {#fitting-it-all-together}
+## Passar allt tillsammans {#fitting-it-all-together}
 
 Här är en komplett bild av hur dessa enkla, men kraftfulla element samverkar för att leverera lokaliserade sidor till innehållsförfattarna.
 
