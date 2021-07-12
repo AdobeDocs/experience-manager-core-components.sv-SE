@@ -2,15 +2,14 @@
 title: Formulärbehållarkomponent (v1)
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 1e34219f-fa82-494e-82e2-1b4d63d37fea
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
-
 
 # Formulärbehållarkomponent (v1) {#form-container-component-v1}
 
@@ -103,7 +102,7 @@ Användaren omdirigeras till den angivna sidan när formuläret har skickats.
 * Om tacksidan inte finns i AEM anger du den absoluta URL:en. Icke-absoluta URL:er tolkas i förhållande till AEM.
 * Lämna tomt om du vill visa formuläret igen när det har skickats.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html#main-pars_title_1754153843).
 
