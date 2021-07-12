@@ -4,9 +4,9 @@ description: En projektmall för AEM
 feature: Kärnkomponenter, AEM projekttyp
 role: Architect, Developer, Administrator
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 8b3f98d5087ddca6928950daf2db1eb7728fa44e
+source-git-commit: b5ad1c874d5f6d6781c2d0b0cc992b278c91211b
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1118'
 ht-degree: 2%
 
 ---
@@ -54,12 +54,13 @@ Om du vill generera ett projekt justerar du följande kommandorad efter dina beh
 mvn -B archetype:generate \
  -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
- -D archetypeVersion=27 \
+ -D archetypeVersion=XX \
  -D appTitle="My Site" \
  -D appId="mysite" \
  -D groupId="com.mysite" \
 ```
 
+* Ersätt `XX` med det senaste [versionsnumret för arkitypen.](#requirements)
 * Ange `aemVersion=cloud` för [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
    Ange `aemVersion=6.5.0` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokal.
 Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM som en Cloud Service.
