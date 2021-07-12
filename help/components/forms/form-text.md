@@ -1,15 +1,14 @@
 ---
 title: Formulärtextkomponent
 description: Med komponenten Core Component Form Text kan du skriva in formulärtext.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: e8fa3881-51fb-4726-9654-8f93acfb7464
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '577'
 ht-degree: 2%
 
 ---
-
 
 # Formulärtextkomponent{#form-text-component}
 
@@ -32,7 +31,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Form Text Component och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_text).
 
@@ -68,7 +67,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-### Fliken {#about-tab}
+### Fliken Om {#about-tab}
 
 ![Fliken Om](/help/assets/form-text-edit-about.png)
 
@@ -86,7 +85,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
    * **Obligatoriskt meddelande**  - Meddelande visas som ett verktygstips om fältet lämnas tomt
 * **Gör skrivskyddad** - Om du väljer det här alternativet kan användaren inte ändra fältets värde
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 ### Fliken Format {#styles-tab}
 
