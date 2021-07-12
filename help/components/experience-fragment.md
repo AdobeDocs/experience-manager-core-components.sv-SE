@@ -1,15 +1,14 @@
 ---
 title: Experience Fragment Component
 description: Med Experience Fragment Component kan innehållsförfattaren lägga till en upplevelsefragmentvariant på en sida.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '816'
 ht-degree: 0%
 
 ---
-
 
 # Experience Fragment Component{#experience-fragment-component}
 
@@ -22,7 +21,7 @@ Med kärnkomponentens Experience Fragment-komponent kan innehållsförfattaren v
 * Komponentens egenskaper kan definieras i [konfigurationsdialogrutan](#configure-dialog).
 * Standardvärden för komponenten när du lägger till den på en sida kan definieras i [designdialogrutan](#design-dialog).
 
-## Lokaliserat stöd för platsstruktur {#localized-site-structure}
+## Lokaliserat stöd för webbplatsstruktur {#localized-site-structure}
 
 Experience Fragment-komponenten är anpassad till lokaliserade webbplatsstrukturer och återger rätt upplevelsefragment baserat på sidans lokalisering. För att göra detta måste upplevelsefragmentet uppfylla följande villkor.
 
@@ -103,7 +102,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Experience Fragment Component och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_xf).
 
@@ -129,7 +128,7 @@ Du kan också definiera ett **ID**. Med det här alternativet kan du styra den u
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
 * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängliga för den som använder Experience Fragment-komponenten och de standardvärden som anges när Experience Fragment-komponenten monteras.
 
