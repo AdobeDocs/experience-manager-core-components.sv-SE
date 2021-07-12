@@ -1,15 +1,14 @@
 ---
 title: Titelkomponent
 description: Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering på plats.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 393af72c-549f-4609-afb0-2712f827b549
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '569'
 ht-degree: 1%
 
 ---
-
 
 # Titelkomponent{#title-component}
 
@@ -32,7 +31,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa både komponenten Title och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_title).
 
@@ -42,7 +41,7 @@ Den senaste tekniska dokumentationen om Title Component [finns på GitHub](https
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och välja rubriknivå.
 
@@ -64,7 +63,7 @@ Du kan även använda redigeraren på plats för att redigera texten i titelkomp
 
 ![In-place editing of Title Component](/help/assets/title-edit-inline.png)
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titelkomponenter ska ha när de skapas av innehållsförfattarna.
 
@@ -84,6 +83,6 @@ I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titel
 
 Title Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Titelkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
