@@ -1,10 +1,9 @@
 ---
 title: Anpassa kärnkomponenter
 description: Core Components implementerar flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
-role: Architect, Developer, Administrator
+role: Architect, Developer, Admin
 exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
-translation-type: tm+mt
-source-git-commit: b5b77f21cbeaa46622cef85f3bbaa549f17f1a06
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '1106'
 ht-degree: 1%
@@ -74,7 +73,7 @@ I dialogrutan nedan visas den rekommenderade dialogstrukturen samt hur du dölje
 </jcr:root>
 ```
 
-### Anpassa logiken för en kärnkomponent {#customizing-the-logic-of-a-core-component}
+### Anpassa logiken i en kärnkomponent {#customizing-the-logic-of-a-core-component}
 
 Affärslogiken för kärnkomponenterna implementeras i Sling Models. Den här logiken kan utökas med hjälp av ett delegeringsmönster för Sling.
 
