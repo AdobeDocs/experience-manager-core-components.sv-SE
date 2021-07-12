@@ -1,15 +1,14 @@
 ---
 title: Dragspelskomponent
 description: Med komponenten Core Component Accordion kan du skapa en samling paneler som ordnas i ett dragspel på en sida.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1072'
+source-wordcount: '1067'
 ht-degree: 1%
 
 ---
-
 
 # Dragspelskomponent{#accordion-component}
 
@@ -49,7 +48,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa dragspelskomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_accordion).
 
@@ -91,7 +90,7 @@ Använd knappen **Lägg till** för att öppna komponentväljaren och välja vil
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Välj Panelpekare {#select-panel-popover}
+## Välj panelpekare {#select-panel-popover}
 
 Innehållsförfattaren kan använda alternativet **Välj panel** i komponentens verktygsfält för att ändra till en annan panel för redigering samt för att enkelt ordna om panelerna i dragspelet.
 
@@ -106,7 +105,7 @@ När du har valt alternativet **Välj panel** i komponentverktygsfältet visas d
 * Om du trycker eller klickar på en post i listrutan växlar vyn i redigeraren till den panelen.
 * Panelerna kan ordnas om på plats med hjälp av draghandtagen.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängliga för den som använder dragspelskomponenten och de standardvärden som anges när dragspelskomponenten monteras.
 
@@ -127,6 +126,6 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 
 Dragspelskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Accordion-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
