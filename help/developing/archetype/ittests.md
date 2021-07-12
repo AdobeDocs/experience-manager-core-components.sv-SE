@@ -1,18 +1,17 @@
 ---
 title: it.tests Module of AEM Project Archetype
 description: Så här använder du AEM Project Archetype Integration Tests
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Kärnkomponenter, AEM projekttyp
+role: Architect, Developer, Admin
+exl-id: 0abc0265-3a3f-4323-97e6-3af0c62299ef
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '83'
+source-wordcount: '80'
 ht-degree: 0%
 
 ---
 
-
-# it.tests Module of the AEM Project Archetype {#ittests-module}
+# it.tests Module of the AEM Project Archettype {#ittests-module}
 
 Det finns tre testnivåer i projektet:
 
