@@ -1,23 +1,22 @@
 ---
 title: Delningskomponent för sociala medier
-description: Den centrala komponenten för delning via sociala medier är en widget för delning via Facebook och Pinterest.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+description: Komponenten för delning via sociala medier i kärnkomponenten är en delningswidget för Facebook och Pinterest.
+role: Architect, Developer, Admin, User
+exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '427'
 ht-degree: 1%
 
 ---
 
-
 # Delningskomponent för sociala medier{#social-sharing-component}
 
-Den centrala komponenten för delning via sociala medier är en widget för delning via Facebook och Pinterest.
+Komponenten för delning via sociala medier i kärnkomponenten är en delningswidget för Facebook och Pinterest.
 
 ## Användning {#usage}
 
-Delningskomponenten för sociala medier lägger till länkar för delning av Facebook och Pinterest på sidan. Det ingår ofta i sidhuvuden och sidfötter.
+Delningskomponenten för sociala medier lägger till Facebook- och Pinterest-delningslänkar på sidan. Det ingår ofta i sidhuvuden och sidfötter.
 
 Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via [Egenskaper för första sidan](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) och av innehållsförfattaren via [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
@@ -33,7 +32,7 @@ Följande tabell visar alla versioner av komponenten som stöds och de AEM versi
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill se komponenterna för social delning och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_sharing).
 
@@ -43,7 +42,7 @@ Den senaste tekniska dokumentationen om delningskomponenten [finns på GitHub](h
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 ![Redigeringsdialogrutan för delningskomponenten](/help/assets/sharing-edit.png)
 
@@ -54,6 +53,6 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen ti
 
 Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Det innebär att ytterligare redigeringsalternativ för delningskomponenten är tillgängliga för innehållsförfattaren via fliken Delning i [sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är designalternativen för delningskomponenten tillgängliga för mallskaparen via de [inledande sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
