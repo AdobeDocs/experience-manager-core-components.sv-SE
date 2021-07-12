@@ -1,15 +1,14 @@
 ---
 title: Inkluderar klientbibliotek
 description: Det finns flera olika sätt att inkludera klientbibliotek beroende på hur du använder dem.
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin
+exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '394'
 ht-degree: 2%
 
 ---
-
 
 # Inkluderar klientbibliotek {#including-client-libraries}
 
@@ -91,7 +90,7 @@ CSS `link`-attribut som kan skickas till `jsAndCssIncludes` och `cssIncludes`:
 * `onload`: string
 * `crossorigin`: string
 
-## Infogar {#inlining}
+## Inledande {#inlining}
 
 I vissa fall, antingen för optimering eller för e-post eller [AMP,](amp.md), kan det krävas att infoga CSS eller JS i HTML-utdata.
 
@@ -113,7 +112,7 @@ Om du vill infoga JS-elementet kan du använda `jsInline`. I så fall måste du 
 </script>
 ```
 
-## Läser in sammanhangsberoende CSS och JavaScript {#context-aware-loading}
+## Läsa in sammanhangsberoende CSS och JavaScript {#context-aware-loading}
 
 [Sidkomponenten](/help/components/page.md) stöder även inläsning av utvecklardefinierade sammanhangsberoende CSS-, JavaScript- eller meta-taggar.
 
