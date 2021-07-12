@@ -2,15 +2,14 @@
 title: Textkomponent (v1)
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: c9fe3052-a33d-412e-9456-52c9a0cea292
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1657'
 ht-degree: 1%
 
 ---
-
 
 # Textkomponent (v1) {#text-component-v}
 
@@ -39,7 +38,7 @@ I följande tabell visas kompatibiliteten för v1 för textkomponenten.
 >
 >Information om den aktuella versionen av textkomponenten finns i dokumentet [Textkomponent](/help/components/text.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -71,7 +70,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 >
 >JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en användare kan förvänta sig att skapa text.
 
@@ -313,7 +312,7 @@ Textkomponenten kan även redigeras textbundet, men på grund av utrymmesbegrän
 
 ![](/help/assets/chlimage_1-86.png)
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera vilka textformateringsalternativ som är tillgängliga för innehållsförfattarna.
 
