@@ -1,17 +1,16 @@
 ---
 title: Progress Bar-komponent
 description: Förloppsindikatorkomponenten visar förloppet mot ett mål
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 47afc5a6-ac57-4b6c-92c4-015ca956a20b
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '338'
 ht-degree: 2%
 
 ---
 
-
-# Förloppsindikatorkomponent {#progress-bar-component}
+# Progress Bar-komponent {#progress-bar-component}
 
 Komponenten Core Component Progress Bar representerar visuellt förloppet mot ett mål.
 
@@ -29,7 +28,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |---|---|---|---|
 | v1 | Kompatibel | Kompatibel | Kompatibel |
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Progress Bar-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_progressbar).
 
@@ -49,7 +48,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen ti
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de format som ska användas för Progress Bar-komponenten.
 
@@ -57,6 +56,6 @@ I designdialogrutan kan mallskaparen definiera de format som ska användas för 
 
 Förloppsindikatorkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Komponenten Progress Bar stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
