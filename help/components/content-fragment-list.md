@@ -1,15 +1,14 @@
 ---
 title: Content Fragment List Component
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
-
 
 # Content Fragment List Component{#content-fragment-list-component}
 
@@ -34,7 +33,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill se komponenterna i listan Innehållsfragmentlista samt se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_cflist).
 
@@ -87,6 +86,6 @@ Som standard tas alla element i innehållsfragmentmodellen med i listan (såvida
    * Klicka eller tryck på **Ta bort**-knappen om du vill ta bort ett markerat element.
    * Dra handtaget för **Ordning** om du vill ändra ordningen på elementen.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de format som ska användas på List-komponenten för innehållsfragment.
