@@ -1,15 +1,14 @@
 ---
 title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
-
 
 # Bildkomponent{#image-component}
 
@@ -62,7 +61,7 @@ Av säkerhetsskäl anropas aldrig den ursprungliga SVG-filen direkt av bildredig
 >
 >SVG-stöd kräver version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för att stödja [bildredigeringsfunktionerna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/image-editor.html) i AEM.
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill se både Image Component (Bildkomponent) och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_image).
 
@@ -78,7 +77,7 @@ Image Component har stöd för [schema.org microdata](https://schema.org).
 
 Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrutan](#design-dialog) innehåller bildkomponenten en konfigureringsdialogruta där själva bilden definieras tillsammans med beskrivning och grundläggande egenskaper.
 
-### Fliken Resurs {#asset-tab}
+### Fliken Resurser {#asset-tab}
 
 ![Fliken Resurser i dialogrutan Konfigurera för bildkomponenten](/help/assets/image-configure-asset.png)
 
@@ -87,7 +86,7 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
    * Tryck eller klicka på **Rensa** för att avmarkera den markerade bilden.
    * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
-### Metadatafliken {#metadata-tab}
+### Fliken Metadata {#metadata-tab}
 
 ![Fliken Metadata i dialogrutan Konfigurera för Image Component](/help/assets/image-configure-metadata.png)
 
@@ -113,7 +112,7 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 >
 >**Förinställningar för smart** beskärning  **av** bilder utesluter varandra. Om en författare behöver använda en bildförinställning tillsammans med en rendering för smart beskärning måste författaren använda **bildmodifierare** för att lägga till förinställningar manuellt.
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma bilden.
 
@@ -176,7 +175,7 @@ Du kan även använda redigeraren på plats för att ändra bilden. På grund av
 >
 >Bildredigeringsåtgärder (beskärning, vändning, rotering) stöds inte för GIF-bilder. Alla sådana ändringar som görs i redigeringsläget för GIF-filer bevaras inte.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de alternativ för beskärning, uppladdning, rotation och överföring som innehållsförfattaren har när den här komponenten används.
 
@@ -257,6 +256,6 @@ Bildkomponenten använder kärnkomponentens adaptiva bildserver. [Den adaptiva b
 >
 >[Den AEM Project Archetype](/help/developing/archetype/overview.md)-exempelkonfigurationen för Dispatcher innehåller redan den här konfigurationen.
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Bildkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
