@@ -1,15 +1,14 @@
 ---
 title: Behållarkomponent
 description: Med komponenten Core Component Container kan du skapa en behållare för flera ytterligare komponenter på en sida.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 53c7190d-44cb-42ff-bc1a-483c7875bcf8
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '792'
 ht-degree: 1%
 
 ---
-
 
 # Behållarkomponent{#container-component}
 
@@ -34,7 +33,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Container-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_container).
 
@@ -60,7 +59,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera behållarobjektet
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängliga för den innehållsförfattare som använder behållarkomponenten.
 
@@ -80,7 +79,7 @@ Fliken Standardkomponenter används för att definiera vilken komponent som ska 
 
 * **Kolumner**  - Definierar antalet kolumner i rutnätet för den resulterande behållaren.
 
-### Bakgrundsflik {#background-tab}
+### Fliken Bakgrund {#background-tab}
 
 ![Fliken Bakgrund i designdialogrutan för behållarkomponenten](/help/assets/container-design-background.png)
 
