@@ -1,18 +1,17 @@
 ---
 title: Front-End Build för SPA
 description: En beskrivning av den inledande processen för React-baserade SPA
-feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Administrator
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+feature: Kärnkomponenter, AEM projekttyp
+role: Architect, Developer, Admin
+exl-id: dd8ef13a-9686-47a9-b6af-e486ff10c4d8
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
 
-
-# Front-End Build för React SPA {#frontend-react}
+# Front-End Build för SPA {#frontend-react}
 
 I det här dokumentet förklaras detaljerna för det projekt som skapades när en arkivtyp användes för att skapa ett ensidigt program (SPA) baserat på React-ramverket. Det vill säga när du anger `frontendModule` som `react`.
 
@@ -45,7 +44,7 @@ Om du får felmeddelanden relaterade till CORS kan du konfigurera AEM enligt fö
    * Rubriker som stöds: Behörighet
    * Tillåtna metoder: OPTIONS
 
-### npm test {#npm-test}
+### npm-provning {#npm-test}
 
 ```shell
 npm test
