@@ -1,15 +1,14 @@
 ---
 title: Innehållsfragmentkomponent
 description: Komponenten Core Component Content Fragment gör det möjligt att visa ett innehållsfragment.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 551ff2a1-f8db-490c-84a3-4255b364fc83
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '673'
 ht-degree: 1%
 
 ---
-
 
 # Innehållsfragmentkomponent{#content-fragment-component}
 
@@ -51,7 +50,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa komponenterna för innehållsfragment samt se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_cf).
 
@@ -101,7 +100,7 @@ Den här fliken är inte tillgänglig när du har valt läget **Flera element**.
 * **Stycken**  - Tillåt markering av alla stycken eller ett intervall
 * **Hantera rubrik som egna stycken**
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskaparen definiera de resurstyper som används för att hantera bilder med olika medier och responsiva stödraster.
 
@@ -111,6 +110,6 @@ I designdialogrutan kan mallskaparen definiera de resurstyper som används för 
 
    * Den Sling-resurstyp som används för det interna responsiva rutnätet
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Komponenten för innehållsfragment stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
