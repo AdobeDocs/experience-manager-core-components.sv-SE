@@ -2,15 +2,14 @@
 title: Sidkomponent (v1)
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 index: n
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: 522f32f0-fc06-4ca0-ada2-61bdbc8761e0
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # Sidkomponent (v1) {#page-component-v}
 
@@ -43,7 +42,7 @@ I följande tabell visas kompatibiliteten för v1 för sidkomponenten.
 >
 >v1 i sidkomponenten stöder inte sidomdirigering. Använd den [aktuella versionen av sidkomponenten](/help/components/page.md) om du vill ha stöd för sidomdirigering.
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
@@ -681,11 +680,11 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 >
 >JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
 
-## Redigera dialogruta {#edit-dialog}
+## Dialogrutan Redigera {#edit-dialog}
 
 Eftersom komponenten representerar hela sidan finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html).
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Sidinformation -> Siddesign**.
 
