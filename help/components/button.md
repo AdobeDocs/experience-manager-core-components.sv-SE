@@ -1,17 +1,16 @@
 ---
 title: Button-komponent
 description: Med komponenten Core Component Button kan du skapa och visa en knapp.
-role: Architect, Developer, Administrator, Business Practitioner
-translation-type: tm+mt
-source-git-commit: d01a7576518ccf9f0effd12dfd8198854c6cd55c
+role: Architect, Developer, Admin, User
+exl-id: e17efd1d-90d4-497a-9e7d-45934d81bc28
+source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '451'
 ht-degree: 1%
 
 ---
 
-
-# Knappkomponent{#button-component}
+# Button-komponent{#button-component}
 
 Komponenten Core Component Button gör det möjligt att konfigurera och visa ett knappobjekt på en sida.
 
@@ -34,7 +33,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
-## Exempelkomponentutdata {#sample-component-output}
+## Exempel på komponentutdata {#sample-component-output}
 
 Om du vill visa Button-komponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_button).
 
@@ -61,7 +60,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappen och hur d
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-### Hjälpmedelsfliken {#accessibility-tab}
+### Fliken Tillgänglighet {#accessibility-tab}
 
 ![Fliken Tillgänglighet i redigeringsdialogrutan för Button-komponenten](/help/assets/button-edit-accessibility.png)
 
@@ -69,12 +68,12 @@ På fliken **Accessibility** kan värden anges för [ARIA accessibility](https:/
 
 * **Etikett**  - Värdet för ett ARIA-etikettattribut för komponenten
 
-## Designdialog {#design-dialog}
+## Designdialogruta {#design-dialog}
 
 ### Fliken Format {#styles-tab}
 
 Button-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalagret {#data-layer}
+## Adobe-klientdatalager {#data-layer}
 
 Button-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
