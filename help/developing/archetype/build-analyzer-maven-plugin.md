@@ -4,9 +4,9 @@ description: Dokumentation för det lokala plugin-programmet Maven build analyze
 feature: Kärnkomponenter, AEM projekttyp
 role: Architect, Developer, Admin
 exl-id: de26b310-a294-42d6-a0db-91f6036a328c
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: a6c28db9eaf20e194b4b3355e59f710e2c251305
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '595'
 ht-degree: 4%
 
 ---
@@ -38,3 +38,25 @@ Nedan finns en tabell som beskriver de analysatorer som körs som en del av det 
 | `configuration-api` | Validerar viktiga OSGi-konfigurationer. <p> </p> `Configuration org.apache.felix.webconsole.internal.servlet.OsgiManager: Configuration is not allowed (com.mysite:mysite.all:1.0.0-SNAPSHOT\|com.mysite:mysite.ui.config:1.0.0-SNAPSHOT)` | Ja | Ja |
 | `region-deprecated-api` | Kontrollerar om [api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-apis.html) används som föråldrat <p> </p>`[WARNING] com.mysite:mysite.core:1.0.0-SNAPSHOT: Usage of deprecated package found : org.apache.sling.settings : Avoid these features at runtime: run modes, file system access (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Ja | Ja |
 
+## Kända fel
+
+Nedan finns en lista med kända fel när du använder Build Analyzer Maven Plugin.
+
+### Det gick inte att köra Build Analyzer Maven Plugin i Local SDK
+
+När du använder den lokala SDK:n med en Build Analyzer Maven Plugin-version som är lägre än `1.1.2` kan felet nedan uppstå om du kör plugin-programmet. I så fall uppdaterar du projektet till den senaste versionen av plugin-programmet.
+
+```txt
+[ERROR] Failed to execute goal com.adobe.aem:aemanalyser-maven-plugin:1.1.0:analyse (default-analyse) on project mysite.analyse: Execution default-analyse of goal com.adobe.aem:aemanalyser-maven-plugin:1.1.0:analyse failed: arraycopy: source index -1 out of bounds for char[65536] -> [Help 1]
+```
+
+Om du använde AEM Project Archetype för att konfigurera ditt projekt måste du justera egenskapen i rotformen `pom.xml` enligt nedan.
+
+```xml
+   ...
+   <properties>
+      ...
+      <aemanalyser.version>1.1.2</aemanalyser.version> <!-- Make sure to use the latest release -->
+      ...
+   </properties>
+```
