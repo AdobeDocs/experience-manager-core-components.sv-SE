@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: cc8c3275bf251b4c390ee66588f34bac7c0ec218
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2233'
 ht-degree: 11%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.17.2 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
+Den aktuella versionen av Core Components är 2.17.8 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,6 +26,8 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Den här korrigeringsversionen Det här är en korrigeringsversion som åtgärdar en inkompatibel ändring bakåt som introducerades tidigare. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 2 augusti 2021 |
+| [2.17.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.6) | Den här korrigeringsversionen har stöd för webbplatskartor för sidor och innehåller olika tillgänglighetsförbättringar. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 29 juli 2021 |
 | [2.17.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.2) | Den här korrigeringsversionen innehåller en korrigering för [datalagret](/help/developing/data-layer/overview.md) som inte fungerar med AEMaaCS. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 8 juli 2021 |
 | [2.17.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.0) | Den här versionen innehåller tekniska förhandsvisningar av många nya komponentversioner med stöd för länkhanterarfunktioner samt en teknisk förhandsvisning av en aktuell bildfunktion för [sidkomponenten.](/help/components/page.md) Flera felkorrigeringar ingår också. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 16 juni 2021 |
 | [2.16.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.4) | Det här är en korrigeringsversion som åtgärdar ett problem med den nya länkhanteraren. | 6.4.8.1+ * | 6.5.5.0+ * | Kontinuerlig | 8, 11 | 19 maj 2021 |
