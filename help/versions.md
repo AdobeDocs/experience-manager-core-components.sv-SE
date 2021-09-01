@@ -3,9 +3,9 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 5271174f5c325a9793dc155c763054752c7308b8
+source-git-commit: fdca922ff637dc905fc90e80a1018c214a38e8c8
 workflow-type: tm+mt
-source-wordcount: '2275'
+source-wordcount: '2279'
 ht-degree: 11%
 
 ---
@@ -26,7 +26,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
-| [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Den här korrigeringen förbättrar [List](/help/components/list.md) och [Navigation](/help/components/navigation.md)-komponenterna för att visa den externa URL:en för omdirigeringsmål, aktiverar sidbildsarv för [Teaser](/help/components/teaser.md)-komponenten och innehåller ytterligare felkorrigeringar. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 31 augusti 2021 |
+| [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Den här korrigeringen förbättrar [List](/help/components/list.md) och [Navigation](/help/components/navigation.md)-komponenterna för att visa den externa URL:en för omdirigeringsmål, aktiverar sidbildsarv för kommande v2 av [Teaser](/help/components/teaser.md)-komponenten och innehåller ytterligare felkorrigeringar. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 31 augusti 2021 |
 | [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Den här korrigeringsversionen Det här är en korrigeringsversion som åtgärdar en inkompatibel ändring bakåt som introducerades tidigare. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 2 augusti 2021 |
 | [2.17.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.6) | Den här korrigeringsversionen har stöd för webbplatskartor för sidor och innehåller olika tillgänglighetsförbättringar. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 29 juli 2021 |
 | [2.17.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.2) | Den här korrigeringsversionen innehåller en korrigering för [datalagret](/help/developing/data-layer/overview.md) som inte fungerar med AEMaaCS. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 8 juli 2021 |
