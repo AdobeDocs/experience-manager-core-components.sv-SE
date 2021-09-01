@@ -3,9 +3,9 @@ title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: eea159ad494150c3f132166d48f624605eb92e64
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '1064'
 ht-degree: 1%
 
 ---
@@ -17,6 +17,17 @@ Med Core Component List Component kan du enkelt skapa både dynamiska och statis
 ## Användning {#usage}
 
 List-komponenten kan användas för att skapa t.ex. en dynamisk lista med underordnade sidor eller en statisk lista med godtyckligt definierade objekt. Vilka typer av listor som finns tillgängliga och formateringsalternativen kan definieras av mallförfattaren i [designdialogrutan](#design-dialog). Innehållsredigeraren kan välja bland tillgängliga listtyper och hur listelementen ska formateras i [redigeringsdialogrutan](#edit-dialog).
+
+## Omdirigeringar i listor {#redirects}
+
+När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM sida), är det en lista som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
+
+### Exempel {#redirect-example}
+
+* Skapa en sida A som dirigeras om till sida B.
+* Skapa en sida C som omdirigeras till `https://aemcomponents.dev`
+* På en sida D infogar du en listkomponent som innehåller sidorna A och C
+* De länkar som skapas pekar sedan direkt på sidan B och `https://aemcomponents.dev`
 
 ## Version och kompatibilitet {#version-and-compatibility}
 

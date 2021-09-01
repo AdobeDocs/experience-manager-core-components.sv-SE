@@ -3,9 +3,9 @@ title: Navigeringskomponent
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: eea159ad494150c3f132166d48f624605eb92e64
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1469'
 ht-degree: 0%
 
 ---
@@ -87,6 +87,18 @@ Navigeringskomponenten återger sedan menyn baserat på skuggwebbplatsens strukt
 
 >[!NOTE]
 >När du återger en skuggwebbplatsstruktur är det bara skuggsidorna som rekursiveras av navigeringslogiken. Logiken ger inte en rekursiv omdirigering av destinationerna.
+
+## Omdirigeringar i navigering {#redirects}
+
+När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM sida), är det en navigeringskomponent som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
+
+### Exempel {#redirect-example}
+
+* Skapa en sida A som dirigeras om till sida B.
+* Skapa en sida C som omdirigeras till `https://aemcomponents.dev`
+* På en sida D infogar du en komponent eller navigeringskomponent som innehåller sidorna A och C
+* De länkar som skapas pekar sedan direkt på sidan B och `https://aemcomponents.dev`
+
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
