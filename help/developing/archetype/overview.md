@@ -4,9 +4,9 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 5271174f5c325a9793dc155c763054752c7308b8
+source-git-commit: 69be45e2aa80753789fa19b12374b8e15eb6a394
 workflow-type: tm+mt
-source-wordcount: '1113'
+source-wordcount: '1138'
 ht-degree: 2%
 
 ---
@@ -94,6 +94,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `amp` | `n` | Aktivera stöd för [AMP](/help/developing/amp.md) för genererade projektmallar. |
 | `enableDynamicMedia` | `n` | Aktiverar basen för DynamicMedia-komponenter i projektpolicyinställningar och aktiverar Dynamic Media-funktioner i huvudbildkomponentens policy. |
 | `enableSSR` | `n` | Möjlighet att aktivera SSR för front-end-projektet |
+| `precompiledScripts` | `n` | Alternativ för att [förkompilera](/help/developing/archetype/precompiled-bundled-scripts.md) serverskript från `ui.apps` och bifoga dem till bygget som en sekundär paketartefakt i `ui.apps`-projektet. `aemVersion` ska anges till  `cloud`. |
 
 ## Systemkrav {#requirements}
 

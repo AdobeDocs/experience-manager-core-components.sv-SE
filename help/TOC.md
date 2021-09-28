@@ -1,14 +1,13 @@
 ---
-sub-product: AEM kärnkomponenter
+sub-product: AEM Core Components
 user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 feature-set: Experience Manager Sites
-translation-type: tm+mt
-source-git-commit: 15aa2145a4872a9e9c46e639f42f212363823d75
+source-git-commit: 7bff1282bdd05b98e7ce33ab0e1a1be7080bb209
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -38,7 +37,7 @@ ht-degree: 2%
    + [Språknavigering](components/language-navigation.md)
    + [Lista](components/list.md)
    + [Navigering](components/navigation.md)
-   + [Sida](components/page.md)
+   + [Sidan](components/page.md)
    + [PDF Viewer](components/pdf-viewer.md)
    + [Förloppsindikator](components/progress-bar.md)
    + [Snabbsökning](components/quick-search.md)
@@ -85,6 +84,7 @@ ht-degree: 2%
       + [Använda Arketype](developing/archetype/using.md)
       + [Kärnmodul](developing/archetype/core.md)
       + [ui.apps-modul](developing/archetype/uiapps.md)
+      + [Förkompilerade paketerade skript](developing/archetype/precompiled-bundled-scripts.md)
       + [ui.content-modul](developing/archetype/uicontent.md)
       + [ui.front.general Module](developing/archetype/uifrontend.md)
       + [ui.front.response Module](developing/archetype/uifrontend-react.md)

@@ -1,12 +1,12 @@
 ---
 title: Använda den AEM projekttypen
 description: Detaljerade användningsinstruktioner för AEM Project Archetype
-feature: Kärnkomponenter, AEM projekttyp
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: a3978d8b-4904-42aa-9ee2-9c1f884327bb
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 69be45e2aa80753789fa19b12374b8e15eb6a394
 workflow-type: tm+mt
-source-wordcount: '2147'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -117,6 +117,7 @@ Följande egenskaper är tillgängliga när du skapar ett projekt med hjälp av 
 | `amp` | `n` | Aktivera stöd för [AMP](/help/developing/amp.md) för genererade projektmallar. |
 | `enableDynamicMedia` | `n` | Aktiverar basen för DynamicMedia-komponenter i projektpolicyinställningar och aktiverar Dynamic Media-funktioner i huvudbildkomponentens policy. |
 | `enableSSR` | `n` | Möjlighet att aktivera SSR för front-end-projektet |
+| `precompiledScripts` | `n` | Alternativ för att [förkompilera](/help/developing/archetype/precompiled-bundled-scripts.md) serverskript från `ui.apps` och bifoga dem till bygget som en sekundär paketartefakt i `ui.apps`-projektet. `aemVersion` ska anges till  `cloud`. |
 
 >[!NOTE]
 >
@@ -138,6 +139,7 @@ Det genererade maven-projektet stöder olika distributionsprofiler när `mvn ins
 | `autoInstallSinglePackage` | Installera `all`-innehållspaketet med content-package-maven-plugin i pakethanteraren till standardförfattarinstansen på localhost, port 4502. Värdnamn och port kan ändras med de användardefinierade egenskaperna `aem.host` och `aem.port`. |
 | `autoInstallSinglePackagePublish` | Installera `all`-innehållspaketet med content-package-maven-plugin i pakethanteraren om du vill använda standardpubliceringsinstansen på localhost, port 4503. Värdnamn och port kan ändras med de användardefinierade egenskaperna `aem.host` och `aem.port`. |
 | `integrationTests` | Kör de angivna integrationstesterna på AEM-instansen (endast för `verify`-fasen) |
+| `precompiledScripts` | Definieras automatiskt när projektet genereras med egenskapen `precompiledScripts` inställd på `y`. Profilen är som standard aktiv och genererar ett OSGi-paket inuti `ui.apps` med de förkompilerade skripten, som kommer att inkluderas i `all`-innehållspaketet. Profilen kan inaktiveras med `-DskipScriptPrecompilation=true`. |
 
 ### Bygga och installera {#building-and-installing}
 
