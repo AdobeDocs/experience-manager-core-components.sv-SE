@@ -3,9 +3,9 @@ title: Introduktion till kärnkomponenter
 description: 'Core Components ger robusta och utbyggbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 5271174f5c325a9793dc155c763054752c7308b8
+source-git-commit: 19a7057d0a37d8222dcb2441bba1e479d786fb10
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '937'
 ht-degree: 3%
 
 ---
@@ -36,7 +36,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | [innehållsprinciper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) på mallnivå definierar vilka funktioner sidförfattarna får använda eller inte. |
 | Spårbar | Integreringen [Adobe Client Data Layer ger dig möjlighet att spåra alla aspekter av besökarupplevelsen.](/help/developing/data-layer/overview.md) |
-| Tillgänglig | De är kompatibla med [WCAG 2.1-standarden](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöder tangentbordsnavigering ([kända fel](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
+| Tillgänglig | De uppfyller [WCAG 2.1-standarden](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöd för tangentbordsnavigering ([kända fel](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-vänlig | HTML-utdata är semantiska och innehåller [schema.org](https://schema.org) mikrodataanteckningar. |
 | WebApp-Ready | Med [strömlinjeformade JSON-utdata](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) kan klientsidan renderas, fortfarande med möjligheten [kontextredigering](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
 | Stöd för AMP | Komponenterna har inbyggt [stöd för AMP-standarden,](/help/developing/amp.md) som snabbar upp mobilupplevelserna. |
