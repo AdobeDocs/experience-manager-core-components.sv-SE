@@ -3,9 +3,9 @@ title: Carousel-komponent
 description: Med Carousel Component kan innehållsförfattaren presentera innehållet i en roterande karusell.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1115'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Använd knappen **Lägg till** för att öppna komponentväljaren och välja vil
 
 >[!TIP]
 >
->Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i Carousel-komponenten genom att [dra från komponentwebbläsaren och släppa på Carousel-komponenten i sidredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component-from-the-components-browser).
+>Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i Carousel-komponenten genom att [dra från komponentwebbläsaren och släppa på Carousel-komponenten i sidredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component-from-the-components-browser).
 
 ### Fliken Egenskaper {#properties-tab}
 
@@ -77,9 +77,9 @@ På fliken **Egenskaper** kan författaren ange att bildrutorna ska övergå aut
 
 >[!NOTE]
 >
->Avancerade kontroller för bildrutor är inte aktiverade i läget **Redigera**. Använd [**Förhandsgranska** mode](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode) eller **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med karusellen som en läsare av det publicerade innehållet.
+>Avancerade kontroller för bildrutor är inte aktiverade i läget **Redigera**. Använd [**Förhandsgranska** mode](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode) eller **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med karusellen som en läsare av det publicerade innehållet.
 >
->Funktionen för automatiskt framflyttning är inte aktiverad i **redigeringsläget**. Använd alternativet **[Visa som publicerat](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill se funktionen för automatiskt fortsättning som en läsare av det publicerade innehållet skulle göra.
+>Funktionen för automatiskt framflyttning är inte aktiverad i **redigeringsläget**. Använd alternativet **[Visa som publicerat](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill se funktionen för automatiskt fortsättning som en läsare av det publicerade innehållet skulle göra.
 
 ### Fliken Tillgänglighet {#accessibility-tab}
 
@@ -123,7 +123,7 @@ Fliken **Egenskaper** används för att definiera standardinställningarna för 
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som innehållsförfattaren kan lägga till som bildrutor till Carousel-komponenten.
 
-Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
+Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Fliken Format {#styles-tab}
 

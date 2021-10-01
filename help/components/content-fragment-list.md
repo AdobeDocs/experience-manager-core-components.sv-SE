@@ -3,20 +3,20 @@ title: Content Fragment List Component
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
 role: Architect, Developer, Admin, User
 exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Content Fragment List Component{#content-fragment-list-component}
 
-Med komponenten Core Component Content Fragment List kan du visa en lista med [innehållsfragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Med komponenten Core Component Content Fragment List kan du visa en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 ## Användning {#usage}
 
-Med listkomponenten Core Component Content Fragment kan du inkludera en lista med [innehållsfragment](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) på en sida baserat på en Content Fragment-modell. Detta kan vara särskilt användbart när du skapar [headless-innehåll](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) som enkelt kan användas i andra program.
+Med listkomponenten Core Component Content Fragment kan du inkludera en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) på en sida baserat på en Content Fragment-modell. Detta kan vara särskilt användbart när du skapar [headless-innehåll](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) som enkelt kan användas i andra program.
 
 * Listan och dess egenskaper kan väljas i [konfigurationsdialogrutan](#configure-dialog).
 * Format kan användas på komponenten i [designdialogrutan](#design-dialog).

@@ -3,16 +3,16 @@ title: Inkluderar klientbibliotek
 description: Det finns flera olika sätt att inkludera klientbibliotek beroende på hur du använder dem.
 role: Architect, Developer, Admin
 exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '394'
-ht-degree: 2%
+source-wordcount: '392'
+ht-degree: 0%
 
 ---
 
 # Inkluderar klientbibliotek {#including-client-libraries}
 
-Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/uifrontend.md#clientlibs) beroende på ditt användningssätt. Det här dokumentet innehåller exempel och exempel på [HTML-kodfragment](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html) för varje.
+Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/uifrontend.md#clientlibs) beroende på ditt användningssätt. Det här dokumentet innehåller exempel och exempel på [HTML-kodfragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) för varje.
 
 ## Rekommenderad standardanvändning {#recommended-default-usage}
 

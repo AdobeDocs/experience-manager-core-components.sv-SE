@@ -4,9 +4,9 @@ description: Detaljerade användningsinstruktioner för AEM Project Archetype
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: a3978d8b-4904-42aa-9ee2-9c1f884327bb
-source-git-commit: 69be45e2aa80753789fa19b12374b8e15eb6a394
+source-git-commit: 017790c5a0e53ba6203a5c3d5ddebcce9c00cb01
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2193'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Det finns förstås många element som ingår i ett framgångsrikt AEM, men det 
 
 Projektets arkityp gör det enkelt att komma igång med AEM. Du kan utföra dina första steg på flera olika sätt.
 
-* WKND-självstudiekurs - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar typen av arkiv, finns i [Komma igång med AEM Sites - WKND-självstudiekurs](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) för ett praktiskt exempel som visar hur du använder arkitypen för att implementera ett enkelt projekt.
+* WKND-självstudiekurs - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar typen av arkiv, finns i [Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) för ett praktiskt exempel som visar hur du använder arkitypen för att implementera ett enkelt projekt.
 * Självstudiekurs om WKND-händelser - Om du är särskilt intresserad av att utveckla ett enda program (SPA) på AEM ska du titta på den dedikerade självstudiekursen [WKND Events](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html).
 * Ladda ned och börja själv! - Du kan enkelt hämta den aktuella projekttypen som finns på GitHub och skapa ditt första projekt genom att [följa de enkla stegen nedan](#how-to-use-the-archetype).
 
@@ -75,7 +75,7 @@ mvn -B archetype:generate \
 ```
 
 * Ange `XX` som [versionsnummer](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) för den senaste AEM Project Archetype.
-* Ange `aemVersion=cloud` för [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html);\
+* Ange `aemVersion=cloud` för [AEM som en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html);\
    Ange `aemVersion=6.5.0` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokal.
 Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM som ett moln
 Tjänst.
@@ -102,10 +102,10 @@ Följande egenskaper är tillgängliga när du skapar ett projekt med hjälp av 
 | `groupId` |  | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). |
 | `package` | *`${groupId}`* | Källpaket för Java (t.ex. `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Projektversion (t.ex. `1.0-SNAPSHOT`). |
-| `aemVersion` | `cloud` | AEM (kan vara `cloud` för [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokalt). |
-| `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)-version kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
+| `aemVersion` | `cloud` | AEM (kan vara `cloud` för [AEM som en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokalt). |
+| `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)-version kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokalt, beroende på värdet `aemVersion` (kan vara `y` eller `n`). |
-| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan vara `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA Editor](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
+| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan vara `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
 | `language` | `en` | Språkkod (ISO 639-1) för att skapa innehållsstrukturen från (t.ex. `en`, `deu`). |
 | `country` | `us` | Landskod (ISO 3166-1) för att skapa innehållsstrukturen från (t.ex. `US`). |
 | `singleCountry` | `y` | Innehåller en innehållsstruktur på överordnad (kan vara `y` eller `n`). |
@@ -199,7 +199,7 @@ Avsnittet `<dependencyManagement>` i den överordnade POM definierar alla beroen
 
 #### Uber-Jar {#uber-jar}
 
-Ett av nyckelberoendena är [AEM uber-jar](https://docs.adobe.com/content/help/en/experience-manager-65/developing/devtools/ht-projects-maven.html#ExperienceManagerAPIDependencies). Detta inkluderar alla AEM API:er med bara en enda beroendepost för AEM.
+Ett av nyckelberoendena är [AEM Java API Jar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html). Detta inkluderar alla AEM API:er med bara en enda beroendepost för AEM.
 
 >[!NOTE]
 >
@@ -209,7 +209,7 @@ Ett av nyckelberoendena är [AEM uber-jar](https://docs.adobe.com/content/help/e
 
 Den AEM projekttypen utnyttjar förstås kärnkomponenterna.
 
-Core Components installeras automatiskt i AEM i standardkörningsläget och används av WKND-exempelwebbplatsen. I ett [produktionsläge](https://docs.adobe.com/content/help/en/experience-manager-65/administering/security/production-ready.html) (`nosamplecontent`) är kärnkomponenterna inte tillgängliga.
+Core Components installeras automatiskt i AEM i standardkörningsläget och används av WKND-exempelwebbplatsen. I ett [produktionsläge](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/overview.html#runmodes) (`nosamplecontent`) är kärnkomponenterna inte tillgängliga.
 
 För att kunna utnyttja kärnkomponenterna i alla installationer är det därför en god vana att inkludera dem i Maven-projektet.
 
@@ -233,7 +233,7 @@ Det finns tre testnivåer i projektet och eftersom de är olika typer av tester 
    * `mvn clean verify -PintegrationTests`
 * Hobbes.js-tester på klientsidan: Detta är JavaScript-baserade webbläsarbaserade tester som verifierar webbläsarsidans beteende. Så här testar du:
    1. Läs in AEM i webbläsaren på samma sätt som du skapar en sida.
-   1. Öppna sidan i [Utvecklarläge](https://docs.adobe.com/content/help/en/experience-manager-65/developing/components/developer-mode.html)
+   1. Öppna sidan i [Utvecklarläge](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/developer-mode.html)
    1. Öppna den vänstra panelen och växla till fliken **Test**.
    1. Hitta de genererade **MyName-testerna** och kör dem.
 
@@ -242,6 +242,6 @@ Det finns tre testnivåer i projektet och eftersom de är olika typer av tester 
 Så du har byggt och installerat AEM Project Archetype. Vad händer nu? Arkitypen är liten, men består av många exempel på kraftfulla AEM som konfigurerats enligt rekommenderade metoder. Här visas hur du kan utnyttja dessa funktioner i ditt projekt. För alla projekt du troligtvis behöver:
 
 * [Anpassa komponenterna genom att utöka de befintliga komponenterna](/help/developing/customizing.md)
-* [Lägg till ytterligare mallar](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
-* [Anpassa lokaliseringsstrukturen](https://docs.adobe.com/content/help/en/experience-manager-65/administering/introduction/tc-prep.html)
+* [Lägg till ytterligare mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+* [Anpassa lokaliseringsstrukturen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/translation/preparation.html)
 * [Läs mer om modulen för bygge](uifrontend.md)

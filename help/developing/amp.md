@@ -3,9 +3,9 @@ title: AMP-stöd för kärnkomponenterna
 description: Kärnkomponenterna har stöd för AMP - accelererade mobilsidor
 role: Architect, Developer, Admin
 exl-id: 1fd9b6b5-0e4d-48c7-8faa-42e0d4a6bbd0
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ AMP-stödet ger stor flexibilitet, men för att komma igång snabbt krävs bara 
 
 ### Aktivera AMP för sidor {#enabling-amp}
 
-Om du vill aktivera AMP för en sida måste du välja **AMP-läge** i [sidprincipen.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-page-policy-template-author-developer)
+Om du vill aktivera AMP för en sida måste du välja **AMP-läge** i [sidprincipen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-page-policy-template-author-developer)
 
 ![Alternativ för AMP-sidprofil](/help/assets/amp-policy.png)
 
@@ -49,7 +49,7 @@ Om du vill aktivera AMP för en sida måste du välja **AMP-läge** i [sidprinci
 * **Parade AMP**  - Sidan levereras som både AMP och HTML.
 * **Endast**  AMP - Sidan levereras endast som AMP.
 
-AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) för en enskild sida.
+AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) för en enskild sida.
 
 ![Egenskaper för AMP-sida](/help/assets/amp-page-properties.png)
 

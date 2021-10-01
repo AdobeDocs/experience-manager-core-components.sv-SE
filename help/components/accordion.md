@@ -3,9 +3,9 @@ title: Dragspelskomponent
 description: Med komponenten Core Component Accordion kan du skapa en samling paneler som ordnas i ett dragspel på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1063'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Dragspelskomponenterna och [flikkomponenterna](tabs.md) har stöd för att länk
 
 Så här gör du:
 
-1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
+1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
 1. Inspect innehållet på sidan och identifierar panelens ID.
    * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med ett hash-värde (`#`).
@@ -120,7 +120,7 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som innehållsförfattaren kan lägga till som objekt på paneler i dragspelskomponenten.
 
-Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
+Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
 
 ### Fliken Format {#styles-tab}
 

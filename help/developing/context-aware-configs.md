@@ -3,9 +3,9 @@ title: Sling Context-Aware Configurations and Core Components
 description: Core Components använder kontextmedvetna Sling-konfigurationer för vissa funktioner
 role: Architect, Developer, Admin
 exl-id: d35210f7-a65d-4768-ab9e-f12ec406da2d
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Kontextmedvetna konfigurationer är en [funktion i Sling](https://sling.apache.o
 
 Din plats kan behöva olika konfigurationer för olika webbplatsregioner, till exempel där vissa parametrar kan delas, vilket kräver arv för kapslade kontexter och globala reservvärden. AEM utnyttjar konfigurationer som är anpassade till Sling-kontext, vilket möjliggör detta.
 
-Mer information om konfigurationer i AEM [finns i dokumentationen till konfigurations- och konfigurationsläsaren.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/developing/configurations.html)
+Mer information om konfigurationer i AEM [finns i dokumentationen till konfigurations- och konfigurationsläsaren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
 
 ## Använd i kärnkomponenterna {#core-components}
 

@@ -3,9 +3,9 @@ title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '2213'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
@@ -45,13 +45,13 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen ti
 
 ## Textkomponenten och RTF-redigeraren {#the-text-component-and-the-rich-text-editor}
 
-Komponenten Core Components Text använder AEM Rich Text Editor (RTE). RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för textredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Komponenten Core Components Text använder AEM Rich Text Editor (RTE). RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 Resten av den här artikeln demonstrerar standardkonfigurationen för textkomponenten för kärnkomponenter med RTE-konfigurationen som är klar att användas.
 
 >[!NOTE]
 >
->Endast alternativ som är aktiverade av [gränssnittskonfigurationer för RTE](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i textkomponenten.
+>Endast alternativ som är aktiverade av [gränssnittskonfigurationer för RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i textkomponenten.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -258,7 +258,7 @@ Används för att infoga en tabell i texten. Om du väljer det här alternativet
 
 Används för att kontrollera stavningen i textinnehållet. Eventuella felstavningar stryks under med brutna, röda linjer.
 
-Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program för RTF-redigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program för RTF-redigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 ### Specialtecken {#special-characters}
 

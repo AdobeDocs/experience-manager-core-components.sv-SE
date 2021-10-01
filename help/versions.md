@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: fdca922ff637dc905fc90e80a1018c214a38e8c8
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
 workflow-type: tm+mt
-source-wordcount: '2279'
+source-wordcount: '2273'
 ht-degree: 11%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.17.8 och är kompatibel med [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://docs.adobe.com/content/help/en/experience-manager-65/user-guide/home.html)-installationer.
+Den aktuella versionen av Core Components är 2.17.10 och är kompatibel med [AEM som en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)-installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -155,4 +155,4 @@ Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kä
 
 Adobe-utvecklingsbetoningen har flyttats till kärnkomponenterna och nya funktioner kommer att läggas till även i fortsättningen.
 
-[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/default-components-foundation.html) och endast större felkorrigeringar kommer att övervägas för Foundation Components som fortsätter.
+[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) och endast större felkorrigeringar kommer att övervägas för Foundation Components som fortsätter.

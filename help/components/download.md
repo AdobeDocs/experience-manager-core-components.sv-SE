@@ -3,9 +3,9 @@ title: Ladda ned komponent
 description: Med komponenten Core Component Download kan du skapa ett nedladdningsalternativ på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 48e7ade0-b849-4d1f-b836-51196e5ac507
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '687'
+source-wordcount: '683'
 ht-degree: 1%
 
 ---
@@ -54,9 +54,9 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera nedladdningsobjek
 Valet av en hämtningsresurs liknar funktionen hos [Image Component](image.md) och utnyttjar även AEM DAM.
 
 * **Hämta resurs**
-   * Släpp en resurs från [resursläsaren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Rensa** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 ### Fliken Egenskaper {#properties-tab}
 

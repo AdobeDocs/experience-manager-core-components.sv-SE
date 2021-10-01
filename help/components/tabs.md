@@ -3,9 +3,9 @@ title: Tabbar-komponent
 description: Med flikkomponenten kan du skapa flera flikar för att ordna innehåll på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1028'
 ht-degree: 1%
 
 ---
@@ -22,9 +22,9 @@ I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera fl
 
 >[!TIP]
 >
->Kapslade flikkomponenter (tabbar på flikar) stöds.
+>Kapslade flikkomponenter (tabbar inom tabbar) stöds.
 >
->Enkla (ej kapslade) flikkomponenter kan hittas/väljas med [innehållsträdet](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html#content-tree), men det går inte att kapsla flikar.
+>Enkla (ej kapslade) flikkomponenter kan hittas/väljas med [innehållsträdet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html#content-tree), men det går inte att kapsla flikar.
 
 ## Djuplänkning till en panel {#deep-linking}
 
@@ -32,7 +32,7 @@ Flikarna och [dragspelskomponenterna](accordion.md) har stöd för att länka di
 
 Så här gör du:
 
-1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
+1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
 1. Inspect innehållet på sidan och identifierar panelens ID.
    * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med ett hash-värde (`#`).
@@ -79,7 +79,7 @@ Använd knappen **Lägg till** för att öppna komponentväljaren och välja vil
 
 >[!TIP]
 >
->Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i flikkomponenten genom att [dra från komponentwebbläsaren och släppa på flikkomponenten i sidredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component).
+>Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i flikkomponenten genom att [dra från komponentwebbläsaren och släppa på flikkomponenten i sidredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component).
 
 ### Fliken Egenskaper {#properties-tab}
 
@@ -118,7 +118,7 @@ När du har valt alternativet **Välj panel** i komponentverktygsfältet visas d
 
 >[!NOTE]
 >
->Flikar kan inte markeras av författaren i **redigeringsläget**. Använd **[Förhandsgranska](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)** eller **[Visa som publicerad](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med flikarna som en läsare av det publicerade innehållet skulle göra.
+>Flikar kan inte markeras av författaren i **redigeringsläget**. Använd **[Förhandsgranska](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode)** eller **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med flikarna som en läsare av det publicerade innehållet skulle göra.
 
 ## Designdialogruta {#design-dialog}
 
@@ -128,7 +128,7 @@ I designdialogrutan kan mallskaparen definiera vilka komponenter som kan läggas
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som innehållsförfattaren kan lägga till som objekt i flikkomponenten.
 
-Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html)
+Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Fliken Format {#styles-tab}
 

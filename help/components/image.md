@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2162'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Av säkerhetsskäl anropas aldrig den ursprungliga SVG-filen direkt av bildredig
 
 >[!CAUTION]
 >
->SVG-stöd kräver version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för att stödja [bildredigeringsfunktionerna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/image-editor.html) i AEM.
+>SVG-stöd kräver version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för att stödja [bildredigeringsfunktionerna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/image-editor.html) i AEM.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -82,9 +82,9 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 ![Fliken Resurser i dialogrutan Konfigurera för bildkomponenten](/help/assets/image-configure-asset.png)
 
 * **Bildresurs**
-   * Släpp en resurs från [resursläsaren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Rensa** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 ### Fliken Metadata {#metadata-tab}
 

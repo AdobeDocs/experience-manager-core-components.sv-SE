@@ -3,10 +3,10 @@ title: Anpassa kärnkomponenter
 description: Core Components implementerar flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
 role: Architect, Developer, Admin
 exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '1106'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -122,7 +122,7 @@ Titta till exempel på HTML-filen för Breadcrumb-komponenten v1: [breadcrumb.ht
 .cmp-breadcrumb a {}
 ```
 
-Dessutom utnyttjar var och en av kärnkomponenterna AEM [Style System-funktionen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/style-system.html) som gör att mallskapare kan definiera ytterligare CSS-klassnamn som kan tillämpas på komponenten av sidförfattarna. På så sätt kan du definiera en lista med tillåtna komponentformat för varje mall och om ett av dem ska användas som standard för alla komponenter av den typen.
+Dessutom utnyttjar var och en av kärnkomponenterna AEM [Style System-funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html) som gör att mallskapare kan definiera ytterligare CSS-klassnamn som kan tillämpas på komponenten av sidförfattarna. På så sätt kan du definiera en lista med tillåtna komponentformat för varje mall och om ett av dem ska användas som standard för alla komponenter av den typen.
 
 ## Uppgraderingskompatibilitet för anpassningar {#upgrade-compatibility-of-customizations}
 
@@ -132,7 +132,7 @@ Det finns tre olika typer av uppgraderingar:
 * uppgradera kärnkomponenterna till en ny mindre version
 * uppgradera kärnkomponenterna till en större version
 
-I allmänhet påverkar inte en uppgradering av AEM till en ny version de kärnkomponenter eller anpassningar som gjorts, förutsatt att komponenternas versioner också stöder den nya AEM som migreras och att anpassningarna inte använder API:er som är [borttagna eller har tagits bort](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+I allmänhet påverkar inte en uppgradering av AEM till en ny version de kärnkomponenter eller anpassningar som gjorts, förutsatt att komponenternas versioner också stöder den nya AEM som migreras och att anpassningarna inte använder API:er som är [borttagna eller har tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Om du uppgraderar kärnkomponenterna utan att växla till en senare huvudversion bör det inte påverka anpassningar, så länge som de anpassningsmönster som beskrivs på den här sidan används.
 
@@ -152,7 +152,7 @@ Precis som för alla AEM finns det ett antal saker att tänka på när det gäll
 
 1. **Se borttagna funktioner som tagits bort.**
 
-   Kontrollera att alla API:er som används fortfarande är aktuella när varje ny AEM uppgraderas till genom att hålla ett öga på sidan [Borttagna och borttagna funktioner](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+   Kontrollera att alla API:er som används fortfarande är aktuella när varje ny AEM uppgraderas till genom att hålla ett öga på sidan [Borttagna och borttagna funktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Se även avsnittet [Stöd för kärnkomponent](overview.md#core-component-support).
 

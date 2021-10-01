@@ -1,12 +1,12 @@
 ---
 title: AEM Project Archetype Front-End Build
 description: En projektmall för AEM
-feature: Kärnkomponenter, AEM projekttyp
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 99132b49-bd06-4ac2-9348-12c0dfdfe8b2
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ Byggningsprocessen för modulen ui.front utnyttjar plugin-programmet [aem-client
 
 ### Inkludera klientbibliotek på sidor {#clientlib-inclusion}
 
-`clientlib-site` och  `clientlib-dependencies` kategorier inkluderas på sidor via  [sidprincipskonfigurationen ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#template-definitions) som en del av standardmallen. Om du vill visa profilen redigerar du **Innehållssidmall > Sidinformation > Sidprofil**.
+`clientlib-site` och  `clientlib-dependencies` kategorier inkluderas på sidor via  [sidprincipskonfigurationen ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/templates.html#template-definitions) som en del av standardmallen. Om du vill visa profilen redigerar du **Innehållssidmall > Sidinformation > Sidprofil**.
 
 Klientbibliotek på webbplatssidan inkluderas slutligen på följande sätt:
 

@@ -1,12 +1,12 @@
 ---
 title: Integreringar och Adobe Client Data Layer
 description: Lär dig hur Adobe Client Data Layer kan integreras med dina anpassade komponenter och hur integreringar med Adobe Analytics och Adobe Target kan hjälpa dig att få insikter om din webbplats
-feature: Kärnkomponenter, Adobe-klientdatalager
+feature: Core Components, Adobe Client Data Layer
 role: Architect, Developer, Admin
 exl-id: 503dd3dc-fe95-4a17-83f5-1f0c1960993d
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '422'
+source-wordcount: '412'
 ht-degree: 0%
 
 ---
@@ -40,10 +40,10 @@ Tillsammans med Adobe Analytics och Adobe Target är Adobe Client Data Layer gru
 
 Lär dig använda de inbyggda funktionerna i Adobe Client Data Layer med AEM Core Components för att samla in data om en sida i Adobe Experience Manager Sites. Experience Platform Launch och Adobe Analytics kommer att användas för att skapa regler för att skicka siddata till Adobe Analytics.
 
-[Se självstudiekursen här.](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html)
+[Se självstudiekursen här.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html)
 
 ### Spåra komponenter som klickats med Adobe Analytics {#track-clicked-components}
 
 Använd det händelsestyrda Adobe Client Data Layer med AEM Core Components för att spåra klick på specifika komponenter på en Adobe Experience Manager-plats. Lär dig hur du använder regler i Experience Platform Launch för att lyssna efter klickhändelser, filtrera efter komponent och skicka data till en Adobe Analytics med en spårlänkssignal.
 
-[Se självstudiekursen här.](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/integrations/analytics/track-clicked-component.html)
+[Se självstudiekursen här.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/track-clicked-component.html)

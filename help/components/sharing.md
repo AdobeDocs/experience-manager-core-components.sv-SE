@@ -3,9 +3,9 @@ title: Delningskomponent för sociala medier
 description: Komponenten för delning via sociala medier i kärnkomponenten är en delningswidget för Facebook och Pinterest.
 role: Architect, Developer, Admin, User
 exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '419'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ Komponenten för delning via sociala medier i kärnkomponenten är en delningswi
 
 Delningskomponenten för sociala medier lägger till Facebook- och Pinterest-delningslänkar på sidan. Det ingår ofta i sidhuvuden och sidfötter.
 
-Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via [Egenskaper för första sidan](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html) och av innehållsförfattaren via [Sidegenskaper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
+Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via [Egenskaper för första sidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och av innehållsförfattaren via [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -51,8 +51,8 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen ti
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Det innebär att ytterligare redigeringsalternativ för delningskomponenten är tillgängliga för innehållsförfattaren via fliken Delning i [sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
+Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Det innebär att ytterligare redigeringsalternativ för delningskomponenten är tillgängliga för innehållsförfattaren via fliken Delning i [sidegenskaperna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ## Designdialogruta {#design-dialog}
 
-Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är designalternativen för delningskomponenten tillgängliga för mallskaparen via de [inledande sidegenskaperna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är designalternativen för delningskomponenten tillgängliga för mallskaparen via de [inledande sidegenskaperna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).

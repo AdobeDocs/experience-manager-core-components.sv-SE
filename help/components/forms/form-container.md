@@ -3,9 +3,9 @@ title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
 role: Architect, Developer, Admin, User
 exl-id: 552f9dd5-6a3a-42d9-9969-e62a1f36e811
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '950'
 ht-degree: 0%
 
 ---
@@ -18,11 +18,11 @@ Med komponenten Core Component Form Container Component kan man skapa enkla insk
 
 Med formulärbehållarkomponenten kan du skapa enkla formulär och funktioner för inlämning av information genom att stödja enkla WCM-formulär och använda en kapslad struktur för att tillåta ytterligare formulärkomponenter.
 
-Genom att använda dialogrutan [Konfigurera](#configure-dialog) kan innehållsredigeraren definiera åtgärden som ska aktiveras när formulär skickas, URL:en som ska hantera överföringen och om ett arbetsflöde ska aktiveras. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera de tillåtna komponenterna och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Genom att använda dialogrutan [Konfigurera](#configure-dialog) kan innehållsredigeraren definiera åtgärden som ska aktiveras när formulär skickas, URL:en som ska hantera överföringen och om ett arbetsflöde ska aktiveras. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera de tillåtna komponenterna och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!NOTE]
 >
->Huvudkomponenterna Form Container Component har endast stöd för användning av kärnkomponenter i form av komponenter (knapp, text, dold etc.). Det går inte att använda [grundkomponenter](https://docs.adobe.com/content/help/en/experience-manager-65/authoring/siteandpage/default-components-foundation.html) i kärnkomponentens formulärbehållare (och vice versa).
+>Huvudkomponenterna Form Container Component har endast stöd för användning av kärnkomponenter i form av komponenter (knapp, text, dold etc.). Det går inte att använda [grundkomponenter](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) i kärnkomponentens formulärbehållare (och vice versa).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -119,7 +119,7 @@ Oavsett vilken åtgärdstyp du väljer kan du alltid definiera en tacksida.
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 ### Fliken Format {#styles-tab}
 

@@ -3,10 +3,10 @@ title: Bädda in komponent
 description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM innehållssida.
 role: Architect, Developer, Admin, User
 exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '1341'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -111,7 +111,7 @@ Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att und
 
 Reglerna är dock mer komplicerade eftersom inbäddningskomponenten följer AEM globala filterregeluppsättningen för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
-Ytterligare säkerhetsinformation finns i [AEM för lokala installationer](https://docs.adobe.com/content/help/en/experience-manager-65/developing/introduction/security.html) och [AEM som en Cloud Service installationer.](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/security/home.html)
+Ytterligare säkerhetsinformation finns i [AEM för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) och [AEM som en Cloud Service installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
 
 >[!NOTE]
 >Trots att reglerna för antiSamys sanitets ramverk kan konfigureras genom att åsidosätta `/libs/cq/xssprotection/config.xml`, påverkar dessa ändringar alla HTML- och JSP-beteenden och inte bara Bädda in kärnkomponent.

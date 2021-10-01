@@ -3,9 +3,9 @@ title: Lokaliseringsfunktioner för kärnkomponenterna
 description: Lokaliseringsfunktioner för kärnkomponenterna
 role: Architect, Developer, Admin, User
 exl-id: 9140b65a-6dd7-4ec9-9095-6e8243ec8424
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
 workflow-type: tm+mt
-source-wordcount: '725'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ De flesta webbplatser kräver att det finns en sidfot på alla sidor. Dessa sidf
 
 På samma sätt måste en navigeringskomponent vanligtvis visas på alla sidor. Det måste dock även återspegla innehållet på de lokaliserade sidorna.
 
-Det här blir en enkel uppgift med lokaliseringsfunktionerna i [kärnkomponenten för navigering](/help/components/navigation.md) och [kärnkomponenten för upplevelsefragment](/help/components/experience-fragment.md) tillsammans med de redigerbara mallarna för [AEM](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html). Exemplet kan utökas ytterligare för att även använda [språknavigeringskomponenten](/help/components/language-navigation.md).
+Det här blir en enkel uppgift med lokaliseringsfunktionerna i [kärnkomponenten för navigering](/help/components/navigation.md) och [kärnkomponenten för upplevelsefragment](/help/components/experience-fragment.md) tillsammans med de redigerbara mallarna för [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html). Exemplet kan utökas ytterligare för att även använda [språknavigeringskomponenten](/help/components/language-navigation.md).
 
 ## Innehållsstrukturen {#content-structure}
 

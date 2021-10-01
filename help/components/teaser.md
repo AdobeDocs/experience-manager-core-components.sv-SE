@@ -3,9 +3,9 @@ title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF och eventuellt länka till ytterligare innehåll.
 role: Architect, Developer, Admin, User
 exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '771'
 ht-degree: 1%
 
 ---
@@ -49,9 +49,9 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 ![Fliken Redigera i dialogrutan Teaser Component](/help/assets/teaser-edit-image.png)
 
 * **Bildresurs**
-   * Släpp en resurs från [resursläsaren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Rensa** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** för att [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 >[!NOTE]
 >

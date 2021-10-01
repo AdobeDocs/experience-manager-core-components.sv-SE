@@ -3,10 +3,10 @@ title: Introduktion till kärnkomponenter
 description: 'Core Components ger robusta och utbyggbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 19a7057d0a37d8222dcb2441bba1e479d786fb10
+source-git-commit: 04adfb00ca5908714e611f8b5de6cd2b6d127a37
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 3%
+source-wordcount: '917'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 * **[Core Components GitHub Repository:](https://github.com/adobe/aem-core-wcm-components)** För utvecklarinformation om varje komponent och nedladdning av projekt.
 * Kom igång:
    * **[Lyckades med kärnkomponenterna:](/help/developing/success.md)** Riktlinjer som ska övervägas långt före starten av projekt som ska använda kärnkomponenterna.
-   * **[WKND-självstudiekurs:](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** En tvådagars självstudiekurs för att skapa en ny webbplats.
+   * **[WKND-självstudiekurs:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** En tvådagars självstudiekurs för att skapa en ny webbplats.
    * **[Självstudiekurs vid Summit:](https://expleague.azureedge.net/labs/L767/index.html)** En självstudiekurs på två timmar för att skapa en ny webbplats (från en labblista på US Summit 2019).
    * **[Gems Webinar:](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)** En guidad genomgång av Core Components (inspelad i december 2018).
 
@@ -32,16 +32,16 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 |  |  |
 |---|---|
 | Produktionsklart | Core Components är 28 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
-| Molnklar | Vare sig de är på [AEM som en Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats fungerar de bara. |
+| Molnklar | Vare sig de är på [AEM som en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats fungerar de bara. |
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
-| Konfigurerbar | [innehållsprinciper](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) på mallnivå definierar vilka funktioner sidförfattarna får använda eller inte. |
+| Konfigurerbar | [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) på mallnivå definierar vilka funktioner sidförfattarna får använda eller inte. |
 | Spårbar | Integreringen [Adobe Client Data Layer ger dig möjlighet att spåra alla aspekter av besökarupplevelsen.](/help/developing/data-layer/overview.md) |
 | Tillgänglig | De uppfyller [WCAG 2.1-standarden](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöd för tangentbordsnavigering ([kända fel](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-vänlig | HTML-utdata är semantiska och innehåller [schema.org](https://schema.org) mikrodataanteckningar. |
-| WebApp-Ready | Med [strömlinjeformade JSON-utdata](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) kan klientsidan renderas, fortfarande med möjligheten [kontextredigering](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
+| WebApp-Ready | Med [strömlinjeformade JSON-utdata](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) kan klientsidan renderas, fortfarande med möjligheten [kontextredigering](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
 | Stöd för AMP | Komponenterna har inbyggt [stöd för AMP-standarden,](/help/developing/amp.md) som snabbar upp mobilupplevelserna. |
 | Design Kit | Med ett [gränssnittspaket för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) kan designers skapa trådramar som de sedan kan [formatera efter behov](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
-| Temaperbar | Komponenterna implementerar [Style System](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/implementing/components-templates/style-system.html) och koden följer [BEM CSS-konventioner](http://getbem.com/). |
+| Temaperbar | Komponenterna implementerar [Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/style-system.html) och koden följer [BEM CSS-konventioner](http://getbem.com/). |
 | Anpassningsbar | Flera mönster gör det möjligt att [enkelt anpassa](developing/customizing.md), från att justera HTML till avancerad återanvändning av funktioner. |
 | Versionshantering | Med versionsprincipen [Versionshantering](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställs att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |
@@ -94,7 +94,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 >[!NOTE]
 >
->Core Components är inte omedelbart tillgängliga för författare, [utvecklingsteamet måste först integrera dem i din miljö](get-started/using.md). När de är integrerade kan de göras tillgängliga och förkonfigurerade via [mallredigeraren](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/features/templates.html).
+>Core Components är inte omedelbart tillgängliga för författare, [utvecklingsteamet måste först integrera dem i din miljö](get-started/using.md). När de är integrerade kan de göras tillgängliga och förkonfigurerade via [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!NOTE]
 >
@@ -114,9 +114,9 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 Krav från tidigare versioner av Core Component finns i [Core Components Versions](versions.md).
 
-Core-komponenterna kräver [redigerbara mallar](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) och stöder inte klassiska användargränssnitt eller statiska mallar. Om det behövs kan du titta på [AEM Moderniseringsverktyg](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) för att uppdatera projektet med dessa moderna AEM funktioner.
+Core-komponenterna kräver [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) och stöder inte klassiska användargränssnitt eller statiska mallar. Om det behövs kan du titta på [AEM Moderniseringsverktyg](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) för att uppdatera projektet med dessa moderna AEM funktioner.
 
-Om du vill konfigurera din lokala utvecklingsmiljö går du till [den här översikten för AEM som en Cloud Service-SDK](https://docs.adobe.com/content/help/en/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller det här dokumentet [för äldre versioner av AEM](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Om du vill konfigurera din lokala utvecklingsmiljö går du till [den här översikten för AEM som en Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller det här dokumentet [för äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 >[!TIP]
 >

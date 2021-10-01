@@ -3,9 +3,9 @@ title: Sökvägar till framgång med kärnkomponenterna
 description: Så här lyckas du när du implementerar ditt projekt med Core Components
 role: Architect, Developer, Admin, User
 exl-id: 1ea8cd1c-8435-4ded-82dc-5a7896c53e0c
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ Funktioner för AEM och grundkomponenterna kan vara mycket kraftfulla, men ocks�
 
 ### Innehållsfragment {#content-fragments}
 
-[Med ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html) Innehållsfragmenterkan du skapa kanalneutralt innehåll tillsammans med (eventuellt kanalspecifika) variationer. Du kan sedan använda dessa fragment och deras variationer när du redigerar innehållssidorna.
+[Med ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html) Innehållsfragmenterkan du skapa kanalneutralt innehåll tillsammans med (eventuellt kanalspecifika) variationer. Du kan sedan använda dessa fragment och deras variationer när du redigerar innehållssidorna.
 
 Tillsammans med den uppdaterade JSON-exporteraren kan strukturerade innehållsfragment även användas för att leverera AEM innehåll via Content Services till andra kanaler än AEM.
 
 ### Upplevelsefragmentmallar {#experience-fragment-templates}
 
-Om en författare vill återanvända delar (ett fragment av en upplevelse) av en sida. Utan [Experience Fragments skulle författaren behöva kopiera och klistra in det fragmentet. ](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html) Att skapa och underhålla dessa klipp-och-klistra-upplevelser är tidskrävande och leder ofta till användarfel. Upplevelsefragment eliminerar behovet av att kopiera/klistra in.
+Om en författare vill återanvända delar (ett fragment av en upplevelse) av en sida. Utan [Experience Fragments skulle författaren behöva kopiera och klistra in det fragmentet. ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html) Att skapa och underhålla dessa klipp-och-klistra-upplevelser är tidskrävande och leder ofta till användarfel. Upplevelsefragment eliminerar behovet av att kopiera/klistra in.
 
 ### Komponenten Embed {#embed-component}
 

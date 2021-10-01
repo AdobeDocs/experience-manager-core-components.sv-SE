@@ -3,10 +3,10 @@ title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
 role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '1591'
-ht-degree: 2%
+source-wordcount: '1583'
+ht-degree: 1%
 
 ---
 
@@ -93,7 +93,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | **Funktion** | **Kärnkomponent** | **Foundation Component** |
 |-----|---|---|
 | Logikimplementering | Java POJOs with [Sling Models](https://sling.apache.org/documentation/bundles/models.html) annotations | JSP-kod |
-| Markeringsdefinition | [HTML-mallssyntax](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)  (HTL) | JSP-kod |
+| Markeringsdefinition | [HTML-mallssyntax](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)  (HTL) | JSP-kod |
 | XSS-sanering | Automatiserad av HTML | Mest manuella |
 | Namnge CSS-klasser | Standardiserad namnkonvention baserad på [Blockelementsmodifierare](https://getbem.com/) (BEM)-notation (från och med version 2.0.0) | Anpassade scheman |
 | Dialogdefinition | [Korall 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Coral 2 + Classic UI |
@@ -103,7 +103,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | Leverans | [Via offentlig GitHub](https://github.com/adobe/aem-core-wcm-components) | Via QuickStart |
 | Licens | [Apache-licens](https://www.apache.org/licenses/LICENSE-2.0) | Adobe |
 | Bidrag | Via pull-begäran | Inte möjligt |
-| Tillgänglighet | Helt kompatibel med [WCAG 2.0 AA-standarden](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Endast delvis kompatibel med [WCAG 2.0 AA-standarden](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
+| Tillgänglighet | Helt kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Endast delvis kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
 
 ## Komponentlista {#component-list}
 
@@ -149,6 +149,6 @@ En översikt över den kommande Core Component-vägkartan finns i [projektets wi
 
 En fördel med versionskomponenter är att det går att separera migreringen till en ny AEM från migreringen till nya komponentversioner. Om det finns nya komponentversioner är det också möjligt att migrera varje komponent individuellt till den nya versionen.
 
-Migreringar till en ny AEM kommer inte att påverka hur kärnkomponenterna fungerar, förutsatt att deras versioner också har stöd för den nya AEM som migreras till. Anpassningar som görs i kärnkomponenterna bör inte heller påverkas, så länge de inte använder API:er som är [borttagna eller borttagna](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+Migreringar till en ny AEM kommer inte att påverka hur kärnkomponenterna fungerar, förutsatt att deras versioner också har stöd för den nya AEM som migreras till. Anpassningar som görs i kärnkomponenterna bör inte heller påverkas, så länge de inte använder API:er som är [borttagna eller borttagna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Migreringar till nya versioner av kärnkomponenterna kommer inte heller att påverka hur komponenten fungerar, men nya funktioner kan introduceras för sidförfattare, vilket kan kräva viss konfiguration av en mallredigerare om standardbeteendet inte önskas. Anpassningar kan dock behöva anpassas. Mer information finns på sidan [Anpassa kärnkomponenter](customizing.md#upgrade-compatibility-of-customizations).
