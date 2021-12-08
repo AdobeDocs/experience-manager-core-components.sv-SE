@@ -4,9 +4,9 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 2fbf593dee19f22b87a0f7e98d8a1f0c9252e7e7
+source-git-commit: acff746b66c69dd3a0f4beb7c0c4e9eb0e3e116c
 workflow-type: tm+mt
-source-wordcount: '1104'
+source-wordcount: '1148'
 ht-degree: 1%
 
 ---
@@ -22,29 +22,29 @@ AEM Project Archetype är en Maven-mall som skapar ett minimalt, metodbaserat Ad
 ## Resurser {#resources}
 
 * **Arketype Documentation (this document):** Översikt över arkitekturen och dess olika moduler.
-   * **[Använda arkitypen:](using.md)** mer information om hur du använder arkitypen och de tillgängliga modulerna
-   * **[ui.front:](uifrontend.md)** Använda modulen för framände
+   * **[Använda Archetype:](using.md)** Mer information om hur du använder arkitypen och tillgängliga moduler
+   * **[ui.front:](uifrontend.md)** Så här använder du modulen för frontendbygge
 * Följande självstudiekurser är baserade på denna arketyp:
-   * **[WKND-webbplats:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** Lär dig hur du startar en ny ny webbplats.
+   * **[WKND-plats:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** Lär dig hur du skapar en ny webbplats.
    * **[WKND Single Page App:](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html)** Lär dig hur du skapar en React- eller Angular-webbapp som är helt redigerbar i AEM.
 
 ## Funktioner {#features}
 
-* **Bästa praxis:** Bootstrap med alla de senaste rekommenderade metoderna från Adobe.
-* **Lågkod:** Redigera mallar, skapa innehåll, distribuera CSS och webbplatsen är klar att publiceras.
-* **Molnklar:** Om du vill kan du använda  [AEM som en molntjänst för ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) att publicera produkten på några dagar och förenkla skalbarhet och underhåll.
-* **Dispatcher:** Ett projekt är bara färdigt med en  [Dispatcher-](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) konfiguration som garanterar hastighet och säkerhet.
-* **Flera platser:** Om det behövs genererar arkivtypen innehållsstrukturen för en  [flerspråkig och flerregionsinstallation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/msm/overview.html).
-* **Kärnkomponenter:** Författare kan skapa nästan vilken layout som helst med vår mångsidiga  [uppsättning standardiserade komponenter](/help/introduction.md).
-* **Redigerbara mallar:** Sammanställ praktiskt taget alla  [mallar utan kod](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) och definiera vad författarna får redigera.
-* **Responsiv layout:** På mallar eller enskilda sidor  [definierar du hur elementen ska ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) omformas för definierade brytpunkter.
-* **Sidhuvud och sidfot:** Sammanställ och lokalisera dem utan kod med komponenternas [ ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)lokaliseringsfunktioner.
-* **Style System:** Undvik att skapa anpassade komponenter genom att låta författare  [använda olika ](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) format på dem.
-* **Front-End Build:** Front-end-utvecklare kan  [skapa AEM ](uifrontend.md#webpack-dev-server) sidor och  [bygga ](uifrontend.md) klientbibliotek med Webpack, TypeScript och SASS.
-* **WebApp-Ready:** För webbplatser som använder  [](uifrontend-react.md) Reactor  [Angular](uifrontend-angular.md) använder du  [SPA ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/developing.html) SDKför att bevara utvecklingen  [i appen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
-* **Handel aktiverad:** För projekt som vill integrera  [AEM ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) Handel med handelslösningar som  [](https://magento.com/) Magentousing the  [Commerce Core Components](https://github.com/adobe/aem-core-cif-components).
+* **God praxis:** Bootstrap er sajt med alla de senaste Adobe rekommenderade metoderna.
+* **Lågkod:** Redigera mallarna, skapa innehåll, distribuera CSS så är sajten klar att publiceras.
+* **Molnklart:** Använd [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) att publicera på bara några dagar och förenkla skalbarhet och underhåll.
+* **Dispatcher:** Ett projekt är bara färdigt med en [Dispatcher-konfiguration](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) som garanterar hastighet och säkerhet.
+* **Flera platser:** Vid behov genereras innehållsstrukturen för en [flerspråkig och flerregionsinstallation](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/administering/reusing-content/msm/overview.html).
+* **Kärnkomponenter:** Författare kan skapa nästan vilken layout som helst med vår mångsidiga [uppsättning standardiserade komponenter](/help/introduction.md).
+* **Redigerbara mallar:** Sammanställ praktiskt taget alla [mall utan kod](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)och definiera vad författarna får redigera.
+* **Responsiv layout:** På mallar eller enskilda sidor [definiera hur elementen flödar om](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) för definierade brytpunkter.
+* **Sidhuvud och sidfot:** Sammanställ och lokalisera dem utan kod med [komponenternas lokaliseringsfunktioner](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
+* **Formatsystem:** Undvik att bygga anpassade komponenter genom att tillåta författare att [använda olika format](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) till dem.
+* **Front-End Build:** Utvecklare kan [AEM](uifrontend.md#webpack-dev-server) och [skapa klientbibliotek](uifrontend.md) med Webpack, TypeScript och SASS.
+* **WebApp-Ready:** För webbplatser som använder [Reagera](uifrontend-react.md) eller [Angular](uifrontend-angular.md), använder du [SPA SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/developing.html) för att behålla [kontextredigering av appen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
+* **Handel aktiverad:** För projekt som vill integreras [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) med e-handelslösningar som [Magento](https://magento.com/) med [Kärnkomponenter i Commerce](https://github.com/adobe/aem-core-cif-components).
 * **Exempelkod:** Checka ut HelloWorld-komponenten och exempelmodellerna, servletarna, filtren och schemaläggaren.
-* **Öppna källa:** Bifoga  [](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) förbättringarna om något inte är som det ska!
+* **Öppen källa:** Om något inte är som det ska, [contribute](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) förbättringar!
 
 ## Användning {#usage}
 
@@ -60,10 +60,10 @@ mvn -B archetype:generate \
  -D groupId="com.mysite" \
 ```
 
-* Ersätt `XX` med det senaste [versionsnumret för arkitypen.](#requirements)
-* Ange `aemVersion=cloud` för [AEM som en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html);\
-   Ange `aemVersion=6.5.0` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokal.
-Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM som en Cloud Service.
+* Ersätt `XX` med de senaste [versionsnummer för arkivtyp.](#requirements)
+* Ange `aemVersion=cloud` for [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html);\
+   Ange `aemVersion=6.5.0` for [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt.
+Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM as a Cloud Service.
 * Justera `appTitle="My Site"` för att definiera webbplatsens titel och komponentgrupper.
 * Justera `appId="mysite"` för att definiera Maven artifactId, komponentens, konfigurations- och innehållsmappens namn samt klientbibliotekens namn.
 * Justera `groupId="com.mysite"` för att definiera Maven groupId och Java Source Package.
@@ -79,40 +79,42 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `groupId` |  | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). |
 | `package` | *`${groupId}`* | Källpaket för Java (t.ex. `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Projektversion (t.ex. `1.0-SNAPSHOT`). |
-| `aemVersion` | `cloud` | AEM (kan vara `cloud` för [AEM som en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` för [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller lokalt). |
-| `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html)-version kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
-| `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokalt, beroende på värdet `aemVersion` (kan vara `y` eller `n`). |
-| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan vara `general` eller `none` för vanliga webbplatser). kan vara `angular` eller `react` för ett Single Page-program som implementerar [SPA Editor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
+| `aemVersion` | `cloud` | AEM (kan `cloud` for [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` for [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats). |
+| `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
+| `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokal, beroende på värdet för `aemVersion` (kan `y` eller `n`). |
+| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan `general` eller `none` för vanliga webbplatser, kan `angular` eller `react` för en Single Page-app som implementerar [SPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
 | `language` | `en` | Språkkod (ISO 639-1) för att skapa innehållsstrukturen från (t.ex. `en`, `deu`). |
 | `country` | `us` | Landskod (ISO 3166-1) för att skapa innehållsstrukturen från (t.ex. `US`). |
-| `singleCountry` | `y` | Innehåller en innehållsstruktur på överordnad (kan vara `y` eller `n`). |
-| `includeExamples` | `n` | Innehåller en [exempelplats för komponentbibliotek](https://www.aemcomponents.dev/) (kan vara `y` eller `n`). |
-| `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som kommer att vara global för hela instansen (kan vara `y` eller `n`). |
-| `includeCommerce` | `n` | Inkluderar [CIF Core Components](https://github.com/adobe/aem-core-cif-components)-beroenden och genererar motsvarande artefakter. |
+| `singleCountry` | `y` | Innehåller en struktur för överordnad innehåll (kan vara `y`, eller `n`). |
+| `includeExamples` | `n` | Innehåller en [Komponentbibliotek](https://www.aemcomponents.dev/) exempelwebbplats (kan `y`, eller `n`). |
+| `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som är global till hela instansen (kan `y` eller `n`). |
+| `includeCommerce` | `n` | Inkluderar [CIF-kärnkomponenter](https://github.com/adobe/aem-core-cif-components) beroenden och genererar motsvarande artefakter. |
 | `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för handelssystemet GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
-| `datalayer` | `y` | Aktivera integrering med [Adobe Client Data Layer](/help/developing/data-layer/overview.md). |
-| `amp` | `n` | Aktivera stöd för [AMP](/help/developing/amp.md) för genererade projektmallar. |
+| `datalayer` | `y` | Aktivera integrering med [Adobe-klientdatalager](/help/developing/data-layer/overview.md). |
+| `amp` | `n` | Aktivera [AMP](/help/developing/amp.md) stöd för genererade projektmallar. |
 | `enableDynamicMedia` | `n` | Aktiverar basen för DynamicMedia-komponenter i projektpolicyinställningar och aktiverar Dynamic Media-funktioner i huvudbildkomponentens policy. |
 | `enableSSR` | `n` | Möjlighet att aktivera SSR för front-end-projektet |
-| `precompiledScripts` | `n` | Alternativ för att [förkompilera](/help/developing/archetype/precompiled-bundled-scripts.md) serverskript från `ui.apps` och bifoga dem till bygget som en sekundär paketartefakt i `ui.apps`-projektet. `aemVersion` ska anges till  `cloud`. |
+| `precompiledScripts` | `n` | Alternativ till [förkompilera](/help/developing/archetype/precompiled-bundled-scripts.md) serverskript från `ui.apps` och bifoga dem till bygget som en sekundär paketartefakt i `ui.apps` projekt. `aemVersion` ska anges till `cloud`. |
+| `includeFormscommunications` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Communications-program. |
+| `includeFormsenrollment` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Enrollment-program. |
 
 ## Systemkrav {#requirements}
 
 | Arketyp | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [30](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-30) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [32](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-32) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
-Konfigurera den lokala utvecklingsmiljön för [AEM som Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Konfigurera den lokala utvecklingsmiljön för [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 ### Kända fel {#known-issues}
 
 När du kör i Windows och genererar dispatcherkonfigurationen bör du köra i en förhöjd kommandotolk eller i Windows-undersystemet för Linux (se [#329](https://github.com/adobe/aem-project-archetype/issues/329)).
 
-När arketypen körs i interaktivt läge (utan parametern `-B`) kan egenskaperna med standardvärden inte ändras, såvida inte den slutliga bekräftelsen stängs, vilket sedan upprepar frågorna genom att egenskaperna med standardvärden inkluderas i frågorna (se
+När arketypen körs i interaktivt läge (utan `-B` parameter) kan egenskaperna med standardvärden inte ändras, såvida inte den slutliga bekräftelsen avvisas, som sedan upprepar frågorna genom att inkludera egenskaperna med standardvärden i frågorna (se
 [ARCHETYPE-308](https://issues.apache.org/jira/browse/ARCHETYPE-308) för mer information).
 
-Du kan inte använda den här typen av arkivering i Eclipse när du startar ett nytt projekt med `File -> New -> Maven Project` eftersom eftergenereringsskriptet `archetype-post-generate.groovy` inte kommer att köras på grund av ett [Eclipse-problem.](https://bugs.eclipse.org/bugs/show_bug.cgi?id=514993) Du kan lösa problemet genom att använda ovanstående kommandorad och sedan använda den i Eclipse  `File -> Import -> Existing Maven Project`.
+Du kan inte använda den här arkitypen i Eclipse när du startar ett nytt projekt med `File -> New -> Maven Project` sedan genereringsskriptet `archetype-post-generate.groovy` kommer inte att köras på grund av [Eclipse-problem.](https://bugs.eclipse.org/bugs/show_bug.cgi?id=514993) Du kan komma runt problemet genom att använda ovanstående kommandorad och sedan använda den i Eclipse `File -> Import -> Existing Maven Project`.
 
 ## Ytterligare läsning {#further-reading}
 
-Mer information om hur du använder arkitypen, inklusive dess fördelar, alternativ och hur dess moduler fungerar, finns i [Använda dokumentet för arkitypen.](using.md).
+Mer information om hur du använder arkitypen, inklusive dess fördelar, alternativ och hur dess moduler fungerar, finns i [Använda Arketype-dokumentet.](using.md)
