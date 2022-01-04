@@ -3,7 +3,7 @@ title: Introduktion till kärnkomponenter
 description: 'Core Components ger robusta och utbyggbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 35d29c28672f53812de4a348c9f75f6766b2a7e7
+source-git-commit: ef18f65be72295f7886a132a26bdd4f8bc2fbd50
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 2%
@@ -20,32 +20,32 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 
 * **[Komponentbibliotek:](https://www.adobe.com/go/aem_cmp_library)** En samling exempel som visar komponenterna i deras olika konfigurationer.
 * **Komponentdokumentation (det här dokumentet):** För utvecklare och författare, med information om varje komponent.
-* **[Core Components GitHub Repository:](https://github.com/adobe/aem-core-wcm-components)** För utvecklarinformation om varje komponent och nedladdning av projekt.
+* **[Core Components GitHub Repository:](https://github.com/adobe/aem-core-wcm-components)** Om du vill ha information om varje komponent och nedladdning av projekt får du information om utvecklare.
 * Kom igång:
-   * **[Lyckades med kärnkomponenterna:](/help/developing/success.md)** Riktlinjer som ska övervägas långt före starten av projekt som ska använda kärnkomponenterna.
-   * **[WKND-självstudiekurs:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** En tvådagars självstudiekurs för att skapa en ny webbplats.
-   * **[Självstudiekurs vid Summit:](https://expleague.azureedge.net/labs/L767/index.html)** En självstudiekurs på två timmar för att skapa en ny webbplats (från en labblista på US Summit 2019).
-   * **[Gems Webinar:](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)** En guidad genomgång av Core Components (inspelad i december 2018).
+   * **[Lyckades med kärnkomponenterna:](/help/developing/success.md)** Riktlinjer som ska övervägas långt före början av projekt som ska använda kärnkomponenterna.
+   * **[WKND - självstudiekurs:](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)** En tvådagars självstudiekurs för att skapa en ny webbplats.
+   * **[Självstudiekurs:](https://expleague.azureedge.net/labs/L767/index.html)** En tvåtimmars självstudiekurs för att skapa en ny webbplats (från en labbutekurs på US Summit 2019).
+   * **[Gems Webinar:](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/AEM-Core-Components.html)** En guidad demo av kärnkomponenterna (inspelad i december 2018).
 
 ## Funktioner {#features}
 
 |  |  |
 |---|---|
 | Produktionsklart | Core Components är 28 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
-| Molnklar | Vare sig de är på [AEM som en Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats fungerar de bara. |
+| Molnklar | Om [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt fungerar de bara. |
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
-| Konfigurerbar | [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) på mallnivå definierar vilka funktioner sidförfattarna får använda eller inte. |
-| Spårbar | Integreringen [Adobe Client Data Layer ger dig möjlighet att spåra alla aspekter av besökarupplevelsen.](/help/developing/data-layer/overview.md) |
-| Tillgänglig | De uppfyller [WCAG 2.1-standarden](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöd för tangentbordsnavigering ([kända fel](https://github.com/adobe/aem-core-wcm-components/issues?utf8= ✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
-| SEO-vänlig | HTML-utdata är semantiska och innehåller [schema.org](https://schema.org) mikrodataanteckningar. |
-| WebApp-Ready | Med [strömlinjeformade JSON-utdata](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) kan klientsidan renderas, fortfarande med möjligheten [kontextredigering](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
-| Stöd för AMP | Komponenterna har inbyggt [stöd för AMP-standarden,](/help/developing/amp.md) som snabbar upp mobilupplevelserna. |
-| Design Kit | Med ett [gränssnittspaket för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) kan designers skapa trådramar som de sedan kan [formatera efter behov](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
-| Temaperbar | Komponenterna implementerar [Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/style-system.html) och koden följer [BEM CSS-konventioner](http://getbem.com/). |
-| Anpassningsbar | Flera mönster gör det möjligt att [enkelt anpassa](developing/customizing.md), från att justera HTML till avancerad återanvändning av funktioner. |
-| Versionshantering | Med versionsprincipen [Versionshantering](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställs att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
+| Konfigurerbar | Mallnivå [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) Ange vilka funktioner som sidförfattarna får använda eller inte får använda. |
+| Spårbar | The [Integrering av Adobe Client Data Layer](/help/developing/data-layer/overview.md) gör det möjligt att spåra alla aspekter av besökarupplevelsen. |
+| Tillgänglig | De följer [WCAG 2.1-standard](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöd för tangentbordsnavigering ([kända problem](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
+| SEO-vänlig | Utdata från HTML är semantiska och ger [schema.org](https://schema.org) mikrodataanteckningar. |
+| WebApp-Ready | The [strömlinjeformade JSON-utdata](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) tillåter rendering på klientsidan, fortfarande med möjlighet att [kontextredigering](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
+| Stöd för AMP | Komponenterna har inbyggda [stöd för AMP-standarden,](/help/developing/amp.md) för mobilupplevelser. |
+| Design Kit | A [UI-kit för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) ger designers möjlighet att skapa trådramar som de sedan kan [format efter behov](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
+| Temaperbar | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/style-system.html)och koden följer [BEM CSS-konventioner](http://getbem.com/). |
+| Anpassningsbar | Flera mönster tillåts [enkel anpassning](developing/customizing.md), från justering av HTML till avancerad funktionalitet, återanvändning. |
+| Versionshantering | The [versionsprincip](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |
-| Öppna källkod | Om något inte är som det ska, [bidra med dina förbättringar!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
+| Öppna källkod | Om något inte är som det ska, [bidra till förbättringar!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
 
 ## Komponenterna {#the-components}
 
@@ -94,32 +94,32 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 >[!NOTE]
 >
->Core Components är inte omedelbart tillgängliga för författare, [utvecklingsteamet måste först integrera dem i din miljö](get-started/using.md). När de är integrerade kan de göras tillgängliga och förkonfigurerade via [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+>Kärnkomponenter är inte omedelbart tillgängliga för författare, [Utvecklingsteamet måste först integrera dem i din miljö](get-started/using.md). När de är integrerade kan de göras tillgängliga och förkonfigurerade via [mallredigerare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 >[!NOTE]
 >
 >Vissa versioner av enskilda kärnkomponenter kanske bara är kompatibla med vissa versioner av AEM.
 >
->Mer information finns på den enskilda hjälpsidan (som länkats till i föregående lista) för den specifika komponenten för kompatibilitetsinformation eller i [Core Components Versions](versions.md)-dokumentet.
+>Se den enskilda hjälpsidan (som är länkad till i föregående lista) för den specifika komponenten för kompatibilitetsinformation eller för att referera till [Huvudkomponentversioner](versions.md) för mer information.
 
 ## Systemkrav {#system-requirements}
 
 | Kärnkomponenter | AEM as a Cloud Service | AEM 6.5 | AEM 6.4 | Java SE | Maven |
 |---------|---------|---------|---------|---------|---------|
-| [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Kontinuerlig | 6.5.6.0+ * | 6.4.8.4+ * | 8, 11 | 3.3.9+ |
+| [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.14) | Kontinuerlig | 6.5.6.0+ * | 6.4.8.4+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
->(*) Sedan version 2.11.0 krävs `org.apache.sling.models.impl` version 1.4.12 eller senare (på grund av [SLING-8781](https://issues.apache.org/jira/browse/SLING-8781)). Detta kommer att anges för AEM 6.4 och 6.5 i ett framtida Service Pack. Fram till dess ingår Sling Models-paketet i `core.wcm.components.all`-paketet.
+>(*) Sedan version 2.11.0, `org.apache.sling.models.impl` version 1.4.12 eller senare krävs (på grund av [SLING-8781](https://issues.apache.org/jira/browse/SLING-8781)). Detta kommer att anges för AEM 6.4 och 6.5 i ett framtida Service Pack. Fram till dess ingår Sling Models-paketet i `core.wcm.components.all` paket.
 
-Krav från tidigare versioner av Core Component finns i [Core Components Versions](versions.md).
+Krav från tidigare versioner av Core Component finns i [Huvudkomponentversioner](versions.md).
 
-Core-komponenterna kräver [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) och stöder inte klassiska användargränssnitt eller statiska mallar. Om det behövs kan du titta på [AEM Moderniseringsverktyg](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) för att uppdatera projektet med dessa moderna AEM funktioner.
+Kärnkomponenterna kräver användning av [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html) och har inte stöd för klassiska användargränssnitt eller statiska mallar. Om det behövs kan du kolla in [AEM](https://opensource.adobe.com/aem-modernize-tools/pages/tools.html) för att uppdatera projektet med dessa moderna AEM.
 
-Om du vill konfigurera din lokala utvecklingsmiljö går du till [den här översikten för AEM som en Cloud Service-SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller det här dokumentet [för äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
+Om du vill konfigurera din lokala utvecklingsmiljö går du till [den här översikten för AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller det här dokumentet [för äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
 >[!TIP]
 >
->Core Components är automatiskt en del av AEM som en Cloud Service och du har alltid den senaste versionen av Core Components.
+>Core Components är automatiskt en del av AEM as a Cloud Service och du har alltid den senaste versionen av Core Components.
 >
->Se dokumentet [Använda kärnkomponenter](/help/get-started/using.md) för mer information om hur du kommer igång med kärnkomponenterna både i AEMaaCS och lokalt.
+>Se [Använda kärnkomponenter](/help/get-started/using.md) om du vill ha mer information om hur du kommer igång med kärnkomponenterna både i AEMaaCS och lokalt.
