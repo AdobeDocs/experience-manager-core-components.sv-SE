@@ -4,9 +4,9 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 feature-set: Experience Manager Sites
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+source-git-commit: 4f5ab401aee70b979217738dce4f1a72de940ae9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '242'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 + [Introduktion till kärnkomponenter](introduction.md)
 + [Sökvägar till lyckade](developing/success.md)
 + [Komponentbibliotek](https://adobe.com/go/aem_cmp_library)
-+ [Huvudkomponentversioner](versions.md)
++ [Versioner](versions.md)
 + Kom igång {#get-started}
    + [Skapa med kärnkomponenter](get-started/authoring.md)
    + [Använda kärnkomponenter](get-started/using.md)
