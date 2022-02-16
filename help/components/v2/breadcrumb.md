@@ -1,16 +1,16 @@
 ---
-title: Breadcrumb-komponent
+title: Breadcrumb-komponent (v2)
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 role: Architect, Developer, Admin, User
-exl-id: 19d65b9d-a407-4f50-9c55-8de0f12222ed
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 1%
+source-wordcount: '680'
+ht-degree: 0%
 
 ---
 
-# Breadcrumb-komponent{#breadcrumb-component}
+
+# Breadcrumb-komponent (v2) {#breadcrumb-component}
 
 Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 
@@ -22,17 +22,13 @@ Tillgängliga alternativ, t.ex. standardnavigeringsnivån och möjligheten att v
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Breadcrumb Component är v3, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v2 av Breadcrumb Component, som introducerades i version 2.0.0 av Core Components i januari 2018.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- | --- |--- |---|
-| v3 | - | Kompatibel | Kompatibel |
-| [v2](v2/breadcrumb.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | - |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>I det här dokumentet beskrivs v2 för Breadcrumb-komponenten.
+>
+>Information om den aktuella versionen av Breadcrumb-komponenten finns i [Breadcrumb-komponent](/help/components/breadcrumb.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -52,8 +48,6 @@ Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för
 
 I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva sidor i vägbeskrivningar samt djupet i den hierarki som ska visas.
 
-## Fliken Egenskaper {#properties-tab}
-
 ![Dialogruta för redigering av komponenten Breadcrumb](/help/assets/breadcrumb-edit.png)
 
 * **Startnivå för navigering** - Där i hierarkin den synliga komponenten ska börja gå ned till den aktuella sidan. Till exempel:
@@ -64,21 +58,11 @@ I redigeringsdialogrutan kan innehållsförfattaren utelämna dolda och aktiva s
 
 * **Visa dolda navigeringsobjekt** - Visa sidor som markerats som dolda i sidutrymmet (som standard visas de inte)
 * **Dölj aktuell sida** - Utelämna den aktuella sidan i sidutrymmet (som standard visas den)
-* **Inaktivera skuggning** - Om sidan i hierarkin är en omdirigering visas namnet på omdirigeringssidan i stället för målet. Se [Stöd för Shadow Site Structure](navigation.md#shadow-structure) i navigeringskomponenten för mer information.
+* **Inaktivera skuggning** - Om sidan i hierarkin är en omdirigering visas namnet på omdirigeringssidan i stället för målet. Se [Stöd för Shadow Site Structure](../v1/navigation.md#shadow-structure) i navigeringskomponenten för mer information.
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
-
-### Fliken Format {#styles-tab-edit}
-
-![Fliken Format i redigeringsdialogrutan för komponenten Breadcrumb List](/help/assets/breadcrumb-edit-styles.png)
-
-Breadcrumb-komponenten stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
 
 ## Designdialogruta {#design-dialog}
 

@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: ef18f65be72295f7886a132a26bdd4f8bc2fbd50
+source-git-commit: 06fc67134b312d2fa0311dc9f2250c82b8eee3f6
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 11%
+source-wordcount: '2389'
+ht-degree: 12%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.17.14 och är kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
+Den aktuella versionen av Core Components är 2.18.0 och är kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,8 +26,9 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.18.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.0) | I den här större releasen av huvudkomponenterna introduceras en ny länkhanterare för nya versioner av flera komponenter tillsammans med många tillgänglighetsförbättringar och felkorrigeringar. | - | 6.5.10.0+ * | Kontinuerlig | 8, 11 | 24 februari 2022 |
 | [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Det här är en patch-release. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 13 december 2021 |
-| [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Det här är en korrigeringsrelease som åtgärdar en regression som introducerades i den tidigare versionen. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 1 oktober 2021 |
+| [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Det här är en korrigeringsversion som korrigerar en regression som introducerades i den tidigare versionen. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 1 oktober 2021 |
 | [2.17.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.10) | Den här korrigeringen förbättrar [Lista](/help/components/list.md) och [Navigering](/help/components/navigation.md) -komponenter för att visa den externa URL:en för omdirigeringsmål, aktiverar arv av sidbilder för kommande v2 i [Teaser](/help/components/teaser.md) och innehåller ytterligare felkorrigeringar. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 31 augusti 2021 |
 | [2.17.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.8) | Den här korrigeringsversionen Det här är en korrigeringsversion som åtgärdar en inkompatibel ändring bakåt som introducerades tidigare. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 2 augusti 2021 |
 | [2.17.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.6) | Den här korrigeringsversionen har stöd för webbplatskartor för sidor och innehåller olika tillgänglighetsförbättringar. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 29 juli 2021 |
@@ -79,42 +80,42 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 Tabellen nedan visar vilka versioner av vilka komponenter som ingår i vilka versioner av kärnkomponenterna släpps.
 
-|  | Version 1.0.0 - 1.0.6 | Version 1.1.0 | Version 2.0.0 - 2.0.8 | Version 2.1.0 | Version 2.2.0-2.2.0 | Version 2.3.0-2.3.2 | Version 2.4.0 | Version 2.5.0 | Version 2.6.0 | Version 2.7.0-2.8.0 | Version 2.9.0+ |
-|---|---|---|---|---|---|---|---|---|---|---|---|
-| **[Sida](components/page.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Titel](components/title.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Bild](components/image.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Lista](components/list.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Breadcrumb](components/breadcrumb.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Delning av sociala medier](components/sharing.md)** | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Formulärbehållare](components/forms/form-container.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Formulärtext](components/forms/form-text.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Formuläralternativ](components/forms/form-options.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Dolt formulär](components/forms/form-hidden.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Formulärknapp](components/forms/form-button.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
-| **[Innehållsfragment](components/content-fragment-component.md)** |  | Sandbox | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1, v2 | v1, v2 |
-| **[Navigering](components/navigation.md)** |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Språknavigering](components/language-navigation.md)** |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Snabbsökning](components/quick-search.md)** |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Teaser](components/teaser.md)** |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Tabbar](components/tabs.md)** |  |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Carousel](components/carousel.md)** |  |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Avgränsare](components/separator.md)** |  |  |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 |
-| **[Innehållsfragmentlista](components/content-fragment-list.md)** |  |  |  |  |  |  | v1 | v1 | v1 | v1 | v1 |
-| **[Dragspel](components/accordion.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 |
-| **[Knapp](components/button.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 |
-| **[Behållare](components/container.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 |
-| **[Hämta](components/download.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 |
-| **[Experience Fragment](components/experience-fragment.md)** |  |  |  |  |  |  |  |  | v1 | v1 | v1 |
-| **[Bädda in](components/embed.md)** |  |  |  |  |  |  |  |  |  | v1 | v1 |
-| **[Förloppsindikator](components/progress-bar.md)** |  |  |  |  |  |  |  |  |  |  | v1 |
-| **[PDF Viewer](components/pdf-viewer.md)** |  |  |  |  |  |  |  |  |  |  | v1 |
+|  | Version 1.0.0 - 1.0.6 | Version 1.1.0 | Version 2.0.0 - 2.0.8 | Version 2.1.0 | Version 2.2.0-2.2.0 | Version 2.3.0-2.3.2 | Version 2.4.0 | Version 2.5.0 | Version 2.6.0 | Version 2.7.0-2.8.0 | Version 2.9.0-2.17.14 | Version 2.18.0+ |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| **[Sida](components/page.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2, v3 |
+| **[Titel](components/title.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2, v3 |
+| **[Bild](components/image.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2, v3 |
+| **[Lista](components/list.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2, v3 |
+| **[Breadcrumb](components/breadcrumb.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2, v3 |
+| **[Delning av sociala medier](components/sharing.md)** | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
+| **[Formulärbehållare](components/forms/form-container.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
+| **[Formulärtext](components/forms/form-text.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
+| **[Formuläralternativ](components/forms/form-options.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
+| **[Dolt formulär](components/forms/form-hidden.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
+| **[Formulärknapp](components/forms/form-button.md)** | v1 | v1 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 | v1, v2 |
+| **[Innehållsfragment](components/content-fragment-component.md)** |  | Sandbox | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1, v2 | v1, v2 | v1, v2 |
+| **[Navigering](components/navigation.md)** |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1, v2 |
+| **[Språknavigering](components/language-navigation.md)** |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1, v2 |
+| **[Snabbsökning](components/quick-search.md)** |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
+| **[Teaser](components/teaser.md)** |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1, v2 |
+| **[Tabbar](components/tabs.md)** |  |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
+| **[Carousel](components/carousel.md)** |  |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
+| **[Avgränsare](components/separator.md)** |  |  |  |  |  | v1 | v1 | v1 | v1 | v1 | v1 | v1 |
+| **[Innehållsfragmentlista](components/content-fragment-list.md)** |  |  |  |  |  |  | v1 | v1 | v1 | v1 | v1 | v1, v2 |
+| **[Dragspel](components/accordion.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 | v1 |
+| **[Knapp](components/button.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 | v1, v2 |
+| **[Behållare](components/container.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 | v1 |
+| **[Hämta](components/download.md)** |  |  |  |  |  |  |  | v1 | v1 | v1 | v1 | v1, v2 |
+| **[Experience Fragment](components/experience-fragment.md)** |  |  |  |  |  |  |  |  | v1 | v1 | v1 | v1, v2 |
+| **[Bädda in](components/embed.md)** |  |  |  |  |  |  |  |  |  | v1 | v1 | v1, v2 |
+| **[Förloppsindikator](components/progress-bar.md)** |  |  |  |  |  |  |  |  |  |  | v1 | v1 |
+| **[PDF Viewer](components/pdf-viewer.md)** |  |  |  |  |  |  |  |  |  |  | v1 | v1 |
 
 ## Versioner och releaser {#versions-and-releases}
 
 Kärnkomponenter distribueras via GitHub. Detta gör att Adobe snabbare kan lägga till funktioner i komponenterna och även göra det möjligt för communityanvändare utanför AEM.
 
-Core-komponenterna är tillgängliga med definierade AEM som de är kompatibla med. Detta innebär att en AEM kan ha stöd för flera versioner eller versioner av de centrala komponenterna. Detta ger större flexibilitet än tidigare Foundation Components, som var knutna till en viss version av AEM.
+Core-komponenterna är tillgängliga med definierade AEM som de är kompatibla med. Detta innebär att en AEM kan ha stöd för flera versioner eller versioner av de centrala komponenterna.
 
 ### Versioner {#versions}
 
@@ -126,11 +127,11 @@ Mer information om grundkomponentversionerna finns i [utvecklardokumentation fö
 
 ### Utgåvor {#releases}
 
-Kärnkomponenterna görs tillgängliga via **releaser** och [representerar de faktiska publicerade artefakterna som finns på GitHub](https://github.com/adobe/aem-core-wcm-components/releases). Releaser anges med ett decimaltal i formatet X.Y.Z och samlar ihop alla kärnkomponenter som ett slutproduktspaket.
+Kärnkomponenterna görs tillgängliga via **releaser** och [representerar de faktiska publicerade artefakterna som finns på GitHub](https://github.com/adobe/aem-core-wcm-components/releases). Releaser anges med ett decimaltal i formatet `X.Y.Z` och samla ihop alla kärnkomponenter i ett och samma paket.
 
-* **Större releaser** kan innehålla nya versioner av befintliga komponenter tillsammans med helt nya komponenter samt standardfelkorrigeringar. Detta representeras av en ökning i X-komponenten i versionsnumret.
-* **Viktiga releaser** kan ge nya funktioner till befintliga versioner av komponenter samt felkorrigeringar. Detta representeras av en ökning i Y-komponenten i versionsnumret.
-* **Mindre releaser** innehåller bara felkorrigeringar. Detta representeras av en ökning i Z-komponenten i versionsnumret.
+* **Större releaser** innehåller helt nya komponenter, förbättringar av befintliga versioner av komponenter samt standardfelkorrigeringar. Detta representeras av en ökning i `X` -komponenten i versionsnumret.
+* **Mindre releaser** introducerar nya komponenter, nya funktioner i befintliga versioner av komponenter samt felkorrigeringar. Detta representeras av en ökning i `Y` -komponenten i versionsnumret.
+* **Patch releases** innehåller bara felkorrigeringar. Detta representeras av en ökning i `Z` -komponenten i versionsnumret.
 
 >[!NOTE]
 >
@@ -140,7 +141,7 @@ Kärnkomponenterna görs tillgängliga via **releaser** och [representerar de fa
 
 ## Stöd för kärnkomponenter {#core-components-support}
 
-Kärnkomponenter är en integrerad del av AEM och stöds som de är, på samma villkor som om de levererades som en del av QuickStart.
+Core Components är en integrerad del av AEM och stöds enligt samma villkor som om de levererades som en del av QuickStart.
 
 I likhet med andra produktfunktioner är den allmänna regeln om produktlivslängd:
 

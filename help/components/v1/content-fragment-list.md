@@ -1,16 +1,16 @@
 ---
-title: Content Fragment List Component
+title: Content Fragment List Component (v1)
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
 role: Architect, Developer, Admin, User
-exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '725'
 ht-degree: 0%
 
 ---
 
-# Content Fragment List Component{#content-fragment-list-component}
+
+# Content Fragment List Component (v1) {#content-fragment-list-component}
 
 Med komponenten Core Component Content Fragment List kan du visa en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
@@ -23,16 +23,13 @@ Med Core Component Content Fragment List Component kan du ta med en lista med [i
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Content Fragment Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I dokumentet beskrivs v1 av Content Fragment Component, som introducerades i version 2.4.0 av Core Components i maj 2019.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|----|---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/content-fragment-list.md) | Kompatibel | Kompatibel | Kompatibel |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>Det här dokumentet beskriver v1 för List-komponenten för innehållsfragment.
+>
+>Mer information om den aktuella versionen av Content Fragment List Component finns i [Content Fragment List Component](/help/components/content-fragment-list.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -87,18 +84,6 @@ Som standard tas alla element i innehållsfragmentmodellen med i listan (om de i
    * Klicka eller tryck på **Ta bort** om du vill ta bort ett markerat element.
    * Dra **Order** om du vill ändra ordningen på elementen.
 
-### Fliken Format {#styles-tab-edit}
-
-![Fliken Format i redigeringsdialogrutan för komponenten Innehållsfragmentlista](/help/assets/content-fragment-list-styles.png)
-
-Komponenten Content Fragment List har stöd för AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
-
 ## Designdialogruta {#design-dialog}
 
-### Fliken Format {#styles-tab}
-
-Komponenten Content Fragment List har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+I designdialogrutan kan mallskaparen definiera de format som ska användas på List-komponenten för innehållsfragment.

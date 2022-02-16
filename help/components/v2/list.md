@@ -1,16 +1,16 @@
 ---
-title: List-komponent
+title: List Component (v2)
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
-exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '1151'
-ht-degree: 1%
+source-wordcount: '1022'
+ht-degree: 0%
 
 ---
 
-# List-komponent{#list-component}
+
+# List Component (v2) {#list-component}
 
 Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 
@@ -20,17 +20,13 @@ List-komponenten kan användas för att skapa t.ex. en dynamisk lista med undero
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av List Component är v3, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v1 i List Component, som introducerades i version 2.0.0 av Core Components i januari 2018.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v3 | - | Kompatibel | Kompatibel |
-| [v2](v2/list.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/list-v1.md) | Kompatibel | Kompatibel | - |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>Det här dokumentet beskriver v2 för List-komponenten.
+>
+>Mer information om den aktuella versionen av List Component finns i [List-komponent](/help/components/list.md) -dokument.
 
 ## Omdirigeringar i listor {#redirects}
 
@@ -156,20 +152,12 @@ På fliken Objektinställningar kan du konfigurera formateringen för listelemen
 
 ![Objektinställningar](/help/assets/list-edit-items.png)
 
-* **Länka objekt** - Länka objekt till motsvarande sida
-* **Visa beskrivning** - Visa beskrivningar av länkelementet
-* **Visa datum** - Visa ändringsdatum för länkobjektet
-* **Visa som teaser** - När det här alternativet är markerat visas objektet som ett suddgummi
-
-### Fliken Format {#styles-tab-edit}
-
-List-komponenten stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
-
-![Fliken Stilar i redigeringsdialogrutan för List-komponenten](/help/assets/list-edit-styles.png)
+* **Länka objekt**
+Länka objekt till motsvarande sida
+* **Visa beskrivning**
+Visa beskrivningar av länkelementet
+* **Visa datum**
+Visa ändringsdatum för länkobjektet
 
 ## Designdialogruta {#design-dialog}
 

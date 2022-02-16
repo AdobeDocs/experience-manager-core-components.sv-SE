@@ -1,16 +1,16 @@
 ---
-title: Sidkomponent
+title: Sidkomponent (v2)
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 role: Architect, Developer, Admin, User
-exl-id: 2503e067-abed-427d-8a54-8b79e3451487
-source-git-commit: dbc1ba9ae0f9caa3bc52a7a5e08899c457813003
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '715'
-ht-degree: 1%
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
-# Sidkomponent{#page-component}
+
+# Sidkomponent (v2) {#page-component}
 
 Sidkomponenten är en utökningsbar sidkomponent som är avsedd att fungera med [mallredigerare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
 
@@ -22,17 +22,13 @@ Använda [designdialogruta](#design-dialog)kan anpassade klientbibliotek definie
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Page Component är v3, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v2 av Page Component, som introducerades i version 2.0.0 av Core Components i januari 2018.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|
-| v3 | - | Kompatibel | Kompatibel |
-| [v2](v2/page.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/page-v1.md) | Kompatibel | Kompatibel | - |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>I det här dokumentet beskrivs v2 för sidkomponenten.
+>
+>Information om den aktuella versionen av sidkomponenten finns i [Sidkomponent](/help/components/page.md) -dokument.
 
 ## Progressivt stöd för webbappar {#pwa-support}
 
@@ -70,8 +66,6 @@ I fönstret Siddesign kan du definiera vilka klientbibliotek som ska läsas in s
 * **Klientbibliotek för webbresurser** - Klientbibliotekskategorin som används för webbresurser som till exempel favoritikoner.
 
 * **Gå till elementväljaren för huvudinnehåll** - Används som hjälpmedelsfunktion för att hoppa direkt till huvudinnehållet på sidan
-
-* **Återge alternativa språklänkar** - Om det här alternativet är aktiverat läggs länkar till alternativa språkversioner av sidan på samma webbplats till i sidans huvud.
 
 ![Designdialogruta för sidkomponent](/help/assets/page-design.png)
 

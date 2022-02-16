@@ -3,9 +3,9 @@ title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: d435e82d5950336c66997399829e3baf23f170c0
+source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Core Component Text Component Component Component är en textredigerings- och di
 
 Textkomponenten har en robust textredigerare som gör det enkelt att redigera text i en förenklad, textbunden redigerare och i ett helskärmsformat.
 
-I [redigeringsdialogrutan](#edit-dialog) finns det infogad redigering med begränsade alternativ och full funktionalitet i redigeringsdialogrutan i helskärmsläge. Med hjälp av [designdialogrutan](#design-dialog) kan du konfigurera textformateringsalternativ som rubriker, specialtecken och styckeformat för mallen för innehållsförfattaren.
+The [redigeringsdialogruta](#edit-dialog) funktioner för infogad redigering med begränsade alternativ med full funktionalitet i redigeringsdialogrutan i helskärmsläge. Använda [designdialogruta](#design-dialog), textformateringsalternativ som rubriker, specialtecken och styckeformat kan konfigureras för mallen för innehållsförfattaren.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -28,30 +28,30 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|
-| v2 | Kompatibel | Kompatibel | Kompatibel |
+| v2 | Kompatibel med<br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
 | [v1](v1/text-v1.md) | Kompatibel | Kompatibel | - |
 
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
+Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa textkomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_text).
+Om du vill se textkomponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek](https://adobe.com/go/aem_cmp_library_text).
 
 ### Teknisk information {#technical-details}
 
 Den senaste tekniska dokumentationen om textkomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_text_v2).
 
-Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
 ## Textkomponenten och RTF-redigeraren {#the-text-component-and-the-rich-text-editor}
 
-Komponenten Core Components Text använder AEM Rich Text Editor (RTE). RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Komponenten Core Components Text använder AEM Rich Text Editor (RTE). RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur RTE kan konfigureras finns i artiklarna [Konfigurera RTF-redigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för RTF-redigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 Resten av den här artikeln demonstrerar standardkonfigurationen för textkomponenten för kärnkomponenter med RTE-konfigurationen som är klar att användas.
 
 >[!NOTE]
 >
->Endast alternativ som är aktiverade av [gränssnittskonfigurationer för RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i textkomponenten.
+>Endast alternativ aktiverade av [Gränssnittskonfigurationer för RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i textkomponenten.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -65,7 +65,7 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
 Används för att formatera text fet eller fet formatera text som skrivs efter markören.
 
-**Ctrl+** Bcan används som kortkommando.
+**Ctrl+B** kan användas som kortkommando.
 
 ### Kursiv
 
@@ -73,7 +73,7 @@ Används för att formatera text fet eller fet formatera text som skrivs efter m
 
 Används för att tillämpa kursiv formatering på markerad text eller kursiv om text som anges efter markören.
 
-**Ctrl+** Ikan användas som kortkommando.
+**Ctrl+I** kan användas som kortkommando.
 
 ### Understrykning
 
@@ -81,7 +81,7 @@ Används för att tillämpa kursiv formatering på markerad text eller kursiv om
 
 Används för att tillämpa understruken formatering på markerad text eller understruken text som anges efter markören.
 
-**Ctrl+** UI kan användas som kortkommando.
+**Ctrl+U** kan användas som kortkommando.
 
 ### Nedsänkt
 
@@ -149,9 +149,9 @@ Använd det här alternativet om du vill söka efter förekomsten av en angiven 
 
 ![Sök exempel](/help/assets/text-find-example.png)
 
-Ange den text som du vill söka efter och tryck eller klicka på **Sök** för att påbörja sökningen. Tryck eller klicka på x för att avbryta.
-Om du vill göra en exakt matchning utifrån skiftläget, markerar du alternativet **Matcha gemener/VERSALER** innan du påbörjar sökningen.
-Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Tryck eller klicka på knappen **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst.
+Ange texten som du vill söka efter och tryck eller klicka på **Sök** för att påbörja sökningen. Tryck eller klicka på x för att avbryta.
+Om du vill göra en exakt matchning utifrån skiftläget väljer du alternativet **Matcha gemener/VERSALER** innan sökningen påbörjas.
+Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Tryck eller klicka på **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst.
 
 ![Sök efter exempel](/help/assets/text-find-example-found.png)
 
@@ -169,11 +169,11 @@ Använd det här alternativet om du vill söka efter förekomster av en angiven 
 
 Ange den text som du vill söka efter samt den text som den ska ersättas med.
 
-* Tryck eller klicka på **Sök** för att starta sökningen. Klicka eller tryck på x för att avbryta.
-* Om du vill göra en exakt matchning utifrån skiftläget, markerar du alternativet **Matcha gemener/VERSALER** innan du påbörjar sökningen.
+* Tryck eller klicka **Sök** för att påbörja sökningen. Klicka eller tryck på x för att avbryta.
+* Om du vill göra en exakt matchning utifrån skiftläget väljer du alternativet **Matcha gemener/VERSALER** innan sökningen påbörjas.
 * Välj **Ersätt alla** om du vill ersätta alla förekomster av texten samtidigt.
 
-Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Klicka på knappen **Sök** igen i den nedtonade dialogrutan om du vill söka efter nästa förekomst eller välj knappen **Ersätt** om du vill ersätta den markerade, matchade texten. Observera att knappen **Ersätt** bara är aktiv när en matchning har gjorts.
+Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Klicka på **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst eller markera **Ersätt** om du vill ersätta den markerade, matchade texten. Observera att **Ersätt** är bara aktiv när en träff har gjorts.
 
 Dialogrutan Sök och ersätt blir genomskinlig när du klickar på Sök och blir ogenomskinlig när du klickar på Ersätt. Detta gör att författaren kan granska texten som författaren ska ersätta.
 
@@ -206,7 +206,7 @@ Används för att justera texten mot högermarginalen.
 
 Används för att formatera den markerade texten som en punktlista eller börja infoga en punktlista efter markören.
 
-Om du vill avsluta en punktlista trycker eller klickar du på knappen **Bullet** igen eller anger två vagnreturer.
+Avsluta en punktlista genom att trycka eller klicka på **Punkt** igen eller ange två vagnreturer.
 
 ### Numrerad
 
@@ -214,7 +214,7 @@ Om du vill avsluta en punktlista trycker eller klickar du på knappen **Bullet**
 
 Används för att formatera den markerade texten som en numrerad lista eller börja infoga en numrerad lista efter markören.
 
-Om du vill avsluta en numrerad lista trycker eller klickar du på knappen **Numrerad** igen eller anger två vagnreturer.
+Avsluta en numrerad lista genom att trycka eller klicka på **Numrerad** igen eller ange två vagnreturer.
 
 ### Minska indrag
 
@@ -238,19 +238,19 @@ Används för att infoga en tabell i texten. Om du väljer det här alternativet
 
 ![Tabellexempel](/help/assets/text-table-example.png)
 
-* **Kolumner**  - Antal kolumner i tabellen (obligatoriskt)
-* **Rader**  - antalet rader i tabellen (obligatoriskt)
-* **Bredd**  - Tabellens bredd
-* **Höjd**  - tabellens höjd
-* **Cellutfyllnad**  - Utrymmet runt cellinnehållet
-* **Cellmellanrum**  - Avståndet mellan celler
-* **Kant**  - Tabellens kantlinjers vikt
+* **Kolumner** - Antal kolumner i tabellen (obligatoriskt)
+* **Rader** - Antal rader i tabellen (obligatoriskt)
+* **Bredd** - Tabellens bredd
+* **Höjd** - tabellens höjd
+* **Cellutfyllnad** - Utrymmet runt cellinnehållet
+* **Cellmellanrum** - Avståndet mellan celler
+* **Kant** - Bredden på tabellens kantlinjer
    * Om för tabellrubriken:
       * Den första raden ska användas
       * Den första kolumnen ska användas
       * Den första raden och den första kolumnen ska användas
       * Eller så får ingen rubrik användas.
-* **Bildtext**  - Tabellens bildtext
+* **Bildtext** - Tabellens beskrivning
 
 ### Kontrollera stavning
 
@@ -276,17 +276,17 @@ Tryck eller klicka på det önskade tecknet för att infoga det i texten efter m
 
 Används för att visa och ändra textens HTML-källa.
 
-Tryck eller klicka på ikonen **Källredigering** om du vill ändra textens innehåll från den formaterade vyn för att visa rå-HTML. I det här läget är alla andra formateringsalternativ inaktiverade. Tryck eller klicka på ikonen **Källredigering** igen för att återgå till den formaterade vyn.
+Tryck eller klicka på **Redigera källa** om du vill ändra textens innehåll från den formaterade vyn så att HTML visas i Raw-format. I det här läget är alla andra formateringsalternativ inaktiverade. Tryck eller klicka på **Redigera källa** om du vill återgå till den formaterade vyn.
 
 >[!CAUTION]
 >
->Som alltid med åtkomst till rå HTML måste du vara försiktig när du använder alternativet **Källredigering**!
+>Som alltid när det gäller tillgång till obehandlad HTML måste försiktighet iakttas när **Redigera källa** option!
 >
->HTML som anges via **Källredigering** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felformaterad HTML som angetts i **Källredigering** kan emellertid bryta sidans mall, vilket resulterar i oväntad formatering eller återgivning av den resulterande sidan som inte kan användas.
+>HTML via **Redigera källa** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. HTML med felaktigt format angavs **Redigera källa** kan bryta sidans mall vilket resulterar i oväntad formatering eller återgivning av den resulterande sidan som inte kan användas.
 
 >[!NOTE]
 >
->Eftersom HTML som anges via **Källredigering** genomsöks efter XSS-risker och eventuella skript och automatiskt tar bort dem som hittas, kan det faktiska innehållet som behålls variera från det som angavs i **Källredigering**. Om du vill spara ändringar som gjorts med **källredigering** måste du därför först avsluta **källredigering** för att visa texten i den normala redigeraren innan du sparar.
+>På grund av att HTML gick via **Redigera källa** genomsöks efter XSS-risker och eventuella skript och tar automatiskt bort dem som hittas. Det faktiska innehållet som behålls kan variera från det som angetts i **Redigera källa**. Därför bör du spara ändringar som gjorts med **Redigera källa** måste du först avsluta **Redigera källa** om du vill visa texten i den normala redigeraren innan du sparar.
 
 ### Styckeformat
 
@@ -304,7 +304,7 @@ Textkomponenten kan även redigeras textbundet, men på grund av utrymmesbegrän
 
 ### Inställning och ID {#setting-id}
 
-Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
 
 * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
@@ -329,7 +329,7 @@ Följande funktioner kan aktiveras eller inaktiveras för komponenten.
 * Sök och ersätt
 * Stavningskontroll
 * Infogade bildändringsalternativ
-* Redigera HTML-källa
+* HTML källredigering
 
 ### Formatering {#formatting}
 
@@ -350,9 +350,9 @@ Följande formateringsalternativ kan aktiveras eller inaktiveras för komponente
 
 Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alternativet är aktiverat kan du definiera vilka format som tillåts.
 
-* Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt format.
+* Tryck eller klicka på **Lägg till** om du vill infoga ett nytt format.
 * Ange koden för formatet och en beskrivning som ska visas i redigeringsdialogrutan.
-* Om du vill ta bort en formatknapp eller klickar på knappen **Ta bort**.
+* Om du vill ta bort en formatknapp eller klicka på **Ta bort** -knappen.
 * Om du vill ändra ordningen på formaten trycker du eller klickar och drar i handtagen.
 
 ### Specialtecken {#configuring-special-characters}
@@ -361,15 +361,15 @@ Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alt
 
 Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för komponenten. När du aktiverar det här alternativet kan du definiera tillåtna tecken.
 
-* Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt tecken.
-* Ange tecknets HTML-kod och en beskrivning som ska visas i redigeringsdialogrutan.
-* Om du vill ta bort ett tecken trycker du på eller klickar på knappen **Ta bort**.
+* Tryck eller klicka på **Lägg till** om du vill infoga ett nytt tecken.
+* Ange HTML-koden för tecknet och en beskrivning som ska visas i redigeringsdialogrutan.
+* Ta bort en teckenknapp eller klicka på **Ta bort** -knappen.
 * Om du vill ändra ordningen på tecknen trycker du eller klickar och drar i handtagen.
 
 ## Fliken Format {#styles-tab}
 
-Textkomponenten stöder AEM [style system](/help/get-started/authoring.md#component-styling).
+Textkomponenten har stöd för AEM [formatsystem](/help/get-started/authoring.md#component-styling).
 
 ## Adobe-klientdatalager {#data-layer}
 
-Textkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
+Komponenten Text har stöd för [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)

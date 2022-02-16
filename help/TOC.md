@@ -4,10 +4,10 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 feature-set: Experience Manager Sites
-source-git-commit: 04adfb00ca5908714e611f8b5de6cd2b6d127a37
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '244'
+ht-degree: 2%
 
 ---
 
@@ -55,9 +55,17 @@ ht-degree: 0%
       + [Formulärtext](components/forms/form-text.md)
    + v1-komponenter {#v1-components}
       + [Breadcrumb (v1)](components/v1/breadcrumb-v1.md)
+      + [Knapp (v1)](components/v1/button.md)
+      + [Innehållsfragmentlista (v1)](components/v1/content-fragment-list.md)
+      + [Ladda ned (v1)](components/v1/download.md)
+      + [Bädda in (v1)](components/v1/embed.md)
+      + [Experience Fragment (v1)](components/v1/experience-fragment.md)
       + [Bild (v1)](components/v1/image-v1.md)
+      + [Språknavigering (v1)](components/v1/language-navigation.md)
       + [Lista (v1)](components/v1/list-v1.md)
+      + [Navigering (v1)](components/v1/navigation.md)
       + [Sida (v1)](components/v1/page-v1.md)
+      + [Teaser (v1)](components/v1/teaser.md)
       + [Text (v1)](components/v1/text-v1.md)
       + [Titel (v1)](components/v1/title-v1.md)
       + v1-formulärkomponenter {#v1-forms}
@@ -66,6 +74,12 @@ ht-degree: 0%
          + [Dolt formulär (v1)](components/v1/form-hidden-v1.md)
          + [Formuläralternativ (v1)](components/v1/form-options-v1.md)
          + [Formulärtext (v1)](components/v1/form-text-v1.md)
+   + v2-komponenter {#v2-components}
+      + [Breadcrumb (v2)](components/v2/breadcrumb.md)
+      + [Bild (v2)](components/v2/image.md)
+      + [Lista (v2)](components/v2/list.md)
+      + [Sida (v2)](components/v2/page.md)
+      + [Titel (v2)](components/v2/title.md)
 + Utveckling {#developing}
    + [Utveckla kärnkomponenter](developing/overview.md)
    + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
@@ -75,7 +89,7 @@ ht-degree: 0%
    + [Stöd för AMP](developing/amp.md)
    + [Kontextmedvetna konfigurationer](developing/context-aware-configs.md)
    + [Inkluderar klientbibliotek](developing/including-clientlibs.md)
-   + Adobe-klientdatalagret {#data-layer}
+   + Adobe-klientdatalager {#data-layer}
       + [Översikt över datalagret](developing/data-layer/overview.md)
       + [Integrering med datalagret](developing/data-layer/integrations.md)
       + [Utöka datalagret](developing/data-layer/extending.md)

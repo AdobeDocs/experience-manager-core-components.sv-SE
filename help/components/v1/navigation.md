@@ -1,16 +1,16 @@
 ---
-title: Navigeringskomponent
+title: Navigeringskomponent (v1)
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 role: Architect, Developer, Admin, User
-exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
 
-# Navigeringskomponent{#navigation-component}
+
+# Navigeringskomponent (v1) {#navigation-component}
 
 Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 
@@ -24,23 +24,20 @@ The [redigeringsdialogruta](#edit-dialog) gör att innehållsförfattaren kan de
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Navigation Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v1 i Navigation Component, som introducerades i version 2.0.0 av Core Components i januari 2018.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/navigation.md) | Kompatibel | Kompatibel | Kompatibel |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>I det här dokumentet beskrivs v1 för navigeringskomponenten.
+>
+>Information om den aktuella versionen av navigeringskomponenten finns i [Navigeringskomponent](/help/components/navigation.md) -dokument.
 
 ## Lokaliserat stöd för webbplatsstruktur {#localized-site-structure}
 
 Webbplatser finns ofta på flera språk för olika regioner. Vanligtvis innehåller varje lokaliserad sida ett navigeringselement som ingår i sidmallen. Med navigeringskomponenten kan du placera den en gång i en mall för alla sidor på platsen, och den anpassas sedan automatiskt för de enskilda lokaliserade sidorna baserat på den globaliserade webbplatsstrukturen.
 
 * Ett exempel på hur lokaliseringsfunktionen för navigeringskomponenten fungerar finns i [avsnittet nedan](#example-localization).
-* Ett exempel på hur lokaliseringsfunktionerna i kärnkomponenterna fungerar tillsammans finns i [Lokaliseringsfunktioner för sidan Core Components](/help/get-started/localization.md).
+* Ett exempel på hur lokaliseringsfunktionerna för kärnkomponenterna fungerar tillsammans finns i [Lokaliseringsfunktioner för sidan Core Components](/help/get-started/localization.md).
 
 ### Exempel {#example-localization}
 
@@ -155,16 +152,6 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera rotsidan för navi
 På **Tillgänglighet** -tabb kan värden anges för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten.
 
 * **Etikett** - Värdet på ett ARIA-etikettattribut för komponenten
-
-### Fliken Format {#styles-tab-edit}
-
-Navigeringskomponenten har stöd för AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
-
-![Fliken Stilar i redigeringsdialogrutan för Navigeringskomponent](/help/assets/navigation-edit-styles.png)
 
 ## Designdialogruta {#design-dialog}
 

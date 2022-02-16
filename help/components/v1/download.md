@@ -1,16 +1,16 @@
 ---
-title: Ladda ned komponent
+title: Ladda ned komponent (v1)
 description: Med komponenten Core Component Download kan du skapa ett nedladdningsalternativ på en sida.
 role: Architect, Developer, Admin, User
-exl-id: 48e7ade0-b849-4d1f-b836-51196e5ac507
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 1%
+source-wordcount: '644'
+ht-degree: 0%
 
 ---
 
-# Ladda ned komponent{#download-component}
+
+# Ladda ned komponent (v1) {#download-component}
 
 Med komponenten Core Component Download kan du skapa ett nedladdningsalternativ på en sida.
 
@@ -23,16 +23,13 @@ Med komponenten Core Component Download kan du inkludera ett nedladdningsalterna
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Download Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v1 i Download Component, som introducerades i version 2.5.0 av Core Components i juni 2019.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/download.md) | Kompatibel | Kompatibel | Kompatibel |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>I det här dokumentet beskrivs v1 för komponenten Download.
+>
+>Information om den aktuella versionen av komponenten Download finns i [Ladda ned komponent](/help/components/download.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -52,7 +49,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera nedladdningsobjek
 
 ### Fliken Resurser {#asset-tab}
 
-Valet av en hämtningsresurs liknar funktionen i [Bildkomponent](image.md) och använder också AEM DAM.
+Valet av en hämtningsresurs liknar funktionen i [Bildkomponent](image-v1.md) och använder också AEM DAM.
 
 * **Hämta resurs**
    * Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
@@ -74,16 +71,6 @@ Valet av en hämtningsresurs liknar funktionen i [Bildkomponent](image.md) och a
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
-
-### Fliken Format {#styles-tab-edit}
-
-![Fliken Stilar i redigeringsdialogrutan för komponenten Download](/help/assets/download-edit-styles.png)
-
-Komponenten Download har stöd för AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
 
 ## Designdialogruta {#design-dialog}
 

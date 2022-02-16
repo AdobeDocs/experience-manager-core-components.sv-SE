@@ -1,16 +1,16 @@
 ---
-title: Bädda in komponent
+title: Bädda in komponent (v1)
 description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM innehållssida.
 role: Architect, Developer, Admin, User
-exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
-source-git-commit: 28409185f2e46a30fa588b3f92b83b2fa05de96d
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1298'
 ht-degree: 0%
 
 ---
 
-# Bädda in komponent {#embed-component}
+
+# Bädda in komponent (v1) {#embed-component}
 
 Med Core Components Embed Component (Bädda in kärnkomponenter) kan du bädda in externt innehåll på en AEM.
 
@@ -23,16 +23,13 @@ Med Core Component Embed Component (Bädda in kärnkomponent) kan innehållsför
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Embed Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v1 av den inbäddade komponenten, som introducerades i version 2.7.0 av Core Components i september 2019.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/embed.md) | Kompatibel | Kompatibel | Kompatibel |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>I det här dokumentet beskrivs v1 för komponenten Embed.
+>
+>Information om den aktuella versionen av den inbäddade komponenten finns i [Bädda in komponent](/help/components/embed.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -46,23 +43,19 @@ Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-I dialogrutan Konfigurera kan innehållsförfattaren definiera den externa resurs som ska bäddas in på sidan.
-
-### Fliken Egenskaper {#properties-tab}
-
-Välj först vilken typ av resurs som ska bäddas in:
+I dialogrutan Konfigurera kan innehållsförfattaren definiera den externa resurs som ska bäddas in på sidan. Välj först vilken typ av resurs som ska bäddas in:
 
 * [Webbadress](#url)
 * [Inbäddad](#embeddable)
 * [HTML](#html)
 
-Du kan definiera en **ID**. Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
+För varje typ av inbäddad kan du definiera och **ID**. Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
 
 * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
 * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-#### Webbadress {#url}
+### Webbadress {#url}
 
 Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resursen som du vill bädda in i **URL** fält. Komponenten försöker komma åt resursen och om den kan återges av någon av processorerna visas ett bekräftelsemeddelande under **URL** fält. Annars markeras fältet med fel.
 
@@ -75,7 +68,7 @@ Utvecklare kan lägga till ytterligare URL-processorer av [följer utvecklardoku
 
 ![Bädda in komponentens redigeringsdialogruta för URL](/help/assets/embed-url.png)
 
-#### Inbäddad {#embeddable}
+### Inbäddad {#embeddable}
 
 Inbäddade tabeller gör det möjligt att anpassa den inbäddade resursen mer, som kan parametriseras och innehålla ytterligare information. En författare kan välja bland förkonfigurerade tillförlitliga inbäddade filer och komponenten levereras med en YouTube-inbäddad som är färdig att användas.
 
@@ -90,15 +83,16 @@ The **Inbäddad** -fältet anger vilken typ av processor som du vill använda. N
 * **Aktivera direktuppspelning (iOS)** - Den här parametern styr om videoklipp spelas upp textbundet (på) eller i helskärmsläge (av) i en HTML5-spelare på iOS.
 * **Obegränsade relaterade videoklipp** - Om det här alternativet är inaktiverat kommer relaterade videofilmer från samma kanal som den video som just spelades upp, annars kommer de från vilken kanal som helst.
 
+Observera att&quot;aktivera&quot;-alternativen måste aktiveras via [Designdialogruta](#design-dialog) och kan anges som standardvärden.
+
 Andra inbäddade tabeller kan erbjuda liknande fält och kan definieras av en utvecklare av [följer utvecklardokumentationen för Embed Component.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
 
 ![Bädda in komponentens redigeringsdialogruta för inbäddade tabeller](/help/assets/embed-embeddable.png)
 
 >[!NOTE]
->
 >Inbäddade tabeller måste aktiveras på mallnivå via [Designdialogruta](#design-dialog) som ska vara tillgänglig för sidans författare.
 
-#### HTML {#html}
+### HTML {#html}
 
 Du kan lägga till frihandskomponenten HTML på sidan med hjälp av komponenten Bädda in.
 
@@ -107,29 +101,18 @@ Du kan lägga till frihandskomponenten HTML på sidan med hjälp av komponenten 
 >[!NOTE]
 >Alla osäkra taggar, till exempel skript, filtreras från det angivna HTML och återges inte på den resulterande sidan.
 
-##### Dokumentskydd {#security}
+#### Dokumentskydd {#security}
 
 Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att undvika serveröverskridande skriptattacker (cross-site scripting) som till exempel skulle kunna ge författare administratörsbehörighet.
 
-I allmänhet gäller alla skript och `style` element och alla `on*` och `style` attribut tas bort från utdata.
+*I allmänhet* alla skript och `style` element och alla `on*` och `style` attribut tas bort från utdata.
 
 Reglerna är dock mer komplicerade eftersom inbäddningskomponenten följer AEM globala filterregeluppsättningen för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
 Ytterligare säkerhetsinformation finns i [AEM för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) och [AEM as a Cloud Service installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
 
 >[!NOTE]
->
 >Trots att reglerna för antiSamys sanitets-ramverk kan konfigureras genom överlagring `/libs/cq/xssprotection/config.xml`påverkar dessa ändringar alla HTML- och JSP-beteenden och inte bara Bädda in kärnkomponent.
-
-### Fliken Format {#styles-tab-edit}
-
-![Fliken Stilar i redigeringsdialogrutan för Bädda in komponent](/help/assets/embed-styles.png)
-
-Komponenten Embed stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
 
 ## Designdialogruta {#design-dialog}
 

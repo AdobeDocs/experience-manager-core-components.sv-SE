@@ -1,16 +1,16 @@
 ---
-title: Button-komponent
+title: Knappkomponent (v1)
 description: Med komponenten Core Component Button kan du skapa och visa en knapp.
 role: Architect, Developer, Admin, User
-exl-id: e17efd1d-90d4-497a-9e7d-45934d81bc28
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '542'
-ht-degree: 1%
+source-wordcount: '412'
+ht-degree: 0%
 
 ---
 
-# Button-komponent{#button-component}
+
+# Knappkomponent (v1) {#button-component}
 
 Komponenten Core Component Button gör det möjligt att konfigurera och visa ett knappobjekt på en sida.
 
@@ -23,16 +23,13 @@ Komponenten Core Component Button gör att du kan inkludera en knapp på en sida
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Button-komponenten är v2, som introducerades i version 2.18.0 av Core-komponenterna i februari 2022, och som beskrivs i det här dokumentet.
+I dokumentet beskrivs v1 för Button-komponenten, som introducerades i version 2.5.0 av Core Components i juni 2019.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/button.md) | Kompatibel | Kompatibel | Kompatibel |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>I det här dokumentet beskrivs v1 för Button-komponenten.
+>
+>Information om den aktuella versionen av Button-komponenten finns i [Button-komponent](/help/components/button.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -55,7 +52,6 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappen och hur d
 * **Text** - Den text som ska visas på knappen
 * **Länk** - Länka till en innehållssida i AEM, en extern resurs eller ett ankare
    * Använd **Dialogrutan Markering** för att välja en bana i AEM.
-* **Öppna länk på ny flik** - Om det här alternativet är markerat öppnas länken på en ny webbläsarflik.
 * **Ikon** - Identifierare för att visa en ikon i knappen
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
@@ -69,16 +65,6 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappen och hur d
 På **Tillgänglighet** -tabb kan värden anges för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten.
 
 * **Etikett** - Värdet på ett ARIA-etikettattribut för komponenten
-
-### Fliken Format {#styles-tab-edit}
-
-![Fliken Stilar i redigeringsdialogrutan för Button-komponenten](/help/assets/button-edit-styles.png)
-
-Button-komponenten stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
 
 ## Designdialogruta {#design-dialog}
 

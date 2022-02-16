@@ -1,16 +1,16 @@
 ---
-title: Bildkomponent
+title: Bildkomponent (v2)
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 role: Architect, Developer, Admin, User
-exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '2228'
 ht-degree: 0%
 
 ---
 
-# Bildkomponent{#image-component}
+
+# Bildkomponent (v2) {#image-component}
 
 Core Component Image Component Component är en adaptiv bildkomponent med redigering på plats.
 
@@ -18,21 +18,17 @@ Core Component Image Component Component är en adaptiv bildkomponent med redige
 
 Bildkomponenten har anpassningsbar bildmarkering och responsiv funktionalitet med lat inläsningsbeteende för sidbesökaren samt enkel bildplacering och beskärning för innehållsförfattaren.
 
-Bildbredderna och ytterligare inställningar kan definieras av mallskaparen i [designdialogruta](#design-dialog). Innehållsredigeraren kan överföra eller välja resurser i [dialogrutan konfigurera.](#configure-dialog)
+Bildbredderna, beskärningen och ytterligare inställningar kan definieras av mallskaparen i [designdialogruta](#design-dialog). Innehållsredigeraren kan överföra eller välja resurser i [konfigurera dialogruta](#configure-dialog) och beskära bilden i [redigeringsdialogruta](#edit-dialog). För enkelhetens skull finns även en enkel ändring på plats av bilden.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Image Component är v3, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v2 av Image Component, som introducerades i version 2.0.0 av Core Components i januari 2018.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v3 | - | Kompatibel | Kompatibel |
-| [v2](v2/image.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/image-v1.md) | Kompatibel | Kompatibel | - |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>I det här dokumentet beskrivs v1 för bildkomponenten.
+>
+>Mer information om den aktuella versionen av bildkomponenten finns i [Bildkomponent](/help/components/image.md) -dokument.
 
 ## Responsiva funktioner {#responsive-features}
 
@@ -46,7 +42,7 @@ Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsn
 
 ## Dynamic Media Support {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia) resurser. [När det är aktiverat](#design-dialog) Med de här funktionerna kan du lägga till Dynamic Media bildresurser med en enkel dra och släpp-funktion eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia) resurser. [När det är aktiverat](#design-dialog) Med de här funktionerna kan du lägga till Dynamic Media bildresurser med en enkel dra och släpp-funktion eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina webbupplevelser som byggts med Core Components har inga omfattande, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
@@ -62,7 +58,7 @@ Skalbar vektorgrafik (SVG) stöds av bildkomponenten.
 
 Av säkerhetsskäl anropas aldrig SVG direkt av bildredigeraren. Den kallas för `<img src=“path-to-component”>`. Detta förhindrar webbläsaren från att köra skript som är inbäddade i filen SVG.
 
->[!NOTE]
+>[!CAUTION]
 >
 >För SVG-support krävs version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för [bildredigeringsfunktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/image-editor.html) inom AEM.
 
@@ -80,24 +76,16 @@ Bildkomponenten har stöd för [schema.org, mikrodata](https://schema.org).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-I bildkomponenten finns en konfigurationsdialogruta där själva bilden definieras tillsammans med dess beskrivning och grundläggande egenskaper.
+Förutom standarden [redigeringsdialogruta](#edit-dialog) och [designdialogruta](#design-dialog)innehåller bildkomponenten en konfigurationsdialogruta där själva bilden definieras tillsammans med beskrivning och grundläggande egenskaper.
 
 ### Fliken Resurser {#asset-tab}
 
 ![Fliken Resurser i dialogrutan Konfigurera för bildkomponenten](/help/assets/image-configure-asset.png)
 
-* **Ärv bild från sida** - Det här alternativet använder [bild av den länkade sidan](page.md) eller den aktuella sidans aktuella bild om bilden inte är länkad.
-
-* **Alternativ text för tillgänglighet** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
-
-   * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade tillgångsvärdet för `dc:description` metadata i DAM eller på den aktuella sidan om ingen resurs är länkad.
-
 * **Bildresurs**
    * Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
    * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
-
-* **Ange inte en alternativ text** - Med det här alternativet markeras den bild som ska ignoreras av hjälpmedelstekniker, som skärmläsare, om bilden är helt dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.
 
 ### Fliken Metadata {#metadata-tab}
 
@@ -107,13 +95,15 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
    * **Bildförinställning** - När **Förinställningstyp** av **Bildförinställning** är markerat, listrutan **Bildförinställning** är tillgängligt och du kan välja bland de tillgängliga förinställningarna för Dynamic Media. Detta är bara tillgängligt om förinställningar har definierats för den valda resursen.
    * **Smart beskärning** - När **Förinställningstyp** av **Smart beskärning** är markerat i listrutan **Återgivning** är tillgängligt och du kan välja bland de tillgängliga återgivningarna av den valda resursen. Detta är bara tillgängligt om återgivningar har definierats för den valda resursen.
    * **Bildmodifierare** - Ytterligare kommandon för att visa bilder i Dynamic Media kan definieras här avgränsade med `&`oavsett vilka **Förinställningstyp** är markerat.
+* **Bilden är dekorativ** - Kontrollera om bilden ska ignoreras av hjälpmedel och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
+* **Alternativ text** - Textuellt alternativ till bildens innebörd eller funktion, för läsare med nedsatt syn.
+   * **Hämta alternativ text från DAM** - När det här alternativet är markerat fylls bildens alternativa text med värdet för `dc:description` metadata i DAM.
 * **Bildtext** - Ytterligare information om bilden, som visas under bilden som standard.
    * **Hämta beskrivning från DAM** - När det här alternativet är markerat fylls bildtexten i med värdet för `dc:title` metadata i DAM.
    * **Visa bildtext som popup-fönster** - När det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som ett popup-fönster som visas av vissa webbläsare när de hovrar över bilden.
 * **Länk** - Länka bilden till en annan resurs.
    * Använd urvalsdialogrutan för att länka till en annan AEM.
    * Om du inte länkar till en AEM resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
-   * **Öppna länk på ny flik** - Med det här alternativet öppnas länken i ett nytt webbläsarfönster.
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
@@ -123,34 +113,88 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
 >
 >**Smart beskärning** och **Bildförinställning** alternativ som utesluter varandra. Om en författare behöver använda en bildförinställning tillsammans med en rendering för smart beskärning måste författaren använda **Bildmodifierare** om du vill lägga till förinställningar manuellt.
 
-### Fliken Format {#styles-tab-edit}
+## Dialogrutan Redigera {#edit-dialog}
 
-![Fliken Stilar i redigeringsdialogrutan för Bildkomponent](/help/assets/image-configure-styles.png)
+I redigeringsdialogrutan kan författaren beskära, ändra startkartan och zooma bilden.
 
-Bildkomponenten stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
+>[!NOTE]
+>
+>Funktionerna för beskärning, rotering och zoomning gäller inte för Dynamic Media-resurser. Om [Funktioner i Dynamic Media](#dynamic-media) är aktiverade bör all sådan redigering av Dynamic Media-resurser utföras via [Konfigurera dialogruta.](#configure-dialog)
 
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
+![Redigeringsdialogruta för bildkomponent](/help/assets/image-edit.png)
 
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
+* Starta beskärning
+
+   ![Ikonen Starta beskärning](/help/assets/image-start-crop.png)
+
+   Om du väljer det här alternativet öppnas en listruta för fördefinierade beskärningsproportioner.
+
+   * Välj alternativ **Free Hand** för att definiera din egen beskärning.
+   * Välj alternativ **Ta bort beskärning** för att visa den ursprungliga resursen.
+
+   När du har valt ett beskärningsalternativ använder du de blå handtagen för att ändra storlek på beskärningen i bilden.
+
+   ![Beskärningsalternativ](/help/assets/image-crop-options.png)
+
+* Rotera åt höger
+
+   ![Rotera höger ikon](/help/assets/image-rotate-right.png)
+
+   Använd det här alternativet om du vill rotera bilden 90° åt höger (medurs).
+
+* Vänd vågrätt
+
+   ![Ikon för att vända vågrätt](/help/assets/image-flip-horizontal.png)
+
+   Använd det här alternativet om du vill vända bilden vågrätt eller vrida bilden 180° längs y-axeln.
+
+* Vänd lodrätt
+
+   ![Vänd lodrätt, ikon](/help/assets/image-flip-vertical.png)
+
+   Använd det här alternativet om du vill vända bilden lodrätt eller vrida bilden 180° längs x-axeln.
+
+* Återställ zoomning
+
+   ![Återställ zoomningsikon](/help/assets/image-reset-zoom.png)
+
+   Om bilden redan har zoomats kan du återställa zoomnivån med det här alternativet.
+
+* Öppna zoomreglaget
+
+   ![Öppna zoomskjutningsikonen](/help/assets/image-zoom.png)
+
+   Använd det här alternativet om du vill visa ett reglage för att styra bildens zoomnivå.
+
+   ![Zoomreglage](/help/assets/image-zoom-slider.png)
+
+Du kan även använda redigeraren på plats för att ändra bilden. På grund av utrymmesbegränsningar är endast grundläggande alternativ tillgängliga. Använd helskärmsläget för redigeringsalternativ.
+
+![Redigeringsalternativ för bilder på plats](/help/assets/image-in-place-edit.png)
+
+>[!NOTE]
+>
+>Bildredigeringsåtgärder (beskärning, vändning, rotering) stöds inte för bilder i GIF. Alla sådana ändringar som görs i redigeringsläget för GIF bevaras inte.
 
 ## Designdialogruta {#design-dialog}
 
+I designdialogrutan kan mallskaparen definiera de alternativ för beskärning, uppladdning, rotation och överföring som innehållsförfattaren har när den här komponenten används.
+
+### Huvudflik {#main-tab}
+
+På **Huvud** kan du definiera en lista med bredder i pixlar för bilden så läser komponenten automatiskt in den mest lämpliga bredden baserat på webbläsarens storlek. Detta är en viktig del av [responsiva funktioner](#responsive-features) för bildkomponenten.
+
+Dessutom kan du definiera vilka allmänna komponentalternativ som automatiskt eller inaktiveras när författaren lägger till komponenten på en sida.
+
 ![Huvudflik i designdialogrutan för bildkomponenten](/help/assets/image-design-main.png)
 
-* **Aktivera DM-funktioner** - När det är markerat, [Funktioner i Dynamic Media](#dynamic-media) är tillgängliga.
-   * Det här alternativet visas bara när Dynamic Media är aktiverat i miljön.
-* **Inaktivera lazy loading** - När det här alternativet är markerat kommer komponenten att förhandsladda alla bilder utan att läsas in.
+* **Aktivera DM-funktioner** - När det här alternativet är markerat aktiveras [Funktioner i Dynamic Media](#dynamic-media) är tillgängliga.
+* **Aktivera lazy loading** - Definiera om det lat inläsningsalternativet aktiveras automatiskt när du lägger till bildkomponenten på en sida.
 * **Bilden är dekorativ** - Ange om alternativet för dekorativa bilder ska aktiveras automatiskt när du lägger till bildkomponenten på en sida.
 * **Hämta alternativ text från DAM**- Ange om alternativet att hämta alternativ text från DAM automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
 * **Hämta beskrivning från DAM** - Ange om alternativet att hämta bildtexten från DAM-modulen ska aktiveras automatiskt när bildkomponenten läggs till på en sida.
 * **Visa bildtext som popup-fönster** - Ange om alternativet att visa bildtexten som en popup-ruta automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
-* **Ändra bredd** - Det här värdet används för att ändra bredden på basbilderna som är DAM-resurser.
-   * Bildernas proportioner bevaras.
-   * Om värdet är större än bildens faktiska bredd har det här värdet ingen effekt.
-   * Det här värdet påverkar inte bilder i SVG.
-
-Du kan definiera en lista med bredder i pixlar för bilden så läser komponenten automatiskt in den mest lämpliga bredden baserat på webbläsarens storlek. Detta är en viktig del av [responsiva funktioner](#responsive-features) för bildkomponenten.
-
+* **Inaktivera UUID-spårning** - Markera för att inaktivera spårning av bildresursens UUID.
 * **Bredd** - Definierar en lista med bredder i pixlar för bilden och komponenten läser automatiskt in den mest lämpliga bredden baserat på webbläsarens storlek.
    * Tryck eller klicka på **Lägg till** om du vill lägga till en annan storlek.
       * Använd handtagen för att ordna om storlekarna.
@@ -163,7 +207,47 @@ Du kan definiera en lista med bredder i pixlar för bilden så läser komponente
 >
 >Se avsnittet [Adaptiv bildserver](#adaptive-image-servlet) om du vill ha mer teknisk information om dess funktioner och tips för att optimera markeringen av renderingar genom att noggrant definiera bredderna.
 
-### Fliken Format {#styles-tab}
+### Fliken Funktioner {#features-tab}
+
+På **Funktioner** kan du definiera vilka alternativ som är tillgängliga för innehållsförfattarna när de använder komponenten, inklusive överföringsalternativ, orientering och beskärningsalternativ.
+
+* Källa
+
+   ![Dialogrutan Funktioner i Image Components](/help/assets/image-design-features-source.png)
+
+   Välj alternativet **Tillåt överföring av resurser från filsystem** så att skribenterna kan ladda upp bilder från sin dator. Om du bara vill tvinga innehållsförfattare att välja resurser från AEM avmarkerar du det här alternativet.
+
+* Orientering
+
+   ![Dialogrutan Funktioner i Image Components](/help/assets/image-design-features-orientation.png)
+
+* **Rotera**
+Använd det här alternativet för att tillåta innehållsförfattaren att använda 
+**Rotera åt höger** alternativ.
+* **Vänd**
+Använd det här alternativet för att tillåta innehållsförfattaren att använda 
+**Vänd vågrätt** och **Vänd lodrätt** alternativ.
+
+   >[!CAUTION]
+   >
+   >The **Vänd** är inaktiverat som standard. Om du aktiverar det visas **Vänd lodrätt** och **Vänd vågrätt** i redigeringsdialogrutan för bildkomponenten, men funktionen stöds för närvarande inte av AEM och ändringar som görs med dessa alternativ bevaras inte.
+
+* Beskärning
+
+   ![Dialogrutan Funktioner i Image Components](/help/assets/image-design-features-cropping.png)
+
+   Välj alternativet **Tillåt beskärning** så att innehållsförfattaren kan beskära bilden i komponenten i redigeringsdialogrutan.
+   * Klicka **Lägg till** om du vill lägga till en fördefinierad beskärningsproportion.
+   * Ange ett beskrivande namn som visas i **Starta beskärning** listruta.
+   * Ange proportionerna i siffror.
+   * Använd draghandtagen för att ordna om proportionerna
+   * Använd papperskorgsikonen för att ta bort proportioner.
+
+   >[!CAUTION]
+   >
+   >Observera att beskärningsproportioner definieras som i AEM **höjd/bredd**. Detta skiljer sig från den vanliga definitionen av bredd/höjd och görs av kompatibilitetsskäl. Innehållsförfattarna är inte medvetna om några skillnader så länge du anger ett tydligt namn på förhållandet eftersom namnet visas i gränssnittet och inte själva förhållandet.
+
+### Fliken Format {#styles-tab-1}
 
 Bildkomponenten stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 

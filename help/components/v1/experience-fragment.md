@@ -1,16 +1,16 @@
 ---
-title: Experience Fragment Component
+title: Experience Fragment Component (v1)
 description: Med Experience Fragment Component kan innehållsförfattaren lägga till en upplevelsefragmentvariant på en sida.
 role: Architect, Developer, Admin, User
-exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
 source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 1%
+source-wordcount: '780'
+ht-degree: 0%
 
 ---
 
-# Experience Fragment Component{#experience-fragment-component}
+
+# Experience Fragment Component (v1) {#experience-fragment-component}
 
 Med kärnkomponentens Experience Fragment-komponent kan innehållsförfattaren placera en variant av upplevelsefragment på en sida med stöd för en lokaliserad webbplatsstruktur.
 
@@ -23,16 +23,13 @@ Med kärnkomponentens Experience Fragment-komponent kan innehållsförfattaren v
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av Experience Fragment Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+I det här dokumentet beskrivs v1 av Experience Fragment Component, som introducerades i version 2.6.0 av Core Components i september 2019.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
-
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/experience-fragment.md) | Kompatibel | Kompatibel | Kompatibel |
-
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+>[!CAUTION]
+>
+>Det här dokumentet beskriver v1 för Experience Fragment-komponenten.
+>
+>Information om den aktuella versionen av Experience Fragment-komponenten finns i [Experience Fragment Component](/help/components/experience-fragment.md) -dokument.
 
 ## Lokaliserat stöd för webbplatsstruktur {#localized-site-structure}
 
@@ -128,16 +125,6 @@ Du kan också definiera en **ID**. Med det här alternativet kan du styra den un
 * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
 * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
-
-### Fliken Format {#styles-tab-edit}
-
-![Fliken Stilar i redigeringsdialogrutan för Experience Fragment-komponenten](/help/assets/experience-fragment-edit-styles.png)
-
-Experience Fragment-komponenten stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
-
-Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
-
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
 
 ## Designdialogruta {#design-dialog}
 
