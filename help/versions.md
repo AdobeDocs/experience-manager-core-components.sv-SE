@@ -3,9 +3,9 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 4f5ab401aee70b979217738dce4f1a72de940ae9
+source-git-commit: 3407b5d086dca4ba18eeaf2e57b648923a4557b4
 workflow-type: tm+mt
-source-wordcount: '2389'
+source-wordcount: '2425'
 ht-degree: 12%
 
 ---
@@ -26,6 +26,8 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.18.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.8) | Den här versionen åtgärdar ett problem med AEMaaCS. | - | 6.5.10.0+ * | Kontinuerlig | 8, 11 | 17 mars 2022 |
+| [2.18.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.6) | Det här är en patch-release. | - | 6.5.10.0+ * | Kontinuerlig | 8, 11 | 3 mars 2022 |
 | [2.18.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.18.0) | I den här större releasen av huvudkomponenterna introduceras en ny länkhanterare för nya versioner av flera komponenter tillsammans med många tillgänglighetsförbättringar och felkorrigeringar. | - | 6.5.10.0+ * | Kontinuerlig | 8, 11 | 16 februari 2022 |
 | [2.17.14](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Det här är en patch-release. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 13 december 2021 |
 | [2.17.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.17.12) | Det här är en korrigeringsversion som korrigerar en regression som introducerades i den tidigare versionen. | 6.4.8.4+ * | 6.5.6.0+ * | Kontinuerlig | 8, 11 | 1 oktober 2021 |

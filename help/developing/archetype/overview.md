@@ -4,7 +4,7 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 1a27f8c48e29199df94b1dbdccd5bf7fa160e479
+source-git-commit: 3407b5d086dca4ba18eeaf2e57b648923a4557b4
 workflow-type: tm+mt
 source-wordcount: '1148'
 ht-degree: 1%
@@ -102,7 +102,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 
 | Arketyp | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [35](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-35) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [36](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-36) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Konfigurera den lokala utvecklingsmiljön för [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
