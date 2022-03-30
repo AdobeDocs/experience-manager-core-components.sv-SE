@@ -3,9 +3,9 @@ title: Introduktion till kärnkomponenter
 description: 'Core Components ger robusta och utbyggbara baskomponenter som bygger på den senaste tekniken och bästa praxis. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 3407b5d086dca4ba18eeaf2e57b648923a4557b4
+source-git-commit: e92a4b594ed7528d7383afd68853df982bd991ec
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '925'
 ht-degree: 2%
 
 ---
@@ -34,14 +34,14 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 | Produktionsklart | Core Components är 28 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
 | Molnklar | Om [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt fungerar de bara. |
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
-| Konfigurerbar | Mallnivå [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/templates.html#content-policies) Ange vilka funktioner som sidförfattarna får använda eller inte får använda. |
+| Konfigurerbar | Mallnivå [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html#content-policies) Ange vilka funktioner som sidförfattarna får använda eller inte får använda. |
 | Spårbar | The [Integrering av Adobe Client Data Layer](/help/developing/data-layer/overview.md) gör det möjligt att spåra alla aspekter av besökarupplevelsen. |
 | Tillgänglig | De följer [WCAG 2.1-standard](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöd för tangentbordsnavigering ([kända problem](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-vänlig | Utdata från HTML är semantiska och ger [schema.org](https://schema.org) mikrodataanteckningar. |
 | WebApp-Ready | The [strömlinjeformade JSON-utdata](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) tillåter rendering på klientsidan, fortfarande med möjlighet att [kontextredigering](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
 | Stöd för AMP | Komponenterna har inbyggda [stöd för AMP-standarden,](/help/developing/amp.md) för mobilupplevelser. |
 | Design Kit | A [UI-kit för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) ger designers möjlighet att skapa trådramar som de sedan kan [format efter behov](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
-| Temaperbar | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/style-system.html)och koden följer [BEM CSS-konventioner](http://getbem.com/). |
+| Temaperbar | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)och koden följer [BEM CSS-konventioner](http://getbem.com/). |
 | Anpassningsbar | Flera mönster tillåts [enkel anpassning](developing/customizing.md), från justering av HTML till avancerad funktionalitet, återanvändning. |
 | Versionshantering | The [versionsprincip](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |

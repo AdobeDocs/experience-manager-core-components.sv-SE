@@ -2,13 +2,13 @@
 title: Bildkomponent (v2)
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
+source-git-commit: c64cdbf3779318c9cf018658d43684946de9c15b
 workflow-type: tm+mt
-source-wordcount: '2228'
+source-wordcount: '2231'
 ht-degree: 0%
 
 ---
-
 
 # Bildkomponent (v2) {#image-component}
 
@@ -60,7 +60,7 @@ Av säkerhetsskäl anropas aldrig SVG direkt av bildredigeraren. Den kallas för
 
 >[!CAUTION]
 >
->För SVG-support krävs version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för [bildredigeringsfunktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/components-templates/image-editor.html) inom AEM.
+>För SVG-support krävs version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för [bildredigeringsfunktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html) inom AEM.
 
 ## Exempel på komponentutdata {#sample-component-output}
 

@@ -4,9 +4,9 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 3407b5d086dca4ba18eeaf2e57b648923a4557b4
+source-git-commit: a4ed30ad613efab89f10788a41a5dee8d663bf6c
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1150'
 ht-degree: 1%
 
 ---
@@ -41,7 +41,7 @@ AEM Project Archetype är en Maven-mall som skapar ett minimalt, metodbaserat Ad
 * **Sidhuvud och sidfot:** Sammanställ och lokalisera dem utan kod med [komponenternas lokaliseringsfunktioner](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html).
 * **Formatsystem:** Undvik att bygga anpassade komponenter genom att tillåta författare att [använda olika format](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html) till dem.
 * **Front-End Build:** Utvecklare kan [AEM](uifrontend.md#webpack-dev-server) och [skapa klientbibliotek](uifrontend.md) med Webpack, TypeScript och SASS.
-* **WebApp-Ready:** För webbplatser som använder [Reagera](uifrontend-react.md) eller [Angular](uifrontend-angular.md), använder du [SPA SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/developing.html) för att behålla [kontextredigering av appen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
+* **WebApp-Ready:** För webbplatser som använder [Reagera](uifrontend-react.md) eller [Angular](uifrontend-angular.md), använder du [SPA SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/developing.html) för att behålla [kontextredigering av appen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html).
 * **Handel aktiverad:** För projekt som vill integreras [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) med e-handelslösningar som [Magento](https://magento.com/) med [Kärnkomponenter i Commerce](https://github.com/adobe/aem-core-cif-components).
 * **Exempelkod:** Checka ut HelloWorld-komponenten och exempelmodellerna, servletarna, filtren och schemaläggaren.
 * **Öppen källa:** Om något inte är som det ska, [contribute](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) förbättringar!
@@ -82,7 +82,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `aemVersion` | `cloud` | AEM (kan `cloud` for [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` for [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats). |
 | `sdkVersion` | `latest` | När `aemVersion=cloud` en [SDK](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) kan anges (t.ex. `2020.02.2265.20200217T222518Z-200130`). |
 | `includeDispatcherConfig` | `y` | Innehåller en dispatcherkonfiguration för antingen molnet eller AMS/lokal, beroende på värdet för `aemVersion` (kan `y` eller `n`). |
-| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan `general` eller `none` för vanliga webbplatser, kan `angular` eller `react` för en Single Page-app som implementerar [SPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/headless/spa/editor-overview.html)). |
+| `frontendModule` | `general` | Innehåller en Webpack-modul för klientbibliotek (kan `general` eller `none` för vanliga webbplatser, kan `angular` eller `react` för en Single Page-app som implementerar [SPA](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/hybrid/editor-overview.html)). |
 | `language` | `en` | Språkkod (ISO 639-1) för att skapa innehållsstrukturen från (t.ex. `en`, `deu`). |
 | `country` | `us` | Landskod (ISO 3166-1) för att skapa innehållsstrukturen från (t.ex. `US`). |
 | `singleCountry` | `y` | Innehåller en struktur för överordnad innehåll (kan vara `y`, eller `n`). |
