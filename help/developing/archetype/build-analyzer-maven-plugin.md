@@ -4,9 +4,9 @@ description: Dokumentation för det lokala plugin-programmet Maven build analyze
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: de26b310-a294-42d6-a0db-91f6036a328c
-source-git-commit: 79eb9cc18a66c09deeef1477c4d26d8616ba55de
+source-git-commit: 98d8fac2a626a1f89ef1b109aa8cba27abf8203a
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '646'
 ht-degree: 4%
 
 ---
@@ -39,6 +39,8 @@ Nedan finns en tabell som beskriver de analysatorer som körs som en del av det 
 | `region-deprecated-api` | Kontrollerar om [inaktuell api](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-apis.html) används <p> </p>`[WARNING] com.mysite:mysite.core:1.0.0-SNAPSHOT: Usage of deprecated package found : org.apache.sling.settings : Avoid these features at runtime: run modes, file system access (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Ja | Ja |
 | `artifact-rules` | Validerar beroenden som paket och innehållspaket för att förhindra kända problem i artefakter.<p> </p>`[WARNING] [artifact-rules] com.adobe.acs:acs-aem-commons-bundle:5.0.4: Use at least version 5.0.10 (com.mysite:mysite.all:1.0.0-SNAPSHOT)` | Ja | Ja |
 | `content-package-validation` | Kör filevault-validerare. Som standard är Jackrabbit-docviewparser aktiverat, vilket kontrollerar om det finns en korrekt formaterad innehållssyntax för XML i paket som ska installeras under distributionen.<p> </p>`[main] WARN org.apache.sling.feature.analyser.task.impl.CheckContentPackages - ValidationViolation: "jackrabbit-docviewparser: Invalid XML found: The reference to entity "se" must end with the ';' delimiter.", filePath=jcr_root/apps/somename/configs/com.adobe.test.Invalid.xml, nodePath=/apps/somename/configs/com.adobe.test.Invalid`<p> </p>Åtgärda problemet genom att kontrollera om det finns XML-problem i filen som analyseraren har namngett. | Ja | Ja |
+
+{style=&quot;table-layout:auto&quot;}
 
 ## Kända fel
 
