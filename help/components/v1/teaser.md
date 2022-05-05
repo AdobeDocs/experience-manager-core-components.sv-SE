@@ -2,13 +2,13 @@
 title: Teaser Component (v1)
 description: Teaser-komponenten kan visa en bild, en titel, RTF och eventuellt länka till ytterligare innehåll.
 role: Architect, Developer, Admin, User
-source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
+exl-id: 48e56938-660a-43e7-9e62-8069283ae73f
+source-git-commit: 84e09fa64b3a7ae40ff3ff1a04ea1c7504db29d2
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
-
 
 # Teaser Component (v1) {#teaser-component}
 
@@ -80,7 +80,7 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Teaser Component delegerar bildåtergivning till [Bildkomponent](image-v1.md). Därför [redigeringsdialogruta](image-v1.md#edit-dialog of the Image Component is available to the content author to manipulate the teaser image.
+Teaser Component delegerar bildåtergivning till [Bildkomponent](image-v1.md). Därför [redigeringsdialogruta](image-v1.md#edit-dialog) av Image Component (Bildkomponent) är tillgängligt för innehållsförfattaren för att ändra den teaseravbildningen.
 
 ## Designdialogruta {#design-dialog}
 
