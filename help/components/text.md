@@ -3,7 +3,7 @@ title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: c041439e31a7da62739b6d5130c52dea36662a0c
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 0%
@@ -226,7 +226,7 @@ Endast aktivt om markörens markerade text eller position redan är indragen.
 
 ### Indrag
 
-![Ikon för indrag](/help/assets/text-outdent.png)
+![Ikon för indrag](/help/assets/text-indent.png)
 
 Används för att öka indragsnivån för den markerade texten eller texten som anges efter markören.
 
