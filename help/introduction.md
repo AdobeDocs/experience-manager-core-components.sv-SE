@@ -3,9 +3,9 @@ title: Introduktion till kärnkomponenter
 description: 'Få lösningar på problem med kärnkomponenterna och låt andra skapa element i AEM. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 72f774c7e4bbcf0e2dfefb6f8294dd729eb0ea1b
+source-git-commit: c572a2f5ab4e975e0ef467ab071fd25b373be18b
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '927'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 
 |  |  |
 |---|---|
-| Produktionsklart | Core Components är 28 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
+| Produktionsklart | Core Components är 30 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
 | Molnklar | Om [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt fungerar de bara. |
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | Mallnivå [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html#content-policies) Ange vilka funktioner som sidförfattarna får använda eller inte får använda. |
@@ -58,6 +58,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 * [Språknavigering](components/language-navigation.md)
 * [Breadcrumb](components/breadcrumb.md)
 * [Snabbsökning](components/quick-search.md)
+* [Innehållsförteckning](components/tableofcontents.md)
 
 ### Sidredigeringskomponenter {#page-authoring-components}
 
@@ -106,7 +107,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 | Core Components Release | AEM as a Cloud Service | AEM 6.5 | Java SE-version | Maven Version |
 |---------|---------|---------|---------|---------|
-| [2.19.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.19.0) | Kontinuerlig | 6.5.10.0+ * | 8, 11 | 3.3.9+ |
+| [2.20.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.0) | Kontinuerlig | 6.5.10.0+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >

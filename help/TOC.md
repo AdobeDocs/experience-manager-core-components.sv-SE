@@ -4,10 +4,10 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 feature-set: Experience Manager Sites
-source-git-commit: fce9b5b2693acf96724c4c6e9872012fda7d36d9
+source-git-commit: d67fe6776bac26e5060d1e83feb4c078c0a45295
 workflow-type: tm+mt
-source-wordcount: '245'
-ht-degree: 2%
+source-wordcount: '248'
+ht-degree: 4%
 
 ---
 
@@ -43,6 +43,7 @@ ht-degree: 2%
    + [Snabbsökning](components/quick-search.md)
    + [Avgränsare](components/separator.md)
    + [Delning av sociala medier](components/sharing.md)
+   + [Innehållsförteckning](components/tableofcontents.md)
    + [Text](components/text.md)
    + [Tabbar](components/tabs.md)
    + [Teaser](components/teaser.md)

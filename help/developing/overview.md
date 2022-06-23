@@ -3,9 +3,9 @@ title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
 role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+source-git-commit: faf73c70a4bff387bed2f8cf6e48c39e597e51c7
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1559'
 ht-degree: 1%
 
 ---
@@ -18,22 +18,22 @@ Eftersom kärnkomponenterna är helt nya och har många fördelar rekommenderar 
 
 Adobe ger därför följande rekommendationer:
 
-* **Nya**
-projektNya projekt ska alltid försöka använda kärnkomponenter. Om kärnkomponenter inte kan användas direkt eller [extended](customizing.md) för att uppfylla projektkraven skapar du en anpassad komponent enligt komponentarkitekturen som anges i kärnkomponenterna. Undvik att använda [grundkomponenterna](/help/versions.md#foundation-component-support) om inte annat är möjligt.
-* **Befintliga**
-projektrekommendationer fortsätter att använda  [grundkomponenterna](/help/versions.md#foundation-component-support), såvida inte en omfaktorisering planeras för en plats eller komponent.\
-   Eftersom de används mycket ofta i de flesta befintliga projekt stöds även grundkomponenterna [.](/help/versions.md#foundation-component-support)
-* **Nya anpassade**
-komponenterUtvärderar om en befintlig  [kärnkomponent kan anpassas](customizing.md).\
-   I annat fall rekommenderar vi att du skapar en ny anpassad komponent enligt [riktlinjerna för komponenter](guidelines.md).
-* **Befintliga anpassade**
-komponenterOm dina komponenter fungerar som de ska bör du behålla dem som de är.
+* **Nya projekt**
+Nya projekt bör alltid försöka använda kärnkomponenter. Om kärnkomponenter inte kan användas direkt eller [extended](customizing.md) för att uppfylla projektkraven skapar du en anpassad komponent enligt komponentarkitekturen som anges i kärnkomponenterna. Undvik att använda [grundkomponenter](/help/versions.md#foundation-component-support).
+* **Befintliga projekt**
+Rekommendationen fortsätter att använda [grundkomponenter](/help/versions.md#foundation-component-support), såvida inte en omfaktorisering av plats eller komponent planeras.\
+   Eftersom de används i mycket stor utsträckning av de flesta befintliga projekt, är de grundläggande komponenterna [fortsätter att stödjas.](/help/versions.md#foundation-component-support)
+* **Nya anpassade komponenter**
+Utvärdera om en befintlig [Kärnkomponenten kan anpassas](customizing.md).\
+   I annat fall rekommenderar vi att du skapar en ny anpassad komponent som följer [Riktlinjer för komponenter](guidelines.md).
+* **Befintliga anpassade komponenter**
+Om komponenterna fungerar som de ska bör du behålla dem som de är.
 \
    Om inte, se&quot;Nya anpassade komponenter&quot; ovan.
 
 ## Så här lyckas du med kärnkomponenterna {#how-to-succeed}
 
-Core Components är kraftfulla, flexibla och enkla att använda och anpassa. [Om du följer några viktiga ](success.md) riktlinjer ser du till att ditt projekt med kärnkomponenterna blir en framgång.
+Core Components är kraftfulla, flexibla och enkla att använda och anpassa. [Följ några viktiga riktlinjer](success.md) säkerställer att ditt projekt med Core Components blir en framgång.
 
 ## Migrera till kärnkomponenterna
 
@@ -43,24 +43,24 @@ Alla nya projekt ska implementeras med kärnkomponenter. Befintliga projekt har 
 
 En större insats i ett befintligt projekt (till exempel en omprofilering eller en övergripande omfaktorisering) ger ofta möjlighet att migrera till kärnkomponenterna. För att underlätta denna migration har Adobe tillhandahållit ett antal migreringsverktyg för att uppmuntra till användning av kärnkomponenterna och den senaste AEM tekniken.
 
-[Med AEM Moderniseringsverktyg ](http://opensource.adobe.com/aem-modernize-tools/) kan du enkelt konvertera:
+[AEM moderniseringsverktyg](http://opensource.adobe.com/aem-modernize-tools/) möjliggöra enkel konvertering av
 
 * Statiska mallar till redigerbara mallar
 * Designkonfigurationer till policyer
 * Foundation-komponenter till Core-komponenter
 * Klassiskt användargränssnitt till pekaktiverat användargränssnitt 
 
-Mer information om hur dessa verktyg används finns i [dokumentationen](http://opensource.adobe.com/aem-modernize-tools/).
+Mer information om användningen av dessa verktyg finns i [se deras dokumentation](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
 >De AEM verktygen är en del av communityn och stöds inte eller motiveras inte av Adobe.
 
-## Migrering via Flytta till AEM som Cloud Service {#via-aemaacs}
+## Migrering via Flytta till AEM as a Cloud Service {#via-aemaacs}
 
-Eftersom AEM som Cloud Service har den senaste versionen av Core Components automatiskt måste du ta bort alla beroenden till Core Components i dina projekt `pom.xml`-filen när du går från en lokal AEM.
+Eftersom AEM as a Cloud Service automatiskt har den senaste versionen av Core Components måste du ta bort allt beroende av Core Components i dina projekt när du går från en lokal AEM installation. `pom.xml` -fil.
 
-Proxykomponenterna fungerar fortfarande som de gjorde tidigare eftersom   utkast pekar på den nödvändiga supertypen och den överordnade textbanan har versionen i den. På så sätt kan du bara ta bort beroendet och få Core Components att fungera i AEMaaCS på samma sätt som lokalt.
+Proxykomponenterna kommer fortfarande att fungera som de gjorde tidigare eftersom utkast pekar på den nödvändiga supertypen och supertypssökvägen har versionen i den. På så sätt kan du bara ta bort beroendet och få Core Components att fungera i AEMaaCS på samma sätt som lokalt.
 
 Precis som andra AEMaaCS-projekt måste du också lägga till ett beroende i AEM SDK jar. Detta är inte specifikt för kärnkomponenterna, men krävs.
 
@@ -71,7 +71,7 @@ Precis som andra AEMaaCS-projekt måste du också lägga till ett beroende i AEM
 </dependency>
 ```
 
-Mer information om AEMaaCS-projekt finns i dokumentet [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
+Se dokumentet [AEM projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) för mer information om AEMaaCS-projekt.
 
 ## Stöd för kärnkomponenter {#core-component-support}
 
@@ -81,19 +81,19 @@ Liksom andra AEM produktfunktioner är den allmänna regeln: Komponenter tillkä
 
 Versionen för varje komponent anger tydligt vilka AEM som stöds. När stödet upphör för en version av AEM gör det även stödet för kärnkomponenterna för den versionen av AEM.
 
-Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kärnkomponenter](customizing.md).
+Mer information om stöd för komponentanpassningar finns i [Anpassa kärnkomponenter](customizing.md) sida.
 
 
 ## Teknisk kapacitet {#technical-capabilities}
 
 Följande tabell ger en översikt över skillnaderna mellan kärnkomponenter och grundkomponenter.
 
-Mer information om deras redigeringsfunktioner och alternativ för att förkonfigurera dem finns i [redigeringssidan för dem](/help/get-started/authoring.md).
+Mer information om deras redigeringsfunktioner och alternativ för att förkonfigurera dem finns i [gå till redigeringssidan om dem](/help/get-started/authoring.md).
 
 | **Funktion** | **Kärnkomponent** | **Foundation Component** |
 |-----|---|---|
-| Logikimplementering | Java POJOs with [Sling Models](https://sling.apache.org/documentation/bundles/models.html) annotations | JSP-kod |
-| Markeringsdefinition | [HTML-mallssyntax](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)  (HTL) | JSP-kod |
+| Logikimplementering | Java POJOs with [Sling Models](https://sling.apache.org/documentation/bundles/models.html) anteckningar | JSP-kod |
+| Markeringsdefinition | [HTML mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) (HTML) syntax | JSP-kod |
 | XSS-sanering | Automatiserad av HTML | Mest manuella |
 | Namnge CSS-klasser | Standardiserad namnkonvention baserad på [Blockelementsmodifierare](https://getbem.com/) (BEM)-notation (från och med version 2.0.0) | Anpassade scheman |
 | Dialogdefinition | [Korall 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Coral 2 + Classic UI |
@@ -103,7 +103,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | Leverans | [Via offentlig GitHub](https://github.com/adobe/aem-core-wcm-components) | Via QuickStart |
 | Licens | [Apache-licens](https://www.apache.org/licenses/LICENSE-2.0) | Adobe |
 | Bidrag | Via pull-begäran | Inte möjligt |
-| Tillgänglighet | Helt kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Endast delvis kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
+| Tillgänglighet | Fullt kompatibel med [WCAG 2.0 AA-standard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Endast delvis kompatibelt med [WCAG 2.0 AA-standard](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
 
 ## Komponentlista {#component-list}
 
@@ -141,14 +141,10 @@ I följande tabell visas de tillgängliga kärnkomponenterna, som länkar till d
 | [Förloppsindikator](https://adobe.com/go/aem_cmp_tech_progress_v1) | Ge en visuell representation av framstegen mot ett mål | - |
 | [PDF Viewer](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1) | Presenterar ett PDF-dokument på en sida | - |
 
-### Kommande komponenter {#upcoming-components}
-
-En översikt över den kommande Core Component-vägkartan finns i [projektets wiki på GitHub](https://github.com/adobe/aem-core-wcm-components/wiki/home).
-
 ## Uppgradering av kärnkomponenter {#upgrade-of-core-components}
 
 En fördel med versionskomponenter är att det går att separera migreringen till en ny AEM från migreringen till nya komponentversioner. Om det finns nya komponentversioner är det också möjligt att migrera varje komponent individuellt till den nya versionen.
 
-Migreringar till en ny AEM kommer inte att påverka hur kärnkomponenterna fungerar, förutsatt att deras versioner också har stöd för den nya AEM som migreras till. Anpassningar som görs i kärnkomponenterna bör inte heller påverkas, så länge de inte använder API:er som är [borttagna eller borttagna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+Migreringar till en ny AEM kommer inte att påverka hur kärnkomponenterna fungerar, förutsatt att deras versioner också har stöd för den nya AEM som migreras till. Anpassningar som görs i kärnkomponenterna bör inte heller påverkas, så länge de inte använder API:er som har [borttagen eller ersatt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
-Migreringar till nya versioner av kärnkomponenterna kommer inte heller att påverka hur komponenten fungerar, men nya funktioner kan introduceras för sidförfattare, vilket kan kräva viss konfiguration av en mallredigerare om standardbeteendet inte önskas. Anpassningar kan dock behöva anpassas. Mer information finns på sidan [Anpassa kärnkomponenter](customizing.md#upgrade-compatibility-of-customizations).
+Migreringar till nya versioner av kärnkomponenterna kommer inte heller att påverka hur komponenten fungerar, men nya funktioner kan introduceras för sidförfattare, vilket kan kräva viss konfiguration av en mallredigerare om standardbeteendet inte önskas. Anpassningar kan dock behöva anpassas. Mer information finns i [Anpassa kärnkomponenter](customizing.md#upgrade-compatibility-of-customizations) sida.
