@@ -3,9 +3,9 @@ title: Snabbsökningskomponent
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
 role: Architect, Developer, Admin, User
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
-source-git-commit: fce9b5b2693acf96724c4c6e9872012fda7d36d9
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
-source-wordcount: '620'
+source-wordcount: '621'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v2 | - | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/quick-search.md) | Kompatibel med<br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | - |
+| [v1](/help/components/v1/quick-search.md) | Kompatibel med<br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 

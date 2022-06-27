@@ -3,9 +3,9 @@ title: Komponent för formuläralternativ
 description: Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
 role: Architect, Developer, Admin, User
 exl-id: 8a74bd37-9b12-4fa6-bff2-53e337b16251
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '550'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v2 | Kompatibel med<br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/form-options-v1.md) | Kompatibel | Kompatibel | - |
+| [v1](/help/components/v1/form-options-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 

@@ -3,9 +3,9 @@ title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
 role: Architect, Developer, Admin, User
 exl-id: 552f9dd5-6a3a-42d9-9969-e62a1f36e811
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
 | v2 | Kompatibel med<br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | - |
+| [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 

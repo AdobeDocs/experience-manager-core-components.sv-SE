@@ -3,9 +3,9 @@ title: Breadcrumb-komponent
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 role: Architect, Developer, Admin, User
 exl-id: 19d65b9d-a407-4f50-9c55-8de0f12222ed
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '801'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |--- | --- |--- |---|
 | v3 | - | Kompatibel | Kompatibel |
 | [v2](v2/breadcrumb.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | - |
+| [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 

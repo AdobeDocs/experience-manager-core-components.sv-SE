@@ -3,9 +3,9 @@ title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 role: Architect, Developer, Admin, User
 exl-id: 2503e067-abed-427d-8a54-8b79e3451487
-source-git-commit: dbc1ba9ae0f9caa3bc52a7a5e08899c457813003
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '716'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |---|---|---|---|
 | v3 | - | Kompatibel | Kompatibel |
 | [v2](v2/page.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/page-v1.md) | Kompatibel | Kompatibel | - |
+| [v1](v1/page-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 

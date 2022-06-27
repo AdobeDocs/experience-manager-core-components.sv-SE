@@ -4,10 +4,10 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 feature-set: Experience Manager Sites
-source-git-commit: d67fe6776bac26e5060d1e83feb4c078c0a45295
+source-git-commit: 3ff1343ab4ef7a52f910984a0bcd8fc4201441bf
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 4%
+source-wordcount: '255'
+ht-degree: 3%
 
 ---
 
@@ -91,6 +91,8 @@ ht-degree: 4%
    + [Stöd för AMP](developing/amp.md)
    + [Kontextmedvetna konfigurationer](developing/context-aware-configs.md)
    + [Inkluderar klientbibliotek](developing/including-clientlibs.md)
+   + [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md)
+   + [Webboptimerad bildleverans](/help/developing/web-optimized-image-delivery.md)
    + Adobe-klientdatalager {#data-layer}
       + [Översikt över datalagret](developing/data-layer/overview.md)
       + [Integrering med datalagret](developing/data-layer/integrations.md)

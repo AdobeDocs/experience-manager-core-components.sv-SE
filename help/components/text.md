@@ -3,9 +3,9 @@ title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: c041439e31a7da62739b6d5130c52dea36662a0c
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2210'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|
 | v2 | Kompatibel med<br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
-| [v1](v1/text-v1.md) | Kompatibel | Kompatibel | - |
+| [v1](v1/text-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 

@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 1a02aea6cda2bb1f70ab97d7a439e2c8e64add52
+source-git-commit: 2af48e397e47916760656cde8b0295b2f75cb0a6
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1662'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |--- |--- |--- |---|
 | v3 | - | Kompatibel | Kompatibel |
 | [v2](v2/image.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/image-v1.md) | Kompatibel | Kompatibel | - |
+| [v1](v1/image-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 
@@ -40,22 +40,18 @@ Image Component har robusta responsiva funktioner som är klara direkt vid lever
 
 Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsningen av den faktiska bildresursen tills den syns i webbläsaren, vilket gör sidorna mer responsiva.
 
->[!TIP]
->
->Se avsnittet [Adaptiv bildserver](#adaptive-image-servlet) om du vill ha mer teknisk information om dessa funktioner och tips för hur du optimerar urvalet av renderingar.
-
 ## Dynamic Media Support {#dynamic-media}
 
 Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia) resurser. [När det är aktiverat](#design-dialog) Med de här funktionerna kan du lägga till Dynamic Media bildresurser med en enkel dra och släpp-funktion eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
-Dina webbupplevelser som byggts med Core Components har inga omfattande, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
+Dina webbupplevelser som byggts med Core Components kan innehålla omfattande, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
 ## Stöd för SVG {#svg-support}
 
 Skalbar vektorgrafik (SVG) stöds av bildkomponenten.
 
 * Både dra-och-släpp av en SVG-resurs från DAM och överföring av en SVG-filöverföring från ett lokalt filsystem stöds.
-* Den adaptiva bildservern strömmar den ursprungliga SVG-filen (omformningar hoppas över).
+* Den ursprungliga SVG-filen direktuppspelas (omformningar hoppas över).
 * För en SVG-bild ställs&quot;smarta bilder&quot; och&quot;smarta storlekar&quot; in på en tom array i bildmodellen.
 
 ### Dokumentskydd {#security}
@@ -135,10 +131,15 @@ Format måste konfigureras för den här komponenten i [designdialogruta](#desig
 
 ## Designdialogruta {#design-dialog}
 
+### Huvudflik {#main-tab}
+
 ![Huvudflik i designdialogrutan för bildkomponenten](/help/assets/image-design-main.png)
 
 * **Aktivera DM-funktioner** - När det är markerat, [Funktioner i Dynamic Media](#dynamic-media) är tillgängliga.
    * Det här alternativet visas bara när Dynamic Media är aktiverat i miljön.
+* **Aktivera webboptimerade bilder** - När det är markerat, [webboptimerad bildleveranstjänst](/help/developing/web-optimized-image-delivery.md) kommer att leverera bilder i WebP-format, vilket i genomsnitt minskar bildstorlekarna med 25 %.
+   * Det här alternativet är endast tillgängligt i AEMaaCS.
+   * När alternativet är avmarkerat eller webboptimerad bildleveranstjänst inte är tillgänglig visas [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) används.
 * **Inaktivera lazy loading** - När det här alternativet är markerat kommer komponenten att förhandsladda alla bilder utan att läsas in.
 * **Bilden är dekorativ** - Ange om alternativet för dekorativa bilder ska aktiveras automatiskt när du lägger till bildkomponenten på en sida.
 * **Hämta alternativ text från DAM**- Ange om alternativet att hämta alternativ text från DAM automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
@@ -161,27 +162,11 @@ Du kan definiera en lista med bredder i pixlar för bilden så läser komponente
 
 >[!TIP]
 >
->Se avsnittet [Adaptiv bildserver](#adaptive-image-servlet) om du vill ha mer teknisk information om dess funktioner och tips för att optimera markeringen av renderingar genom att noggrant definiera bredderna.
+>Se dokumentet [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) för tips om hur du kan optimera markeringen av återgivning genom att definiera dina bredder noggrant.
 
 ### Fliken Format {#styles-tab}
 
 Bildkomponenten stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
-
-## Adaptiv bildserver {#adaptive-image-servlet}
-
-Bildkomponenten använder kärnkomponentens adaptiva bildserver. [Adaptiv bildserver](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbehandling och direktuppspelning och kan utnyttjas av utvecklare i [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
-
-### Optimera återgivningsmarkering {#optimizing-rendition-selection}
-
-Den adaptiva bildservern kommer att försöka välja den bästa återgivningen för den önskade bildstorleken och bildtypen. Vi rekommenderar att DAM-återgivningar och tillåtna bildkomponentbredder definieras synkroniserade så att den adaptiva bildservern utför så lite bearbetning som möjligt.
-
-Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktigt av det underliggande bildbehandlingsbiblioteket.
-
->[!NOTE]
->
->Villkorliga begäranden via `Last-Modified` -huvudet stöds av Adaptive Image Servlet, men cachelagringen av `Last-Modified` header [måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
->
->[AEM Project Archetype](/help/developing/archetype/overview.md)Exempelkonfigurationen för Dispatcher innehåller redan den här konfigurationen.
 
 ## Adobe-klientdatalager {#data-layer}
 

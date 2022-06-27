@@ -3,9 +3,9 @@ title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
-source-wordcount: '1151'
+source-wordcount: '1152'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |--- |--- |--- |---|
 | v3 | - | Kompatibel | Kompatibel |
 | [v2](v2/list.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/list-v1.md) | Kompatibel | Kompatibel | - |
+| [v1](v1/list-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 

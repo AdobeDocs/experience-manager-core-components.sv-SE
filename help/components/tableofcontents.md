@@ -2,9 +2,10 @@
 title: Innehållsförteckningskomponent
 description: Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras på rubrikerna i sidinnehållet, vilket gör att läsarna snabbt kan navigera på sidan.
 role: Architect, Developer, Admin, User
-source-git-commit: 52c63ecb014e5d4fda4d166d92e8efb3163633ba
+exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
+source-git-commit: 394a8b968d7bcde7e766ed719c5914ec5cb60744
 workflow-type: tm+mt
-source-wordcount: '730'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -15,7 +16,11 @@ Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras 
 
 ## Användning {#usage}
 
-Innehållsförteckningskomponenten ger besökare möjlighet att snabbt navigera i sidans innehåll via en innehållsförteckning som genereras baserat på rubrikerna för sidinnehållet.
+Innehållsförteckningskomponenten ger besökare möjlighet att snabbt navigera i sidans innehåll via en effektivt genererad innehållsförteckning baserat på rubrikerna för sidinnehållet.
+
+* ToC genereras på serversidan.
+* Den cachelagras fullständigt av dispatchern för snabb leverans.
+* Det fungerar med alla komponenter på sidan, inte bara med kärnkomponenterna.
 
 The [redigeringsdialogruta](#edit-dialog) gör att innehållsförfattaren kan definiera det intervall med titlar som ska användas i ToC. Använda [designdialogruta](#design-dialog)kan mallskaparen ange standardvärdet för titlarna när en innehållsförfattare lägger till en innehållsförteckningskomponent på en sida, samt begränsa titlar som ingår i innehållsförteckningen baserat på klassnamn.
 
