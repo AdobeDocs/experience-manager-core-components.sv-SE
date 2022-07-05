@@ -2,13 +2,13 @@
 title: Webboptimerad bildleverans
 description: Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
 role: Architect, Developer, Admin, User
-source-git-commit: 20436ffb5d6a6346738be1e6f5e6e2e8a68e76c9
+exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
+source-git-commit: df0ae972ca698e809a5cb8a5ad2d41ad89c2db8e
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
-
 
 # Webboptimerad bildleverans {#web-optimized-image-delivery}
 
@@ -16,7 +16,7 @@ Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade f
 
 >[!NOTE]
 >
->Den webboptimerade tjänsten för bildleverans är en förhandsversionsfunktion i juni 2022-utgåvan av AEM as a Cloud Service med GA som förväntas bli klar i juli.
+>Den webboptimerade tjänsten för bildleverans är en förhandsversion i juni 2022 av AEM as a Cloud Service med GA som förväntas bli klar i juli.
 >
 >Mer information om förhandsversionsfunktionerna i AEMaaCS finns i dokumentet [Adobe Experience Manager as a Cloud Service Prerelease Channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html)
 
@@ -122,6 +122,6 @@ Se föregående avsnitt [Aktivera webboptimerad bildleverans för kärnkomponent
 
 Nej, det här ska aldrig hända.
 
-* I HTML ändras inte markeringen när du aktiverar webboptimerade bilder, bara värdet för SCR-attributet i bildelementet ändras.
+* I HTML ändras inte markeringen när du aktiverar webboptimerade bilder, bara värdet för SRC-attributet i bildelementet ändras.
 * När den nya bildtjänsten inte är tillgänglig eller inte kan bearbeta den önskade bilden, kommer den URL som skapas att [tillbaka till Adaptive Image Server.](#fallback)
 * Dispatcher-regler kan blockera den webboptimerade bildtjänsten och [ska kontrolleras när funktionen aktiveras.](#activating)
