@@ -3,7 +3,7 @@ title: Introduktion till kärnkomponenter
 description: 'Få lösningar på problem med kärnkomponenterna och låt andra skapa element i AEM. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: c572a2f5ab4e975e0ef467ab071fd25b373be18b
+source-git-commit: 35b9c0d32d402e3f5466ccc1021094de5c7a750e
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 2%
@@ -107,7 +107,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 
 | Core Components Release | AEM as a Cloud Service | AEM 6.5 | Java SE-version | Maven Version |
 |---------|---------|---------|---------|---------|
-| [2.20.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.0) | Kontinuerlig | 6.5.10.0+ * | 8, 11 | 3.3.9+ |
+| [2.20.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.6) | Kontinuerlig | 6.5.13.0+ * | 8, 11 | 3.3.9+ |
 
 >[!NOTE]
 >
