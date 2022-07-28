@@ -3,7 +3,7 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 type: Documentation
 description: Dokumentation för Adobe Experience Manager Core Components
-git-repo: https://git.corp.adobe.com/AdobeDocs/experience-manager-core-components.sv-SE
+git-repo: https://github.com/AdobeDocs/experience-manager-core-components.sv-SE
 index: y
 source-git-commit: 2fbf593dee19f22b87a0f7e98d8a1f0c9252e7e7
 workflow-type: tm+mt
@@ -48,4 +48,4 @@ Artikel
 * `description`
 * `index: n` (endast för tidigare versioner av komponenter)
 
-Mer information om metadata finns i den interna redigeringsguiden för [.](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/features/metadata.html#solution)
+Mer information om metadata finns i [intern redigeringsguide.](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/authoring/features/metadata.html#solution)
