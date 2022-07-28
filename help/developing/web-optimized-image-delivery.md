@@ -3,7 +3,7 @@ title: Webboptimerad bildleverans
 description: Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: df0ae972ca698e809a5cb8a5ad2d41ad89c2db8e
+source-git-commit: a134c2593593efef4df7b01e3a870e03e9860640
 workflow-type: tm+mt
 source-wordcount: '1169'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade f
 >
 >Mer information om förhandsversionsfunktionerna i AEMaaCS finns i dokumentet [Adobe Experience Manager as a Cloud Service Prerelease Channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html)
 
-##  Översikt {#overview}
+## Översikt {#overview}
 
 Den webboptimerade funktionen för bildleverans i AEM som en molntjänst levererar bildresurser från DAM i [WebP-format.](https://developers.google.com/speed/webp) WebP kan minska hämtningsstorleken för en bild med i genomsnitt 25 %, vilket ger snabbare sidinläsning.
 
