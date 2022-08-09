@@ -3,9 +3,9 @@ title: Webboptimerad bildleverans
 description: Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: a134c2593593efef4df7b01e3a870e03e9860640
+source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -13,12 +13,6 @@ ht-degree: 0%
 # Webboptimerad bildleverans {#web-optimized-image-delivery}
 
 Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
-
->[!NOTE]
->
->Den webboptimerade tjänsten för bildleverans är en förhandsversion i juni 2022 av AEM as a Cloud Service med GA som förväntas bli klar i juli.
->
->Mer information om förhandsversionsfunktionerna i AEMaaCS finns i dokumentet [Adobe Experience Manager as a Cloud Service Prerelease Channel](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html)
 
 ## Översikt {#overview}
 
@@ -66,7 +60,7 @@ På samma sätt som aktivering av webboptimerad bildleverans inte påverkar mark
 
 ## Vanliga frågor {#faq}
 
-### Varför finns det inget sådant alternativ för att aktivera webboptimerade bilder i min miljö? {#missing-option}
+### Varför finns det inget alternativ för att aktivera webboptimerade bilder i min miljö? {#missing-option}
 
 Funktionen är bara tillgänglig på AEM as a Cloud Service. Kör AEM lokalt eller lokalt, Image-komponenten [faller bakåt](#fallback) till att använda den adaptiva bildservern.
 

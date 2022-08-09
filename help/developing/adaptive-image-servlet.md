@@ -2,13 +2,13 @@
 title: Adaptiv bildserver
 description: Lär dig hur Core Components använder Adaptive Image Servlet för bildleverans och hur du kan optimera användningen.
 role: Architect, Developer, Admin, User
-source-git-commit: 3ff1343ab4ef7a52f910984a0bcd8fc4201441bf
+exl-id: d9199d51-6f09-4000-9525-afc30474437e
+source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
-
 
 # Adaptiv bildserver {#adaptive-image-servlet}
 
@@ -26,6 +26,19 @@ Det här dokumentet beskriver standardservern för adaptiv bildhantering.
 ## Översikt {#overview}
 
 Som standard använder Image Component (Bildkomponent) Core-komponentens adaptiva bildserver för att leverera bilder. [Adaptiv bildserver](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbehandling och direktuppspelning och kan utnyttjas av utvecklare i [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
+
+## Återgivningsmarkering {#rendition-selection}
+
+Den adaptiva bildservern väljer automatiskt den rendering som passar bäst för visning baserat på storleken på den behållare som den visas i. Processen för att välja återgivning är följande.
+
+1. Adaptive Image Servlet granskar alla tillgängliga återgivningar av bildresursen.
+1. Endast de som har samma MIME/Type för den ursprungliga refererade resursen markeras.
+   * Om den ursprungliga resursen till exempel är en PNG-fil kommer endast PNG-renderingar att användas.
+1. Av dessa återgivningar beaktas dimensionerna och de jämförs med storleken på behållaren som bilden ska visas i.
+   1. Om återgivningen är >= behållarstorleken läggs den till i en lista över möjliga återgivningar.
+   1. Om återgivningen är &lt; behållarstorleken ignoreras den.
+   1. Dessa kriterier säkerställer att återgivningen inte skalas upp, vilket skulle påverka bildkvaliteten.
+1. Den adaptiva bildservern väljer sedan den rendering som har den minsta filstorleken från listan över kandidater.
 
 ## Optimera återgivningsmarkering {#optimizing-rendition-selection}
 

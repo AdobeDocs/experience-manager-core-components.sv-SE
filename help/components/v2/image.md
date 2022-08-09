@@ -3,9 +3,9 @@ title: Bildkomponent (v2)
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
-source-git-commit: 5f25aee6ebcb7a5c6b8db0df5b8b853f15af97d0
+source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2115'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ I det här dokumentet beskrivs v2 av Image Component, som introducerades i versi
 Image Component har robusta responsiva funktioner som är klara direkt vid leverans. På sidmallsnivå visas [designdialogruta](#design-dialog) kan användas för att definiera bildresursens standardbredder. Bildkomponenten läser sedan automatiskt in rätt bredd för visning beroende på storleken på webbläsarfönstret. När fönstrets storlek ändras läser Image Component in rätt bildstorlek dynamiskt i farten. Komponentutvecklare behöver inte bekymra sig om att definiera anpassade mediefrågor eftersom Image Component redan är optimerat för att läsa in ditt innehåll.
 
 Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsningen av den faktiska bildresursen tills den syns i webbläsaren, vilket gör sidorna mer responsiva.
+
+>[!TIP]
+>
+>Image Component (Bildkomponenten) drivs av Adaptive Image Server. Se dokumentet [Adaptiv bildserver](#adaptive-image-servlet) om du vill ha mer information om hur det fungerar.
 
 ## Dynamic Media Support {#dynamic-media}
 
