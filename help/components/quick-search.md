@@ -3,7 +3,7 @@ title: Snabbsökningskomponent
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
 role: Architect, Developer, Admin, User
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+source-git-commit: c5db61a3f812fd47eedd1543585ef25d1fc0dc1c
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -22,7 +22,7 @@ The [redigeringsdialogruta](#edit-dialog) låter innehållsförfattaren definier
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av snabbsökningskomponenten är v1, som introducerades i version 2.0.0 av kärnkomponenterna i januari 2018, och som beskrivs i det här dokumentet.
+Den aktuella versionen av Quick Search Component är v2, som introducerades i version 2.18.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 

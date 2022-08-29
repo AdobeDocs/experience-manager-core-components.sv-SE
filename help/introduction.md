@@ -3,9 +3,9 @@ title: Introduktion till kärnkomponenter
 description: 'Få lösningar på problem med kärnkomponenterna och låt andra skapa element i AEM. '
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 35b9c0d32d402e3f5466ccc1021094de5c7a750e
+source-git-commit: 12fef6732ba53beeb7b3354335005f459321da96
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '928'
 ht-degree: 2%
 
 ---
@@ -73,7 +73,7 @@ Den aktuella versionen av Core Components innehåller följande komponenter.
 * [Innehållsfragment](components/content-fragment-component.md)
 * [Innehållsfragmentlista](components/content-fragment-list.md)
 * [Bädda in](components/embed.md)
-* [Delning av sociala medier](components/sharing.md)
+* [Delning av sociala medier](components/sharing.md) (borttagen)
 * [Avgränsare](components/separator.md)
 * [Förloppsindikator](components/progress-bar.md)
 * [PDF Viewer](components/pdf-viewer.md)

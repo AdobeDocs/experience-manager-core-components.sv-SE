@@ -2,13 +2,13 @@
 title: List Component (v2)
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+exl-id: fa34be64-b345-45cd-baf3-571973414852
+source-git-commit: 241c86240377858a73f4a022368d428da9c11100
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 0%
 
 ---
-
 
 # List Component (v2) {#list-component}
 
@@ -64,7 +64,7 @@ Listan kan byggas på olika sätt.
 
 Oavsett hur listan byggs finns det [Alternativ för sortering och ID](#sort-options) som alltid kan konfigureras.
 
-![Redigeringsdialogrutan för List-komponenten](/help/assets/list-edit.png)
+![Redigeringsdialogrutan för List-komponenten](/help/assets/v2/list-edit.png)
 
 Beroende på hur innehållsförfattaren väljer att skapa listan ändras de ytterligare konfigurationsalternativen.
 
@@ -72,7 +72,7 @@ Beroende på hur innehållsförfattaren väljer att skapa listan ändras de ytte
 
 Listan kan byggas av de underordnade sidorna för den aktuella sidan eller en annan sida.
 
-![Alternativ för underordnade sidor](/help/assets/list-edit-child-pages.png)
+![Alternativ för underordnade sidor](/help/assets/v2/list-edit-child-pages.png)
 
 * **Överordnad sida**
    * Den sida vars underordnade sidor ska skapa listan
@@ -85,7 +85,7 @@ Hur många nivåer i hierarkin som ska användas
 
 Listan kan skapas med en fast lista med objekt.
 
-![Alternativ för fast lista](/help/assets/list-edit-fixed.png)
+![Alternativ för fast lista](/help/assets/v2/list-edit-fixed-list.png)
 
 Tryck eller klicka på **Lägg till** om du vill dra in ett nytt objekt i listan.
 
@@ -97,7 +97,7 @@ Tryck eller klicka på **Lägg till** om du vill dra in ett nytt objekt i listan
 
 Listan kan skapas med hjälp av resultatet av en sökning AEM innehåll.
 
-![Alternativ för söklistor](/help/assets/list-edit-search.png)
+![Alternativ för söklistor](/help/assets/v2/list-edit-search.png)
 
 * **Sökfråga**
 Strängen som en fulltextsökning ska köras för att generera listelementen
@@ -110,7 +110,7 @@ Var sökningen ska utföras
 
 Listan kan byggas med sidor som matchar vissa taggar under en viss plats.
 
-![Alternativ för tagglistor](/help/assets/list-edit-tags.png)
+![Alternativ för tagglistor](/help/assets/v2/list-edit-tags.png)
 
 * **Överordnad sida**
 Där taggmatchningen ska börja
@@ -128,7 +128,7 @@ Definiera vilken typ av matchning som ska kvalificera en sida som ska tas med i 
 
 Oavsett hur du väljer att skapa listan finns det vissa sorteringsalternativ som alltid kan definieras.
 
-![Sorteringsalternativ](/help/assets/list-edit-sort-options.png)
+![Sorteringsalternativ](/help/assets/v2/list-edit-sort-options.png)
 
 * **Beställ av**
 Hur elementen ska ordnas
@@ -150,7 +150,7 @@ Maximalt antal objekt som visas i listan.
 
 På fliken Objektinställningar kan du konfigurera formateringen för listelementen.
 
-![Objektinställningar](/help/assets/list-edit-items.png)
+![Objektinställningar](/help/assets/v2/list-edit-item-settings.png)
 
 * **Länka objekt**
 Länka objekt till motsvarande sida
@@ -167,7 +167,7 @@ I designdialogrutan kan mallskaparen definiera vilka typer av listor som ska til
 
 På **Listinställningar** kan datumformatet definieras liksom vilken typ av listor som ska vara tillgängliga i komponenten för innehållsförfattarna.
 
-![Listkomponentens inställning för designdialogrutelista](/help/assets/list-design-list-settings.png)
+![Listkomponentens inställning för designdialogrutelista](/help/assets/v2/list-design-list-settings.png)
 
 * **Datumformat**
 Format som ska användas för att visa det senaste ändringsdatumet
@@ -184,7 +184,7 @@ Inaktivera tagglisttypen i komponenten
 
 På **Objektinställningar** kan du definiera formateringsalternativen för de enskilda listelementen som ska vara tillgängliga i komponenten för innehållsförfattarna.
 
-![Inställningar för designdialogruteobjekt i List Components](/help/assets/list-design-item-settings.png)
+![Inställningar för designdialogruteobjekt i List Components](/help/assets/v2/list-design-item-settings.png)
 
 * **Länka objekt**
 Alternativet Aktivera länkobjekt i [redigeringsdialogruta](#edit-dialog)
