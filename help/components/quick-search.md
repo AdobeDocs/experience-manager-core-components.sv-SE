@@ -3,7 +3,7 @@ title: Snabbsökningskomponent
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
 role: Architect, Developer, Admin, User
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
-source-git-commit: c5db61a3f812fd47eedd1543585ef25d1fc0dc1c
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 1%
@@ -39,7 +39,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 >
 >Skydda Search-komponenten eller andra AEM program mot DOS-attacker bör implementeras på en högre nivå, till exempel genom att använda `mod_security` på avsändaren.
 
-Den senaste tekniska dokumentationen om komponenten för snabbsökning [finns på GitHub](https://adobe.com/go/aem_cmp_tech_search_v1).
+Den senaste tekniska dokumentationen om komponenten för snabbsökning [finns på GitHub](https://adobe.com/go/aem_cmp_tech_search_v2).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 

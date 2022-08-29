@@ -3,7 +3,7 @@ title: Språknavigeringskomponent
 description: Språknavigeringskomponenten tillhandahåller en språk-/landsnavigering för en webbplats, så att besökare kan navigera till samma sida på en annan språkinställning.
 role: Architect, Developer, Admin, User
 exl-id: 10b218b4-c439-4a0f-a46f-0b15d78b0360
-source-git-commit: 28409185f2e46a30fa588b3f92b83b2fa05de96d
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
 workflow-type: tm+mt
 source-wordcount: '957'
 ht-degree: 1%
@@ -42,7 +42,7 @@ Om du vill se exempel på språknavigeringskomponenten och dess konfigurationsal
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om komponenten för språknavigering [finns på GitHub](https://adobe.com/go/aem_cmp_tech_langnav_v1).
+Den senaste tekniska dokumentationen om komponenten för språknavigering [finns på GitHub](https://adobe.com/go/aem_cmp_tech_langnav_v2).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 

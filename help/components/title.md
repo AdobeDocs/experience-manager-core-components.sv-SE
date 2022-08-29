@@ -3,7 +3,7 @@ title: Titelkomponent
 description: Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: 393af72c-549f-4609-afb0-2712f827b549
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -38,7 +38,7 @@ Om du vill se både komponenten Title och exempel på dess konfigurationsalterna
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Title Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_title_v2).
+Den senaste tekniska dokumentationen om Title Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_title_v3).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 

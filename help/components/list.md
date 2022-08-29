@@ -3,7 +3,7 @@ title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 1%
@@ -49,7 +49,7 @@ Om du vill visa List-komponenten samt exempel på dess konfigurationsalternativ 
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om List Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_list_v2).
+Den senaste tekniska dokumentationen om List Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_list_v3).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
