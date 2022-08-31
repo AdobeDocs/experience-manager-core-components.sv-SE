@@ -4,9 +4,9 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 8b6f0a38d27911f23afa1fe26fd1800b4d200d33
+source-git-commit: 01890b368b083b09b5be8a9b6efad55a5d8d4f9e
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1167'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `appTitle` |  | Programtitel, kommer att användas för webbplatsens titel och komponentgrupper (t.ex. `"My Site"`). |
 | `appId` |  | Tekniskt namn, kommer att användas för komponentnamn, konfigurations- och innehållsmappnamn samt klientbiblioteksnamn (t.ex. `"mysite"`). |
 | `artifactId` | *`${appId}`* | Base Maven artifact ID (t.ex. `"mysite"`). |
-| `groupId` |  | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). |
+| `groupId` |  | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). Värdet måste vara en [giltigt namn på Java-paket.](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7) |
 | `package` | *`${groupId}`* | Källpaket för Java (t.ex. `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Projektversion (t.ex. `1.0-SNAPSHOT`). |
 | `aemVersion` | `cloud` | AEM (kan `cloud` for [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` for [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats). |
