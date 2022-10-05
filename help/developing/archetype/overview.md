@@ -4,9 +4,9 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 01890b368b083b09b5be8a9b6efad55a5d8d4f9e
+source-git-commit: c817592207868284d6d9cc1c8bc0405aa50f8957
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1192'
 ht-degree: 1%
 
 ---
@@ -90,19 +90,21 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som är global till hela instansen (kan `y` eller `n`). |
 | `includeCommerce` | `n` | Inkluderar [CIF-kärnkomponenter](https://github.com/adobe/aem-core-cif-components) beroenden och genererar motsvarande artefakter. |
 | `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för handelssystemet GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
+| `includeFormscommunications` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Communications-program. |
+| `includeFormsenrollment` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Enrollment-program. |
+| `sdkFormsVersion` | `latest` | När `aemVersion=cloud` och en av `includeFormsenrollment=y` eller `includeFormscommunications=y`kan en Forms SDK-version anges (t.ex. `2020.12.17.02`). |
 | `datalayer` | `y` | Aktivera integrering med [Adobe-klientdatalager](/help/developing/data-layer/overview.md). |
 | `amp` | `n` | Aktivera [AMP](/help/developing/amp.md) stöd för genererade projektmallar. |
 | `enableDynamicMedia` | `n` | Aktiverar basen för DynamicMedia-komponenter i projektpolicyinställningar och aktiverar Dynamic Media-funktioner i huvudbildkomponentens policy. |
 | `enableSSR` | `n` | Möjlighet att aktivera SSR för front-end-projektet |
 | `precompiledScripts` | `n` | Alternativ till [förkompilera](/help/developing/archetype/precompiled-bundled-scripts.md) serverskript från `ui.apps` och bifoga dem till bygget som en sekundär paketartefakt i `ui.apps` projekt. `aemVersion` ska anges till `cloud`. |
-| `includeFormscommunications` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Communications-program. |
-| `includeFormsenrollment` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Enrollment-program. |
+| `includeFormsheadless` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, `ui.frontend.react.forms.af`och utan störande artefakter. |
 
 ## Systemkrav {#requirements}
 
 | Arketyp | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [37](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-37) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [39](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-39) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Konfigurera den lokala utvecklingsmiljön för [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 

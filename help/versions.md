@@ -3,9 +3,9 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 12fef6732ba53beeb7b3354335005f459321da96
+source-git-commit: 9064b357476128525c428b33bdb49fbe68138890
 workflow-type: tm+mt
-source-wordcount: '2689'
+source-wordcount: '2753'
 ht-degree: 12%
 
 ---
@@ -26,6 +26,8 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.21.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.0) | Den här versionen innehåller ett antal förbättringar, bland annat publicering av LinkHandler-API:t, förbättringar av Image-komponenten och datalagret samt förbättringar av komponenter för flera paneler. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 12 september 2022 |
+| [2.20.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.8) | Den här versionen åtgärdar ett problem med leveransen av SVG-bilder via AdaptiveImageServlet. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 4 augusti 2022 |
 | [2.20.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.6) | Den här korrigeringsversionen åtgärdar ett problem med den nya [Innehållsförteckningskomponent.](/help/components/tableofcontents.md) | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 7 juli 2022 |
 | — | — | — | — | — | — | — |
 | [2.20.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.4) | Den här korrigeringsversionen åtgärdar ett problem med den nya [Innehållsförteckningskomponent.](/help/components/tableofcontents.md) | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 29 juni 2022 |
@@ -137,7 +139,7 @@ Mer information om grundkomponentversionerna finns i [utvecklardokumentation fö
 
 ### Utgåvor {#releases}
 
-Kärnkomponenterna görs tillgängliga via **releaser** och [representerar de faktiska publicerade artefakterna som finns på GitHub](https://github.com/adobe/aem-core-wcm-components/releases). Releaser anges med ett decimaltal i formatet `X.Y.Z` och samla ihop alla kärnkomponenter i ett och samma paket.
+Kärnkomponenterna görs tillgängliga via **releaser** och [representerar de faktiska publicerade artefakter som finns på GitHu.](https://github.com/adobe/aem-core-wcm-components/releases) Releaser anges med ett decimaltal i formatet `X.Y.Z` och samla ihop alla kärnkomponenter i ett och samma paket.
 
 * **Större releaser** innehåller helt nya komponenter, förbättringar av befintliga versioner av komponenter samt standardfelkorrigeringar. Detta representeras av en ökning i `X` -komponenten i versionsnumret.
 * **Mindre releaser** introducerar nya komponenter, nya funktioner i befintliga versioner av komponenter samt felkorrigeringar. Detta representeras av en ökning i `Y` -komponenten i versionsnumret.
