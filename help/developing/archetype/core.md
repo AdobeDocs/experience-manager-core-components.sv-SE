@@ -1,12 +1,12 @@
 ---
 title: Kärnmodul av AEM projekttyp
 description: Kärnmodul av AEM projekttyp
-feature: Kärnkomponenter, AEM projekttyp
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 49e80d8c-2b41-4c42-b45e-c2e3b4b16a59
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 531a7858dd26d32ef189c459c5e7035b6ae0b524
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '182'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ Kärnmodellen (`<src-directory>/<project>/core`) innehåller all Java-kod som be
 
 Plugin-programmet Maven Bundle som definieras i `<src-directory>/<project>/core/pom.xml` ansvarar för att kompilera Java-koden till ett OSGi-paket som kan identifieras av AEM OSGi-behållare. Observera att det här är platsen för Sling Models definieras.
 
-Även om det är ovanligt att kärnpaketet måste driftsättas oberoende av modulen ui.apps i miljöer på den översta nivån, är det bra att driftsätta kärnpaketet direkt under lokal utveckling/testning. Med Maven Sling-pluginen kan kärnpaketet distribueras för att AEM direkt utnyttja `autoInstallBundle`-profilen enligt definitionen i [överordnad POM](/help/developing/archetype/using.md#parent-pom).
+Även om det är ovanligt att kärnpaketet måste driftsättas oberoende av modulen ui.apps i miljöer på den övre nivån, är det bra att driftsätta kärnpaketet direkt under lokal utveckling/testning. Med Maven Sling-pluginen kan kärnpaketet användas för att AEM direkt utnyttja `autoInstallBundle` profil enligt definition i [överordnad POM](/help/developing/archetype/using.md#parent-pom).
 
 ```shell
 mvn -PautoInstallBundle clean install
 ```
 
-När det är klart ska du kunna se Bundles Console på `http://<host>:<port>/system/console/bundles`.
+När du är klar bör du kunna se Bundles Console på `http://<host>:<port>/system/console/bundles`.
 
-##  Enhetstester {#unit-tests}
+## Enhetstester {#unit-tests}
 
 Enhetstestet i kärnmodulen visar klassiska enhetstestningar av koden i paketet. Testa genom att köra:
 
