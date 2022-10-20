@@ -3,7 +3,7 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 1e449c2b3c8fb9a98093c6731455089e8a157015
+source-git-commit: 6fd0fd045846da0d8e6f9c4753d172a9af101ba2
 workflow-type: tm+mt
 source-wordcount: '2780'
 ht-degree: 12%
@@ -30,9 +30,7 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 | [2.21.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.0) | Den här versionen innehåller ett antal förbättringar, bland annat publicering av LinkHandler API, förbättringar av [Bildkomponent](/help/components/image.md) och [datalager,](/help/developing/data-layer/overview.md) samt förbättringar av komponenter med flera paneler. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 12 september 2022 |
 | [2.20.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.8) | Den här versionen åtgärdar ett problem med leveransen av SVG-bilder via AdaptiveImageServlet. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 4 augusti 2022 |
 | [2.20.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.6) | Den här korrigeringsversionen åtgärdar ett problem med den nya [Innehållsförteckningskomponent.](/help/components/tableofcontents.md) | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 7 juli 2022 |
-| — | — | — | — | — | — | — |
 | [2.20.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.4) | Den här korrigeringsversionen åtgärdar ett problem med den nya [Innehållsförteckningskomponent.](/help/components/tableofcontents.md) | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 29 juni 2022 |
-| — | — | — | — | — | — | — |
 | [2.20.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.2) | Det här är en patch som åtgärdar ett problem i nya AEMaaCS [webboptimerad tillgångsleveranstjänst.](/help/developing/web-optimized-image-delivery.md) | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 20 juni 2022 |
 | [2.20.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.0) | Den här versionen lägger till en ny [Innehållsförteckningskomponent](/help/components/tableofcontents.md), lägger till stöd för AEMaaCS [webboptimerad tillgångsleveranstjänst,](/help/developing/web-optimized-image-delivery.md) och innehåller felkorrigeringar. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 9 juni 2022 |
 | [2.19.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.19.0) | Den här versionen lägger till en ny version i [Sökkomponent](/help/components/quick-search.md) och funktioner i [Button-komponent](/help/components/button.md) samt många tillgänglighetsförbättringar och felkorrigeringar. | - | 6.5.10.0+ * | Kontinuerlig | 8, 11 | 7 april 2022 |
