@@ -1,0 +1,46 @@
+---
+title: Kampanjvariabler
+description: Använd kampanjvariabler som platshållare för att skapa personaliserat e-postinnehåll.
+role: Architect, Developer, Admin, User
+hidefromtoc: true
+index: false
+source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 0%
+
+---
+
+
+# Kampanjvariabler {#campaign-variables}
+
+Använd kampanjvariabler för att skapa personaliserat e-postinnehåll. Kampanjvariabler fungerar som platshållare för Adobe Campaign-värden som du kan infoga i ditt e-postinnehåll. När innehållet skickas via Adobe Campaign ersätter Campaign dessa variabler med mottagarens personaliserade innehåll.
+
+## Användning {#usage}
+
+Med e-postkärnkomponenterna blir kampanjvariablerna enkelt tillgängliga via personaliseringsknappar bredvid vanliga textfält. När du trycker på det visas en dialogruta där du kan välja ett anpassningsfält.
+
+Listan med tillgängliga anpassningsfält synkroniseras med din Adobe Campaign-instans. Fälten hanteras i Adobe Campaign i schemat `nms:seedMember`. Alla fält i `nms:seedMember` måste också finnas i mottagartabellen.
+
+## Välj Adobe Campaign Variable Dialog {#dialog}
+
+Dialogrutan Välj Adobe Campaign-variabel är tillgänglig i många redigeringsdialogrutor för e-postkärnkomponenter. Om du vill använda den klickar du på **Välj Adobe Campaign-variabel** -ikonen bredvid det tillämpliga fältet. Den här ikonen kan ha två former.
+
+![Adobe Campaign](/help/email/assets/campaign-button.png)
+![Välj Adobe Campaign Variable-ikon](/help/email/assets/select-adobe-campaign-variable-icon.png)
+
+Om du klickar på båda ikonerna öppnas **Välj Adobe Campaign-variabel** -dialogrutan.
+
+![Dialogrutan Välj Adobe Campaign-variabel](assets/select-campaign-variable-dialog.png)
+
+Använd kolumnvyn för att hitta variabeln som du vill infoga. Om du klickar på en nod i en kolumn visas dess underordnade noder i en ny kolumn till höger. På så sätt kan du navigera i variabelinnehållsstrukturen.
+
+Markera variabeln som du vill infoga och klicka sedan på bockmarkeringen längst upp till höger i dialogrutan.
+
+![Adobe Campaign Variable har valts](assets/select-campaign-variable-dialog-selected.png)
+
+Variabeln infogas sedan i fältet i redigeringsdialogrutan för e-postkärnkomponenten.
+
+![Kampanjvariabel infogad i redigeringsdialogrutan](assets/campaign-variable.png)
+
+Klicka på X längst upp till vänster i dialogrutan när som helst för att avbryta och stänga dialogrutan.
