@@ -1,22 +1,22 @@
 ---
 title: Bildkomponent
-description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
+description: Core Component Image Component Component är en adaptiv image-komponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: f0971db66cbbf8221c12cedf108eee3bca8a527a
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
 
 # Bildkomponent{#image-component}
 
-Core Component Image Component Component är en adaptiv bildkomponent med redigering på plats.
+Core Component Image Component Component är en adaptiv image-komponent.
 
 ## Användning {#usage}
 
-Bildkomponenten har anpassningsbar bildmarkering och responsiv funktionalitet med lat inläsningsbeteende för sidbesökaren samt enkel bildplacering och beskärning för innehållsförfattaren.
+Bildkomponenten har anpassningsbart bildval och responsivt beteende med lat inläsningsbeteende för sidbesökaren samt enkel bildplacering för innehållsförfattaren.
 
 Bildbredderna och ytterligare inställningar kan definieras av mallskaparen i [designdialogruta](#design-dialog). Innehållsredigeraren kan överföra eller välja resurser i [dialogrutan konfigurera.](#configure-dialog)
 
