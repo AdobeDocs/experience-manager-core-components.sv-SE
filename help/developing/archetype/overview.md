@@ -4,7 +4,7 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: c817592207868284d6d9cc1c8bc0405aa50f8957
+source-git-commit: 2557a72b6bc9ea3f1fd0f73e53b5880f9b6d3ce7
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -51,7 +51,7 @@ AEM Project Archetype är en Maven-mall som skapar ett minimalt, metodbaserat Ad
 Om du vill generera ett projekt justerar du följande kommandorad efter dina behov:
 
 ```shell
-mvn -B archetype:generate \
+mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
  -D archetypeGroupId=com.adobe.aem \
  -D archetypeArtifactId=aem-project-archetype \
  -D archetypeVersion=XX \
