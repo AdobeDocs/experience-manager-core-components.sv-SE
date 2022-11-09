@@ -1,25 +1,25 @@
 ---
 title: Front-End Build för SPA
 description: En beskrivning av den inledande processen för React-baserade SPA
-feature: Kärnkomponenter, AEM projekttyp
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: dd8ef13a-9686-47a9-b6af-e486ff10c4d8
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 0eea0cd65063c739e5b405b0380b73962a858e48
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
 
 # Front-End Build för SPA {#frontend-react}
 
-I det här dokumentet förklaras detaljerna för det projekt som skapades när en arkivtyp användes för att skapa ett ensidigt program (SPA) baserat på React-ramverket. Det vill säga när du anger `frontendModule` som `react`.
+I det här dokumentet förklaras detaljerna för det projekt som skapades när en arkivtyp användes för att skapa ett ensidigt program (SPA) baserat på React-ramverket. När du ställer in `frontendModule` alternativ till `react`.
 
 ## Översikt {#overview}
 
-Det här projektet startades med [create-response-app](https://github.com/facebook/create-react-app).
+Det här projektet startades med [create-rea-app](https://github.com/facebook/create-react-app).
 
-Det här programmet är utformat för att förbruka en webbplats AEM modell. Layouten genereras automatiskt med hjälpkomponenterna från [@adobe/cq-rea-editable-components](https://www.npmjs.com/package/@adobe/cq-react-editable-components)-paketet.
+Det här programmet är utformat för att förbruka en webbplats AEM modell. Layouten genereras automatiskt med hjälpkomponenterna från [@adobe/cq-rea-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components) paket.
 
 ## Skript {#scripts}
 
@@ -33,7 +33,7 @@ npm start
 
 Med det här kommandot körs programmet i utvecklingsläge genom att JSON-modellen proxeras från en lokal AEM som körs på http://localhost:4502. Detta förutsätter att hela projektet har distribuerats till AEM minst en gång (`mvn clean install -PautoInstallPackage` i projektets rot).
 
-När du har kört `npm start` i katalogen [ui.front](uifrontend.md) öppnas din app automatiskt i webbläsaren (på sökvägen `http://localhost:3000/content/<appId>/<country>/<language>/home.html`). Om du gör ändringar läses sidan in igen.
+Efter körning `npm start` i [ui.front](uifrontend.md) öppnas din app automatiskt i webbläsaren (på sökvägen `http://localhost:3000/content/<appId>/<country>/<language>/home.html`). Om du gör ändringar läses sidan in igen.
 
 Om du får felmeddelanden relaterade till CORS kan du konfigurera AEM enligt följande:
 
@@ -50,7 +50,7 @@ Om du får felmeddelanden relaterade till CORS kan du konfigurera AEM enligt fö
 npm test
 ```
 
-Det här kommandot startar testköraren i interaktivt bevakningsläge. Mer information finns i [Reaktionsdokumentationen om att köra test](https://facebook.github.io/create-react-app/docs/running-tests).
+Det här kommandot startar testköraren i interaktivt bevakningsläge. Se [Reagera på dokumentation om testkörning](https://facebook.github.io/create-react-app/docs/running-tests) för mer information.
 
 ### npm run build {#npm-run-build}
 
@@ -58,13 +58,13 @@ Det här kommandot startar testköraren i interaktivt bevakningsläge. Mer infor
 npm run build
 ```
 
-Med det här kommandot byggs programmet för produktion till byggmappen. Det innehåller Reagera i produktionsläge och optimerar bygget för bästa prestanda. Mer information finns i [Reaktionsdokumentationen om distribution](https://facebook.github.io/create-react-app/docs/deployment).
+Med det här kommandot byggs programmet för produktion till byggmappen. Det innehåller Reagera i produktionsläge och optimerar bygget för bästa prestanda. Se [Reagera på dokumentation om distribution](https://facebook.github.io/create-react-app/docs/deployment) för mer information.
 
-Dessutom genereras en AEM ClientLib från programmet med [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)-paketet.
+Dessutom genereras en AEM ClientLib från programmet med [aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator) paket.
 
 ## Webbläsarstöd {#browser-support}
 
-Som standard används standardalternativet [BrowserList](https://github.com/browserslist/browserslist) för att identifiera målwebbläsare i det här projektet. Dessutom innehåller det polyfyllningar för moderna språkfunktioner som stöder äldre webbläsare (t.ex. Internet Explorer 11). Om stöd för sådana webbläsare inte krävs kan polyfyllningsberoenden och importer tas bort.
+Som standard används [Webbläsarlista](https://github.com/browserslist/browserslist)Standardalternativet för att identifiera målwebbläsare. Dessutom innehåller det polyfyllningar för moderna språkfunktioner som stöder äldre webbläsare (t.ex. Internet Explorer 11). Om stöd för sådana webbläsare inte krävs kan polyfyllningsberoenden och importer tas bort.
 
 ## Koddelning {#code-splitting}
 
@@ -82,6 +82,6 @@ runtime~main.a8a9905a.js.map
 
 Att bara läsa in segment när de behövs kan förbättra programmets prestanda avsevärt.
 
-För att den här funktionen ska fungera med AEM måste programmet kunna identifiera vilka JS- och CSS-filer som behöver begäras från den HTML som genereras av AEM. Detta kan du göra med hjälp av nyckeln entrypoints i filen asset-manifest.json. Filen tolkas i clientlib.config.js och bara entrypoint-filerna paketeras i ClientLib. De återstående filerna placeras i ClientLibs resurskatalog och efterfrågas dynamiskt och därför bara laddas när de verkligen behövs.
+För att den här funktionen ska fungera med AEM måste programmet kunna identifiera vilka JS- och CSS-filer som behöver begäras från HTML som genereras av AEM. Detta kan du göra med hjälp av nyckeln entrypoints i filen asset-manifest.json. Filen tolkas i clientlib.config.js och bara entrypoint-filerna paketeras i ClientLib. De återstående filerna placeras i ClientLibs resurskatalog och efterfrågas dynamiskt och därför bara laddas när de verkligen behövs.
 
-Mer information om hur AEM ClientLibs används av projektets arkityp finns i den allmänna dokumentationen [ui.front-modulen ](uifrontend.md#clientlibs).
+Se det allmänna [ui.frontModuldokumentation](uifrontend.md#clientlibs) om du vill ha mer information om hur AEM ClientLibs används av projektets arkityp.
