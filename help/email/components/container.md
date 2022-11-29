@@ -2,9 +2,8 @@
 title: E-postbehållarkomponent
 description: Med e-postbehållarkomponenten kan du skapa en behållare för flera ytterligare komponenter i e-postinnehållet.
 role: Architect, Developer, Admin, User
-hidefromtoc: true
-index: false
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+exl-id: 3b271e95-0093-4cb1-bb83-8446ba12a821
+source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
 source-wordcount: '835'
 ht-degree: 1%

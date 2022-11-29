@@ -2,11 +2,10 @@
 title: Introduktion till viktiga e-postkomponenter
 description: Skapa övertygande e-postinnehåll med flexibiliteten i E-postkärnkomponenterna och leverera det med kraften i Adobe Campaign.
 role: Architect, Developer, Admin, User
-hidefromtoc: true
-index: false
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+exl-id: 0a411f28-bd6a-4bad-b473-6bc27c1d1055
+source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '409'
 ht-degree: 1%
 
 ---
@@ -31,9 +30,9 @@ E-post är en del av varumärkesupplevelsen och kundresan. Med e-postkärnkompon
 
 * De centrala e-postkomponenterna är baserade på [Kärnkomponenter,](/help/introduction.md) och därför även [Redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och [Formatsystem.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)
 * Det finns [tio e-postoptimerade produktionsklara komponenter](#components) för att skapa e-postinnehåll.
-* De centrala e-postkomponenterna erbjuder avancerad personalisering tack vare infogning av Adobe Campaign-variabler i de flesta dialogrutefält.
-* Den flexibla segmenteringskomponenten möjliggör avancerad segmentering av innehållet.
-* De centrala e-postkomponenterna ger optimala e-postanpassade HTML-utdata tack vare [Inline för CSS-format,](https://github.com/adobe/aem-core-email-components/wiki/CSS-Styles-Inliner) [Inliner för HTML-attribut.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner) och [HTML saneringsföretaget.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Sanitizer)
+* De centrala e-postkomponenterna erbjuder avancerad personalisering tack vare infogningen av [Adobe Campaign-variabler](campaign-variables.md) i de flesta dialogrutefält.
+* Den flexibla [Segmenteringskomponent](/help/email/components/segmentation.md) möjliggör avancerad segmentering av ert innehåll.
+* De centrala e-postkomponenterna ger optimala e-postanpassade HTML-utdata tack vare [Inline för CSS-format,](https://github.com/adobe/aem-core-email-components/wiki/CSS-Styles-Inliner:-Technical-documentation) [Inliner för HTML-attribut.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner) och [HTML saneringsföretaget.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Sanitizing)
 * Du kan skapa e-postinnehåll var som helst nedan `/content`.
 * E-postkärnkomponenterna är [öppen källkod.](https://github.com/adobe/aem-core-email-components)
 
@@ -43,7 +42,7 @@ E-postkärnkomponenterna har följande krav.
 
 | AEM | Adobe Campaign | Kärnkomponenter |
 |---|---|---|
-| AEM 6.5.x.y (på plats eller i AMS) | Adobe Campaign Classic vX<br>eller<br>Adobe Campaign Standard | [Frigör x](/help/versions.md) eller högre |
+| AEM 6.5.14.0+<br>Lokal eller AMS | Adobe Campaign Classic<br>Adobe Campaign Standard | [Version 2.21.2](/help/versions.md)+ |
 
 >[!NOTE]
 >

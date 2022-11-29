@@ -2,9 +2,8 @@
 title: E-postsegmenteringskomponent
 description: E-postsegmentkomponenten
 role: Architect, Developer, Admin, User
-hidefromtoc: true
-index: false
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+exl-id: 6c88b8c5-189a-40c0-ab28-04d37dc5fbac
+source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 0%

@@ -2,9 +2,8 @@
 title: E-postupplevelsefragmentkomponent
 description: Med e-postupplevelsefragmentkomponenten kan innehållsförfattaren placera en Experience Fragment-variant i sitt innehåll samtidigt som den stöder en lokaliserad innehållsstruktur.
 role: Architect, Developer, Admin, User
-hidefromtoc: true
-index: false
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+exl-id: 861c1fd1-6d6d-426c-a338-a558326fe16e
+source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
 source-wordcount: '927'
 ht-degree: 0%

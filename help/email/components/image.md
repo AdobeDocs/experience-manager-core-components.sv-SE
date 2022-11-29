@@ -2,9 +2,8 @@
 title: E-postbildkomponent
 description: E-postbildkomponenten är en adaptiv bildkomponent med redigering på plats.
 role: Architect, Developer, Admin, User
-hidefromtoc: true
-index: false
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+exl-id: f5d40047-3082-4edd-a5f6-6ab3e33997f9
+source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
 source-wordcount: '1683'
 ht-degree: 0%

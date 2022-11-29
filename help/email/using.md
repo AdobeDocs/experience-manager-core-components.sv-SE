@@ -2,11 +2,10 @@
 title: Använda e-postkärnkomponenter
 description: Lär dig mer om grundläggande installation, konfiguration och användning av e-postkärnkomponenterna.
 role: Architect, Developer, Admin, User
-hidefromtoc: true
-index: false
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+exl-id: 0e79ca8f-eb0a-4519-b1e8-a9d3b0b99987
+source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -22,7 +21,7 @@ E-postkärnkomponenterna kan användas med AEM 6.5. Se [Krav-avsnittet i introdu
 
 ### Installera kärnkomponenter {#core-components}
 
-E-postkärnkomponenterna bygger på AEM kärnkomponenter. Eftersom kärnkomponenterna inte levereras med AEM måste du först installera de AEM kärnkomponenterna innan du installerar e-postkärnkomponenterna.
+E-postkärnkomponenterna bygger på AEM kärnkomponenter. Eftersom kärnkomponenterna inte levereras med AEM 6.5 måste du först installera de AEM kärnkomponenterna innan du installerar e-postkärnkomponenterna.
 
 Se avsnittet [Hämta och installera](/help/get-started/using.md#download-and-install) i dokumentet Using Core Components för mer information om hur du installerar Core Components.
 
@@ -80,6 +79,4 @@ När e-postkomponenterna har installerats och integreringen med Adobe Campaign h
 
 Ett exempel på hur du skapar e-postinnehåll i AEM och levererar i Adobe Campaign finns i följande resurser.
 
-* AEM as a Cloud Service: [Skapa kampanjnyhetsbrev med AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/campaign/creating-newsletters.html)
 * AEM 6.5: [Arbeta med Adobe Campaign Classic och Adobe Campaign Standard](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/aem-adobe-campaign/campaign.html)
-
