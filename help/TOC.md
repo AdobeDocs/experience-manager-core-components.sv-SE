@@ -4,9 +4,9 @@ user-guide-title: AEM kärnkomponenter
 breadcrumb-title: Guide för kärnkomponenter
 user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
 feature-set: Experience Manager Sites
-source-git-commit: 7744cc1debe991d2c0daa9e91f2a6b7c04d65342
+source-git-commit: 5431b57727ca5b9518cb80f620cffd0c31ef2f2d
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '282'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 5%
    + [Skapa med kärnkomponenter](get-started/authoring.md)
    + [Använda kärnkomponenter](get-started/using.md)
    + [Lokaliseringsfunktioner](get-started/localization.md)
-+ Komponenterna {#components}
++ WCM-komponenterna {#wcm-components}
    + [Dragspel](components/accordion.md)
    + [Breadcrumb](components/breadcrumb.md)
    + [Knapp](components/button.md)
@@ -82,6 +82,22 @@ ht-degree: 5%
       + [Lista (v2)](components/v2/list.md)
       + [Sida (v2)](components/v2/page.md)
       + [Titel (v2)](components/v2/title.md)
++ E-postkomponenter {#email}
+   + [Introduktion](/help/email/introduction.md)
+   + [Använda e-postkärnkomponenter](/help/email/using.md)
+   + [Kampanjvariabler](/help/email/campaign-variables.md)
+   + [Versioner](/help/email/versions.md)
+   + E-postkomponenterna {#components}
+      + [Sidan](/help/email/components/page.md)
+      + [Behållare](/help/email/components/container.md)
+      + [Titel](/help/email/components/title.md)
+      + [Text](/help/email/components/text.md)
+      + [Bild](/help/email/components/image.md)
+      + [Knapp](/help/email/components/button.md)
+      + [Teaser](/help/email/components/teaser.md)
+      + [Experience Fragment](/help/email/components/experience-fragment.md)
+      + [Innehållsfragment](/help/email/components/content-fragment.md)
+      + [Segmentering](/help/email/components/segmentation.md)
 + Utveckling {#developing}
    + [Utveckla kärnkomponenter](developing/overview.md)
    + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
@@ -110,19 +126,3 @@ ht-degree: 5%
       + [ui.tests-modul](developing/archetype/uitests.md)
       + [it.tests-modul](developing/archetype/ittests.md)
       + [Build Analyzer Maven Plugin](developing/archetype/build-analyzer-maven-plugin.md)
-+ E-postkomponenter {#email}
-   + [Introduktion](/help/email/introduction.md)
-   + [Använda e-postkärnkomponenter](/help/email/using.md)
-   + [Kampanjvariabler](/help/email/campaign-variables.md)
-   + [Versioner](/help/email/versions.md)
-   + E-postkomponenterna {#components}
-      + [Sidan](/help/email/components/page.md)
-      + [Behållare](/help/email/components/container.md)
-      + [Titel](/help/email/components/title.md)
-      + [Text](/help/email/components/text.md)
-      + [Bild](/help/email/components/image.md)
-      + [Knapp](/help/email/components/button.md)
-      + [Teaser](/help/email/components/teaser.md)
-      + [Experience Fragment](/help/email/components/experience-fragment.md)
-      + [Innehållsfragment](/help/email/components/content-fragment.md)
-      + [Segmentering](/help/email/components/segmentation.md)

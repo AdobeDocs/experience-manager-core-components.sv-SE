@@ -3,9 +3,9 @@ title: Introduktion till kärnkomponenter
 description: Få lösningar på problem med kärnkomponenterna och låt andra skapa element i AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 8bebe3ca036557f3f7c6b8ec0e65d6d104d5ffae
+source-git-commit: 5431b57727ca5b9518cb80f620cffd0c31ef2f2d
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '967'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 
 |  |  |
 |---|---|
-| Produktionsklart | Core Components är 30 robusta komponenter som är väl testade, allmänt använda och som fungerar bra. |
+| Produktionsklart | Core Components är 30 robusta WCM-komponenter som är väl testade, allmänt använda och som fungerar bra. |
 | Molnklar | Om [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), på [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt fungerar de bara. |
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | Mallnivå [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html#content-policies) Ange vilka funktioner som sidförfattarna får använda eller inte får använda. |
@@ -47,7 +47,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |
 | Öppna källkod | Om något inte är som det ska, [bidra till förbättringar!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
 
-## Komponenterna {#the-components}
+## WCM-komponenterna {#the-wcm-components}
 
 Den aktuella versionen av Core Components innehåller följande komponenter.
 
@@ -124,3 +124,9 @@ Om du vill konfigurera din lokala utvecklingsmiljö går du till [den här över
 >Core Components är automatiskt en del av AEM as a Cloud Service och du har alltid den senaste versionen av Core Components.
 >
 >Se [Använda kärnkomponenter](/help/get-started/using.md) om du vill ha mer information om hur du kommer igång med kärnkomponenterna både i AEMaaCS och lokalt.
+
+## Andra komponenter {#other-components}
+
+Det finns ytterligare komponenter tillgängliga för AEM som bygger på kärnkomponenterna.
+
+* [E-postkärnkomponenterna](/help/email/introduction.md) - Upptäck komponenter som är byggda ovanpå kärnkomponenterna och som är särskilt avsedda att användas med Adobe Campaign.
