@@ -3,9 +3,9 @@ title: Innehållsförteckningskomponent
 description: Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras på rubrikerna i sidinnehållet, vilket gör att läsarna snabbt kan navigera på sidan.
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 8beae61676340e8aafaee469018d865ea7ed934e
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '768'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,12 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v1 | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
+
+>[!NOTE]
+>
+>På AEM as a Cloud Service måste administratören aktivera ett filter för komponenten för att den ska kunna återge komponentens innehåll.
+>
+>[Mer information om komponenten finns i GitHub-dokumentationen](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1) för mer information.
 
 ### Teknisk information {#technical-details}
 
