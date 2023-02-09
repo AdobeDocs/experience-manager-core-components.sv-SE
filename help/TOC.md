@@ -1,18 +1,18 @@
 ---
 sub-product: AEM Core Components
-user-guide-title: AEM kärnkomponenter
-breadcrumb-title: Guide för kärnkomponenter
-user-guide-description: Använd de utbyggbara kärnkomponenterna för att låta skribenterna enkelt skapa innehåll.
+user-guide-title: Grundläggande komponenter i AEM
+breadcrumb-title: Användarhandbok om grundläggande komponenter
+user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 5431b57727ca5b9518cb80f620cffd0c31ef2f2d
+source-git-commit: 534b4f0f8a298772de0f2f899dd4cfbaa3db4e74
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 5%
+source-wordcount: '360'
+ht-degree: 10%
 
 ---
 
 
-# Hjälp för AEM Core Components {#using}
+# Grundläggande komponenter i AEM Hjälp {#using}
 
 + [Introduktion till kärnkomponenter](introduction.md)
 + [Sökvägar till lyckade](developing/success.md)
@@ -98,6 +98,30 @@ ht-degree: 5%
       + [Experience Fragment](/help/email/components/experience-fragment.md)
       + [Innehållsfragment](/help/email/components/content-fragment.md)
       + [Segmentering](/help/email/components/segmentation.md)
++ Adaptiv Forms {#adaptive-forms}
+   + [Introduktion](/help/adaptive-forms/introduction.md)
+   + Adaptiva Forms-komponenter {#adaptive-forms-components}
+      + [Adaptivt Forms-dragspel](/help/adaptive-forms/components/accordion.md)
+      + [Adaptiv Forms-knapp](/help/adaptive-forms/components/button.md)
+      + [Adaptiv Forms-kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+      + [Anpassad datumväljare för Forms](/help/adaptive-forms/components/date-picker.md)
+      + [Adaptiv Forms-nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+      + [Anpassad e-postinmatning från Forms](/help/adaptive-forms/components/email-input.md)
+      + [Adaptiva Forms-filbilagor](/help/adaptive-forms/components/file-attachment.md)
+      + [Anpassningsbara vågräta Forms-flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+      + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
+      + [Adaptiv inmatning av Forms-nummer](/help/adaptive-forms/components/number-input.md)
+      + [Adaptiv Forms-panel](/help/adaptive-forms/components/panel-container.md)
+      + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
+      + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
+      + [Adaptiv Forms-sändningsknapp](/help/adaptive-forms/components/submit-button.md)
+      + [Adaptiv telefoninmatning från Forms](/help/adaptive-forms/components/telephone-input.md)
+      + [Adaptiv Forms-text](/help/adaptive-forms/components/text.md)
+      + [Adaptiv Forms-textruta](/help/adaptive-forms/components/text-input.md)
+      + [Adaptiv Forms-titel](/help/adaptive-forms/components/title.md)
+      + [Adaptiv Forms-guidelayout](/help/adaptive-forms/components/wizard.md)
+      + [Sidhuvud](/help/adaptive-forms/components/header.md)
+      + [Sidfot](/help/adaptive-forms/components/footer.md)
 + Utveckling {#developing}
    + [Utveckla kärnkomponenter](developing/overview.md)
    + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
