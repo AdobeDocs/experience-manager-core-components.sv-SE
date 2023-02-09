@@ -2,9 +2,9 @@
 title: Adaptiv Forms Core-komponent - sidfot
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Footer.
 role: Architect, Developer, Admin, User
-source-git-commit: 9a8b8661554eea2f669f17bee89f97165bcb58db
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -36,8 +36,10 @@ Det finns flera skäl till att det är bra att ta med en sidfotskomponent i ett 
 
 Den adaptiva huvudkomponenten i Forms Footer kom i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
+|  |  |
+|---|---|
 | Komponentversion | AEM as a Cloud Service |
-|--- |--- |---|---|
+| — | --- |
 | v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
 Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
@@ -60,52 +62,49 @@ Du kan enkelt anpassa sidfotsupplevelsen för besökare med dialogrutan Konfigur
 * **Dialogrutan Redigera**
 I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som gör att användaren kan skapa text för sidfoten.
 
-   * **Fet** - Det här alternativet använder fet stil på markerad text eller fetstilt formatera text som skrivs efter markören. `Ctrl+B` är ett kortkommando.
+* **Fet** - Det här alternativet använder fet stil på markerad text eller fetstilt formatera text som skrivs efter markören. `Ctrl+B` är ett kortkommando.
 
-   * **Kursiv** - Med det här alternativet används kursiv formatering på markerad text eller kursiv stil som anges efter markören. `Ctrl+I` är ett kortkommando.
+* **Kursiv** - Med det här alternativet används kursiv formatering på markerad text eller kursiv stil som anges efter markören. `Ctrl+I` är ett kortkommando.
 
-   * **Punkt**
-
-      ![Punktalternativ](/help/adaptive-forms/assets/footer_bullet.png)
-
-      * **Punktlikon** - Den markerade texten formateras som en punktlista eller börjar infogningen av en punktlista efter markören. Om du vill avsluta en punktlista trycker eller klickar du på knappen Bullet en gång till eller anger två vagnreturer.
-
-      * **Ikon för numrerad lista** - Den markerade texten formateras som en numrerad lista eller börjar infogningen av en numrerad lista efter markören. Om du vill avsluta en numrerad lista trycker eller klickar du på knappen Numrerad igen eller anger två radmatningstecken.
-
-      * **Ikon för indrag** - Den minskar indragsnivån för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
-
-      * **Ikon för indrag** - Ökar indraget för den markerade texten eller texten som anges efter markören.
-   * **Hyperlänk**
-
-      ![Hyperlänksalternativ](/help/adaptive-forms/assets/footer_link.png)
+![Punktalternativ](/help/adaptive-forms/assets/footer_bullet.png)
 
 
-      * **Bana** - Ange sökvägen
-         1. Använd dialogrutan Öppna markering för att välja en bana i AEM.
-         1. Om länken inte finns i AEM anger du den absoluta URL:en.
-         1. Icke-absoluta sökvägar tolkas som relativa AEM.
-      * **Alternativ text** - Ange alternativ beskrivande text för länken.
+* **Punkt**
 
-      * **Mål** - Välj länkbeteende
-         * Mål
-         * Samma flik
-         * Ny flik
-         * Överordnad ram
-         * Övre bildruta
+   * **Punktlikon** - Den markerade texten formateras som en punktlista eller börjar infogningen av en punktlista efter markören. Om du vill avsluta en punktlista trycker eller klickar du på knappen Bullet en gång till eller anger två vagnreturer.
+
+   * **Ikon för numrerad lista** - Den markerade texten formateras som en numrerad lista eller börjar infogningen av en numrerad lista efter markören. Om du vill avsluta en numrerad lista trycker eller klickar du på knappen Numrerad igen eller anger två radmatningstecken.
+
+   * **Ikon för indrag** - Den minskar indragsnivån för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
+
+   * **Ikon för indrag** - Ökar indraget för den markerade texten eller texten som anges efter markören.
+
+![Hyperlänksalternativ](/help/adaptive-forms/assets/footer_link.png)
+
+* **Hyperlänk**
+
+   * **Bana** - Ange sökvägen
+      1. Använd dialogrutan Öppna markering för att välja en bana i AEM.
+      1. Om länken inte finns i AEM anger du den absoluta URL:en.
+      1. Icke-absoluta sökvägar tolkas som relativa AEM.
+   * **Alternativ text** - Ange alternativ beskrivande text för länken.
+
+   * **Mål** - Välj länkbeteende
+      * Mål
+      * Samma flik
+      * Ny flik
+      * Överordnad ram
+      * Övre bildruta
    * **Ikonen Bryt länk** - Det här alternativet tar bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt om länken redan är markerad.
 
    * **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering på den markerade texten. Du kan också formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
 
 
 
-* **ID**
-Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
+* **ID**: Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
 
    * Om inget anges skapas ett unikt ID automatiskt* som du hittar genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
-
-## Designdialogruta {#design-dialog}
-
 
 

@@ -2,7 +2,7 @@
 title: Adaptiv Forms Core-komponent - textinmatning (textruta)
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-textinmatning.
 role: Architect, Developer, Admin, User
-source-git-commit: 0e4fb8454b7ef84eb5b1b73b01c982a2f9c12381
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1727'
 ht-degree: 0%
@@ -34,8 +34,10 @@ Det finns flera skäl till att använda textinmatningskomponenten i ett adaptivt
 
 Den adaptiva kärnkomponenten för textinmatning från Forms släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
+|  |  |
+|---|---|
 | Komponentversion | AEM as a Cloud Service |
-|--- |--- |---|---|
+| — | --- |
 | v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
 Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
@@ -61,13 +63,21 @@ Du kan enkelt anpassa textinmatningen för besökare med dialogrutan Konfigurera
 * **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
 * **Platshållartext** - Platshållartext i en formulärkomponent refererar till en kort etikett eller en fråga som visas i ett inmatningsfält som ett tips till användaren om vilken typ av information som förväntas anges i det fältet. Platshållartext försvinner när användaren börjar skriva i fältet och visas igen om fältet lämnas tomt. Den ger användaren en visuell referens, men fungerar inte som en permanent etikett eller ett permanent värde för fältet.
+
 * **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+
 * **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
+
 * **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+
 * **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+
 * **Standardvärde** - Med det här alternativet kan du lägga till ett standardvärde i ett formulärfält. Texten försvinner när användaren börjar skriva i fältet. If **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standardvärdet på skärmen. Om användaren inte anger något värde i formulärfältet skickas det här värdet när formuläret skickas.
+
 * **Tillåt flera rader** - Med det här alternativet kan användaren ange flera rader i ett formulärfält.
+
 * **Tillåt RTF** - I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som användaren kan använda för att formatera text.
+
 * **Autofyll attribut** - Fyll i automatiskt fyller i formulärfält enligt ett mönster eller text som redan har angetts. När användaren börjar skriva text i formulärfältet visas förslag i en nedrullningsbar lista där han/hon kan välja lämpligt alternativ.
 
 ### Fliken Validering {#validation-tab}
@@ -89,7 +99,9 @@ Du kan enkelt anpassa textinmatningen för besökare med dialogrutan Konfigurera
 * **Felmeddelande för minsta antal tecken** - **Felmeddelande för minsta antal tecken** kan du lägga till ett anpassat felmeddelande om du anger tecken som är mindre än värdet som anges i **Minsta antal tecken** alternativ.
 
 The **Valideringsmönster** kan du ange ett mönster för att validera den angivna texten. Om texten inte kan valideras med det värde som anges i **Mönster** visas felmeddelandet på skärmen.
+
 * **Mönster** - Med det här alternativet kan du ange tillåtna verifieringsmönster för text. Reguljära uttryck tillåts också.
+
 * **Felmeddelande** - Med det här alternativet kan du ange ett meddelande som visas på skärmen om den angivna texten inte kan valideras med det värde som anges i **Mönster** option
 
 ### Fliken Hjälpinnehåll {#help-content-tab}

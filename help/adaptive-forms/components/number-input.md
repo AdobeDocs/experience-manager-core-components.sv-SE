@@ -2,7 +2,7 @@
 title: Adaptiv Forms Core-komponent - talindata
 description: Använda eller anpassa den adaptiva kärnkomponenten Forms Number.
 role: Architect, Developer, Admin, User
-source-git-commit: 6ea000f9259e9478ee3c0923ac35af7814e184d9
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
 source-wordcount: '1780'
 ht-degree: 0%
@@ -39,8 +39,10 @@ Det finns flera skäl till att det är bra att ta med en numerisk indatakomponen
 
 Core-komponenten för indata för adaptiva Forms Number släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
+|  |  |
+|---|---|
 | Komponentversion | AEM as a Cloud Service |
-|--- |--- |---|---|
+| — | --- |
 | v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
 Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
@@ -93,6 +95,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din talinmatning för besökar
 * **Uteslut minimivärde** - Markera den här kryssrutan om du inte vill ha det minimivärde som anges i **Lägsta tal/Minsta tal** som ska inkluderas i det &#x200B; värdeintervallet som ska anges i formulärfältet.
 
 * **Högsta tal/största tal** - Använd det här alternativet om du vill välja det högsta tillåtna talet som ska anges i formulärfältet. Om talet är större än talet som anges i **Högsta tal/största tal** om du anger ett alternativ i formulärfältet visas felmeddelandet.
+
 * **Högsta felmeddelande** - Med det här alternativet kan du ange ett felmeddelande som visas när användaren anger ett värde som är större än det som anges i **Högsta tal/största tal** alternativ.
 
 * **Uteslut högsta värde** - Markera den här kryssrutan om du inte vill ha det maximala värde som anges i **Högsta tal/största tal** som ska inkluderas i det värdeintervall som ska anges i formulärfältet.

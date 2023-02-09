@@ -2,9 +2,9 @@
 title: Adaptiv Forms Core-komponent - rubrik
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Header.
 role: Architect, Developer, Admin, User
-source-git-commit: 7f680eac1da61b55f9d90db6c0842421d03ac1dc
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '654'
 ht-degree: 1%
 
 ---
@@ -34,10 +34,11 @@ En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formul�
 
 Den adaptiva huvudkärnkomponenten i Forms Header släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
+|  |  |
+|---|---|
 | Komponentversion | AEM as a Cloud Service |
-|--- |--- |---|---|
+| — | --- |
 | v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
-
 Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 
 
@@ -80,6 +81,5 @@ Den här delen av rubriken innehåller rubriktiteln och bilden.
 
 I det här avsnittet kan du ange den text som ska inkluderas i sidhuvudet.
 
-## Designdialogruta {#design-dialog}
 
 

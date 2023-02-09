@@ -2,9 +2,9 @@
 title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
-source-git-commit: 781cf351ef52cbb56ff33c2674c8af591c81a30e
+source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1202'
 ht-degree: 2%
 
 ---
@@ -18,15 +18,11 @@ Med de adaptiva Forms Core-komponenterna i Adobe Experience Manager kan ni skapa
 
 I Adobe Experience Manager (AEM) är komponenter byggstenarna som används för att skapa sidor och formulär. De är ett enkelt och kraftfullt sätt för skribenter att skapa och hantera innehåll, samtidigt som de ger utvecklarna den flexibilitet och utbyggbarhet som behövs för att skapa anpassade komponenter.
 
-Core Components är en uppsättning färdiga, standardiserade WCM-komponenter som är utformade för att snabba upp utvecklingstiden och minska underhållskostnaderna för webbplatser. Dessa komponenter innehåller bl.a. textfält, bilder och videor. De är utformade för att vara flexibla och kan enkelt anpassas efter behoven på en webbplats.
+De är utformade för att snabba upp utvecklingstiden och minska underhållskostnaderna för webbplatser och formulär, vara flexibla och kan enkelt anpassas efter specifika behov på en webbplats och i ett formulär.
 
 Core-komponenterna är också utformade för att vara responsiva och ha stöd för ett stort antal enheter, bland annat stationära datorer, surfplattor och smarttelefoner. De följer också de senaste webbstandarderna och de bästa metoderna, vilket gör dem till en robust och tillförlitlig lösning för att skapa webbinnehåll.
 
-Dessutom är kärnkomponenterna utformade för att fungera sömlöst med andra delar av AEM, vilket gör att skribenter och utvecklare kan skapa mer engagerande och interaktiva formulär enklare och snabbare.
-
 De viktigaste komponenterna är generellt sett ett oumbärligt verktyg för att skapa och hantera webbinnehåll i AEM, en kraftfull och flexibel lösning som kan minska utvecklingstiden och underhållskostnaderna, samtidigt som de ger webbplatsens besökare en bra användarupplevelse.
-
-I Adobe Experience Manager är komponenterna de strukturella element som utgör innehållet i de sidor och formulär som skapas. Komponenter har alltid varit en grundläggande del av AEM och gjort det enkelt att skapa sidor och formulär, men kraftfullt för författaren och utveckling av komponenter flexibelt och utbyggbart för utvecklaren. De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (Web Content Management) som snabbar upp utvecklingstiden och minskar underhållskostnaderna för dina webbplatser.
 
 ## Adaptiva Forms Core-komponenter
 
@@ -54,19 +50,33 @@ Eftersom dessa komponenter är öppen källkod kan utvecklare dessutom enkelt an
 
 ## Fördelar {#benefits}
 
-Datainhämtningsupplevelser är avgörande för generering och registrering av leads, och de adaptiva Forms Core-komponenterna är en kraftfull lösning för att skapa formulär som är optimerade för datainhämtning. Några av skälen till att använda kärnkomponenter för att skapa dessa upplevelser är:
+Datainhämtningsupplevelser är avgörande för generering och registrering av leads, och de adaptiva Forms Core-komponenterna är en kraftfull lösning för att skapa formulär som är optimerade för datainhämtning. Några skäl till att använda kärnkomponenter för att skapa dessa upplevelser i stället för grundläggande komponenter:
 
-* **Anpassning**: Med adaptiva Forms Core Components kan utvecklare enkelt anpassa utseendet och beteendet för formulärkomponenter som textfält, kryssrutor och listrutor så att de uppfyller specifika krav.
+* **GitHub och omfattande dokumentation**: De AEM adaptiva Forms Core-komponenterna har öppen källkod och finns på GitHub tillsammans med omfattande dokumentation. Detta gör det enklare för utvecklare att förstå komponenterna och hur de fungerar, samt att bidra till utvecklingen av dem. Webbplatsen aemcomponents.dev är också en värdefull resurs, där utvecklare kan se komponenterna i praktiken och få tillgång till detaljerad dokumentation.
+
+* **BEM-modell för formatering**: Kärnkomponenterna följer BEM-modellen (Block Element Modifier) för formatering, som är en väletablerad och allmänt använd metod för att organisera CSS. Det gör det enklare för utvecklare att förstå hur formaten är ordnade och hur de kan ändras för att passa just deras behov.
+
+* **Inget beroende av tredjepartsbibliotek**: En av fördelarna med Core Components är att de inte är beroende av JavaScript-bibliotek från tredje part, inklusive JQuery och Underscore. Detta gör komponenterna snabbare och enklare samt enklare att integrera i en befintlig AEM.
+
+* **Fokus på prestanda och tillgänglighet**: Kärnkomponenterna byggs med prestanda och tillgänglighet i åtanke, vilket återspeglas i deras höga poäng för Google Lightroom och webbinarium. Detta gör det enklare för utvecklare att skapa tillgängliga och högpresterande webbsidor, vilket blir allt viktigare i dagens digitala landskap.
+
+* **Formulärkomponenter i webbplatserna 30, mallar och teman**: Core Components har stöd för formulärkomponenter i webbplatserna 30-mallen och -temana, vilket gör det enklare för utvecklare att skapa och anpassa formulär i AEM.
+
+* **Enklare att formatera**: Kärnkomponenterna är enklare att formatera än deras motsvarigheter i grundkomponenterna. Processen för att skapa teman liknar Sites, med möjlighet att ärva samma tema/CSS från den överordnade webbplatssidan. Dessutom gör BEM-modellen för formatering det enklare att förstå och ändra formaten.
 
 * **Tillgänglighet**: Adaptiva Forms Core-komponenter stöder standarder och riktlinjer för tillgänglighet, som  [WCAG 2.1-standard](https://www.w3.org/TR/WCAG21/), för att säkerställa att formulär kan användas av personer med funktionshinder, inklusive sådana som använder hjälpmedelstekniker som skärmläsare.
 
-* **Enhetliga formulär**: Genom att använda adaptiva Forms Core-komponenter kan utvecklare skapa formulär som ser likadana ut och känns som de ska, vilket gör det enklare för användarna att förstå och fylla i formulären, vilket leder till ökat engagemang och förbättrad användarupplevelse.
+* **Justering med AEM Sites**: Core Components är utformade för att vara mer anpassade till AEM Sites, vilket gör det enklare för webbplatsanvändare att använda dem utan att behöva lära sig något nytt. Komponenterna använder samma frontpipeline som Sites, vilket gör det enklare att formatera och ändra deras utseende. Följande punkter visar dessutom justeringen:
 
-* **WYSIWYG-redigerare**: AEM Forms har ett användarvänligt gränssnitt, lättanvänt WYSIWYG-redigeringsprogram där du kan använda dessa komponenter för att skapa ett adaptivt formulär. Man kan skapa och redigera blanketter utan att behöva kunna koda dem. Den innehåller även en visuell regelredigerare som hjälper dig att enkelt skapa regelbaserade åtgärder och implementera komplex logik för att automatisera formulärbeteenden utan att behöva skriva kod.
+   * **Redigeringsupplevelsen är integrerad med sidredigeraren**: Core Components har en redigeringsupplevelse som är integrerad med Sites Editor, med dialogrutor och andra upplevelser som liknar Page Editor. Detta gör det enklare för webbplatsanvändare att skapa och hantera formulär i det välkända sammanhanget i webbplatsredigeraren.
 
-* **Villkorlig logik**: Adaptiva Forms Core-komponenter har stöd för villkorsstyrd logik, vilket innebär att formulärkomponenternas utseende eller beteende kan ändras baserat på de värden som användaren anger. Vissa fält kan t.ex. döljas eller göras obligatoriska baserat på det val som gjorts i andra fält.
+   * **Redigering av infogade formulär i webbplatsredigeraren**: Med Core Components kan du redigera inline-formulär i webbplatsredigeraren och slipper växla fram och tillbaka mellan redigerare. Detta effektiviserar redigeringsarbetet och gör det enklare att skapa och hantera formulär.
 
-* **Dataverifiering**: Med adaptiva Forms Core-komponenter får du inbyggda datavalideringsfunktioner som gör det möjligt för utvecklare att se till att inmatade data uppfyller specifika kriterier, som minsta och högsta längd, obligatoriska värden och specifika format.
+   * **Ärver webbplatsfunktioner i Forms**: Forms som skapats på en Sites-sida har samma funktioner som Sites. Detta ger en smidig och integrerad upplevelse för att skapa och hantera formulär inom ramen för AEM Sites
+
+   <!--including Multi Site Manager, the ability to use Sites components within a form for static content, support for scheduled publish/unpublish, form translation aligned with Sites translation, versioning, and targeting -->
+
+
 
 ## Krav {#requirements}
 
