@@ -2,9 +2,9 @@
 title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+source-git-commit: 86fa434d884b24b8d4b231c6108f5e6151a89813
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1231'
 ht-degree: 2%
 
 ---
@@ -16,9 +16,7 @@ Med de adaptiva Forms Core-komponenterna i Adobe Experience Manager kan ni skapa
 
 ## Kärnkomponenter  {#overview}
 
-I Adobe Experience Manager (AEM) är komponenter byggstenarna som används för att skapa sidor och formulär. De är ett enkelt och kraftfullt sätt för skribenter att skapa och hantera innehåll, samtidigt som de ger utvecklarna den flexibilitet och utbyggbarhet som behövs för att skapa anpassade komponenter.
-
-De är utformade för att snabba upp utvecklingstiden och minska underhållskostnaderna för webbplatser och formulär, vara flexibla och kan enkelt anpassas efter specifika behov på en webbplats och i ett formulär.
+I Adobe Experience Manager (AEM) är komponenter byggstenarna som används för att skapa sidor och formulär. De är ett enkelt och kraftfullt sätt för skribenter att skapa och hantera innehåll, samtidigt som de ger utvecklarna den flexibilitet och utbyggbarhet som behövs för att skapa anpassade komponenter. Dessa är utformade för att snabba upp utvecklingstiden och minska underhållskostnaderna för webbplatser och formulär, vara flexibla och kan enkelt anpassas efter specifika behov på en webbplats och i ett formulär.
 
 Core-komponenterna är också utformade för att vara responsiva och ha stöd för ett stort antal enheter, bland annat stationära datorer, surfplattor och smarttelefoner. De följer också de senaste webbstandarderna och de bästa metoderna, vilket gör dem till en robust och tillförlitlig lösning för att skapa webbinnehåll.
 
@@ -43,16 +41,16 @@ Eftersom dessa komponenter är öppen källkod kan utvecklare dessutom enkelt an
 | Mångsidig | Komponenterna representerar generiska begrepp som Forms-författare kan använda för att sammanställa praktiskt taget vilken layout som helst. |
 | Konfigurerbar | Mallnivå [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html#content-policies) ange vilka funktioner som får användas eller inte. |
 | Tillgänglig | De följer [WCAG 2.1-standard](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter, stöd för tangentbordsnavigering ([kända problem](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)) och text för hjälpmedelstekniker som skärmläsare. |
-| Temaperbar | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)och koden följer [BEM CSS-konventioner](http://getbem.com/). |
+| Temabell | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)och koden följer [BEM CSS-konventioner](https://getbem.com/). |
 | Anpassningsbar | Flera mönster gör det enkelt att anpassa, från att justera HTML till att återanvända avancerade funktioner. |
 | Versionshantering | The [versionsprincip](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Öppna källkod | Om något inte är som det ska, bidrar du till förbättringen. |
 
 ## Fördelar {#benefits}
 
-Datainhämtningsupplevelser är avgörande för generering och registrering av leads, och de adaptiva Forms Core-komponenterna är en kraftfull lösning för att skapa formulär som är optimerade för datainhämtning. Några skäl till att använda kärnkomponenter för att skapa dessa upplevelser i stället för grundläggande komponenter:
+Datainhämtningsupplevelser är avgörande för generering och registrering av leads, och de adaptiva Forms Core-komponenterna är en kraftfull lösning för att skapa formulär som är optimerade för datainhämtning. En del skäl till att använda kärnkomponenter för att skapa dessa upplevelser över grundläggande komponenter är:
 
-* **GitHub och omfattande dokumentation**: De AEM adaptiva Forms Core-komponenterna har öppen källkod och finns på GitHub tillsammans med omfattande dokumentation. Detta gör det enklare för utvecklare att förstå komponenterna och hur de fungerar, samt att bidra till utvecklingen av dem. Webbplatsen aemcomponents.dev är också en värdefull resurs, där utvecklare kan se komponenterna i praktiken och få tillgång till detaljerad dokumentation.
+* **GitHub och omfattande dokumentation**: De AEM adaptiva Forms Core-komponenterna har öppen källkod och finns på GitHub tillsammans med omfattande dokumentation. Detta gör det enklare för utvecklare att förstå komponenterna och hur de fungerar, samt att bidra till utvecklingen av dem. The [aemcomponents.dev](https://www.aemcomponents.dev/) är också en värdefull resurs där utvecklare kan se komponenterna i praktiken och få tillgång till detaljerad dokumentation.
 
 * **BEM-modell för formatering**: Kärnkomponenterna följer BEM-modellen (Block Element Modifier) för formatering, som är en väletablerad och allmänt använd metod för att organisera CSS. Det gör det enklare för utvecklare att förstå hur formaten är ordnade och hur de kan ändras för att passa just deras behov.
 
@@ -89,7 +87,7 @@ De adaptiva Forms Core-komponenterna har följande krav.
 
 ## Adaptiva Forms Core-komponenter {#components}
 
-Den aktuella versionen av de adaptiva Forms Core-komponenterna innehåller följande komponenter.
+Du kan använda [Adaptiv Forms-redigerare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html) för att skapa en huvudkomponentbaserad Adaptive Forms. Den aktuella versionen av de adaptiva Forms Core-komponenterna innehåller komponenterna nedan.
 
 * Dragspel
 * Knapp
