@@ -4,7 +4,7 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: 2557a72b6bc9ea3f1fd0f73e53b5880f9b6d3ce7
+source-git-commit: 0d004c90e789f23ff9e121fbd8ae11df9c9748b2
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -89,7 +89,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `includeExamples` | `n` | Innehåller en [Komponentbibliotek](https://www.aemcomponents.dev/) exempelwebbplats (kan `y`, eller `n`). |
 | `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som är global till hela instansen (kan `y` eller `n`). |
 | `includeCommerce` | `n` | Inkluderar [CIF-kärnkomponenter](https://github.com/adobe/aem-core-cif-components) beroenden och genererar motsvarande artefakter. |
-| `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för handelssystemet GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
+| `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för e-handelssystemets GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
 | `includeFormscommunications` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Communications-program. |
 | `includeFormsenrollment` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Enrollment-program. |
 | `sdkFormsVersion` | `latest` | När `aemVersion=cloud` och en av `includeFormsenrollment=y` eller `includeFormscommunications=y`kan en Forms SDK-version anges (t.ex. `2020.12.17.02`). |
@@ -104,7 +104,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 
 | Arketyp | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [39](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-39) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [40](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-40) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Konfigurera den lokala utvecklingsmiljön för [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
