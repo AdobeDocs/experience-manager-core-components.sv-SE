@@ -4,9 +4,9 @@ user-guide-title: Grundläggande komponenter i AEM
 breadcrumb-title: Användarhandbok om grundläggande komponenter
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 534b4f0f8a298772de0f2f899dd4cfbaa3db4e74
+source-git-commit: 199cd9e1e49a1f7b939aa9cc3a62dcb3e0db96cd
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 10%
 
 ---
@@ -82,6 +82,8 @@ ht-degree: 10%
       + [Lista (v2)](components/v2/list.md)
       + [Sida (v2)](components/v2/page.md)
       + [Titel (v2)](components/v2/title.md)
+   + v3-komponenter {#v3-components}
+      + [Lista (v3)](components/v3/list.md)
 + E-postkomponenter {#email}
    + [Introduktion](/help/email/introduction.md)
    + [Använda e-postkärnkomponenter](/help/email/using.md)
