@@ -3,9 +3,9 @@ title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF och eventuellt länka till ytterligare innehåll.
 role: Architect, Developer, Admin, User
 exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: cfc86203051739cbcdc30be0fb10ccffa7d583a5
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '988'
 ht-degree: 0%
 
 ---
@@ -81,10 +81,6 @@ Teaser title, description and image can be inherited from the linked page, or fr
 * **Alternativ text för tillgänglighet** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
    * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade tillgångsvärdet för `dc:description` metadata i DAM eller på den aktuella sidan om ingen resurs är länkad.
 * **Ange inte en alternativ text** - Med det här alternativet markeras den bild som ska ignoreras av hjälpmedelstekniker, som skärmläsare, om bilden är helt dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.
-
->[!NOTE]
->
->[Funktioner i Dynamic Media](image.md#dynamic-media) är för närvarande inte tillgängliga i Teaser Component.
 
 ### Fliken Format {#styles-tab-edit}
 
