@@ -3,9 +3,9 @@ title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: af908d77b30b7642b553f38c217136cfd5603108
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1208'
 ht-degree: 1%
 
 ---
@@ -20,15 +20,16 @@ List-komponenten kan användas för att skapa t.ex. en dynamisk lista med undero
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den aktuella versionen av List Component är v3, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
+Den aktuella versionen av List Component är v4, som introducerades i version 2.2.0 av Core Components i februari 2023, och som beskrivs i det här dokumentet.
 
 Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |--- |--- |--- |---|
-| v3 | - | Kompatibel | Kompatibel |
-| [v2](v2/list.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/list-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| v4 | - | Kompatibel | Kompatibel |
+| [v3](/help/components/v3/list.md) | - | Kompatibel | Kompatibel |
+| [v2](/help/components/v2/list.md) | Kompatibel | Kompatibel | Kompatibel |
+| [v1](/help/components/v1/list-v1.md) | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner](/help/versions.md).
 
@@ -93,7 +94,15 @@ Listan kan skapas med en fast lista med objekt.
 
 Tryck eller klicka på **Lägg till** om du vill dra in ett nytt objekt i listan.
 
-* Ange text för objektet i listan eller använd **Dialogrutan Markering** om du vill välja ett objekt från AEM.
+* I **Länk** fält antingen
+   * En fullständig URL
+   * En relativ URL till befintligt AEM
+      * Du kan använda **Dialogrutan Markering** om du vill välja ett objekt från AEM.
+* I **Text** anger du den text som ska visas för länken i listan.
+* Markera kryssrutan om länken ska öppnas på en ny webbläsarflik
+
+När du har skapat mer än ett objekt för listan kan du ordna listan.
+
 * Använd draghandtaget för att ordna om objekten i listan.
 * Använd papperskorgsikonen för att ta bort objekt i listan.
 
@@ -154,7 +163,7 @@ Maximalt antal objekt som visas i listan.
 
 På fliken Objektinställningar kan du konfigurera formateringen för listelementen.
 
-![Objektinställningar](/help/assets/list-edit-items.png)
+![Objektinställningar](/help/assets/list-edit-item-settings.png)
 
 * **Länka objekt** - Länka objekt till motsvarande sida
 * **Visa beskrivning** - Visa beskrivningar av länkelementet
