@@ -3,9 +3,9 @@ title: Dragspelskomponent
 description: Med komponenten Core Component Accordion kan du skapa en samling paneler som ordnas i ett dragspel på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för
 
 ## Djuplänkning till en panel {#deep-linking}
 
-Dragspelet och [Tabbar-komponenter](tabs.md) har stöd för att länka direkt till en panel i komponenten.
+The Accordion, [Carousel,](carousel.md) och [Tabbar-komponenter](tabs.md) har stöd för att länka direkt till en panel i komponenten.
 
 Så här gör du:
 

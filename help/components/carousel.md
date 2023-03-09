@@ -3,9 +3,9 @@ title: Carousel-komponent
 description: Med Carousel Component kan innehållsförfattaren presentera innehållet i en roterande karusell.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: e0d3790b265ab27ac2116f0d8daf1a18ecd3d714
 workflow-type: tm+mt
-source-wordcount: '1119'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,20 @@ Den senaste tekniska dokumentationen om Carousel-komponenten [finns på GitHub](
 
 Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
+## Djuplänkning till en panel {#deep-linking}
+
+Carousel, [Tabbar,](tabs.md) och [Dragspelskomponenter](accordion.md) har stöd för att länka direkt till en panel i komponenten.
+
+Så här gör du:
+
+1. Visa sidan med komponenten med hjälp av **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
+1. Inspect innehållet på sidan och identifierar panelens ID.
+   * Till exempel `id="carousel-bfe4fa6647-item-47f1a7ca67-tabpanel"`
+1. ID:t blir det ankare som du kan lägga till i URL:en med ett hash-tecken (`#`).
+   * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#carousel-bfe4fa6647-item-47f1a7ca67-tabpanel`
+
+Om du navigerar till URL-adressen med panel-ID som ankarpunkt, rullar webbläsaren direkt till den aktuella komponenten och visar den angivna panelen. Om panelen inte är konfigurerad att visas som standard rullas den automatiskt.
+
 ## Dialogrutan Redigera {#edit-dialog}
 
 I redigeringsdialogrutan kan innehållsförfattaren lägga till, byta namn på och ordna om bilder samt definiera inställningarna för automatisk övergång.
@@ -67,6 +81,7 @@ Använd **Lägg till** för att öppna komponentväljaren och välja vilken komp
 
 På **Egenskaper** kan författaren ställa in att bildrutorna ska övergå automatiskt.
 
+* **Aktivt objekt** - Innehållsförfattaren kan definiera vilken flik som är aktiv när sidan läses in.
 * **Överför bilder automatiskt** - När komponenten är aktiv flyttas den automatiskt till nästa bild efter en angiven fördröjning.
 * **Övergångsfördröjning** - När Överför bildrutor automatiskt är markerat används det här värdet för att definiera fördröjningen mellan övergångar (i millisekunder).
 * **Inaktivera automatisk paus vid hovring** - När **Överför bilder automatiskt** när du väljer det här alternativet pausas karusellövergången automatiskt när pekaren förs över karusellen. Välj det här alternativet så att övergången inte pausas.
@@ -87,7 +102,13 @@ På **Egenskaper** kan författaren ställa in att bildrutorna ska övergå auto
 
 På **Tillgänglighet** -tabb kan värden anges för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten.
 
-* **Etikett** - Värdet på ett ARIA-etikettattribut för komponenten
+* **Etikett** - Värdet på ett ariemärkningsattribut för karusellen, som beskriver karusellens innehåll
+* **Föregående** - Värdet på ett aria-label-attribut för Carousel-navigeringens föregående knappetikett
+* **Nästa** - Värdet på ett aria-label-attribut för Carousel-navigeringens nästa knappetikett
+* **Spela upp** - Värdet på ett aria-label-attribut för Carousel-navigeringens play-knappetikett
+* **Pausa** - Värdet på ett aria-label-attribut för karusellnavigeringens pause-knappetikett
+* **Tablist** - Värdet på ett aria-label-attribut för Carousel-navigeringens lista över punktetiketter
+* **Ange objektets aria-etikett till dess titel** - Om det här alternativet är markerat får karusellobjektets rubrik automatiskt sin ariaetikettbeskrivning.
 
 ## Välj panel {#select-panel}
 
@@ -116,8 +137,7 @@ The **Egenskaper** -fliken används för att definiera standardinställningarna 
 ![Designdialogrutan för Carousel-komponenten](/help/assets/carousel-design.png)
 
 * **Överför bilder automatiskt** - Anger om alternativet att automatiskt flytta karusellen till nästa bild ska aktiveras som standard när innehållsförfattaren lägger till karusellkomponenten på en sida.
-* **Övergångsfördröjning** - Definierar standardvärdet för övergångsfördröjningen mellan bildrutor (i millisekunder) när en innehållsförfattare lägger till Carousel-komponenten på en sida.
-* **Inaktivera automatisk paus vid hovring** - Anger om som standard alternativet att inaktivera den automatiska sidpausningen är aktiverat när **Överför bilder automatiskt** väljs av innehållsförfattaren.
+* **Lägga till kontrollelement** - När detta är markerat placeras kontrollelementen framför karusellobjekten för att förbättra tillgängligheten.
 
 ### Fliken Tillåtna komponenter {#allowed-components-tab}
 

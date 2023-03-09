@@ -3,9 +3,9 @@ title: Tabbar-komponent
 description: Med flikkomponenten kan du skapa flera flikar för att ordna innehåll på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1033'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för
 
 ## Djuplänkning till en panel {#deep-linking}
 
-Flikarna och [Dragspelskomponenter](accordion.md) har stöd för att länka direkt till en panel i komponenten.
+Tabbar, [Carousel,](carousel.md) och [Dragspelskomponenter](accordion.md) har stöd för att länka direkt till en panel i komponenten.
 
 Så här gör du:
 

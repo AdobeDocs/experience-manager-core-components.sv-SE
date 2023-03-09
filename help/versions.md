@@ -3,9 +3,9 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 0d004c90e789f23ff9e121fbd8ae11df9c9748b2
+source-git-commit: 94c7783b861d6e793092d79da67a78120aa80fdc
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2873'
 ht-degree: 12%
 
 ---
@@ -26,7 +26,7 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
-| [2.22.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.0) | Den här versionen innehåller en ny version av [List-komponent](/help/components/list.md) tillsammans med förbättringar av [Teaser](/help/components/teaser.md) och uppdatering av [PDF Viewer.](/help/components/pdf-viewer.md | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 9 februari 2023 |
+| [2.22.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.0) | Den här versionen innehåller en ny version av [List-komponent](/help/components/list.md) tillsammans med förbättringar av [Teaser](/help/components/teaser.md) och uppdatering av [PDF Viewer](/help/components/pdf-viewer.md) och [Carousel](/help/components/carousel.md) | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 9 februari 2023 |
 | [2.21.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.2) | Det här är en korrigeringsversion som åtgärdar ett problem med v1 och v2 [Teaser Components.](/help/components/teaser.md) | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 12 september 2022 |
 | [2.21.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.0) | Den här versionen innehåller ett antal förbättringar, bland annat publicering av LinkHandler API, förbättringar av [Bildkomponent](/help/components/image.md) och [datalager,](/help/developing/data-layer/overview.md) samt förbättringar av komponenter med flera paneler. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 12 september 2022 |
 | [2.20.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.8) | Den här versionen åtgärdar ett problem med leveransen av SVG-bilder via AdaptiveImageServlet. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 4 augusti 2022 |
