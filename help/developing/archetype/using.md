@@ -4,9 +4,9 @@ description: Detaljerade användningsinstruktioner för AEM Project Archetype
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: a3978d8b-4904-42aa-9ee2-9c1f884327bb
-source-git-commit: 06a620980c9cda02d1190747b12b929498fb79c2
+source-git-commit: ca61d71a2644465e74249058157d8dea2aa71352
 workflow-type: tm+mt
-source-wordcount: '2194'
+source-wordcount: '2198'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Den AEM arkitekturen består av moduler:
 * **ui.config**: innehåller runmode-specifika OSGi-konfigurationer för projektet.
 * **[ui.front.general](uifrontend.md)**: **(valfritt)** innehåller de artefakter som krävs för att använda den allmänna Webpack-baserade front-end-modulen.
 * **[ui.front.response](uifrontend-react.md)**: **(valfritt)** innehåller de artefakter som krävs när du använder arkivtypen för att skapa ett SPA baserat på React.
-* **[ui.front.angular](uifrontend-angular.md)**: **(valfritt)** innehåller de artefakter som krävs när du använder arrayen för att skapa ett SPA baserat på Angular.
+* **[ui.front.angular](uifrontend-angular.md)**: **(valfritt)** innehåller de artefakter som krävs när du använder arkivtypen för att skapa ett SPA baserat på Angular.
 * **[ui.tests](uitests.md)**: innehåller selenbaserade UI-tester.
 * **alla**: är ett enda innehållspaket som bäddar in alla kompilerade moduler (paket och innehållspaket) inklusive eventuella leverantörsberoenden.
 * **analysera**: kör en analys av projektet, som ger ytterligare validering för distribution till AEM as a Cloud Service.
@@ -87,7 +87,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 >
 >Det är bäst att lägga till `adobe-public` profil för din Maven `settings.xml` för att automatiskt lägga till repo.adobe.com i maven build-processen.
 >
->Ett exempel-POM [finns här](https://helpx.adobe.com/experience-manager/kb/SetUpTheAdobeMavenRepository.html).
+>Ett exempel-POM [finns här](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17454.html?lang=en).
 
 ### Egenskaper {#properties}
 
@@ -111,7 +111,7 @@ Följande egenskaper är tillgängliga när du skapar ett projekt med hjälp av 
 | `includeExamples` | `n` | Innehåller en [Komponentbibliotek](https://www.aemcomponents.dev/) exempelwebbplats (kan `y`, eller `n`). |
 | `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som är global till hela instansen (kan `y` eller `n`). |
 | `includeCommerce` | `n` | Inkluderar [CIF-kärnkomponenter](https://github.com/adobe/aem-core-cif-components) beroenden och genererar motsvarande artefakter. |
-| `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för handelssystemet GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
+| `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för e-handelssystemets GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
 | `datalayer` | `y` | Aktivera integrering med [Adobe-klientdatalager](/help/developing/data-layer/overview.md). |
 | `amp` | `n` | Aktivera [AMP](/help/developing/amp.md) stöd för genererade projektmallar. |
 | `enableDynamicMedia` | `n` | Aktiverar basen för DynamicMedia-komponenter i projektpolicyinställningar och aktiverar Dynamic Media-funktioner i huvudbildkomponentens policy. |
