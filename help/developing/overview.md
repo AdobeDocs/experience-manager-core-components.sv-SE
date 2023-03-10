@@ -3,10 +3,10 @@ title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
 role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-source-git-commit: faf73c70a4bff387bed2f8cf6e48c39e597e51c7
+source-git-commit: 614bc5fd01a76a6888606faa4576e1695b77ba58
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -43,14 +43,14 @@ Alla nya projekt ska implementeras med kärnkomponenter. Befintliga projekt har 
 
 En större insats i ett befintligt projekt (till exempel en omprofilering eller en övergripande omfaktorisering) ger ofta möjlighet att migrera till kärnkomponenterna. För att underlätta denna migration har Adobe tillhandahållit ett antal migreringsverktyg för att uppmuntra till användning av kärnkomponenterna och den senaste AEM tekniken.
 
-[AEM moderniseringsverktyg](http://opensource.adobe.com/aem-modernize-tools/) möjliggöra enkel konvertering av
+[AEM moderniseringsverktyg](https://opensource.adobe.com/aem-modernize-tools/) möjliggöra enkel konvertering av
 
 * Statiska mallar till redigerbara mallar
 * Designkonfigurationer till policyer
 * Foundation-komponenter till Core-komponenter
 * Klassiskt användargränssnitt till pekaktiverat användargränssnitt 
 
-Mer information om användningen av dessa verktyg finns i [se deras dokumentation](http://opensource.adobe.com/aem-modernize-tools/).
+Mer information om användningen av dessa verktyg finns i [se deras dokumentation](https://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >

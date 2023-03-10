@@ -3,7 +3,7 @@ title: Introduktion till kärnkomponenter
 description: Få lösningar på problem med kärnkomponenterna och låt andra skapa element i AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 0d004c90e789f23ff9e121fbd8ae11df9c9748b2
+source-git-commit: 8b922d7f6305f91337ef3c19d56eb7f192d65774
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 2%
@@ -41,7 +41,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 | WebApp-Ready | The [strömlinjeformade JSON-utdata](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html) tillåter rendering på klientsidan, fortfarande med möjlighet att [kontextredigering](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html). |
 | Stöd för AMP | Komponenterna har inbyggda [stöd för AMP-standarden,](/help/developing/amp.md) för mobilupplevelser. |
 | Design Kit | A [UI-kit för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd) ger designers möjlighet att skapa trådramar som de sedan kan [format efter behov](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
-| Temaperbar | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)och koden följer [BEM CSS-konventioner](http://getbem.com/). |
+| Temaperbar | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)och koden följer [BEM CSS-konventioner](https://getbem.com/). |
 | Anpassningsbar | Flera mönster tillåts [enkel anpassning](developing/customizing.md), från justering av HTML till avancerad funktionalitet, återanvändning. |
 | Versionshantering | The [versionsprincip](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |
