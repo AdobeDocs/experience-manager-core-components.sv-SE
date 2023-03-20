@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - datumväljare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms Date-väljaren.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1666'
 ht-degree: 0%
 
 ---
-
 
 # Datumväljaren {#date-picker-adaptive-forms-core-component}
 
@@ -36,15 +36,13 @@ Det finns många skäl till att det är bra att ta med en datumväljare i en anp
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component för den adaptiva Forms-datumväljaren släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -111,18 +109,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/datepicker_accessibilitytab.png)
 
-På **Tillgänglighet** tabb, värden anges för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten. Det finns olika alternativ för att använda texten för skärmläsare:
-
-* **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
-
-
-   * **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
-   * **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
-   * **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
-   * **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
-   * **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
-
-
+**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
 ### Fliken Format {#format-tab}
 
@@ -140,15 +127,19 @@ På **Tillgänglighet** tabb, värden anges för [Tillgänglighet för ARIA](htt
 
 Designdialogrutan används för att definiera och hantera CSS-format för komponenten Date-Picker.
 
-
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för datumväljaren i den adaptiva Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för datumväljaren i den adaptiva Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-**CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#formats-tab}
 
 På fliken Format kan du ange standardformat och anpassade datumformat.
+
+![Formatera](/help/adaptive-forms/assets/datepicker_formatpolicy.png)
+

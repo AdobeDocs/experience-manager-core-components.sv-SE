@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - rubrik
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Header.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: aa18def9-0bec-4475-8dde-213860621ef5
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '675'
 ht-degree: 1%
 
 ---
-
 
 # Sidhuvud {#header-adaptive-forms-core-component}
 
@@ -32,14 +32,13 @@ En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formul�
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva huvudkärnkomponenten i Forms Header släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -80,6 +79,4 @@ Den här delen av rubriken innehåller rubriktiteln och bilden.
 ### Fliken Text {#text-tab}
 
 I det här avsnittet kan du ange den text som ska inkluderas i sidhuvudet.
-
-
 

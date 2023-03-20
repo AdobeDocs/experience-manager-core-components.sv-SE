@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - sidfot
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Footer.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '770'
 ht-degree: 1%
 
 ---
-
 
 # Sidfot {#footer-adaptive-forms-core-component}
 
@@ -34,15 +34,13 @@ Det finns flera skäl till att det är bra att ta med en sidfotskomponent i ett 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva huvudkomponenten i Forms Footer kom i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -106,5 +104,4 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
    * Om inget anges skapas ett unikt ID automatiskt* som du hittar genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
-
 

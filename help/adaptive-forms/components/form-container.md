@@ -2,10 +2,10 @@
 title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 1%
+source-wordcount: '719'
+ht-degree: 0%
 
 ---
 
@@ -39,16 +39,13 @@ Det finns flera orsaker till varför ett formulär kan läggas till på en webbp
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Kärnkomponenten i den adaptiva Forms-behållaren släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
-
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 <!-- ## Sample Component Output {#sample-component-output}
 
 To experience the Accordion Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_accordion). -->
@@ -82,7 +79,3 @@ Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 * **Visa meddelande** - Med det här alternativet kan användare lägga till ett meddelande som visas när det adaptiva formuläret har skickats. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren. Dialogrutan Visa meddelande har stöd för formateringsverktyg med formaterad text som gör att användare kan formatera den tillagda texten.
 
 * **Skicka åtgärd** - En Skicka-åtgärd aktiveras när en användare klickar på Skicka-knappen på ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur [konfigurera en Skicka-åtgärd på fliken Skicka](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#supporting-custom-functions-in-validation-expressions-br).
-
-
-
-

@@ -4,10 +4,10 @@ user-guide-title: Grundläggande komponenter i AEM
 breadcrumb-title: Användarhandbok om grundläggande komponenter
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 199cd9e1e49a1f7b939aa9cc3a62dcb3e0db96cd
+source-git-commit: 279b96734bc8621b98b828fa80ebe693dc7904e0
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 10%
+source-wordcount: '366'
+ht-degree: 7%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 10%
    + [Språknavigering](components/language-navigation.md)
    + [Lista](components/list.md)
    + [Navigering](components/navigation.md)
-   + [Sidan](components/page.md)
+   + [Sida](components/page.md)
    + [PDF Viewer](components/pdf-viewer.md)
    + [Förloppsindikator](components/progress-bar.md)
    + [Snabbsökning](components/quick-search.md)
@@ -90,7 +90,7 @@ ht-degree: 10%
    + [Kampanjvariabler](/help/email/campaign-variables.md)
    + [Versioner](/help/email/versions.md)
    + E-postkomponenterna {#components}
-      + [Sidan](/help/email/components/page.md)
+      + [Sida](/help/email/components/page.md)
       + [Behållare](/help/email/components/container.md)
       + [Titel](/help/email/components/title.md)
       + [Text](/help/email/components/text.md)
@@ -102,6 +102,7 @@ ht-degree: 10%
       + [Segmentering](/help/email/components/segmentation.md)
 + Adaptiv Forms {#adaptive-forms}
    + [Introduktion](/help/adaptive-forms/introduction.md)
+   + [Versionshistorik](/help/adaptive-forms/version.md)
    + Adaptiva Forms-komponenter {#adaptive-forms-components}
       + [Adaptivt Forms-dragspel](/help/adaptive-forms/components/accordion.md)
       + [Adaptiv Forms-knapp](/help/adaptive-forms/components/button.md)

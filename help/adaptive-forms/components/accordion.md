@@ -2,9 +2,10 @@
 title: Dragspel med adaptiv form
 description: Använd dragspelspanelen för att ordna och förenkla ett långt eller komplext formulär genom att dela upp det i mindre, mer hanterbara avsnitt.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
+source-git-commit: 0cfdc56fe5508e156eee2ae818be311748af7247
 workflow-type: tm+mt
-source-wordcount: '1768'
+source-wordcount: '1677'
 ht-degree: 0%
 
 ---
@@ -37,16 +38,13 @@ Dialogrutan för att konfigurera och välja panel-pover och designdialogrutan ä
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-Den adaptiva kärnkomponenten i Forms Accordion lanserades i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
-
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -103,43 +101,7 @@ Med knappen Lägg till kan du markera en komponent som ska läggas till som en p
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/accordion_accessibility.png)
 
-På **Tillgänglighet** tabb, värden anges för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten. Det finns olika alternativ för att använda texten för skärmläsare:
-
-* **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
-
-
-   * **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
-   * **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
-   * **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
-   * **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
-   * **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
-
-<!--
-
-### Properties Tab {#properties-tab}
-
-![Properties tab of the edit dialog of the Accordion Component](/help/assets/accordion-edit-properties.png)
-
-*   **Single item expansion** - When selected, this option forces a single accordion item to be expanded at a time. Expanding one item will then collapse all others.
-*   **Expanded items** - This option defines the items that are expanded by default when the page is loaded.
-    * When **Single item expansion** is selected, one panel must be selected. By default the first panel is selected.
-    * When **Single item expansion** is not selected, this option is a multi-select and is optional.
-*   **ID** - This option allows to control the unique identifier of the component in the HTML and in the [Data Layer](/help/developing/data-layer/overview.md).
-    * If left blank, a unique ID is automatically generated for you and can be found by inspecting the resulting page.
-    * If an ID is specified, it is the responsibility of the author to make sure that it is unique.
-    * Changing the ID can have an impact on CSS, JS and Data Layer tracking.
-
-## Select Panel Popover {#select-panel-popover}
-
-The **Select Panel** option (![Select panel icon](/help/assets/select-panel-icon.png)) on the component toolbar enables content authors to modify the panels in an accordion with ease. By selecting this option, the author can switch to a different panel for editing and rearrange the order of the panels in the accordion. The configured panels will be displayed in a drop-down menu for the author to choose from. This feature optimizes the editing process and makes it user-friendly for content authors.
-
-![Select panel popover](/help/assets/select-panel-popover.png)
-
-
-* The panels are displayed in a numbered list, reflecting the assigned arrangement.
-* Each panel is listed with its component type in bold, followed by a brief description in lighter font.
-* By clicking or tapping on a panel in the drop-down, you can easily switch the view in the editor to that specific panel.
-* To rearrange the panels, simply use the drag handles to move them into the desired order. -->
+**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
 ## Designdialogruta {#design-dialog}
 
@@ -165,43 +127,15 @@ På fliken Egenskaper kan mallskapare ange standardrubrikelement och tillåtna r
 
 The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i dragspelskomponenten i den adaptiva Forms-redigeraren.
 
+![Fliken Tillåtna komponenter](/help/adaptive-forms/assets/accordion_allowedcomponents.png)
+
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-**CSS-standardklasser**: Du kan ange en standard-CSS-klass för dragspelskomponenten.
+![Fliken Format](/help/adaptive-forms/assets/accordion_style.png)
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för dragspelskomponenten.
 
-
-<!-- 
-
-The design dialog allows the template author to define the options available to the content author who uses the Accordion Component and the defaults set when placing the Accordion Component.
-
-
-### Properties Tab {#properties-tab-design}
-
-![Design dialog properties tab](/help/assets/accordion-design-properties.png)
-
-* **Allowed Heading Elements** - This multi-select drop-down defines the accordion item heading HTML elements that are allowed to be selected by an author.
-* **Default Heading Element** - This drop-down defines the default accordion item heading HTML element.
-
-### Allowed Components Tab {#allowed-components-tab}
-
-The **Allowed Components** tab is used to define which components can be added as items to panels in the Accordion Component by the content author.
-
-The Allowed Components tab functions in the same way as the tab of the same name when [defining the policy and properties of a Layout Container in the Template Editor.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
-
-### Styles Tab {#styles-tab}
-
-The Accordion Component supports the AEM [Style System](/help/get-started/authoring.md#component-styling).
-
-## Adobe Client Data Layer {#data-layer}
-
-The Accordion Component supports the [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
-
--->
-
-
-
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

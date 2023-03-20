@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - talindata
 description: Använda eller anpassa den adaptiva kärnkomponenten Forms Number.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1780'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
-
 
 # Nummerindata {#number-input-adaptive-forms-core-component}
 
@@ -16,7 +16,7 @@ En Number Input-komponent i ett adaptivt formulär är en typ av formulärfält 
 
 Den kan också användas med attribut som min, max, step, value med mera. Dessa attribut kan användas för att ange de lägsta och högsta värden som tillåts i fältet, stegintervallet för att öka eller minska talet och fältets standardvärde.
 
-Den här komponenten kan användas för att samla in numeriska data som ålder, kvantitet med mera. och kan även användas för att utföra matematiska operationer som addition och subtraktion. Den här komponenten kan också användas för att validera numeriska data som anges av användaren.
+Den här komponenten kan användas för att samla in numeriska data som ålder, kvantitet med mera. Den kan också användas för att utföra matematiska operationer som addition och subtraktion. Den här komponenten kan också användas för att validera numeriska data som anges av användaren.
 
 För hjälpmedel är det viktigt att ange &quot;label&quot; som beskriver syftet med talinmatningsfältet och vilken typ av inmatning som förväntas.
 
@@ -30,22 +30,20 @@ Det finns flera skäl till att det är bra att ta med en numerisk indatakomponen
 
 * **Matematiska operationer**: Numeriska fält kan användas för att utföra matematiska operationer som addition, subtraktion, multiplikation och division.
 
-* **Dataområde**: Numeriska fält kan användas för att ange ett intervall med giltiga värden genom att använda attributen min, max och step.
+* **Dataområde**: Numeriska fält kan användas för att ange ett intervall med giltiga värden med hjälp av attributen min, max och step.
 
 * **Dynamiskt innehåll**: En numerisk komponent kan användas för att visa dynamiska data baserat på formulärfälten.
 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core-komponenten för indata för adaptiva Forms Number släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -71,7 +69,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din talinmatning för besökar
 * **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
 * **Platshållartext** - Platshållartext i en formulärkomponent refererar till en kort etikett eller en fråga som visas i ett inmatningsfält som ett tips till användaren om vilken typ av information som förväntas anges i det fältet. Platshållartext försvinner när användaren börjar skriva i fältet och visas igen om fältet lämnas tomt. Den ger användaren en visuell referens, men fungerar inte som en permanent etikett eller ett permanent värde för fältet.
-* **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+* **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 * **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 * **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 * **Skrivskyddad** - Välj alternativet för att göra komponenten icke-redigerbar Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
@@ -114,14 +112,13 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din talinmatning för besökar
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/numberinput_accessibility.png)
 
-* **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
 ### Fliken Format {#formats-tab}
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/numberinput_formattab.png)
 
-
-* **Visningsformat** - Med det här alternativet kan du välja alternativ från olika numeriska heltalsformat för visning. När användaren väljer något alternativ på menyn **Typ** nedrullningsbar meny, **Format** visas på panelen. Du kan välja ett specifikt format där tal visas för användaren.
+* **Visningsformat** - Med det här alternativet kan du välja alternativ från olika heltalsnummerformat för visning. När användaren väljer något alternativ på menyn **Typ** nedrullningsbar meny, **Format** visas på panelen. Du kan välja ett specifikt format där tal visas för användaren.
 
 * **Antal siffror före decimaltecknet (1234,000)** - Använd det här alternativet om du vill ange antalet siffror som ska visas före decimalkommat.
 
@@ -131,15 +128,18 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din talinmatning för besökar
 
 Designdialogrutan används för att definiera och hantera CSS-format för indatakomponenten Number.
 
-
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten Forms Number har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten Forms Number har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+
+![Styletab](/help/adaptive-forms/assets/datepicker_styletab.png)
 
 **CSS-standardklasser**: Du kan ange en standard-CSS-klass för indatakomponenten Adaptive Forms Number.
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller använda dessa format på ett adaptivt formulär i Adaptiv Forms. Om du vill använda ett format väljer du den komponent som du vill använda redigeraren för formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#format-tab}
 
 På fliken Format kan du ange standardtalformat och anpassade talformat.
+![Fliken Design](/help/adaptive-forms/assets/emailinput_designformattab.png)
+

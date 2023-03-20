@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - horisontella flikar
 description: Använda eller anpassa den adaptiva, vågräta Forms-flikkomponenten Core.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1584'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
-
 
 # Vågräta flikar {#horizontal-tabs-adaptive-forms-core-component}
 
@@ -30,15 +30,13 @@ De vanligaste skälen att använda vågräta flikar i en adaptiv form är:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (kärnkomponent) för de adaptiva horisontella Forms-flikarna släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -80,7 +78,7 @@ The **Lägg till** Med knappen kan du markera en komponent som du vill lägga ti
 
 * **Ikon** - Ikonen identifierar panelens komponent i listan. Du kan hålla muspekaren över ikonen för att visa det fullständiga komponentnamnet som ett verktygstips.
 * **Beskrivning** - Den beskrivning som används som text på panelen. Som standard är namnet på komponenten som är markerad för panelen.
-* **Ta bort** - Tryck eller klicka för att ta bort panelen från dragspelskomponenten.
+* **Ta bort** - Tryck eller klicka för att ta bort panelen från den vågräta tabbkomponenten.
 * **Ordna om** - Tryck eller klicka och dra för att ordna om panelerna.
 
 ### Fliken Hjälpinnehåll {#help-content}
@@ -103,10 +101,10 @@ The **Lägg till** Med knappen kan du markera en komponent som du vill lägga ti
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva Forms-dragspelskomponenten kan du ange följande:
+I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva Forms-komponenten kan du ange följande:
 
-* De kärnkomponenter som en formulärskapare kan lägga till i dragspelet i den adaptiva Forms-redigeraren
-* Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för dragspelskomponenten i den adaptiva Forms-redigeraren.
+* De kärnkomponenter som en formulärskapare kan lägga till på de vågräta flikarna i den adaptiva Forms-redigeraren
+* Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för vågräta flikkomponenter i den adaptiva Forms-redigeraren.
 
 Detta gör det enklare och effektivare att skapa och anpassa formulär.
 
@@ -114,10 +112,14 @@ Detta gör det enklare och effektivare att skapa och anpassa formulär.
 
 The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i komponenten Vågräta flikar i den adaptiva Forms-redigeraren.
 
+![Vågräta flikar](/help/adaptive-forms/assets/horizontaltabs_designdilog.png)
+
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för de adaptiva horisontella Forms-flikarna stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för de adaptiva horisontella Forms-flikarna stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-**CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten för de adaptiva vågräta Forms-flikarna.
+![Fliken Format](/help/adaptive-forms/assets/horizontaltabs_designstyletab.png)
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten för de adaptiva vågräta Forms-flikarna.
+
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.

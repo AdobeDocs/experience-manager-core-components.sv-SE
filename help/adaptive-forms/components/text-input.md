@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - textinmatning (textruta)
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-textinmatning.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 49d9fe69-0578-4489-beaa-a18cdb14add7
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1750'
 ht-degree: 0%
 
 ---
-
 
 # Textinmatning (textruta) {#text-input-adaptive-forms-core-component}
 
@@ -32,15 +32,13 @@ Det finns flera skäl till att använda textinmatningskomponenten i ett adaptivt
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva kärnkomponenten för textinmatning från Forms släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -118,7 +116,7 @@ The **Valideringsmönster** kan du ange ett mönster för att validera den angiv
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/textinput_accessibiltytab.png)
 
-* **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
 ## Designdialogruta {#design-dialog}
 
@@ -126,12 +124,17 @@ Designdialogrutan används för att definiera och hantera CSS-format för textru
 
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten i den adaptiva Forms-textrutan stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten i den adaptiva Forms-textrutan stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-**CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten i rutan Adaptiv Forms-text.
+![Designdialogruta](/help/adaptive-forms/assets/telephoneinput_designdialog.png)
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten i rutan Adaptiv Forms-text.
+
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#format-tab}
 
 På fliken Format kan du ange standardtalformat och anpassade talformat.
+
+![Fliken Format](/help/adaptive-forms/assets/telephoneinput_format.png)
+

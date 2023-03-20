@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - bild
 description: Använda eller anpassa den adaptiva Forms Image Core-komponenten.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 9ee42d5d-16e3-4973-8364-5bc512ebe72e
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
-
 
 # Bild {#image-adaptive-forms-core-component}
 
@@ -36,15 +36,13 @@ Det finns många skäl till att det är bra att ta med en bildkomponent i en ada
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Image Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -87,7 +85,9 @@ Designdialogrutan används för att definiera och hantera CSS-format för bildko
 
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva Forms Image Core-komponenten har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Den adaptiva Forms Image Core-komponenten har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+
+![Designdialogruta](/help/adaptive-forms/assets/image_designdialog.png)
 
 **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Image Core-komponenten.
 

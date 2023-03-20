@@ -2,13 +2,13 @@
 title: Adaptiv Forms Core-komponent - titel
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Title.
 role: Architect, Developer, Admin, User
-source-git-commit: 945e1793ae4e959f83960db46d2de4257916fe32
+exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
+source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 1%
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
-
 
 # Titel {#title-input-adaptive-forms-core-component}
 
@@ -38,15 +38,13 @@ På det hela taget är titeln på ett formulär en viktig aspekt av användarupp
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva huvudkomponenten i Forms Title lanserades i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -74,28 +72,32 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och v�
 
 ## Designdialogruta {#design-dialog}
 
-Designdialogrutan används för att definiera och hantera CSS-format för komponenten Date-Picker.
+Designfliken används för att definiera och hantera CSS-format för komponenten Date-Picker.
 
 ### Titel
 
 På fliken Titel kan mallskapare ange standardrubrikelement och tillåtna rubrikelement för HTML för formulärförfattare:
 
-![Titelflik i designdialogrutan](/help/assets/accordion-design-properties.png)
+![Titelflik i designdialogrutan](/help/adaptive-forms/assets/title_heading.png)
 
 * **Tillåtna rubrikelement**: En lista med flera alternativ som gör att mallskaparen kan välja vilka rubrikelement som kan användas som rubrik av formulärförfattaren.
 
 * **Standardrubrikelement**: En nedrullningsbar lista som anger standardrubrikelementet för komponenten Title.
 
-
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för datumväljaren i den adaptiva Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för datumväljaren i den adaptiva Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-**CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+![Titelflik i designdialogrutan](/help/adaptive-forms/assets/title_styles.png)
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#format-tab}
 
 På fliken Format kan du ange standardformat och anpassade datumformat.
+
+![Fliken Format](/help/adaptive-forms/assets/title_styles.png)
+
 
