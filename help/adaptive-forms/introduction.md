@@ -2,13 +2,13 @@
 title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
-source-git-commit: b378fbd5695f82b8fc9de3a2d53a8387099ae33b
+exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
+source-git-commit: 7afcc06e5932d8eeb4a4c45f52c653222f142daa
 workflow-type: tm+mt
-source-wordcount: '1028'
-ht-degree: 1%
+source-wordcount: '1168'
+ht-degree: 0%
 
 ---
-
 
 # Introduktion till adaptiva Forms Core-komponenter {#adaptive-forms-core-components-introduction}
 
@@ -90,33 +90,41 @@ De adaptiva Forms Core-komponenterna har följande krav.
 
 | AEM | AEM Forms-tillägg | Kärnkomponenter |
 |---|---|---|
-| AEM as a Cloud Service | Forms - digital registrering | [Version 2.20.8](/help/versions.md)+ |
+| AEM as a Cloud Service | Forms - digital registrering | [Version 2.20.8](version.md)+ |
+| AEM 6.5 | Forms-tillägg | [Version 1.1.12](version.md)+ |
+
+## Konfigurera och skapa ett Core Components-baserat adaptive Form
+
+**AEM Forms as a Cloud Service**: När du skapar ett nytt as a Cloud Service AEM Forms-program är de adaptiva Forms Core-komponenterna redan aktiverade för din miljö. Om du har en as a Cloud Service Forms-miljö baserad på Archetype 39 eller tidigare, [Aktivera adaptiva Forms Core-komponenter för din miljö](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?#enable-adaptive-forms-core-components-for-an-existing-aem-archetype-based-project).
+
+När du aktiverar kärnkomponenterna för din miljö, **Adaptiv Forms (kärnkomponent)** mall- och arbetsytetemat läggs till i din miljö. Om din AEM SDK-version är äldre än 2023.02.0, [se till att du har `prerelease` flagga aktiverad i din miljö](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=en#new-features) som adaptiva Forms Core Components ingick i förleasingen före version 2023.02.0.
+
+Information om hur du använder Adaptiv Forms-guide och Adaptiv formulärredigerare för att skapa ett adaptivt formulär finns i Skapa ett adaptivt formulär ([Kärnkomponenter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?)).
 
 
 ## Adaptiva Forms Core-komponenter {#components}
 
-Du kan använda [Adaptiv Forms-redigerare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html) för att skapa en huvudkomponentbaserad Adaptive Forms. Den aktuella versionen av de adaptiva Forms Core-komponenterna innehåller komponenterna nedan.
+Den aktuella versionen av de adaptiva Forms Core-komponenterna innehåller komponenterna nedan.
 
-* Dragspel
-* Knapp
-* Kryssrutegrupp
-* Datumväljaren
-* Nedrullningsbar lista
-* E-postinmatning
-* Formulärbehållare
-* Bifogad fil
-* Sidfot
-* Sidhuvud
-* Vågräta flikar
-* Bild
-* Nummerindata
-* Panelbehållare
-* Alternativknapp
-* Återställningsknapp
-* Skicka-knapp
-* Telefonindata
-* Textindata
-* Text
-* Titel
-* guide
-
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)
