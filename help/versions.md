@@ -3,20 +3,20 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 94c7783b861d6e793092d79da67a78120aa80fdc
+source-git-commit: 468078da4d31d7eedf9bd73cbcf2d71107bfe3f4
 workflow-type: tm+mt
-source-wordcount: '2873'
-ht-degree: 12%
+source-wordcount: '2924'
+ht-degree: 11%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.2.0 och är kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
+Den aktuella versionen av Core Components är 2.2.4 och kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
-Core Components är utformade för att vara flexibla och kompatibla med alla AEM som stöds. På grund av detta kan en version av komponenterna innehålla flera versioner av samma komponent.
+Core Components är utformade för att vara flexibla och kompatibla med alla AEM som stöds. På grund av detta kan en release av komponenterna innehålla flera versioner av samma kompon©ent.
 
 I följande tabeller visas kompatibiliteten för de versioner av kärnkomponenterna som innehåller de versioner som versionerna ingår i.
 
@@ -26,6 +26,8 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.22.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.4) | Det här är en korrigeringsversion som åtgärdar ett problem i [Content Fragment List Component.](/help/components/content-fragment-list.md) | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 5 april 2023 |
+| [2.22.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.2) | Det här är en underhållsversion som åtgärdar två problem som introducerades i 2.22.0 | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 31 mars 2023 |
 | [2.22.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.0) | Den här versionen innehåller en ny version av [List-komponent](/help/components/list.md) tillsammans med förbättringar av [Teaser](/help/components/teaser.md) och uppdatering av [PDF Viewer](/help/components/pdf-viewer.md) och [Carousel](/help/components/carousel.md) | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 9 februari 2023 |
 | [2.21.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.2) | Det här är en korrigeringsversion som åtgärdar ett problem med v1 och v2 [Teaser Components.](/help/components/teaser.md) | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 12 september 2022 |
 | [2.21.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.0) | Den här versionen innehåller ett antal förbättringar, bland annat publicering av LinkHandler API, förbättringar av [Bildkomponent](/help/components/image.md) och [datalager,](/help/developing/data-layer/overview.md) samt förbättringar av komponenter med flera paneler. | - | 6.5.13.0+ * | Kontinuerlig | 8, 11 | 12 september 2022 |
