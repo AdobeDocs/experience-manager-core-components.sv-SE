@@ -3,9 +3,9 @@ title: E-posttitelkomponent
 description: E-posttitelkomponenten är en avsnittsrubrikkomponent för dina e-postmeddelanden som innehåller redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: f65b6973-bb36-406f-bbea-f85a23f5340b
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -32,13 +32,9 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 | Komponentversion | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Kompatibel | Kompatibel |
+| v1 | Kompatibel | - |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudversioner av e-postkomponenter](/help/versions.md).
-
-## Exempel på komponentutdata {#sample-component-output}
-
-Om du vill se både komponenten Title och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek.](https://adobe.com/go/aem_cmp_library_email_title)
 
 ### Teknisk information {#technical-details}
 

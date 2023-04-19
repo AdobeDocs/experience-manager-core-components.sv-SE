@@ -3,9 +3,9 @@ title: E-postupplevelsefragmentkomponent
 description: Med e-postupplevelsefragmentkomponenten kan innehållsförfattaren placera en Experience Fragment-variant i sitt innehåll samtidigt som den stöder en lokaliserad innehållsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 861c1fd1-6d6d-426c-a338-a558326fe16e
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 | Komponentversion | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Kompatibel | Kompatibel |
+| v1 | Kompatibel | - |
 
 Mer information om versionerna och versionerna av E-postkärnkomponenten finns i dokumentet [E-postkärnkomponentversioner.](/help/email/versions.md)
 
@@ -49,7 +49,7 @@ I det här fallet är fragmentet med samma lokalisering ([språk, utkast eller l
 Det här beteendet är begränsat till e-postupplevelsefragmentkomponenter som lagts till i mallar. Experience Fragment Components som lagts till på enskilda innehållssidor återger exakt de Experience Fragment-återgivningar som konfigurerats i komponenten.
 
 * Ett exempel på hur lokaliseringsfunktionerna i Experience Fragment-komponenten fungerar finns i [avsnittet nedan](#example).
-* Ett exempel på hur lokaliseringsfunktionerna för kärnkomponenterna fungerar tillsammans finns i [Lokaliseringsfunktioner för sidan Core Components](/help/get-started/localization.md).
+* Ett exempel på hur lokaliseringsfunktionerna i kärnkomponenterna fungerar tillsammans finns i [Lokaliseringsfunktioner för sidan Core Components](/help/get-started/localization.md).
 
 ### Exempel {#example}
 
@@ -104,10 +104,6 @@ Komponenten för e-postupplevelsefragment försöker hitta en motsvarande lokali
 1. Om den inte hittas försöker den hitta en plan.
 1. Om den inte hittas försöker den hitta en live-kopia.
 1. Om den inte hittas används som standard det Experience Fragment som konfigurerats i komponenten.
-
-## Exempel på komponentutdata {#sample-component-output}
-
-Om du vill se både e-postupplevelsefragmentkomponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek.](https://adobe.com/go/aem_cmp_library_email_xf)
 
 ## Teknisk information {#technical-details}
 

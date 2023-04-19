@@ -3,9 +3,9 @@ title: E-posttextkomponent
 description: E-posttextkomponenten är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: 4aa192f6-8314-40e7-8732-c6626d647986
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '2328'
+source-wordcount: '2291'
 ht-degree: 0%
 
 ---
@@ -30,13 +30,9 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 | Komponentversion | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Kompatibel | Kompatibel |
+| v1 | Kompatibel | - |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [E-postkärnkomponentversioner.](/help/email/versions.md)
-
-## Exempel på komponentutdata {#sample-component-output}
-
-Om du vill se textkomponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek](https://adobe.com/go/aem_cmp_library_email_text).
 
 ### Teknisk information {#technical-details}
 
@@ -78,7 +74,7 @@ Används för att tillämpa kursiv formatering på markerad text eller kursiv om
 
 **Ctrl+I** kan användas som kortkommando.
 
-#### Understrykning
+#### Understruken
 
 ![Understrykningsikon](/help/assets/text-underline.png)
 
@@ -144,7 +140,7 @@ Tryck eller klicka på bockmarkeringen för att använda länken eller på kryss
 
 Använd det här alternativet om du vill ta bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt när en länk redan är markerad.
 
-#### Fästpunkt {#anchor}
+#### Ankarpunkt {#anchor}
 
 ![Ankarikon](/help/email/assets/anchor.png)
 
@@ -168,7 +164,7 @@ Om inga fler förekomster hittas visas ett meddelande och sökningen startas om 
 
 ![Sök efter exempel på inga fler förekomster](/help/assets/text-find-example-found-end.png)
 
-#### Replace
+#### Ersätt
 
 ![Ikonen Ersätt](/help/assets/text-replace.png)
 

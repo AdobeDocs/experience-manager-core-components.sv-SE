@@ -3,9 +3,9 @@ title: E-postbildkomponent
 description: E-postbildkomponenten är en adaptiv bildkomponent med redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: f5d40047-3082-4edd-a5f6-6ab3e33997f9
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1645'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 | Komponentversion | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Kompatibel | Kompatibel |
+| v1 | Kompatibel | - |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Huvudkomponentversioner för e-post](/help/email/versions.md).
 
@@ -61,10 +61,6 @@ Scalable Vector Graphics (SVG) stöds av Email Image Component.
 ### Dokumentskydd {#security}
 
 Av säkerhetsskäl anropas aldrig SVG direkt av bildredigeraren. Den kallas för `<img src=“path-to-component”>`. Detta förhindrar webbläsaren från att köra skript som är inbäddade i filen SVG.
-
-## Exempel på komponentutdata {#sample-component-output}
-
-Om du vill visa e-postbildkomponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek.](https://adobe.com/go/aem_cmp_library_email_image)
 
 ### Teknisk information {#technical-details}
 

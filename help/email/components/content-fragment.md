@@ -3,9 +3,9 @@ title: E-postinnehållets fragmentkomponent
 description: Med komponenten E-postinnehållsfragment kan du visa ett innehållsfragment i ditt innehåll.
 role: Architect, Developer, Admin, User
 exl-id: 9bc6b730-0d2a-4e5b-891c-d2f67f600bcc
-source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
+source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '668'
+source-wordcount: '629'
 ht-degree: 1%
 
 ---
@@ -31,13 +31,9 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 | Komponentversion | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|
-| v1 | Kompatibel | Kompatibel |
+| v1 | Kompatibel | - |
 
 Mer information om e-postkärnkomponentversioner och -versioner finns i dokumentet [E-postkärnkomponentversioner.](/help/email/versions.md)
-
-## Exempel på komponentutdata {#sample-component-output}
-
-Om du vill visa komponenterna för e-postinnehållsfragment samt se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek.](https://adobe.com/go/aem_cmp_library_email_cf)
 
 ## Teknisk information {#technical-details}
 
