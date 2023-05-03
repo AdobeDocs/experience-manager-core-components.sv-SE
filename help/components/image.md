@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Core Component Image Component Component är en adaptiv image-komponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: f0971db66cbbf8221c12cedf108eee3bca8a527a
+source-git-commit: 1cb06273ecb2c5b5f90c02b74b7ac0e440d87ecc
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1636'
 ht-degree: 0%
 
 ---
@@ -61,10 +61,6 @@ Skalbar vektorgrafik (SVG) stöds av bildkomponenten.
 ### Dokumentskydd {#security}
 
 Av säkerhetsskäl anropas aldrig SVG direkt av bildredigeraren. Den kallas för `<img src=“path-to-component”>`. Detta förhindrar webbläsaren från att köra skript som är inbäddade i filen SVG.
-
->[!NOTE]
->
->För SVG-support krävs version 2.1.0 av Core Components eller senare tillsammans med [Service Pack 2](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/sp-release-notes.html) för AEM 6.4 eller senare för [bildredigeringsfunktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/image-editor.html) inom AEM.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
