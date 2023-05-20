@@ -6,7 +6,7 @@ exl-id: e8fa3881-51fb-4726-9654-8f93acfb7464
 source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
 workflow-type: tm+mt
 source-wordcount: '582'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -54,7 +54,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
    * **Textområde**
    * **E-post**
    * **Tel**
-   * **Date**
+   * **Datum**
    * **Siffra**
    * **Lösenord**
 * **Textrader** - Antal rader som ska visas i textområdet (visas endast när **Begränsning** är inställd på **Textområde**)

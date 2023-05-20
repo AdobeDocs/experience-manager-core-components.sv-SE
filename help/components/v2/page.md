@@ -2,13 +2,13 @@
 title: Sidkomponent (v2)
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+exl-id: e85fe4db-6de4-4a84-a54c-bd07a67efed3
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
 
 ---
-
 
 # Sidkomponent (v2) {#page-component}
 

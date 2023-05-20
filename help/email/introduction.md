@@ -6,7 +6,7 @@ exl-id: 0a411f28-bd6a-4bad-b473-6bc27c1d1055
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
 source-wordcount: '409'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -52,7 +52,7 @@ E-postkärnkomponenterna har följande krav.
 
 Den aktuella versionen av E-postkärnkomponenterna innehåller följande komponenter.
 
-* [Sidan](components/page.md)
+* [Sida](components/page.md)
 * [Behållare](components/container.md)
 * [Titel](components/title.md)
 * [Text](components/text.md)

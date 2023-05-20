@@ -19,7 +19,7 @@ Med Core Component List Component kan du enkelt skapa både dynamiska och statis
 
 List-komponenten kan användas för att skapa t.ex. en dynamisk lista med underordnade sidor eller en statisk lista med godtyckligt definierade objekt.
 
-Vilka typer av listor som finns tillgängliga och formateringsalternativen kan definieras av mallförfattaren i [designdialogrutan](#design-dialog). Innehållsredigeraren kan välja bland tillgängliga listtyper och hur listelementen ska formateras i [redigeringsdialogrutan](#edit-dialog).
+Vilka typer av listor som är tillgängliga och formateringsalternativen kan definieras av mallförfattaren i [designdialogruta](#design-dialog). Innehållsredigeraren kan välja bland tillgängliga listtyper och hur listelementen ska formateras i [redigeringsdialogruta](#edit-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -36,11 +36,11 @@ I följande tabell visas kompatibiliteten för v1 för List-komponenten.
 >
 >Det här dokumentet beskriver v1 för List-komponenten.
 >
->Information om den aktuella versionen av List Component finns i [List Component](/help/components/list.md)-dokumentet.
+>Mer information om den aktuella versionen av List Component finns i [List-komponent](/help/components/list.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -134,7 +134,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md) för mer information.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -149,7 +149,7 @@ Listan kan byggas på olika sätt.
 * [Sökning](#search-list)
 * [Taggar](#tags)
 
-Oavsett hur listan är uppbyggd finns det [Sorteringsalternativ](#sort-options) som alltid kan konfigureras.
+Oavsett hur listan byggs finns det [Sorteringsalternativ](#sort-options) som alltid kan konfigureras.
 
 ![](/help/assets/chlimage_1-38.png)
 
@@ -164,7 +164,7 @@ Listan kan byggas av de underordnade sidorna för den aktuella sidan eller en an
 * **Överordnad sida**
    * Den sida vars underordnade sidor ska skapa listan
    * Lämna tomt om du vill använda den aktuella sidan
-* **Underordnat djup**  - Hur många nivåer ned i hierarkin ska användas
+* **Underordnat djup** - Hur många nivåer i hierarkin som ska användas
 
 #### Fast lista {#fixed-list}
 
@@ -172,9 +172,9 @@ Listan kan skapas med en fast lista med objekt.
 
 ![](/help/assets/chlimage_1-40.png)
 
-Tryck eller klicka på knappen **Lägg till** om du vill infoga ett nytt objekt i listan.
+Tryck eller klicka på **Lägg till** om du vill dra in ett nytt objekt i listan.
 
-* Ange text för objektet i listan eller använd dialogrutan **Markering** för att välja ett objekt från AEM.
+* Ange text för objektet i listan eller använd **Dialogrutan Markering** om du vill välja ett objekt från AEM.
 * Använd draghandtaget för att ordna om objekten i listan.
 * Använd papperskorgsikonen för att ta bort objekt i listan.
 
@@ -184,9 +184,9 @@ Listan kan skapas med hjälp av resultatet av en sökning AEM innehåll.
 
 ![](/help/assets/chlimage_1-41.png)
 
-* **Sökfråga**  - Strängen som en fulltextsökning ska köras för att generera listelementen
-* **Sök i**  - Där sökningen ska köras
-   * Använd **urvalsdialogrutan** för att välja plats i AEM
+* **Sökfråga** - Den sträng som en textsökning ska köras för att generera listelementen
+* **Sök i** - Var sökningen ska göras
+   * Använd **Dialogrutan Markering** för att välja plats i AEM
    * Använd aktuell sida om inget anges
 
 #### Taggar {#tags}
@@ -195,12 +195,12 @@ Listan kan byggas med sidor som matchar vissa taggar under en viss plats.
 
 ![](/help/assets/chlimage_1-42.png)
 
-* **Överordnad sida**  - Där taggmatchningen ska börja
-   * Använd **urvalsdialogrutan** för att välja plats i AEM
+* **Överordnad sida** - Där taggmatchningen ska börja
+   * Använd **Dialogrutan Markering** för att välja plats i AEM
    * Använd aktuell sida om inget anges
-* **Taggar**  - Vilka taggar ska matchas
-   * Välj taggarna i dialogrutan **Bläddra**
-* **Matcha**  - Definiera vilken typ av matchning som ska kvalificera en sida som ska tas med i listan
+* **Taggar** - Vilka taggar som ska matchas
+   * Använd **Bläddra** för att markera taggarna
+* **Matcha** - Definiera vilken typ av matchning som ska kvalificera en sida som ska tas med i listan
    * **valfri tagg**
    * **alla taggar**
 
@@ -210,27 +210,27 @@ Oavsett hur du väljer att skapa listan finns det vissa sorteringsalternativ som
 
 ![](/help/assets/chlimage_1-43.png)
 
-* **Ordna efter** - Hur elementen ska ordnas
+* **Beställ av** - Ordna elementen
    * **Titel**
    * **Senast ändrat den**
-* **Sorteringsordning**  - Den ordning i vilken artiklarna ska ordnas
+* **Sorteringsordning** - Den ordning i vilken artiklarna ska ordnas
    * **stigande**
    * **fallande**
-* **Max Items**  - Maximalt antal objekt som visas i listan.
+* **Max. objekt** - Maximalt antal objekt som visas i listan.
    * Lämna tomt om du vill returnera alla objekt.
 
 ### Objektinställningar {#item-settings}
 
-På fliken **Objektinställningar** kan du konfigurera formateringen för listelementen.
+Använda **Objektinställningar** kan formateringen av listelementen konfigureras.
 
 ![](/help/assets/chlimage_1-44.png)
 
-* **Länka**
-objektLänka objekt till motsvarande sida
-* **Visa**
-beskrivningVisa beskrivningar av läntobjektet
-* **Visa**
-datumVisa ändringsdatum för länkobjektet
+* **Länka objekt**
+Länka objekt till motsvarande sida
+* **Visa beskrivning**
+Visa beskrivningar av länkelementet
+* **Visa datum**
+Visa ändringsdatum för länkobjektet
 
 ## Designdialogruta {#design-dialog}
 
@@ -238,30 +238,30 @@ I designdialogrutan kan mallskaparen definiera vilka typer av listor som ska til
 
 ### Listinställningar {#list-settings-1}
 
-På fliken **Listinställningar** kan datumformatet definieras liksom vilken typ av listor som ska vara tillgängliga i komponenten för innehållsförfattarna.
+På **Listinställningar** kan datumformatet definieras liksom vilken typ av listor som ska vara tillgängliga i komponenten för innehållsförfattarna.
 
 ![](/help/assets/chlimage_1-45.png)
 
-* **Datumformat**  - Format som ska användas för visning av det senaste ändringsdatumet
-* **Inaktivera underordnade**  - Inaktivera listtypen för underordnade i komponenten
-* **Inaktivera statisk**  - Inaktivera den statiska listtypen i komponenten
-* **Inaktivera sökning**  - Inaktivera söklisttypen i komponenten
-* **Inaktivera taggar**  - Inaktivera tagglisttyp i komponenten
+* **Datumformat** - Format som ska användas för att visa det senaste ändringsdatumet
+* **Inaktivera underordnade** - Inaktivera listtypen för underordnade i komponenten
+* **Inaktivera statisk** - Inaktivera den statiska listtypen i komponenten
+* **Inaktivera sökning** - Inaktivera typen av söklista i komponenten
+* **Inaktivera taggar** - Inaktivera tagglisttyp i komponenten
 
 ### Objektinställningar {#item-settings-1}
 
-På fliken **Objektinställningar** kan du definiera formateringsalternativen för de enskilda listelementen som ska vara tillgängliga i komponenten för innehållsförfattarna.
+På **Objektinställningar** kan du definiera formateringsalternativen för de enskilda listelementen som ska vara tillgängliga i komponenten för innehållsförfattarna.
 
 ![](/help/assets/chlimage_1-46.png)
 
-* **Länkobjekt**  - Aktivera alternativet Länkobjekt i  [redigeringsdialogrutan](#edit-dialog)
-* **Visa beskrivningar** - Aktivera alternativet Visa beskrivningar i  [redigeringsdialogrutan](#edit-dialog)
-* **Visa datum** - Aktivera Visa datum i dialogrutan  [Redigera](#edit-dialog)
+* **Länka objekt** - Aktivera alternativet Länkobjekt i [redigeringsdialogruta](#edit-dialog)
+* **Visa beskrivningar** - Aktivera alternativet Visa beskrivningar i dialogrutan [redigeringsdialogruta](#edit-dialog)
+* **Visa datum** - Aktivera alternativet Visa datum i [redigeringsdialogruta](#edit-dialog)
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om List-komponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list).
+Den senaste tekniska dokumentationen om List Component [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list).
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).

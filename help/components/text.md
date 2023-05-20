@@ -75,7 +75,7 @@ Används för att tillämpa kursiv formatering på markerad text eller kursiv om
 
 **Ctrl+I** kan användas som kortkommando.
 
-### Understrykning
+### Understruken
 
 ![Understrykningsikon](/help/assets/text-underline.png)
 
@@ -159,7 +159,7 @@ Om inga fler förekomster hittas visas ett meddelande och sökningen startas om 
 
 ![Sök efter exempel på inga fler förekomster](/help/assets/text-find-example-found-end.png)
 
-### Replace
+### Ersätt
 
 ![Ikonen Ersätt](/help/assets/text-replace.png)
 

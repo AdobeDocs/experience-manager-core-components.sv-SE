@@ -6,7 +6,7 @@ role: Architect, Developer, Admin
 exl-id: 55c984d3-deb7-4eda-a81d-7768791d2b46
 source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '972'
 ht-degree: 0%
 
 ---
@@ -21,28 +21,28 @@ Precis som Core-komponenterna är koden för Adobe-klientdatalagret tillgänglig
 
 >[!TIP]
 >
->Mer information om datalagret för klienten i Adobe finns i [resurserna i dess GitHub-databas.](https://github.com/adobe/adobe-client-data-layer)
+>Mer information om Adobe klientdatalager finns här: [referera till resurserna i GitHub-databasen.](https://github.com/adobe/adobe-client-data-layer)
 >
->Mer teknisk information om integrationen av Adobe Client Data Layer med Core Components finns i [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md)-filen i Core Components-databasen.
+>Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components finns i [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
 
 ## Installation och aktivering {#installation-activation}
 
-Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som ett AEM klientbibliotek och ingen installation behövs. Alla projekt som genereras av [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) innehåller som standard ett aktiverat datalager.
+Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som ett AEM klientbibliotek och ingen installation behövs. Alla projekt som genererats av [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) inkluderar som standard ett aktiverat datalager.
 
 Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konfiguration](/help/developing/context-aware-configs.md) för den:
 
-1. Skapa följande struktur under mappen `/conf/<mySite>`, där `<mySite>` är namnet på Platsens projekt:
+1. Skapa följande struktur under `/conf/<mySite>` mapp, var `<mySite>` är namnet på ditt Site-projekt:
    * `/conf/<mySite>/sling:configs/com.adobe.cq.wcm.core.components.internal.DataLayerConfig`
-   * Där varje nod har `jcr:primaryType` inställt på `nt:unstructured`.
-1. Lägg till en boolesk egenskap med namnet `enabled` och ställ in den på `true`.
+   * Där varje nod har en `jcr:primaryType` ange till `nt:unstructured`.
+1. Lägg till en boolesk egenskap med namnet `enabled` och ange `true`.
 
    ![Plats för DataLayerConfig i WKND-referensplats](/help/assets/datalayer-contextaware-sling-config.png)
 
    *Plats för DataLayerConfig i WKND-referensplats*
 
-1. Lägg till en `sling:configRef`-egenskap i `jcr:content`-noden för platsen under `/content` (t.ex. `/content/<mySite>/jcr:content`) och ställ in det på `/conf/<mySite>` från föregående steg.
+1. Lägg till en `sling:configRef` egenskapen till `jcr:content` nod på din webbplats nedan `/content` (t.ex. `/content/<mySite>/jcr:content`) och ange att `/conf/<mySite>` från föregående steg.
 
-1. När den är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren, till exempel med alternativet **Visa som publicerad** i redigeraren. Inspect sidkällan och `<body>`-taggen ska innehålla attributet `data-cmp-data-layer-enabled`
+1. När aktiveringen är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren, till exempel med hjälp av **Visa som publicerad** i redigeraren. Inspect, sidkällan och `<body>` taggen ska innehålla ett attribut `data-cmp-data-layer-enabled`
 
    ```html
    <body class="page basicpage" id="page-id" data-cmp-data-layer-enabled>
@@ -58,7 +58,7 @@ Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konf
        </script>
    ```
 
-1. Du kan också öppna utvecklarverktygen i webbläsaren och i konsolen ska JavaScript-objektet `adobeDataLayer` vara tillgängligt. Ange följande kommando för att hämta den aktuella sidans datalagerstatus:
+1. Du kan även öppna utvecklarverktygen i webbläsaren och i konsolen `adobeDataLayer` JavaScript-objekt ska vara tillgängliga. Ange följande kommando för att hämta den aktuella sidans datalagerstatus:
 
    ```javascript
    window.adobeDataLayer.getState();
@@ -77,14 +77,14 @@ Följande komponenter har stöd för datalagret.
 * [Språknavigering](/help/components/language-navigation.md)
 * [Lista](/help/components/list.md)
 * [Navigering](/help/components/navigation.md)
-* [Sidan](/help/components/page.md)
+* [Sida](/help/components/page.md)
 * [Förloppsindikator](/help/components/progress-bar.md)
 * [Tabbar](/help/components/tabs.md)
 * [Teaser](/help/components/teaser.md)
 * [Text](/help/components/text.md)
 * [Titel](/help/components/title.md)
 
-Se även [händelserna som utlöses av komponenterna.](#events-components)
+Se även [händelser som utlöses av komponenterna.](#events-components)
 
 ## Datascheman för kärnkomponenter {#data-schemas}
 
@@ -117,7 +117,7 @@ id: {                   // component ID
 }
 ```
 
-Följande [händelse](#events) är relevant för schema för komponent-/behållarobjekt:
+Följande [event](#events) är relevant för schema för komponent-/behållarobjekt:
 
 * `cmp:click`
 
@@ -125,7 +125,7 @@ Följande [händelse](#events) är relevant för schema för komponent-/behålla
 
 Sidschemat används av följande komponent:
 
-* [Sidan](/help/components/page.md)
+* [Sida](/help/components/page.md)
 
 Sidschemat definieras enligt följande.
 
@@ -145,7 +145,7 @@ id: {
 }
 ```
 
-En `cmp:show`-händelse utlöses vid sidinläsning. Den här händelsen skickas från infogad JavaScript direkt under den inledande `<body>`-taggen, vilket gör den till den tidigaste händelsen i datalagrets händelsekö.
+A `cmp:show` -händelsen utlöses vid sidinläsning. Den här händelsen skickas från textbundet JavaScript direkt under öppningen `<body>` -taggen, vilket gör den till den tidigaste händelsen i datalagrets händelsekö.
 
 ### Behållarschema {#container}
 
@@ -197,13 +197,13 @@ id: {
 }
 ```
 
-Följande [händelse](#events) är relevant för Image-schemat:
+Följande [event](#events) är relevant för bildschemat:
 
 * `cmp:click`
 
 ### Resursschema {#asset}
 
-Resursschemat används inuti [Image-komponenten.](/help/components/image.md)
+Resursschemat används i [Bildkomponent.](/help/components/image.md)
 
 Resursschemat definieras så här.
 
@@ -217,13 +217,13 @@ id: {
 }
 ```
 
-Följande [händelse](#events) är relevant för resursschemat:
+Följande [event](#events) är relevant för resursschemat:
 
 * `cmp:click`
 
 ### Innehållsfragmentschema {#content-fragment}
 
-Schemat Innehållsfragment används av komponenten [Innehållsfragment.](/help/components/content-fragment-component.md)
+Innehållsfragmentschemat används av [Innehållsfragmentkomponent.](/help/components/content-fragment-component.md)
 
 Schemat Innehållsfragment definieras så här.
 
@@ -251,13 +251,13 @@ Schemat som används för elementet Content Fragment är följande.
 
 ## Kärnkomponentshändelser {#events}
 
-Det finns ett antal händelser som kärnkomponenter utlöser via datalagret. Det bästa sättet att interagera med datalagret är att [registrera en händelseavlyssnare](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener) och *sedan utföra en åtgärd baserat på händelsetypen och/eller komponenten som utlöste händelsen.* På så sätt undviks potentiella konkurrensförhållanden med asynkrona skript.
+Det finns ett antal händelser som kärnkomponenter utlöser via datalagret. Det bästa sättet att interagera med datalagret är att [registrera en händelseavlyssnare](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener) och *sedan* vidta en åtgärd baserat på händelsetypen och/eller komponenten som utlöste händelsen. På så sätt undviks potentiella konkurrensförhållanden med asynkrona skript.
 
 Nedan visas några av de färdiga händelserna som AEM Core Components tillhandahåller:
 
-* **`cmp:click`** - Om du klickar på ett klickbart element (ett element som har ett  `data-cmp-clickable` attribut) utlöser datalagret en  `cmp:click` händelse.
-* **`cmp:show`** och  **`cmp:hide`** - Om du ändrar dragspelsfliken (expanderar/komprimerar), karusellen (nästa/föregående knappar) och flikarna (tabbmarkera) aktiveras datalagret  `cmp:show` och en  `cmp:hide` händelse. En `cmp:show`-händelse skickas också vid sidinläsning och förväntas vara den första händelsen.
-* **`cmp:loaded`** - När datalagret har fyllts i med kärnkomponenterna på sidan utlöser datalagret en  `cmp:loaded` händelse.
+* **`cmp:click`** - Klicka på ett klickbart element (ett element som har ett `data-cmp-clickable` attribute) aktiverar datalagret en `cmp:click` -händelse.
+* **`cmp:show`** och **`cmp:hide`** - Om du ändrar dragspelsfliken (expanderar/komprimerar), karusellen (nästa/föregående knappar) och flikarna (tabbmarkera) aktiveras datalagret `cmp:show` och `cmp:hide` respektive. A `cmp:show` -händelsen skickas också vid sidinläsning och förväntas vara den första händelsen.
+* **`cmp:loaded`** - När datalagret har fyllts i med kärnkomponenterna på sidan, utlöser datalagret en `cmp:loaded` -händelse.
 
 ### Händelser utlösta av komponent {#events-components}
 
@@ -265,14 +265,14 @@ I följande tabeller visas de standardkomponenter som utlöser händelser tillsa
 
 | Komponent | Händelser |
 |---|---|
-| [Dragspel](/help/components/accordion.md) | `cmp:show` and `cmp:hide` |
+| [Dragspel](/help/components/accordion.md) | `cmp:show` och `cmp:hide` |
 | [Knapp](/help/components/button.md) | `cmp:click` |
 | [Breadcrumb](/help/components/breadcrumb.md) | `cmp:click` |
-| [Carousel](/help/components/carousel.md) | `cmp:show` och  `cmp:hide` |
+| [Carousel](/help/components/carousel.md) | `cmp:show` och `cmp:hide` |
 | [Språknavigering](/help/components/language-navigation.md) | `cmp:click` |
 | [Navigering](/help/components/navigation.md) | `cmp:click` |
 | [Sida](/help/components/page.md) | `cmp:show` |
-| [Tabbar](/help/components/tabs.md) | `cmp:show` och  `cmp:hide` |
+| [Tabbar](/help/components/tabs.md) | `cmp:show` och `cmp:hide` |
 | [Teaser](/help/components/teaser.md) | `cmp:click` |
 
 ### Information om händelsens sökväg {#event-path-info}
@@ -285,7 +285,7 @@ eventInfo: {
 }
 ```
 
-Där `<component-path>` är JSON-sökvägen till komponenten i datalagret som utlöste händelsen.  Värdet, som är tillgängligt via `event.eventInfo.path`, är viktigt eftersom det kan användas som en parameter till `adobeDataLayer.getState(<component-path>)` som hämtar det aktuella läget för komponenten som utlöste händelsen, vilket gör att anpassad kod kan komma åt ytterligare data och lägga till dem i datalagret.
+Plats `<component-path>` är JSON-sökvägen till komponenten i datalagret som utlöste händelsen.  Värdet är tillgängligt via `event.eventInfo.path`, är viktigt eftersom det kan användas som en parameter till `adobeDataLayer.getState(<component-path>)` som hämtar det aktuella läget för den komponent som utlöste händelsen, så att anpassad kod kan komma åt ytterligare data och lägga till dem i datalagret.
 
 Till exempel:
 

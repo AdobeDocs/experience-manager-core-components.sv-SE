@@ -6,7 +6,7 @@ exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
 source-git-commit: 614bc5fd01a76a6888606faa4576e1695b77ba58
 workflow-type: tm+mt
 source-wordcount: '1559'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -98,7 +98,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | Namnge CSS-klasser | Standardiserad namnkonvention baserad på [Blockelementsmodifierare](https://getbem.com/) (BEM)-notation (från och med version 2.0.0) | Anpassade scheman |
 | Dialogdefinition | [Korall 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Coral 2 + Classic UI |
 | JSON-utdata | [Sling Models Exporter med Jackson-serialisering](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) | Default Sling-server |
-| Versionshantering | [För modellen och HTML](guidelines.md) | Inget |
+| Versionshantering | [För modellen och HTML](guidelines.md) | Ingen |
 | Testning | Enhetstester + integrationstester | Integrationstester |
 | Leverans | [Via offentlig GitHub](https://github.com/adobe/aem-core-wcm-components) | Via QuickStart |
 | Licens | [Apache-licens](https://www.apache.org/licenses/LICENSE-2.0) | Adobe |

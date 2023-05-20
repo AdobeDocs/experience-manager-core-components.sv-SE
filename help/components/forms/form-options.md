@@ -51,7 +51,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av alt
 
 * **Typer** - Hur alternativen presenteras
    * **Kryssrutor**
-   * **alternativknappar**
+   * **Alternativknappar**
    * **Nedrullningsbar meny**
    * **Listruta för flera val**
 * **Titel** - Den rubrik som ska visas som etikett för alternativen

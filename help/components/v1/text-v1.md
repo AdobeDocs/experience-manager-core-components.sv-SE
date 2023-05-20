@@ -7,7 +7,7 @@ exl-id: c9fe3052-a33d-412e-9456-52c9a0cea292
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '1657'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -19,7 +19,7 @@ Komponenten Text är en textredigerings- och dispositionskomponent med funktione
 
 Textkomponenten har en robust textredigerare som gör det enkelt att redigera text i en förenklad, textbunden redigerare och i ett helskärmsformat.
 
-I [redigeringsdialogrutan](#edit-dialog) finns det infogad redigering med begränsade alternativ och full funktionalitet i redigeringsdialogrutan i helskärmsläge. Med hjälp av [designdialogrutan](#design-dialog) kan du konfigurera textformateringsalternativ som rubriker, specialtecken och styckeformat för mallen för innehållsförfattaren.
+The [redigeringsdialogruta](#edit-dialog) funktioner för infogad redigering med begränsade alternativ med full funktionalitet i redigeringsdialogrutan i helskärmsläge. Använda [designdialogruta](#design-dialog), textformateringsalternativ som rubriker, specialtecken och styckeformat kan konfigureras för mallen för innehållsförfattaren.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -36,11 +36,11 @@ I följande tabell visas kompatibiliteten för v1 för textkomponenten.
 >
 >Det här dokumentet beskriver v1 för textkomponenten.
 >
->Information om den aktuella versionen av textkomponenten finns i dokumentet [Textkomponent](/help/components/text.md).
+>Information om den aktuella versionen av textkomponenten finns i [Textkomponent](/help/components/text.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -68,7 +68,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md) för mer information.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -82,7 +82,7 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    Används för att formatera text fet eller fet formatera text som skrivs efter markören.
 
-   **Ctrl+** Bcan används som kortkommando.
+   **Ctrl+B** kan användas som kortkommando.
 
 * Kursiv
 
@@ -90,15 +90,15 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    Används för att tillämpa kursiv formatering på markerad text eller kursiv om text som anges efter markören.
 
-   **Ctrl+** Ikan användas som kortkommando.
+   **Ctrl+I** kan användas som kortkommando.
 
-* Understrykning
+* Understruken
 
    ![](/help/assets/chlimage_1-55.png)
 
    Används för att tillämpa understruken formatering på markerad text eller understruken text som anges efter markören.
 
-   **Ctrl+** UI kan användas som kortkommando.
+   **Ctrl+U** kan användas som kortkommando.
 
 * Nedsänkt
 
@@ -167,11 +167,11 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    ![](/help/assets/chlimage_1-66.png)
 
-   Ange den text som du vill söka efter och tryck eller klicka på **Sök** för att påbörja sökningen. Tryck eller klicka på x för att avbryta.
+   Ange texten som du vill söka efter och tryck eller klicka på **Sök** för att påbörja sökningen. Tryck eller klicka på x för att avbryta.
 
-   Om du vill göra en exakt matchning utifrån skiftläget, markerar du alternativet **Matcha gemener/VERSALER** innan du påbörjar sökningen.
+   Om du vill göra en exakt matchning utifrån skiftläget väljer du alternativet **Matcha gemener/VERSALER** innan sökningen påbörjas.
 
-   Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Tryck eller klicka på knappen **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst.
+   Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Tryck eller klicka på **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst.
 
    ![](/help/assets/chlimage_1-67.png)
 
@@ -179,7 +179,7 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    ![](/help/assets/chlimage_1-68.png)
 
-* Replace
+* Ersätt
 
    ![](/help/assets/chlimage_1-69.png)
 
@@ -189,11 +189,11 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    Ange den text som du vill söka efter samt den text som den ska ersättas med.
 
-   Tryck eller klicka på **Sök** för att starta sökningen. Klicka eller tryck på x för att avbryta.
+   Tryck eller klicka **Sök** för att påbörja sökningen. Klicka eller tryck på x för att avbryta.
 
-   Om du vill göra en exakt matchning utifrån skiftläget, markerar du alternativet **Matcha gemener/VERSALER** innan du påbörjar sökningen.
+   Om du vill göra en exakt matchning utifrån skiftläget väljer du alternativet **Matcha gemener/VERSALER** innan sökningen påbörjas.
 
-   Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Klicka på knappen **Sök** igen i den nedtonade dialogrutan om du vill söka efter nästa förekomst eller välj knappen **Ersätt** om du vill ersätta den markerade, matchade texten. Observera att knappen **Ersätt** bara är aktiv när en matchning har gjorts.
+   Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Klicka på **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst eller markera **Ersätt** om du vill ersätta den markerade, matchade texten. Observera att **Ersätt** är bara aktiv när en träff har gjorts.
 
    Välj **Ersätt alla** om du vill ersätta alla förekomster av texten samtidigt.
 
@@ -221,7 +221,7 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    Används för att formatera den markerade texten som en punktlista eller börja infoga en punktlista efter markören.
 
-   Om du vill avsluta en punktlista trycker eller klickar du på knappen **Bullet** igen eller anger två vagnreturer.
+   Avsluta en punktlista genom att trycka eller klicka på **Punkt** igen eller ange två vagnreturer.
 
 * Numrerad
 
@@ -229,7 +229,7 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    Används för att formatera den markerade texten som en numrerad lista eller börja infoga en numrerad lista efter markören.
 
-   Om du vill avsluta en numrerad lista trycker eller klickar du på knappen **Numrerad** igen eller anger två vagnreturer.
+   Avsluta en numrerad lista genom att trycka eller klicka på **Numrerad** igen eller ange två vagnreturer.
 
 * Minska indrag
 
@@ -253,20 +253,20 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    ![](/help/assets/chlimage_1-79.png)
 
-   * **Kolumner**  - Antal kolumner i tabellen (obligatoriskt)
-   * **Rader**  - antalet rader i tabellen (obligatoriskt)
-   * **Bredd**  - Tabellens bredd
-   * **Höjd**  - tabellens höjd
-   * **Cellutfyllnad -** utrymmet runt cellinnehållet
-   * **Cellmellanrum**  - Avståndet mellan celler
-   * **Kant**  - Tabellens kantlinjers vikt
+   * **Kolumner** - Antal kolumner i tabellen (obligatoriskt)
+   * **Rader** - Antal rader i tabellen (obligatoriskt)
+   * **Bredd** - Tabellens bredd
+   * **Höjd** - tabellens höjd
+   * **Cellfyllnad** g - Utrymmet runt cellinnehållet
+   * **Cellmellanrum** - Avståndet mellan celler
+   * **Kant** - Bredden på tabellens kantlinjer
    * Om för tabellrubriken:
 
       * Den första raden ska användas
       * Den första kolumnen ska användas
       * Den första raden och den första kolumnen ska användas
       * Eller så får ingen rubrik användas.
-   * **Bildtext**  - Tabellens bildtext
+   * **Bildtext** - Tabellens beskrivning
 
 
 * Kontrollera stavning
@@ -291,14 +291,14 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
    Används för att visa och ändra textens HTML-källa.
 
-   Tryck eller klicka på ikonen **Källredigering** om du vill ändra textens innehåll från den formaterade vyn för att visa rå-HTML. I det här läget är alla andra formateringsalternativ inaktiverade. Tryck eller klicka på ikonen **Källredigering** igen för att återgå till den formaterade vyn.
+   Tryck eller klicka på **Redigera källa** om du vill ändra textens innehåll från den formaterade vyn så att HTML visas i Raw-format. I det här läget är alla andra formateringsalternativ inaktiverade. Tryck eller klicka på **Redigera källa** om du vill återgå till den formaterade vyn.
 
    >[!CAUTION]
    >
-   >Som alltid med åtkomst till rå HTML måste du vara försiktig när du använder alternativet **Källredigering**!
+   >Som alltid när det gäller tillgång till obehandlad HTML måste försiktighet iakttas när **Redigera källa** option!
    >
    >
-   >HTML som anges via **Källredigering** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felformaterad HTML som angetts i **Källredigering** kan emellertid bryta sidans mall, vilket resulterar i oväntad formatering eller återgivning av den resulterande sidan som inte kan användas.
+   >HTML via **Redigera källa** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. HTML med felaktigt format angavs **Redigera källa** kan bryta sidans mall vilket resulterar i oväntad formatering eller återgivning av den resulterande sidan som inte kan användas.
 
 * Styckeformat
 
@@ -347,9 +347,9 @@ Följande formateringsalternativ kan aktiveras eller inaktiveras för komponente
 
 Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alternativet är aktiverat kan du definiera vilka format som tillåts.
 
-* Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt format.
+* Tryck eller klicka på **Lägg till** om du vill infoga ett nytt format.
 * Ange koden för formatet och en beskrivning som ska visas i redigeringsdialogrutan.
-* Om du vill ta bort en formatknapp eller klickar på knappen **Ta bort**.
+* Om du vill ta bort en formatknapp eller klicka på **Ta bort** -knappen.
 * Om du vill ändra ordningen på formaten trycker du eller klickar och drar i handtagen.
 
 ### Specialtecken {#special-characters}
@@ -358,9 +358,9 @@ Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alt
 
 Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för komponenten. När du aktiverar det här alternativet kan du definiera tillåtna tecken.
 
-* Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt tecken.
-* Ange tecknets HTML-kod och en beskrivning som ska visas i redigeringsdialogrutan.
-* Om du vill ta bort ett tecken trycker du på eller klickar på knappen **Ta bort**.
+* Tryck eller klicka på **Lägg till** om du vill infoga ett nytt tecken.
+* Ange HTML-koden för tecknet och en beskrivning som ska visas i redigeringsdialogrutan.
+* Ta bort en teckenknapp eller klicka på **Ta bort** -knappen.
 * Om du vill ändra ordningen på tecknen trycker du eller klickar och drar i handtagen.
 
 ## Teknisk information {#technical-details}
@@ -369,4 +369,4 @@ Den senaste tekniska dokumentationen om textkomponenten [finns på GitHub](https
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).

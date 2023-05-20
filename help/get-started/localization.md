@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 exl-id: 9140b65a-6dd7-4ec9-9095-6e8243ec8424
 source-git-commit: 888719359f9a1d1c9dccff97fb639b332f2be54c
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ De flesta webbplatser kräver att det finns en sidfot på alla sidor. Dessa sidf
 
 På samma sätt måste en navigeringskomponent vanligtvis visas på alla sidor. Det måste dock även återspegla innehållet på de lokaliserade sidorna.
 
-Det här blir en enkel uppgift med lokaliseringsfunktionerna i [kärnkomponenten för navigering](/help/components/navigation.md) och [kärnkomponenten för upplevelsefragment](/help/components/experience-fragment.md) tillsammans med de redigerbara mallarna för [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html). Exemplet kan utökas ytterligare för att även använda [språknavigeringskomponenten](/help/components/language-navigation.md).
+Använda lokaliseringsfunktionerna i [Kärnkomponent för navigering](/help/components/navigation.md) och [Experience Fragment Core Component](/help/components/experience-fragment.md) tillsammans med [redigerbara mallar för AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)blir detta en enkel uppgift. Exemplet kan utökas ytterligare för att använda [Språknavigeringskomponent](/help/components/language-navigation.md) också.
 
 ## Innehållsstrukturen {#content-structure}
 
@@ -32,7 +32,7 @@ Säg att din webbplats bara heter `my-site` och finns här:
 /content/my-site
 ```
 
-Låt oss också säga att du skriver din webbplats på engelska och erbjuder den på franska också. Om du har en enkel sida med namnet `my-page` finns den i två lokaliseringsgrenar i webbplatsens innehållsträd:
+Låt oss också säga att du skriver din webbplats på engelska och erbjuder den på franska också. Om du har en enkel sida som heter `my-page` den skulle finnas i två lokaliseringsgrenar i webbplatsens innehållsträd:
 
 ```
 /content
@@ -45,7 +45,7 @@ Låt oss också säga att du skriver din webbplats på engelska och erbjuder den
 
 Det finns under dessa lokaliseringsgrenar där du kan skapa ytterligare webbplatssidor.
 
-Sidfötter görs vanligtvis med Experience Fragments så att du behöver en engelsk och fransk version precis som på dina sidor. Upplevelsefragment är emellertid inte sidor, utan snarare delar av sidor som kan återanvändas över sidor, så de lever inte direkt under `/content` som resten av sidorna. Istället bor de i sin egen mapp, men eftersom de också måste lokaliseras måste deras struktur spegla platsens lokaliseringsstruktur.
+Sidfötter görs vanligtvis med Experience Fragments så att du behöver en engelsk och fransk version precis som på dina sidor. Upplevelsefragment är emellertid inte sidor, utan snarare delar av sidor som kan återanvändas över sidor, så de finns inte direkt under `/content` som resten av sidorna. Istället bor de i sin egen mapp, men eftersom de också måste lokaliseras måste deras struktur spegla platsens lokaliseringsstruktur.
 
 ```
 /content
@@ -67,7 +67,7 @@ Det är via den speglade lokaliseringsstrukturen som kärnkomponenterna kan hitt
 
 Experience Fragment Component är mycket flexibelt och passar bra för sidhuvud och sidfot.
 
-Eftersom vår hypotetiska webbplats finns på engelska och franska måste vi skapa två Experience Fragments som båda kallas `footer` [på de platser vi beskrev tidigare.](#content-structure)
+Eftersom vår hypotetiska webbplats erbjuds på engelska och franska måste vi skapa två Experience Fragments, som båda kallas `footer` [på de platser vi beskrev tidigare.](#content-structure)
 
 ![](/help/assets/screen-shot-2019-09-09-11.08.28.png)
 
@@ -75,7 +75,7 @@ Eftersom vår hypotetiska webbplats finns på engelska och franska måste vi ska
 
 Eftersom sidfoten visas på varje sida måste vi lägga till Experience Fragment i vår standardsidmall.
 
-Vår mall heter bara `my-template` och finns med i våra andra mallar:
+Vår mall heter bara `my-template` och finns med våra andra mallar:
 
 ```
 /conf/my-site/settings/wcm/templates/my-template

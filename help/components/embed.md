@@ -52,7 +52,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera den externa resur
 
 Välj först vilken typ av resurs som ska bäddas in:
 
-* [Webbadress](#url)
+* [URL](#url)
 * [Inbäddad](#embeddable)
 * [HTML](#html)
 
@@ -62,7 +62,7 @@ Du kan definiera en **ID**. Med det här alternativet kan du styra den unika ide
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
 * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-#### Webbadress {#url}
+#### URL {#url}
 
 Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resursen som du vill bädda in i **URL** fält. Komponenten försöker komma åt resursen och om den kan återges av någon av processorerna visas ett bekräftelsemeddelande under **URL** fält. Annars markeras fältet med fel.
 

@@ -1,12 +1,12 @@
 ---
 title: it.tests Module of AEM Project Archetype
 description: Så här använder du AEM Project Archetype Integration Tests
-feature: Kärnkomponenter, AEM projekttyp
+feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 0abc0265-3a3f-4323-97e6-3af0c62299ef
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---

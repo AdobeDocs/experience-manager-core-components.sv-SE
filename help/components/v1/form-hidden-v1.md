@@ -7,7 +7,7 @@ exl-id: 8e30dac0-5b4b-4fc7-af99-5791c98c90bf
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '335'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,9 @@ Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält
 
 ## Användning {#usage}
 
-Komponenten Core Component Form Hidden gör det möjligt att skapa dolda fält som skickar information om den aktuella sidan tillbaka till AEM och är avsedd att användas tillsammans med [formulärbehållarkomponenten](form-container-v1.md).
+Komponenten Core Component Form Hidden gör det möjligt att skapa dolda fält som skickar information om den aktuella sidan tillbaka till AEM och är avsedd att användas tillsammans med [formulärbehållarkomponent](form-container-v1.md).
 
-Fältegenskaperna kan definieras av innehållsredigeraren i [konfigurationsdialogrutan](#configure-dialog).
+Fältegenskaperna kan definieras av innehållsredigeraren i [konfigurera dialogruta](#configure-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -36,11 +36,11 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 >
 >I det här dokumentet beskrivs v1 för komponenten Form Hidden.
 >
->Mer information om den aktuella versionen av komponenten Formulär-Dold finns i dokumentet [Formulärdlig komponent](/help/components/forms/form-hidden.md).
+>Mer information om den aktuella versionen av den dolda formulärkomponenten finns i [Komponent för dolt formulär](/help/components/forms/form-hidden.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### HTML {#html}
 
@@ -80,7 +80,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md#release-history-and-compatibility).
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md#release-history-and-compatibility) för mer information.
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -88,9 +88,9 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera parametrarna för
 
 ![](/help/assets/chlimage_1-26.png)
 
-* **Namn** - Namnet på fältet som skickas med formulärdata
-* **Värde**  - Fältets värde som skickas med formulärdata
-* **Identifierare**  - Identifieraren ska vara unik på sidan och kan användas för att binda skript till det här formulärfältet
+* **Namn** - Namnet på det fält som skickas in tillsammans med formulärdata
+* **Värde** - Fältets värde som skickas med formulärdata
+* **Identifierare** - Identifieraren ska vara unik på sidan och kan användas för att binda skript till det här formulärfältet
 
 ## Designdialogruta {#design-dialog}
 
@@ -98,8 +98,8 @@ Det finns ingen designdialogruta för komponenten Formulär-dold.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om den dolda formulärkomponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
+Den senaste tekniska dokumentationen om komponenten för dolda formulär [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).

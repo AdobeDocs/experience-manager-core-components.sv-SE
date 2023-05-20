@@ -7,7 +7,7 @@ exl-id: 2c06a942-7ac5-4847-9d11-7bbcd0ea51bd
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
 source-wordcount: '342'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -17,9 +17,9 @@ Komponenten Core Component Form Button gör det möjligt att inkludera ett knapp
 
 ## Användning {#usage}
 
-Komponenten Core Component Form Button gör det möjligt att skapa knappfält, ofta för att utlösa att formuläret skickas och är avsedd att användas tillsammans med [formulärbehållarkomponenten](form-container-v1.md).
+Komponenten Core Component Form Button gör det möjligt att skapa knappfält, ofta för att utlösa att formuläret skickas och är avsedd att användas tillsammans med [formulärbehållarkomponent](form-container-v1.md).
 
-Knappegenskaperna kan definieras av innehållsredigeraren i [konfigurationsdialogrutan](#configure-dialog).
+Knappegenskaperna kan definieras av innehållsredigeraren i [konfigurera dialogruta](#configure-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -36,11 +36,11 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Formulärknap
 >
 >I det här dokumentet beskrivs v1 för komponenten Form Button.
 >
->Mer information om den aktuella versionen av komponenten Formulärknapp finns i dokumentet [Komponent för formulärknapp](/help/components/forms/form-button.md).
+>Mer information om den aktuella versionen av komponenten Formulärknapp finns i [Komponent för formulärknapp](/help/components/forms/form-button.md) -dokument.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -84,7 +84,7 @@ Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-m
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för Core Components v1](/help/versions.md).
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md) för mer information.
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -96,11 +96,11 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappens parametr
    * **Knapp**
    * **Skicka**
 
-* **Titel**  - Texten som visas på knappen
+* **Titel** - Den text som visas på knappen
    * Om inget anges används knapptypen som standard
 
-* **Namn** - Namnet på knappen som skickas med formulärdata
-* **Värde**  - Värdet på knappen som skickas in tillsammans med formulärdata
+* **Namn** - Namnet på knappen som skickas in tillsammans med formulärdata
+* **Värde** - Knappens värde, som skickas in tillsammans med formulärdata
 
 ## Designdialogruta {#design-dialog}
 
@@ -108,8 +108,8 @@ Det finns ingen designdialogruta för komponenten Formulärknapp.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Form Button-komponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
+Den senaste tekniska dokumentationen om komponenten Formulärknapp [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
 
 Hela kärnkomponentprojektet kan laddas ned från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till Core Components developer](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).

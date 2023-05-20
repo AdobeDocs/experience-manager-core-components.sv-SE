@@ -2,13 +2,13 @@
 title: Navigeringskomponent (v1)
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+exl-id: 0b7de79a-e0c7-4cf9-b5a9-c78cbc3ecd2f
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 0%
 
 ---
-
 
 # Navigeringskomponent (v1) {#navigation-component}
 

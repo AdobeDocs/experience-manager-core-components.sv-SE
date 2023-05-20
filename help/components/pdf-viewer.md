@@ -6,7 +6,7 @@ exl-id: deb635f5-2b73-4e7a-9838-3a941e39e898
 source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
 workflow-type: tm+mt
 source-wordcount: '709'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -73,7 +73,7 @@ Visningsområdet återges i hela webbläsaren. Detta passar bäst för lagrings-
 ![Anpassa flikens alternativ för hela fönster i redigeringsdialogrutan för komponenten PDF Viewer](/help/assets/pdf-viewer-edit-customize-full.png)
 
 * **Standardvisningsläge** - Hur visningsprogrammet passar in på sidan där det visas
-   * Anpassa till sidan
+   * Anpassa till sida
    * Anpassa bredd
 * **Helskärm** - När det här alternativet är aktiverat får visningsprogrammet hela höjden/bredden för visningsrutan.
 * **Anteckningsverktyg** - När det här alternativet är aktiverat är anteckningsverktygen tillgängliga.

@@ -2,13 +2,13 @@
 title: Bädda in komponent (v1)
 description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM innehållssida.
 role: Architect, Developer, Admin, User
-source-git-commit: e5251010ca41025eb2bb56b66164ecf4cc0145c8
+exl-id: 28a2d196-cc1f-4e29-a8e4-c2e0acba3bfc
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
 workflow-type: tm+mt
 source-wordcount: '1298'
 ht-degree: 0%
 
 ---
-
 
 # Bädda in komponent (v1) {#embed-component}
 
@@ -45,7 +45,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för
 
 I dialogrutan Konfigurera kan innehållsförfattaren definiera den externa resurs som ska bäddas in på sidan. Välj först vilken typ av resurs som ska bäddas in:
 
-* [Webbadress](#url)
+* [URL](#url)
 * [Inbäddad](#embeddable)
 * [HTML](#html)
 
@@ -55,7 +55,7 @@ För varje typ av inbäddad kan du definiera och **ID**. Med det här alternativ
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
 * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-### Webbadress {#url}
+### URL {#url}
 
 Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resursen som du vill bädda in i **URL** fält. Komponenten försöker komma åt resursen och om den kan återges av någon av processorerna visas ett bekräftelsemeddelande under **URL** fält. Annars markeras fältet med fel.
 

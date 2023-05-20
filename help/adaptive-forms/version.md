@@ -2,13 +2,13 @@
 title: AEM Forms Core Components Versions
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
-source-git-commit: 85d6efce6f661db2812f80a7815fd6902e77b440
+exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
+source-git-commit: aaf083cc4b479a97f750844c742581e1b243e036
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '318'
+ht-degree: 5%
 
 ---
-
 
 # Huvudkomponentversioner {#core-components-versions}
 

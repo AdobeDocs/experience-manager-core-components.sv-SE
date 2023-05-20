@@ -2,13 +2,13 @@
 title: List Component (v3)
 description: Med Core Component List Component List Component (v3) kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
-source-git-commit: af908d77b30b7642b553f38c217136cfd5603108
+exl-id: 4aefce2e-9c22-4c6d-869e-aaa8c246b073
+source-git-commit: d86cb826922330f9877a725b84eb1844e1d5c0b7
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 1%
 
 ---
-
 
 # List Component (v3) {#list-component}
 

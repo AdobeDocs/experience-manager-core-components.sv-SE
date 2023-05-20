@@ -2,13 +2,13 @@
 title: Ladda ned komponent (v1)
 description: Med komponenten Core Component Download kan du skapa ett nedladdningsalternativ på en sida.
 role: Architect, Developer, Admin, User
-source-git-commit: f8aa86d58ba71ede3c3cd867c45aafff06923325
+exl-id: ebd63522-218d-4784-bea0-1627c64f5230
+source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
 workflow-type: tm+mt
 source-wordcount: '644'
 ht-degree: 0%
 
 ---
-
 
 # Ladda ned komponent (v1) {#download-component}
 

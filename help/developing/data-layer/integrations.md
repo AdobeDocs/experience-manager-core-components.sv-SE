@@ -22,15 +22,15 @@ Adobe Client Data Layer kan integreras med era anpassade komponenter och integre
 Så här lägger du automatiskt till en anpassad komponent i datalagret:
 
 1. Definiera egenskaperna för den anpassade komponentmodellen som behöver spåras.
-1. Lägg till attributet `data-cmp-data-layer` i den anpassade komponentens HTML-kod. T.ex. `data-cmp-data-layer="${mycomponent.data.json}"`.
+1. Lägg till `data-cmp-data-layer` -attribut till den anpassade komponentens HTML. T.ex. `data-cmp-data-layer="${mycomponent.data.json}"`.
 
-Om du automatiskt vill att datalagret ska utlösa en `cmp:click`-händelse varje gång någon klickar på ett visst element i den anpassade komponenten, lägger du till attributet `data-cmp-clickable` till elementet som ska spåras i den anpassade komponentens HTML.
+Aktivera datalagrets utlösare automatiskt `cmp:click` varje gång någon klickar på ett visst element i den anpassade komponenten lägger du till `data-cmp-clickable` -attribut till elementet som ska spåras i den anpassade komponentens HTML-kod.
 
-Attributet `data-cmp-data-layer-enabled` kan efterfrågas på klientsidan för att kontrollera om datalagret är aktiverat.
+The `data-cmp-data-layer-enabled` kan frågas på klientsidan för att kontrollera om datalagret är aktiverat.
 
 >[!TIP]
 >
->Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components och om hur du aktiverar datalagret för dina anpassade komponenter finns i filen [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
+>Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components och om hur du aktiverar datalagret för dina anpassade komponenter finns i [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
 
 ## Integrera med Adobe Analytics och Adobe Target {#analytics-target}
 

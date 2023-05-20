@@ -202,7 +202,7 @@ Som standard skjuts inläsningen av bilder tills de blir synliga. Välj alternat
 
 På **Funktioner** kan du definiera vilka alternativ som är tillgängliga för innehållsförfattarna när de använder komponenten, inklusive överföringsalternativ, orientering och beskärningsalternativ.
 
-* **Aktivera webboptimerade bilder** - När du markerar det här alternativet kommer den webboptimerade bildleveranstjänsten att leverera bilder i WebP-format, vilket i genomsnitt minskar bildstorlekarna med 25 %.
+* **Aktivera webboptimerade bilder** - När det är markerat levererar den webboptimerade bildleveranstjänsten bilder i WebP-format, vilket minskar bildstorleken med i genomsnitt 25 %.
    * Det här alternativet är endast tillgängligt i AEMaaCS.
    * När alternativet är avmarkerat eller webboptimerad bildleveranstjänst inte är tillgänglig visas [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) används.
 
