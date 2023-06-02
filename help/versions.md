@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 1b419d6f340f8062945f96b1605a67620d5f79af
+source-git-commit: b7b06b5760e233756a0e8906251fa3b8ab401908
 workflow-type: tm+mt
-source-wordcount: '2988'
+source-wordcount: '3006'
 ht-degree: 12%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.2.10 och är kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
+Den aktuella versionen av Core Components är 2.2.12 och är kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,6 +26,7 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.22.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.12) | Den här korrigeringsversionen åtgärdar två problem. | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 25 maj 2023 |
 | [2.22.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.10) | Den här korrigeringsversionen åtgärdar två regressioner. | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 11 maj 2023 |
 | [2.22.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.8) | Den här korrigeringsversionen återför funktioner som togs bort av misstag i en tidigare version. | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 9 maj 2023 |
 | [2.22.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.6) | Den här korrigeringsversionen korrigerar en regression i [Containerkomponent.](/help/components/container.md) | - | 6.5.14.0+ * | Kontinuerlig | 8, 11 | 21 april 2023 |
