@@ -3,9 +3,9 @@ title: AEM Forms Core Components Versions
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: aaf083cc4b479a97f750844c742581e1b243e036
+source-git-commit: 8648a8dabd1999c9d3bbb76bb4f04f16eafda650
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '314'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ I följande tabell visas en lista över de Core Components-versioner som är kom
 | [2.0.6](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.6) | Flera format för den numeriska indatastkärnkomponenten introducerades i den här versionen. | Kontinuerlig | 8, 11 | 8 februari 2023 |
 | [2.0.4](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.6) | Komponentstöd för AEM as a Cloud Service introducerades i den här versionen. | Kontinuerlig | 8, 11 | 30 januari 2023 |
 
-## AEM 6.5 Form on Prefast and AMS version history {#aem-as-form-version-history}
+## AEM 6.5 Forms - versionshistorik {#aem-as-form-version-history}
 
 I följande tabell visas en lista över de Core Components-versioner som är kompatibla med AEM 6.5 Form On Premise och AMS som finns på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12).
 
