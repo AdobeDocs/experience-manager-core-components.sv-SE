@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - knapp
 description: Använda eller anpassa den adaptiva Forms-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: cb75929b-8c86-49d1-b51a-368f5b80b1a9
-source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
+source-git-commit: 90a48e6203ce611679c2a7269ffb5d48912e3d71
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ En knapp i ett adaptivt formulär är ett gränssnittselement som gör att anvä
 
 Med den adaptiva Forms-regelredigeraren kan användare ange olika åtgärder för knappkomponenten. Dessa åtgärder kan bland annat vara att öppna en webbplats, visa eller dölja formulärkomponenter, lägga till en instans av en panel eller komponent, skicka eller återställa ett formulär.
 
-Adaptiv Forms har också separata knappkomponenter för att skicka eller återställa ett formulär, men knappkomponenten kan även konfigureras för att utföra dessa åtgärder om det behövs.
+Adaptiv Forms har olika komponenter för [Skicka-knapp](/help/adaptive-forms/components/submit-button.md) och [Knappen Återställ](/help/adaptive-forms/components/reset-button.md), vilket gör det enkelt för användarna att skicka eller återställa ett formulär. Button-komponenten kan konfigureras flexibelt för att köra dessa åtgärder baserat på specifika behov.
 
 Användare kan komma åt den fullständiga listan över åtgärder som stöds för knappkomponenten med den adaptiva Forms-regelredigeraren. Med regelredigeraren kan användare skapa regler som aktiveras av olika händelser, till exempel när användaren klickar på en knapp, när ett formulär läses in eller när ett fältvärde ändras. Dessa regler kan sedan användas för att utföra olika åtgärder, som att visa eller dölja komponenter, ange fältvärden eller skicka formuläret.
 
