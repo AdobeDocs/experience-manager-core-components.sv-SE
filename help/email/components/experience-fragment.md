@@ -3,9 +3,9 @@ title: E-postupplevelsefragmentkomponent
 description: Med e-postupplevelsefragmentkomponenten kan innehållsförfattaren placera en Experience Fragment-variant i sitt innehåll samtidigt som den stöder en lokaliserad innehållsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 861c1fd1-6d6d-426c-a338-a558326fe16e
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: e5afead6bfdcc59cbd6da888f4e1e36038c6c0f8
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '882'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ I det här fallet är fragmentet med samma lokalisering ([språk, utkast eller l
 Det här beteendet är begränsat till e-postupplevelsefragmentkomponenter som lagts till i mallar. Experience Fragment Components som lagts till på enskilda innehållssidor återger exakt de Experience Fragment-återgivningar som konfigurerats i komponenten.
 
 * Ett exempel på hur lokaliseringsfunktionerna i Experience Fragment-komponenten fungerar finns i [avsnittet nedan](#example).
-* Ett exempel på hur lokaliseringsfunktionerna i kärnkomponenterna fungerar tillsammans finns i [Lokaliseringsfunktioner för sidan Core Components](/help/get-started/localization.md).
+* Ett exempel på hur lokaliseringsfunktionerna för kärnkomponenterna fungerar tillsammans finns i [Lokaliseringsfunktioner för sidan Core Components](/help/get-started/localization.md).
 
 ### Exempel {#example}
 
@@ -107,7 +107,7 @@ Komponenten för e-postupplevelsefragment försöker hitta en motsvarande lokali
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Experience Fragment-komponenten [finns på GitHub.](https://adobe.com/go/aem_cmp_email_tech_xf_v1)
+Läs det senaste [teknisk dokumentation om Experience Fragment-komponenten](https://www.adobe.com/go/aem_cmp_xf_v1).
 
 Mer information om hur du utvecklar kärnkomponenterna finns i [Dokumentation för grundkomponentens utvecklare.](/help/developing/overview.md)
 
