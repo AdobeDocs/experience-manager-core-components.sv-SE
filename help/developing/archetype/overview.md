@@ -4,7 +4,7 @@ description: En projektmall för AEM
 feature: Core Components, AEM Project Archetype
 role: Architect, Developer, Admin
 exl-id: 58994726-9b65-4035-9d45-60b745d577bb
-source-git-commit: fac7c40919d2c31a8004bd1f47500ac44f99fb61
+source-git-commit: d25e659828becc0d9285297d00c53530bb33785a
 workflow-type: tm+mt
 source-wordcount: '1192'
 ht-degree: 1%
@@ -62,7 +62,7 @@ mvn -B org.apache.maven.plugins:maven-archetype-plugin:3.2.1:generate \
 
 * Ersätt `XX` med de senaste [versionsnummer för arkivtyp.](#requirements)
 * Ange `aemVersion=cloud` for [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html);\
-   Ange `aemVersion=6.5.0` for [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt.
+  Ange `aemVersion=6.5.0` for [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt.
 Core Components-beroendet läggs bara till för andra versioner än molnbaserade, eftersom Core Components tillhandahålls OTB för AEM as a Cloud Service.
 * Justera `appTitle="My Site"` för att definiera webbplatsens titel och komponentgrupper.
 * Justera `appId="mysite"` för att definiera Maven artifactId, komponentens, konfigurations- och innehållsmappens namn samt klientbibliotekens namn.
@@ -73,10 +73,10 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 
 | Namn | Standard | Beskrivning |
 |---------------------------|----------------|--------------------|
-| `appTitle` |  | Programtitel, kommer att användas för webbplatsens titel och komponentgrupper (t.ex. `"My Site"`). |
-| `appId` |  | Tekniskt namn, kommer att användas för komponentnamn, konfigurations- och innehållsmappnamn samt klientbiblioteksnamn (t.ex. `"mysite"`). |
+| `appTitle` |                | Programtitel, kommer att användas för webbplatsens titel och komponentgrupper (t.ex. `"My Site"`). |
+| `appId` |                | Tekniskt namn, kommer att användas för komponentnamn, konfigurations- och innehållsmappnamn samt klientbiblioteksnamn (t.ex. `"mysite"`). |
 | `artifactId` | *`${appId}`* | Base Maven artifact ID (t.ex. `"mysite"`). |
-| `groupId` |  | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). Värdet måste vara en [giltigt namn på Java-paket.](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7) |
+| `groupId` |                | Grupp-ID för Bas Maven-grupp (t.ex. `"com.mysite"`). Värdet måste vara en [giltigt namn på Java-paket.](https://docs.oracle.com/javase/specs/jls/se6/html/packages.html#7.7) |
 | `package` | *`${groupId}`* | Källpaket för Java (t.ex. `"com.mysite"`). |
 | `version` | `1.0-SNAPSHOT` | Projektversion (t.ex. `1.0-SNAPSHOT`). |
 | `aemVersion` | `cloud` | AEM (kan `cloud` for [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html); eller `6.5.0`, eller `6.4.4` for [Adobes hanterade tjänster](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams) eller på plats). |
@@ -89,7 +89,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 | `includeExamples` | `n` | Innehåller en [Komponentbibliotek](https://www.aemcomponents.dev/) exempelwebbplats (kan `y`, eller `n`). |
 | `includeErrorHandler` | `n` | Innehåller en anpassad 404-svarssida som är global till hela instansen (kan `y` eller `n`). |
 | `includeCommerce` | `n` | Inkluderar [CIF-kärnkomponenter](https://github.com/adobe/aem-core-cif-components) beroenden och genererar motsvarande artefakter. |
-| `commerceEndpoint` |  | Krävs endast för CIF. Valfri slutpunkt för e-handelssystemets GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
+| `commerceEndpoint` |                | Krävs endast för CIF. Valfri slutpunkt för e-handelssystemets GraphQL-tjänst som ska användas (t.ex. `https://hostname.com/grapql`). |
 | `includeFormscommunications` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Communications-program. |
 | `includeFormsenrollment` | `n` | Inkluderar [Forms Core Components](https://github.com/adobe/aem-core-forms-components) beroenden, mallar, formulärdatamodeller, teman och genererar motsvarande artefakter för Forms Enrollment-program. |
 | `sdkFormsVersion` | `latest` | När `aemVersion=cloud` och en av `includeFormsenrollment=y` eller `includeFormscommunications=y`kan en Forms SDK-version anges (t.ex. `2020.12.17.02`). |
@@ -104,7 +104,7 @@ Core Components-beroendet läggs bara till för andra versioner än molnbaserade
 
 | Arketyp | AEM as a Cloud Service | AEM 6.5 | Java SE | Maven |
 |---------|---------|---------|---------|---------|
-| [41](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-41) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
+| [42](https://github.com/adobe/aem-project-archetype/releases/tag/aem-project-archetype-42) | Kontinuerlig | 6.5.7.0+ | 8, 11 | 3.3.9+ |
 
 Konfigurera den lokala utvecklingsmiljön för [AEM as a Cloud Service SDK](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html) eller för [äldre versioner av AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html).
 
