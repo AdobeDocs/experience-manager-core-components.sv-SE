@@ -2,10 +2,9 @@
 title: Adaptiv Forms Core-komponent - panelbehållare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms-panelbehållaren.
 role: Architect, Developer, Admin, User
-exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
-source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
+source-git-commit: b2c35d78ba0473273852deb678b34b5dd96cf51e
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1366'
 ht-degree: 0%
 
 ---
@@ -14,7 +13,7 @@ ht-degree: 0%
 
 I ett adaptivt formulär är en panel ett behållarelement som kan användas för att gruppera relaterade formulärelement. Det gör att du kan gruppera och ordna olika formulärelement på ett logiskt och meningsfullt sätt. Detta kan förbättra formulärets övergripande struktur och läsbarhet, vilket gör det lättare för användarna att förstå och navigera.
 
-Paneler kan användas för att skapa komprimerbara avsnitt, vilket kan vara användbart för att dölja komplexa eller mindre ofta använda formulärfält, vilket gör formuläret enkelt och lätt att använda. Du kan även inkludera andra komponenter som text, kryssruta och knapp.
+Paneler kan också användas för att skapa komprimerbara avsnitt, vilket kan vara användbart för att dölja komplexa eller mindre ofta använda formulärfält, vilket gör formuläret enkelt och lätt att använda. Du kan även inkludera andra komponenter som text, kryssrutor, knappar och så vidare.
 
 Den kan också användas för att ange olika regelbaserade åtgärder som att skicka formulär, öppna en webbplats, visa/dölja komponenter eller lägga till en instans av en panel.
 
@@ -36,13 +35,15 @@ Det finns flera skäl att använda en panel i ett formulär, bland annat:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core-komponenten för den adaptiva Forms-panelbehållaren släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
-|---|---|---|
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+|  |  |
+|---|---|
+| Komponentversion | AEM as a Cloud Service |
+| — | --- |
+| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -58,7 +59,7 @@ Du kan enkelt anpassa panelbehållarupplevelsen för besökare med dialogrutan K
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/panelcontainer_basictab.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/basic-panel.png)
 
 * **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -70,13 +71,26 @@ Du kan enkelt anpassa panelbehållarupplevelsen för besökare med dialogrutan K
 
 * **Layout** - Du kan ha en fast layout (enkel) eller en flexibel layout (responsivt stödraster) för guiden. Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan justera komponenternas placering efter dina behov. Använd till exempel responsivt stödraster för att justera&quot;Förnamn&quot;,&quot;Mittennamn&quot; och&quot;Efternamn&quot; i ett formulär på en enda rad.
 
-* **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+* **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 * **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 * **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
+### Panelfliken Upprepa {#repeat-panel}
+
+![upprepningsflik](/help/adaptive-forms/assets/repeat-panel.png)
+
+Du kan använda alternativen för upprepning för att duplicera panelbehållaren och dess underordnade komponenter, definiera ett minsta och högsta antal upprepningar och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med panelbehållarkomponenten och använder dess inställningar visas följande alternativ:
+
+* **Gör guiden upprepningsbar**: En växlingsfunktion som gör att användare kan aktivera eller inaktivera repeteringsfunktionen.
+* **Minsta antal upprepningar**: Fastställer det minsta antalet gånger som panelbehållaren kan upprepas. Värdet noll anger att guidepanelen inte upprepas. standardvärdet är noll.
+* **Maximalt antal upprepningar**: Anger maximalt antal gånger som panelbehållaren kan upprepas. Som standard är det här värdet obegränsat.
+
+Om du vill hantera upprepningsbara avsnitt i panelbehållaren på ett effektivt sätt följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
+
 ### Fliken Hjälpinnehåll {#help-content}
 
-![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/panelcontainer_helptab.png)
+![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/helpcontent-panel.png)
+
 
 * **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
 
@@ -86,54 +100,10 @@ Du kan enkelt anpassa panelbehållarupplevelsen för besökare med dialogrutan K
 
 ### Fliken Tillgänglighet {#accessibility}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/panelcontainer_accessibilitytab.png)
+![Fliken Tillgänglighet](/help/adaptive-forms/assets/accessibilty-panel.png)
+
 
 * **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
-
-* **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
-
-## Designdialogruta {#design-dialog}
-
-Designdialogrutan används för att definiera och hantera CSS-format för behållarkomponenten för panelen.
-
-### Fliken Tillåtna komponenter {#allowed-components-tab}
-
-![Flikar med tillåtna komponenter](/help/adaptive-forms/assets/panel_allowedcomponent.png)
-
-The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt i panelbehållarkomponenten i den adaptiva Forms-redigeraren.
-
-### Fliken Standardkomponenter {#default-component-tab}
-
-På den här fliken kan mallredigeraren mappa komponenter som kan läggas till som objekt till panelerna i panelbehållarkomponenten i den adaptiva Forms-redigeraren.
-
-![Panelstandardkomponent](/help/adaptive-forms/assets/panel_defaultcomponent.png)
-
-### Responsiva inställningar {#responsive-settings}
-
-På den här fliken kan mallredigeraren ange hur många kolumner som ska visas i det responsiva rutnätet.
-
-![Responsivt rutnät](/help/adaptive-forms/assets/panel_responsivesettings.png)
-
-### Fliken Inställningar för behållare {#container-setting-tab}
-
-På fliken Behållarinställningar kan du ange komponenternas placering i den adaptiva Forms-redigeraren.
-
-![Behållarinställningar](/help/adaptive-forms/assets/panel_settings.png)
-
-* **Layout**: Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan ändra komponenternas placering efter dina behov.
-* **Inaktivera layout**: Du kan även inaktivera layoutvalet i redigeringsdialogrutan genom att välja **Inaktivera layout** kryssrutan.
-* **Aktivera bakgrundsbild**: På den här fliken kan du ange bakgrundsbild och -färg i mallredigeraren.
-* **Aktivera bakgrundsfärg**: På den här fliken kan du ange bakgrundsfärg i mallredigeraren.
-
-### Fliken Format {#styles-tab}
-
-Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för den adaptiva Forms-panelbehållaren stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
-
-![Fliken Format](/help/adaptive-forms/assets/panel_style.png)
-
-* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Core-komponenten.
-
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller använda dessa format på ett adaptivt formulär i Adaptiv Forms. Om du vill använda ett format väljer du den komponent som du vill använda redigeraren för formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 * **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 

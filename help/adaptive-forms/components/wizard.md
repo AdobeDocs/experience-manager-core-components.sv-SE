@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
+source-git-commit: b2c35d78ba0473273852deb678b34b5dd96cf51e
 workflow-type: tm+mt
-source-wordcount: '1847'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,13 @@ Generellt sett kan en guidelayout göra det enklare och effektivare att fylla i 
 
 Kärnkomponenten i den adaptiva Forms-guidelayouten släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
-|---|---|---|
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+|  |  |
+|---|---|
+| Komponentversion | AEM as a Cloud Service |
+| — | --- |
+| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -71,7 +73,7 @@ Du kan enkelt anpassa guideupplevelsen för besökare med dialogrutan Konfigurer
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/wizard_basictab.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/wizard-basic.png)
 
 * **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -89,9 +91,21 @@ Du kan enkelt anpassa guideupplevelsen för besökare med dialogrutan Konfigurer
 
 * **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
+### Fliken Repeat Wizard {#repeat-wizard-tab}
+
+![Repeat wizard](/help/adaptive-forms/assets/wizard-repeat.png)
+
+Du kan använda alternativen för upprepning för att duplicera guiden och dess underordnade komponenter, definiera ett minsta och högsta antal upprepningar och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med Wizard-komponenten och använder dess inställningar visas följande alternativ:
+
+* **Gör guiden upprepningsbar**: En växlingsfunktion som gör att användare kan aktivera eller inaktivera repeteringsfunktionen.
+* **Minsta antal upprepningar**: Anger det minsta antal gånger som guidepanelen kan upprepas. Värdet noll anger att guidepanelen inte upprepas. standardvärdet är noll.
+* **Maximalt antal upprepningar**: Anger maximalt antal gånger som guidepanelen kan upprepas. Som standard är det här värdet obegränsat.
+
+Om du vill hantera repeterbara avsnitt i guiden på ett effektivt sätt följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
+
 ### Fliken Hjälp {#help-tab}
 
-![Fliken Hjälp](/help/adaptive-forms/assets/wizard_helptab.png)
+![Fliken Hjälp](/help/adaptive-forms/assets/wizard-helpcontent.png)
 
 * **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
 
@@ -102,7 +116,7 @@ Du kan enkelt anpassa guideupplevelsen för besökare med dialogrutan Konfigurer
 
 ### Fliken Tillgänglighet {#accessibility}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/wizard_accessibiltytab.png)
+![Fliken Hjälpmedel](/help/adaptive-forms/assets/wizard-accessibility.png)
 
 * **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
@@ -122,38 +136,11 @@ Detta gör det enklare och effektivare att skapa och anpassa formulär.
 
 The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt i panelerna i guidekomponenten i den adaptiva Forms-redigeraren.
 
-![Flikar med tillåtna komponenter](/help/adaptive-forms/assets/panel_allowedcomponent.png)
-
-### Fliken Standardkomponenter {#default-component-tab}
-
-På den här fliken kan mallredigeraren mappa komponenter som kan läggas till som objekt till panelerna i guidekomponenten i den adaptiva Forms-redigeraren.
-
-![Panelstandardkomponent](/help/adaptive-forms/assets/panel_defaultcomponent.png)
-
-### Responsiva inställningar {#responsive-settings}
-
-På den här fliken kan mallredigeraren ange hur många kolumner som ska visas i det responsiva rutnätet.
-
-![Responsivt rutnät](/help/adaptive-forms/assets/panel_responsivesettings.png)
-
-### Fliken Inställningar för behållare {#container-setting-tab}
-
-På fliken Behållarinställningar kan du ange komponenternas placering i den adaptiva Forms-redigeraren.
-
-![Behållarinställningar](/help/adaptive-forms/assets/panel_settings.png)
-
-* **Layout**: Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan ändra komponenternas placering efter dina behov.
-* **Inaktivera layout**: Du kan även inaktivera layoutvalet i redigeringsdialogrutan genom att välja **Inaktivera layout** kryssrutan.
-* **Aktivera bakgrundsbild**: På den här fliken kan du ange bakgrundsbild och -färg i mallredigeraren.
-* **Aktivera bakgrundsfärg**: På den här fliken kan du ange bakgrundsfärg i mallredigeraren.
-
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten i den adaptiva Forms-guiden stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten i den adaptiva Forms-guiden stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-![Fliken Format](/help/adaptive-forms/assets/panel_style.png)
+**CSS-standardklasser**: Du kan ange en standard-CSS-klass för Wizard-komponenten.
 
-* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för Wizard-komponenten.
-
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
