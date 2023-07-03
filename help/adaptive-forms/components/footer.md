@@ -3,10 +3,10 @@ title: Adaptiv Forms Core-komponent - sidfot
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Footer.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
+source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
 workflow-type: tm+mt
-source-wordcount: '770'
-ht-degree: 1%
+source-wordcount: '806'
+ht-degree: 0%
 
 ---
 
@@ -85,6 +85,7 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
       1. Använd dialogrutan Öppna markering för att välja en bana i AEM.
       1. Om länken inte finns i AEM anger du den absoluta URL:en.
       1. Icke-absoluta sökvägar tolkas som relativa AEM.
+
    * **Alternativ text** - Ange alternativ beskrivande text för länken.
 
    * **Mål** - Välj länkbeteende
@@ -93,11 +94,10 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
       * Ny flik
       * Överordnad ram
       * Övre bildruta
+
    * **Ikonen Bryt länk** - Det här alternativet tar bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt om länken redan är markerad.
 
    * **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering på den markerade texten. Du kan också formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
-
-
 
 * **ID**: Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
 
@@ -105,3 +105,8 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
+## Relaterad artikel {#related-article}
+
+* [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+
+* [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)

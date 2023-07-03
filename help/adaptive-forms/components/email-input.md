@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - e-postindata
 description: Använda eller anpassa den adaptiva Forms E-postindatakomponenten.
 role: Architect, Developer, Admin, User
 exl-id: f6a2974b-991e-4cea-9ef8-0b03e8975eeb
-source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
+source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,6 @@ Du kan enkelt anpassa e-postinmatningen för besökare med dialogrutan Konfigure
 * **Minsta antal tecken** - Med det här alternativet kan du ange det minsta antalet tecken som tillåts i fältet. Om du anger tecken som är mindre än det värde som anges i **Minsta antal tecken** visas ett felmeddelande på skärmen. The **Felmeddelande för minsta antal tecken** kan du lägga till ett eget felmeddelande.
 
 * **Felmeddelande för minsta antal tecken** - **Felmeddelande för minsta antal tecken** kan du lägga till ett anpassat felmeddelande om du anger tecken som är mindre än värdet som anges i **Minsta antal tecken** alternativ.
-
 <br>
 
     Med alternativet **Valideringsmönster** kan du ange ett mönster som validerar det angivna e-post-ID:t. Om e-post-ID:t inte kan valideras med det värde som anges i alternativet **Pattern** visas felmeddelandet på skärmen.
@@ -132,3 +131,8 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 ![Fliken Design](/help/adaptive-forms/assets/emailinput_designformattab.png)
 
+## Relaterad artikel {#related-article}
+
+* [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+
+* [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)

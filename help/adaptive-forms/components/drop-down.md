@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: d2a6108f17f6e0c6b91bec84893d64a8bd48effd
+source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
 workflow-type: tm+mt
-source-wordcount: '1695'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Du kan enkelt anpassa den nedrullningsbara listan för besökare med dialogrutan
 
 * **Spara värde som** - Det här alternativet anger datatypen för det värde som skickas när något alternativ är markerat. Om **Spara värde som** är inställd på `Number` och du lägger till strängdata i **Datavärde** &#x200B; &#x200B; på **Alternativ** visas en `Value type mismatch` felmeddelande.
 
-   I **Alternativ** kan du lägga till datavärden och visa textpar med **Lägg till** -knappen. När ett nytt alternativ har lagts till utförs följande åtgärder:
+  I **Alternativ** kan du lägga till datavärden och visa textpar med **Lägg till** -knappen. När ett nytt alternativ har lagts till utförs följande åtgärder:
 
    * **Datavärde** - Med det här alternativet kan du ange det innehåll som ska skickas när ett alternativ har valts.
    * **Visa text** - Med det här alternativet kan du ange det innehåll som ska visas i ett adaptivt formulär.
@@ -135,5 +135,10 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 * **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
+## Relaterad artikel {#related-article}
+
+* [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+
+* [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 
