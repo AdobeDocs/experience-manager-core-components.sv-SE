@@ -2,9 +2,10 @@
 sub-product: AEM Core Components
 user-guide-title: Grundläggande komponenter i AEM
 breadcrumb-title: Användarhandbok om grundläggande komponenter
+feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 945ca958481f86d166c4d78d63ecd5011bc15f97
+source-git-commit: b39cd395d17f6aab7376e01fc01a7c0e98b2460f
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 7%

@@ -1,13 +1,16 @@
 ---
 title: Förkompilerade paketerade skript
 description: Lär dig hur du distribuerar komponentskript via OSGi-paket till Adobe Experience Manager Cloud Service.
+feature: Core Components, AEM Project Archetype
+role: Architect, Developer, Admin
 exl-id: 3edc388f-01b2-45cc-bd56-f22e5a5a8624
-source-git-commit: 767f83fbad11a108aab25be2b77759af3c08b864
+source-git-commit: b39cd395d17f6aab7376e01fc01a7c0e98b2460f
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
 
 ---
+
 
 # Förkompilerade paketerade skript
 
