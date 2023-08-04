@@ -5,10 +5,10 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: b39cd395d17f6aab7376e01fc01a7c0e98b2460f
+source-git-commit: 5c07caecae60e3df4a4ce56ddd2d9c174ac7f195
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 7%
+source-wordcount: '379'
+ht-degree: 6%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 7%
    + [Behållare](/help/components/container.md)
    + [Innehållsfragment](/help/components/content-fragment-component.md)
    + [Innehållsfragmentlista](/help/components/content-fragment-list.md)
-   + [Hämta](/help/components/download.md)
+   + [Ladda ned](/help/components/download.md)
    + [Bädda in](/help/components/embed.md)
    + [Experience Fragment](/help/components/experience-fragment.md)
    + [Bild](/help/components/image.md)
@@ -40,7 +40,7 @@ ht-degree: 7%
    + [Navigering](/help/components/navigation.md)
    + [Sida](/help/components/page.md)
    + [PDF Viewer](/help/components/pdf-viewer.md)
-   + [Förloppsindikator](/help/components/progress-bar.md)
+   + [Förloppsfält](/help/components/progress-bar.md)
    + [Snabbsökning](/help/components/quick-search.md)
    + [Avgränsare](/help/components/separator.md)
    + [Delning av sociala medier](/help/components/sharing.md)
@@ -103,19 +103,20 @@ ht-degree: 7%
       + [Segmentering](/help/email/components/segmentation.md)
 + Adaptiv Forms {#adaptive-forms}
    + [Introduktion](/help/adaptive-forms/introduction.md)
-   + [Versionshistorik](/help/adaptive-forms/version.md)
+   + [Exempelteman, mallar och formulärdatamodeller i kärnkomponenter](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
+   + [Tidigare versioner](/help/adaptive-forms/version.md)
    + Adaptiva Forms-komponenter {#adaptive-forms-components}
       + [Adaptivt Forms-dragspel](/help/adaptive-forms/components/accordion.md)
       + [Adaptiv Forms-knapp](/help/adaptive-forms/components/button.md)
       + [Adaptiv Forms-kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
       + [Adaptiv Forms-behållare](/help/adaptive-forms/components/form-container.md)
       + [Anpassad datumväljare för Forms](/help/adaptive-forms/components/date-picker.md)
-      + [Adaptiv Forms-nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+      + [Adaptiv listruta för Forms](/help/adaptive-forms/components/drop-down.md)
       + [Anpassad e-postinmatning från Forms](/help/adaptive-forms/components/email-input.md)
       + [Adaptiva Forms-filbilagor](/help/adaptive-forms/components/file-attachment.md)
       + [Anpassningsbara vågräta Forms-flikar](/help/adaptive-forms/components/horizontal-tabs.md)
       + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
-      + [Adaptiv inmatning av Forms-nummer](/help/adaptive-forms/components/number-input.md)
+      + [Adaptiv inmatning av Forms Number](/help/adaptive-forms/components/number-input.md)
       + [Adaptiv Forms-panel](/help/adaptive-forms/components/panel-container.md)
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
       + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
@@ -123,7 +124,7 @@ ht-degree: 7%
       + [Adaptiv telefoninmatning från Forms](/help/adaptive-forms/components/telephone-input.md)
       + [Adaptiv Forms-text](/help/adaptive-forms/components/text.md)
       + [Adaptiv Forms-textruta](/help/adaptive-forms/components/text-input.md)
-      + [Adaptiv Forms-titel](/help/adaptive-forms/components/title.md)
+      + [Adaptive Forms Title](/help/adaptive-forms/components/title.md)
       + [Adaptiv Forms-guidelayout](/help/adaptive-forms/components/wizard.md)
       + [Sidhuvud](/help/adaptive-forms/components/header.md)
       + [Sidfot](/help/adaptive-forms/components/footer.md)
@@ -142,7 +143,7 @@ ht-degree: 7%
       + [Översikt över datalagret](/help/developing/data-layer/overview.md)
       + [Integrering med datalagret](/help/developing/data-layer/integrations.md)
       + [Utöka datalagret](/help/developing/data-layer/extending.md)
-   + AEM Project Archetype {#archetype}
+   + AEM Project Archettype {#archetype}
       + [Arketype - översikt](/help/developing/archetype/overview.md)
       + [Använda Arketype](/help/developing/archetype/using.md)
       + [Kärnmodul](/help/developing/archetype/core.md)
