@@ -5,10 +5,10 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: ebbe3471164341076fe085bbef9c93fcb1fe382a
+source-git-commit: ec817d5527f93cc4a8468ffcf28886dc8cd6d03c
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 7%
+source-wordcount: '373'
+ht-degree: 6%
 
 ---
 
@@ -127,6 +127,7 @@ ht-degree: 7%
       + [Adaptiv Forms-guidelayout](/help/adaptive-forms/components/wizard.md)
       + [Sidhuvud](/help/adaptive-forms/components/header.md)
       + [Sidfot](/help/adaptive-forms/components/footer.md)
+   + [Exempelteman och mallar](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
 + Utveckling {#developing}
    + [Utveckla kärnkomponenter](/help/developing/overview.md)
    + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
