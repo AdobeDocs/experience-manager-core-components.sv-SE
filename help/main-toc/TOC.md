@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: ec817d5527f93cc4a8468ffcf28886dc8cd6d03c
+source-git-commit: 8db061f3d6f1041336c379b34f3b6b7f03083560
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '381'
 ht-degree: 6%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 6%
       + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
       + [Adaptiv inmatning av Forms Number](/help/adaptive-forms/components/number-input.md)
       + [Adaptiv Forms-panel](/help/adaptive-forms/components/panel-container.md)
+      + [Adaptiv Forms CAPTCHA](/help/adaptive-forms/components/captcha.md)
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
       + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
       + [Adaptiv Forms-sändningsknapp](/help/adaptive-forms/components/submit-button.md)
@@ -127,6 +128,7 @@ ht-degree: 6%
       + [Adaptiv Forms-guidelayout](/help/adaptive-forms/components/wizard.md)
       + [Sidhuvud](/help/adaptive-forms/components/header.md)
       + [Sidfot](/help/adaptive-forms/components/footer.md)
+   + [Anpassa adaptiva Forms Core-komponenter](/help/developing/customize-adaptive-forms-core-components.md)
    + [Exempelteman och mallar](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
 + Utveckling {#developing}
    + [Utveckla kärnkomponenter](/help/developing/overview.md)
