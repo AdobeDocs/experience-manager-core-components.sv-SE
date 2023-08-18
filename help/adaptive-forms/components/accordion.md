@@ -3,9 +3,9 @@ title: Dragspel med adaptiv form
 description: Använd dragspelspanelen för att ordna och förenkla ett långt eller komplext formulär genom att dela upp det i mindre, mer hanterbara avsnitt.
 role: Architect, Developer, Admin, User
 exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: 9a80b453d6a6cf7b347128654d3b5e673a063505
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '2051'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Det finns många skäl till att det är bra att ta med ett dragspel i en adaptiv
 
 * **Navigering**: Ett dragspel kan användas för att skapa en hierarkisk navigeringsstruktur, vilket gör det enklare för användarna att hitta de formulärfält de behöver.
 
-* **Användarupplevelse**: Accordion kan användas för att göra formuläret mer användarvänligt genom att ge användarna ett tydligt och intuitivt sätt att komma åt och fylla i formulärfält.
+* **Användarupplevelse**: Dragspel kan användas för att göra formuläret mer användarvänligt genom att ge användarna ett tydligt och intuitivt sätt att komma åt och fylla i formulärfält.
 
-* **Long Forms**: Accordion är en idealisk komponent för att hantera långa formulär, eftersom det gör det möjligt för användarna att fokusera på ett avsnitt i taget, i stället för att försöka bearbeta mycket information samtidigt.
+* **Long Forms**: Accordion är en idealisk komponent för att hantera långa formulär, eftersom det gör att användarna kan fokusera på ett avsnitt i taget, i stället för att försöka bearbeta mycket information samtidigt.
 
-Du kan använda:
+Du kan använda
 
 * The [konfigurera dialogruta](#configure-dialog) för att ange egenskaper för dragspelskomponenten.
 
@@ -47,7 +47,7 @@ Den adaptiva kärnkomponenten i Forms Accordion lanserades i februari 2023 som e
 | — | --- |
 | v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -63,20 +63,43 @@ Du kan enkelt anpassa dragspelsupplevelsen för besökare med dialogrutan Konfig
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/acc-basic.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/acc-basic.png)
 
 * **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för titeltexten.
+* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 * **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
-* **Radbryt data i objekt** - Välj &quot;Radbryt data i ett objekt&quot; om du vill placera fältdata från guiden i ett JSON-objekt. Om du inte väljer det här alternativet har JSON-objektet för att skicka data en platt struktur för guidens fält.
+* **Gruppera underordnade komponenters data när formulär skickas (kapsla in data i objekt)** - När alternativet är markerat kapslas data från dess underordnade komponenter in i den överordnade komponentens JSON-objekt. Om alternativet inte är markerat har inskickade JSON-data en platt struktur utan objekt för den överordnade komponenten. Till exempel:
+
+   * När alternativet är markerat kapslas data från de underordnade komponenterna (till exempel Street, City och Zip Code) in i den överordnade komponenten (Address) som ett JSON-objekt. Detta skapar en hierarkisk struktur och data ordnas under den överordnade komponenten.
+
+     Struktur på inlämnade uppgifter:
+
+     ```JSON
+     { "Address":
+     
+     { "Street": "123 Main Street", "City": "New York", "Zip Code": "12345" }
+     
+     }
+     ```
+
+   * När alternativet inte är markerat har skickade JSON-data en platt struktur utan objekt för den överordnade komponenten (adress). Alla data finns på samma nivå, utan någon hierarkisk organisation.
+
+
+     Struktur på inlämnade uppgifter:
+
+     ```JSON
+        { "Street": "123 Main Street", "City": "New York", "Zip Code": "12345" }
+     ```
 
 * **Layout** - Du kan ha en fast layout (enkel) eller en flexibel layout (responsivt stödraster) för guiden. Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan justera komponenternas placering efter dina behov. Använd till exempel responsivt stödraster för att justera&quot;Förnamn&quot;,&quot;Mittennamn&quot; och&quot;Efternamn&quot; i ett formulär på en enda rad.
 
-* **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+* **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+
 * **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
+
 * **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
 ### Upprepa dragspel {#repeat-accordion}
@@ -85,11 +108,11 @@ Du kan enkelt anpassa dragspelsupplevelsen för besökare med dialogrutan Konfig
 
 Du kan använda alternativen för upprepning för att duplicera dragspelspaneler och dess underordnade komponenter, definiera ett minsta och högsta antal upprepningar och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med dragspelskomponenten och använder dess inställningar visas följande alternativ:
 
-* **Gör dragspelspanelen upprepningsbar**: En växlingsfunktion som gör att användare kan aktivera eller inaktivera repeteringsfunktionen.
-* **Minsta antal upprepningar**: Fastställer det minsta antal gånger dragspelspanelen kan upprepas. Värdet noll anger att dragspelspanelen inte upprepas. standardvärdet är noll.
+* **Gör dragspelspanelen upprepningsbar**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
+* **Minsta antal upprepningar**: Anger det minsta antal gånger dragspelspanelen kan upprepas. Värdet noll anger att dragspelspanelen inte upprepas. Standardvärdet är noll.
 * **Maximalt antal upprepningar**: Anger maximalt antal gånger dragspelspanelen kan upprepas. Som standard är det här värdet obegränsat.
 
-Följ stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
+Om du vill hantera upprepningsbara avsnitt i dragspelet på ett effektivt sätt följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
 
 ### Fliken Objekt {#items-tab}
 
@@ -172,7 +195,7 @@ På fliken Egenskaper kan mallskapare ange standardrubrikelement och tillåtna r
 
 * **Tillåtna rubrikelement**: En nedrullningsbar lista med flera alternativ som gör att mallskaparen kan välja vilka rubrikelement som kan användas av formulärförfattaren för dragspelspanelen.
 
-* **Standardrubrikelement**: En nedrullningsbar lista anger standardrubrikelementet för dragspelskomponenten.
+* **Standardrubrikelement**: En nedrullningsbar lista anger standardelementet Rubrik för dragspelskomponenten.
 
 ### Fliken Tillåtna komponenter {#allowed-components-tab}
 
@@ -180,11 +203,11 @@ The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan
 
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
 **CSS-standardklasser**: Du kan ange en standard-CSS-klass för dragspelskomponenten.
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 
 <!--- 
