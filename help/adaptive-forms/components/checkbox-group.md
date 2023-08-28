@@ -3,16 +3,16 @@ title: Adaptiv Forms Core-komponent - kryssrutegrupp
 description: Använda eller anpassa den adaptiva Forms Checkbox Group Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 2ced0223-e664-470b-a400-b6865d3a67c9
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1699'
 ht-degree: 0%
 
 ---
 
 # Kryssrutegrupp {#button-component-adaptive-forms-core-component}
 
-En kryssrutegrupp i ett adaptivt formulär är en uppsättning relaterade kryssrutor där användarna kan välja ett eller flera alternativ i en lista. Varje kryssruta representeras av ett datavärde (värde som används för att bearbeta objekt i en kryssrutegrupp) och ett visningsvärde (etikett för varje kryssruteobjekt som beskriver dess syfte)
+En kryssrutegrupp i ett adaptivt formulär är en uppsättning relaterade kryssrutor som gör att användare kan välja ett eller flera alternativ i en lista. Varje kryssruta representeras av ett datavärde (värde som används för att bearbeta objekt i en kryssrutegrupp) och ett visningsvärde (etikett för varje kryssruteobjekt som beskriver dess syfte)
 
 **Exempel**
 
@@ -32,11 +32,11 @@ Dessutom kan kryssrutegruppen konfigureras att ha olika bearbetningsvärden för
 
 Det finns många skäl till att det är bra att inkludera en kryssrutegrupp i ett anpassat formulär, bland annat:
 
-* **Flera markeringar**: Med en kryssrutegrupp kan användare välja flera alternativ i en lista, vilket kan vara användbart i situationer där flera val tillåts eller krävs.
+* **Flera markeringar**: En kryssrutegrupp gör att användare kan välja flera alternativ i en lista, vilket kan vara användbart i situationer där flera val tillåts eller krävs.
 
 * **Användarupplevelse**: Kryssrutegruppen kan användas för att göra formuläret mer användarvänligt genom att tillhandahålla ett tydligt och intuitivt sätt för användarna att välja flera alternativ.
 
-* **Dataanalys**: Kryssrutegruppen kan användas för att samla in data från olika källor och analysera dem, eller använda den som indata för vidare bearbetning.
+* **Dataanalys**: Kryssrutegruppen kan användas för att samla in data från olika källor och analysera den, eller använda den som indata för vidare bearbetning.
 
 * **Undersökningar**: Kryssrutegrupp kan användas i undersökningar för att välja flera alternativ för en fråga.
 
@@ -52,7 +52,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -69,11 +69,11 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/checkbox_basictab.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/checkbox_basictab.png)
 
 * **Namn** - Namnet identifierar komponenten i regelredigeraren unikt. Specialtecken och mellanslag är inte tillåtna i namnsträngarna.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för titeltexten.
+* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 * **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -88,7 +88,7 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 
 * **Datatyp för skickat värde** - Det här alternativet anger datatypen för det värde som skickas när något alternativ är markerat. Om **datatyp för skickat värde** är inställd på `Number` och du lägger till strängdata i **Datavärde** &#x200B; &#x200B; på **Alternativ** visas en `Value type mismatch` felmeddelande.
 
-* **Visningsalternativ** - Det här alternativet används för att ange den visuella justeringen av kryssrutor i ett adaptivt formulär. De två alternativ som stöds är:
+* **Visningsalternativ** - Det här alternativet används för att ange den visuella justeringen av kryssrutor i ett adaptivt formulär. Följande två alternativ stöds:
    * **Vågrät** - När det här alternativet är markerat visas kryssrutorna från vänster till höger i ett adaptivt formulär.
    * **Lodrätt** - När det här alternativet är markerat visas kryssrutorna uppifrån och ned i ett adaptivt formulär.
 
@@ -135,7 +135,7 @@ Core-komponenten för gruppen Adaptive Forms Checkbox stöder AEM [Formatsystem]
 
 * **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ## Relaterad artikel {#related-article}
 
@@ -143,3 +143,26 @@ Core-komponenten för gruppen Adaptive Forms Checkbox stöder AEM [Formatsystem]
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

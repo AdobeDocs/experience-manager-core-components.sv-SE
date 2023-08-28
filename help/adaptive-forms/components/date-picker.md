@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - datumväljare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms Date-väljaren.
 role: Architect, Developer, Admin, User
 exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1738'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ Det finns många skäl till att det är bra att ta med en datumväljare i en anp
 
 * **Användarupplevelse**: Datumväljarkomponenten kan användas för att göra formuläret mer användarvänligt genom att tillhandahålla ett tydligt och intuitivt sätt för användarna att välja datum.
 
-* **Dataanalys**: Datumväljarkomponenten kan användas för att samla in data från olika källor och analysera den, eller använda den som indata för vidare bearbetning.
+* **Dataanalys**: Datumväljarkomponenten kan användas för att samla in data från olika källor och analysera den, eller för att använda den som indata för vidare bearbetning.
 
-* **Händelsehantering**: Datumväljarkomponenten kan användas på händelsehanteringswebbplatser för att välja händelsemedatum.
+* **Händelsehantering**: Datumväljarkomponenten kan användas på webbplatser för händelsehantering för att välja händelsedatumet.
 
 * **Bokning och bokning**: Datumväljarkomponenten kan användas på boknings- och reservationswebbplatser för att välja datum för in- och utcheckning.
 
@@ -42,7 +42,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -59,11 +59,11 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/datepicker_basictab.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/datepicker_basictab.png)
 
 * **Namn** - Namnet identifierar komponenten i regelredigeraren unikt. Specialtecken och mellanslag är inte tillåtna i namnsträngarna.
 
-* **Titel** - Titel är en sträng som visas högst upp i en komponent i ett adaptivt format. En unik titel identifierar komponenten i trädstrukturen i ett adaptivt formulär. Om du inte lägger till en titel visas komponentens namn i stället för titeltexten.
+* **Titel** - Titel är en sträng som visas högst upp i en komponent i ett adaptivt format. En unik titel identifierar komponenten i trädstrukturen i ett adaptivt formulär. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 * **Dölj titel** - Välj det här alternativet om du vill dölja rubriken för komponenttypen i ett adaptivt formulär.
 
@@ -115,13 +115,13 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_formattab.png)
 
-* **Visningsformat** - Det representerar det datumformat som visas för användaren. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** nedrullningsbar meny.
+* **Visningsformat** - Det representerar det datumformat som visas för användaren. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
-* **Redigera format** - Det representerar ett datumformat där användaren kan redigera datumet. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** nedrullningsbar meny.
+* **Redigera format** - Det representerar ett datumformat där användaren kan redigera datumet. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
-* **Visningsformat** - Det representerar det datumformat som visas för användaren. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** nedrullningsbar meny.
+* **Visningsformat** - Det representerar det datumformat som visas för användaren. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
-* **Redigera format** - Det representerar ett datumformat där användaren redigerar datumet. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** nedrullningsbar meny.
+* **Redigera format** - Det representerar ett datumformat där användaren redigerar datumet. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
 ## Designdialogruta {#design-dialog}
 
@@ -135,7 +135,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 * **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#formats-tab}
 
@@ -148,3 +148,28 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 * [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

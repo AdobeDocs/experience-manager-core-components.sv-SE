@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Det finns många skäl till att det är bra att ta med en nedrullningsbar lista 
 
 * **Lång lista med alternativ**: Listrutor är användbara i situationer där det finns en lång lista med alternativ för ett fält. De tar mindre plats i formuläret än en lista med alternativknappar eller kryssrutor och kan vara mindre överväldigande för användarna.
 
-* **Konsekvens**: Listrutorna ger en konsekvent design och layout av formuläret, vilket gör det mer intuitivt och enkelt för användarna att navigera.
+* **Konsekvens**: Listrutor ger en konsekvent design och layout av formuläret, vilket gör det mer intuitivt och enkelt för användarna att navigera.
 
 * **Klarhet**: Listrutor kan göra formuläret tydligare och lättare att förstå genom att tillhandahålla en tydlig och kortfattad lista med alternativ.
 
-* **Användarupplevelse**: Listrutor kan användas för att göra formuläret mer användarvänligt genom ett tydligt och intuitivt sätt för användarna att välja alternativ.
+* **Användarupplevelse**: Listrutor kan användas för att göra formuläret mer användarvänligt genom att ge användaren ett tydligt och intuitivt sätt att välja alternativ.
 
 * **Dataanalys**: Listrutor kan användas för att samla in data från olika källor och analysera dem, eller för att använda dem som indata för vidare bearbetning.
 
@@ -50,7 +50,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -64,11 +64,11 @@ Hämta den senaste informationen om den adaptiva Forms Core Component (nedrullni
 
 Du kan enkelt anpassa den nedrullningsbara listan för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera alternativ för nedrullningsbara listor för en smidig användarupplevelse.
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/dropdown_basictab.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/dropdown_basictab.png)
 
 * **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för titeltexten.
+* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 * **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -129,11 +129,11 @@ Designdialogrutan används för att definiera och hantera CSS-format för den ne
 
 Fliken används för att definiera och hantera CSS-format för en komponent. Core Component (Core-komponent) i listrutan Adaptiv Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-![Nedrullningsbar dialogruta](/help/adaptive-forms/assets/dropdown_designdialog.png)
+![Listruta](/help/adaptive-forms/assets/dropdown_designdialog.png)
 
-* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms-listrutan Core Component (Core-komponent).
+* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den nedrullningsbara listan Core Component (Core-komponent) för Adaptiv Forms.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ## Relaterad artikel {#related-article}
 
@@ -142,3 +142,26 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

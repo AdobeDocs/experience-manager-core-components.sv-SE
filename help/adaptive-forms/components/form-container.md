@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 8df7f862-4d59-4c3f-88dd-f0c937081f4f
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '791'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ Det finns flera orsaker till varför ett formulär kan läggas till på en webbp
 
 * **Kontakt**: Med ett kontaktformulär kan besökarna enkelt nå ut till webbplatsens ägare eller organisation.
 
-* **Undersökningar och undersökningar**: Forms kan användas för att samla in feedback och åsikter från besökare via enkäter och enkäter.
+* **Undersökningar och undersökningar**: Forms kan användas för att samla in feedback och åsikter från besökare via enkäter och undersökningar.
 
-* **Händelseregistrering**: Forms kan användas för anmälan av event, vilket gör att besökare kan anmäla sig till event eller webbinarier.
+* **Händelseregistrering**: Forms kan användas för anmälan av evenemang, så att besökare kan anmäla sig till event eller webbinarier.
 
 * **Prenumerationer**: Forms kan användas för webbplatsprenumerationer så att besökare kan registrera sig för ett nyhetsbrev eller annan vanlig kommunikation.
 
@@ -45,7 +45,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 <!-- ## Sample Component Output {#sample-component-output}
 
 To experience the Accordion Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_accordion). -->
@@ -60,7 +60,7 @@ Du kan enkelt anpassa formulärbehållarupplevelsen för besökare med dialogrut
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/formcontainer_basictab.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/formcontainer_basictab.png)
 
 * **Förifyllning** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [skapa och konfigurera en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=en#aem-forms-custom-prefill-service).
 
@@ -85,3 +85,28 @@ Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 * [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

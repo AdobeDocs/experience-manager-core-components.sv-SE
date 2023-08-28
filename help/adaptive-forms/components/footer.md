@@ -3,16 +3,16 @@ title: Adaptiv Forms Core-komponent - sidfot
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Footer.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
 
 # Sidfot {#footer-adaptive-forms-core-component}
 
-En sidfotskomponent i ett adaptivt formulär är ett område som vanligtvis visas längst ned i formuläret och som innehåller information som ett copyrightmeddelande, länkar till relaterade resurser eller kontaktinformation. En sidfot kan innehålla ytterligare information, till exempel datumet för den senaste uppdateringen, vilket kan vara bra för användare med hjälpmedelsbehov.
+En sidfotskomponent i ett adaptivt formulär är ett område som vanligtvis visas längst ned i formuläret och som innehåller information som ett copyrightmeddelande, länkar till relaterade resurser eller kontaktinformation. En sidfot kan innehålla ytterligare information, t.ex. datumet för den senaste uppdateringen, vilket kan vara bra för användare med hjälpmedelsbehov.
 
 **Exempel**
 
@@ -40,7 +40,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -73,7 +73,7 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
 
    * **Ikon för numrerad lista** - Den markerade texten formateras som en numrerad lista eller börjar infogningen av en numrerad lista efter markören. Om du vill avsluta en numrerad lista trycker eller klickar du på knappen Numrerad igen eller anger två radmatningstecken.
 
-   * **Ikon för indrag** - Den minskar indragsnivån för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
+   * **Ikon för Minska indrag** - Den minskar indragsnivån för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
 
    * **Ikon för indrag** - Ökar indraget för den markerade texten eller texten som anges efter markören.
 
@@ -97,7 +97,7 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
 
    * **Ikonen Bryt länk** - Det här alternativet tar bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt om länken redan är markerad.
 
-   * **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering på den markerade texten. Du kan också formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
+   * **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering på den markerade texten. Det är också praktiskt att formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
 
 * **ID**: Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
 
@@ -110,3 +110,28 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
 * [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

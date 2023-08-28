@@ -3,14 +3,14 @@ title: Adaptiv Forms Core-komponent - e-postindata
 description: Använda eller anpassa den adaptiva Forms E-postindatakomponenten.
 role: Architect, Developer, Admin, User
 exl-id: f6a2974b-991e-4cea-9ef8-0b03e8975eeb
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '1719'
+source-wordcount: '1756'
 ht-degree: 0%
 
 ---
 
-# E-postindata {#Email-input-adaptive-forms-core-component}
+# E-postinmatning {#Email-input-adaptive-forms-core-component}
 
 Kärnkomponenten för indata för e-post med adaptiv form används för att samla in e-postadresser från användare. I e-postinmatningsfältet kan webbläsaren validera att de angivna data är ett giltigt e-postadressformat. Den representeras vanligtvis som en textruta och har mönstervalideringar som godkänner endast giltiga e-postadresser. E-postinmatningsfältet kan anpassas ytterligare med attribut som&quot;required&quot;,&quot;placeholder&quot; och&quot;pattern&quot; för att ange valideringar för inmatningsdata.
 
@@ -22,13 +22,13 @@ Det finns många skäl till att det är bra att ta med en e-postindatakomponent 
 
 * **Användarbekvämlighet**: En e-postinmatning gör det enklare för användare att ange sina e-postadresser eftersom det ger en tydlig indikation på de data som förväntas i fältet.
 
-* **Personlig kommunikation**: Genom att samla in e-postadresser från användare via ett formulär kan du kommunicera på ett personligt sätt, till exempel skicka bekräftelsemeddelanden via e-post eller nyhetsbrev.
+* **Personlig kommunikation**: När du samlar in e-postadresser från användare via ett formulär kan du få personlig kommunikation, till exempel genom att skicka bekräftelsemeddelanden eller nyhetsbrev.
 
 * **Generering av leads**: Genom att samla in e-postadresser via ett formulär kan företag skapa sin e-postlista och använda den för att generera leads.
 
 * **Användarautentisering**: E-postadresser kan användas som ett sätt att autentisera åtkomst till begränsat innehåll eller begränsade tjänster.
 
-* **Feedback Collection**: Med e-postindata i ett feedbackformulär kan företaget kommunicera med användaren för uppföljning eller förtydligande av deras feedback.
+* **Feedback Collection**: E-postindata i ett feedbackformulär gör det möjligt för företaget att kommunicera med användaren för uppföljning eller förtydligande av deras feedback.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -38,7 +38,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -54,11 +54,11 @@ Du kan enkelt anpassa e-postinmatningen för besökare med dialogrutan Konfigure
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/email_basictab.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/email_basictab.png)
 
 * **Namn** - Namnet identifierar komponenten i regelredigeraren unikt. Specialtecken och mellanslag är inte tillåtna i namnsträngarna.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för titeltexten.
+* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 * **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -69,7 +69,7 @@ Du kan enkelt anpassa e-postinmatningen för besökare med dialogrutan Konfigure
 * **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 * **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
-* **Standardvärde** - Med det här alternativet kan du lägga till ett standardvärde i ett formulärfält. If **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standardvärdet på skärmen. Om användaren inte anger något värde i formulärfältet skickas det här värdet när formuläret skickas
+* **Standardvärde** - Med det här alternativet kan du lägga till ett standardvärde i ett formulärfält. If **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standardvärdet på skärmen. Om användaren inte anger något värde i formulärfältet skickas värdet när formuläret skickas
 
 
 ### Fliken Validering {#validation-tab}
@@ -117,13 +117,13 @@ Designdialogrutan används för att definiera och hantera CSS-format för e-post
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten för anpassade e-postindata från Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten i den adaptiva e-postinmatningen från Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
 ![Fliken Format](/help/adaptive-forms/assets/email_designdialog.png)
 
 * **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva kärnkomponenten för e-postindata från Forms.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#format-tab}
 
@@ -136,3 +136,27 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 * [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

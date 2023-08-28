@@ -2,9 +2,9 @@
 title: Adaptiv Forms Core-komponent - panelbehållare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms-panelbehållaren.
 role: Architect, Developer, Admin, User
-source-git-commit: 9a80b453d6a6cf7b347128654d3b5e673a063505
+source-git-commit: b6e3a443c7425a60fc6c3469dc273960a4e29088
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1539'
 ht-degree: 0%
 
 ---
@@ -133,3 +133,28 @@ Om du vill hantera upprepningsbara avsnitt i panelbehållaren på ett effektivt 
 - [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
 
 - [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+
+## Se även {#see-also}
+
+- [Dragspel](/help/adaptive-forms/components/accordion.md)
+- [Knapp](/help/adaptive-forms/components/button.md)
+- [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+- [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+- [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+- [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+- [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+- [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+- [Sidfot](/help/adaptive-forms/components/footer.md)
+- [Sidhuvud](/help/adaptive-forms/components/header.md)
+- [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+- [Bild](/help/adaptive-forms/components/image.md)
+- [Nummerindata](/help/adaptive-forms/components/number-input.md)
+- [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+- [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+- [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+- [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+- [Textindata](/help/adaptive-forms/components/text-input.md)
+- [Text](/help/adaptive-forms/components/text.md)
+- [Titel](/help/adaptive-forms/components/title.md)
+- [guide](/help/adaptive-forms/components/wizard.md)

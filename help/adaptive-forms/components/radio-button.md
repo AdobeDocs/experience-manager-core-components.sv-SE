@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '1703'
+source-wordcount: '1739'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ Det finns flera skäl att använda alternativknappar i ett formulär, bland anna
 
 * **Rensa representation**: Alternativknappar är tydliga och lättbegripliga, vilket gör det enkelt för användarna att veta vad de väljer.
 
-* **Konsekvens**: Alternativknappar ger ett konsekvent och standardiserat sätt att presentera alternativ för användarna, vilket gör det enklare för dem att förstå och interagera med formuläret.
+* **Konsekvens**: Användning av alternativknappar ger ett konsekvent och standardiserat sätt att presentera alternativ för användarna, vilket gör det enklare för dem att förstå och interagera med formuläret.
 
-* **Enklare att använda**: Alternativknappar är enkla att använda, särskilt för användare som inte känner till teknik eller som har begränsad mobilitet.
+* **Lättanvänd**: Alternativknappar är enkla att använda, särskilt för användare som inte känner till teknik eller som har begränsad mobilitet.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -48,7 +48,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -60,13 +60,13 @@ Den senaste informationen om den adaptiva Forms Radio button Core Component finn
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Du kan enkelt anpassa din alternativknappsupplevelse för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera alternativknappsalternativ för en smidig användarupplevelse.
+Du kan enkelt anpassa din alternativknappsupplevelse för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera alternativknappar för en smidig användarupplevelse.
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/radiobutton_basictab.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/radiobutton_basictab.png)
 
 * **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för titeltexten.
+* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 * **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -83,7 +83,7 @@ Du kan enkelt anpassa din alternativknappsupplevelse för besökare med dialogru
 
 * **Standardalternativ** - Med det här alternativet kan du lägga till förvalda standardvärden när formuläret läses in. Om **datatyp för skickat värde** är inställd på `Number` och du lägger till strängdata i **Standardalternativ** visas en `Value type mismatch` felmeddelande.
 
-* **Visningsalternativ** - Det här alternativet används för att ange den visuella justeringen för alternativknappar i ett adaptivt format. De två alternativ som stöds är:
+* **Visningsalternativ** - Det här alternativet används för att ange den visuella justeringen för alternativknappar i ett adaptivt format. Följande två alternativ stöds:
    * **Vågrät** - När det här alternativet är markerat visas alternativknappar från vänster till höger i ett adaptivt formulär.
    * **Lodrätt** - När det här alternativet är markerat visas alternativknappar uppifrån och ned i ett adaptivt formulär.
 * **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
@@ -125,14 +125,39 @@ Designdialogrutan används för att definiera och hantera CSS-format för kompon
 
 Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för den adaptiva Forms-alternativknappen har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-![Formatmallsdialogruta](/help/adaptive-forms/assets/radiobutton_designdialog.png)
+![Dialogrutan Formatdesign](/help/adaptive-forms/assets/radiobutton_designdialog.png)
 
-* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms-alternativknappens kärnkomponent.
+* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Radio button Core Component.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ## Relaterad artikel {#related-article}
 
 * [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

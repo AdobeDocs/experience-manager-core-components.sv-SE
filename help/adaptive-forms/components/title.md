@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - titel
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Title.
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Det finns flera skäl till att det är bra att använda en titel i ett formulär
 
 * **Navigering**: En titel kan också vara användbar för att navigera i formuläret, särskilt om formuläret är långt eller komplext.
 
-* **Sökmotoroptimering (SEO)**: Att ha en titel på formuläret är också till hjälp i SEO, eftersom sökmotorer använder titeln för att avgöra hur relevant en webbsida är för en sökfråga.
+* **Sökmotoroptimering (SEO)**: Att ha en rubrik i formuläret är också till hjälp i SEO, eftersom sökmotorer använder titeln för att avgöra hur relevant en webbsida är för en sökfråga.
 
 På det hela taget är titeln på ett formulär en viktig aspekt av användarupplevelsen och bör användas för att skapa en tydlig och koncis etikett för formuläret som hjälper användarna att förstå formulärets sammanhang och syfte.
 
@@ -44,7 +44,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -57,15 +57,15 @@ Den senaste informationen om den adaptiva huvudkomponenten i Forms Title finns i
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Du kan enkelt anpassa din titelupplevelse för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera rubrikalternativ för en smidig användarupplevelse.
+Du kan enkelt anpassa din titelupplevelse för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera titelalternativ för en smidig användarupplevelse.
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/title_properties.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/title_properties.png)
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och välja rubriknivå.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för titeltexten.
+* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 * **Typ /Storlek** - Definierar rubriknivån för titeln.
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
+* **ID** - Med det här alternativet kan du styra komponentens unika identifierare i HTML och i datalagret.
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
@@ -80,7 +80,7 @@ På fliken Titel kan mallskapare ange standardrubrikelement och tillåtna rubrik
 
 ![Titelflik i designdialogrutan](/help/adaptive-forms/assets/title_heading.png)
 
-* **Tillåtna rubrikelement**: En lista med flera alternativ som gör att mallskaparen kan välja vilka rubrikelement som kan användas som rubrik av formulärförfattaren.
+* **Tillåtna rubrikelement**: En lista med flera alternativ där mallskaparen kan välja vilka rubrikelement som kan användas som rubrik av formulärförfattaren.
 
 * **Standardrubrikelement**: En nedrullningsbar lista som anger standardrubrikelementet för komponenten Title.
 
@@ -92,7 +92,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 * **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#format-tab}
 
@@ -106,3 +106,26 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
+## Se även {#see-also}
+
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [guide](/help/adaptive-forms/components/wizard.md)

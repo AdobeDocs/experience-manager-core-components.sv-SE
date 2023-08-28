@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1902'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,13 @@ Det finns flera skäl till att det kan vara bra att använda en guidelayout i an
 
 * **Enkelt**: Att dela upp ett formulär i flera steg kan göra det lättare för användarna att förstå och slutföra, eftersom de kan fokusera på en uppsättning fält i taget.
 
-* **Organisation**: Med en guidelayout kan du ordna formulär efter ämne eller syfte, och du kan också gruppera relaterade fält tillsammans, vilket kan göra ifyllningsprocessen mer logisk och effektiv.
+* **Organisation**: En guidelayout kan hjälpa dig att ordna formulär efter ämne eller syfte, och den kan också gruppera relaterade fält tillsammans, vilket kan göra ifyllningsprocessen mer logisk och effektiv.
 
-* **Validering**: Med en guidelayout kan du stegvis validera, vilket kan hjälpa användare att identifiera och korrigera fel medan de är, i stället för att vänta tills formuläret är slut.
+* **Validering**: En guidelayout möjliggör stegvis validering, som kan hjälpa användare att identifiera och korrigera fel medan de arbetar, i stället för att vänta tills formuläret är slut.
 
-* **Förloppsindikator**: En guidelayout kan visa formulärets förlopp, vilket kan hjälpa användaren att förstå hur mycket av formuläret som återstår att fylla i.
+* **Förloppsindikator**: En guidelayout kan visa formulärets förlopp, vilket kan hjälpa användaren förstå hur mycket av formuläret som återstår att fylla i.
 
-* **Långa formulär**: Om formuläret har många fält kan det vara överväldigande för användaren att se alla samtidigt, så om de delas upp i mindre, mer hanterbara segment kan det bli mindre skrämmande.
+* **Långa formulär**: Om formuläret innehåller många fält kan det vara överväldigande för användaren att se alla samtidigt, så att det blir mindre skrämmande om de delas upp i mindre, mer hanterbara segment.
 
 * **Undvika övergivna**: En guidelayout kan också bidra till att minska antalet avhopp från formulär, eftersom användarna lättare kan fylla i ett formulär om de kan se förloppet och förstå hur mycket som återstår att göra.
 
@@ -49,7 +49,7 @@ Generellt sett kan en guidelayout göra det enklare och effektivare att fylla i 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Kärnkomponenten i den adaptiva Forms-guidelayouten släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Kärnkomponenten i den adaptiva Forms-guiden Layout släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
@@ -57,7 +57,7 @@ Kärnkomponenten i den adaptiva Forms-guidelayouten släpptes i februari 2023 so
 | — | --- |
 | v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -73,7 +73,7 @@ Du kan enkelt anpassa guideupplevelsen för besökare med dialogrutan Konfigurer
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/wizard-basic.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/wizard-basic.png)
 
 * **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -97,8 +97,8 @@ Du kan enkelt anpassa guideupplevelsen för besökare med dialogrutan Konfigurer
 
 Du kan använda alternativen för upprepning för att duplicera guiden och dess underordnade komponenter, definiera ett minsta och högsta antal upprepningar och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med Wizard-komponenten och använder dess inställningar visas följande alternativ:
 
-* **Gör guiden upprepningsbar**: En växlingsfunktion som gör att användare kan aktivera eller inaktivera repeteringsfunktionen.
-* **Minsta antal upprepningar**: Anger det minsta antal gånger som guidepanelen kan upprepas. Värdet noll anger att guidepanelen inte upprepas. standardvärdet är noll.
+* **Gör guiden repeterbar**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
+* **Minsta antal upprepningar**: Anger det minsta antal gånger som guidepanelen kan upprepas. Värdet noll anger att guidepanelen inte upprepas. Standardvärdet är noll.
 * **Maximalt antal upprepningar**: Anger maximalt antal gånger som guidepanelen kan upprepas. Som standard är det här värdet obegränsat.
 
 Om du vill hantera repeterbara avsnitt i guiden på ett effektivt sätt följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
@@ -127,7 +127,7 @@ Om du vill hantera repeterbara avsnitt i guiden på ett effektivt sätt följer 
 
 I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva Forms-guidekomponenten kan du ange följande:
 
-* Huvudkomponenterna som en formulärskapare kan lägga till i guiden i den adaptiva Forms-redigeraren
+* Huvudkomponenterna som en formulärskapare kan lägga till i guiden i Adaptive Forms Editor
 * Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Wizard i den adaptiva Forms-redigeraren.
 
 Detta gör det enklare och effektivare att skapa och anpassa formulär.
@@ -142,7 +142,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för en kom
 
 **CSS-standardklasser**: Du kan ange en standard-CSS-klass för Wizard-komponenten.
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: fet&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i den adaptiva Forms-redigeraren. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** nedrullningsbar lista. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ## Relaterad artikel {#related-article}
 
@@ -150,4 +150,26 @@ Designdialogrutan används för att definiera och hantera CSS-format för en kom
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
+## Se även {#see-also}
 
+* [Dragspel](/help/adaptive-forms/components/accordion.md)
+* [Knapp](/help/adaptive-forms/components/button.md)
+* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+* [Sidfot](/help/adaptive-forms/components/footer.md)
+* [Sidhuvud](/help/adaptive-forms/components/header.md)
+* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Bild](/help/adaptive-forms/components/image.md)
+* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Text](/help/adaptive-forms/components/text.md)
+* [Titel](/help/adaptive-forms/components/title.md)
