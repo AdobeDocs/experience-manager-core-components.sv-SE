@@ -2,7 +2,7 @@
 title: Nästa generations Dynamic Media-support
 description: Lär dig konfigurera Core Component Image och Teaser Components som stöd för nästa generations Dynamic Media-resurser.
 role: Architect, Developer, Admin, User
-source-git-commit: 57307b75bd33fd538a1eb704cc37822847c896de
+source-git-commit: 9b8930c2e268f52a1377906725db9a05a089e233
 workflow-type: tm+mt
 source-wordcount: '470'
 ht-degree: 0%
@@ -70,7 +70,7 @@ När du har installerat Core Components och WKND kan du testa funktionen på all
 
 1. När den har autentiserats öppnas en resurshanterare för fjärrtjänsten. Välj önskad resurs och tryck eller klicka på **Välj**.
 
-   ![Välja en fjärrresurs](/help/assets/remote-asset-selection.png)
+   ![Välja en fjärrresurs](/help/assets/remote-asset-picker.png)
 
 Fjärrresursen läggs till på den lokala AEM sidan och du har verifierat att funktionen är korrekt konfigurerad.
 
