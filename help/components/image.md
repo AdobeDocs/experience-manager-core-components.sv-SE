@@ -1,22 +1,25 @@
 ---
 title: Bildkomponent
-description: Core Component Image Component Component är en adaptiv image-komponent.
+description: Komponenten Core Component Image är en adaptiv bildkomponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 1cb06273ecb2c5b5f90c02b74b7ac0e440d87ecc
+source-git-commit: c879cf92cae028230f092c7376a1e9271f568388
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '2084'
 ht-degree: 0%
 
 ---
 
-# Bildkomponent{#image-component}
 
-Core Component Image Component Component är en adaptiv image-komponent.
+# Bildkomponent {#image-component}
+
+Komponenten Core Component Image är en adaptiv bildkomponent.
 
 ## Användning {#usage}
 
 Bildkomponenten har anpassningsbart bildval och responsivt beteende med lat inläsningsbeteende för sidbesökaren samt enkel bildplacering för innehållsförfattaren.
+
+Innehållsförfattaren kan använda [redigeringsdialogruta](#edit-dialog) om du vill redigera bildresursen, till exempel tillämpa en beskärning eller rotera bilden.
 
 Bildbredderna och ytterligare inställningar kan definieras av mallskaparen i [designdialogruta](#design-dialog). Innehållsredigeraren kan överföra eller välja resurser i [dialogrutan konfigurera.](#configure-dialog)
 
@@ -36,7 +39,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 ## Responsiva funktioner {#responsive-features}
 
-Image Component har robusta responsiva funktioner som är klara direkt vid leverans. På sidmallsnivå visas [designdialogruta](#design-dialog) kan användas för att definiera bildresursens standardbredder. Bildkomponenten läser sedan automatiskt in rätt bredd för visning beroende på storleken på webbläsarfönstret. När fönstrets storlek ändras läser Image Component in rätt bildstorlek dynamiskt i farten. Komponentutvecklare behöver inte bekymra sig om att definiera anpassade mediefrågor eftersom Image Component redan är optimerat för att läsa in ditt innehåll.
+Image Component har robusta responsiva funktioner som är klara direkt vid leverans. På sidmallsnivå visas [designdialogruta](#design-dialog) kan användas för att definiera bildresursens standardbredder. Bildkomponenten läser sedan automatiskt in rätt bredd för visning beroende på storleken på webbläsarfönstret. När fönstrets storlek ändras läses bildkomponenten in dynamiskt med rätt bildstorlek. Komponentutvecklare behöver inte bekymra sig om att definiera anpassade mediefrågor eftersom Image Component redan är optimerat för att läsa in ditt innehåll.
 
 Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsningen av den faktiska bildresursen tills den syns i webbläsaren, vilket gör sidorna mer responsiva.
 
@@ -46,9 +49,15 @@ Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsn
 
 ## Dynamic Media Support {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia) resurser. [När det är aktiverat](#design-dialog) Med de här funktionerna kan du lägga till Dynamic Media bildresurser med en enkel dra och släpp-funktion eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från [version 2.13.0](/help/versions.md)) har stöd [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia) resurser. [När det är aktiverat](#design-dialog) Med de här funktionerna kan du lägga till Dynamic Media-bildresurser med en enkel dra och släpp-funktion eller via filläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina webbupplevelser som byggts med Core Components kan innehålla omfattande, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
+
+## Nästa generations Dynamic Media-support {#next-gen-dm}
+
+Bildkomponenten (från [version 2.23.2](/help/versions.md)) har stöd för nästa generations Dynamic Media fjärrresurser.
+
+[När konfigurationen är klar](/help/developing/next-gen-dm.md) du kan välja resurser från en fjärr-Dynamic Media-tjänst för nästa generation för din bildkomponent.
 
 ## Stöd för SVG {#svg-support}
 
@@ -72,7 +81,77 @@ Den senaste tekniska dokumentationen om Image Component [finns på GitHub](https
 
 Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
-Bildkomponenten har stöd för [schema.org, mikrodata](https://schema.org).
+Bildkomponenten har stöd för [schema.org](https://schema.org).
+
+## Dialogrutan Redigera {#edit-dialog}
+
+I redigeringsdialogrutan kan författaren beskära och zooma bilden.
+
+Beroende på om du har [Dynamic Media](#dynamic-media) aktiverad eller [Nästa generations Dynamic Media](#next-gen-dm) aktiverade funktioner kommer alternativen för att redigera bilder att variera.
+
+### Standardredigering av resurser {#standard-assets}
+
+Om du redigerar AEM resurser kan du klicka på **Redigera** -ikonen på snabbmenyn för bildkomponenten.
+
+![Redigeringsdialogruta för bildkomponent](/help/assets/image-edit.png)
+
+* Starta beskärning
+
+  ![Ikonen Starta beskärning](/help/assets/image-start-crop.png)
+
+  Om du väljer det här alternativet öppnas en listruta för fördefinierade beskärningsproportioner.
+
+   * Välj alternativ **Ta bort beskärning** för att visa den ursprungliga resursen.
+
+  När du har valt ett beskärningsalternativ använder du de blå handtagen för att ändra storlek på beskärningen i bilden.
+
+  ![Beskärningsalternativ](/help/assets/image-crop-options.png)
+
+* Rotera åt höger
+
+  ![Rotera höger ikon](/help/assets/image-rotate-right.png)
+
+  Använd det här alternativet om du vill rotera bilden 90° åt höger (medurs).
+
+* Återställ zoomning
+
+  ![Återställ zoomningsikon](/help/assets/image-reset-zoom.png)
+
+  Om bilden redan har zoomats kan du återställa zoomnivån med det här alternativet.
+
+* Öppna zoomreglaget
+
+  ![Öppna zoomskjutningsikonen](/help/assets/image-zoom.png)
+
+  Använd det här alternativet om du vill visa ett reglage för att styra bildens zoomnivå.
+
+  ![Zoomreglage](/help/assets/image-zoom-slider.png)
+
+Du kan även använda redigeraren på plats för att ändra bilden. På grund av utrymmesbegränsningar är endast grundläggande alternativ tillgängliga. Använd helskärmsläget för redigeringsalternativ.
+
+![Redigeringsalternativ för bilder på plats](/help/assets/image-in-place-edit.png)
+
+>[!NOTE]
+>
+>Bildredigeringsåtgärder stöds inte för bilder i GIF. Alla sådana ändringar som görs i redigeringsläget för GIF bevaras inte.
+
+### Dynamic Media resursredigering {#dynamic-media-assets}
+
+Om du har [Dynamic Media-funktioner aktiverade,](#dynamic-media) redigering av själva bilden måste utföras i resurskonsolen.
+
+### Nästa generation av Dynamic Media Asset Editing {#next-gen-dm-assets}
+
+Om du har [Nästa generations Dynamic Media konfigurerade,](#next-gen-dm) den **Smart beskärning** är tillgängligt på komponentens snabbmenyer.
+
+![Smart beskärning](/help/assets/image-smart-crop.png)
+
+Använd dialogrutan för att justera den smarta beskärningen.
+
+![Dialogrutan Smart beskärning](/help/assets/image-smart-crop-dialog.png)
+
+>[!TIP]
+>
+>Mer information om smart beskärning finns i [den här videon om funktionen.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -84,14 +163,19 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
 
 * **Ärv bild från sida** - Det här alternativet använder [bild av den länkade sidan](page.md) eller den aktuella sidans aktuella bild om bilden inte är länkad.
 
+* **Bildresurs** - Detta fylls i automatiskt om **Ärv bild från sida** är markerat. Avmarkera om du vill definiera bilden manuellt genom att ange följande alternativ.
+
+   * Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** för överföring från ett lokalt filsystem.
+   * Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
+   * Tryck eller klicka **Välj** för att öppna [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) för att markera en bild.
+      * If [Nästa generations Dynamic Media-funktioner](#next-gen-dm) är aktiverade har du flera alternativ för att välja en resurs:
+         * **Lokal** väljer från det lokala AEM resursbiblioteket.
+         * **Fjärr** väljer från ett Dynamic Media-bibliotek utanför din AEM.
+   * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
+
 * **Alternativ text för tillgänglighet** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
 
    * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade tillgångsvärdet för `dc:description` metadata i DAM eller på den aktuella sidan om ingen resurs är länkad.
-
-* **Bildresurs**
-   * Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** om du vill överföra från ett lokalt filsystem.
-   * Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
-   * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 * **Ange inte en alternativ text** - Med det här alternativet markeras den bild som ska ignoreras av hjälpmedelstekniker, som skärmläsare, om bilden är helt dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.
 
@@ -99,10 +183,10 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
 
 ![Fliken Metadata i dialogrutan Konfigurera för Image Component](/help/assets/image-configure-metadata.png)
 
-* **Förinställningstyp** - Detta definierar de typer av bildförinställningar som är tillgängliga, antingen **Bildförinställning** eller **Smart beskärning** och är bara tillgängligt när [Funktioner i Dynamic Media](#dynamic-meida) är aktiverade.
+* **Förinställningstyp** - Detta definierar de typer av bildförinställningar som är tillgängliga, antingen **Bildförinställning** eller **Smart beskärning** och är bara tillgängligt när [Dynamic Media-funktioner](#dynamic-meida) är aktiverade.
    * **Bildförinställning** - När **Förinställningstyp** av **Bildförinställning** är markerat, listrutan **Bildförinställning** är tillgängligt och du kan välja bland de tillgängliga förinställningarna för Dynamic Media. Detta är bara tillgängligt om förinställningar har definierats för den valda resursen.
-   * **Smart beskärning** - När **Förinställningstyp** av **Smart beskärning** är markerat i listrutan **Återgivning** är tillgängligt och du kan välja bland de tillgängliga återgivningarna av den valda resursen. Detta är bara tillgängligt om återgivningar har definierats för den valda resursen.
-   * **Bildmodifierare** - Ytterligare kommandon för att visa bilder i Dynamic Media kan definieras här avgränsade med `&`oavsett vilka **Förinställningstyp** är markerat.
+   * **Smart beskärning** - När **Förinställningstyp** av **Smart beskärning** är markerat, listrutan **Återgivning** är tillgängligt och du kan välja bland de tillgängliga återgivningarna av den valda resursen. Detta är bara tillgängligt om återgivningar har definierats för den valda resursen.
+   * **Bildmodifierare** - Ytterligare kommandon för att visa bilder i Dynamic Media kan definieras här avgränsade med `&`, oavsett vilka **Förinställningstyp** är markerat.
 * **Bildtext** - Ytterligare information om bilden, som visas under bilden som standard.
    * **Hämta beskrivning från DAM** - När det här alternativet är markerat fylls bildtexten i med värdet för `dc:title` metadata i DAM.
    * **Visa bildtext som popup-fönster** - När det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som ett popup-fönster som visas av vissa webbläsare när de hovrar över bilden.
@@ -135,7 +219,7 @@ Format måste konfigureras för den här komponenten i [designdialogruta](#desig
 
 ![Huvudflik i designdialogrutan för bildkomponenten](/help/assets/image-design-main.png)
 
-* **Aktivera DM-funktioner** - När det är markerat, [Funktioner i Dynamic Media](#dynamic-media) är tillgängliga.
+* **Aktivera DM-funktioner** - När det är markerat, [Dynamic Media-funktioner](#dynamic-media) är tillgängliga.
    * Det här alternativet visas bara när Dynamic Media är aktiverat i miljön.
 * **Aktivera webboptimerade bilder** - När det är markerat, [webboptimerad bildleveranstjänst](/help/developing/web-optimized-image-delivery.md) kommer att leverera bilder i WebP-format, vilket i genomsnitt minskar bildstorlekarna med 25 %.
    * Det här alternativet är endast tillgängligt i AEMaaCS.
@@ -156,7 +240,7 @@ Du kan definiera en lista med bredder i pixlar för bilden så läser komponente
    * Tryck eller klicka på **Lägg till** om du vill lägga till en annan storlek.
       * Använd handtagen för att ordna om storlekarna.
       * Använd **Ta bort** om du vill ta bort en bredd.
-   * Som standard skjuts inläsningen av bilder tills de blir synliga.
+   * Inläsningen av bilder fördröjs som standard tills de blir synliga.
       * Välj alternativet **Inaktivera lazy loading** för att läsa in bilderna när sidan läses in.
 * **JPEG-kvalitet** - Kvalitetsfaktorn (i procent mellan 0 och 100) för omformade (t.ex. skalade eller beskurna) bilder i JPEG.
 

@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 8db061f3d6f1041336c379b34f3b6b7f03083560
+source-git-commit: 63f9659a547729c7cb3eb3c7a61cf1bc838cf6ce
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '386'
 ht-degree: 6%
 
 ---
@@ -141,6 +141,7 @@ ht-degree: 6%
    + [Inkluderar klientbibliotek](/help/developing/including-clientlibs.md)
    + [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md)
    + [Webboptimerad bildleverans](/help/developing/web-optimized-image-delivery.md)
+   + [Nästa generations Dynamic Media-support](/help/developing/next-gen-dm.md)
    + Adobe-klientdatalager {#data-layer}
       + [Översikt över datalagret](/help/developing/data-layer/overview.md)
       + [Integrering med datalagret](/help/developing/data-layer/integrations.md)
