@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Komponenten Core Component Image är en adaptiv bildkomponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: c879cf92cae028230f092c7376a1e9271f568388
+source-git-commit: a10c98aecf6d3c0d989f2e3c18affc51850f60bc
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Komponenten Core Component Image är en adaptiv bildkomponent.
 
 ## Användning {#usage}
 
-Bildkomponenten har anpassningsbart bildval och responsivt beteende med lat inläsningsbeteende för sidbesökaren samt enkel bildplacering för innehållsförfattaren.
+Bildkomponenten har adaptiv bildmarkering och responsivt beteende med lat inläsningsalternativ för sidbesökaren och enkel bildplacering för innehållsförfattaren.
 
 Innehållsförfattaren kan använda [redigeringsdialogruta](#edit-dialog) om du vill redigera bildresursen, till exempel tillämpa en beskärning eller rotera bilden.
 
@@ -39,17 +39,17 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 ## Responsiva funktioner {#responsive-features}
 
-Image Component har robusta responsiva funktioner som är klara direkt vid leverans. På sidmallsnivå visas [designdialogruta](#design-dialog) kan användas för att definiera bildresursens standardbredder. Bildkomponenten läser sedan automatiskt in rätt bredd för visning beroende på storleken på webbläsarfönstret. När fönstrets storlek ändras läses bildkomponenten in dynamiskt med rätt bildstorlek. Komponentutvecklare behöver inte bekymra sig om att definiera anpassade mediefrågor eftersom Image Component redan är optimerat för att läsa in ditt innehåll.
+Image Component har robusta responsiva funktioner som är klara direkt vid leverans. På sidmallsnivå visas [designdialogruta](#design-dialog) kan användas för att definiera bildresursens standardbredder. Bildkomponenten läser automatiskt in rätt bredd för visning beroende på storleken på webbläsarfönstret. När fönstrets storlek ändras läses bildkomponenten in dynamiskt med rätt bildstorlek. Komponentutvecklare behöver inte bekymra sig om att definiera anpassade mediefrågor eftersom Image Component redan är optimerat för att läsa in ditt innehåll.
 
 Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsningen av den faktiska bildresursen tills den syns i webbläsaren, vilket gör sidorna mer responsiva.
 
 >[!TIP]
 >
->Som standard drivs Image-komponenten av Adaptive Image Server. Se dokumentet [Adaptiv bildserver](#adaptive-image-servlet) om du vill ha mer information om hur det fungerar.
+>Som standard drivs Image-komponenten av Adaptive Image Server. Se [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) om du vill ha mer information om hur det fungerar.
 
 ## Dynamic Media Support {#dynamic-media}
 
-Bildkomponenten (från [version 2.13.0](/help/versions.md)) har stöd [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia) resurser. [När det är aktiverat](#design-dialog) Med de här funktionerna kan du lägga till Dynamic Media-bildresurser med en enkel dra och släpp-funktion eller via filläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från [version 2.13.0](/help/versions.md)) har stöd [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media.html) resurser. [När det är aktiverat](#design-dialog) Med de här funktionerna kan du lägga till Dynamic Media-bildresurser med en enkel dra och släpp-funktion eller via filläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina webbupplevelser som byggts med Core Components kan innehålla omfattande, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
@@ -63,17 +63,17 @@ Bildkomponenten (från [version 2.23.2](/help/versions.md)) har stöd för näst
 
 Skalbar vektorgrafik (SVG) stöds av bildkomponenten.
 
-* Både dra-och-släpp av en SVG-resurs från DAM och överföring av en SVG-filöverföring från ett lokalt filsystem stöds.
+* Både dra-och-släpp av en SVG-resurs från DAM och överföring av en SVG-fil som överförts från ett lokalt filsystem stöds.
 * Den ursprungliga SVG-filen direktuppspelas (omformningar hoppas över).
 * För en SVG-bild ställs&quot;smarta bilder&quot; och&quot;smarta storlekar&quot; in på en tom array i bildmodellen.
 
 ### Dokumentskydd {#security}
 
-Av säkerhetsskäl anropas aldrig SVG direkt av bildredigeraren. Den kallas för `<img src=“path-to-component”>`. Detta förhindrar webbläsaren från att köra skript som är inbäddade i filen SVG.
+Av säkerhetsskäl anropas aldrig SVG direkt av bildredigeraren. Den kallas för `<img src="path-to-component">`. Detta förhindrar webbläsaren från att köra skript som är inbäddade i filen SVG.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både Image Component (Bildkomponent) och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek](https://adobe.com/go/aem_cmp_library_image).
+Om du vill se exempel på Image Component (Bildkomponent) och dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek](https://adobe.com/go/aem_cmp_library_image).
 
 ### Teknisk information {#technical-details}
 
@@ -87,7 +87,7 @@ Bildkomponenten har stöd för [schema.org](https://schema.org).
 
 I redigeringsdialogrutan kan författaren beskära och zooma bilden.
 
-Beroende på om du har [Dynamic Media](#dynamic-media) aktiverad eller [Nästa generations Dynamic Media](#next-gen-dm) aktiverade funktioner kommer alternativen för att redigera bilder att variera.
+Beroende på om du har [Dynamic Media](#dynamic-media) aktiverad eller [Nästa generations Dynamic Media](#next-gen-dm) om du aktiverar det här alternativet skiljer sig alternativen för att redigera bilder åt.
 
 ### Standardredigering av resurser {#standard-assets}
 
@@ -133,7 +133,7 @@ Du kan även använda redigeraren på plats för att ändra bilden. På grund av
 
 >[!NOTE]
 >
->Bildredigeringsåtgärder stöds inte för bilder i GIF. Alla sådana ändringar som görs i redigeringsläget för GIF bevaras inte.
+>Bildredigeringsåtgärder stöds inte för bilder i GIF. Alla sådana ändringar som gjorts i redigeringsläget för GIF bevaras inte.
 
 ### Dynamic Media resursredigering {#dynamic-media-assets}
 
@@ -165,19 +165,19 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
 
 * **Bildresurs** - Detta fylls i automatiskt om **Ärv bild från sida** är markerat. Avmarkera om du vill definiera bilden manuellt genom att ange följande alternativ.
 
-   * Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** för överföring från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** så att du kan överföra från ett lokalt filsystem.
    * Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
-   * Tryck eller klicka **Välj** för att öppna [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) för att markera en bild.
+   * Tryck eller klicka **Välj** för att öppna [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) så att du kan markera en bild.
       * If [Nästa generations Dynamic Media-funktioner](#next-gen-dm) är aktiverade har du flera alternativ för att välja en resurs:
          * **Lokal** väljer från det lokala AEM resursbiblioteket.
          * **Fjärr** väljer från ett Dynamic Media-bibliotek utanför din AEM.
-   * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
+   * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html) i Resursredigeraren.
 
 * **Alternativ text för tillgänglighet** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
 
    * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade tillgångsvärdet för `dc:description` metadata i DAM eller på den aktuella sidan om ingen resurs är länkad.
 
-* **Ange inte en alternativ text** - Med det här alternativet markeras den bild som ska ignoreras av hjälpmedelstekniker, som skärmläsare, om bilden är helt dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.
+* **Ange inte en alternativ text** - Markerar bilden som ska ignoreras av hjälpmedelstekniker, t.ex. skärmläsare, i de fall där bilden är helt dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.
 
 ### Fliken Metadata {#metadata-tab}
 
@@ -189,7 +189,7 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
    * **Bildmodifierare** - Ytterligare kommandon för att visa bilder i Dynamic Media kan definieras här avgränsade med `&`, oavsett vilka **Förinställningstyp** är markerat.
 * **Bildtext** - Ytterligare information om bilden, som visas under bilden som standard.
    * **Hämta beskrivning från DAM** - När det här alternativet är markerat fylls bildtexten i med värdet för `dc:title` metadata i DAM.
-   * **Visa bildtext som popup-fönster** - När det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som ett popup-fönster som visas av vissa webbläsare när de hovrar över bilden.
+   * **Visa bildtext som popup-fönster** - När det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som en popup-ruta som visas av vissa webbläsare när de hovrar över bilden.
 * **Länk** - Länka bilden till en annan resurs.
    * Använd urvalsdialogrutan för att länka till en annan AEM.
    * Om du inte länkar till en AEM resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
@@ -201,13 +201,13 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
 
 >[!TIP]
 >
->**Smart beskärning** och **Bildförinställning** alternativ som utesluter varandra. Om en författare behöver använda en bildförinställning tillsammans med en rendering för smart beskärning måste författaren använda **Bildmodifierare** om du vill lägga till förinställningar manuellt.
+>**Smart beskärning** och **Bildförinställning** alternativ som utesluter varandra. Om en författare måste använda en bildförinställning tillsammans med en rendering för smart beskärning måste författaren använda **Bildmodifierare** om du vill lägga till förinställningar manuellt.
 
 ### Fliken Format {#styles-tab-edit}
 
 ![Fliken Stilar i redigeringsdialogrutan för Bildkomponent](/help/assets/image-configure-styles.png)
 
-Bildkomponenten stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
+Bildkomponenten stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
 Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
 
@@ -221,10 +221,10 @@ Format måste konfigureras för den här komponenten i [designdialogruta](#desig
 
 * **Aktivera DM-funktioner** - När det är markerat, [Dynamic Media-funktioner](#dynamic-media) är tillgängliga.
    * Det här alternativet visas bara när Dynamic Media är aktiverat i miljön.
-* **Aktivera webboptimerade bilder** - När det är markerat, [webboptimerad bildleveranstjänst](/help/developing/web-optimized-image-delivery.md) kommer att leverera bilder i WebP-format, vilket i genomsnitt minskar bildstorlekarna med 25 %.
+* **Aktivera webboptimerade bilder** - När det är markerat, [webboptimerad bildleveranstjänst](/help/developing/web-optimized-image-delivery.md) levererar bilder i WebP-format, vilket minskar bildstorleken med i genomsnitt 25 %.
    * Det här alternativet är endast tillgängligt i AEMaaCS.
-   * När alternativet är avmarkerat eller webboptimerad bildleveranstjänst inte är tillgänglig visas [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) används.
-* **Inaktivera lazy loading** - När det här alternativet är markerat kommer komponenten att förhandsladda alla bilder utan att läsas in.
+   * Om alternativet inte är markerat eller webboptimerad bildleveranstjänst inte är tillgänglig visas [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) används.
+* **Inaktivera lazy loading** - När det här alternativet är markerat läser komponenten in alla bilder i förväg utan att de läses in.
 * **Bilden är dekorativ** - Ange om alternativet för dekorativa bilder ska aktiveras automatiskt när du lägger till bildkomponenten på en sida.
 * **Hämta alternativ text från DAM**- Ange om alternativet att hämta alternativ text från DAM automatiskt ska aktiveras när bildkomponenten läggs till på en sida.
 * **Hämta beskrivning från DAM** - Ange om alternativet att hämta bildtexten från DAM-modulen ska aktiveras automatiskt när bildkomponenten läggs till på en sida.
@@ -238,10 +238,10 @@ Du kan definiera en lista med bredder i pixlar för bilden så läser komponente
 
 * **Bredd** - Definierar en lista med bredder i pixlar för bilden och komponenten läser automatiskt in den mest lämpliga bredden baserat på webbläsarens storlek.
    * Tryck eller klicka på **Lägg till** om du vill lägga till en annan storlek.
-      * Använd handtagen för att ordna om storlekarna.
+      * Använd handtagen för att ordna om storleken.
       * Använd **Ta bort** om du vill ta bort en bredd.
    * Inläsningen av bilder fördröjs som standard tills de blir synliga.
-      * Välj alternativet **Inaktivera lazy loading** för att läsa in bilderna när sidan läses in.
+      * Välj alternativet **Inaktivera lazy loading** så att du kan läsa in bilderna när sidan läses in.
 * **JPEG-kvalitet** - Kvalitetsfaktorn (i procent mellan 0 och 100) för omformade (t.ex. skalade eller beskurna) bilder i JPEG.
 
 >[!TIP]
