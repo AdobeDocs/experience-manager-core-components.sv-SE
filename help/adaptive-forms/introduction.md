@@ -3,7 +3,7 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: 13e802c510e165d3ef3da431e1e8b0fe7b35d801
 workflow-type: tm+mt
 source-wordcount: '1262'
 ht-degree: 0%
@@ -43,8 +43,8 @@ Eftersom dessa komponenter är öppen källkod kan utvecklare dessutom enkelt an
 | Tillgänglig | De innehåller ARIA-etiketter, stöd för tangentbordsnavigering och text för hjälpmedelstekniker som skärmläsare. |
 | Temabell | Komponenterna implementerar [Formatsystem](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)och koden följer [BEM CSS-konventioner](https://getbem.com/). |
 | Anpassningsbar | Flera mönster gör det enkelt att anpassa, från att justera HTML till att återanvända avancerade funktioner. |
-| Versionshantering | The [versionsprincip](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
-| Öppna källkod | Om något inte är som det ska, bidrar du till förbättringen. |
+| Versioner | The [versionsprincip](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
+| Öppen källkod | Om något inte är som det ska, bidrar du till förbättringen. |
 
 <!-- comply with [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), -->
 
@@ -61,7 +61,7 @@ Datainhämtningsupplevelser är avgörande för generering och registrering av l
 
 * **Fokus på prestanda och tillgänglighet**: Kärnkomponenterna byggs med prestanda och tillgänglighet i åtanke, vilket återspeglas i deras höga poäng för Google Lightroom och webbinarium. Detta gör det enklare för utvecklare att skapa tillgängliga och högpresterande webbsidor, vilket blir allt viktigare i dagens digitala landskap.
 
-* **Formulärkomponenter i webbplatserna 30, mallar och teman**: Core Components har stöd för formulärkomponenter i webbplatserna 30-mallen och -temana, vilket gör det enklare för utvecklare att skapa och anpassa formulär i AEM.
+* **Formulärkomponenter i webbplatserna 30, mallar och teman**: De centrala komponenterna har stöd för formulärkomponenter i webbplatserna 30-mallen och -teman, vilket gör det enklare för utvecklare att skapa och anpassa formulär i AEM.
 
 * **Enklare att formatera**: Kärnkomponenterna är enklare att formatera än deras motsvarigheter i grundkomponenterna. Processen för att skapa teman liknar Sites, med möjlighet att ärva samma tema/CSS från den överordnade webbplatssidan. Dessutom gör BEM-modellen för formatering det enklare att förstå och ändra formaten.
 
@@ -136,3 +136,5 @@ Du kan utföra följande åtgärder i både AEM Forms as a Cloud Service- och AE
     *   **Inheriting Sites features in Forms**: Forms authored within a Sites page inherit the same features as Sites. This provides a seamless and integrated experience for creating and managing forms within the context of AEM Sites 
     
     <!--including Multi Site Manager, the ability to use Sites components within a form for static content, support for scheduled publish/unpublish, form translation aligned with Sites translation, versioning, and targeting -->
+
+{{see-also}}

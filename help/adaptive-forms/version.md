@@ -3,7 +3,7 @@ title: AEM Forms Core Components Versions
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: 13e802c510e165d3ef3da431e1e8b0fe7b35d801
 workflow-type: tm+mt
 source-wordcount: '314'
 ht-degree: 5%
@@ -16,7 +16,7 @@ Den aktuella versionen av Core Components 2.0.10 är kompatibel med [AEM as a Cl
 
 ## AEM som versionshistorik för Cloud Service {#aem-as-cs-version-history}
 
-I följande tabell visas en lista över de Core Components-versioner som är kompatibla med AEM as a Cloud Service som är tillgängliga på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
+I följande tabell visas en lista över de Core Components-versioner som är kompatibla med AEM as a Cloud Service och som är tillgängliga på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
 
 | Frigör | Beskrivning | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|
@@ -33,3 +33,4 @@ I följande tabell visas en lista över de Core Components-versioner som är kom
 |---|---|---|---|---|---|
 | [1.1.12](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12) | Komponentstöd för AEM Forms lokalt och AMS introduceras i den här versionen. | - | 6.5.16.0+ | 8, 11 | 8 februari 2023 |
 
+{{see-also}}
