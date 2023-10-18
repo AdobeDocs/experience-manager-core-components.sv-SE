@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - bifogad fil
 description: Använda eller anpassa den adaptiva Forms-filbilagan Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 64a54fc6-db52-481f-bf5a-60c05122004d
-source-git-commit: ad3e3bca5cb46f14e864e4704c90ac3b62779794
+source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
 workflow-type: tm+mt
 source-wordcount: '1580'
 ht-degree: 0%
@@ -136,26 +136,30 @@ Kärnkomponenten för adaptiv bifogad Forms-fil stöder AEM [Formatsystem](/help
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 
+>[!MORELIKETHIS]
+>
+>* [Dragspel](/help/adaptive-forms/components/accordion.md)
+>* [Knapp](/help/adaptive-forms/components/button.md)
+>* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+>* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+>* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+>* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+>* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+>* [Sidfot](/help/adaptive-forms/components/footer.md)
+>* [Sidhuvud](/help/adaptive-forms/components/header.md)
+>* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+>* [Bild](/help/adaptive-forms/components/image.md)
+>* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+>* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+>* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+>* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+>* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+>* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+>* [Textindata](/help/adaptive-forms/components/text-input.md)
+>* [Text](/help/adaptive-forms/components/text.md)
+>* [Titel](/help/adaptive-forms/components/title.md)
+>* [guide](/help/adaptive-forms/components/wizard.md)
+
 ## Se även {#see-also}
 
-* [Dragspel](/help/adaptive-forms/components/accordion.md)
-* [Knapp](/help/adaptive-forms/components/button.md)
-* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
-* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
-* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
-* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
-* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
-* [Sidfot](/help/adaptive-forms/components/footer.md)
-* [Sidhuvud](/help/adaptive-forms/components/header.md)
-* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
-* [Bild](/help/adaptive-forms/components/image.md)
-* [Nummerindata](/help/adaptive-forms/components/number-input.md)
-* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
-* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
-* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
-* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
-* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
-* [Textindata](/help/adaptive-forms/components/text-input.md)
-* [Text](/help/adaptive-forms/components/text.md)
-* [Titel](/help/adaptive-forms/components/title.md)
-* [guide](/help/adaptive-forms/components/wizard.md)
+{{see-also}}

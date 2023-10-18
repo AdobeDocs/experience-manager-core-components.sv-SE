@@ -2,9 +2,9 @@
 title: Adaptiv Forms Core-komponent - flikar överst
 description: Använda eller anpassa de adaptiva Forms-flikarna i den främsta kärnkomponenten.
 role: Architect, Developer, Admin, User
-source-git-commit: 7888cfa0f1358ce8018fc1e3cc3b19eb66a82b9d
+source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '509'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Det finns flera skäl att använda tabbar i den översta layouten i ett adaptivt
 
 * **Organisation**: Du kan använda flikar för att ordna olika avsnitt i ett formulär i olika kategorier, vilket gör det enklare för användarna att navigera och hitta den information de behöver.
 
-* **Utrymmesbevarande**: Med hjälp av flikar kan du spara utrymme på en sida genom att bara ett avsnitt i formuläret kan visas åt gången.
+* **Utrymmesbevarande**: Flikar kan spara utrymme på en sida genom att bara ett avsnitt i formuläret kan vara synligt åt gången.
 
 * **Förbättrad användarupplevelse**: Flikar kan förbättra användarupplevelsen genom att göra formuläret mer visuellt tilltalande och lättare att använda.
 
@@ -40,7 +40,7 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 |---|---|---|
 | v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
-Information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -59,3 +59,32 @@ Med dialogrutan Konfigurera kan du enkelt anpassa flikarna efter besökarna. Du 
 * [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
 
 * [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+>[!MORELIKETHIS]
+>
+>* [Dragspel](/help/adaptive-forms/components/accordion.md)
+>* [Knapp](/help/adaptive-forms/components/button.md)
+>* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+>* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+>* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+>* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+>* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+>* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+>* [Sidfot](/help/adaptive-forms/components/footer.md)
+>* [Sidhuvud](/help/adaptive-forms/components/header.md)
+>* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+>* [Bild](/help/adaptive-forms/components/image.md)
+>* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+>* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+>* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+>* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+>* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+>* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
+>* [Textindata](/help/adaptive-forms/components/text-input.md)
+>* [Text](/help/adaptive-forms/components/text.md)
+>* [Titel](/help/adaptive-forms/components/title.md)
+>* [guide](/help/adaptive-forms/components/wizard.md)
+
+## Se även {#see-also}
+
+{{see-also}}
