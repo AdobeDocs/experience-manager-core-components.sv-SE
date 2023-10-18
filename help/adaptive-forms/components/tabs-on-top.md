@@ -2,9 +2,9 @@
 title: Adaptiv Forms Core-komponent - flikar överst
 description: Använda eller anpassa de adaptiva Forms-flikarna i den främsta kärnkomponenten.
 role: Architect, Developer, Admin, User
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
+source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '473'
 ht-degree: 1%
 
 ---
@@ -54,11 +54,14 @@ Få den senaste informationen om de adaptiva Forms-flikarna i Top Core-komponent
 
 Med dialogrutan Konfigurera kan du enkelt anpassa flikarna efter besökarna. Du kan också enkelt definiera flikar för de vanligaste alternativen för en smidig användarupplevelse.
 
-## Relaterad artikel {#related-article}
+<!--
 
-* [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+## Related article {#related-article}
 
-* [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+-->
+
 
 >[!MORELIKETHIS]
 >

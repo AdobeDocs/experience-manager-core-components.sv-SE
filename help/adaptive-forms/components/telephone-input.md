@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - telefoninmatning
 description: Använda eller anpassa den adaptiva kärnkomponenten för telefoninmatning från Forms.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: 0bebc248ee2b708f7677950d90356abd5bc70a98
+source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1791'
 ht-degree: 0%
 
 ---
@@ -128,12 +128,38 @@ På fliken Format kan du ange standardtalformat och anpassade talformat.
 
 ![Fliken Format](/help/adaptive-forms/assets/telephoneinput_format.png)
 
-## Relaterad artikel {#related-article}
+<!--
 
-* [Skapa ett anpassat formulär i AEM Sites Page eller Experience Fragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
+## Related article {#related-article}
 
-* [Skapa ett fristående anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
+-->
+
+
+>[!MORELIKETHIS]
+>
+>* [Dragspel](/help/adaptive-forms/components/accordion.md)
+>* [Knapp](/help/adaptive-forms/components/button.md)
+>* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
+>* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
+>* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+>* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+>* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
+>* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+>* [Sidfot](/help/adaptive-forms/components/footer.md)
+>* [Sidhuvud](/help/adaptive-forms/components/header.md)
+>* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
+>* [Bild](/help/adaptive-forms/components/image.md)
+>* [Nummerindata](/help/adaptive-forms/components/number-input.md)
+>* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+>* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
+>* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
+>* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+>* [Textindata](/help/adaptive-forms/components/text-input.md)
+>* [Text](/help/adaptive-forms/components/text.md)
+>* [Titel](/help/adaptive-forms/components/title.md)
+>* [guide](/help/adaptive-forms/components/wizard.md)
 
 >[!MORELIKETHIS]
 >
