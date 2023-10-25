@@ -3,7 +3,7 @@ title: Adaptiv bildserver
 description: Lär dig hur Core Components använder Adaptive Image Servlet för bildleverans och hur du kan optimera användningen.
 role: Architect, Developer, Admin, User
 exl-id: d9199d51-6f09-4000-9525-afc30474437e
-source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
+source-git-commit: 785aa82930e3bcf6ef16d7a1cdc614d230e8daa8
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Det här dokumentet beskriver standardservern för adaptiv bildhantering.
 
 ## Översikt {#overview}
 
-Som standard använder Image Component (Bildkomponent) Core-komponentens adaptiva bildserver för att leverera bilder. [Adaptiv bildserver](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbehandling och direktuppspelning och kan utnyttjas av utvecklare i [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
+Som standard använder Image Component (Bildkomponent) Core-komponentens Adaptive Image Servlet för att leverera bilder. [Adaptiv bildserver](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbehandling och direktuppspelning och kan utnyttjas av utvecklare i [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
 
 ## Återgivningsmarkering {#rendition-selection}
 
@@ -44,7 +44,7 @@ Den adaptiva bildservern väljer automatiskt den rendering som passar bäst för
 
 Den adaptiva bildservern kommer att försöka välja den bästa återgivningen för den önskade bildstorleken och bildtypen. Vi rekommenderar att DAM-återgivningar och tillåtna bildkomponentbredder definieras synkroniserade så att den adaptiva bildservern utför så lite bearbetning som möjligt.
 
-Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktigt av det underliggande bildbehandlingsbiblioteket.
+Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktigt av det underliggande bildbearbetningsbiblioteket.
 
 ## Använda senast ändrade rubriker {#last-modified}
 
