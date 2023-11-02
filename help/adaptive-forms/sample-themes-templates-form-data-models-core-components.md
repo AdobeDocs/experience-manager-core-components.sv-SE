@@ -1,34 +1,31 @@
 ---
-title: Hur skaffar man exempelteman och mallar för AEM Forms?
-description: AEM Forms Core Components innehåller exempel på adaptiva formulärteman, mallar och formulärdatamodeller
+title: Hur får du exempelteman och mallar för AEM Forms Core Components?
+description: AEM Forms Core Components innehåller exempel på adaptiva formulärteman, mallar och formulärdatamodeller.
 solution: Experience Manager Forms
 topic: Administration
 role: Admin, User
-hide: true
-hidefromtoc: true
 level: Intermediate
-source-git-commit: ebbe3471164341076fe085bbef9c93fcb1fe382a
+exl-id: aef6e88b-dcae-4777-9893-9257d7702f43
+source-git-commit: 5e08235a0da5c44e60a1b488a832a8346b5f4cfa
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
 
-
 # Exempelteman, mallar och formulärdatamodeller {#sample-themes-templates-and-data-models}
 
-[!DNL AEM Forms] Med kärnkomponenterna kan du snabbt skapa flexibla formulär med färdiga exempelteman, mallar och formulärdatamodeller. Dessa hjälper också formulärförfattare att lära sig hur flexibla de är och hur lyhörda de är [AEM Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) att skapa enkla formulär på nolltid och komplexa formulär enkelt och smidigt ansluta till databasen.
+[!DNL AEM Forms] Med kärnkomponenterna kan du snabbt skapa flexibla formulär med färdiga exempelteman, mallar och formulärdatamodeller. Dessa hjälper också formulärförfattare att lära sig hur flexibla de är och hur lyhörda de är [Adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) att skapa enkla formulär på nolltid och komplexa formulär enkelt och smidigt ansluta till databasen.
 
 Exempelteman, mallar och formulärdatamodeller som ingår i referensinnehållspaketet är:
 
 | Mallar | Teman | Formulärdatamodeller |
 ---------|----------|---------
-| [Grundläggande](#Basic) | [Arbetsyta](#Canvas) | Microsoft® Dynamics 365 |
-| [Tom](#Blank) | [WKND](#WKND) | Salesforce |
-| [Kontakta oss](#Contact-Us) | [Easel](#Easel) |  |
-| [Uppdatering av kontaktinformation](#Contact-Details-Update) |   |   |
-| [Samtyckesformulär](#Consent-Form) | |  |
-| [Loggtjänstbegäran](#Log-Service-Request) |  |  |
+| [Tom](#Blank) | [Arbetsyta](#Canvas) | Microsoft® Dynamics 365 |
+| [Kontakta oss](#Contact-Us) | [WKND](#WKND) | Salesforce |
+| [Uppdatering av kontaktinformation](#Contact-Details-Update) | [Easel](#Easel) |   |
+| [Samtyckesformulär](#Consent-Form) | [FSI](#FSI) |  |
+| [Loggtjänstbegäran](#Log-Service-Request) | [Sjukvård](#Healthcare) |  |
 | [Ge feedback](#Give-Feedback) |  |  |
 | [Registrering av förmåner](#Benefits-Enrollment) |  |   |
 | [Sammanfattning av löneförmåner för medarbetare](#Employee-Benefits-Summary) |   |   |
@@ -39,15 +36,55 @@ Exempelteman, mallar och formulärdatamodeller som ingår i referensinnehållspa
 
 ## Exempelteman {#Sample-Themes}
 
-Med exempelteman kan man definiera och anpassa formateringen efter blanketterna, och författare med till och med grundläggande kunskaper i CSS kan anpassa temat efter behov.
+Med exempelteman kan man använda, definiera och anpassa formateringen efter blanketterna - författare med t.o.m. grundläggande kunskaper i CSS kan anpassa temat efter behov.
 
 **Hur skaffar man dessa teman?**
-* Så här sätter du på temana **Forms as a Cloud Service** miljö, [aktivera adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) och använder [rörledning för frontend](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) för att distribuera dessa teman.
-* Så här får du teman på en **AEM 6.5 Forms** miljö, [aktivera adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) och använder [pakethanterare](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components) för att distribuera dessa teman.
+Du får dessa teman genom att följa stegen nedan för **AEM as a Cloud Service** miljö:
+
+1. [Aktivera kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)
+1. [Driftsätt ett AEM Archetype 45-projekt i din miljö](https://github.com/adobe/aem-project-archetype)
+
+
+När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina formulär. Om du vill anpassa teman efter dina behov kan du [Använda pipeline för framände](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) för att distribuera teman.
+
+>[!NOTE]
+>
+> * Temana är inte tillgängliga för **AEM 6.5** miljö.
+
+<!--
+
+1. **AEM 6.5**
+
+    1. [Enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html)
+    1. [Deploy an AEM Archetype 45 project to your environment](https://github.com/adobe/aem-project-archetype)
+
+
+    When you deploy an AEM Archetype, you can only use the OOTB themes in your forms, To customize the themes as per your requirements, [Use the front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) to deploy the themes.
+
+-->
+
+
+<!--
+
+### Deploying an AEM Archetype 45 project to your environment {#using-archetype-to-deploy-themes}
+
+You can get these themes by deploying an [AEM Archetype 45](https://github.com/adobe/aem-project-archetype) to your **AEM Forms as a Cloud Service** or **AEM 6.5** Forms environment.
+
+### Enable core components and use front-end pipeline to deploy themes {#use-front-end-pipeline-to-deploy-themes}
+
+1. To get these themes on **Forms as a Cloud Service** environment, [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) and use the [front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) to deploy these themes.
+    
+1. To get these themes on **AEM 6.5 Forms** environment, [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) and use the [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) to deploy these themes.
+
+[Learn to use and customize themes in AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html). 
+
+[Learn to use and customize themes in AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html).
+
+-->
 
 The **ur lådan** [Kärnkomponenter i adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) teman är:
 
-![OTB-teman](/help/adaptive-forms/assets/OOTB-themes.png)
+![OTB-teman](/help/adaptive-forms/assets/archetype-45-themes-1.png)
 
 ### Arbetsyta {#Canvas}
 
@@ -64,16 +101,40 @@ WKND-temat innehåller en livlig, fantasifull och engagerande design som visar e
 
 ### Easel {#Easel}
 
-Easel-temat hjälper dig att skapa ett snyggt och lättkonfigurerat formulärutseende som är anpassat för enkelhet och användarvänlighet. Easel-temat bygger på konceptet där en portabel stativ används av konstnärer för att ge stöd åt en arbetsyta medan de arbetar med sina målningar.
+Easel-temat hjälper dig att skapa ett snyggt och lättkonfigurerat formulärutseende som är anpassat för enkelhet och användarvänlighet. Easeltemat bygger på konceptet där en bärbar stativ används av konstnärer för att stödja en arbetsyta medan de arbetar med sina målningar.
 
 ![Easel-tema](/help/adaptive-forms/assets/Safety-Inspection-Theme-Easel.png)
+
+### FSI (Finansiella tjänster och försäkringar) {#FSI}
+
+FSI-temat lägger vikt vid att ge din form ett rent och praktiskt utseende. Den milda nyansen blått används i formuläret när du använder FSI-temat, vilket du kan se i bilden.
+
+![FSI-tema](/help/adaptive-forms/assets/fsi-theme-new1.png)
+
+
+### Sjukvård {#Healthcare}
+
+Temat för hälso- och sjukvård använder avancerade, övertoningar för att framhäva element som tabbar, paneler, textrutor och knappar i formuläret.
+
+![Sjukvårdstema](/help/adaptive-forms/assets/healthcare-new-theme.png)
+
 
 ## Exempelmallar {#Sample-templates}
 
 Mallar definierar den inledande formulärstrukturen, innehållet och de åtgärder som ska replikeras i formuläret eller använder en mallstruktur som liknar den i formuläret, till exempel Samtyckesformulär, Förmånsregistreringsformulär och många andra.
 
 **Hur skaffar jag mallarna?**
-Du kan hämta mallarna genom att distribuera en [AEM Archetype 43 eller senare](https://github.com/adobe/aem-project-archetype) till **AEM Forms as a Cloud Service** eller **AEM 6.5** Forms.
+Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 45](https://github.com/adobe/aem-project-archetype) till **AEM Forms as a Cloud Service** miljö eller **AEM 6.5 Forms** miljö.
+
+<!--
+
+>[!NOTE]
+>
+> * If you have [enabled core components and used front-end pipeline to deploy themes](#use-front-end-pipeline-to-deploy-themes), you need not to deploy an AEM Archetype.
+> * You can find list of all OOTB templates when you create a form.
+
+-->
+
 
 The **ur lådan** [Kärnkomponenter i adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) är:
 
@@ -81,7 +142,7 @@ The **ur lådan** [Kärnkomponenter i adaptiv form](https://experienceleague.ado
 
 ### Grundläggande {#Basic}
 
-Med en grundläggande mall kan du snabbt skapa ett formulär för registreringsupplevelser. Du kan också använda den för att förhandsgranska funktioner i [Adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html). Den innehåller en guidelayout för avsnitt-för-avsnitt-presentation av data.
+En grundläggande mall hjälper dig att snabbt skapa ett formulär för registreringsupplevelser. Du kan också använda den för att förhandsgranska funktionerna i [Adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html). Den innehåller en guidelayout för avsnitt-för-avsnitt-presentation av data.
 
 ![Grundläggande mall](/help/adaptive-forms/assets/Basic-template-desktop-view.png)
 
@@ -105,20 +166,20 @@ Kontaktuppgifter uppdaterar mallar så att författare kan skapa ett formulär f
 
 ### Samtyckesformulär {#Consent-Form}
 
-Blankettmall för samtycke används för att skapa ett formulär för att köpa ett juridiskt dokument från deltagare som deltar i en viss verksamhet, en forskningsundersökning, ett medicinskt förfarande eller en situation där deras personuppgifter eller rättigheter kan vara inblandade. Formuläret säkerställer öppenhet, skyddar deltagarens rättigheter och skapar en tydlig förståelse för vad personen går med på.
+Blankettmallen för samtycke används för att skapa ett formulär för att köpa ett juridiskt dokument från deltagare som deltar i en viss verksamhet, en forskningsundersökning, ett medicinskt förfarande eller en situation där deras personuppgifter eller rättigheter kan vara inblandade. Formuläret säkerställer öppenhet, skyddar deltagarens rättigheter och skapar en tydlig förståelse för vad personen går med på.
 
 ![Samtyckesformulär](/help/adaptive-forms/assets/Consent-form-desktop-view.png)
 
 ### Loggtjänstbegäran {#Log-Service-Request}
 
-Med loggtjänstens begärandemall kan du skapa ett formulär som begär loggspecifika loggningstjänster från en tjänsteleverantör. Formuläret fungerar som en formell begäran om att skapa en biljett för händelser, aktiviteter eller data som loggats för övervaknings- eller spårningsstatus.
+Med loggtjänstens begärandemall kan du skapa ett formulär som begär loggspecifika loggningstjänster från en tjänsteleverantör. Formuläret fungerar som en formell begäran om att skapa en biljett för händelser, aktiviteter eller dataloggar för övervakning eller spårningsstatus.
 
 ![Mall för loggtjänstbegäran](/help/adaptive-forms/assets/Log-service-request-desktop-view.png)
 
 
 ### Ge feedback {#Give-Feedback}
 
-Ge feedback-formulärmallar hjälper till att skapa ett formulär som ger konstruktiv feedback till en annan person eller grupp. Formuläret ser till att informationen är tydlig, specifik och åtgärdbar och främjar öppen kommunikation och förbättring.
+Ge feedback-formulärmallar hjälper till att skapa ett formulär som ger konstruktiv feedback till en annan person eller grupp. Formuläret ser till att det är tydligt, specifikt och åtgärdbart att ge feedback, vilket främjar öppen kommunikation och förbättring.
 
 ![Ge feedback-mall](/help/adaptive-forms/assets/Give-feedback-desktop-view.png)
 
@@ -138,7 +199,7 @@ En mall för en sammanfattande mall för löneförmåner används för att skapa
 
 ### Kontoutdrag för förfrågan {#Request-for-Account-Statement}
 
-En mall för kontoutdrag hjälper till att skapa ett formulär som initierar processen att få en korrekt och aktuell kundförsäkran. Rapporten innehåller detaljerad information om finansiella transaktioner, aktiviteter eller annan relevant information om kunder som använder formuläret.
+En mall för kontoutdrag hjälper till att skapa ett formulär som initierar processen att få en korrekt och aktuell kundredovisning. Rapporten innehåller detaljerad information om finansiella transaktioner, aktiviteter eller annan relevant information om kunder som använder formuläret.
 
 ![Request-for-account-statement](/help/adaptive-forms/assets/Request-for-account-statment.png)
 
