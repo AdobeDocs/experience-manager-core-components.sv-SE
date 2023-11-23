@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - titel
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Title.
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
-source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -16,23 +16,23 @@ I ett adaptivt formulär avser en&quot;titel&quot; texten som visas högst upp i
 
 **Exempel**
 
-![](/help/adaptive-forms/assets/title.png)
+![exempel](/help/adaptive-forms/assets/title.png)
 
 ## Användning {#reasons-to-use-title-in-an-adaptive-form}
 
 Det finns flera skäl till att det är bra att använda en titel i ett formulär:
 
-* **Klarhet**: En titel identifierar tydligt formulärets syfte, vilket hjälper användarna att förstå vilken information de behöver ange.
+- **Klarhet**: En titel identifierar tydligt formulärets syfte, vilket hjälper användarna att förstå vilken information de behöver ange.
 
-* **Organisation**: En titel kan hjälpa till att organisera formulären efter ämne eller syfte, vilket gör det enklare för användarna att hitta det formulär de behöver.
+- **Organisation**: En titel kan hjälpa till att organisera formulären efter ämne eller syfte, vilket gör det enklare för användarna att hitta det formulär de behöver.
 
-* **Tillgänglighet**: En titel är ett nyckelelement för användare med tillgänglighetsbehov, eftersom den läses upp högt av skärmläsare, vilket hjälper användarna att förstå formulärets sammanhang.
+- **Tillgänglighet**: En titel är ett nyckelelement för användare med tillgänglighetsbehov, eftersom den läses upp högt av skärmläsare, vilket hjälper användarna att förstå formulärets sammanhang.
 
-* **Varumärke**: En titel kan också användas för att visa ett företags eller en organisations namn, vilket gör det lättare att skapa en känsla av förtroende och kunskap om användaren.
+- **Varumärke**: En titel kan också användas för att visa ett företags eller en organisations namn, vilket gör det lättare att skapa en känsla av förtroende och kunskap om användaren.
 
-* **Navigering**: En titel kan också vara användbar för att navigera i formuläret, särskilt om formuläret är långt eller komplext.
+- **Navigering**: En titel kan också vara användbar för att navigera i formuläret, särskilt om formuläret är långt eller komplext.
 
-* **Sökmotoroptimering (SEO)**: Att ha en rubrik i formuläret är också till hjälp i SEO, eftersom sökmotorer använder titeln för att avgöra hur relevant en webbsida är för en sökfråga.
+- **Sökmotoroptimering (SEO)**: Att ha en rubrik i formuläret är också till hjälp i SEO, eftersom sökmotorer använder titeln för att avgöra hur relevant en webbsida är för en sökfråga.
 
 På det hela taget är titeln på ett formulär en viktig aspekt av användarupplevelsen och bör användas för att skapa en tydlig och koncis etikett för formuläret som hjälper användarna att förstå formulärets sammanhang och syfte.
 
@@ -63,12 +63,12 @@ Du kan enkelt anpassa din titelupplevelse för besökare med dialogrutan Konfigu
 
 I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och välja rubriknivå.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
-* **Typ /Storlek** - Definierar rubriknivån för titeln.
-* **ID** - Med det här alternativet kan du styra komponentens unika identifierare i HTML och i datalagret.
-   * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
-   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
-   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
+- **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+- **Typ /Storlek** - Definierar rubriknivån för titeln.
+- **ID** - Med det här alternativet kan du styra komponentens unika identifierare i HTML och i datalagret.
+   - Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
+   - Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   - Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ## Designdialogruta {#design-dialog}
 
@@ -80,9 +80,9 @@ På fliken Titel kan mallskapare ange standardrubrikelement och tillåtna rubrik
 
 ![Titelflik i designdialogrutan](/help/adaptive-forms/assets/title_heading.png)
 
-* **Tillåtna rubrikelement**: En lista med flera alternativ där mallskaparen kan välja vilka rubrikelement som kan användas som rubrik av formulärförfattaren.
+- **Tillåtna rubrikelement**: En lista med flera alternativ där mallskaparen kan välja vilka rubrikelement som kan användas som rubrik av formulärförfattaren.
 
-* **Standardrubrikelement**: En nedrullningsbar lista som anger standardrubrikelementet för komponenten Title.
+- **Standardrubrikelement**: En nedrullningsbar lista som anger standardrubrikelementet för komponenten Title.
 
 ### Fliken Format {#styles-tab}
 
@@ -90,9 +90,9 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 ![Titelflik i designdialogrutan](/help/adaptive-forms/assets/title_styles.png)
 
-* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Fliken Format {#format-tab}
 
@@ -108,30 +108,9 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 -->
 
+## Relaterade artiklar {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Dragspel](/help/adaptive-forms/components/accordion.md)
->* [Knapp](/help/adaptive-forms/components/button.md)
->* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
->* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
->* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
->* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
->* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
->* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
->* [Sidfot](/help/adaptive-forms/components/footer.md)
->* [Sidhuvud](/help/adaptive-forms/components/header.md)
->* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Bild](/help/adaptive-forms/components/image.md)
->* [Nummerindata](/help/adaptive-forms/components/number-input.md)
->* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
->* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
->* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
->* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
->* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
->* [Textindata](/help/adaptive-forms/components/text-input.md)
->* [Text](/help/adaptive-forms/components/text.md)
->* [guide](/help/adaptive-forms/components/wizard.md)
+{{more-like-this}}
 
 ## Se även {#see-also}
 

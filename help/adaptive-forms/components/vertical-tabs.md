@@ -1,38 +1,40 @@
 ---
-title: Adaptiv Forms Core-komponent - horisontella flikar
-description: Använda eller anpassa den adaptiva, vågräta Forms-flikkomponenten Core.
+title: Adaptiv Forms Core-komponent - lodräta flikar
+description: Använda eller anpassa de adaptiva Forms-flikarna Core Component (Core-komponent).
 role: Architect, Developer, Admin, User
-exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
-source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+hide: true
+hidefromtoc: true
+source-git-commit: ecc6ba79ba5e90bd6e759353d15ca85ce404d769
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '1929'
 ht-degree: 0%
 
 ---
 
-# Vågräta flikar {#horizontal-tabs-adaptive-forms-core-component}
 
-Vågräta flikar i ett adaptivt formulär avser ett designmönster där flera avsnitt i ett formulär grupperas tillsammans och visas som separata flikar, justerade vågrätt. Användaren kan växla mellan flikarna för att komma åt olika avsnitt i formuläret. Varje flik fungerar som en utlösare som visar och döljer det relaterade formulärinnehållet. De vågräta flikarna hjälper dig att ordna långa formulär i hanterbara avsnitt och förbättra användarupplevelsen. Med flikar kan du göra ett formulär mer tillgängligt för användare med funktionshinder, eftersom de kan växla mellan sektioner med hjälp av tangentbordsnavigering.
+# Lodräta tabbar {#vertical-tabs-adaptive-forms-core-component}
 
-Flikarna skapas vanligtvis som en serie länkar eller knappar, där varje länk eller knapp motsvarar ett avsnitt i formuläret. När en användare klickar på en flik uppdateras formulärinnehållet dynamiskt för att visa motsvarande avsnitt.
+Lodräta flikar i ett adaptivt formulär avser ett designmönster där flera avsnitt i ett formulär grupperas tillsammans och visas som separata flikar, justerade lodrätt. Användaren kan växla mellan flikarna för att komma åt olika avsnitt i formuläret. Varje flik fungerar som en utlösare som visar och döljer det relaterade formulärinnehållet. Med hjälp av de lodräta flikarna kan du ordna långa formulär i hanterbara avsnitt och förbättra användarupplevelsen. Med flikar kan du göra ett formulär mer tillgängligt för användare med funktionshinder, eftersom de kan växla mellan sektioner med hjälp av tangentbordsnavigering.
 
-![exempel](/help/adaptive-forms/assets/horizontal-example-new.png)
+När en användare klickar på en flik uppdateras formulärinnehållet dynamiskt för att visa motsvarande avsnitt.
 
-## Användning {#reasons-to-use-horizontal-tabs}
+![exempel](/help/adaptive-forms/assets/horizontal-example.png)
 
-De vanligaste skälen att använda vågräta flikar i en adaptiv form är:
+## Användning {#reasons-to-use-vertical-tabs}
 
-- **Förbättrad användbarhet**: Vågräta flikar gör det enklare för användare att navigera i formuläret, särskilt om formuläret har flera avsnitt eller ett stort antal fält.
+De vanligaste skälen att använda lodräta flikar i en adaptiv form är:
 
-- **Rymdhantering**: Vågräta flikar hjälper till att spara skärmutrymme genom att gruppera relaterade formuläravsnitt i flikar och bara visa ett avsnitt i taget.
+- **Förbättrad användbarhet**: Lodräta flikar gör det enklare för användare att navigera i formuläret, särskilt om formuläret har flera avsnitt eller ett stort antal fält.
+
+- **Rymdhantering**: Lodräta flikar hjälper till att spara skärmutrymme genom att gruppera relaterade formuläravsnitt i flikar och bara visa ett avsnitt i taget.
 
 - **Bättre organisation**: På flikar finns en tydlig och ordnad struktur för ett formulär som gör det lättare för användarna att förstå och fylla i formuläret.
 
-- **Ökat användarengagemang**: Vågräta flikar kan göra ett formulär mer visuellt tilltalande och engagerande för användarna, vilket kan förbättra formulärets slutförandefrekvens.
+- **Ökat användarengagemang**: Lodräta flikar kan göra ett formulär mer visuellt tilltalande och engagerande för användarna, vilket kan förbättra formulärets slutförandefrekvens.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (kärnkomponent) för de adaptiva horisontella Forms-flikarna släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (Core-komponent) för de adaptiva Forms-flikarna vertikalt släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
@@ -42,30 +44,24 @@ Core Component (kärnkomponent) för de adaptiva horisontella Forms-flikarna sl�
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 
-
-<!-- ## Sample Component Output {#sample-component-output}
-
-To experience the Horizontal-tabs  Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_Horizontal-tabs ). -->
-
-
 ## Teknisk information {#technical-details}
 
-Den senaste informationen om de adaptiva Forms Horizontal tabs Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/pageHorizontal tabbar/v1/pageVågräta tabbar). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Den senaste informationen om de adaptiva Forms-flikarna Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/verticaltabs/v1/verticaltabs). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Du kan enkelt anpassa de horisontella flikarna för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera alternativ för vågräta flikar för en smidig användarupplevelse.
+Med dialogrutan Konfigurera kan du enkelt anpassa den vertikala flikfunktionen för besökare. Du kan också enkelt definiera alternativ för lodräta flikar för en smidig användarupplevelse.
 
 ### Fliken Grundläggande {#basic-tab}
 
-![fliken Grundläggande](/help/adaptive-forms/assets/tabs-on-top-basic.png)
+![fliken Grundläggande](/help/adaptive-forms/assets/vertical-tab-basic.png)
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
-
 
 - **Gruppera underordnade komponenters data när formulär skickas (kapsla in data i objekt)** - När alternativet är markerat kapslas data från dess underordnade komponenter in i den överordnade komponentens JSON-objekt. Om alternativet inte är markerat har inskickade JSON-data en platt struktur utan objekt för den överordnade komponenten. Till exempel:
 
@@ -90,38 +86,36 @@ Du kan enkelt anpassa de horisontella flikarna för besökare med dialogrutan Ko
         { "Street": "123 Main Street", "City": "New York", "Zip Code": "12345" }
      ```
 
-- **Layout** - Du kan ha en fast layout (enkel) eller en flexibel layout (responsivt stödraster) för guiden. Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan justera komponenternas placering efter dina behov. Använd till exempel responsivt stödraster för att justera&quot;Förnamn&quot;,&quot;Mittennamn&quot; och&quot;Efternamn&quot; i ett formulär på en enda rad.
-
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
-### Upprepa tabbar överst {#repeat-tabs-on-top}
+### Upprepa lodrät tabb {#repeat-tabs-on-top}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/repeat-tabsontop.png)
+![Upprepa tabb](/help/adaptive-forms/assets/vertical-tab-repeat-vertical-tab.png)
 
-Du kan använda alternativen för upprepning för att duplicera en komponent med vågräta flikar och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med komponenten Vågräta flikar och använder dess inställningar visas följande alternativ:
+Du kan använda alternativen för upprepning för att duplicera en komponent med lodräta flikar och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med komponenten Vertical-tabs och öppnar dess inställningar visas följande alternativ:
 
-- **Gör vågräta flikar repeterbara**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
-- **Minsta antal upprepningar**: Fastställer det minsta antalet gånger som komponenten för vågräta flikar kan upprepas. Värdet noll anger att komponenten Vågräta flikar inte upprepas. Standardvärdet är noll.
-- **Maximalt antal upprepningar**: Anger det maximala antalet gånger som komponenten för vågräta flikar kan upprepas. Som standard är det här värdet obegränsat.
+- **Gör lodräta flikar repeterbara**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
+- **Minsta antal upprepningar**: Fastställer det minsta antalet gånger som komponenten Vertical-tabs kan upprepas. Värdet noll anger att komponenten Vertical-tabs inte upprepas. Standardvärdet är noll.
+- **Maximalt antal upprepningar**: Anger det maximala antalet gånger som komponenten Vertical-tabs kan upprepas. Som standard är det här värdet obegränsat.
 
-Om du effektivt vill hantera upprepningsbara avsnitt på de vågräta flikarna följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
+Om du vill hantera upprepningsbara avsnitt på de lodräta flikarna på ett effektivt sätt följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
 
 ### Fliken Objekt {#items-tab}
 
-![Fliken Objekt](/help/adaptive-forms/assets/items-tabs-on-top.png)
+![Fliken Objekt](/help/adaptive-forms/assets/vertical-tab-items.png)
 
 The **Lägg till** Med knappen kan du markera en komponent som du vill lägga till som en panel i fönstret för komponentval. När du har lagt till komponenten kan du se följande alternativ:
 
 - **Ikon** - Ikonen identifierar panelens komponent i listan. Du kan hålla muspekaren över ikonen för att visa det fullständiga komponentnamnet som ett verktygstips.
 - **Beskrivning** - Den beskrivning som används som text på panelen. Som standard är namnet på komponenten som är markerad för panelen.
-- **Ta bort** - Tryck eller klicka för att ta bort panelen från komponenten Vågräta flikar.
+- **Ta bort** - Tryck eller klicka för att ta bort panelen från komponenten Lodräta flikar.
 - **Ordna om** - Tryck eller klicka och dra för att ordna om panelerna.
 
 ### Fliken Hjälpinnehåll {#help-content}
 
-![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/helpcontent-tabs-on-top.png)
+![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/vertical-tab-help.png)
 
 - **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
 
@@ -131,7 +125,7 @@ The **Lägg till** Med knappen kan du markera en komponent som du vill lägga ti
 
 ### Fliken Tillgänglighet {#accessibility}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/accessibilty-tabs-on-top.png)
+![Fliken Tillgänglighet](/help/adaptive-forms/assets/vertical-tab-accessibility.png)
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
@@ -139,10 +133,10 @@ The **Lägg till** Med knappen kan du markera en komponent som du vill lägga ti
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva vågräta Forms-komponenten kan du ange följande:
+I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva Forms-komponenten med lodräta flikar kan du ange följande:
 
-- De kärnkomponenter som en formulärskapare kan lägga till i de horisontella flikarna i den adaptiva Forms-redigeraren
-- Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Vågräta flikar i den adaptiva Forms-redigeraren.
+- De kärnkomponenter som en formulärskapare kan lägga till på de lodräta flikarna i den adaptiva Forms-redigeraren
+- Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Vertical-tabs i den adaptiva Forms-redigeraren.
 
 Detta gör det enklare och effektivare att skapa och anpassa formulär.
 
@@ -150,15 +144,15 @@ Detta gör det enklare och effektivare att skapa och anpassa formulär.
 
 ![Fliken Tillåtna komponenter](/help/adaptive-forms/assets/tabs-allowed-component.png)
 
-The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i komponenten Vågräta flikar i den adaptiva Forms-redigeraren.
+The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i komponenten Lodrät tabb i den adaptiva Forms-redigeraren.
 
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för de adaptiva horisontella Forms-flikarna stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
-
 ![Fliken Format](/help/adaptive-forms/assets/tabs-styles-tab.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten för de adaptiva horisontella Forms-flikarna.
+Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core Component (Core-komponenten) för de adaptiva, lodräta Forms-flikarna har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten på de adaptiva Forms-lodräta flikarna.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

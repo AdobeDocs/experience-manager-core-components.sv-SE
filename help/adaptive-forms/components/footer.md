@@ -3,10 +3,10 @@ title: Adaptiv Forms Core-komponent - sidfot
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Footer.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
+source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
 workflow-type: tm+mt
-source-wordcount: '807'
-ht-degree: 0%
+source-wordcount: '775'
+ht-degree: 1%
 
 ---
 
@@ -16,21 +16,21 @@ En sidfotskomponent i ett adaptivt formulär är ett område som vanligtvis visa
 
 **Exempel**
 
-![](/help/adaptive-forms/assets/footer.png)
+![exempel](/help/adaptive-forms/assets/footer.png)
 
 ## Användning {#reasons-to-use-footer}
 
 Det finns flera skäl till att det är bra att ta med en sidfotskomponent i ett formulär, bland annat:
 
-* **Juridiska krav**: Vissa formulär kan behöva innehålla en ansvarsfriskrivning, ett copyrightmeddelande eller annan juridisk information. En sidfot är ett bra sätt att inkludera den här informationen.
+- **Juridiska krav**: Vissa formulär kan behöva innehålla en ansvarsfriskrivning, ett copyrightmeddelande eller annan juridisk information. En sidfot är ett bra sätt att inkludera den här informationen.
 
-* **Navigering**: En sidfot kan innehålla länkar till andra viktiga sidor på webbplatsen, till exempel en integritetspolicy, användarvillkor eller kontaktsida.
+- **Navigering**: En sidfot kan innehålla länkar till andra viktiga sidor på webbplatsen, till exempel en integritetspolicy, användarvillkor eller kontaktsida.
 
-* **Varumärke**: En sidfot kan användas för att inkludera en logotyp eller andra varumärkeselement, vilket kan förstärka organisationens eller webbplatsens identitet.
+- **Varumärke**: En sidfot kan användas för att inkludera en logotyp eller andra varumärkeselement, vilket kan förstärka organisationens eller webbplatsens identitet.
 
-* **Konsekvens**: En sidfot ger en konsekvent design och layout av formuläret, vilket gör det mer intuitivt och enkelt för användarna att navigera.
+- **Konsekvens**: En sidfot ger en konsekvent design och layout av formuläret, vilket gör det mer intuitivt och enkelt för användarna att navigera.
 
-* **Ytterligare kontext**: En sidfot kan ge formuläret ytterligare kontext, t.ex. en text som beskriver formuläret eller en länk till relaterade resurser, vilket gör formuläret mer informativt och användarvänligt.
+- **Ytterligare kontext**: En sidfot kan ge formuläret ytterligare kontext, t.ex. en text som beskriver formuläret eller en länk till relaterade resurser, vilket gör formuläret mer informativt och användarvänligt.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -57,53 +57,53 @@ Du kan enkelt anpassa sidfotsupplevelsen för besökare med dialogrutan Konfigur
 
 ![Fliken Egenskaper](/help/adaptive-forms/assets/footer_propertiestab.png)
 
-* **Dialogrutan Redigera**
+- **Dialogrutan Redigera**
 I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som gör att användaren kan skapa text för sidfoten.
 
-* **Fet** - Det här alternativet använder fet stil på markerad text eller fetstilt formatera text som skrivs efter markören. `Ctrl+B` är ett kortkommando.
+- **Fet** - Det här alternativet använder fet stil på markerad text eller fetstilt formatera text som skrivs efter markören. `Ctrl+B` är ett kortkommando.
 
-* **Kursiv** - Med det här alternativet används kursiv formatering på markerad text eller kursiv stil som anges efter markören. `Ctrl+I` är ett kortkommando.
+- **Kursiv** - Med det här alternativet används kursiv formatering på markerad text eller kursiv stil som anges efter markören. `Ctrl+I` är ett kortkommando.
 
 ![Punktalternativ](/help/adaptive-forms/assets/footer_bullet.png)
 
 
-* **Punkt**
+- **Punkt**
 
-   * **Punktlikon** - Den markerade texten formateras som en punktlista eller börjar infogningen av en punktlista efter markören. Om du vill avsluta en punktlista trycker eller klickar du på knappen Bullet en gång till eller anger två vagnreturer.
+   - **Punktlikon** - Den markerade texten formateras som en punktlista eller börjar infogningen av en punktlista efter markören. Om du vill avsluta en punktlista trycker eller klickar du på knappen Bullet en gång till eller anger två vagnreturer.
 
-   * **Ikon för numrerad lista** - Den markerade texten formateras som en numrerad lista eller börjar infogningen av en numrerad lista efter markören. Om du vill avsluta en numrerad lista trycker eller klickar du på knappen Numrerad igen eller anger två radmatningstecken.
+   - **Ikon för numrerad lista** - Den markerade texten formateras som en numrerad lista eller börjar infogningen av en numrerad lista efter markören. Om du vill avsluta en numrerad lista trycker eller klickar du på knappen Numrerad igen eller anger två radmatningstecken.
 
-   * **Ikon för Minska indrag** - Den minskar indragsnivån för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
+   - **Ikon för Minska indrag** - Den minskar indragsnivån för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
 
-   * **Ikon för indrag** - Ökar indraget för den markerade texten eller texten som anges efter markören.
+   - **Ikon för indrag** - Ökar indraget för den markerade texten eller texten som anges efter markören.
 
 ![Hyperlänksalternativ](/help/adaptive-forms/assets/footer_link.png)
 
-* **Hyperlänk**
+- **Hyperlänk**
 
-   * **Bana** - Ange sökvägen
+   - **Bana** - Ange sökvägen
       1. Använd dialogrutan Öppna markering för att välja en bana i AEM.
       1. Om länken inte finns i AEM anger du den absoluta URL:en.
       1. Icke-absoluta sökvägar tolkas som relativa AEM.
 
-   * **Alternativ text** - Ange alternativ beskrivande text för länken.
+   - **Alternativ text** - Ange alternativ beskrivande text för länken.
 
-   * **Mål** - Välj länkbeteende
-      * Mål
-      * Samma flik
-      * Ny flik
-      * Överordnad ram
-      * Övre bildruta
+   - **Mål** - Välj länkbeteende
+      - Mål
+      - Samma flik
+      - Ny flik
+      - Överordnad ram
+      - Övre bildruta
 
-   * **Ikonen Bryt länk** - Det här alternativet tar bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt om länken redan är markerad.
+   - **Ikonen Bryt länk** - Det här alternativet tar bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt om länken redan är markerad.
 
-   * **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering på den markerade texten. Det är också praktiskt att formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
+   - **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering på den markerade texten. Det är också praktiskt att formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
 
-* **ID**: Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
+- **ID**: Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
 
-   * Om inget anges skapas ett unikt ID automatiskt* som du hittar genom att granska den resulterande sidan.
-   * Om ett ID anges är det författarens ansvar att se till att det är unikt.
-   * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
+   - Om inget anges skapas ett unikt ID automatiskt* som du hittar genom att granska den resulterande sidan.
+   - Om ett ID anges är det författarens ansvar att se till att det är unikt.
+   - Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 <!--
 
@@ -113,31 +113,9 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
 
 -->
 
+## Relaterade artiklar {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Dragspel](/help/adaptive-forms/components/accordion.md)
->* [Knapp](/help/adaptive-forms/components/button.md)
->* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
->* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
->* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
->* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
->* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
->* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
->* [Sidhuvud](/help/adaptive-forms/components/header.md)
->* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Bild](/help/adaptive-forms/components/image.md)
->* [Nummerindata](/help/adaptive-forms/components/number-input.md)
->* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
->* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
->* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
->* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
->* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
->* [Textindata](/help/adaptive-forms/components/text-input.md)
->* [Text](/help/adaptive-forms/components/text.md)
->* [Titel](/help/adaptive-forms/components/title.md)
->* [guide](/help/adaptive-forms/components/wizard.md)
-
+{{more-like-this}}
 
 ## Se även {#see-also}
 

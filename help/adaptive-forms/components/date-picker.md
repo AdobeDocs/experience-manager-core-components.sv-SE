@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - datumväljare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms Date-väljaren.
 role: Architect, Developer, Admin, User
 exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
-source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1906'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,17 @@ En datumväljarkomponent i ett adaptivt formulär är ett element i användargr�
 
 Det finns många skäl till att det är bra att ta med en datumväljare i en anpassad form, bland annat:
 
-* **Bekvämlighet**: Med en datumväljarkomponent kan användare enkelt välja ett datum i en kalender utan att behöva ange datumet manuellt i ett textfält. Detta kan spara tid och minska antalet fel.
+- **Bekvämlighet**: Med en datumväljarkomponent kan användare enkelt välja ett datum i en kalender utan att behöva ange datumet manuellt i ett textfält. Detta kan spara tid och minska antalet fel.
 
-* **Användarupplevelse**: Datumväljarkomponenten kan användas för att göra formuläret mer användarvänligt genom att tillhandahålla ett tydligt och intuitivt sätt för användarna att välja datum.
+- **Användarupplevelse**: Datumväljarkomponenten kan användas för att göra formuläret mer användarvänligt genom att tillhandahålla ett tydligt och intuitivt sätt för användarna att välja datum.
 
-* **Dataanalys**: Datumväljarkomponenten kan användas för att samla in data från olika källor och analysera den, eller för att använda den som indata för vidare bearbetning.
+- **Dataanalys**: Datumväljarkomponenten kan användas för att samla in data från olika källor och analysera den, eller för att använda den som indata för vidare bearbetning.
 
-* **Händelsehantering**: Datumväljarkomponenten kan användas på webbplatser för händelsehantering för att välja händelsedatumet.
+- **Händelsehantering**: Datumväljarkomponenten kan användas på webbplatser för händelsehantering för att välja händelsedatumet.
 
-* **Bokning och bokning**: Datumväljarkomponenten kan användas på boknings- och reservationswebbplatser för att välja datum för in- och utcheckning.
+- **Bokning och bokning**: Datumväljarkomponenten kan användas på boknings- och reservationswebbplatser för att välja datum för in- och utcheckning.
 
-* **Datumformat**: Datumväljarkomponenten kan användas för att korrigera det format i vilket datumet visas och anges. Se till att datumformatet är enhetligt i hela formuläret för att säkerställa en konsekvent användarupplevelse.
+- **Datumformat**: Datumväljarkomponenten kan användas för att korrigera det format i vilket datumet visas och anges. Se till att datumformatet är enhetligt i hela formuläret för att säkerställa en konsekvent användarupplevelse.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -61,48 +61,50 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 
 ![fliken Grundläggande](/help/adaptive-forms/assets/datepicker_basictab.png)
 
-* **Namn** - Namnet identifierar komponenten i regelredigeraren unikt. Specialtecken och mellanslag är inte tillåtna i namnsträngarna.
+- **Namn** - Namnet identifierar komponenten i regelredigeraren unikt. Specialtecken och mellanslag är inte tillåtna i namnsträngarna.
 
-* **Titel** - Titel är en sträng som visas högst upp i en komponent i ett adaptivt format. En unik titel identifierar komponenten i trädstrukturen i ett adaptivt formulär. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+- **Titel** - Titel är en sträng som visas högst upp i en komponent i ett adaptivt format. En unik titel identifierar komponenten i trädstrukturen i ett adaptivt formulär. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
-* **Dölj titel** - Välj det här alternativet om du vill dölja rubriken för komponenttypen i ett adaptivt formulär.
+- **Dölj titel** - Välj det här alternativet om du vill dölja rubriken för komponenttypen i ett adaptivt formulär.
 
-* **Platshållartext** - Platshållartext i en formulärkomponent refererar till en kort etikett eller en fråga som visas i ett inmatningsfält som ett tips till användaren om vilken typ av information som förväntas anges i det fältet. Platshållartext försvinner när användaren börjar skriva i fältet och visas igen om fältet lämnas tomt. Den ger användaren en visuell referens, men fungerar inte som en permanent etikett eller ett permanent värde för fältet.
+- **Platshållartext** - Platshållartext i en formulärkomponent refererar till en kort etikett eller en fråga som visas i ett inmatningsfält som ett tips till användaren om vilken typ av information som förväntas anges i det fältet. Platshållartext försvinner när användaren börjar skriva i fältet och visas igen om fältet lämnas tomt. Den ger användaren en visuell referens, men fungerar inte som en permanent etikett eller ett permanent värde för fältet.
 
-* **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
-* **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
-* **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
-* **Standarddatum** - Med det här alternativet kan du lägga till ett datum i formulärfältet. Det angivna datumet visas som standard i stället för komponenten. Om inget datum anges av användaren skickas det här värdet när formuläret skickas. Om **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standarddatumet på skärmen och skickas när formuläret skickas.
+- **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
+
+- **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
+- **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+- **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+- **Standarddatum** - Med det här alternativet kan du lägga till ett datum i formulärfältet. Det angivna datumet visas som standard i stället för komponenten. Om inget datum anges av användaren skickas det här värdet när formuläret skickas. Om **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standarddatumet på skärmen och skickas när formuläret skickas.
 
 
 ### Fliken Validering {#validation-tab}
 
 ![Fliken Validering](/help/adaptive-forms/assets/datepicker_validation.png)
 
-* **Obligatoriskt** - Välj det här alternativet om du vill visa komponenten i ett adaptivt formulär. Du kan inte välja **Dölj komponent** eller **Inaktivera komponent** i **Grundläggande** när det här alternativet är markerat.
+- **Obligatoriskt** - Välj det här alternativet om du vill visa komponenten i ett adaptivt formulär. När du har valt alternativet måste du göra ett val innan du kan fortsätta med en formuläröverföring. Du kan inte välja **Dölj komponent** eller **Inaktivera komponent** i **Grundläggande** när det här alternativet är markerat.
 
-* **Felmeddelande** - Med det här alternativet kan du ange ett meddelande som visas om **Obligatoriskt** kryssrutan är markerad och formulärfältet är tomt.
+- **Felmeddelande** - Med det här alternativet kan du ange ett meddelande som visas om **Obligatoriskt** kryssrutan är markerad och formulärfältet är tomt.
 
-* **Skriptverifieringsmeddelande** - Med det här alternativet kan du ange ett meddelande som ska visas om skriptvalideringen misslyckas.
+- **Skriptverifieringsmeddelande** - Med det här alternativet kan du ange ett meddelande som ska visas om skriptvalideringen misslyckas.
 
-* **Minsta datum** - Med det här alternativet kan du ange det minsta obligatoriska datumet. Om du anger ett datum som är tidigare än det som anges i Minimidatum visas ett felmeddelande på skärmen. The **Minsta felmeddelande** kan du lägga till ett eget felmeddelande.
+- **Minsta datum** - Med det här alternativet kan du ange det minsta obligatoriska datumet. Om du anger ett datum som är tidigare än det som anges i Minimidatum visas ett felmeddelande på skärmen. The **Minsta felmeddelande** kan du lägga till ett eget felmeddelande.
 
-* **Minsta felmeddelande** - **Minsta felmeddelande** kan du lägga till ett eget felmeddelande som ska visas om du anger ett datum som är tidigare än det som anges i **Minsta datum** alternativ.
+- **Minsta felmeddelande** - **Minsta felmeddelande** kan du lägga till ett eget felmeddelande som ska visas om du anger ett datum som är tidigare än det som anges i **Minsta datum** alternativ.
 
-* **Högsta datum** - Med det här alternativet kan du ange maximalt obligatoriskt datum. Om du anger ett datum som är senare än det som anges i Maximalt datum visas ett felmeddelande på skärmen. The **Högsta felmeddelande** kan du lägga till ett eget felmeddelande.
+- **Högsta datum** - Med det här alternativet kan du ange maximalt obligatoriskt datum. Om du anger ett datum som är senare än det som anges i Maximalt datum visas ett felmeddelande på skärmen. The **Högsta felmeddelande** kan du lägga till ett eget felmeddelande.
 
-* **Högsta felmeddelande** - **Högsta felmeddelande** kan du lägga till ett eget felmeddelande som ska visas om du anger ett datum som är senare än det som anges i **Högsta datum** alternativ.
+- **Högsta felmeddelande** - **Högsta felmeddelande** kan du lägga till ett eget felmeddelande som ska visas om du anger ett datum som är senare än det som anges i **Högsta datum** alternativ.
 
 
 ### Fliken Hjälpinnehåll {#help-content-tab}
 
 ![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/datepicker_helptab.png)
 
-* **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
+- **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
 
-* **Visa alltid kort beskrivning**- Aktivera alternativet att visa den korta beskrivningen under komponenten.
+- **Visa alltid kort beskrivning**- Aktivera alternativet att visa den korta beskrivningen under komponenten.
 
-* **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa sig fylla i ett formulärfält på rätt sätt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
+- **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa sig fylla i ett formulärfält på rätt sätt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
 
 
 ### Fliken Tillgänglighet {#accessibility-tab}
@@ -115,13 +117,13 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_formattab.png)
 
-* **Visningsformat** - Det representerar det datumformat som visas för användaren. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
+- **Visningsformat** - Det representerar det datumformat som visas för användaren. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
-* **Redigera format** - Det representerar ett datumformat där användaren kan redigera datumet. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
+- **Redigera format** - Det representerar ett datumformat där användaren kan redigera datumet. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
-* **Visningsformat** - Det representerar det datumformat som visas för användaren. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
+- **Visningsformat** - Det representerar det datumformat som visas för användaren. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
-* **Redigera format** - Det representerar ett datumformat där användaren redigerar datumet. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
+- **Redigera format** - Det representerar ett datumformat där användaren redigerar datumet. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
 ## Designdialogruta {#design-dialog}
 
@@ -133,9 +135,23 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
-* **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
 
-* **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+
+### Anpassade egenskaper
+
+![Dialogrutan Anpassade egenskaper](/help/adaptive-forms/assets/datepicker_customproperties.png)
+
+Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
+
+- **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
+
+   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på **Lägg till** för varje anpassad egenskapsgrupp.
+
+   - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+   - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
 ### Fliken Format {#formats-tab}
 
@@ -151,31 +167,12 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 -->
 
+## Relaterade artiklar {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Dragspel](/help/adaptive-forms/components/accordion.md)
->* [Knapp](/help/adaptive-forms/components/button.md)
->* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
->* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
->* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
->* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
->* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
->* [Sidfot](/help/adaptive-forms/components/footer.md)
->* [Sidhuvud](/help/adaptive-forms/components/header.md)
->* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Bild](/help/adaptive-forms/components/image.md)
->* [Nummerindata](/help/adaptive-forms/components/number-input.md)
->* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
->* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
->* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
->* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
->* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
->* [Textindata](/help/adaptive-forms/components/text-input.md)
->* [Text](/help/adaptive-forms/components/text.md)
->* [Titel](/help/adaptive-forms/components/title.md)
->* [guide](/help/adaptive-forms/components/wizard.md)
+{{more-like-this}}
 
 ## Se även {#see-also}
 
 {{see-also}}
+
+

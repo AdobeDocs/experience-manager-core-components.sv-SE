@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: 0026734a2e43c51c7f5af2b37492d61e8f779ac7
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
 workflow-type: tm+mt
-source-wordcount: '1866'
+source-wordcount: '2048'
 ht-degree: 0%
 
 ---
@@ -25,25 +25,25 @@ Du kan använda huvudkomponenten för guidelayouten i ett adaptivt formulär fö
 
 **Exempel**
 
-![](/help/adaptive-forms/assets/wizard.png)
+![exempel](/help/adaptive-forms/assets/wizard.png)
 
 ## Användning {#reasons-to-use-wizard-in-an-adaptive-form}
 
 Det finns flera skäl till att det kan vara bra att använda en guidelayout i anpassad form:
 
-* **Enkelt**: Att dela upp ett formulär i flera steg kan göra det lättare för användarna att förstå och slutföra, eftersom de kan fokusera på en uppsättning fält i taget.
+- **Enkelt**: Att dela upp ett formulär i flera steg kan göra det lättare för användarna att förstå och slutföra, eftersom de kan fokusera på en uppsättning fält i taget.
 
-* **Organisation**: En guidelayout kan hjälpa dig att ordna formulär efter ämne eller syfte, och den kan också gruppera relaterade fält tillsammans, vilket kan göra ifyllningsprocessen mer logisk och effektiv.
+- **Organisation**: En guidelayout kan hjälpa dig att ordna formulär efter ämne eller syfte, och den kan också gruppera relaterade fält tillsammans, vilket kan göra ifyllningsprocessen mer logisk och effektiv.
 
-* **Validering**: En guidelayout möjliggör stegvis validering, som kan hjälpa användare att identifiera och korrigera fel medan de arbetar, i stället för att vänta tills formuläret är slut.
+- **Validering**: En guidelayout möjliggör stegvis validering, som kan hjälpa användare att identifiera och korrigera fel medan de arbetar, i stället för att vänta tills formuläret är slut.
 
-* **Förloppsindikator**: En guidelayout kan visa formulärets förlopp, vilket kan hjälpa användaren förstå hur mycket av formuläret som återstår att fylla i.
+- **Förloppsindikator**: En guidelayout kan visa formulärets förlopp, vilket kan hjälpa användaren förstå hur mycket av formuläret som återstår att fylla i.
 
-* **Långa formulär**: Om formuläret innehåller många fält kan det vara överväldigande för användaren att se alla samtidigt, så att det blir mindre skrämmande om de delas upp i mindre, mer hanterbara segment.
+- **Långa formulär**: Om formuläret innehåller många fält kan det vara överväldigande för användaren att se alla samtidigt, så att det blir mindre skrämmande om de delas upp i mindre, mer hanterbara segment.
 
-* **Undvika övergivna**: En guidelayout kan också bidra till att minska antalet avhopp från formulär, eftersom användarna lättare kan fylla i ett formulär om de kan se förloppet och förstå hur mycket som återstår att göra.
+- **Undvika övergivna**: En guidelayout kan också bidra till att minska antalet avhopp från formulär, eftersom användarna lättare kan fylla i ett formulär om de kan se förloppet och förstå hur mycket som återstår att göra.
 
-* **Mobil upplevelse**: En guidelayout kan också vara bra för formulär som öppnas på mobila enheter, eftersom det gör det möjligt att läsa in mindre sidor snabbare och enklare att navigera i.
+- **Mobil upplevelse**: En guidelayout kan också vara bra för formulär som öppnas på mobila enheter, eftersom det gör det möjligt att läsa in mindre sidor snabbare och enklare att navigera i.
 
 Generellt sett kan en guidelayout göra det enklare och effektivare att fylla i formulär, men det är viktigt att tänka på hur komplext formuläret är och användarens behov innan du bestämmer dig för att använda den här typen av layout.
 
@@ -75,21 +75,21 @@ Du kan enkelt anpassa guideupplevelsen för besökare med dialogrutan Konfigurer
 
 ![fliken Grundläggande](/help/adaptive-forms/assets/wizard-basic.png)
 
-* **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
+- **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
-* **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten.
+- **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten.
 
-* **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
+- **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
-* **Figursätta data i ett objekt** - Välj &quot;Radbryt data i ett objekt&quot; om du vill placera fältdata från guiden i ett JSON-objekt. Om du inte väljer det här alternativet har JSON-objektet för att skicka data en platt struktur för guidens fält.
+- **Figursätta data i ett objekt** - Välj &quot;Radbryt data i ett objekt&quot; om du vill placera fältdata från guiden i ett JSON-objekt. Om du inte väljer det här alternativet har JSON-objektet för att skicka data en platt struktur för guidens fält.
 
-* **Layout** - Du kan ha en fast layout (enkel) eller en flexibel layout (responsivt stödraster) för guiden. Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan justera komponenternas placering efter dina behov. Använd till exempel responsivt stödraster för att justera&quot;Förnamn&quot;,&quot;Mittennamn&quot; och&quot;Efternamn&quot; i ett formulär på en enda rad.
+- **Layout** - Du kan ha en fast layout (enkel) eller en flexibel layout (responsivt stödraster) för guiden. Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan justera komponenternas placering efter dina behov. Använd till exempel responsivt stödraster för att justera&quot;Förnamn&quot;,&quot;Mittennamn&quot; och&quot;Efternamn&quot; i ett formulär på en enda rad.
 
-* **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+- **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 
-* **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
+- **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 
-* **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+- **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
 ### Fliken Repeat Wizard {#repeat-wizard-tab}
 
@@ -97,84 +97,80 @@ Du kan enkelt anpassa guideupplevelsen för besökare med dialogrutan Konfigurer
 
 Du kan använda alternativen för upprepning för att duplicera guiden och dess underordnade komponenter, definiera ett minsta och högsta antal upprepningar och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med Wizard-komponenten och använder dess inställningar visas följande alternativ:
 
-* **Gör guiden repeterbar**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
-* **Minsta antal upprepningar**: Anger det minsta antal gånger som guidepanelen kan upprepas. Värdet noll anger att guidepanelen inte upprepas. Standardvärdet är noll.
-* **Maximalt antal upprepningar**: Anger maximalt antal gånger som guidepanelen kan upprepas. Som standard är det här värdet obegränsat.
+- **Gör guiden repeterbar**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
+- **Minsta antal upprepningar**: Anger det minsta antal gånger som guidepanelen kan upprepas. Värdet noll anger att guidepanelen inte upprepas. Standardvärdet är noll.
+- **Maximalt antal upprepningar**: Anger maximalt antal gånger som guidepanelen kan upprepas. Som standard är det här värdet obegränsat.
 
 Om du vill hantera repeterbara avsnitt i guiden på ett effektivt sätt följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
 
+### Fliken Objekt {#items-tab}
+
+![Fliken Objekt](/help/adaptive-forms/assets/wizard_helptab.png)
+
+Med det här alternativet kan du lägga till adaptiva formulärkomponenter genom att klicka på knappen Lägg till, som visas som standard när guiden läggs till i redigeringsläge.
+
 ### Fliken Hjälp {#help-tab}
 
-![Fliken Hjälp](/help/adaptive-forms/assets/wizard-helpcontent.png)
+![Fliken Hjälp](/help/adaptive-forms/assets/wizard_helptab.png)
 
-* **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
+- **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
 
-* **Visa alltid kort beskrivning** - Aktivera alternativet att visa den korta beskrivningen under komponenten.
+- **Visa alltid kort beskrivning** - Aktivera alternativet att visa den korta beskrivningen under komponenten.
 
-* **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa sig fylla i ett formulärfält på rätt sätt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
+- **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa sig fylla i ett formulärfält på rätt sätt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
 
 
 ### Fliken Tillgänglighet {#accessibility}
 
-![Fliken Hjälpmedel](/help/adaptive-forms/assets/wizard-accessibility.png)
+![Fliken Hjälpmedel](/help/adaptive-forms/assets/wizard_accessibiltytab.png)
 
-* **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+- **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
-* **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
+- **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 
 ## Designdialogruta {#design-dialog}
 
 I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva Forms-guidekomponenten kan du ange följande:
 
-* Huvudkomponenterna som en formulärskapare kan lägga till i guiden i Adaptive Forms Editor
-* Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Wizard i den adaptiva Forms-redigeraren.
+- Huvudkomponenterna som en formulärskapare kan lägga till i guiden i Adaptive Forms Editor
+- Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Wizard i den adaptiva Forms-redigeraren.
 
 Detta gör det enklare och effektivare att skapa och anpassa formulär.
 
 ### Fliken Tillåtna komponenter {#allowed-components-tab}
 
+![Fliken Tillåtna komponenter](/help/adaptive-forms/assets/tabs-allowed-component.png)
+
 The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt i panelerna i guidekomponenten i den adaptiva Forms-redigeraren.
 
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten i den adaptiva Forms-guiden stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för den adaptiva Forms-guiden stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-**CSS-standardklasser**: Du kan ange en standard-CSS-klass för Wizard-komponenten.
+![Fliken Format](/help/adaptive-forms/assets/tabs-styles-tab.png)
 
-**Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms-guiden Core Component.
 
-<!--
+- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
-## Related article {#related-article}
+### Fliken Anpassade egenskaper
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+![Fliken Anpassade egenskaper](/help/adaptive-forms/assets/tabs-custom-properties.png)
 
--->
+Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
 
->[!MORELIKETHIS]
->
->* [Dragspel](/help/adaptive-forms/components/accordion.md)
->* [Knapp](/help/adaptive-forms/components/button.md)
->* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
->* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
->* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
->* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
->* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
->* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
->* [Sidfot](/help/adaptive-forms/components/footer.md)
->* [Sidhuvud](/help/adaptive-forms/components/header.md)
->* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Bild](/help/adaptive-forms/components/image.md)
->* [Nummerindata](/help/adaptive-forms/components/number-input.md)
->* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
->* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
->* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
->* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
->* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
->* [Textindata](/help/adaptive-forms/components/text-input.md)
->* [Text](/help/adaptive-forms/components/text.md)
->* [Titel](/help/adaptive-forms/components/title.md)
+- **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
+
+   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på **Lägg till** för varje anpassad egenskapsgrupp.
+
+   - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+   - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+## Relaterade artiklar {#related-articles}
+
+{{more-like-this}}
 
 ## Se även {#see-also}
 

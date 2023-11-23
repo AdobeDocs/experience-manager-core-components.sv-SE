@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - panelbehållare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms-panelbehållaren.
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
-source-git-commit: 37ac7d3a9ae8c88d4c9be8129cfbd1eb4a7cccd1
+source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '2036'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Den kan också användas för att ange olika regelbaserade åtgärder som att sk
 
 **Exempel**
 
-![](/help/adaptive-forms/assets/panel-container.png)
+![exempel](/help/adaptive-forms/assets/panel-container.png)
 
 ## Användning {#reasons-to-use-panel-container}
 
@@ -91,8 +91,6 @@ Du kan enkelt anpassa panelbehållarupplevelsen för besökare med dialogrutan K
         { "Street": "123 Main Street", "City": "New York", "Zip Code": "12345" }
      ```
 
-- **Layout** - Du kan ha en fast layout (enkel) eller en flexibel layout (responsivt stödraster) för guiden. Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan justera komponenternas placering efter dina behov. Använd till exempel responsivt stödraster för att justera&quot;Förnamn&quot;,&quot;Mittennamn&quot; och&quot;Efternamn&quot; i ett formulär på en enda rad.
-
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
@@ -129,50 +127,76 @@ Om du vill hantera upprepningsbara avsnitt i panelbehållaren på ett effektivt 
 
 - **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
+## Designdialogruta {#design-dialog}
+
+Designdialogrutan används för att definiera och hantera CSS-format för komponenten Formulärbehållare.
+
+### Fliken Tillåtna komponenter {#allowed-components-tab}
+
+![Tillåten komponentflik i designdialogrutan](/help/adaptive-forms/assets/panel-container-allowed-component.png)
+
+The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i komponenten i den adaptiva Forms-redigeraren.
+
+### Fliken Standardkomponenter {#default-components-tab}
+
+![Standardkomponentflik i designdialogrutan](/help/adaptive-forms/assets/panel-container-default-component.png)
+
+The **Standardkomponenter** kan mallredigeraren ange vilka komponenter som är synliga som standard som objekt i formulärbehållarkomponenten i den adaptiva Forms-redigeraren.
+
+### Fliken Responsiva inställningar {#responsive-tab}
+
+![Fliken Responsiva inställningar i designdialogrutan](/help/adaptive-forms/assets/panel-container-responsive-style-tab.png)
+
+The **Responsiva inställningar** kan mallredigeraren ange antalet kolumner i rutnätet i formulärbehållarkomponenten i den adaptiva Forms-redigeraren.
+
+### Fliken Behållarinställningar
+
+![Fliken Behållarinställningar](/help/adaptive-forms/assets/panel-container-container-settings.png)
+
+- **Layout** - Du kan ha en fast layout (enkel) eller en flexibel layout (responsivt stödraster) för guiden. Med den enkla layouten är allt fast på plats, medan det responsiva rutnätet gör att du kan justera komponenternas placering efter dina behov. Använd till exempel responsivt stödraster för att justera&quot;Förnamn&quot;,&quot;Mittennamn&quot; och&quot;Efternamn&quot; i ett formulär på en enda rad.
+
+- **Inaktivera layout**: Välj det här alternativet om du vill inaktivera layoutval i redigeringsdialogrutan för en komponent.
+
+- **Aktivera bakgrundsbild**: Med det här alternativet kan användaren konfigurera panelinställningarna så att de innehåller en visuell bakgrund som förbättrar den visuella effekten.
+
+- **Aktivera bakgrundsfärg**: Med det här alternativet kan du ange eller ändra panelens bakgrundsfärg. Den här funktionen används ofta i gränssnittsdesign för att anpassa utseendet på paneler i ett större gränssnitt. När du väljer **Aktivera bakgrundsfärg** alternativ, **Endast färgrutor** visas. The **Endast färgrutor** kan du ange eller välja färger för bakgrunden, texten eller andra visuella element på panelen med **Lägg till** knapp
+
+### Fliken Format {#styles-tab}
+
+Kärnkomponenten för adaptiv bifogad Forms-fil stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+
+![Designdialogruta](/help/adaptive-forms/assets/panel-container-styles-tab.png)
+
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
+
+- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+
+### Fliken Anpassade egenskaper
+
+![Dialogrutan Anpassade egenskaper](/help/adaptive-forms/assets/panel-container-custom-properties.png)
+
+Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
+
+- **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
+
+   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på **Lägg till** för varje anpassad egenskapsgrupp.
+
+   - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+   - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+<!--
+
+## Related article {#related-article}
+
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+-->
+
 ## Relaterade artiklar {#related-articles}
 
-- [Dragspel](/help/adaptive-forms/components/accordion.md)
-- [Knapp](/help/adaptive-forms/components/button.md)
-- [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
-- [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
-- [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
-- [E-postinmatning](/help/adaptive-forms/components/email-input.md)
-- [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
-- [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
-- [Sidfot](/help/adaptive-forms/components/footer.md)
-- [Sidhuvud](/help/adaptive-forms/components/header.md)
-- [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
-- [Bild](/help/adaptive-forms/components/image.md)
-- [Nummerindata](/help/adaptive-forms/components/number-input.md)
-- [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
-- [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
-- [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
-- [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
-- [Textindata](/help/adaptive-forms/components/text-input.md)
-- [Text](/help/adaptive-forms/components/text.md)
-- [Titel](/help/adaptive-forms/components/title.md)
-- [guide](/help/adaptive-forms/components/wizard.md)
-
+{{more-like-this}}
 
 ## Se även {#see-also}
 
-- [Skapa ett AEM anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
-- [Lägg till ett AEM anpassat formulär på AEM Sites-sidan](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html)
-- [Använda teman i ett AEM anpassat formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html)
-- [Lägga till komponenter i ett AEM adaptivt formulär](/help/adaptive-forms/introduction.md#adaptive-forms-core-components-components)
-- [Använd reCAPTCHA i en AEM adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms.html)
-- [Generera PDF-version (DoR) av ett AEM adaptivt formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/generate-document-of-record-core-components.html)
-- [Översätt en AEM adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-aem-translation-workflow-to-localize-adaptive-forms-core-components.html)
-- [Aktivera Adobe Analytics för ett adaptivt formulär för att spåra formuläranvändning](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/enable-adobe-analytics-adaptive-form-using-experience-cloud-setup-automation.html)
-- [Ansluta anpassat formulär till Microsoft SharePoint](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#create-sharepoint-configuration)
-- [Ansluta anpassat formulär till Microsoft Power Automate](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#microsoft-power-automate)
-- [Ansluta anpassat formulär till Microsoft OneDrive](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#submit-to-onedrive)
-- [Ansluta anpassat formulär till Microsoft Azure Blob Storage](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#submit-to-azure-blob-storage)
-- [Ansluta anpassat formulär till Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/oauth2-client-credentials-flow-for-server-to-server-integration.html)
-- [Använda Adobe Sign i en AEM anpassad form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html)
-- [Lägga till en ny språkinställning för ett adaptivt formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components.html)
-- [Skicka adaptiva formulärdata till en databas](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/data-integration.html)
-- [Skicka data för anpassat formulär till en REST-slutpunkt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#submit-to-rest-endpoint)
-- [Skicka anpassade formulärdata till AEM arbetsflöde](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components.html#invoke-an-aem-workflow)
-- [Använd Forms Portal för att lista AEM Adaptive Forms på en AEM webbplats](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-forms-portal.html)
-
+{{see-also}}

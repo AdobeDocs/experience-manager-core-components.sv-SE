@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 63f9659a547729c7cb3eb3c7a61cf1bc838cf6ce
+source-git-commit: 3e36fdf9b175930ee3a998bf91116c35b3cb6f9d
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '398'
 ht-degree: 6%
 
 ---
@@ -107,12 +107,14 @@ ht-degree: 6%
    + Adaptiva Forms-komponenter {#adaptive-forms-components}
       + [Adaptivt Forms-dragspel](/help/adaptive-forms/components/accordion.md)
       + [Adaptiv Forms-knapp](/help/adaptive-forms/components/button.md)
+      + [Adaptiv Forms-kryssruta](/help/adaptive-forms/components/checkbox.md)
       + [Adaptiv Forms-kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
       + [Adaptiv Forms-behållare](/help/adaptive-forms/components/form-container.md)
       + [Anpassad datumväljare för Forms](/help/adaptive-forms/components/date-picker.md)
       + [Adaptiv listruta för Forms](/help/adaptive-forms/components/drop-down.md)
       + [Anpassad e-postinmatning från Forms](/help/adaptive-forms/components/email-input.md)
       + [Adaptiva Forms-filbilagor](/help/adaptive-forms/components/file-attachment.md)
+      + [Adaptiva lodräta Forms-flikar](/help/adaptive-forms/components/vertical-tabs.md)
       + [Anpassningsbara vågräta Forms-flikar](/help/adaptive-forms/components/horizontal-tabs.md)
       + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
       + [Adaptiv inmatning av Forms Number](/help/adaptive-forms/components/number-input.md)
@@ -126,6 +128,7 @@ ht-degree: 6%
       + [Adaptiv Forms-textruta](/help/adaptive-forms/components/text-input.md)
       + [Adaptive Forms Title](/help/adaptive-forms/components/title.md)
       + [Adaptiv Forms-guidelayout](/help/adaptive-forms/components/wizard.md)
+      + [Adaptiva villkor för Forms](/help/adaptive-forms/components/terms-and-conditions.md)
       + [Sidhuvud](/help/adaptive-forms/components/header.md)
       + [Sidfot](/help/adaptive-forms/components/footer.md)
    + [Anpassa adaptiva Forms Core-komponenter](/help/developing/customize-adaptive-forms-core-components.md)

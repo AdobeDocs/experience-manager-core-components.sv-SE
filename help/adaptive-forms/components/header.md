@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - rubrik
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Header.
 role: Architect, Developer, Admin, User
 exl-id: aa18def9-0bec-4475-8dde-213860621ef5
-source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '679'
 ht-degree: 1%
 
 ---
@@ -20,15 +20,15 @@ En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formul�
 
 ## Användning {#reasons-to-use-header}
 
-* **Varumärke**: En rubrik kan användas för att visa logotypen eller namnet på den organisation som skapade formuläret, vilket bidrar till att etablera varumärkesigenkänning och trovärdighet.
+- **Varumärke**: En rubrik kan användas för att visa logotypen eller namnet på den organisation som skapade formuläret, vilket bidrar till att etablera varumärkesigenkänning och trovärdighet.
 
-* **Kontext**: En rubrik kan ge en kort beskrivning av syftet med formuläret, vilket hjälper användarna att förstå i vilket sammanhang formuläret används.
+- **Kontext**: En rubrik kan ge en kort beskrivning av syftet med formuläret, vilket hjälper användarna att förstå i vilket sammanhang formuläret används.
 
-* **Navigering**: Ett sidhuvud kan innehålla länkar eller knappar som gör att användare kan navigera till andra delar av webbplatsen eller programmet.
+- **Navigering**: Ett sidhuvud kan innehålla länkar eller knappar som gör att användare kan navigera till andra delar av webbplatsen eller programmet.
 
-* **Information**: Ett sidhuvud kan innehålla kontaktinformation eller länkar till hjälpresurser, vilket gör det enklare för användarna att få hjälp om de behöver det.
+- **Information**: Ett sidhuvud kan innehålla kontaktinformation eller länkar till hjälpresurser, vilket gör det enklare för användarna att få hjälp om de behöver det.
 
-* **Användarupplevelse**: En rubrik kan användas för att göra formuläret mer användarvänligt genom att ge användarna ett tydligt och intuitivt sätt att komma åt och fylla i formulärfält.
+- **Användarupplevelse**: En rubrik kan användas för att göra formuläret mer användarvänligt genom att ge användarna ett tydligt och intuitivt sätt att komma åt och fylla i formulärfält.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -60,21 +60,21 @@ Den här delen av sidhuvudet innehåller rubriktiteln och bilden.
 
 ![Imagetab](/help/adaptive-forms/assets/header_image.png)
 
-* **Bildresurs** - Med det här alternativet kan du släppa en resurs som en bild genom att dra och släppa med musen. Du kan också överföra en fil från ett lokalt filsystem med **Bläddra** -knappen. När du har lagt till en bild visas tre knappar längst ned i bilden. När du har lagt till en bild visas tre knappar längst ned i bilden:
-   * **Redigera** - Tryck eller klicka **Redigera** om du vill hantera återgivningarna av resursen i Resursredigeraren.
-   * **Rensa** - Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
-   * **Välj** - Tryck eller klicka **Välj**  om du vill välja en annan bild från resursmappen.
+- **Bildresurs** - Med det här alternativet kan du släppa en resurs som en bild genom att dra och släppa med musen. Du kan också överföra en fil från ett lokalt filsystem med **Bläddra** -knappen. När du har lagt till en bild visas tre knappar längst ned i bilden. När du har lagt till en bild visas tre knappar längst ned i bilden:
+   - **Redigera** - Tryck eller klicka **Redigera** om du vill hantera återgivningarna av resursen i Resursredigeraren.
+   - **Rensa** - Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
+   - **Välj** - Tryck eller klicka **Välj**  om du vill välja en annan bild från resursmappen.
 
-* **Titel** - Det här alternativet används för att lägga till rubriken i sidhuvudet. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren.
-* **Länka till** - Du kan länka rubriken till mappen med **Bläddra** -ikon.
-* **Beskrivning** - En beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med en viss bild.
-* **Storlek (px)** - Det hjälper till att justera längden och bredden på bilden genom att öka eller minska pixlarna.
+- **Titel** - Det här alternativet används för att lägga till rubriken i sidhuvudet. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren.
+- **Länka till** - Du kan länka rubriken till mappen med **Bläddra** -ikon.
+- **Beskrivning** - En beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med en viss bild.
+- **Storlek (px)** - Det hjälper till att justera längden och bredden på bilden genom att öka eller minska pixlarna.
 
 ![hjälpmedelsflik](/help/adaptive-forms/assets/header_accessibility.png)
 
-* **Alternativ text** - Det här alternativet används för att ange texten som ger ett kort och beskrivande textalternativ för bilden, som beskriver bilden för synskadade.
+- **Alternativ text** - Det här alternativet används för att ange texten som ger ett kort och beskrivande textalternativ för bilden, som beskriver bilden för synskadade.
 
-* **Bilden är dekorativ** - Kontrollera om bilden ska ignoreras av hjälpmedel och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
+- **Bilden är dekorativ** - Kontrollera om bilden ska ignoreras av hjälpmedel och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
 
 ### Fliken Text {#text-tab}
 
@@ -88,30 +88,9 @@ I det här avsnittet kan du ange den text som ska inkluderas i sidhuvudet.
 
 -->
 
+## Relaterade artiklar {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Dragspel](/help/adaptive-forms/components/accordion.md)
->* [Knapp](/help/adaptive-forms/components/button.md)
->* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
->* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
->* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
->* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
->* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
->* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
->* [Sidfot](/help/adaptive-forms/components/footer.md)
->* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Bild](/help/adaptive-forms/components/image.md)
->* [Nummerindata](/help/adaptive-forms/components/number-input.md)
->* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
->* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
->* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
->* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
->* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
->* [Textindata](/help/adaptive-forms/components/text-input.md)
->* [Text](/help/adaptive-forms/components/text.md)
->* [Titel](/help/adaptive-forms/components/title.md)
->* [guide](/help/adaptive-forms/components/wizard.md)
+{{more-like-this}}
 
 ## Se även {#see-also}
 

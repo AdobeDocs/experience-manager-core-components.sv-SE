@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
-source-git-commit: be630c4d0a10ebaa679b77419b901fac818addb1
+source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
 workflow-type: tm+mt
-source-wordcount: '755'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -18,23 +18,23 @@ Med Forms kan besökare interagera med webbplatsen genom att tillhandahålla vä
 
 Det finns flera orsaker till varför ett formulär kan läggas till på en webbplats:
 
-* **Datainsamling**: Forms kan användas för att samla in data från webbplatsbesökare för olika syften, t.ex. marknadsundersökningar, användarbeteendeanalyser och annat.
+- **Datainsamling**: Forms kan användas för att samla in data från webbplatsbesökare för olika syften, t.ex. marknadsundersökningar, användarbeteendeanalyser och annat.
 
-* **Leadgenerering**: Ett formulär kan användas för att samla in information från potentiella kunder, som namn och e-postadress, för att generera leads för försäljning och marknadsföring.
+- **Leadgenerering**: Ett formulär kan användas för att samla in information från potentiella kunder, som namn och e-postadress, för att generera leads för försäljning och marknadsföring.
 
-* **E-handel**: Forms kan användas för webbutik där kunderna kan lägga order och göra betalningar via webbplatsen.
+- **E-handel**: Forms kan användas för webbutik där kunderna kan lägga order och göra betalningar via webbplatsen.
 
-* **Kontakt**: Med ett kontaktformulär kan besökarna enkelt nå ut till webbplatsens ägare eller organisation.
+- **Kontakt**: Med ett kontaktformulär kan besökarna enkelt nå ut till webbplatsens ägare eller organisation.
 
-* **Undersökningar och undersökningar**: Forms kan användas för att samla in feedback och åsikter från besökare via enkäter och undersökningar.
+- **Undersökningar och undersökningar**: Forms kan användas för att samla in feedback och åsikter från besökare via enkäter och undersökningar.
 
-* **Händelseregistrering**: Forms kan användas för anmälan av evenemang, så att besökare kan anmäla sig till event eller webbinarier.
+- **Händelseregistrering**: Forms kan användas för anmälan av evenemang, så att besökare kan anmäla sig till event eller webbinarier.
 
-* **Prenumerationer**: Forms kan användas för webbplatsprenumerationer så att besökare kan registrera sig för ett nyhetsbrev eller annan vanlig kommunikation.
+- **Prenumerationer**: Forms kan användas för webbplatsprenumerationer så att besökare kan registrera sig för ett nyhetsbrev eller annan vanlig kommunikation.
 
-* **Användarautentisering**: Forms kan användas för användarautentisering, vilket gör att webbplatsbesökare kan skapa konton och logga in för att få tillgång till exklusivt innehåll eller funktioner.
+- **Användarautentisering**: Forms kan användas för användarautentisering, vilket gör att webbplatsbesökare kan skapa konton och logga in för att få tillgång till exklusivt innehåll eller funktioner.
 
-* **Öka konverteringsgraden**: Ett väldesignat formulär kan öka konverteringsgraden genom att göra det enkelt för användarna att slutföra en önskad åtgärd, som att köpa en produkt eller registrera sig för en tjänst.
+- **Öka konverteringsgraden**: Ett väldesignat formulär kan öka konverteringsgraden genom att göra det enkelt för användarna att slutföra en önskad åtgärd, som att köpa en produkt eller registrera sig för en tjänst.
 
 
 ## Version och kompatibilitet {#version-and-compatibility}
@@ -62,9 +62,17 @@ Du kan enkelt anpassa formulärbehållarupplevelsen för besökare med dialogrut
 
 ![fliken Grundläggande](/help/adaptive-forms/assets/formcontainer_basictab.png)
 
-* **Förifyllning** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [skapa och konfigurera en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=en#aem-forms-custom-prefill-service).
+- **Förifyllning** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [skapa och konfigurera en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=en#aem-forms-custom-prefill-service).
 
-* **Kategorin Klientbibliotek** - Användaren kan konfigurera ett anpassat JavaScript-bibliotek per adaptiv form. Vi rekommenderar att du bara behåller återanvändbara funktioner i biblioteket, som är beroende av jquery- och underscore.js-bibliotek från tredje part.
+- **Kategorin Klientbibliotek** - Användaren kan konfigurera ett anpassat JavaScript-bibliotek per adaptiv form. Vi rekommenderar att du bara behåller återanvändbara funktioner i biblioteket, som är beroende av jquery- och underscore.js-bibliotek från tredje part.
+
+### Fliken Datamodell {#data-model-tab}
+
+![Fliken Skicka](/help/adaptive-forms/assets/formcontainer_fdmtab.png)
+
+Du kan använda formulärdatamodellen för att ansluta ett formulär till en datakälla för att skicka och ta emot data baserat på användaråtgärder. Du kan också ansluta ett formulär till ett JSON-schema för att ta emot skickade data i ett fördefinierat format. Beroende på vad som krävs kan du ansluta formuläret till ett JSON-schema eller en formulärdatamodell:
+- Skapa ett JSON-schema och överför det till din miljö
+- Skapa en formulärdatamodell
 
 ### Fliken Skicka {#submission-tab}
 
@@ -72,13 +80,59 @@ Du kan enkelt anpassa formulärbehållarupplevelsen för besökare med dialogrut
 
 Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 
-* **Omdirigerings-URL/sökväg** - Med det här alternativet kan användaren konfigurera en sida för varje formulär som formuläranvändarna omdirigeras till efter att ha skickat in ett adaptivt formulär. Klicka här för mer information om [konfigurera omdirigeringssidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html).
+- **Omdirigerings-URL/sökväg** - Med det här alternativet kan användaren konfigurera en sida för varje formulär som formuläranvändarna omdirigeras till efter att ha skickat in ett adaptivt formulär. Klicka här för mer information om [konfigurera omdirigeringssidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html).
 
 ![Visa fliken Meddelande](/help/adaptive-forms/assets/formconatiner_showmessage.png)
 
-* **Visa meddelande** - Med det här alternativet kan användare lägga till ett meddelande som visas när det adaptiva formuläret har skickats. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren. Dialogrutan Visa meddelande har stöd för formateringsverktyg med formaterad text som gör att användare kan formatera den tillagda texten.
+- **Visa meddelande** - Med det här alternativet kan användare lägga till ett meddelande som visas när det adaptiva formuläret har skickats. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren. Dialogrutan Visa meddelande har stöd för formateringsverktyg med formaterad text som gör att användare kan formatera den tillagda texten.
 
-* **Skicka åtgärd** - En Skicka-åtgärd aktiveras när en användare klickar på Skicka-knappen på ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur [konfigurera en Skicka-åtgärd på fliken Skicka](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#supporting-custom-functions-in-validation-expressions-br).
+- **Skicka åtgärd** - En Skicka-åtgärd aktiveras när en användare klickar på Skicka-knappen på ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur [konfigurera en Skicka-åtgärd på fliken Skicka](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#supporting-custom-functions-in-validation-expressions-br).
+
+## Designdialogruta {#design-dialog}
+
+Designdialogrutan används för att definiera och hantera CSS-format för komponenten Formulärbehållare.
+
+### Fliken Tillåtna komponenter {#allowed-components-tab}
+
+![Tillåten komponentflik i designdialogrutan](/help/adaptive-forms/assets/formcontainer-allowedcomponents.png)
+
+The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i komponenten i den adaptiva Forms-redigeraren.
+
+### Fliken Standardkomponenter {#default-components-tab}
+
+![Standardkomponentflik i designdialogrutan](/help/adaptive-forms/assets/formcontainer-defaultcomponents.png)
+
+The **Standardkomponenter** kan mallredigeraren ange vilka komponenter som är synliga som standard som objekt i formulärbehållarkomponenten i den adaptiva Forms-redigeraren.
+
+### Fliken Responsiva inställningar {#responsive-tab}
+
+![Fliken Responsiva inställningar i designdialogrutan](/help/adaptive-forms/assets/formcontainer-responsivestyle.png)
+
+The **Responsiva inställningar** kan mallredigeraren ange antalet kolumner i rutnätet i formulärbehållarkomponenten i den adaptiva Forms-redigeraren.
+
+### Fliken Format {#styles-tab}
+
+Kärnkomponenten för adaptiv bifogad Forms-fil stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+
+![Designdialogruta](/help/adaptive-forms/assets/formcontainer-styletab.png)
+
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
+
+- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+
+### Fliken Anpassade egenskaper
+
+![Dialogrutan Anpassade egenskaper](/help/adaptive-forms/assets/formcontainer-custompropertiestab.png)
+
+Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
+
+- **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
+
+   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på **Lägg till** för varje anpassad egenskapsgrupp.
+
+   - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+   - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
 <!--
 
@@ -88,31 +142,9 @@ Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 
 -->
 
+## Relaterade artiklar {#related-articles}
 
->[!MORELIKETHIS]
->
->* [Dragspel](/help/adaptive-forms/components/accordion.md)
->* [Knapp](/help/adaptive-forms/components/button.md)
->* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
->* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
->* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
->* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
->* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
->* [Sidfot](/help/adaptive-forms/components/footer.md)
->* [Sidhuvud](/help/adaptive-forms/components/header.md)
->* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
->* [Bild](/help/adaptive-forms/components/image.md)
->* [Nummerindata](/help/adaptive-forms/components/number-input.md)
->* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
->* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
->* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
->* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
->* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
->* [Textindata](/help/adaptive-forms/components/text-input.md)
->* [Text](/help/adaptive-forms/components/text.md)
->* [Titel](/help/adaptive-forms/components/title.md)
->* [guide](/help/adaptive-forms/components/wizard.md)
-
+{{more-like-this}}
 
 ## Se även {#see-also}
 
