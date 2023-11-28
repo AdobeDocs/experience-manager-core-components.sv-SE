@@ -3,9 +3,9 @@ title: Webboptimerad bildleverans
 description: Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: 420e6085da57e5dc6deb670a5f0498b018441cb8
+source-git-commit: d8c8f4c3395313b21f56fd7d98175924287c367c
 workflow-type: tm+mt
-source-wordcount: '1118'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Det är enkelt att aktivera webboptimerad bildleverans i Core Components, och ef
 
 ## Aktivera webboptimerad bildleverans för kärnkomponenter {#activating}
 
-Om du vill aktivera webboptimerad bildleverans redigerar du en sidmall och aktiverar bara alternativet **Aktivera webboptimerade bilder** i designdialogrutan [Bildkomponent.](/help/components/image.md#design-dialog) Det här alternativet är tillgängligt för v1, v2 och v3 i Image Component.
+Aktivera webboptimerad bildleverans genom att redigera en sidmall och helt enkelt aktivera alternativet **Aktivera webboptimerade bilder** i designdialogrutan [Bildkomponent.](/help/components/image.md#design-dialog) Det här alternativet är tillgängligt för v1, v2 och v3 i Image Component.
 
 Om du inte känner till designdialogrutor och AEM sidmallar kan du [kan du läsa det här dokumentet.](/help/get-started/authoring.md#pre-configuring-core-components)
 
@@ -84,7 +84,7 @@ Bilden kommer aldrig att skalas upp. Dessa renderingar definierar därför den b
 
 För att leverera WebP-format använder den webboptimerade bildleveranstjänsten en teknik som kallas&quot;innehållsförhandling&quot;. Detta innebär att ett WebP-filformat returneras, även om ett JPG- eller PNG-filtillägg begärs, men endast när webbläsaren gjorde begäran fick ett `image/webp` HTTP accept header. Webbläsare som stöder den här tekniken kan sedan ange det här huvudet och äldre webbläsare kommer fortfarande att få filformatet JPG eller PNG.
 
-Fördelen med den här tekniken är att `img` -elementet och dess attribut kan vara desamma, vilket ger optimal kompatibilitet för befintliga webbplatser och garanterar en så smidig övergång som möjligt till webboptimerad bildleverans.
+Fördelen med tekniken är att `img` -elementet och dess attribut kan vara desamma, vilket ger optimal kompatibilitet för befintliga webbplatser och garanterar en så smidig övergång som möjligt till webboptimerad bildleverans.
 
 ### Kan jag använda webboptimerad bildleverans med min egen komponent?
 
@@ -96,17 +96,7 @@ Följande är ett gränssnitt som kan användas för att generera resurs-URL:en.
 com.adobe.cq.wcm.spi.AssetDelivery.getDeliveryURL(Resource resource, Map<String, Object> parameterMap)
 ```
 
-Den här tjänsten tar en resursresurs som obligatorisk första parameter och kan ta en valfri karta över önskade bildomformningar som ska användas och som kan innehålla följande parametrar.
-
-* `path` - Tillgångs-ID som ska levereras måste ha ett mönster `([^:\[\]\|\*\/]+)` (t.ex.: `unicorn–1234`)
-* `seoname` - Användardefinierat SEO-centrerat namn som ska läggas till i bild-URL:en, kan innehålla bindestreck, måste vara av mönstret `([\w-]+)` (t.ex.: `my-friend-the-unicorn`)
-* `format` - Det önskade bildformatet, kan `gif`, `png`, `png8`, `jpg`, `pjpg`, `bjpg`, `webp`, `webpll`, `webply` (t.ex.: `webp`)
-* `preferwebp` - Leverera om möjligt WebP-utdata utan att ta hänsyn till `format` parameter ([se Frågor och svar om innehållsförhandling](#content-negotiation)), boolesk (t.ex.: `true`)
-* `width` - Den önskade bildupplösningen i pixlar måste vara större än 1 (t.ex.: `400`)
-* `quality` - den önskade komprimeringen, mellan `1` och `100` (t.ex.: `75`)
-* `c` - Önskade bildbeskärningskoordinater, kommaavgränsade pixelvärden (t.ex.: `100,100,400,200`)
-* `r` - Den önskade bildrotationen kan `90`, `180`, `270` (t.ex.: `90`)
-* `flip` - Den bild som du vill vända, kan `h`, `v`, `hv` (t.ex.: `h`)
+**Observera att direktinbäddning av URL-adresser i en upplevelse som inte har byggts via Core Components som körs på AEM Sites CS bryter mot Media Library licensvillkor.**
 
 ### Vad är URL:en för en bild som levereras av den nya bildtjänsten? {#url}
 
@@ -117,5 +107,5 @@ Se föregående avsnitt [Aktivera webboptimerad bildleverans för kärnkomponent
 Nej, det här ska aldrig hända.
 
 * I HTML ändras inte markeringen när du aktiverar webboptimerade bilder, bara värdet för SRC-attributet i bildelementet ändras.
-* När den nya bildtjänsten inte är tillgänglig eller inte kan bearbeta den önskade bilden, kommer den URL som skapas att [tillbaka till Adaptive Image Server.](#fallback)
+* När den nya bildtjänsten inte är tillgänglig eller inte kan bearbeta den önskade bilden, kommer den URL som skapas att [tillbaka till Adaptive Image Servlet.](#fallback)
 * Dispatcher-regler kan blockera den webboptimerade bildtjänsten och [ska kontrolleras när funktionen aktiveras.](#activating)
