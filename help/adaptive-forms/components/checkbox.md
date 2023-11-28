@@ -2,15 +2,13 @@
 title: Adaptiv Forms Core-komponent - kryssruta
 description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
 role: Architect, Developer, Admin, User
-hide: true
-hidefromtoc: true
-source-git-commit: ecc6ba79ba5e90bd6e759353d15ca85ce404d769
+exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
+source-git-commit: f0b450ef93a32a56000c31d82bf92394c57b55f9
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 0%
 
 ---
-
 
 # Kryssruta {#checkbox-component}
 
@@ -142,5 +140,3 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 ## Se även {#see-also}
 
 {{see-also}}
-
-
