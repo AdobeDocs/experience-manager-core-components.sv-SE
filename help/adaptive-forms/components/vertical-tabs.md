@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - lodräta flikar
 description: Använda eller anpassa de adaptiva Forms-flikarna Core Component (Core-komponent).
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: f0b450ef93a32a56000c31d82bf92394c57b55f9
+source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1927'
 ht-degree: 0%
 
 ---
@@ -32,13 +32,13 @@ De vanligaste skälen att använda lodräta flikar i en adaptiv form är:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (Core-komponent) för de adaptiva Forms-flikarna vertikalt släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (kärnkomponent) på de adaptiva, lodräta flikarna i Forms släpptes som en del av Core Components 2.0.18. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
 | — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| v1 | Kompatibel med<br>[version 2.0.18](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 

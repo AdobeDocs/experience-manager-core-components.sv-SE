@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - villkor
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Terms and Conditions.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
-source-git-commit: f0b450ef93a32a56000c31d82bf92394c57b55f9
+source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
 workflow-type: tm+mt
 source-wordcount: '2639'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Se [Delkomponenter i villkorskomponenten](#sub-component) om du vill veta mer om
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.62 för Cloud Service och Core Components 1.1.28 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+| v1 | Kompatibel med<br>[version 2.0.62](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.28](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 

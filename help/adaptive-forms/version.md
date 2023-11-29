@@ -3,10 +3,10 @@ title: AEM Forms Core Components Versions
 description: AEM kärnkomponenter publiceras som versioner som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: f53be69df3dff9f3873a3bda6ba331f76de75487
+source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '885'
+ht-degree: 7%
 
 ---
 
@@ -36,7 +36,7 @@ I följande tabell visas en lista över de Core Components-versioner som är kom
 | [2.0.34](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.34) | Lagt till stöd för lokalisering av standardfelmeddelanden tillsammans med knappen Lägg till/ta bort för komponenten Repetable. | Kontinuerlig | 8, 11 | 28 juni 2023 |
 | [2.0.32](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.32) | I den här versionen finns stöd för Captcha för Adaptive Forms. | Kontinuerlig | 8, 11 | 15 juni 2023 |
 | [2.0.26](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.26) | Stöd för att lägga till adaptiva formulär i AEM Sites. | Kontinuerlig | 8, 11 | 7 juni 2023 |
-| [2.0.18](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.18) | I den här versionen finns stöd för repeterbarhet för dragspelskomponenten. | Kontinuerlig | 8, 11 | 5 juni 2023 |
+| [2.0.18](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.18) | I den här versionen finns stöd för repeterbarhet för dragspelskomponenten. En ny komponent har också lagts till som lodräta flikar. | Kontinuerlig | 8, 11 | 5 juni 2023 |
 | [2.0.10](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.10) | I den här versionen finns det stöd för en komponent med adaptiv formulärbehållare i webbplatsredigeraren. | Kontinuerlig | 8, 11 | 17 mars 2023 |
 | [2.0.8](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.8) | Repeteringsfunktionen för guidekomponenten introducerades i den här versionen. | Kontinuerlig | 8, 11 | 3 mars 2023 |
 | [2.0.6](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.6) | Flera format för den numeriska indatastkärnkomponenten introducerades i den här versionen. | Kontinuerlig | 8, 11 | 8 februari 2023 |

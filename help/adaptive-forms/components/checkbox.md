@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - kryssruta
 description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: f0b450ef93a32a56000c31d82bf92394c57b55f9
+source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1706'
 ht-degree: 0%
 
 ---
@@ -34,13 +34,13 @@ De vanligaste skälen att använda kryssrutan i ett anpassat formulär är:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Kärnkomponenten i den adaptiva Forms-kryssrutan släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Kärnkomponenten i den adaptiva Forms-kryssrutan släpptes som en del av Core Components 2.0.52. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
 | — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| v1 | Kompatibel med<br>[version 2.0.52](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
 
