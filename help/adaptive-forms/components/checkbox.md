@@ -3,14 +3,14 @@ title: Adaptiv Forms Core-komponent - kryssruta
 description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
+source-git-commit: 4ca65f93e223fdd0b0a701ef335ed5be1fbab7fe
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1692'
 ht-degree: 0%
 
 ---
 
-# Kryssruta {#checkbox-component}
+# Kryssrutekomponent{#checkbox-component}
 
 En kryssruta är ett grafiskt element i användargränssnittet som ofta används i program och formulär för att användaren ska kunna göra ett binärt val mellan två alternativ: markerad (markerad) eller avmarkerad (avmarkerad).
 
@@ -39,7 +39,7 @@ Kärnkomponenten i den adaptiva Forms-kryssrutan släpptes som en del av Core Co
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | --- |
+| — | — |
 | v1 | Kompatibel med<br>[version 2.0.52](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
