@@ -6,9 +6,9 @@ topic: Administration
 role: Admin, User
 level: Intermediate
 exl-id: aef6e88b-dcae-4777-9893-9257d7702f43
-source-git-commit: 1dd55fdd836dff89763887d88af2671ed1f9ce2b
+source-git-commit: ef86dfa62df0ac7f34ec1c4c4175e8a8132c8aed
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Med exempelteman kan man använda, definiera och anpassa formateringen efter bla
 Du får dessa teman genom att följa stegen nedan för **AEM as a Cloud Service** miljö:
 
 1. [Aktivera kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)
-1. [Driftsätt ett AEM Archetype 45-projekt i din miljö](https://github.com/adobe/aem-project-archetype)
+1. [Distribuera ett AEM Archetype 47-projekt eller senare till din miljö](https://github.com/adobe/aem-project-archetype)
 
 
 När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina formulär. Om du vill anpassa teman efter dina behov kan du [Använda pipeline för framände](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) för att distribuera teman.
@@ -56,7 +56,7 @@ När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina for
 1. **AEM 6.5**
 
     1. [Enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html)
-    1. [Deploy an AEM Archetype 45 project to your environment](https://github.com/adobe/aem-project-archetype)
+    1. [Deploy an AEM Archetype 45 or later project to your environment](https://github.com/adobe/aem-project-archetype)
 
 
     When you deploy an AEM Archetype, you can only use the OOTB themes in your forms, To customize the themes as per your requirements, [Use the front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) to deploy the themes.
@@ -66,9 +66,9 @@ När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina for
 
 <!--
 
-### Deploying an AEM Archetype 45 project to your environment {#using-archetype-to-deploy-themes}
+### Deploying an AEM Archetype 45 or later project to your environment {#using-archetype-to-deploy-themes}
 
-You can get these themes by deploying an [AEM Archetype 45](https://github.com/adobe/aem-project-archetype) to your **AEM Forms as a Cloud Service** or **AEM 6.5** Forms environment.
+You can get these themes by deploying an [AEM Archetype 45 or later](https://github.com/adobe/aem-project-archetype) to your **AEM Forms as a Cloud Service** or **AEM 6.5** Forms environment.
 
 ### Enable core components and use front-end pipeline to deploy themes {#use-front-end-pipeline-to-deploy-themes}
 
@@ -124,7 +124,7 @@ Temat för hälso- och sjukvård använder avancerade, övertoningar för att fr
 Mallar definierar den inledande formulärstrukturen, innehållet och de åtgärder som ska replikeras i formuläret eller använder en mallstruktur som liknar den i formuläret, till exempel Samtyckesformulär, Förmånsregistreringsformulär och många andra.
 
 **Hur skaffar jag mallarna?**
-Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 45](https://github.com/adobe/aem-project-archetype) till **AEM Forms as a Cloud Service** miljö eller **AEM 6.5 Forms** miljö.
+Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 45 eller senare](https://github.com/adobe/aem-project-archetype) till **AEM Forms as a Cloud Service** miljö eller **AEM 6.5 Forms** miljö.
 
 <!--
 
