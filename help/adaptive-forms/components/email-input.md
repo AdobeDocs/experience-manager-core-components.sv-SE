@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - e-postindata
 description: Använda eller anpassa den adaptiva Forms E-postindatakomponenten.
 role: Architect, Developer, Admin, User
 exl-id: f6a2974b-991e-4cea-9ef8-0b03e8975eeb
-source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+source-git-commit: 120f8023ac2e13380e59703e199dc929176a59b6
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1916'
 ht-degree: 0%
 
 ---
@@ -96,9 +96,10 @@ Du kan enkelt anpassa e-postinmatningen för besökare med dialogrutan Konfigure
 - **Felmeddelande för minsta antal tecken** - **Felmeddelande för minsta antal tecken** kan du lägga till ett anpassat felmeddelande om du anger tecken som är mindre än värdet som anges i **Minsta antal tecken** alternativ.
 <br>
 
-    Med alternativet **Valideringsmönster** kan du ange ett mönster som validerar det angivna e-post-ID:t. Om e-post-ID:t inte kan valideras med det värde som anges i alternativet **Pattern** visas felmeddelandet på skärmen.
-    - **Mönster** - Med det här alternativet kan du ange tillåtna verifieringsmönster för e-post. Reguljära uttryck tillåts också.
-    - **Felmeddelande** - Med det här alternativet kan du ange ett meddelande som visas på skärmen om e-post-ID:t inte kan valideras med det värde som anges i alternativet **Pattern**
+The **Valideringsmönster** kan du ange ett mönster för att validera det angivna e-post-ID:t. Om e-post-ID:t inte kan valideras med det värde som anges i **Mönster** visas felmeddelandet på skärmen.
+
+- **Mönster** - Med det här alternativet kan du ange tillåtna verifieringsmönster för e-post. Reguljära uttryck tillåts också.
+- **Felmeddelande** - Med det här alternativet kan du ange ett meddelande som visas på skärmen om e-post-ID:t inte kan valideras med det värde som anges i **Mönster** option
 
 ### Fliken Hjälpinnehåll {#help-content-tab}
 
