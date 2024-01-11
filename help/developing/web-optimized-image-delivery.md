@@ -3,9 +3,9 @@ title: Webboptimerad bildleverans
 description: Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: d8c8f4c3395313b21f56fd7d98175924287c367c
+source-git-commit: a312eb7a1dc68a264eaf0938c450a17f7cbc4506
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
 
-## Översikt {#overview}
+## Ökning {#overview}
 
 Den webboptimerade funktionen för bildleverans i AEM som en molntjänst levererar bildresurser från DAM i [WebP-format.](https://developers.google.com/speed/webp) WebP kan minska hämtningsstorleken för en bild med i genomsnitt 25 %, vilket ger snabbare sidinläsning.
 
@@ -88,7 +88,7 @@ Fördelen med tekniken är att `img` -elementet och dess attribut kan vara desam
 
 ### Kan jag använda webboptimerad bildleverans med min egen komponent?
 
-Ja, den webboptimerade bildleveranstjänsten kan användas av anpassade komponenter. Adobe rekommenderar [utöka bildkomponenten](/help/developing/customizing.md) i detta fall.
+Ja, den webboptimerade bildleveranstjänsten kan användas av anpassade komponenter som byggs av [utöka bildkomponenten,](/help/developing/customizing.md)
 
 Följande är ett gränssnitt som kan användas för att generera resurs-URL:en.
 
@@ -96,7 +96,9 @@ Följande är ett gränssnitt som kan användas för att generera resurs-URL:en.
 com.adobe.cq.wcm.spi.AssetDelivery.getDeliveryURL(Resource resource, Map<String, Object> parameterMap)
 ```
 
-**Observera att direktinbäddning av URL-adresser i en upplevelse som inte har byggts via Core Components som körs på AEM Sites CS bryter mot Media Library licensvillkor.**
+>[!WARNING]
+>
+>Direkt URL-inbäddning i en upplevelse som inte har byggts med Core Components som körs på AEM Sites CS bryter mot Media Library licensvillkor.
 
 ### Vad är URL:en för en bild som levereras av den nya bildtjänsten? {#url}
 
