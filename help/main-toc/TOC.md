@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: d172e019c5621d950a94cbdd8d27e4834dbabe3b
+source-git-commit: 5aed197937ca527d699569df09ea3305bae98fae
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '376'
 ht-degree: 5%
 
 ---
@@ -154,13 +154,6 @@ ht-degree: 5%
    + AEM Project Archettype {#archetype}
       + [Arketype - översikt](/help/developing/archetype/overview.md)
       + [Använda Arketype](/help/developing/archetype/using.md)
-      + [Kärnmodul](/help/developing/archetype/core.md)
-      + [ui.apps-modul](/help/developing/archetype/uiapps.md)
+      + [Front-End-utveckling](/help/developing/archetype/front-end.md)
       + [Förkompilerade paketerade skript](/help/developing/archetype/precompiled-bundled-scripts.md)
-      + [ui.content-modul](/help/developing/archetype/uicontent.md)
-      + [ui.front.general Module](/help/developing/archetype/uifrontend.md)
-      + [ui.front.response Module](/help/developing/archetype/uifrontend-react.md)
-      + [ui.front.angular-modul](/help/developing/archetype/uifrontend-angular.md)
-      + [ui.tests-modul](/help/developing/archetype/uitests.md)
-      + [it.tests-modul](/help/developing/archetype/ittests.md)
       + [Build Analyzer Maven Plugin](/help/developing/archetype/build-analyzer-maven-plugin.md)

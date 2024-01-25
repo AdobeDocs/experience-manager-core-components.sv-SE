@@ -3,16 +3,16 @@ title: Inkluderar klientbibliotek
 description: Det finns flera olika sätt att inkludera klientbibliotek beroende på hur du använder dem.
 role: Architect, Developer, Admin
 exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
-source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+source-git-commit: 39a5dee1666fa2645e0579fdfac0400f7fcbdc27
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
 
 # Inkluderar klientbibliotek {#including-client-libraries}
 
-Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/uifrontend.md#clientlibs) beroende på ditt användningssätt. Det här dokumentet innehåller exempel och exempel [HTML-kodfragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) for each.
+Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/front-end.md#clientlibs) beroende på ditt användningssätt. Det här dokumentet innehåller exempel och exempel [HTML-kodfragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) for each.
 
 ## Rekommenderad standardanvändning {#recommended-default-usage}
 
@@ -25,7 +25,7 @@ Om du inte har tid att undersöka vad som är bäst i din situation kan du inklu
 </sly>
 ```
 
-Detta inkluderar både CSS och JS på sidan `head`men lägger till `defer` attribut till din JS `script` inkluderar, så att webbläsarna väntar på att DOM ska vara klar innan skripten körs och därför optimerar sidans inläsningshastighet.
+Detta inkluderar både CSS och JS på sidan `head`, men lägger till `defer` attribut till din JS `script` inkluderar, så att webbläsarna väntar på att DOM ska vara klar innan skripten körs och därför optimerar sidans inläsningshastighet.
 
 ## Grundläggande användning {#basic-usage}
 
