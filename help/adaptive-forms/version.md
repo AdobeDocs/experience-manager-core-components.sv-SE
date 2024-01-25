@@ -3,10 +3,10 @@ title: AEM Forms Core Components Versions
 description: AEM kärnkomponenter publiceras som versioner som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
+source-git-commit: 5ba402a0f781f73fe7eb5afc9b4beb47ba28851e
 workflow-type: tm+mt
-source-wordcount: '885'
-ht-degree: 7%
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +20,10 @@ I följande tabell visas en lista över de Core Components-versioner som är kom
 
 | Frigör | Beskrivning | AEM as a Cloud Service | Java™ | Releasedatum |
 |---|---|---|---|---|
+| [2.0.76](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.76) | I den här versionen är formatfliken och den anpassade egenskapsfliken fasta för villkorskomponenten. I den här versionen har även en komponent med alternativknappar korrigerats för att spara booleskt värde för första klicket. | Kontinuerlig | 8, 11 | 15 november 2023 |
 | [2.0.74](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.74) | I den här versionen uppdateras ett inskickningsfel för åtgärden Skicka i AEM Forms. | Kontinuerlig | 8, 11 | 15 november 2023 |
 | [2.0.70](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.70) | I den här versionen har stöd lagts till för att hantera webbplatssidspråket i formulärbehållaren. | Kontinuerlig | 8, 11 | 10 november 2023 |
-| [2.0.64](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.64) | Stöd för formaterad text för etiketter för Radio- och kryssrutekomponenter. Den här versionen innehåller även korrigeringar för villkorskomponenten och villkorskomponenten. | Kontinuerlig | 8, 11 | 6 november 2023 |
+| [2.0.64](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.64) | Stöd för formaterad text för etiketter för Radio- och kryssrutekomponenter. I den här versionen har även stöd för Switch-komponenten lagts till. Den här versionen innehåller även korrigeringar för villkorskomponenten och villkorskomponenten. | Kontinuerlig | 8, 11 | 6 november 2023 |
 | [2.0.62](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.62) | I den här versionen har stöd för villkorskomponenten lagts till. Dessutom stöds kvalificerat namn i kärnkomponenterna. | Kontinuerlig | 8, 11 | 16 oktober 2023 |
 | [2.0.60](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.60) | Den här versionen innehåller korrigeringar för anpassade egenskapsfunktioner, guiden och datumväljarkomponenten. | Kontinuerlig | 8, 11 | 12 september 2023 |
 | [2.0.56](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-2.0.56) | I den här versionen har stöd för anpassade egenskaper för alla kärnkomponenter lagts till. | Kontinuerlig | 8, 11 | 12 september 2023 |
@@ -49,8 +50,8 @@ I följande tabell visas en lista över de Core Components-versioner som är kom
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | Java™ | Releasedatum |
 |---|---|---|---|---|---|
 | [1.1.32](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.32) | Den här versionen uppdaterade informationen om paketet i AEM Service Pack 6.5.18.0. | - | 6.5.16.0+ | 8, 11 | 15 oktober 2023 |
-| [1.1.28](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.28) | Stöd för formaterad text för etiketter för Radio- och kryssrutekomponenter. Den här versionen innehåller även stöd för villkorskomponenten. | - | 6.5.16.0+ | 8, 11 | 15 oktober 2023 |
-| [1.1.26](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.26) | I den här versionen finns stöd för kryssrutekomponenter för adaptiva formulär. Den innehåller även förbättringar av prestanda i Lightroom. Den anpassade felhanteraren med Regelredigerarens anropstjänst ingår också i den här versionen. | - | 6.5.16.0+ | 8, 11 | 15 oktober 2023 |
+| [1.1.28](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.28) | Stöd för formaterad text för etiketter för Radio- och kryssrutekomponenter. Den här versionen innehåller även stöd för komponenterna Terms and Condition och Switch. | - | 6.5.16.0+ | 8, 11 | 15 oktober 2023 |
+| [1.1.26](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.26) | I den här versionen finns stöd för kryssrutekomponenter för adaptiva formulär och formulärfragment. Den innehåller även förbättringar av prestanda i Lightroom. Den anpassade felhanteraren med Regelredigerarens anropstjänst ingår också i den här versionen. | - | 6.5.16.0+ | 8, 11 | 15 oktober 2023 |
 | [1.1.24](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.24) | Lagt till stöd för lokalisering av standardfelmeddelanden tillsammans med knappen Lägg till/ta bort för komponenten Repetable. Stöd för recaptcha har också lagts till i Adaptive Forms. | - | 6.5.16.0+ | 8, 11 | 29 juni 2023 |
 | [1.1.22](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.22) | Stöd för att lägga till adaptiva formulär i AEM Sites. Fliken Objekt har lagts till i redigeringsdialogrutan för komponenten Wizard och Vertical Tabs. | - | 6.5.16.0+ | 8, 11 | 7 juni 2023 |
 | [1.1.12](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12) | Komponentstöd för AEM Forms lokalt och AMS introduceras i den här versionen. | - | 6.5.16.0+ | 8, 11 | 8 februari 2023 |

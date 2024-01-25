@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - lodräta flikar
 description: Använda eller anpassa de adaptiva Forms-flikarna Core Component (Core-komponent).
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: 4ca65f93e223fdd0b0a701ef335ed5be1fbab7fe
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
 source-wordcount: '1904'
 ht-degree: 0%
@@ -38,9 +38,9 @@ Core Component (kärnkomponent) på de adaptiva, lodräta flikarna i Forms släp
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
 | — | — |
-| v1 | Kompatibel med<br>[version 2.0.18](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| v1 | Kompatibel med<br>[version 2.0.18](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 ## Teknisk information {#technical-details}
 

@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - e-postindata
 description: Använda eller anpassa den adaptiva Forms E-postindatakomponenten.
 role: Architect, Developer, Admin, User
 exl-id: f6a2974b-991e-4cea-9ef8-0b03e8975eeb
-source-git-commit: 120f8023ac2e13380e59703e199dc929176a59b6
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1917'
 ht-degree: 0%
 
 ---
@@ -127,7 +127,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Kä
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms-kärnkomponenten för e-postindata.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

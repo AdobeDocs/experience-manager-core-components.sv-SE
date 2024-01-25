@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - villkor
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Terms and Conditions.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
-source-git-commit: a567b5ad937d426abe16c34e039e19cd0b1af5b0
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '2639'
+source-wordcount: '2635'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkom
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om den adaptiva Forms Checkbox Group Core Component i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/checkboxgroup/v1/checkboxgroup). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om kärnkomponenten i adaptiva Forms Terms and Conditions i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/checkboxgroup/v1/checkboxgroup). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -123,7 +123,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 ![Designdialogruta](/help/adaptive-forms/assets/checkbox-style.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten Adaptive Forms Terms and Conditions.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

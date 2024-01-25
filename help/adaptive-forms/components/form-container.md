@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: 4d01c75fadb0220f0093a6647c27c4002cc979c9
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1296'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ Du kan enkelt anpassa formulärbehållarupplevelsen för besökare med dialogrut
 - **Förifyllning** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [skapa och konfigurera en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=en#aem-forms-custom-prefill-service).
 
 - **Kategorin Klientbibliotek** - Användaren kan konfigurera ett anpassat JavaScript-bibliotek per adaptiv form. Vi rekommenderar att du bara behåller återanvändbara funktioner i biblioteket, som är beroende av jquery- och underscore.js-bibliotek från tredje part.
+Ibland, om det finns **komplexa valideringsregler**, det exakta valideringsskriptet finns i anpassade funktioner och användarna anropar dessa anpassade funktioner från fältvalideringsuttryck. Om du vill att det här anpassade funktionsbiblioteket ska vara känt och tillgängligt vid validering på serversidan kan formuläranvändaren konfigurera namnet på AEM klientbibliotek under **[!UICONTROL Basic]** fliken med egenskaper för adaptiv formulärbehållare så som visas nedan.
+
+Användaren kan konfigurera customJavaScript-bibliotek per adaptiv form. I biblioteket behåller du bara återanvändbara funktioner som är beroende av jquery- och underscore.js-bibliotek från tredje part.
 
 ### Fliken Datamodell {#data-model-tab}
 
@@ -116,7 +119,7 @@ Kärnkomponenten för adaptiv bifogad Forms-fil stöder AEM [Formatsystem](/help
 
 ![Designdialogruta](/help/adaptive-forms/assets/formcontainer-styletab.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Form Container Core Component.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

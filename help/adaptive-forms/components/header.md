@@ -3,10 +3,10 @@ title: Adaptiv Forms Core-komponent - rubrik
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Header.
 role: Architect, Developer, Admin, User
 exl-id: aa18def9-0bec-4475-8dde-213860621ef5
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 1%
+source-wordcount: '674'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +16,7 @@ En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formul�
 
 **Exempel**
 
-![](/help/adaptive-forms/assets/header.png)
+![exempel](/help/adaptive-forms/assets/header.png)
 
 ## Användning {#reasons-to-use-header}
 

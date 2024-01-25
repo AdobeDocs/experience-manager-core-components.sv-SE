@@ -1,58 +1,60 @@
 ---
-title: Adaptiv Forms Core-komponent - kryssruta
-description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
+title: Adaptiv Forms Core-komponent - switch-komponent
+description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-switchen.
 role: Architect, Developer, Admin, User
-exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+hide: true
+hidefromToC: true
+source-git-commit: d172e019c5621d950a94cbdd8d27e4834dbabe3b
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1689'
 ht-degree: 0%
 
 ---
 
-# Kryssrutekomponent{#checkbox-component}
 
-En kryssruta är ett grafiskt element i användargränssnittet som ofta används i program och formulär för att användaren ska kunna göra ett binärt val mellan två alternativ: markerad (markerad) eller avmarkerad (avmarkerad).
+# Växla komponent{#switch-adaptive-forms-core-component}
 
-En kryssruta representeras vanligtvis som en liten fyrkant som du kan aktivera eller inaktivera genom att klicka eller trycka på den. När en kryssruta är markerad visas en bockmarkering som visar att det associerade alternativet eller den associerade funktionen är aktiv eller aktiverad.
+Switch-komponenten är ett grafiskt användargränssnitt som används i formulär där användarna kan välja mellan två alternativ. Det är vanligtvis en tvålägesväxling som gör att användare kan välja mellan två lägen, vilket aktiverar eller inaktiverar en funktion, inställning eller funktion. Switchkomponenten är utformad för att visuellt representera det aktuella läget och visa om en viss funktion är påslagen eller inte.
 
-**Exempel**
+Switch-komponenten är ett booleskt kontrollelement som anger värdet till true eller false. Den används till exempel för att växla mellan aktivering och inaktivering av en funktion, som att stänga av eller stänga av ljud, eller aktivera eller inaktivera Bluetooth eller WiFi.
 
-![kryssrutegrupp](/help/adaptive-forms/assets/checkbox-example.png)
+![Exempel på växlingskomponent](/help/adaptive-forms/assets/switch-example.png)
 
-## Användning {#reasons-to-use-checkbox}
+## Användning {#reasons-to-use-switch}
 
-De vanligaste skälen att använda kryssrutan i ett anpassat formulär är:
+De vanligaste skälen att använda en switch i en adaptiv form är:
 
-- **Lätt att använda**: Kryssrutor är visuellt tydliga och är ett enkelt sätt att göra binära val. De är intuitiva och lätta att förstå och gör dem användarvänliga.
+- **Användarinteraktion**: Användare kan interagera med switchkomponenten genom att klicka eller trycka på den.
 
-- **Godkännande och avtal**: Kryssrutor används för att få användarens samtycke för olika syften, till exempel för att acceptera villkor, prenumerera på nyhetsbrev eller för att bekräfta ålder. De klargör att användaren aktivt samtycker till något.
+- **Lägen**: Växlingskomponenten har två lägen: PÅ och AV. Växelkomponentens startläge beror på standardinställningen eller den aktuella statusen för funktionen som den styr.
 
-- **Visuell bekräftelse**: Kryssrutor ger en visuell bekräftelse på att användaren har registrerat sitt val. Denna feedback hjälper till att förhindra användarfel och säkerställer att de vet att deras val har registrerats.
+- **Visuell representation**: Växlingskomponenten visar visuellt dess aktuella läge genom att ändra färg eller position.
 
-- **Felförebyggande**: Kryssrutor minskar risken för fel genom att användarna kan granska och bekräfta alternativen innan formuläret skickas.
+- **Styr funktionaliteten**: Växlingskomponenten används för att aktivera eller inaktivera vissa funktioner i ett AEM. Användaren kan till exempel aktivera eller inaktivera en funktion.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Kärnkomponenten i den adaptiva Forms-kryssrutan släpptes som en del av Core Components 2.0.52. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva kärnkomponenten i Forms-switchen släpptes som en del av kärnkomponenterna 2.0.64. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
 | — | — |
-| v1 | Kompatibel med<br>[version 2.0.52](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
+| v1 | Kompatibel med<br>[version 2.0.64](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om kärnkomponenten i den adaptiva Forms-kryssrutan i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/checkbox/v1/checkbox). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Den senaste informationen om den adaptiva Forms Switch Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/switch/v1/switch). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera kryssrutealternativ för en smidig användarupplevelse.
+Med dialogrutan Konfigurera kan du enkelt anpassa hur din switch-komponent fungerar för besökare. Du kan också enkelt definiera alternativ för switchkomponenter för en smidig användarupplevelse.
 
-![fliken Grundläggande](/help/adaptive-forms/assets/checkbox-basic.png)
+### Fliken Grundläggande
+
+![fliken Grundläggande](/help/adaptive-forms/assets/switch-basic.png)
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -60,28 +62,26 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
-- **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+- **Bevara omarkerat lägesvärde** - Om du väljer det här alternativet kan du ange vilket värde som ska returneras när växlingskomponenten inte är markerad.
+- **Alternativ** - Ange datavärdet och visa text för varje alternativ.
+   - **På datavärde** - Ange det värde som ska skickas när växeln aktiveras i ett adaptivt format.
+   - **I visningstext** - Ange den text som ska visas som etikett när växeln är aktiverad i ett adaptivt format.
+   - **Av datavärde** - Ange det värde som ska skickas när växeln inte är aktiverad i ett adaptivt format. Det här alternativet visas bara om **Bevara omarkerat lägesvärde** växeln är aktiverad.
+   - **Text utanför visning** - Ange den text som ska visas som etikett när växeln inte är aktiverad i ett adaptivt format. Det här alternativet visas bara om **Bevara omarkerat lägesvärde** växeln är aktiverad.
 
+- **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
 
 - **Datatyp för skickat värde**: Det här alternativet anger datatypen för det värde som skickas när något alternativ är markerat. Om **datatyp för skickat värde** är inställd på `Number` och du lägger till strängdata i **Datavärde** &#x200B; &#x200B; på **Alternativ** visas en `Value type mismatch` felmeddelande.
-
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 
 - **Inaktivera komponent** - Välj alternativet att inaktivera eller låsa komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
-- **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
-- **Vid markering, returvärde** -Välj det här alternativet om du vill ange vilket värde som ska associeras med kryssrutan när den är markerad eller markerad. Det är den åtgärd som inträffar när du markerar eller kryssar i kryssrutan.
-- **Aktivera Avmarkera.**- Välj alternativet för att aktivera eller inaktivera möjligheten att avmarkera en kryssruta som tidigare har markerats.
-   - If **Aktivera avmarkering** är aktiverat eller inställt på true betyder det att användaren kan både markera och avmarkera kryssrutan efter eget gottfinnande. De kan aktivera och inaktivera kryssrutan efter behov.
-
-   - If **Aktivera avmarkering** är inaktiverat eller inställt på false betyder det att när kryssrutan är markerad kan användaren inte avmarkera den.
-- **Vid avmarkering, returvärde** - Med det här alternativet kan du ange vilket värde som ska associeras med kryssrutan när den är omarkerad eller avmarkerad.
 
 - **Standardvärde**: Med det här alternativet kan du lägga till ett standardvärde i ett formulärfält. If **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standardvärdet på skärmen. Om användaren inte anger något värde i formulärfältet skickas det här värdet när formuläret skickas.
 
 ### Fliken Validering {#validation-tab}
 
-![Fliken Validering](/help/adaptive-forms/assets/checkbox-validation.png)
+![Fliken Validering](/help/adaptive-forms/assets/switch-validation.png)
 
 - **Obligatoriskt** - Välj det här alternativet om du vill visa komponenten i ett adaptivt formulär. När du har valt alternativet måste du göra ett val innan du kan fortsätta med en formuläröverföring. Du kan inte välja **Dölj komponent** eller **Inaktivera komponent**  i **Grundläggande** när det här alternativet är markerat.
 
@@ -91,7 +91,7 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 
 ### Fliken Hjälpinnehåll {#helpcontent-tab}
 
-![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/checkbox-help.png)
+![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/switch-help.png)
 
 - **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
 
@@ -101,21 +101,29 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 
 ### Fliken Tillgänglighet {#accessibility-tab}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/checkbox-accessibility.png)
+![Fliken Tillgänglighet](/help/adaptive-forms/assets/switch-accessibility.png)
 
 **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
-## Designdialogruta {#design-dialog}
-
-Designdialogrutan används för att definiera och hantera CSS-format för Check-box-komponenten.
-
 ### Fliken Format {#styles-tab}
 
-Kärnkomponenten i den adaptiva Forms-kryssrutan stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+![Fliken Format](/help/adaptive-forms/assets/switch-styles.png)
+
+- **Dölj etiketter** - Välj det här alternativet om du vill dölja etiketterna för switchkomponenten.
+
+- **Visa etiketter** - Välj det här alternativet om du vill visa växelkomponentens etiketter.
+
+## Designdialogruta {#design-dialog}
+
+Designdialogrutan används för att definiera och hantera CSS-format för komponenten Switch.
+
+### Fliken Format {#styles-design-tab}
+
+Den adaptiva kärnkomponenten i Forms-switchen stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
 ![Designdialogruta](/help/adaptive-forms/assets/checkbox-style.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten i den adaptiva Forms-kryssrutan.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Switch Group Core Component.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
@@ -123,7 +131,7 @@ Kärnkomponenten i den adaptiva Forms-kryssrutan stöder AEM [Formatsystem](/hel
 
 ![Dialogrutan Anpassade egenskaper](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
+Med anpassade egenskaper kan du associera anpassade attribut (nyckelvärdepar) till en huvudkomponent för adaptiva formulär med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
 
 - **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
 
@@ -140,3 +148,12 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 ## Se även {#see-also}
 
 {{see-also}}
+
+
+
+
+
+
+
+
+

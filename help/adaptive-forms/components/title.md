@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - titel
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Title.
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera titeltexten och v�
 
 ## Designdialogruta {#design-dialog}
 
-Designfliken används för att definiera och hantera CSS-format för komponenten Date-Picker.
+Designfliken används för att definiera och hantera CSS-format för titelkomponenten.
 
 ### Titel
 
@@ -90,7 +90,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 ![Titelflik i designdialogrutan](/help/adaptive-forms/assets/title_styles.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva kärnkomponenten i Forms Title.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - horisontella flikar
 description: Använda eller anpassa den adaptiva, vågräta Forms-flikkomponenten Core.
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
-source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '2020'
+source-wordcount: '1999'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,10 @@ Core Component (kärnkomponent) för de adaptiva horisontella Forms-flikarna sl�
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| — | — |
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 
 <!-- ## Sample Component Output {#sample-component-output}

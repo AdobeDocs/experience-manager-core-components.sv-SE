@@ -1,7 +1,7 @@
 ---
-source-git-commit: 2b1e62dc57126316a79f22d7d9f203f7ef044dc4
+source-git-commit: 97da426e5c57f00d83d11560d1fa4e8f9ed00feb
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,7 @@ ht-degree: 0%
 - [E-postinmatning](/help/adaptive-forms/components/email-input.md)
 - [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
 - [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
+- [Formulärfragment](/help/adaptive-forms/components/form-fragment.md)
 - [Sidfot](/help/adaptive-forms/components/footer.md)
 - [Sidhuvud](/help/adaptive-forms/components/header.md)
 - [Bild](/help/adaptive-forms/components/image.md)
@@ -75,6 +76,7 @@ ht-degree: 0%
 - [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
 - [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
 - [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
+- [Byt](/help/adaptive-forms/components/switch.md)
 - [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
 - [Textindata](/help/adaptive-forms/components/text-input.md)
 - [Text](/help/adaptive-forms/components/text.md)

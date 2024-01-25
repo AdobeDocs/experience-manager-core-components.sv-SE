@@ -5,15 +5,15 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 3e36fdf9b175930ee3a998bf91116c35b3cb6f9d
+source-git-commit: d172e019c5621d950a94cbdd8d27e4834dbabe3b
 workflow-type: tm+mt
-source-wordcount: '398'
-ht-degree: 6%
+source-wordcount: '390'
+ht-degree: 5%
 
 ---
 
 
-# Grundläggande komponenter i AEM Hjälp {#using}
+# Hjälp för AEM Core Components {#using}
 
 + [Introduktion till kärnkomponenter](/help/introduction.md)
 + [Sökvägar till lyckade](/help/developing/success.md)
@@ -113,6 +113,7 @@ ht-degree: 6%
       + [Anpassad datumväljare för Forms](/help/adaptive-forms/components/date-picker.md)
       + [Adaptiv listruta för Forms](/help/adaptive-forms/components/drop-down.md)
       + [Anpassad e-postinmatning från Forms](/help/adaptive-forms/components/email-input.md)
+      + [Adaptiv Forms-formulärfragment](/help/adaptive-forms/components/form-fragment.md)
       + [Adaptiva Forms-filbilagor](/help/adaptive-forms/components/file-attachment.md)
       + [Adaptiva lodräta Forms-flikar](/help/adaptive-forms/components/vertical-tabs.md)
       + [Anpassningsbara vågräta Forms-flikar](/help/adaptive-forms/components/horizontal-tabs.md)
@@ -123,6 +124,7 @@ ht-degree: 6%
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
       + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
       + [Adaptiv Forms-sändningsknapp](/help/adaptive-forms/components/submit-button.md)
+      + [Adaptiv Forms-switch](/help/adaptive-forms/components/switch.md)
       + [Adaptiv telefoninmatning från Forms](/help/adaptive-forms/components/telephone-input.md)
       + [Adaptiv Forms-text](/help/adaptive-forms/components/text.md)
       + [Adaptiv Forms-textruta](/help/adaptive-forms/components/text-input.md)

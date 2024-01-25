@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1930'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 ![Designdialogruta](/help/adaptive-forms/assets/checkbox-style.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva nedrullningsbara Forms-komponenten.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

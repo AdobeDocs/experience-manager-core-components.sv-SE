@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2025'
 ht-degree: 0%
 
 ---
@@ -54,10 +54,10 @@ Kärnkomponenten i den adaptiva Forms-guiden Layout släpptes i februari 2023 so
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| — | — |
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 

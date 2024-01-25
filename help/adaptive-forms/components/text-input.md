@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - textinmatning (textruta)
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-textinmatning.
 role: Architect, Developer, Admin, User
 exl-id: 49d9fe69-0578-4489-beaa-a18cdb14add7
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1984'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Kä
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva kärnkomponenten för textinmatning i Forms.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

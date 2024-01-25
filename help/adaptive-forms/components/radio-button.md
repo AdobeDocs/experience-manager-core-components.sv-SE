@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1904'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Cor
 
 ![Designdialogruta](/help/adaptive-forms/assets/checkbox-style.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms-alternativknappens Core-komponent.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

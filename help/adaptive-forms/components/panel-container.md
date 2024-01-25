@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - panelbehållare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms-panelbehållaren.
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
-source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
 workflow-type: tm+mt
-source-wordcount: '2036'
+source-wordcount: '2013'
 ht-degree: 0%
 
 ---
@@ -41,10 +41,10 @@ Core-komponenten för den adaptiva Forms-panelbehållaren släpptes i februari 2
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | --- |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| — | — |
+| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.
+Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -167,7 +167,7 @@ Kärnkomponenten för adaptiv bifogad Forms-fil stöder AEM [Formatsystem](/help
 
 ![Designdialogruta](/help/adaptive-forms/assets/panel-container-styles-tab.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Checkbox Group Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva kärnkomponenten i Forms-panelbehållaren.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
