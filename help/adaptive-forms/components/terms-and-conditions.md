@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - villkor
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Terms and Conditions.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2690'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 A **Villkor** -komponenten hänvisar till ett avsnitt i ett formulär som anger de villkor som användare måste godkänna eller uppfylla när de använder en tjänst eller öppnar innehåll.
 
 The **Villkor** är en sammansatt komponent som består av komponenterna Text, Kryssruta och Länk. Textkomponenten innehåller en titel tillsammans med en kort översikt över syftet med och omfattningen av villkoren. Den innehåller även en kryssruta som används för att få användarens uttryckliga medgivande. Du kan också ersätta en medgivandetext med länkar.
+
+>[!NOTE]
+>
+> För AEM 6.5 Forms introducerades denna komponent i AEM 6.5 Forms Service Pack 19 (6.5.19.0). Om du vill aktivera den här komponenten kontrollerar du att de nödvändiga versionerna av både Forms Core Components och WCM Core Components är installerade. Detaljerad information om releaserna av adaptiva Forms Core-komponenter finns i [Adaptiva versioner av Forms Core Components](/help/adaptive-forms/version.md)
 
 **Exempel**
 

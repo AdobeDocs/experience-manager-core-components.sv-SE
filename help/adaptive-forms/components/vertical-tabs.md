@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - lodräta flikar
 description: Använda eller anpassa de adaptiva Forms-flikarna Core Component (Core-komponent).
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1959'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 Lodräta flikar i ett adaptivt formulär avser ett designmönster där flera avsnitt i ett formulär grupperas tillsammans och visas som separata flikar, justerade lodrätt. Användaren kan växla mellan flikarna för att komma åt olika avsnitt i formuläret. Varje flik fungerar som en utlösare som visar och döljer det relaterade formulärinnehållet. Med hjälp av de lodräta flikarna kan du ordna långa formulär i hanterbara avsnitt och förbättra användarupplevelsen. Med flikar kan du göra ett formulär mer tillgängligt för användare med funktionshinder, eftersom de kan växla mellan sektioner med hjälp av tangentbordsnavigering.
 
 När en användare klickar på en flik uppdateras formulärinnehållet dynamiskt för att visa motsvarande avsnitt.
+
+>[!NOTE]
+>
+> För AEM 6.5 Forms introducerades denna komponent i AEM 6.5 Forms Service Pack 19 (6.5.19.0). Om du vill aktivera den här komponenten kontrollerar du att de nödvändiga versionerna av både Forms Core Components och WCM Core Components är installerade. Detaljerad information om releaserna av adaptiva Forms Core-komponenter finns i [Adaptiva versioner av Forms Core Components](/help/adaptive-forms/version.md)
 
 ![exempel](/help/adaptive-forms/assets/horizontal-example.png)
 
