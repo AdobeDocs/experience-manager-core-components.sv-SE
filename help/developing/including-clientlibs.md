@@ -1,20 +1,36 @@
 ---
-title: Inkluderar klientbibliotek
-description: Det finns flera olika sätt att inkludera klientbibliotek beroende på hur du använder dem.
+title: Klientbibliotek och kärnkomponenter
+description: Core Components har ett antal klientbibliotek och ger möjlighet att inkludera egna.
 role: Architect, Developer, Admin
 exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
-source-git-commit: 39a5dee1666fa2645e0579fdfac0400f7fcbdc27
+source-git-commit: d39fe0084522f67664203a026340b23d325c1883
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
 
-# Inkluderar klientbibliotek {#including-client-libraries}
 
-Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/front-end.md#clientlibs) beroende på ditt användningssätt. Det här dokumentet innehåller exempel och exempel [HTML-kodfragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) for each.
+# Klientbibliotek och kärnkomponenter {#client-libraries}
 
-## Rekommenderad standardanvändning {#recommended-default-usage}
+Core Components har ett antal klientbibliotek och ger möjlighet att inkludera egna.
+
+## Tillhandahållna klientbibliotek {#provided}
+
+Core Components innehåller följande klientbibliotek som är färdiga.
+
+* The **webbplats** clientlibs ger det minimala funktionsbeteendet hos de komponenter som ska användas på platsen.
+   * De fungerar som en startpunkt för att snabba upp projekt, och implementeringarna uppmuntras att utöka och [anpassa dem](/help/developing/customizing.md) för att uppnå önskat utseende och önskad funktionalitet.
+* The **redigerare** clientlibs används i redigeringsdialogrutan för att säkerställa dess förväntade funktioner och utseende.
+* The **editorkrok** Klientlibs används på platsen när den läses in i redigeringsläge.
+   * De innehåller JavaScript-kod som körs på händelser som utlöses av redigerare, vilket underlättar initieringen av dynamiska funktioner.
+* Vissa komponenter kan ha särskilda extra klientlibs som är utformade för användning i särskilda situationer, som när de används tillsammans med [Dynamic Media](/help/components/image.md#dynamic-media) till exempel.
+
+## Inkluderar klientbibliotek {#including}
+
+Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/front-end.md#clientlibs) beroende på ditt användningssätt. Följande är exempel med exempel [HTML-kodfragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) for each.
+
+### Rekommenderad standardanvändning {#recommended-default-usage}
 
 Om du inte har tid att undersöka vad som är bäst i din situation kan du inkludera dina klientbibliotek genom att placera följande HTML-rader på sidan `head` element:
 
@@ -27,7 +43,7 @@ Om du inte har tid att undersöka vad som är bäst i din situation kan du inklu
 
 Detta inkluderar både CSS och JS på sidan `head`, men lägger till `defer` attribut till din JS `script` inkluderar, så att webbläsarna väntar på att DOM ska vara klar innan skripten körs och därför optimerar sidans inläsningshastighet.
 
-## Grundläggande användning {#basic-usage}
+### Grundläggande användning {#basic-usage}
 
 Den grundläggande syntaxen som inkluderar både JS och CSS för en klientbibliotekskategori, som genererar alla motsvarande CSS `link` element och/eller JS `script` -element, enligt följande:
 
@@ -46,7 +62,7 @@ Om du vill göra samma sak för flera klientbibliotekskategorier samtidigt kan e
 </sly>
 ```
 
-## Endast CSS eller JS {#css-js-only}
+### Endast CSS eller JS {#css-js-only}
 
 Ofta vill man placera CSS-inkluderingarna i HTML `head` -elementet och JS-elementet innehåller precis före stängningen av `body` -element.
 
@@ -66,7 +82,7 @@ Före `body` closing, to include only the JS, and not the CSS, use `jsIncludes`:
 </sly>
 ```
 
-## Attribut {#attributes}
+### Attribut {#attributes}
 
 Tillämpa attribut på den genererade CSS:en `link` element och/eller JS `script` -element kan du ange ett antal parametrar:
 
@@ -90,7 +106,7 @@ CSS `link` attribut som kan skickas till `jsAndCssIncludes` och `cssIncludes`:
 * `onload`: string
 * `crossorigin`: string
 
-## Inledande {#inlining}
+### Inledande {#inlining}
 
 I vissa fall, antingen för optimering eller för e-post eller [AMP,](amp.md) det kan krävas att CSS eller JS infogas i utdata från HTML.
 
@@ -112,7 +128,7 @@ På samma sätt gäller att om du vill infoga JS, `jsInline` kan användas, och 
 </script>
 ```
 
-## Läsa in sammanhangsberoende CSS och JavaScript {#context-aware-loading}
+### Läsa in sammanhangsberoende CSS och JavaScript {#context-aware-loading}
 
 The [Sidkomponent](/help/components/page.md) har även stöd för inläsning av utvecklardefinierade sammanhangsberoende CSS-, JavaScript- eller metataggar.
 

@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 5aed197937ca527d699569df09ea3305bae98fae
+source-git-commit: 2afcaeb90911de865814235586ea19eb21dd8126
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '378'
 ht-degree: 5%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 5%
 # Hjälp för AEM Core Components {#using}
 
 + [Introduktion till kärnkomponenter](/help/introduction.md)
++ [Responsiv design](/help/responsive.md)
 + [Sökvägar till lyckade](/help/developing/success.md)
 + [Komponentbibliotek](https://adobe.com/go/aem_cmp_library)
 + [Versioner](/help/versions.md)

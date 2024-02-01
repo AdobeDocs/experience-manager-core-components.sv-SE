@@ -3,12 +3,13 @@ title: Carousel-komponent
 description: Med Carousel Component kan innehållsförfattaren presentera innehållet i en roterande karusell.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: e0d3790b265ab27ac2116f0d8daf1a18ecd3d714
+source-git-commit: d39fe0084522f67664203a026340b23d325c1883
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1313'
 ht-degree: 0%
 
 ---
+
 
 # Carousel-komponent{#carousel-component}
 
@@ -48,13 +49,19 @@ Carousel, [Tabbar,](tabs.md) och [Dragspelskomponenter](accordion.md) har stöd 
 
 Så här gör du:
 
-1. Visa sidan med komponenten med hjälp av **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
+1. Visa sidan med komponenten med **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
 1. Inspect innehållet på sidan och identifierar panelens ID.
    * Till exempel `id="carousel-bfe4fa6647-item-47f1a7ca67-tabpanel"`
-1. ID:t blir det ankare som du kan lägga till i URL:en med ett hash-tecken (`#`).
+1. ID:t blir det ankare som du kan lägga till i URL:en med hjälp av ett hash-tecken (`#`).
    * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#carousel-bfe4fa6647-item-47f1a7ca67-tabpanel`
 
 Om du navigerar till URL-adressen med panel-ID som ankarpunkt, rullar webbläsaren direkt till den aktuella komponenten och visar den angivna panelen. Om panelen inte är konfigurerad att visas som standard rullas den automatiskt.
+
+## Carousel och responsiv design {#responsive-design}
+
+Alla kärnkomponenter är utformade för att vara fullt responsiva och ger en sömlös upplevelse på alla enheter.
+
+Vissa avancerade komponenter som Carousel Component kan kräva särskild hänsyn i samband med implementeringsprojektet för att kunna behålla sin lyhördhet under alla förhållanden. Se dokumentet [Responsiv design av kärnkomponenterna](/help/responsive.md) för mer information.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -100,7 +107,7 @@ På **Egenskaper** kan författaren ställa in att bildrutorna ska övergå auto
 
 ![Fliken Tillgänglighet i redigeringsdialogrutan för Carousel-komponenten](/help/assets/carousel-edit-accessibility.png)
 
-På **Tillgänglighet** -tabb kan värden anges för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten.
+På **Tillgänglighet** -tabb kan du ange värden för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten.
 
 * **Etikett** - Värdet på ett ariemärkningsattribut för karusellen, som beskriver karusellens innehåll
 * **Föregående** - Värdet på ett aria-label-attribut för Carousel-navigeringens föregående knappetikett
@@ -108,7 +115,7 @@ På **Tillgänglighet** -tabb kan värden anges för [Tillgänglighet för ARIA]
 * **Spela upp** - Värdet på ett aria-label-attribut för Carousel-navigeringens play-knappetikett
 * **Pausa** - Värdet på ett aria-label-attribut för karusellnavigeringens pause-knappetikett
 * **Tablist** - Värdet på ett aria-label-attribut för Carousel-navigeringens lista över punktetiketter
-* **Ange objektets aria-etikett till dess titel** - Om det här alternativet är markerat får karusellobjektets rubrik automatiskt sin ariaetikettbeskrivning.
+* **Ange objektets aria-etikett till titeln** - Om det här alternativet är markerat får karusellobjektets rubrik automatiskt sin ariaetikettbeskrivning.
 
 ## Välj panel {#select-panel}
 

@@ -3,12 +3,13 @@ title: Dragspelskomponent
 description: Med komponenten Core Component Accordion kan du skapa en samling paneler som ordnas i ett dragspel på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: e8b3e55a42b6be6262d6f51b9569c0be3e8ce6c3
+source-git-commit: d39fe0084522f67664203a026340b23d325c1883
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 1%
+source-wordcount: '1098'
+ht-degree: 0%
 
 ---
+
 
 # Dragspelskomponent{#accordion-component}
 
@@ -19,7 +20,7 @@ Med komponenten Core Component Accordion kan du skapa en samling paneler som ord
 Med komponenten Core Component Accordion kan du skapa en samling komponenter, som består av paneler och som ordnas i ett dragspel på en sida, ungefär som med [Tabbar-komponent](tabs.md), men gör det möjligt att expandera och komprimera panelerna.
 
 * Egenskaperna för dragspelet kan definieras i [konfigurera dialogruta](#configure-dialog).
-* Ordningen på panelerna i dragspelet kan definieras i dialogrutan Konfigurera och i dialogrutan [välj panellägespekare](#select-panel-popover).
+* Ordningen på panelerna i dragspelet kan definieras i dialogrutan Konfigurera och i dialogrutan [välj panellikon](#select-panel-popover).
 * Standardvärden för dragspelskomponenten när du lägger till den på en sida kan definieras i [designdialogruta](#design-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
@@ -40,7 +41,7 @@ Om du vill visa Accordion Component och se exempel på dess konfigurationsaltern
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om dragspelskomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_accordion_v1).
+Den senaste tekniska dokumentationen om Accordion-komponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_accordion_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
@@ -50,13 +51,19 @@ The Accordion, [Carousel,](carousel.md) och [Tabbar-komponenter](tabs.md) har st
 
 Så här gör du:
 
-1. Visa sidan med komponenten med hjälp av **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
+1. Visa sidan med komponenten med **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
 1. Inspect innehållet på sidan och identifierar panelens ID.
    * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
-1. ID:t blir det ankare som du kan lägga till i URL:en med ett hash-tecken (`#`).
+1. ID:t blir det ankare som du kan lägga till i URL:en med hjälp av ett hash-tecken (`#`).
    * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
 
 Om du navigerar till URL-adressen med panel-ID som ankarpunkt, rullar webbläsaren direkt till den aktuella komponenten och visar den angivna panelen. Om panelen inte är konfigurerad att expanderas som standard kommer den att expanderas automatiskt.
+
+## Dragspel och responsiv design {#responsive-design}
+
+Alla kärnkomponenter är utformade för att vara fullt responsiva och ger en sömlös upplevelse på alla enheter.
+
+Vissa avancerade komponenter som dragspelskomponenten kan kräva särskild hänsyn i samband med implementeringsprojektet för att kunna behålla svarstiden under alla förhållanden. Se dokumentet [Responsiv design av kärnkomponenterna](/help/responsive.md) för mer information.
 
 ## Konfigurera dialogruta {#configure-dialog}
 

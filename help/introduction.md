@@ -3,12 +3,13 @@ title: Introduktion till kärnkomponenter
 description: Få lösningar på problem med kärnkomponenterna och låt andra skapa element i AEM.
 role: Architect, Developer, Admin, User
 exl-id: d294db22-4cb0-48a4-9366-03fda5b8bb8e
-source-git-commit: 1d16628d8a85edff8c079421204d8cf0ca3e807a
+source-git-commit: d39fe0084522f67664203a026340b23d325c1883
 workflow-type: tm+mt
-source-wordcount: '927'
-ht-degree: 2%
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
+
 
 # Introduktion till kärnkomponenter{#core-components-introduction}
 
@@ -35,6 +36,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 | Molnklar | Om [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html), på [Adobe Managed Services](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.ams)eller lokalt fungerar de bara. |
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | Mallnivå [innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html#content-policies) Ange vilka funktioner som sidförfattarna får använda eller inte får använda. |
+| [Responsiv](responsive.md) | Alla kärnkomponenter är utformade för att vara fullt responsiva och ger en sömlös upplevelse på alla enheter |
 | Spårbar | The [Integrering av Adobe Client Data Layer](/help/developing/data-layer/overview.md) gör det möjligt att spåra alla aspekter av besökarupplevelsen. |
 | Tillgänglig | De följer [WCAG 2.1-standard](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöd för tangentbordsnavigering ([kända problem](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&amp;q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-vänlig | Utdata från HTML är semantiska och ger [schema.org](https://schema.org) mikrodataanteckningar. |
@@ -46,6 +48,7 @@ De centrala komponenterna är en uppsättning standardiserade WCM-komponenter (W
 | Versioner | The [versionsprincip](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |
 | Öppen källkod | Om något inte är som det ska, [bidra till förbättringar!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
+
 
 ## WCM-komponenterna {#the-wcm-components}
 
