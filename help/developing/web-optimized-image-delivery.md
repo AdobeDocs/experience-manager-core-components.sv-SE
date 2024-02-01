@@ -3,9 +3,9 @@ title: Webboptimerad bildleverans
 description: Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
 role: Architect, Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: 7325751541d463eb9744b1e4a72fd64611f74d55
+source-git-commit: eb1822cb41a849695afb5125745ed5f78e3e70a4
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -95,4 +95,5 @@ Nej, det ska aldrig ske av följande skäl.
 
 * I HTML ändras inte markeringen när webboptimerade bilder aktiveras, utan bara värdet för `src` ändras för bildelementet.
 * När den nya bildtjänsten inte är tillgänglig eller inte kan bearbeta den önskade bilden, kommer den URL som skapas att [tillbaka till Adaptive Image Servlet.](#fallback)
-* Dispatcher-regler kan blockera den webboptimerade bildleveranstjänsten. URL:er för bildleveranstjänsten börjar med `/adobe`och undersöka [avsändarloggar för avvisade begäranden](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html#filter-rejects) bör hjälpa till att felsöka eventuella fel som uppstår när bilderna levereras till webbläsaren.
+
+Dispatcheringsregler kan dock blockera den webboptimerade bildleveranstjänsten. URL:er för bildleveranstjänsten börjar med `/adobe`och undersöker avsändarloggarna för avvisade begäranden som [beskrivs här](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html#filter-rejects) bör hjälpa till att felsöka eventuella fel som uppstår när bilderna levereras till webbläsaren.
