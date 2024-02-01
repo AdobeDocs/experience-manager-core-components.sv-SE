@@ -5,9 +5,10 @@ type: Documentation
 description: Dokumentation för Adobe Experience Manager Core Components
 git-repo: https://github.com/AdobeDocs/experience-manager-core-components.sv-SE
 index: y
-source-git-commit: 2fbf593dee19f22b87a0f7e98d8a1f0c9252e7e7
+recommendations: noDisplay
+source-git-commit: 55e5ef9271b07d8fffc7b396c890af1637309ff3
 workflow-type: tm+mt
-source-wordcount: '112'
+source-wordcount: '101'
 ht-degree: 0%
 
 ---
