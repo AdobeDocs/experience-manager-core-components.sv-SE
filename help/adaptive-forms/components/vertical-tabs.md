@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - lodräta flikar
 description: Använda eller anpassa de adaptiva Forms-flikarna Core Component (Core-komponent).
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
 source-wordcount: '1998'
 ht-degree: 0%
@@ -49,7 +49,6 @@ Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkom
 ## Teknisk information {#technical-details}
 
 Den senaste informationen om de adaptiva Forms-flikarna Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/verticaltabs/v1/verticaltabs). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
-
 
 ## Konfigurera dialogruta {#configure-dialog}
 

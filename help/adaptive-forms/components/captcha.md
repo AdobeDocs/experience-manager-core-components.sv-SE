@@ -5,9 +5,9 @@ role: Architect, Developer, Admin, User
 hide: true
 hidefromtoc: true
 exl-id: 1e413ef3-7a6f-41fc-825d-dbe09ebaffe9
-source-git-commit: 37ac7d3a9ae8c88d4c9be8129cfbd1eb4a7cccd1
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,6 @@ CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Ap
 AEM Forms as a Cloud Service stöder Google reCAPTCHA v2 i Adaptiv Forms. Du kan använda den för att presentera en CAPTCHA-utmaning när du skickar in formulär
 
 ## Användning {#reasons-to-use-google-recaptcha}
-
 
 - **Spam and Bot Prevention**: Ett av de främsta skälen att använda reCAPTCHA är att förhindra att skräppost och skadliga bottar översvämmar ditt formulär. reCAPTCHA:s avancerade algoritmer kan upptäcka automatiska försök att skicka formuläret, vilket säkerställer att endast berättigade användare kan interagera med det.
 
@@ -38,7 +37,7 @@ Den adaptiva Forms Google reCAPTCHA Core-komponenten släpptes i augusti 2023 so
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | --- |
+| — | — |
 | v1 | Kompatibel med<br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/versions.md) -dokument.

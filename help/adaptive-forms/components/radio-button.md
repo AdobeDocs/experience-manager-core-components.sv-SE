@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
 source-wordcount: '1901'
 ht-degree: 0%
@@ -72,7 +72,6 @@ Du kan enkelt anpassa din alternativknappsupplevelse för besökare med dialogru
      
      ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
 
-
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
 - **Alternativ** - Du kan lägga till datavärden och visa textpar med **Lägg till** -knappen.
@@ -85,7 +84,6 @@ Du kan enkelt anpassa din alternativknappsupplevelse för besökare med dialogru
     ![Rich text support for options](/help/adaptive-forms/assets/richtextoptions-support.png)-->
 
   När ett nytt alternativ har lagts till kan följande åtgärder utföras:
-
    - **Datavärde** - Med det här alternativet kan du ange det innehåll som ska skickas när ett alternativ har valts.
    - **Visa text** - Med det här alternativet kan du ange det innehåll som ska visas i ett adaptivt formulär.
    - **Ta bort** - Tryck eller klicka för att ta bort alternativet för en alternativknapp.

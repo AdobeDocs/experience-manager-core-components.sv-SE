@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - titel
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Title.
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 0%
@@ -109,6 +109,7 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 -->
 
 ## Relaterade artiklar {#related-articles}
+
 
 {{more-like-this}}
 

@@ -2,9 +2,9 @@
 title: Adaptiv Forms Core-komponent - flikar överst
 description: Använda eller anpassa de adaptiva Forms-flikarna i den främsta kärnkomponenten.
 role: Architect, Developer, Admin, User
-source-git-commit: 59cd9d65bf4c1be6ab2eaf15bbb747b532863fdd
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '467'
 ht-degree: 1%
 
 ---
@@ -89,5 +89,6 @@ Med dialogrutan Konfigurera kan du enkelt anpassa flikarna efter besökarna. Du 
 >* [guide](/help/adaptive-forms/components/wizard.md)
 
 ## Se även {#see-also}
+
 
 {{see-also}}

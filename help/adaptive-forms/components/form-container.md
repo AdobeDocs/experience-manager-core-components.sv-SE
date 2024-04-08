@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
-source-git-commit: 7862206660909b396cb3d95b7ac81eee9221957b
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -17,7 +17,6 @@ Med Forms kan besökare interagera med webbplatsen genom att tillhandahålla vä
 ## Användning {#reasons-to-use-forms-container}
 
 Det finns flera orsaker till varför ett formulär kan läggas till på en webbplats:
-
 - **Datainsamling**: Forms kan användas för att samla in data från webbplatsbesökare för olika syften, t.ex. marknadsundersökningar, användarbeteendeanalyser och annat.
 
 - **Leadgenerering**: Ett formulär kan användas för att samla in information från potentiella kunder, som namn och e-postadress, för att generera leads för försäljning och marknadsföring.

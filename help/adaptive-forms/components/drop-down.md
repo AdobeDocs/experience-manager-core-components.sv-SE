@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
 source-wordcount: '2011'
 ht-degree: 0%
@@ -78,7 +78,6 @@ Du kan enkelt anpassa den nedrullningsbara listan för besökare med dialogrutan
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
 - **Tillåt flera markeringar** - Välj det här alternativet om du vill välja flera alternativ i en nedrullningsbar lista.
-
 - **Spara värde som** - Det här alternativet anger datatypen för det värde som skickas när något alternativ är markerat. Om **Spara värde som** är inställd på `Number` och du lägger till strängdata i **Datavärde** &#x200B; &#x200B; på **Alternativ** visas en `Value type mismatch` felmeddelande.
 
   I **Alternativ** kan du lägga till datavärden och visa textpar med **Lägg till** -knappen. När ett nytt alternativ har lagts till utförs följande åtgärder:

@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - bild
 description: Använda eller anpassa den adaptiva Forms Image Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9ee42d5d-16e3-4973-8364-5bc512ebe72e
-source-git-commit: 337f3b40f0a6046e4161d8365fc8ecc7d029cdcd
+source-git-commit: e4274194026c3370b52be17171776847374a86b5
 workflow-type: tm+mt
 source-wordcount: '1057'
 ht-degree: 0%
@@ -15,7 +15,6 @@ ht-degree: 0%
 En bildkomponent i ett adaptivt formulär är ett sätt att inkludera bilder i ett formulär. Dessa bilder kan användas för att förbättra formulärets övergripande design, ge ytterligare information eller fungera som visuell hjälp för att hjälpa användarna förstå formulärets syfte. Bildkomponenten kan användas för att lägga till en logotyp, ett foto eller en bild i formuläret.
 
 För tillgänglighet är det viktigt att du anger **Alternativ text** till bilden för att ge ett kort, beskrivande textalternativ för bilden som beskriver bilden för användare som inte kan se den.
-
 
 **Exempel**
 
