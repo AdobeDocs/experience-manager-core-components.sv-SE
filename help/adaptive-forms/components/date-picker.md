@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - datumväljare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms Date-väljaren.
 role: Architect, Developer, Admin, User
 exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1980'
 ht-degree: 0%
 
 ---
@@ -64,10 +64,16 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 - **Namn** - Namnet identifierar komponenten i regelredigeraren unikt. Specialtecken och mellanslag är inte tillåtna i namnsträngarna.
 
 - **Titel** - Titel är en sträng som visas högst upp i en komponent i ett adaptivt format. En unik titel identifierar komponenten i trädstrukturen i ett adaptivt formulär. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png) -->
 
 - **Dölj titel** - Välj det här alternativet om du vill dölja rubriken för komponenttypen i ett adaptivt formulär.
 
 - **Platshållartext** - Platshållartext i en formulärkomponent refererar till en kort etikett eller en fråga som visas i ett inmatningsfält som ett tips till användaren om vilken typ av information som förväntas anges i det fältet. Platshållartext försvinner när användaren börjar skriva i fältet och visas igen om fältet lämnas tomt. Den ger användaren en visuell referens, men fungerar inte som en permanent etikett eller ett permanent värde för fältet.
+
+- **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
 
@@ -90,11 +96,13 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 - **Minsta datum** - Med det här alternativet kan du ange det minsta obligatoriska datumet. Om du anger ett datum som är tidigare än det som anges i Minimidatum visas ett felmeddelande på skärmen. The **Minsta felmeddelande** kan du lägga till ett eget felmeddelande.
 
 - **Minsta felmeddelande** - **Minsta felmeddelande** kan du lägga till ett eget felmeddelande som ska visas om du anger ett datum som är tidigare än det som anges i **Minsta datum** alternativ.
+- **Uteslut minimidatum** - Med det här alternativet kan du utelämna det minsta datumet i ett visst intervall eller en viss datumuppsättning.
 
 - **Högsta datum** - Med det här alternativet kan du ange maximalt obligatoriskt datum. Om du anger ett datum som är senare än det som anges i Maximalt datum visas ett felmeddelande på skärmen. The **Högsta felmeddelande** kan du lägga till ett eget felmeddelande.
 
 - **Högsta felmeddelande** - **Högsta felmeddelande** kan du lägga till ett eget felmeddelande som ska visas om du anger ett datum som är senare än det som anges i **Högsta datum** alternativ.
 
+- **Uteslut maxdatum** - Med det här alternativet kan du utelämna det maximala datumet i ett visst intervall eller en viss datumuppsättning.
 
 ### Fliken Hjälpinnehåll {#help-content-tab}
 
@@ -120,10 +128,6 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 - **Visningsformat** - Det representerar det datumformat som visas för användaren. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
 - **Redigera format** - Det representerar ett datumformat där användaren kan redigera datumet. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
-
-- **Visningsformat** - Det representerar det datumformat som visas för användaren. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
-
-- **Redigera format** - Det representerar ett datumformat där användaren redigerar datumet. Med alternativet Typ kan användaren välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
 ## Designdialogruta {#design-dialog}
 

@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - kryssrutegrupp
 description: Använda eller anpassa den adaptiva Forms Checkbox Group Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 2ced0223-e664-470b-a400-b6865d3a67c9
-source-git-commit: 93acf5f6f11da42a7834bbb11b15a36db1e03dc9
+source-git-commit: db65bd4dd2190ea034799ae209edd78598ac8a48
 workflow-type: tm+mt
-source-wordcount: '1875'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -75,14 +75,28 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the `Fullscreen` ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png) -->
+
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
-- **Alternativ** - Du kan lägga till datavärden och visa textpar med **Lägg till** -knappen. När ett nytt alternativ har lagts till kan följande åtgärder utföras:
-
+- **Alternativ** - Du kan lägga till datavärden och visa textpar med **Lägg till** -knappen.\
+  När ett nytt alternativ har lagts till kan följande åtgärder utföras:
    - **Datavärde** - Med det här alternativet kan du ange det innehåll som ska skickas när ett alternativ har valts.
    - **Visa text** - Med det här alternativet kan du ange det innehåll som ska visas i ett adaptivt formulär.
    - **Ta bort** - Tryck eller klicka för att ta bort alternativet för en kryssruta.
    - **Ordna om** - Tryck eller klicka och dra för att ordna om panelerna.
+
+<!-- You can also format the options for checkbox group using **Allow Rich Text for Options**. 
+  
+     ![Rich text support for options](/help/adaptive-forms/assets/richtext-for-options.png)
+
+    Once you select the checkbox for **Allow Rich Text for Options** formatting options become visible to style the component's options. To access all available formatting options, you can click on the `Fullscreen` ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     ![Rich text support for options](/help/adaptive-forms/assets/richtextoptions-support.png)
+
+    -->
 
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 

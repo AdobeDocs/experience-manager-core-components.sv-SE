@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - textinmatning (textruta)
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-textinmatning.
 role: Architect, Developer, Admin, User
 exl-id: 49d9fe69-0578-4489-beaa-a18cdb14add7
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
 workflow-type: tm+mt
-source-wordcount: '1984'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
@@ -57,6 +57,10 @@ Du kan enkelt anpassa textinmatningen för besökare med dialogrutan Konfigurera
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -75,9 +79,7 @@ Du kan enkelt anpassa textinmatningen för besökare med dialogrutan Konfigurera
 
 - **Tillåt flera rader** - Med det här alternativet kan användaren ange flera rader i ett formulärfält.
 
-- **Tillåt RTF** - I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som användaren kan använda för att formatera text.
-
-- **Autofyll attribut** - Fyll i automatiskt fyller i formulärfält enligt ett mönster eller text som redan har angetts. När användaren börjar skriva text i formulärfältet visas förslag i en nedrullningsbar lista där han/hon kan välja lämpligt alternativ.
+- **Autofyll attribut** - Med det här alternativet kan användare ange ett värde som fylls i automatiskt i formulärfältet baserat på den lagrade informationen.
 
 ### Fliken Validering {#validation-tab}
 

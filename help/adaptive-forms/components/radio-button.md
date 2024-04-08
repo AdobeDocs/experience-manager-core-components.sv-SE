@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
 workflow-type: tm+mt
-source-wordcount: '1904'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -67,10 +67,24 @@ Du kan enkelt anpassa din alternativknappsupplevelse för besökare med dialogru
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.    
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
+
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
-  I **Alternativ** kan du lägga till datavärden och visa textpar med **Lägg till** -knappen. När ett nytt alternativ har lagts till kan följande åtgärder utföras:
+- **Alternativ** - Du kan lägga till datavärden och visa textpar med **Lägg till** -knappen.
+  <!-- You can also format the options for radiobutton group using **Allow Rich Text for Options**. 
+  
+     ![Rich text support for options](/help/adaptive-forms/assets/richtext-for-options.png)-->
+
+  <!-- Once you select the checkbox for **Allow Rich Text for Options** formatting options become visible to style the component's options. To access all available formatting options, you can click on the `Fullscreen` ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+    
+    ![Rich text support for options](/help/adaptive-forms/assets/richtextoptions-support.png)-->
+
+  När ett nytt alternativ har lagts till kan följande åtgärder utföras:
 
    - **Datavärde** - Med det här alternativet kan du ange det innehåll som ska skickas när ett alternativ har valts.
    - **Visa text** - Med det här alternativet kan du ange det innehåll som ska visas i ett adaptivt formulär.

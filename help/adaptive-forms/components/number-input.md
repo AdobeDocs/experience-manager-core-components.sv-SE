@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - talindata
 description: Använda eller anpassa den adaptiva kärnkomponenten Forms Number.
 role: Architect, Developer, Admin, User
 exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
 workflow-type: tm+mt
-source-wordcount: '2035'
+source-wordcount: '1989'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din talinmatning för besökar
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.   
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png) -->
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -121,9 +125,9 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din talinmatning för besökar
 
 - **Visningsformat** - Med det här alternativet kan du välja alternativ från olika heltalsnummerformat för visning. När användaren väljer något alternativ på menyn **Typ** nedrullningsbar meny **Format** visas på panelen. Du kan välja ett specifikt format där tal visas för användaren.
 
-- **Antal siffror före decimaltecknet (1234,000)** - Använd det här alternativet om du vill ange antalet siffror som ska visas före decimalkommat.
+<!--   **Number of digits before the decimal separator (1234.000)** - Use this option to specify the number of digits to display before the decimal point. 
 
-- **Antal siffror efter decimaltecknet (1234,000)** - Använd det här alternativet om du vill ange antalet siffror som ska visas efter decimalkommat.
+- **Number of digits after the decimal separator (1234.000)** - Use this option to specify the number of digits to display after the decimal point. -->
 
 ## Designdialogruta {#design-dialog}
 

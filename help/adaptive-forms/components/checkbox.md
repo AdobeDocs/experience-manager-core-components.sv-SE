@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - kryssruta
 description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
+source-git-commit: bb226c9545ce32f48896d737c8652a1e0c0e11a5
 workflow-type: tm+mt
-source-wordcount: '1746'
+source-wordcount: '1666'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,11 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln bredvid komponenten. Om du inte lägger till en titel visas inte komponenten.
 
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png) -->
+
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
@@ -73,12 +78,9 @@ Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfig
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 
 - **Inaktivera komponent** - Välj alternativet att inaktivera eller låsa komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
-- **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+  <!-- - **Read-only** - Select the option to make the component non-editable. The user can see the value of the field but cannot modify it. The component remains accessible for other purposes, such as using it for calculations in the Rule Editor.-->
 - **Vid markering, returvärde** -Välj det här alternativet om du vill ange vilket värde som ska associeras med kryssrutan när den är markerad eller markerad. Det är den åtgärd som inträffar när du markerar eller kryssar i kryssrutan.
-- **Aktivera Avmarkera.**- Välj alternativet för att aktivera eller inaktivera möjligheten att avmarkera en kryssruta som tidigare har markerats.
-   - If **Aktivera avmarkering** är aktiverat eller inställt på true betyder det att användaren kan både markera och avmarkera kryssrutan efter eget gottfinnande. De kan aktivera och inaktivera kryssrutan efter behov.
-
-   - If **Aktivera avmarkering** är inaktiverat eller inställt på false betyder det att när kryssrutan är markerad kan användaren inte avmarkera den.
+- **Bevara omarkerat lägesvärde**- Välj det här alternativet om du vill ange vilket värde som ska returneras när kryssrutekomponenten inte är markerad. If **Bevara omarkerat lägesvärde** är aktiverad eller inställd på true, **Vid avmarkering, returvärde** visas.
 - **Vid avmarkering, returvärde** - Med det här alternativet kan du ange vilket värde som ska associeras med kryssrutan när den är omarkerad eller avmarkerad.
 
 - **Standardvärde**: Med det här alternativet kan du lägga till ett standardvärde i ett formulärfält. If **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standardvärdet på skärmen. Om användaren inte anger något värde i formulärfältet skickas det här värdet när formuläret skickas.

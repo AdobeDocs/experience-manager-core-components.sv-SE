@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - bifogad fil
 description: Använda eller anpassa den adaptiva Forms-filbilagan Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 64a54fc6-db52-481f-bf5a-60c05122004d
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: 8c51bd29074e5977d3435d849033770cadc357b8
 workflow-type: tm+mt
-source-wordcount: '1740'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,10 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -73,6 +77,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 - **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 - **Tillåt flera bifogade filer** - Välj det här alternativet om du vill överföra flera bifogade filer med **Bifogad fil** -knappen.
+- **Dra och släpp text** - Det är texten som visas högst upp i **Bifoga** för att uppmana användare att antingen bifoga eller dra och släppa filer. Du kan anpassa texten som visas högst upp i **Bifoga** -knappen. <!-- Additionally, you can format the text using the rich text menu. -->
 
 ### Fliken Validering {#validation-tab}
 
@@ -84,11 +89,10 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
 
 - **Skriptverifieringsmeddelande** - Med det här alternativet kan du ange ett meddelande som ska visas om skriptvalideringen misslyckas.
 
-- **Felmeddelande för minsta antal filer** - Det här alternativet används för att ange ett felmeddelande som visas om du överför filer som är mindre än det angivna minsta antalet filer.
-
-- **Felmeddelande för maximalt antal filer** - Det här alternativet används för att ange ett felmeddelande som visas om du överför filer som är större än det angivna maximala antalet filer.
+<!--   **Minimum files error message** - This option is used to enter an error message that is displayed if you upload files lesser than the specified minimum number of files.-->
 
 - **Maximal filstorlek (MB)** - Med det här alternativet kan du ange en maximal filstorlek. Filstorlekar anges i MB.
+  <!--   **Maximum files error message** - This option is used to enter an error message that is displayed if you upload files greater than the specified maximum number of files.-->
 
 - **Felmeddelande för maximal filstorlek** - Det här alternativet används för att ange ett felmeddelande som visas om du överför filer som är större än den filstorlek som anges i **Maximal filstorlek (MB)** alternativ.
 

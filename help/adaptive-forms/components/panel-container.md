@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - panelbehållare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms-panelbehållaren.
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
 workflow-type: tm+mt
-source-wordcount: '2013'
+source-wordcount: '2052'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,10 @@ Du kan enkelt anpassa panelbehållarupplevelsen för besökare med dialogrutan K
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png) -->
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -94,6 +98,7 @@ Du kan enkelt anpassa panelbehållarupplevelsen för besökare med dialogrutan K
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+- **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
 ### Panelfliken Upprepa {#repeat-panel}
 
@@ -101,7 +106,7 @@ Du kan enkelt anpassa panelbehållarupplevelsen för besökare med dialogrutan K
 
 Du kan använda alternativen för upprepning för att duplicera panelbehållaren och dess underordnade komponenter, definiera ett minsta och högsta antal upprepningar och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med panelbehållarkomponenten och använder dess inställningar visas följande alternativ:
 
-- **Gör guiden repeterbar**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
+- **Gör panelen upprepningsbar**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
 - **Minsta antal upprepningar**: Anger det minsta antal gånger som panelbehållaren kan upprepas. Värdet noll anger att guidepanelen inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger som panelbehållaren kan upprepas. Som standard är det här värdet obegränsat.
 

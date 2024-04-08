@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
-source-git-commit: 4d01c75fadb0220f0093a6647c27c4002cc979c9
+source-git-commit: 7862206660909b396cb3d95b7ac81eee9221957b
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -62,6 +62,8 @@ Du kan enkelt anpassa formulärbehållarupplevelsen för besökare med dialogrut
 
 ![fliken Grundläggande](/help/adaptive-forms/assets/formcontainer_basictab.png)
 
+- **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+
 - **Förifyllning** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [skapa och konfigurera en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=en#aem-forms-custom-prefill-service).
 
 - **Kategorin Klientbibliotek** - Användaren kan konfigurera ett anpassat JavaScript-bibliotek per adaptiv form. Vi rekommenderar att du bara behåller återanvändbara funktioner i biblioteket, som är beroende av jquery- och underscore.js-bibliotek från tredje part.
@@ -79,15 +81,15 @@ Du kan använda formulärdatamodellen för att ansluta ett formulär till en dat
 
 ### Fliken Skicka {#submission-tab}
 
-![Fliken Skicka](/help/adaptive-forms/assets/formcontainer_submissiontab.png)
-
 Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 
 - **Omdirigerings-URL/sökväg** - Med det här alternativet kan användaren konfigurera en sida för varje formulär som formuläranvändarna omdirigeras till efter att ha skickat in ett adaptivt formulär. Klicka här för mer information om [konfigurera omdirigeringssidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html).
 
-![Visa fliken Meddelande](/help/adaptive-forms/assets/formconatiner_showmessage.png)
+![Fliken Skicka](/help/adaptive-forms/assets/formcontainer_submissiontab.png)
 
 - **Visa meddelande** - Med det här alternativet kan användare lägga till ett meddelande som visas när det adaptiva formuläret har skickats. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren. Dialogrutan Visa meddelande har stöd för formateringsverktyg med formaterad text som gör att användare kan formatera den tillagda texten.
+
+![Visa fliken Meddelande](/help/adaptive-forms/assets/formconatiner_showmessage.png)
 
 - **Skicka åtgärd** - En Skicka-åtgärd aktiveras när en användare klickar på Skicka-knappen på ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur [konfigurera en Skicka-åtgärd på fliken Skicka](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#supporting-custom-functions-in-validation-expressions-br).
 

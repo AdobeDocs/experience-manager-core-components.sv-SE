@@ -2,13 +2,13 @@
 title: Adaptivt formulärfragment
 description: Använd formulärfragment för att skapa formulärsegment eller fältgrupper och återanvänd dem i adaptiva Forms för att förbättra effektiviteten och återanvändbarheten.
 role: Architect, Developer, Admin, User
-source-git-commit: 6f83e843b95689bad2cfb31bd53c20b135d789d5
+exl-id: bde4a416-1d6b-4e9e-ac74-70fccef473cb
+source-git-commit: f1fce5f661bc7581f7c6c6905f34e9954d1d4f70
 workflow-type: tm+mt
-source-wordcount: '1675'
+source-wordcount: '1780'
 ht-degree: 0%
 
 ---
-
 
 # Komponent för formulärfragment {#form-fragment-component-adaptive-forms-core-component}
 
@@ -60,6 +60,10 @@ Du kan enkelt anpassa fragmentupplevelsen för besökare med dialogrutan Konfigu
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.    
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -118,6 +122,8 @@ Du kan enkelt anpassa fragmentupplevelsen för besökare med dialogrutan Konfigu
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
+- **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
+
 ## Designdialogruta {#design-dialog}
 
 Designdialogrutan används för att definiera och hantera CSS-format för formulärfragmentkomponenten.
@@ -153,9 +159,3 @@ Med anpassade egenskaper kan du associera anpassade attribut (nyckelvärdepar) t
 ## Se även {#see-also}
 
 {{see-also}}
-
-
-
-
-
-

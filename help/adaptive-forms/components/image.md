@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - bild
 description: Använda eller anpassa den adaptiva Forms Image Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9ee42d5d-16e3-4973-8364-5bc512ebe72e
-source-git-commit: 8388de05c86641d4887b48a9fd10901cb5a19998
+source-git-commit: 337f3b40f0a6046e4161d8365fc8ecc7d029cdcd
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Du kan enkelt anpassa din bildupplevelse för besökare med dialogrutan Konfigur
 
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
 
-- **Bindningsreferens för dokument** - Med det här alternativet kan du koppla ett adaptivt formulärfält till fältet Dokument för post. När användaren anger ett värde i ett länkat fält i ett adaptivt formulär visas det värdet också i det länkade fältet i motsvarande postdokument. En dokumentbindningsreferens kan t.ex. användas för att visa en kunds namn och adress i ett arkivdokument, baserat på kundens ID som anges i formuläret. På så sätt kan du med AEM Forms generera ett dokument för inspelning och det ger en smidig användarupplevelse när du samlar in och hanterar data.
+<!--   **Document of Record bind reference** - This option allows you to associate an Adaptive Form field with Document of Record field. When user enters any value in a linked field of an Adaptive Form that value also appears in the linked field of the corresponding Document of Record. For example, a Document of Record bind reference can be used to display a customer's name and address in a Document of Record, based on the customer's ID entered into the form. In this way, AEM Forms enable you to generate Document of Record and offers a seamless user experience for collecting and managing data.-->
 
 - **Beskrivning** - En beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med en viss bild.
 
@@ -79,7 +79,8 @@ Du kan enkelt anpassa din bildupplevelse för besökare med dialogrutan Konfigur
 
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 
-- **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+<!--   **Read-only** - Select the option to make the component non-editable. The user can see the value of the field but cannot modify it. The component remains accessible for other purposes, such as using it for calculations in the Rule Editor.
+-->
 
 ## Designdialogruta {#design-dialog}
 

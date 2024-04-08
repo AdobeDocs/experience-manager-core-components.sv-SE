@@ -2,15 +2,13 @@
 title: Adaptiv Forms Core-komponent - switch-komponent
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-switchen.
 role: Architect, Developer, Admin, User
-hide: true
-hidefromToC: true
-source-git-commit: d172e019c5621d950a94cbdd8d27e4834dbabe3b
+exl-id: 6ff2ca76-1514-42eb-bde3-60259af2d187
+source-git-commit: 8c51bd29074e5977d3435d849033770cadc357b8
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 0%
 
 ---
-
 
 # Växla komponent{#switch-adaptive-forms-core-component}
 
@@ -59,6 +57,10 @@ Med dialogrutan Konfigurera kan du enkelt anpassa hur din switch-komponent funge
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln bredvid komponenten. Om du inte lägger till en titel visas inte komponenten.
+<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
+    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+     
+     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -68,6 +70,15 @@ Med dialogrutan Konfigurera kan du enkelt anpassa hur din switch-komponent funge
    - **I visningstext** - Ange den text som ska visas som etikett när växeln är aktiverad i ett adaptivt format.
    - **Av datavärde** - Ange det värde som ska skickas när växeln inte är aktiverad i ett adaptivt format. Det här alternativet visas bara om **Bevara omarkerat lägesvärde** växeln är aktiverad.
    - **Text utanför visning** - Ange den text som ska visas som etikett när växeln inte är aktiverad i ett adaptivt format. Det här alternativet visas bara om **Bevara omarkerat lägesvärde** växeln är aktiverad.
+
+<!-- You can also format the options for switch using **Allow Rich Text for Options**. 
+  
+     ![Rich text support for options](/help/adaptive-forms/assets/switch-optipn-rich-text.png)
+
+    Once you select the checkbox for **Allow Rich Text for options** formatting options become visible to style the component's options. To access all available formatting options, you can click on the `Fullscreen` ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
+    
+    ![Rich text support for options](/help/adaptive-forms/assets/switch-richtext-for-display.png) -->
+
 
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
@@ -148,12 +159,3 @@ Med anpassade egenskaper kan du associera anpassade attribut (nyckelvärdepar) t
 ## Se även {#see-also}
 
 {{see-also}}
-
-
-
-
-
-
-
-
-
