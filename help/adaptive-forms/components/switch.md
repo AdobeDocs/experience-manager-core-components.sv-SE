@@ -3,14 +3,16 @@ title: Adaptiv Forms Core-komponent - switch-komponent
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-switchen.
 role: Architect, Developer, Admin, User
 exl-id: 6ff2ca76-1514-42eb-bde3-60259af2d187
-source-git-commit: e4274194026c3370b52be17171776847374a86b5
+source-git-commit: 79b99d4f6b5a2b186ff3dbf570a58dc86bf24d4a
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1867'
 ht-degree: 0%
 
 ---
 
 # Växla komponent{#switch-adaptive-forms-core-component}
+
+<span class="preview"> Den här artikeln innehåller innehåll om **Tillåt RTF-text för rubrik** och **Tillåt RTF för alternativ**  funktioner, förhandsversioner. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Switch-komponenten är ett grafiskt användargränssnitt som används i formulär där användarna kan välja mellan två alternativ. Det är vanligtvis en tvålägesväxling som gör att användare kan välja mellan två lägen, vilket aktiverar eller inaktiverar en funktion, inställning eller funktion. Switchkomponenten är utformad för att visuellt representera det aktuella läget och visa om en viss funktion är påslagen eller inte.
 
@@ -57,10 +59,10 @@ Med dialogrutan Konfigurera kan du enkelt anpassa hur din switch-komponent funge
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln bredvid komponenten. Om du inte lägger till en titel visas inte komponenten.
-<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.  
-    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
-     
-     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
+- **Tillåt RTF-text för rubrik** - Med den här funktionen kan användare formatera vanliga texttitlar med funktioner som fet, kursiv, understruken text, olika teckensnitt, teckenstorlekar, färger och ytterligare alternativ för att förbättra visuell presentation och anpassning. Det ger större flexibilitet och kreativ kontroll när det gäller att få titlar att sticka ut i dokument, på webbplatser och i tillämpningar.\
+  När du markerar kryssrutan för **Tillåt RTF-text för rubrik** blir formateringsalternativen synliga för att formatera komponentens titel. Om du vill visa alla tillgängliga formateringsalternativ klickar du på ![Helskärmsikon](/help/adaptive-forms/assets/fullscreen-icon.png) -fliken.
+
+  ![Stöd för RTF](/help/adaptive-forms/assets/richtext-support-title.png)
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
@@ -71,13 +73,13 @@ Med dialogrutan Konfigurera kan du enkelt anpassa hur din switch-komponent funge
    - **Av datavärde** - Ange det värde som ska skickas när växeln inte är aktiverad i ett adaptivt format. Det här alternativet visas bara om **Bevara omarkerat lägesvärde** växeln är aktiverad.
    - **Text utanför visning** - Ange den text som ska visas som etikett när växeln inte är aktiverad i ett adaptivt format. Det här alternativet visas bara om **Bevara omarkerat lägesvärde** växeln är aktiverad.
 
-<!-- You can also format the options for switch using **Allow Rich Text for Options**. 
-  
-     ![Rich text support for options](/help/adaptive-forms/assets/switch-optipn-rich-text.png)
+  Du kan också formatera alternativen för switchkomponenten med **Tillåt RTF för alternativ**.
 
-    Once you select the checkbox for **Allow Rich Text for options** formatting options become visible to style the component's options. To access all available formatting options, you can click on the `Fullscreen` ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
-    
-    ![Rich text support for options](/help/adaptive-forms/assets/switch-richtext-for-display.png) -->
+  ![RTF-stöd för olika alternativ](/help/adaptive-forms/assets/switch-optipn-rich-text.png)
+
+  När du har markerat kryssrutan för **Tillåt RTF för alternativ** formateringsalternativen blir synliga när du vill formatera komponentens alternativ. Om du vill visa alla tillgängliga formateringsalternativ klickar du på `Fullscreen` ![Helskärmsikon](/help/adaptive-forms/assets/fullscreen-icon.png) -fliken.
+
+  ![RTF-stöd för olika alternativ](/help/adaptive-forms/assets/switch-richtext-for-display.png)
 
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.

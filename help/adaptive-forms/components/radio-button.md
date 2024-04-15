@@ -3,14 +3,16 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: e4274194026c3370b52be17171776847374a86b5
+source-git-commit: 79b99d4f6b5a2b186ff3dbf570a58dc86bf24d4a
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '2079'
 ht-degree: 0%
 
 ---
 
 # Alternativknapp {#radio-button-adaptive-forms-core-component}
+
+<span class="preview"> Den här artikeln innehåller innehåll om **Tillåt RTF-text för rubrik** och **Tillåt RTF för alternativ**  funktioner, förhandsversioner. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En alternativknapp i ett adaptivt formulär är en typ av indataelement som gör att en användare kan välja ett alternativ från en grupp med relaterade alternativ. Den representeras av en liten cirkulär knapp som antingen är fylld eller tom för att ange om alternativet är markerat eller inte. När en användare markerar en alternativknapp avmarkeras de andra i gruppen. Alternativknappar används vanligtvis när det finns flera alternativ som utesluter varandra och bara ett alternativ kan markeras åt gången.
 
@@ -67,27 +69,26 @@ Du kan enkelt anpassa din alternativknappsupplevelse för besökare med dialogru
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
 - **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
-<!-- **Allow Rich Text for Title** - This features enables users to format plain text titles, incorporating features like bold, italic, underlined text, various fonts, font sizes, colors, and additional option to enhance visual presentation and customization. It offers greater flexibility and creative control in making titles stand out within documents, websites, or applications.    
-    Upon selecting the checkbox for **Allow Rich Text for Title** , formatting options become visible to style the component's title. To access all available formatting options, you can click on the ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
-     
-     ![Rich text support](/help/adaptive-forms/assets/richtext-support-title.png)-->
+- **Tillåt RTF-text för rubrik** - Med den här funktionen kan användare formatera vanliga texttitlar med funktioner som fet, kursiv, understruken text, olika teckensnitt, teckenstorlekar, färger och ytterligare alternativ för att förbättra visuell presentation och anpassning. Det ger större flexibilitet och kreativ kontroll när det gäller att få titlar att sticka ut i dokument, på webbplatser och i tillämpningar.\
+  När du markerar kryssrutan för **Tillåt RTF-text för rubrik** blir formateringsalternativen synliga för att formatera komponentens titel. Om du vill visa alla tillgängliga formateringsalternativ klickar du på ![Helskärmsikon](/help/adaptive-forms/assets/fullscreen-icon.png) -fliken.
+
+  ![Stöd för RTF](/help/adaptive-forms/assets/richtext-support-title.png)
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
 
-- **Alternativ** - Du kan lägga till datavärden och visa textpar med **Lägg till** -knappen.
-  <!-- You can also format the options for radiobutton group using **Allow Rich Text for Options**. 
-  
-     ![Rich text support for options](/help/adaptive-forms/assets/richtext-for-options.png)-->
-
-  <!-- Once you select the checkbox for **Allow Rich Text for Options** formatting options become visible to style the component's options. To access all available formatting options, you can click on the `Fullscreen` ![Fullscreen icon](/help/adaptive-forms/assets/fullscreen-icon.png) tab.
-    
-    ![Rich text support for options](/help/adaptive-forms/assets/richtextoptions-support.png)-->
-
+- **Alternativ** - Du kan lägga till datavärden och visa textpar med **Lägg till** -knappen.\
   När ett nytt alternativ har lagts till kan följande åtgärder utföras:
    - **Datavärde** - Med det här alternativet kan du ange det innehåll som ska skickas när ett alternativ har valts.
    - **Visa text** - Med det här alternativet kan du ange det innehåll som ska visas i ett adaptivt formulär.
    - **Ta bort** - Tryck eller klicka för att ta bort alternativet för en alternativknapp.
    - **Ordna om** - Tryck eller klicka och dra för att ändra ordningen på alternativen.
+Du kan också formatera alternativen för alternativknappsgruppen med **Tillåt RTF för alternativ**.
+
+  ![RTF-stöd för olika alternativ](/help/adaptive-forms/assets/richtext-for-options.png)
+
+  När du har markerat kryssrutan för **Tillåt RTF för alternativ** formateringsalternativen blir synliga när du vill formatera komponentens alternativ. Om du vill visa alla tillgängliga formateringsalternativ klickar du på `Fullscreen` ![Helskärmsikon](/help/adaptive-forms/assets/fullscreen-icon.png) -fliken.
+
+  ![RTF-stöd för olika alternativ](/help/adaptive-forms/assets/richtextoptions-support.png)
 
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 

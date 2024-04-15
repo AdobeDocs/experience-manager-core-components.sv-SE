@@ -3,9 +3,9 @@ title: AEM adaptiva Forms Core Components-versioner
 description: AEM kärnkomponenter publiceras som versioner som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: 723d29b88d4cbc73f756d26a64d503b425ab26f4
+source-git-commit: 5ddb234ee5551fa3ecd47b4df073b97bef9a882f
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -17,69 +17,75 @@ Identifiera de exakta versionerna av både Forms Core Components och WCM Core Co
 
 ## AEM Forms som versionshistorik {#aem-as-cs-version-history}
 
-I följande tabell visas en lista över de Core Components-versioner som är kompatibla med AEM as a Cloud Service och som är tillgängliga på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
+De Core Components-versioner som är kompatibla med AEM as a Cloud Service är tillgängliga på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
 
-
-
-
-| Forms Core Components | WCM-kärnkomponenter | AEM Forms som molntjänst | Java | Maven |
-|-----------------------|---------------------| ---------------------------- | ----- | ------ |
-| 2.0.86 | 2.23.4 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.76 | 2.23.4 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.74 | 2.23.4 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.72 | 2.23.4 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.70 | 2.23.4 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.68 | 2.23.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.66 | 2.23.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.64 | 2.23.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.62 | 2.23.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.60 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.56 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.54 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.52 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.50 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.48 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.46 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.44 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.42 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.40 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.36 | 2.23.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.26 | 2.22.12 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.18 | 2.22.10 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.14 | 2.21.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.6 | 2.21.2 | Kontinuerlig | 8, 11 | 3.3.9+ |                      |                     |                              |       |        |
-| 2.0.4 | 2.21.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 2.0.2 | 2.21.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.1.8 | 2.21.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.1.6 | 2.21.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.56 | 2.21.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.54 | 2.21.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.52 | 2.21.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.50 | 2.21.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.48 | 2.21.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.46 | 2.21.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.44 | 2.21.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.42 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.40 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.38 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.36 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.34 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.30 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.28 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.26 | 2.20.8 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.24 | 2.20.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.22 | 2.20.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.20 | 2.20.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.18 | 2.20.2 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.16 | 2.19.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.14 | 2.19.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.12 | 2.19.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.10 | 2.19.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.8 | 2.18.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.4 | 2.18.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
-| 1.0.2 | 2.10.0 | Kontinuerlig | 8, 11 | 3.3.9+ |
+Om du vill se versionshistoriken för kärnkomponenterna för AEM as a Cloud Service, [klicka här](https://github.com/adobe/aem-core-forms-components/blob/master/VERSIONS.md).
 
 <!--
+| Forms Core Components | WCM Core Components | AEM Forms as a cloud service | Java  | Maven  |  
+|-----------------------|---------------------| ---------------------------- | ----- | ------ |
+| 3.0.8                | 2.24.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 3.0.6                | 2.24.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 3.0.4                 | 2.24.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 3.0.2                 | 2.24.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 3.0.0                 | 2.24.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.90                | 2.23.4             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.88                | 2.23.4             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.86                | 2.23.4             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.76                | 2.23.4             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.74                | 2.23.4             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.72                | 2.23.4             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.70                | 2.23.4             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.68                | 2.23.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.66                | 2.23.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.64                | 2.23.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.62                | 2.23.2             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.60                | 2.23.0             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.56                | 2.23.0             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.54                | 2.23.0             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.52                | 2.23.0             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.50                | 2.23.0             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.48                | 2.23.0             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.46                | 2.23.0             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.44                | 2.23.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.42                | 2.23.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.40                | 2.23.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.36                | 2.23.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.26                | 2.22.12             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.18                | 2.22.10             | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.14                | 2.21.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.6                 | 2.21.2              | Continual                    | 8, 11 | 3.3.9+ |                      |                     |                              |       |        |
+| 2.0.4                 | 2.21.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 2.0.2                 | 2.21.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.1.8                 | 2.21.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.1.6                 | 2.21.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.56                | 2.21.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.54                | 2.21.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.52                | 2.21.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.50                | 2.21.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.48                | 2.21.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.46                | 2.21.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.44                | 2.21.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.42                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.40                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.38                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.36                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.34                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.30                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.28                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.26                | 2.20.8              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.24                | 2.20.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.22                | 2.20.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.20                | 2.20.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.18                | 2.20.2              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.16                | 2.19.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.14                | 2.19.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.12                | 2.19.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.10                | 2.19.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.8                 | 2.18.0              | Continual                    | 8, 11 | 3.3.9+ |
+| 1.0.4                 | 2.18.0              | Continual                    | 8, 11 | 3.3.9+ |  
+| 1.0.2                 | 2.10.0              | Continual                    | 8, 11 | 3.3.9+ |  
+
 
 |Release|Description|AEM as a Cloud Service|Java&trade;|Release Date|
 |---|---|---|---|---|
@@ -110,23 +116,24 @@ I följande tabell visas en lista över de Core Components-versioner som är kom
 
 ## AEM 6.5 Forms - versionshistorik {#aem-as-form-version-history}
 
-I följande tabell visas en lista över de Core Components-versioner som är kompatibla med AEM 6.5 Form On Premise och AMS som finns på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12).
+Core Components releases that are compatible with AEM 6.5 Form on persone and AMS which are available on [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
 
+Om du vill se versionshistoriken för kärnkomponenterna för AEM 6.5-formuläret på plats och AMS, [klicka här](https://github.com/adobe/aem-core-forms-components/blob/release/650/VERSIONS.md).
 
-| Forms Core Components | WCM-kärnkomponenter | AEM 6.5 | Java | Maven |
+<!--
+| Forms Core Components | WCM Core Components | AEM 6.5 | Java  | Maven  |  
 |-----------------------|---------------------|---------| ----- | ------ |
-| 1.1.32 | 2.23.2 | 6.5.18+ | 8, 11 | 3.3.9+ |
-| 1.1.28 | 2.23.2 | 6.5.19+ | 8, 11 | 3.3.9+ |
-| 1.1.26 | 2.23.2 | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.24 | 2.22.12 | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.22 | 2.22.12 | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.20 | 2.22.10 | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.18 | 2.21.2 | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.16 | 2.21.2 | 6.5.17+ | 8, 11 | 3.3.9+ |
-| 1.1.12 | 2.21.2 | 6.5.16+ | 8, 11 | 3.3.9+ |
-
-
-<!-- 
+| 1.1.34                | 2.24.2              | 6.5.18+ | 8, 11 | 3.3.9+ |
+| 1.1.32                | 2.23.2              | 6.5.18+ | 8, 11 | 3.3.9+ |
+| 1.1.28                | 2.23.2              | 6.5.19+ | 8, 11 | 3.3.9+ |
+| 1.1.26                | 2.23.2              | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.24                | 2.22.12             | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.22                | 2.22.12             | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.20                | 2.22.10             | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.18                | 2.21.2              | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.16                | 2.21.2              | 6.5.17+ | 8, 11 | 3.3.9+ |
+| 1.1.12                | 2.21.2              | 6.5.16+ | 8, 11 | 3.3.9+ |
+ 
 |Release|Description|WCM Version|AEM 6.5|Java&trade;|Release Date|
 |---|---|---|---|---|---|
 |[1.1.32](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.32)|This release updated the information for package information of AEM Service Pack 6.5.18.0.| - |6.5.16.0+ |8, 11|15 October 2023|
@@ -136,8 +143,9 @@ I följande tabell visas en lista över de Core Components-versioner som är kom
 |[1.1.22](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.22)|Support for adding Adaptive forms on AEM Sites. Added Items tab in edit dialog of Wizard and Vertical Tabs component.| - |6.5.16.0+ |8, 11|07 June 2023|
 |[1.1.16](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.16)|| - |6.5.17.0+ |8, 11|07 June 2023|
 |[1.1.12](https://github.com/adobe/aem-core-forms-components/releases/tag/core-forms-components-reactor-1.1.12)|Core component support for AEM Forms on premise and AMS, is introduced in this release.| 2.21.2 |6.5.16.0+ |8, 11|08 February 2023|
-
 -->
+
+
 
 ## Se även {#see-also}
 
