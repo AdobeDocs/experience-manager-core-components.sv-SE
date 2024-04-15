@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - talindata
 description: Använda eller anpassa den adaptiva kärnkomponenten Forms Number.
 role: Architect, Developer, Admin, User
 exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
-source-git-commit: 79b99d4f6b5a2b186ff3dbf570a58dc86bf24d4a
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
 source-wordcount: '2103'
 ht-degree: 0%
@@ -35,7 +35,6 @@ Det finns flera skäl till att det är bra att ta med en numerisk indatakomponen
 - **Dataområde**: Numeriska fält kan användas för att ange ett intervall med giltiga värden med hjälp av attributen min, max och step.
 
 - **Dynamiskt innehåll**: Numerisk komponent kan användas för att visa dynamiska data baserat på formulärfälten.
-
 
 ## Version och kompatibilitet {#version-and-compatibility}
 

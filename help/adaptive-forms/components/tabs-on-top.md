@@ -2,9 +2,9 @@
 title: Adaptiv Forms Core-komponent - flikar överst
 description: Använda eller anpassa de adaptiva Forms-flikarna i den främsta kärnkomponenten.
 role: Architect, Developer, Admin, User
-source-git-commit: e4274194026c3370b52be17171776847374a86b5
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
@@ -13,10 +13,9 @@ ht-degree: 1%
 # Tabbar överst {#tabs-on-top-adaptive-forms-core-component}
 
 En tabb-på-plats-layout i ett adaptivt formulär är ett sätt att ordna och gruppera relaterade fält och avsnitt i ett formulär på olika flikar. Varje flik representeras av en fliketikett, som vanligtvis finns högst upp i formuläret, och som innehåller en viss uppsättning formulärfält och avsnitt. Med den här layouten kan användarna enkelt navigera och komma åt olika delar av formuläret, vilket gör det mer användarvänligt och mindre överväldigande. Det används vanligtvis när formuläret innehåller många fält och avsnitt, och det är nödvändigt att dela upp dem i mindre, hanterbara segment. Flikar kan också förbättra tillgängligheten genom att användarna kan navigera i formuläret med kortkommandon, vilket gör det enklare för användare med funktionshinder att komma åt formuläret.
-
 **Exempel**
 
-![](/help/adaptive-forms/assets/tabs.png)
+![tabbar överst](/help/adaptive-forms/assets/tabs.png)
 
 ## Användning {#reasons-to-use-tab-on-the-top-layout}
 

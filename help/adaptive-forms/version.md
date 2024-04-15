@@ -3,7 +3,7 @@ title: AEM adaptiva Forms Core Components-versioner
 description: AEM kärnkomponenter publiceras som versioner som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 8146a5b1-acf6-4b54-ad6b-6e1747a137f6
-source-git-commit: 5ddb234ee5551fa3ecd47b4df073b97bef9a882f
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -20,6 +20,7 @@ Identifiera de exakta versionerna av både Forms Core Components och WCM Core Co
 De Core Components-versioner som är kompatibla med AEM as a Cloud Service är tillgängliga på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
 
 Om du vill se versionshistoriken för kärnkomponenterna för AEM as a Cloud Service, [klicka här](https://github.com/adobe/aem-core-forms-components/blob/master/VERSIONS.md).
+
 
 <!--
 | Forms Core Components | WCM Core Components | AEM Forms as a cloud service | Java  | Maven  |  

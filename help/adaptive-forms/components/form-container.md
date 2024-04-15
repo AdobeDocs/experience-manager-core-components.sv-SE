@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
-source-git-commit: e4274194026c3370b52be17171776847374a86b5
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
 source-wordcount: '1339'
 ht-degree: 0%
@@ -34,7 +34,6 @@ Det finns flera orsaker till varför ett formulär kan läggas till på en webbp
 - **Användarautentisering**: Forms kan användas för användarautentisering, vilket gör att webbplatsbesökare kan skapa konton och logga in för att få tillgång till exklusivt innehåll eller funktioner.
 
 - **Öka konverteringsgraden**: Ett väldesignat formulär kan öka konverteringsgraden genom att göra det enkelt för användarna att slutföra en önskad åtgärd, som att köpa en produkt eller registrera sig för en tjänst.
-
 
 ## Version och kompatibilitet {#version-and-compatibility}
 

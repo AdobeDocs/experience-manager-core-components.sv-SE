@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: 79b99d4f6b5a2b186ff3dbf570a58dc86bf24d4a
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
 source-wordcount: '2125'
 ht-degree: 0%
@@ -32,7 +32,6 @@ Det finns många skäl till att det är bra att ta med en nedrullningsbar lista 
 - **Användarupplevelse**: Listrutor kan användas för att göra formuläret mer användarvänligt genom att ge användaren ett tydligt och intuitivt sätt att välja alternativ.
 
 - **Dataanalys**: Listrutor kan användas för att samla in data från olika källor och analysera dem, eller för att använda dem som indata för vidare bearbetning.
-
 
 **Dialogrutan Egenskaper**
 

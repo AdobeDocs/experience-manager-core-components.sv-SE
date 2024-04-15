@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: e4274194026c3370b52be17171776847374a86b5
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
 source-wordcount: '2100'
 ht-degree: 0%
@@ -20,7 +20,6 @@ Guidelayouten är användbar för formulär som innehåller många fält eller i
 
 Det kan dock även göra formuläret mer komplicerat, eftersom användaren måste gå igenom flera sidor för att fylla i formuläret. Därför är det nödvändigt att utvärdera formulärets krav och användarens behov innan man bestämmer sig för att använda en guidelayout.
 Du kan använda huvudkomponenten för guidelayouten i ett adaptivt formulär för att skapa en guidelayout.
-
 
 **Exempel**
 

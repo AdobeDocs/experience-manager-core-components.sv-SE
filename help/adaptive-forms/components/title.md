@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - titel
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Title.
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
-source-git-commit: e4274194026c3370b52be17171776847374a86b5
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '863'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ I ett adaptivt formulär avser en&quot;titel&quot; texten som visas högst upp i
 
 **Exempel**
 
-![exempel](/help/adaptive-forms/assets/title.png)
+![exempel på titel](/help/adaptive-forms/assets/title.png)
 
 ## Användning {#reasons-to-use-title-in-an-adaptive-form}
 

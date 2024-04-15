@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - skicka-knapp
 description: Använda eller anpassa den adaptiva Forms Submit-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: e4b8e475-79b9-4c4d-9f11-a125a424d32b
-source-git-commit: 79b99d4f6b5a2b186ff3dbf570a58dc86bf24d4a
+source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
 workflow-type: tm+mt
 source-wordcount: '1449'
 ht-degree: 0%
@@ -31,7 +31,6 @@ Skälen till att du använder en skicka-knapp i en adaptiv form är:
 - **Förbättrad användarupplevelse**: En väldesignad Skicka-knapp kan förbättra användarupplevelsen genom att ge tydlig feedback på formulärinlämningsprocessen och ange när formuläret har skickats in.
 
 - **Dataverifiering**: Knappen Skicka kan användas för att aktivera datavalideringskontroller, vilket säkerställer att formulärdata är fullständiga och korrekta innan de skickas till servern.
-
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
