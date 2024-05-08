@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Komponenten Core Component Image är en adaptiv bildkomponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: a10c98aecf6d3c0d989f2e3c18affc51850f60bc
+source-git-commit: e37151536be5a4345f6e2bf630bb8bd4019ad699
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '1970'
 ht-degree: 0%
 
 ---
@@ -138,20 +138,6 @@ Du kan även använda redigeraren på plats för att ändra bilden. På grund av
 ### Dynamic Media resursredigering {#dynamic-media-assets}
 
 Om du har [Dynamic Media-funktioner aktiverade,](#dynamic-media) redigering av själva bilden måste utföras i resurskonsolen.
-
-### Nästa generation av Dynamic Media Asset Editing {#next-gen-dm-assets}
-
-Om du har [Nästa generations Dynamic Media konfigurerade,](#next-gen-dm) den **Smart beskärning** är tillgängligt på komponentens snabbmenyer.
-
-![Smart beskärning](/help/assets/image-smart-crop.png)
-
-Använd dialogrutan för att justera den smarta beskärningen.
-
-![Dialogrutan Smart beskärning](/help/assets/image-smart-crop-dialog.png)
-
->[!TIP]
->
->Mer information om smart beskärning finns i [den här videon om funktionen.](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/smart-crop-feature-video-use.html)
 
 ## Konfigurera dialogruta {#configure-dialog}
 
