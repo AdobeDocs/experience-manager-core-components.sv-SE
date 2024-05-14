@@ -3,10 +3,10 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 63f9659a547729c7cb3eb3c7a61cf1bc838cf6ce
+source-git-commit: f86340f87706d5803ec58a9034ac6a15027e0e0c
 workflow-type: tm+mt
-source-wordcount: '3044'
-ht-degree: 12%
+source-wordcount: '3041'
+ht-degree: 0%
 
 ---
 
@@ -26,6 +26,11 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.25.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.0) | Den här versionen innehåller stöd för namngivna smartbeskärningar i Dynamic Media, bland annat prestanda- och tillgänglighetsförbättringar samt olika felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 2 maj 2024 |
+| [2.24.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.6) | Den här korrigeringsversionen innehåller förbättringar för initiering av datalager. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 22 april 2024 |
+| [2.24.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.4) | Den här korrigeringsversionen åtgärdar en initiering av en Sling-modell. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 1 april 2024 |
+| [2.24.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.2) | Den här korrigeringsversionen förbättrar stabiliteten i integrationstester. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 22 februari 2024 |
+| [2.24.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.0) | Den här versionen har stöd för Google Tag Manager-datalagret och innehåller olika felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 14 februari 2024 |
 | [2.23.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.4) | Den här korrigeringsversionen innehåller olika felkorrigeringar. | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 15 september 2023 |
 | [2.23.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.2) | Den här korrigeringen har lagt till Dynamic Media smart beskärning för fjärrresurser i [Bild](/help/components/image.md) och [Teaser Components](/help/components/teaser.md) och fixade ett antal buggar. | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 4 augusti 2023 |
 | [2.23.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0) | Den här versionen har fått stöd för [Nästa generation av Dynamic Media fjärrresurser.](/help/developing/next-gen-dm.md) | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 6 juni 2023 |
