@@ -5,7 +5,7 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites
-source-git-commit: 2afcaeb90911de865814235586ea19eb21dd8126
+source-git-commit: efc42e6c615987a1d85abe18b650ac23a6d84bf6
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 5%
@@ -112,15 +112,15 @@ ht-degree: 5%
       + [Adaptiv Forms-kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
       + [Adaptiv Forms-behållare](/help/adaptive-forms/components/form-container.md)
       + [Anpassad datumväljare för Forms](/help/adaptive-forms/components/date-picker.md)
-      + [Adaptiv listruta för Forms](/help/adaptive-forms/components/drop-down.md)
+      + [Adaptiv listruta för Forms](/help/adaptive-forms/components/drop-down-list.md)
       + [Anpassad e-postinmatning från Forms](/help/adaptive-forms/components/email-input.md)
-      + [Adaptiv Forms-formulärfragment](/help/adaptive-forms/components/form-fragment.md)
+      + [Adaptiv Forms-formulärfragment](/help/adaptive-forms/components/adaptive-form-fragment.md)
       + [Adaptiva Forms-filbilagor](/help/adaptive-forms/components/file-attachment.md)
       + [Adaptiva lodräta Forms-flikar](/help/adaptive-forms/components/vertical-tabs.md)
       + [Anpassningsbara vågräta Forms-flikar](/help/adaptive-forms/components/horizontal-tabs.md)
       + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
-      + [Adaptiv inmatning av Forms Number](/help/adaptive-forms/components/number-input.md)
-      + [Adaptiv Forms-panel](/help/adaptive-forms/components/panel-container.md)
+      + [Adaptiv numerisk Forms-ruta](/help/adaptive-forms/components/numeric-box.md)
+      + [Adaptiv Forms-panel](/help/adaptive-forms/components/panel.md)
       + [Adaptiv Forms CAPTCHA](/help/adaptive-forms/components/captcha.md)
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
       + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
@@ -128,7 +128,7 @@ ht-degree: 5%
       + [Adaptiv Forms-switch](/help/adaptive-forms/components/switch.md)
       + [Adaptiv telefoninmatning från Forms](/help/adaptive-forms/components/telephone-input.md)
       + [Adaptiv Forms-text](/help/adaptive-forms/components/text.md)
-      + [Adaptiv Forms-textruta](/help/adaptive-forms/components/text-input.md)
+      + [Adaptiv Forms-textruta](/help/adaptive-forms/components/text-box.md)
       + [Adaptive Forms Title](/help/adaptive-forms/components/title.md)
       + [Adaptiv Forms-guidelayout](/help/adaptive-forms/components/wizard.md)
       + [Adaptiva villkor för Forms](/help/adaptive-forms/components/terms-and-conditions.md)

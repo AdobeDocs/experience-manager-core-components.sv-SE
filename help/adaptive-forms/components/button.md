@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - knapp
 description: Använda eller anpassa den adaptiva Forms-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: cb75929b-8c86-49d1-b51a-368f5b80b1a9
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: a6c3fd98bcdcbb0d6d5697b93306adc9ef7e3fc9
 workflow-type: tm+mt
 source-wordcount: '1601'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Button-komponent {#button-component-adaptive-forms-core-component}
 
-<span class="preview"> Den här artikeln innehåller innehåll om **Tillåt RTF-text för rubrik** en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En knapp i ett adaptivt formulär är ett gränssnittselement som gör att användare kan initiera en åtgärd när de klickar på den. Knappelementet kan användas för att skicka ett formulär, återställa ett formulär eller utföra andra åtgärder som att navigera till en annan sida eller utlösa anpassad kod. Knappen kan skapas med komponenten Button Core.
 

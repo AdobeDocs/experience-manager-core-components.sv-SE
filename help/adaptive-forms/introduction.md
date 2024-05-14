@@ -3,9 +3,9 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 1dbbb598c0856b76c076f322cdf0210bf38ee9e8
+source-git-commit: efc42e6c615987a1d85abe18b650ac23a6d84bf6
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1176'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ Den aktuella versionen av de adaptiva Forms Core-komponenterna innehåller kompo
 * [Knapp](/help/adaptive-forms/components/button.md)
 * [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
 * [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
-* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down-list.md)
 * [E-postinmatning](/help/adaptive-forms/components/email-input.md)
 * [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
 * [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
@@ -83,13 +83,13 @@ Den aktuella versionen av de adaptiva Forms Core-komponenterna innehåller kompo
 * [Sidhuvud](/help/adaptive-forms/components/header.md)
 * [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
 * [Bild](/help/adaptive-forms/components/image.md)
-* [Nummerindata](/help/adaptive-forms/components/number-input.md)
-* [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+* [Numerisk ruta](/help/adaptive-forms/components/numeric-box.md)
+* [Panel](/help/adaptive-forms/components/panel.md)
 * [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
 * [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
 * [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
 * [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
-* [Textindata](/help/adaptive-forms/components/text-input.md)
+* [Textruta](/help/adaptive-forms/components/text-box.md)
 * [Text](/help/adaptive-forms/components/text.md)
 * [Titel](/help/adaptive-forms/components/title.md)
 * [guide](/help/adaptive-forms/components/wizard.md)

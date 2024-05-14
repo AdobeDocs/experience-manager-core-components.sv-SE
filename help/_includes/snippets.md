@@ -1,7 +1,7 @@
 ---
-source-git-commit: 97da426e5c57f00d83d11560d1fa4e8f9ed00feb
+source-git-commit: efc42e6c615987a1d85abe18b650ac23a6d84bf6
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
@@ -61,24 +61,23 @@ ht-degree: 0%
 - [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
 - [Kryssruta](/help/adaptive-forms/components/checkbox.md)
 - [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
-- [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
+- [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down-list.md)
 - [E-postinmatning](/help/adaptive-forms/components/email-input.md)
 - [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
 - [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
-- [Formulärfragment](/help/adaptive-forms/components/form-fragment.md)
+- [Adaptiva formulärfragment](/help/adaptive-forms/components/adaptive-form-fragment.md)
 - [Sidfot](/help/adaptive-forms/components/footer.md)
 - [Sidhuvud](/help/adaptive-forms/components/header.md)
 - [Bild](/help/adaptive-forms/components/image.md)
-- [Nummerindata](/help/adaptive-forms/components/number-input.md)
-- [Panelbehållare](/help/adaptive-forms/components/panel-container.md)
+- [Numerisk ruta](/help/adaptive-forms/components/numeric-box.md)
+- [Panel](/help/adaptive-forms/components/panel.md)
 - [Vågrät flik](/help/adaptive-forms/components/horizontal-tabs.md)
 - [Lodrät flik](/help/adaptive-forms/components/vertical-tabs.md)
 - [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
 - [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
 - [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
-- [Byt](/help/adaptive-forms/components/switch.md)
 - [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
-- [Textindata](/help/adaptive-forms/components/text-input.md)
+- [Textruta](/help/adaptive-forms/components/text-box.md)
 - [Text](/help/adaptive-forms/components/text.md)
 - [Titel](/help/adaptive-forms/components/title.md)
 - [Fliken Villkor](/help/adaptive-forms/components/terms-and-conditions.md)
