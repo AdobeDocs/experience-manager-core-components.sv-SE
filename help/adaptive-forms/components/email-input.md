@@ -3,16 +3,16 @@ title: Adaptiv Forms Core-komponent - e-postindata
 description: Använda eller anpassa den adaptiva Forms E-postindatakomponenten.
 role: Architect, Developer, Admin, User
 exl-id: f6a2974b-991e-4cea-9ef8-0b03e8975eeb
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
 workflow-type: tm+mt
-source-wordcount: '2054'
+source-wordcount: '2055'
 ht-degree: 0%
 
 ---
 
-# E-postinmatning {#Email-input-adaptive-forms-core-component}
+# E-postindatakomponent {#Email-input-adaptive-forms-core-component}
 
-<span class="preview"> Den här artikeln innehåller innehåll om **Tillåt RTF-text för rubrik** en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Kärnkomponenten för indata för e-post med adaptiv form används för att samla in e-postadresser från användare. I e-postinmatningsfältet kan webbläsaren validera att de angivna data är ett giltigt e-postadressformat. Den representeras vanligtvis som en textruta och har mönstervalideringar som godkänner endast giltiga e-postadresser. E-postinmatningsfältet kan anpassas ytterligare med attribut som&quot;required&quot;,&quot;placeholder&quot; och&quot;pattern&quot; för att ange valideringar för inmatningsdata.
 

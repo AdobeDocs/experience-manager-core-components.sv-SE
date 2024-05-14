@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - villkor
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Terms and Conditions.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
 workflow-type: tm+mt
 source-wordcount: '3115'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Villkorskomponent
 
-<span class="preview"> Den här artikeln innehåller innehåll om **Tillåt RTF-text för rubrik** och **Tillåt RTF för alternativ**  funktioner, förhandsversioner. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  och  **Tillåt RTF för alternativ**  funktioner, förhandsversioner. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 A **Villkor** -komponenten hänvisar till ett avsnitt i ett formulär som anger de villkor som användare måste godkänna eller uppfylla när de använder en tjänst eller öppnar innehåll.
 

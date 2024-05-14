@@ -1,66 +1,63 @@
 ---
-title: Adaptiv Forms Core-komponent - horisontella flikar
-description: Använda eller anpassa den adaptiva, vågräta Forms-flikkomponenten Core.
+title: Adaptivt formulärfragment
+description: Använd formulärfragment för att skapa formulärsegment eller fältgrupper och återanvänd dem i adaptiva Forms för att förbättra effektiviteten och återanvändbarheten.
 role: Architect, Developer, Admin, User
-exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
+exl-id: bde4a416-1d6b-4e9e-ac74-70fccef473cb
 source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '1895'
 ht-degree: 0%
 
 ---
 
-# Vågräta flikar (flikar överst){#horizontal-tabs-adaptive-forms-core-component}
+# Adaptiv Form Fragment-komponent {#form-fragment-component-adaptive-forms-core-component}
 
 <span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
-Vågräta flikar i ett adaptivt formulär avser ett designmönster där flera avsnitt i ett formulär grupperas tillsammans och visas som separata flikar, justerade vågrätt. Användaren kan växla mellan flikarna för att komma åt olika avsnitt i formuläret. Varje flik fungerar som en utlösare som visar och döljer det relaterade formulärinnehållet. De vågräta flikarna hjälper dig att ordna långa formulär i hanterbara avsnitt och förbättra användarupplevelsen. Med flikar kan du göra ett formulär mer tillgängligt för användare med funktionshinder, eftersom de kan växla mellan sektioner med hjälp av tangentbordsnavigering.
+Adaptiv Forms är ett bekvämt sätt att skapa formulärsegment, t.ex. paneler eller fältgrupper, så att de kan återanvändas i olika adaptiva Forms. Dessa återanvändbara och fristående segment kallas [Adaptiva formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html).
 
-Flikarna skapas vanligtvis som en serie länkar eller knappar, där varje länk eller knapp motsvarar ett avsnitt i formuläret. När en användare klickar på en flik uppdateras formulärinnehållet dynamiskt för att visa motsvarande avsnitt.
+Du kan [lägga till ett fragment flera gånger i ett dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#insert-a-fragment-in-an-adaptive-form) och använd databindningsegenskaper för komponenterna för att knyta dem till olika datakällor eller scheman. Du kan till exempel använda samma adressfragment för permanent adress, kommunikations- och faktureringsadress och ansluta det till olika fält i en datakälla eller ett schema.
 
-![exempel](/help/adaptive-forms/assets/horizontal-example-new.png)
+![exempel](/help/adaptive-forms/assets/using-multiple-fragment-af.gif)
 
-## Användning {#reasons-to-use-horizontal-tabs}
 
-De vanligaste skälen att använda vågräta flikar i en adaptiv form är:
+Du kan också använda [upprepningsalternativ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) Om du vill duplicera formulärfragmentkomponenten och dess underordnade komponenter definierar du ett minsta och högsta antal repetitioner och underlättar replikering av liknande avsnitt i ett formulär.
 
-- **Förbättrad användbarhet**: Vågräta flikar gör det enklare för användare att navigera i formuläret, särskilt om formuläret har flera avsnitt eller ett stort antal fält.
+>[!NOTE]
+>
+> Du kan [skapa ett adaptivt formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#create-a-fragment) från scratch eller spara en panel i ett befintligt adaptivt formulär som fragment.
 
-- **Rymdhantering**: Vågräta flikar hjälper till att spara skärmutrymme genom att gruppera relaterade formuläravsnitt i flikar och bara visa ett avsnitt i taget.
+## Användning {#usage}
 
-- **Bättre organisation**: På flikar finns en tydlig och ordnad struktur för ett formulär som gör det lättare för användarna att förstå och fylla i formuläret.
+- **Återanvändbarhet**: Möjligheten att återanvända formulärfragment i flera adaptiva Forms är den största fördelen med att använda formulärfragment. Det bidrar till att bibehålla en konsekvent design och funktionalitet, eftersom ändringar som görs i ett fragment återspeglas i alla instanser där det används.
 
-- **Ökat användarengagemang**: Vågräta flikar kan göra ett formulär mer visuellt tilltalande och engagerande för användarna, vilket kan förbättra formulärets slutförandefrekvens.
+- **Enhetlig användarupplevelse**: Att använda formulärfragment för vanliga element, till exempel sidhuvuden och sidfötter, ger en konsekvent och sammanhängande användarupplevelse.
+
+- **Smidigt underhåll**: Ändringarna eller ändringarna som görs i ett formulärfragment återspeglas i alla instanser där det används. Det förenklar underhållet och minskar risken för fel.
+
+- **Effektivitet**: Designers och utvecklare sparar tid genom att bara skapa och testa formulärfragment en gång. Blankettfragmenten kan sedan enkelt läggas in i flera adaptiva Forms utan att man behöver göra ett överflödigt arbete.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (kärnkomponent) för de adaptiva horisontella Forms-flikarna släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva kärnkomponenten i Forms Fragment släpptes som en del av Core Components 2.0.50 för Cloud Service och Core Components 1.1.26 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
-|  |  |
-|---|---|
-| Komponentversion | AEM as a Cloud Service |
-| — | — |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
+| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|---|---|---|
+| v1 | Kompatibel med<br>[version 2.0.50](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.26](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
 
 Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
 
-
-<!-- ## Sample Component Output {#sample-component-output}
-
-To experience the Horizontal-tabs  Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_Horizontal-tabs ). -->
-
-
 ## Teknisk information {#technical-details}
 
-Den senaste informationen om de adaptiva Forms Horizontal tabs Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/pageHorizontal tabbar/v1/pageVågräta tabbar). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Den senaste informationen om den adaptiva kärnkomponenten i Forms Fragment finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/fragment). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Du kan enkelt anpassa de horisontella flikarna för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera alternativ för vågräta flikar för en smidig användarupplevelse.
+Du kan enkelt anpassa fragmentupplevelsen för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera fragmentegenskaper för en smidig användarupplevelse.
 
 ### Fliken Grundläggande {#basic-tab}
 
-![fliken Grundläggande](/help/adaptive-forms/assets/tabs-on-top-basic.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/fragment-basictab.png)
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -71,7 +68,6 @@ Du kan enkelt anpassa de horisontella flikarna för besökare med dialogrutan Ko
   ![Stöd för RTF](/help/adaptive-forms/assets/richtext-support-title.png)
 
 - **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
-
 - **Gruppera underordnade komponenters data när formulär skickas (kapsla in data i objekt)** - När alternativet är markerat kapslas data från dess underordnade komponenter in i den överordnade komponentens JSON-objekt. Om alternativet inte är markerat har inskickade JSON-data en platt struktur utan objekt för den överordnade komponenten. Till exempel:
 
    - När alternativet är markerat kapslas data från de underordnade komponenterna (till exempel Street, City och Zip Code) in i den överordnade komponenten (Address) som ett JSON-objekt. Detta skapar en hierarkisk struktur och data ordnas under den överordnade komponenten.
@@ -95,47 +91,35 @@ Du kan enkelt anpassa de horisontella flikarna för besökare med dialogrutan Ko
         { "Street": "123 Main Street", "City": "New York", "Zip Code": "12345" }
      ```
 
-<!-- **Layout** - You can have either a fixed layout (Simple) or a flexible layout (Responsive Grid) for your wizard. The Simple layout keeps everything fixed in the place, while the Responsive Grid allows you to adjust the position of components to suit your needs. For example, use Responsive Grid to align "First Name", "Middle Name" and "Last Name" in a form in a single row. -->
+- **Fragmentreferens** - En fragmentreferens är en referens till ett formulärfragment som lagras i en extern datakälla och används i ett formulär. Med fragmentreferensen kan du binda formulärfragmentet dynamiskt till ett formulär.
 
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 - **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
-### Upprepa tabbar överst {#repeat-tabs-on-top}
+### Upprepa fragmentflik {#repeat-tab}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/repeat-tabsontop.png)
+![Upprepa fragmentflik](/help/adaptive-forms/assets/fragment-repeattab.png)
 
-Du kan använda alternativen för upprepning för att duplicera en komponent med vågräta flikar och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med komponenten Vågräta flikar och använder dess inställningar visas följande alternativ:
-
-- **Gör flikarna högst upp repeterbara**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
-- **Minsta antal upprepningar**: Fastställer det minsta antalet gånger som komponenten för vågräta flikar kan upprepas. Värdet noll anger att komponenten Vågräta flikar inte upprepas. Standardvärdet är noll.
-- **Maximalt antal upprepningar**: Anger det maximala antalet gånger som komponenten för vågräta flikar kan upprepas. Som standard är det här värdet obegränsat.
-Om du effektivt vill hantera upprepningsbara avsnitt på de vågräta flikarna följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
-
-### Fliken Objekt {#items-tab}
-
-![Fliken Objekt](/help/adaptive-forms/assets/items-tabs-on-top.png)
-
-The **Lägg till** Med knappen kan du markera en komponent som du vill lägga till som en panel i fönstret för komponentval. När du har lagt till komponenten kan du se följande alternativ:
-
-- **Ikon** - Ikonen identifierar panelens komponent i listan. Du kan hålla muspekaren över ikonen för att visa det fullständiga komponentnamnet som ett verktygstips.
-- **Beskrivning** - Den beskrivning som används som text på panelen. Som standard är namnet på komponenten som är markerad för panelen.
-- **Ta bort** - Tryck eller klicka för att ta bort panelen från komponenten Vågräta flikar.
-- **Ordna om** - Tryck eller klicka och dra för att ordna om panelerna.
+- **Gör fragment repeterbara**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
+- **Minsta antal upprepningar**: Fastställer det minsta antal gånger som fragmentkomponenten kan upprepas. Värdet noll anger att fragmentkomponenten inte upprepas. Standardvärdet är noll.
+- **Maximalt antal upprepningar**: Anger det maximala antal gånger som fragmentkomponenten kan upprepas. Som standard är det här värdet obegränsat.
 
 ### Fliken Hjälpinnehåll {#help-content}
 
-![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/helpcontent-tabs-on-top.png)
+![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/fragment-helptab.png)
 
 - **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
+
 - **Visa alltid kort beskrivning** - Aktivera alternativet att visa den korta beskrivningen under komponenten.
 
 - **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa sig fylla i ett formulärfält på rätt sätt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
 
-### Fliken Tillgänglighet {#accessibility}
+### Tillgänglighet {#accessibility}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/accessibilty-tabs-on-top.png)
+![Fliken Tillgänglighet](/help/adaptive-forms/assets/fragment-accessibilitytab.png)
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
@@ -143,34 +127,23 @@ The **Lägg till** Med knappen kan du markera en komponent som du vill lägga ti
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva vågräta Forms-komponenten kan du ange följande:
-
-- De kärnkomponenter som en formulärskapare kan lägga till i de horisontella flikarna i den adaptiva Forms-redigeraren
-- Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Vågräta flikar i den adaptiva Forms-redigeraren.
-
-Detta gör det enklare och effektivare att skapa och anpassa formulär.
-
-### Fliken Tillåtna komponenter {#allowed-components-tab}
-
-![Fliken Tillåtna komponenter](/help/adaptive-forms/assets/tabs-allowed-component.png)
-
-The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i komponenten Vågräta flikar i den adaptiva Forms-redigeraren.
+Designdialogrutan används för att definiera och hantera CSS-format för formulärfragmentkomponenten.
 
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för de adaptiva horisontella Forms-flikarna stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Kärnkomponenten Adaptiv Form Fragment stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-![Fliken Format](/help/adaptive-forms/assets/tabs-styles-tab.png)
+![Designdialogruta](/help/adaptive-forms/assets/checkbox-style.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten för de adaptiva horisontella Forms-flikarna.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för kärnkomponenten Adaptiv formulärfragment.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
-### Fliken Anpassade egenskaper
+### Anpassade egenskaper
 
-![Fliken Anpassade egenskaper](/help/adaptive-forms/assets/tabs-custom-properties.png)
+![Dialogrutan Anpassade egenskaper](/help/adaptive-forms/assets/checkbox-customproperties.png)
 
-Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
+Med anpassade egenskaper kan du associera anpassade attribut (nyckelvärdepar) till en huvudkomponent för adaptiva formulär med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
 
 - **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
 
@@ -179,6 +152,7 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
    - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
    - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
 
 ## Relaterade artiklar {#related-articles}
 

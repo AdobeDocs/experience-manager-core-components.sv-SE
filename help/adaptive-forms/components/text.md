@@ -3,14 +3,14 @@ title: Adaptiv Forms Core-komponent - text
 description: Använda eller anpassa den adaptiva Forms Text Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: b8de68e4-ca0d-4ae5-9a04-104cc617f1be
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
 
-# Text {#text-adaptive-forms-core-component}
+# Textkomponent {#text-adaptive-forms-core-component}
 
 I ett adaptivt formulär avser text det innehåll som visas i formuläret och som användaren kan läsa. Detta kan inkludera den text som används för att etikettera en grupp formulärelement, t.ex. textfält, samt eventuella ytterligare instruktioner eller information som tillhandahålls användaren.
 

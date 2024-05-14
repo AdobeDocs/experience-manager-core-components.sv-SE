@@ -3,16 +3,16 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2080'
 ht-degree: 0%
 
 ---
 
-# Alternativknapp {#radio-button-adaptive-forms-core-component}
+# Alternativknappskomponent {#radio-button-adaptive-forms-core-component}
 
-<span class="preview"> Den här artikeln innehåller innehåll om **Tillåt RTF-text för rubrik** och **Tillåt RTF för alternativ**  funktioner, förhandsversioner. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  och  **Tillåt RTF för alternativ**   funktioner, förhandsversioner. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En alternativknapp i ett adaptivt formulär är en typ av indataelement som gör att en användare kan välja ett alternativ från en grupp med relaterade alternativ. Den representeras av en liten cirkulär knapp som antingen är fylld eller tom för att ange om alternativet är markerat eller inte. När en användare markerar en alternativknapp avmarkeras de andra i gruppen. Alternativknappar används vanligtvis när det finns flera alternativ som utesluter varandra och bara ett alternativ kan markeras åt gången.
 

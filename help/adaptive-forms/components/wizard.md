@@ -3,14 +3,14 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2101'
 ht-degree: 0%
 
 ---
 
-# guide {#wizard-adaptive-forms-core-component}
+# Wizard Component{#wizard-adaptive-forms-core-component}
 
 En guidelayout i ett adaptivt formulär refererar till ett formulär som är uppdelat i flera steg eller på flera sidor där användaren förflyttar sig i formuläret ett steg i taget. Layouten kallas för en guide eftersom den guidar användaren genom formuläret steg för steg.
 

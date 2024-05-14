@@ -3,14 +3,14 @@ title: Adaptiv Forms Core-komponent - titel
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Title.
 role: Architect, Developer, Admin, User
 exl-id: 33eac885-8d66-4a5c-9a32-0ba11e6de293
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
 
-# Titel {#title-input-adaptive-forms-core-component}
+# Titelkomponent{#title-input-adaptive-forms-core-component}
 
 I ett adaptivt formulär avser en&quot;titel&quot; texten som visas högst upp i formuläret, vanligtvis under rubriken. Titeln anges med komponenten Title. Den här komponenten kan läggas till i formulärlayouten och dess text kan redigeras för att passa formulärets syfte eller ämne. Titeln fungerar som en etikett eller en kort beskrivning av formuläret för användaren, vilket gör det lättare att skilja formuläret från andra.
 
