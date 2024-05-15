@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - telefoninmatning
 description: Använda eller anpassa den adaptiva kärnkomponenten för telefoninmatning från Forms.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
+source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
 workflow-type: tm+mt
 source-wordcount: '2142'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Telefonindatakomponent{#telephone-input-adaptive-forms-core-component}
 
-<span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Med den adaptiva formulärens telefoningång Core Component kan användare ange ett telefonnummer. I fältet för telefonindata visas tangentbord i mobila enheter som är relevanta för telefonnummer. Den kan anpassas med ytterligare attribut som &quot;pattern&quot; och &quot;placeholder&quot; för att ange telefonnumrets format och beskrivning.
 

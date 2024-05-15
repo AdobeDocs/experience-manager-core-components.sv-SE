@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - återställningsknapp
 description: Använda eller anpassa den adaptiva Forms-återställningsknappen Core Component.
 role: Architect, Developer, Admin, User
 exl-id: e5aa9d89-aece-491e-80a1-7fb9ea6c4b60
-source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
+source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
 workflow-type: tm+mt
 source-wordcount: '1491'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Återställ Button-komponent {#reset-button}
 
-<span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En återställningsknapp i ett adaptivt formulär är en knapp som gör att användare kan rensa eller återställa alla formulärfält till sina standardvärden. När du klickar på återställningsknappen tas alla data som har angetts i formulärfälten bort och fälten återgår till sitt ursprungliga läge. Återställningsknappen används vanligtvis som ett alternativ till skicka-knappen och är ett sätt för användarna att börja om om om de har angett felaktiga eller oönskade data i formuläret.
 

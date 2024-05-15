@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - skicka-knapp
 description: Använda eller anpassa den adaptiva Forms Submit-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: e4b8e475-79b9-4c4d-9f11-a125a424d32b
-source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
+source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
 workflow-type: tm+mt
 source-wordcount: '1450'
 ht-degree: 0%
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Skicka-knappkomponent {#submit-button}
 
-<span class="preview"> Den här artikeln innehåller innehåll om  **Tillåt RTF-text för rubrik**  en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En Skicka-knapp i ett adaptivt formulär är en knapp som gör att användare kan skicka formulärdata till en server för bearbetning. När användaren klickar på knappen Skicka skickas formulärdata till servern, där de kan lagras, bearbetas eller användas i olika syften, som att skicka ett e-postmeddelande eller uppdatera en databas.
 
