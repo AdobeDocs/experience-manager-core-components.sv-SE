@@ -3,9 +3,9 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: efc42e6c615987a1d85abe18b650ac23a6d84bf6
+source-git-commit: 23ad6de410aaf4952607d9a4aa44864b0743c479
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '2154'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,9 @@ Eftersom dessa komponenter är öppen källkod kan utvecklare dessutom enkelt an
 
 Datainhämtningsupplevelser är avgörande för generering och registrering av leads, och de adaptiva Forms Core-komponenterna är en kraftfull lösning för att skapa formulär som är optimerade för datainhämtning. En del skäl till att använda kärnkomponenter för att skapa dessa upplevelser över grundläggande komponenter är:
 
-* **GitHub och omfattande dokumentation**: De AEM adaptiva Forms Core-komponenterna har öppen källkod och finns på GitHub tillsammans med omfattande dokumentation. Detta gör det enklare för utvecklare att förstå komponenterna och hur de fungerar, samt att bidra till utvecklingen av dem. The [aemcomponents.dev](https://www.aemcomponents.dev/) är också en värdefull resurs där utvecklare kan se komponenterna i praktiken och få tillgång till detaljerad dokumentation.
+* **[Tillgänglighet på GitHub](https://github.com/adobe/aem-core-forms-components)**: De AEM adaptiva Forms Core-komponenterna har öppen källkod och finns på GitHub tillsammans med omfattande dokumentation. Detta gör det enklare för utvecklare att förstå komponenterna och hur de fungerar, samt att bidra till utvecklingen av dem. The [aemcomponents.dev](https://www.aemcomponents.dev/) är också en värdefull resurs där utvecklare kan se komponenterna i praktiken och få tillgång till detaljerad dokumentation.
 
-* **BEM-modell för formatering**: Kärnkomponenterna följer BEM-modellen (Block Element Modifier) för formatering, som är en väletablerad och allmänt använd metod för att organisera CSS. Det gör det enklare för utvecklare att förstå hur formaten är ordnade och hur de kan ändras för att passa just deras behov.
+* **[BEM-modell för formatering](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)**: Kärnkomponenterna följer BEM-modellen (Block Element Modifier) för formatering, som är en väletablerad och allmänt använd metod för att organisera CSS. Det gör det enklare för utvecklare att förstå hur formaten är ordnade och hur de kan ändras för att passa just deras behov.
 
 * **Inget beroende av tredjepartsbibliotek**: En av fördelarna med Core Components är att de inte är beroende av JavaScript-bibliotek från tredje part, inklusive JQuery och Underscore. Detta gör komponenterna snabbare och enklare samt enklare att integrera i en befintlig AEM.
 
@@ -63,38 +63,155 @@ Datainhämtningsupplevelser är avgörande för generering och registrering av l
 
 * **Formulärkomponenter i webbplatserna 30, mallar och teman**: De centrala komponenterna har stöd för formulärkomponenter i webbplatserna 30-mallen och -teman, vilket gör det enklare för utvecklare att skapa och anpassa formulär i AEM.
 
-* **Enklare att formatera**: Kärnkomponenterna är enklare att formatera än deras motsvarigheter i grundkomponenterna. Processen för att skapa teman liknar Sites, med möjlighet att ärva samma tema/CSS från den överordnade webbplatssidan. Dessutom gör BEM-modellen för formatering det enklare att förstå och ändra formaten.
+* **[Enklare att formatera](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components)**: Kärnkomponenterna är enklare att formatera än deras motsvarigheter i grundkomponenterna. Processen för att skapa teman liknar Sites, med möjlighet att ärva samma tema/CSS från den överordnade webbplatssidan. Dessutom gör BEM-modellen för formatering det enklare att förstå och ändra formaten.
 
-* **Tillgänglighet**: Adaptiva Forms Core-komponenter stöder standarder och riktlinjer för tillgänglighet för att säkerställa att formulär kan användas av personer med funktionshinder, inklusive sådana som använder hjälpmedelstekniker som skärmläsare
+* **Tillgänglighet**: Adaptiva Forms Core-komponenter stöder standarder och riktlinjer för tillgänglighet för att säkerställa att formulär kan användas av personer med funktionshinder, inklusive sådana som använder hjälpmedelstekniker som skärmläsare.
 
-## Adaptiva Forms Core-komponenter {#components}
+* **[Versioner](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-comments-annotations-versioning-adaptive-form-core-components)**: Du kan skapa och hantera flera versioner av en Core Components-baserad Adaptive Forms, delta i samverkansdiskussioner via kommentarer och bifoga anteckningar till specifika formulärkomponenter, vilket förbättrar den övergripande formuläruppbyggnadsupplevelsen.
 
-Den aktuella versionen av de adaptiva Forms Core-komponenterna innehåller komponenterna nedan.
+## Jämföra kärnkomponenter, grundkomponenter och formulärblockskomponenter {#components}
 
-* [Dragspel](/help/adaptive-forms/components/accordion.md)
-* [Knapp](/help/adaptive-forms/components/button.md)
-* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
-* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
-* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down-list.md)
-* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
-* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
-* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
-* [Sidfot](/help/adaptive-forms/components/footer.md)
-* [Sidhuvud](/help/adaptive-forms/components/header.md)
-* [Vågräta flikar](/help/adaptive-forms/components/horizontal-tabs.md)
-* [Bild](/help/adaptive-forms/components/image.md)
-* [Numerisk ruta](/help/adaptive-forms/components/numeric-box.md)
+Den aktuella versionen av AEM har följande kärnkomponenter och grundkomponenter.
+
+| Komponenter | Foundation Components | Kärnkomponenter | Formulärblockskomponenter | Ytterligare information |
+|------------|:---------------------:|:---------------:|:---------------------:|-----------------------|
+| Adobe Sign Block | ✔️ | | | Adobe Sign-integrering är bara tillgängligt för Foundation Components. |
+| Dragspel | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/accordion.md)</span> | | För Foundation-komponenter kan du konfigurera dragspelslayouten i panelkomponentegenskaperna |
+| Adaptivt formulärfragment | ✔️ | ✔️ | | För Foundation-komponenter kan du lägga till ett fragment från en panelkomponents egenskaper. |
+| Adaptiv form reCAPTCHA | ✔️ | ✔️ | ✔️ | För Foundation Components (Foundation-komponenter) använder du Captcha-komponenten för att lägga till Google reCaptcha i ett formulär. |
+| Knapp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/button.md)</span> | ✔️ | |
+| Captcha | ✔️ | | | För Foundation Components (Foundation-komponenter) använder du Captcha-komponenten för att lägga till Google reCaptcha i ett formulär. |
+| Diagram | ✔️ | | | |
+| Kryssruta | ✔️ | ✔️ | | |
+| Kryssrutegrupp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/checkbox-group.md)</span> | ✔️ | För Foundation-komponenter använder du kryssrutekomponenten för att lägga till flera kryssrutor |
+| Datumindatafält | ✔️ | | | För kärnkomponenter använder du datumväljaren eller separata textrute- eller numeriska rutkomponenter för att hämta dag, månad och år. |
+| Datumväljaren | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/date-picker.md)</span> | ✔️ | |
+| Listruta | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/drop-down-list.md)</span> | ✔️ | |
+| E-post | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/email-input.md)</span> | ✔️ | |
+| Bifogad fil | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/file-attachment.md)</span> | ✔️ | |
+| Lista över bifogade filer | ✔️ | | | |
+| Sidfot | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/footer.md)</span> | ✔️ | |
+| Fotnotsplatshållare | ✔️ | | | |
+| Formulärbehållare | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/form-container.md)</span> | ✔️ | För Foundation-komponenter använder du komponenten Root Panel. |
+| Formulärtitel | ✔️ | ✔️ | | Använd komponenten title för Foundation-komponenter. |
+| Sidhuvud | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/header.md)</span> | ✔️ | |
+| Vågräta flikar | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/horizontal-tabs.md)</span> | | För Foundation-komponenter kan du konfigurera flikarna överst (vågräta flikar) i panelkomponentegenskaperna |
+| Bild | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/image.md)</span> | ✔️ | |
+| Bildval | ✔️ | | | |
+| Knappen Nästa | ✔️ | ✔️ | | Använd guidekomponenten för nästa och föregående knappar för att flytta mellan flera paneler. |
+| Numerisk ruta | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/numeric-box.md)</span> | ✔️ | |
+| Numerisk stege | ✔️ | | | |
+| Panel | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/panel.md)</span> | ✔️ | |
+| Lösenordsruta | ✔️ | | ✔️ | |
+| Telefon | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/telephone-input.md)</span> | ✔️ | |
+| Knappen Föregående | ✔️ | | | Använd guidekomponenten för nästa och föregående knappar för att flytta mellan flera paneler. |
+| Alternativknapp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/radio-button.md)</span> | | |
+| Grupp med alternativknappar | | | ✔️ | |
+| Återställ knapp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/reset-button.md)</span> | ✔️ | |
+| Klottersignatur | ✔️ | | | |
+| Avgränsare | ✔️ | | | |
+| Skicka-knapp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/submit-button.md)</span> | ✔️ | |
+| Sammanfattningssteg | ✔️ | | | |
+| Byt | ✔️ | ✔️ | | |
+| Tabell | ✔️ | | | |
+| Villkor | ✔️ | ✔️ | | |
+| Text | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/text.md)</span> | ✔️ | |
+| Textruta | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/text-box.md)</span> | ✔️ | |
+| Titel | ✔️ | | | För kärnkomponenter använder du komponenten Formulärtitel. |
+| Lodräta tabbar | ✔️ | ✔️ | | För Foundation-komponenter kan du konfigurera flikarna till vänster (lodräta flikar) layout i panelkomponentegenskaperna |
+| guide | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/wizard.md)</span> | ✔️ | För Foundation-komponenter kan du konfigurera guidelayouten i panelkomponentegenskaperna |
+
+
+
+
+>[!NOTE]
+>
+>
+> * Förutom de komponenter som anges ovan stöder Forms block alla giltiga [Indatatyper för HTML5](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#input_types) och [textområde](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea) som -komponenter.
+> * Vill du ha en komponent som inte listas ovan? Begär det via e-post aem-forms-ea@adobe.com från din officiella adress.
+
+
+<!-- >
+* [Accordion](/help/adaptive-forms/components/accordion.md)
+* [Button](/help/adaptive-forms/components/button.md)
+* [Check Box Group](/help/adaptive-forms/components/checkbox-group.md)
+* [Date Picker](/help/adaptive-forms/components/date-picker.md)
+* [Drop-down list](/help/adaptive-forms/components/drop-down-list.md)
+* [Email-input](/help/adaptive-forms/components/email-input.md)
+* [Form Container](/help/adaptive-forms/components/form-container.md)
+* [File Attachment](/help/adaptive-forms/components/file-attachment.md)
+* [Footer](/help/adaptive-forms/components/footer.md)
+* [Header](/help/adaptive-forms/components/header.md)
+* [Horizontal Tabs](/help/adaptive-forms/components/horizontal-tabs.md)
+* [Image](/help/adaptive-forms/components/image.md)
+* [Numeric Box](/help/adaptive-forms/components/numeric-box.md)
 * [Panel](/help/adaptive-forms/components/panel.md)
-* [Alternativknapp](/help/adaptive-forms/components/radio-button.md)
-* [Återställ knapp](/help/adaptive-forms/components/reset-button.md)
-* [Skicka-knapp](/help/adaptive-forms/components/submit-button.md)
-* [Telefonindata](/help/adaptive-forms/components/telephone-input.md)
-* [Textruta](/help/adaptive-forms/components/text-box.md)
+* [Radio Button](/help/adaptive-forms/components/radio-button.md)
+* [Reset Button](/help/adaptive-forms/components/reset-button.md)
+* [Submit Button](/help/adaptive-forms/components/submit-button.md)
+* [Telephone input](/help/adaptive-forms/components/telephone-input.md)
+* [Text Box](/help/adaptive-forms/components/text-box.md)
 * [Text](/help/adaptive-forms/components/text.md)
-* [Titel](/help/adaptive-forms/components/title.md)
-* [guide](/help/adaptive-forms/components/wizard.md)
+* [Title](/help/adaptive-forms/components/title.md)
+* [Wizard](/help/adaptive-forms/components/wizard.md)
 
-## Konfigurera adaptiva Forms Core-komponenter
+-->
+
+## Lättanvänd formulärredigerare
+
+Redigeraren för Core Components based Adaptive Forms liknar den du redan använder för att skapa AEM Sites Pages. Det här får du:
+
+
+* **Välbekanta gränssnittselement och -inställningar**: När du konfigurerar egenskaper för formulärkomponenter ser du egenskapsdialogrutan ut precis som de du använder för WCM Core Components. Det gör det snabbare att hitta de alternativ du behöver. Precis som för WCM Core Components visas egenskapsdialogrutan i mitten av redigeraren med tydliga flikar som separerar grundläggande och avancerade alternativ, hjälptext och hjälpmedelsinformation - allt i ett flikformat för enkel navigering.
+
+* **[Regelredigeraren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/rule-editor-core-components)**: Du kan lägga till logiska och dynamiska funktioner i formulären utan att behöva skriva kod. Med den inbyggda regelredigeraren kan du:
+   * Visa eller dölj fält baserat på användarval
+   * Aktivera eller inaktivera ett objekt
+   * Ange ett värde för ett objekt
+   * Utför beräkningar
+   * Ange ett objekts egenskap
+   * Validera datapost
+   * Anropa en tjänst (anropa extern funktion)
+   * Använd inbyggda funktioner (fördefinierade funktioner för vanliga uppgifter)
+   * Använd anpassade funktioner (egen kod för specifika behov)
+   * Validera fält och paneler (kontrollera att data uppfyller kraven)
+   * Validera ett objekts värde
+   * Utför funktioner för att beräkna värdet för ett objekt
+   * Anropa en FDM-tjänst (Form Data Model) och utföra en åtgärd
+   * Lägg till format dynamiskt (ändra utseendet baserat på villkor)
+   * Skapa andra regler (kedjeåtgärder och logik)
+   * med mera!
+
+  Regelredigeraren saknar kodredigerare. Du kan använda [anpassade funktioner](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-and-use-custom-functions) för att lägga till egen kod för särskilda behov i regelredigeraren.
+
+
+
+* **Fylla i formulär i förväg**: Du kan automatiskt fylla i vissa fält i ett formulär med befintliga data när en användare öppnar det. Detta sparar tid och arbete eftersom användaren inte behöver ange information som redan är tillgänglig manuellt. Core Components Editor erbjuder en tjänst för OOTB-förifyllning för att fylla i formulärfält med hjälp av en formulärdatamodell. Du kan också skapa anpassade förifyllningstjänster för mer komplexa scenarier.
+
+* **[Dokumentation (DoR)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/generate-document-of-record-core-components)**: En dokumentreferens (Document of Record, DoR) avser en formell, utskrivbar representation av data som skickas via formuläret. Det fungerar som en permanent post för den information som användaren har angett och ger en ögonblicksbild av inskickade data i ett användarvänligt format, vanligtvis ett PDF-dokument. Du kan använda redigeraren för att enkelt konfigurera en anpassad mall eller använda en OTB-mall för att generera en DoR-fil.
+
+* **[Formulärdatamodell](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model)**: En adaptiv Forms datamodell (FDM) fungerar som en bro mellan din adaptiva Forms och dina datakällor. Det definierar i huvudsak strukturen och strukturen för de data som formulären samlar in och interagerar med. Du kan använda redigeraren för att enkelt ansluta formuläret till en Forms datamodell (FDM).
+
+* **[Skicka formulär](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=Adaptive%20Form%20Submit%20Action&amp;text=Adobe%20recommends%20using%20Core%20Components,to%20create%20standalone%20Adaptive%20Forms.&amp;text=A%20Submit%20Action%20lets%20you,button%20on%20an%20Adaptive%20Form)**: En formuläröverföring avser processen att användarna fyller i och skickar sina ifyllda formulär. Detta utlöser en serie åtgärder som definieras i formulärets konfiguration, vilket i slutänden leder till lagring eller bearbetning av skickade data. Den adaptiva Forms-redigeraren erbjuder en mängd alternativ för att konfigurera formulärinskickat material. En del vanliga åtgärder för att skicka är:
+
+   * [Skicka e-post](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=Adaptive%20Form%20Submit%20Action&amp;text=Adobe%20recommends%20using%20Core%20Components,to%20create%20standalone%20Adaptive%20Forms.&amp;text=A%20Submit%20Action%20lets%20you,button%20on%20an%20Adaptive%20Form.)
+   * [Anropa ett Power Automate-flöde](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/forms-microsoft-power-automate-integration)
+   * [Skicka till SharePoint](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-action-sharepoint)
+   * [Anropa en Workfront Fusion](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=Invoke%20a%20Workfront%20Fusion)
+   * [Skicka med hjälp av formulärdatamodell (FDM)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/using-form-data-model)
+   * [Skicka till Azure Blob Storage](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=Submit%20to%20Azure%20Blob%20Storage)
+   * [Skicka till REST-slutpunkt](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-action-restpoint)
+   * [Skicka till OneDrive](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=to%20REST%20endpoint-,Submit%20to%20OneDrive,-Invoke%20an%20AEM)
+   * [Anropa ett AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=Invoke%20an%20AEM%20Workflow)
+
+
+<!-- 
+* **Preview Forms**: You can use the editor to  simulates how the form would appear on various devices like desktops, tablets, and smartphones.
+-->
+
+
+
+## Aktivera adaptiva Forms Core-komponenter
 
 Genom att aktivera adaptiva Forms Core-komponenter på AEM Forms as a Cloud Service kan du börja skapa, publicera och leverera Core Components-baserade adaptiva Forms och Headless Forms med hjälp av AEM Forms Cloud Service-instanser i flera kanaler. Detaljerade instruktioner om hur du aktiverar kärnkomponenter i adaptiva formulär finns i [Aktivera adaptiva Forms Core-komponenter i AEM Forms as a Cloud Service och lokala utvecklingsmiljö](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html).
 
