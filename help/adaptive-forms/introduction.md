@@ -3,9 +3,9 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: e15254b119194e14b5719de10a00b2990264756f
+source-git-commit: 63b4b59c43ffef10a036db3a639a6d5fa75a4e89
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Datainhämtningsupplevelser är avgörande för generering och registrering av l
 
 ## Jämföra kärnkomponenter, grundkomponenter och formulärblockskomponenter {#components}
 
-Den aktuella versionen av AEM har följande huvudkomponenter, grundkomponenter och formulärblockskomponenter (Edge Delivery Services).
+Den aktuella versionen av AEM har följande kärnkomponenter: [Foundation Components](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring#component-toolbar)och [Formulärblockskomponenter (Edge Delivery Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components).
 
 | Komponenter | Foundation Components | Kärnkomponenter | Formulärblockskomponenter | Ytterligare information |
 |------------|:---------------------:|:---------------:|:---------------------:|-----------------------|
@@ -203,6 +203,11 @@ Redigeraren för Core Components based Adaptive Forms liknar den du redan använ
    * [Skicka till REST-slutpunkt](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-action-restpoint)
    * [Skicka till OneDrive](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=to%20REST%20endpoint-,Submit%20to%20OneDrive,-Invoke%20an%20AEM)
    * [Anropa ett AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/configure-submit-actions-core-components#:~:text=Invoke%20an%20AEM%20Workflow)
+
+
+* [Adaptiva Forms Core-komponenter i webbplatssidredigeraren](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page): Du kan aktivera och använda adaptiva Forms Core-komponenter i AEM sidredigeraren och AEM Experience Fragments för att skapa datainhämtningsupplevelser tillsammans med att bygga en sajtsida.
+
+  >[!VIDEO](https://video.tv.adobe.com/v/3419284?quality=12&learn=on)
 
 
 <!-- 
