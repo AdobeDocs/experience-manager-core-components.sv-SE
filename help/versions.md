@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: f86340f87706d5803ec58a9034ac6a15027e0e0c
+source-git-commit: e25756d808d1deac338f4b7e054fe6f016a6bb97
 workflow-type: tm+mt
-source-wordcount: '3041'
+source-wordcount: '3079'
 ht-degree: 0%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Den aktuella versionen av Core Components är 2.23.4 och är kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
+Den aktuella versionen av Core Components är 2.25.4 och är kompatibel med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [AEM på plats](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html) installationer.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,6 +26,8 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.25.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.4) | Det här är en mindre release som åtgärdar vissa IT-fel. | - | 6.5.22.0+ | Kontinuerlig | 8, 11 | 10 maj 2024 |
+| [2.25.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.2) | Det här är en mindre release som åtgärdar vissa IT-fel. | - | 6.5.22.0+ | Kontinuerlig | 8, 11 | 9 maj 2024 |
 | [2.25.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.0) | Den här versionen innehåller stöd för namngivna smartbeskärningar i Dynamic Media, bland annat prestanda- och tillgänglighetsförbättringar samt olika felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 2 maj 2024 |
 | [2.24.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.6) | Den här korrigeringsversionen innehåller förbättringar för initiering av datalager. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 22 april 2024 |
 | [2.24.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.4) | Den här korrigeringsversionen åtgärdar en initiering av en Sling-modell. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 1 april 2024 |
