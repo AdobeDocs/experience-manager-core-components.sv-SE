@@ -3,9 +3,9 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 83a9a37495bb189592a657cac97c7277755b96be
+source-git-commit: 82b614774256efdd6c4f8eed86d9fd8b5b51279d
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2214'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ Datainhämtningsupplevelser är avgörande för generering och registrering av l
 
 * **[Versioner](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/add-comments-annotations-versioning-adaptive-form-core-components)**: Du kan skapa och hantera flera versioner av en Core Components-baserad Adaptive Forms, delta i samverkansdiskussioner via kommentarer och bifoga anteckningar till specifika formulärkomponenter, vilket förbättrar den övergripande formuläruppbyggnadsupplevelsen.
 
-## Jämföra kärnkomponenter, grundkomponenter och formulärblockskomponenter {#components}
+## Tillgängliga komponenter: En uppdelning efter komponenttyp
 
-Den aktuella versionen av AEM har följande kärnkomponenter: [Foundation Components](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring#component-toolbar)och [Formulärblockskomponenter (Edge Delivery Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components).
+Den aktuella versionen av AEM Forms har följande kärnkomponenter: [Foundation Components](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring#component-toolbar)och [Formulärblockskomponenter (Edge Delivery Services)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/edge-delivery/build-forms/forms-references/form-components).
 
 | Komponenter | Foundation Components | Kärnkomponenter | Formulärblockskomponenter | Ytterligare information |
 |------------|:---------------------:|:---------------:|:---------------------:|-----------------------|
