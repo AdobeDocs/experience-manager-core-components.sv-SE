@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Komponenten Core Component Image är en adaptiv bildkomponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: e37151536be5a4345f6e2bf630bb8bd4019ad699
+source-git-commit: 5d2d79c96dc934efd7cccefb1a6a343813376483
 workflow-type: tm+mt
-source-wordcount: '1970'
+source-wordcount: '1957'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,9 @@ Bildkomponenten (från [version 2.13.0](/help/versions.md)) har stöd [Dynamic M
 
 Dina webbupplevelser som byggts med Core Components kan innehålla omfattande, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
-## Nästa generations Dynamic Media-support {#next-gen-dm}
+## Stöd för fjärrresurser {#remote-assets}
 
-Bildkomponenten (från [version 2.23.2](/help/versions.md)) har stöd för nästa generations Dynamic Media fjärrresurser.
-
-[När konfigurationen är klar](/help/developing/next-gen-dm.md) du kan välja resurser från en fjärr-Dynamic Media-tjänst för nästa generation för din bildkomponent.
+Bildkomponenten (från [version 2.23.2](/help/versions.md)) har stöd för fjärrresurser. [När konfigurationen är klar](/help/developing/remote-assets.md) du kan välja resurser från en fjärrtjänst för din bildkomponent.
 
 ## Stöd för SVG {#svg-support}
 
@@ -87,7 +85,7 @@ Bildkomponenten har stöd för [schema.org](https://schema.org).
 
 I redigeringsdialogrutan kan författaren beskära och zooma bilden.
 
-Beroende på om du har [Dynamic Media](#dynamic-media) aktiverad eller [Nästa generations Dynamic Media](#next-gen-dm) om du aktiverar det här alternativet skiljer sig alternativen för att redigera bilder åt.
+Beroende på om du har [Dynamic Media](#dynamic-media) aktiverad eller [Stöd för fjärrresurser](#remote-assets) är aktiverat skiljer alternativen för att redigera bilder åt.
 
 ### Standardredigering av resurser {#standard-assets}
 
@@ -154,7 +152,7 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
    * Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** så att du kan överföra från ett lokalt filsystem.
    * Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
    * Tryck eller klicka **Välj** för att öppna [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) så att du kan markera en bild.
-      * If [Nästa generations Dynamic Media-funktioner](#next-gen-dm) är aktiverade har du flera alternativ för att välja en resurs:
+      * If [Stöd för fjärrkontroller](#remote-assets) är aktiverat har du flera alternativ för att välja en resurs:
          * **Lokal** väljer från det lokala AEM resursbiblioteket.
          * **Fjärr** väljer från ett Dynamic Media-bibliotek utanför din AEM.
    * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html) i Resursredigeraren.

@@ -3,7 +3,7 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: e25756d808d1deac338f4b7e054fe6f016a6bb97
+source-git-commit: 5d2d79c96dc934efd7cccefb1a6a343813376483
 workflow-type: tm+mt
 source-wordcount: '3079'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Följande tabell, vars innehåll är [finns på GitHub med fullständig versions
 | [2.24.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.0) | Den här versionen har stöd för Google Tag Manager-datalagret och innehåller olika felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 14 februari 2024 |
 | [2.23.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.4) | Den här korrigeringsversionen innehåller olika felkorrigeringar. | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 15 september 2023 |
 | [2.23.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.2) | Den här korrigeringen har lagt till Dynamic Media smart beskärning för fjärrresurser i [Bild](/help/components/image.md) och [Teaser Components](/help/components/teaser.md) och fixade ett antal buggar. | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 4 augusti 2023 |
-| [2.23.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0) | Den här versionen har fått stöd för [Nästa generation av Dynamic Media fjärrresurser.](/help/developing/next-gen-dm.md) | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 6 juni 2023 |
+| [2.23.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0) | Den här versionen har fått stöd för [Nästa generation av Dynamic Media fjärrresurser.](/help/developing/remote-assets.md) | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 6 juni 2023 |
 | [2.22.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.12) | Den här korrigeringsversionen åtgärdar två problem. | - | 6.5.14.0+ | Kontinuerlig | 8, 11 | 25 maj 2023 |
 | [2.22.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.10) | Den här korrigeringsversionen åtgärdar två regressioner. | - | 6.5.14.0+ | Kontinuerlig | 8, 11 | 11 maj 2023 |
 | [2.22.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.8) | Den här korrigeringsversionen återför funktioner som togs bort av misstag i en tidigare version. | - | 6.5.14.0+ | Kontinuerlig | 8, 11 | 9 maj 2023 |

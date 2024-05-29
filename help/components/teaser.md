@@ -3,9 +3,9 @@ title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF-text och eventuellt länka till ytterligare innehåll.
 role: Architect, Developer, Admin, User
 exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
-source-git-commit: 63f9659a547729c7cb3eb3c7a61cf1bc838cf6ce
+source-git-commit: 5d2d79c96dc934efd7cccefb1a6a343813376483
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,9 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v2 | - | Kompatibel | Kompatibel |
 | [v1](v1/teaser.md) | Kompatibel | Kompatibel | Kompatibel |
 
-## Nästa generations Dynamic Media-support {#next-gen-dm}
+## Stöd för fjärrresurser {#remote-assets}
 
-Teaser Component (från och med [version 2.23.2](/help/versions.md)) har stöd för nästa generations Dynamic Media fjärrresurser.
-
-[När konfigurationen är klar](/help/developing/next-gen-dm.md) du kan välja resurser från en fjärr-Dynamic Media-tjänst för nästa generation för din teaser-komponent.
+Teaser Component (från och med [version 2.23.2](/help/versions.md)) har stöd för fjärrresurser. [När konfigurationen är klar](/help/developing/remote-assets.md) du kan välja resurser från en fjärrtjänst för din teaserkomponent.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
@@ -84,7 +82,7 @@ Teaser title, description and image can be inherited from the linked page, or fr
 * **Bildresurs** - Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** för överföring från ett lokalt filsystem.
    * Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
    * Tryck eller klicka **Välj** för att öppna [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) för att markera en bild.
-      * If [Nästa generations Dynamic Media-funktioner](#next-gen-dm) är aktiverade har du flera alternativ för att välja en resurs:
+      * If [Stöd för fjärrresurser](#remote-assets) är aktiverat har du flera alternativ för att välja en resurs:
          * **Lokal** väljer från det lokala AEM resursbiblioteket.
          * **Fjärr** väljer från ett Dynamic Media-bibliotek utanför din AEM.
    * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
