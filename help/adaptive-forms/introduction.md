@@ -3,9 +3,9 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: d3a887338387b4d46c1f81c4a6ddf040a82a48b7
+source-git-commit: 1f9cef8eb448b4f5662c95827ab6575bdfeaf740
 workflow-type: tm+mt
-source-wordcount: '2210'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -78,8 +78,9 @@ Den aktuella versionen av AEM Forms har följande kärnkomponenter: [Foundation 
 | Adobe Sign Block | ✔️ | | | [Integrering med Adobe Sign](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms#adobe-acrobat-sign-for-government) är bara tillgängligt för Foundation Components. |
 | Dragspel | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/accordion.md)</span> | | För Foundation Components kan du konfigurera dragspelslayouten i [Egenskaper för panelkomponent](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms#panel-layout). |
 | Adaptivt formulärfragment | ✔️ | ✔️ | | För Foundation Components kan du [lägga till ett fragment](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/adaptive-form-fragments#insert-a-fragment-in-an-adaptive-form) från Resursläsaren. |
-| reCAPTCHA | ✔️ | ✔️ | ✔️ | För Foundation-komponenter använder du Captcha-komponenten för att [lägg till Google reCaptcha i ett formulär](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms#google-reCAPTCHA). |
+| Adaptiv form reCAPTCHA | ✔️ | ✔️ | ✔️ | För Foundation-komponenter använder du Captcha-komponenten för att [lägg till Google reCaptcha i ett formulär](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms#google-reCAPTCHA). |
 | Knapp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/button.md)</span> | ✔️ | |
+| CAPTCHA | ✔️ |  |  | För Foundation-komponenter använder du Captcha-komponenten för att [lägg till Google reCaptcha i ett formulär](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms#google-reCAPTCHA). |
 | Diagram | ✔️ | | | |
 | Kryssruta | ✔️ | ✔️ | | |
 | Kryssrutegrupp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/checkbox-group.md)</span> | ✔️ | För Foundation-komponenter använder du kryssrutekomponenten för att lägga till flera kryssrutor |
