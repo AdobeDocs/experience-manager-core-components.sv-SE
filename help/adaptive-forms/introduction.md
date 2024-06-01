@@ -2,8 +2,7 @@
 title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
-exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 1f9cef8eb448b4f5662c95827ab6575bdfeaf740
+source-git-commit: ae81102adafef131b013425465ad56af41f604bf
 workflow-type: tm+mt
 source-wordcount: '2229'
 ht-degree: 0%
