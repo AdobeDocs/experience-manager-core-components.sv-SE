@@ -4,10 +4,10 @@ user-guide-title: Grundläggande komponenter i AEM
 breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
-feature-set: Experience Manager Sites
-source-git-commit: 36ef19d5b29fe21f86309719d1e3f6588e31a93b
+feature-set: Experience Manager Sites, Experience Manager Forms
+source-git-commit: a7cf223f8799054683f135e08fb83b320dd948fa
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '378'
 ht-degree: 5%
 
 ---
@@ -117,6 +117,7 @@ ht-degree: 5%
       + [Adaptiv Forms-formulärfragment](/help/adaptive-forms/components/adaptive-form-fragment.md)
       + [Adaptiva Forms-filbilagor](/help/adaptive-forms/components/file-attachment.md)
       + [Adaptiva lodräta Forms-flikar](/help/adaptive-forms/components/vertical-tabs.md)
+      + [Adaptiv Forms Captcha](/help/adaptive-forms/components/hcaptcha.md)
       + [Anpassningsbara vågräta Forms-flikar](/help/adaptive-forms/components/horizontal-tabs.md)
       + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
       + [Adaptiv numerisk Forms-ruta](/help/adaptive-forms/components/numeric-box.md)
