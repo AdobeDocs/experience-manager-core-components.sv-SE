@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - bifogad fil
 description: Använda eller anpassa den adaptiva Forms-filbilagan Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 64a54fc6-db52-481f-bf5a-60c05122004d
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '1852'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
 
 # Bifogad fil-komponent {#file-attachment-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En bifogad fil i ett adaptivt formulär gör att användarna kan välja och överföra filer från sin lokala dator eller enhet. Komponenten för bifogad fil kan konfigureras så att den tillåter specifika filtyper, storleksbegränsningar och flera bifogade filer.
 
@@ -118,6 +116,12 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/fileattachement_accessibilitytab.png)
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 ## Designdialogruta {#design-dialog}
 

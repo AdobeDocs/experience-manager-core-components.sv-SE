@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2134'
 ht-degree: 0%
 
 ---
 
-# Alternativknappskomponent {#radio-button-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**   och   **Tillåt RTF för alternativ**   funktioner, förhandsversioner. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+# Radio button component {#radio-button-adaptive-forms-core-component}
 
 En alternativknapp i ett adaptivt formulär är en typ av indataelement som gör att en användare kan välja ett alternativ från en grupp med relaterade alternativ. Den representeras av en liten cirkulär knapp som antingen är fylld eller tom för att ange om alternativet är markerat eller inte. När en användare markerar en alternativknapp avmarkeras de andra i gruppen. Alternativknappar används vanligtvis när det finns flera alternativ som utesluter varandra och bara ett alternativ kan markeras åt gången.
 
@@ -128,7 +126,12 @@ Du kan också formatera alternativen för alternativknappsgruppen med **Tillåt 
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/radiobutton_accessibilitytab.png)
 
-**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+- **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 ## Designdialogruta {#design-dialog}
 

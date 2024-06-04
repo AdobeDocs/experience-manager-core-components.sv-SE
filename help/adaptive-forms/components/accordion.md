@@ -3,16 +3,14 @@ title: Dragspel med adaptiv form
 description: Använd dragspelspanelen för att ordna och förenkla ett långt eller komplext formulär genom att dela upp det i mindre, mer hanterbara avsnitt.
 role: Architect, Developer, Admin, User
 exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '2263'
+source-wordcount: '2237'
 ht-degree: 0%
 
 ---
 
 # Dragspelskomponent {#accordion-component-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Med Accordion Core Component kan man skapa expanderbara och komprimerbara sektioner i en adaptiv form. Det används ofta för att organisera och förenkla långa eller komplexa formulär genom att dela upp dem i mindre, mer hanterbara avsnitt. Varje avsnitt i ett dragspel representeras vanligtvis av ett sidhuvud som användaren kan klicka på för att expandera eller komprimera motsvarande innehåll. Innehållet kan vara vilken kärnkomponent som helst.
 
@@ -154,7 +152,6 @@ På **Tillgänglighet** tabb, värden anges för [Tillgänglighet för ARIA](htt
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
-
    - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
    - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
    - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
@@ -227,7 +224,6 @@ Designdialogrutan används för att definiera och hantera CSS-format för en kom
 ### Anpassade egenskaper
 
 ![accordion-custom-properties-tab](/help/adaptive-forms/assets/accordion-custom-properties-tab.png)
-
 Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
 
 - **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:

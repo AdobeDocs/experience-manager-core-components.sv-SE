@@ -2,7 +2,7 @@
 title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
-source-git-commit: ae81102adafef131b013425465ad56af41f604bf
+source-git-commit: e1ee09854a40c960f8a907149240b755c95fe176
 workflow-type: tm+mt
 source-wordcount: '2229'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Den aktuella versionen av AEM Forms har följande kärnkomponenter: [Foundation 
 | Datumindatafält | ✔️ | | | För kärnkomponenter använder du [datumväljare](/help/adaptive-forms/components/date-picker.md) -komponenten. Du kan också lägga till separata [textruta](/help/adaptive-forms/components/text-box.md) eller [numeric box](/help/adaptive-forms/components/numeric-box.md) för att fånga dag, månad och år. |
 | Datumväljaren | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/date-picker.md)</span> | ✔️ | |
 | Listruta | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/drop-down-list.md)</span> | ✔️ | |
-| E-post | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/email-input.md)</span> | ✔️ | |
+| E-post | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/email.md)</span> | ✔️ | |
 | Bifogad fil | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/file-attachment.md)</span> | ✔️ | |
 | Lista över bifogade filer | ✔️ | | | |
 | Sidfot | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/footer.md)</span> | ✔️ | |
@@ -103,7 +103,7 @@ Den aktuella versionen av AEM Forms har följande kärnkomponenter: [Foundation 
 | Numerisk stege | ✔️ | | | |
 | Panel | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/panel.md)</span> | ✔️ | |
 | Lösenordsruta | ✔️ | | ✔️ | |
-| Telefon | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/telephone-input.md)</span> | ✔️ | |
+| Telefon | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/phone.md)</span> | ✔️ | |
 | Knappen Föregående | ✔️ | | | Använd [guidekomponent](/help/adaptive-forms/components/wizard.md) för nästa och föregående knappar för att flytta mellan flera paneler. |
 | Alternativknapp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/radio-button.md)</span> | | |
 | Grupp med alternativknappar | | | ✔️ | |
@@ -112,12 +112,12 @@ Den aktuella versionen av AEM Forms har följande kärnkomponenter: [Foundation 
 | Avgränsare | ✔️ | | | |
 | Skicka-knapp | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/submit-button.md)</span> | ✔️ | |
 | Sammanfattningssteg | ✔️ | | | |
-| Byt | ✔️ | <span style="color:blue"> [✔️](/help/adaptive-forms/components/switch.md) | | |
+| Byt | ✔️ | <span style="color:blue"> [✔️](/help/adaptive-forms/components/adaptive-form-switch.md) | | |
 | Tabell | ✔️ | | | |
 | Villkor | ✔️ | ✔️ | | |
 | Text | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/text.md)</span> | ✔️ | |
 | Textruta | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/text-box.md)</span> | ✔️ | |
-| Titel | ✔️ | | | För kärnkomponenter använder du [Formulärtitel](/help/adaptive-forms/components/title.md) -komponenten. |
+| Titel | ✔️ | | | För kärnkomponenter använder du [Formulärtitel](/help/adaptive-forms/components/form-title.md) -komponenten. |
 | Turnstile Captcha | ✔️ | | | [Turnstile Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-turnstile) är bara tillgängligt för Foundation Components. |
 | Lodräta tabbar | ✔️ | ✔️ | | För Foundation Components kan du konfigurera [tabbar till vänster (lodräta tabbar) layout](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms#panel-layout) i panelkomponentegenskaper |
 | guide | ✔️ | <span style="color:blue">[✔️](/help/adaptive-forms/components/wizard.md)</span> | ✔️ | För Foundation Components kan du konfigurera [guidelayout](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms#panel-layout) i panelkomponentegenskaper |
@@ -134,11 +134,13 @@ Den aktuella versionen av AEM Forms har följande kärnkomponenter: [Foundation 
 
 <!-- >
 * [Accordion](/help/adaptive-forms/components/accordion.md)
+* [Adaptive Form Fragment](/help/adaptive-forms/components/adaptive-form-fragment.md)
+* [Adaptive Form Switch](/help/adaptive-forms/components/adaptive-form-switch.md)
 * [Button](/help/adaptive-forms/components/button.md)
 * [Check Box Group](/help/adaptive-forms/components/checkbox-group.md)
 * [Date Picker](/help/adaptive-forms/components/date-picker.md)
 * [Drop-down list](/help/adaptive-forms/components/drop-down-list.md)
-* [Email-input](/help/adaptive-forms/components/email-input.md)
+* [Email](/help/adaptive-forms/components/email.md)
 * [Form Container](/help/adaptive-forms/components/form-container.md)
 * [File Attachment](/help/adaptive-forms/components/file-attachment.md)
 * [Footer](/help/adaptive-forms/components/footer.md)
@@ -147,13 +149,14 @@ Den aktuella versionen av AEM Forms har följande kärnkomponenter: [Foundation 
 * [Image](/help/adaptive-forms/components/image.md)
 * [Numeric Box](/help/adaptive-forms/components/numeric-box.md)
 * [Panel](/help/adaptive-forms/components/panel.md)
+* [Phone](/help/adaptive-forms/components/phone.md)
 * [Radio Button](/help/adaptive-forms/components/radio-button.md)
+* [Adaptive Form reCAPTCHA](/help/adaptive-forms/components/adaptive-form-recaptcha.md)
 * [Reset Button](/help/adaptive-forms/components/reset-button.md)
 * [Submit Button](/help/adaptive-forms/components/submit-button.md)
-* [Telephone input](/help/adaptive-forms/components/telephone-input.md)
 * [Text Box](/help/adaptive-forms/components/text-box.md)
 * [Text](/help/adaptive-forms/components/text.md)
-* [Title](/help/adaptive-forms/components/title.md)
+* [Form Title](/help/adaptive-forms/components/form-title.md)
 * [Wizard](/help/adaptive-forms/components/wizard.md)
 
 -->

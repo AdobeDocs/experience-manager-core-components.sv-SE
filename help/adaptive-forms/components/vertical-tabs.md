@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - lodräta flikar
 description: Använda eller anpassa de adaptiva Forms-flikarna Core Component (Core-komponent).
 role: Architect, Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2174'
 ht-degree: 0%
 
 ---
 
 # Lodräta flikar, komponent{#vertical-tabs-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Lodräta flikar i ett adaptivt formulär avser ett designmönster där flera avsnitt i ett formulär grupperas tillsammans och visas som separata flikar, justerade lodrätt. Användaren kan växla mellan flikarna för att komma åt olika avsnitt i formuläret. Varje flik fungerar som en utlösare som visar och döljer det relaterade formulärinnehållet. Med hjälp av de lodräta flikarna kan du ordna långa formulär i hanterbara avsnitt och förbättra användarupplevelsen. Med flikar kan du göra ett formulär mer tillgängligt för användare med funktionshinder, eftersom de kan växla mellan sektioner med hjälp av tangentbordsnavigering.
 När en användare klickar på en flik uppdateras formulärinnehållet dynamiskt för att visa motsvarande avsnitt.
@@ -137,14 +135,20 @@ The **Lägg till** Med knappen kan du markera en komponent som du vill lägga ti
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
+
 - **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva Forms-komponenten med lodräta flikar kan du ange följande:
+I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva lodräta Forms-flikkomponenten kan du ange följande:
 
 - De kärnkomponenter som en formulärskapare kan lägga till på de lodräta flikarna i den adaptiva Forms-redigeraren
-- Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Vertical-tabs i den adaptiva Forms-redigeraren.
+- Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Lodrät i den adaptiva Forms-redigeraren.
 
 Detta gör det enklare och effektivare att skapa och anpassa formulär.
 

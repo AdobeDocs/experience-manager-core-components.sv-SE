@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - textinmatning (textruta)
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-textinmatning.
 role: Architect, Developer, Admin, User
 exl-id: 49d9fe69-0578-4489-beaa-a18cdb14add7
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2121'
 ht-degree: 0%
 
 ---
 
 # Textrutekomponent{#text-input-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Med en textinmatningskomponent (textruta) kan användaren ange och redigera en eller flera rader med text, beroende på inmatningselementets type-attribut. Textindatakomponenten kan placeras i ett formulär och är vanligtvis märkt med en användbar text som lätt identifierar dess syfte. Dessa är ett grundläggande element i alla typer av formulär som ofta används för att samla in olika typer av data från användarna, de är enkla, flexibla och kan konfigureras för att validera indata och förbättra informationsinsamlingen.
 
@@ -119,7 +117,12 @@ The **Valideringsmönster** kan du ange ett mönster för att validera den angiv
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/textinput_accessibiltytab.png)
 
-**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+- **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 ## Designdialogruta {#design-dialog}
 
@@ -131,7 +134,7 @@ Fliken används för att definiera och hantera CSS-format för en komponent. Kä
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva kärnkomponenten för textinmatning i Forms.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms-textrutans kärnkomponent.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 

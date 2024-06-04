@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2185'
 ht-degree: 0%
 
 ---
 
 # Komponent för nedrullningsbar lista{#drop-down-list-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Med en nedrullningsbar lista i ett adaptivt formulär kan användarna välja ett eller flera alternativ i en lista med fördefinierade alternativ. Alternativen kan vara av typen String, Number eller Boolean. Dessutom kan den nedrullningsbara listkomponenten konfigureras så att den har olika validerings- och standardvärden.
 
@@ -129,8 +127,13 @@ Du kan enkelt anpassa den nedrullningsbara listan för besökare med dialogrutan
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/dropdown_accessibilitytab.png)
 
 
-**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+- **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 ## Designdialogruta {#design-dialog}
 

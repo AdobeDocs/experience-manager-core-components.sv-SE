@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - skicka-knapp
 description: Använda eller anpassa den adaptiva Forms Submit-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: e4b8e475-79b9-4c4d-9f11-a125a424d32b
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
 
 # Skicka-knappkomponent {#submit-button}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En Skicka-knapp i ett adaptivt formulär är en knapp som gör att användare kan skicka formulärdata till en server för bearbetning. När användaren klickar på knappen Skicka skickas formulärdata till servern, där de kan lagras, bearbetas eller användas i olika syften, som att skicka ett e-postmeddelande eller uppdatera en databas.
 
@@ -86,7 +84,12 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din sändningsknapp för besö
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/button_accessibilitytab.png)
 
-**Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+- **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 ## Designdialogruta {#design-dialog}
 

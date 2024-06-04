@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites, Experience Manager Forms
-source-git-commit: a7cf223f8799054683f135e08fb83b320dd948fa
+source-git-commit: d41cf56f3889ff6aa1bf6f753dc5331248d1ae2e
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '377'
 ht-degree: 5%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 5%
       + [Adaptiv Forms-behållare](/help/adaptive-forms/components/form-container.md)
       + [Anpassad datumväljare för Forms](/help/adaptive-forms/components/date-picker.md)
       + [Adaptiv listruta för Forms](/help/adaptive-forms/components/drop-down-list.md)
-      + [Anpassad e-postinmatning från Forms](/help/adaptive-forms/components/email-input.md)
+      + [Adaptiv Forms-e-post](/help/adaptive-forms/components/email.md)
       + [Adaptiv Forms-formulärfragment](/help/adaptive-forms/components/adaptive-form-fragment.md)
       + [Adaptiva Forms-filbilagor](/help/adaptive-forms/components/file-attachment.md)
       + [Adaptiva lodräta Forms-flikar](/help/adaptive-forms/components/vertical-tabs.md)
@@ -122,15 +122,15 @@ ht-degree: 5%
       + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
       + [Adaptiv numerisk Forms-ruta](/help/adaptive-forms/components/numeric-box.md)
       + [Adaptiv Forms-panel](/help/adaptive-forms/components/panel.md)
-      + [Adaptiv Forms CAPTCHA](/help/adaptive-forms/components/captcha.md)
+      + [Adaptiv Forms CAPTCHA](/help/adaptive-forms/components/adaptive-form-recaptcha.md)
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
       + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
       + [Adaptiv Forms-sändningsknapp](/help/adaptive-forms/components/submit-button.md)
-      + [Adaptiv Forms-switch](/help/adaptive-forms/components/switch.md)
-      + [Adaptiv telefoninmatning från Forms](/help/adaptive-forms/components/telephone-input.md)
+      + [Adaptiv Forms-switch](/help/adaptive-forms/components/adaptive-form-switch.md)
+      + [Adaptiv Forms Phone](/help/adaptive-forms/components/phone.md)
       + [Adaptiv Forms-text](/help/adaptive-forms/components/text.md)
       + [Adaptiv Forms-textruta](/help/adaptive-forms/components/text-box.md)
-      + [Adaptive Forms Title](/help/adaptive-forms/components/title.md)
+      + [Adaptiv titel på Forms-formulär](/help/adaptive-forms/components/form-title.md)
       + [Adaptive Forms Wizard](/help/adaptive-forms/components/wizard.md)
       + [Adaptiva villkor för Forms](/help/adaptive-forms/components/terms-and-conditions.md)
       + [Sidhuvud](/help/adaptive-forms/components/header.md)

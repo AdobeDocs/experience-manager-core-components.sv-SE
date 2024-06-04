@@ -3,14 +3,14 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: c3401da271efd930d1a2711bcab25c29f763f38e
+source-git-commit: 8bba79956a04020647d5d04f9fe6fa674affedf1
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
 
-# Wizard Component{#wizard-adaptive-forms-core-component}
+# Guidekomponent{#wizard-adaptive-forms-core-component}
 
 En guidelayout i ett adaptivt formulär refererar till ett formulär som är uppdelat i flera steg eller på flera sidor där användaren förflyttar sig i formuläret ett steg i taget. Layouten kallas för en guide eftersom den guidar användaren genom formuläret steg för steg.
 
@@ -148,6 +148,11 @@ Med det här alternativet kan du lägga till adaptiva formulärkomponenter genom
 ![Fliken Hjälpmedel](/help/adaptive-forms/assets/wizard_accessibiltytab.png)
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 - **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 

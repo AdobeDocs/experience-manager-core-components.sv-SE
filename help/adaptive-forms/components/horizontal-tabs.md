@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - horisontella flikar
 description: Använda eller anpassa den adaptiva, vågräta Forms-flikkomponenten Core.
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '2094'
+source-wordcount: '2153'
 ht-degree: 0%
 
 ---
 
-# Vågräta flikar (flikar överst){#horizontal-tabs-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+# Komponent för vågräta flikar (tabbar överst){#horizontal-tabs-adaptive-forms-core-component}
 
 Vågräta flikar i ett adaptivt formulär avser ett designmönster där flera avsnitt i ett formulär grupperas tillsammans och visas som separata flikar, justerade vågrätt. Användaren kan växla mellan flikarna för att komma åt olika avsnitt i formuläret. Varje flik fungerar som en utlösare som visar och döljer det relaterade formulärinnehållet. De vågräta flikarna hjälper dig att ordna långa formulär i hanterbara avsnitt och förbättra användarupplevelsen. Med flikar kan du göra ett formulär mer tillgängligt för användare med funktionshinder, eftersom de kan växla mellan sektioner med hjälp av tangentbordsnavigering.
 
@@ -52,7 +50,7 @@ To experience the Horizontal-tabs  Component as well as see examples of its conf
 
 ## Teknisk information {#technical-details}
 
-Den senaste informationen om de adaptiva Forms Horizontal tabs Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/pageHorizontal tabbar/v1/pageVågräta tabbar). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Den senaste informationen om de adaptiva Forms Horizontal tabs Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/pageHorizontaltabs/v1/pageHorizontaltabs). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -138,14 +136,19 @@ The **Lägg till** Med knappen kan du markera en komponent som du vill lägga ti
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/accessibilty-tabs-on-top.png)
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 - **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva vågräta Forms-komponenten kan du ange följande:
+I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva vågräta Forms-flikkomponenten kan du ange följande:
 
-- De kärnkomponenter som en formulärskapare kan lägga till i de horisontella flikarna i den adaptiva Forms-redigeraren
+- De kärnkomponenter som en formulärskapare kan lägga till på de horisontella flikarna i den adaptiva Forms-redigeraren
 - Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för komponenten Vågräta flikar i den adaptiva Forms-redigeraren.
 
 Detta gör det enklare och effektivare att skapa och anpassa formulär.

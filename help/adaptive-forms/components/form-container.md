@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
-source-git-commit: e843ccf5c030cd4f1015e3290347b5799828537a
+source-git-commit: 8bba79956a04020647d5d04f9fe6fa674affedf1
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---

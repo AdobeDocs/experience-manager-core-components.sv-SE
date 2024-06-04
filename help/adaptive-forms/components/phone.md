@@ -1,34 +1,33 @@
 ---
-title: Adaptiv Forms Core-komponent - återställningsknapp
-description: Använda eller anpassa den adaptiva Forms-återställningsknappen Core Component.
+title: Adaptiv Forms Core-komponent - telefoninmatning, telefon
+description: Använda eller anpassa den adaptiva kärnkomponenten för telefoninmatning från Forms.
 role: Architect, Developer, Admin, User
-exl-id: e5aa9d89-aece-491e-80a1-7fb9ea6c4b60
+exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
 source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '2198'
 ht-degree: 0%
 
 ---
 
-# Återställ knappkomponent {#reset-button}
 
-En återställningsknapp i ett adaptivt formulär är en knapp som gör att användare kan rensa eller återställa alla formulärfält till sina standardvärden. När du klickar på återställningsknappen tas alla data som har angetts i formulärfälten bort och fälten återgår till sitt ursprungliga läge. Återställningsknappen används vanligtvis som ett alternativ till skicka-knappen och är ett sätt för användarna att börja om om om de har angett felaktiga eller oönskade data i formuläret.
+# Telefonkomponent{#telephone-input-adaptive-forms-core-component}
 
-![exempel](/help/adaptive-forms/assets/example-reset.png)
+Med den adaptiva formulärens telefoningång Core Component kan användare ange ett telefonnummer. I fältet för telefonindata visas tangentbord i mobila enheter som är relevanta för telefonnummer. Den kan anpassas med ytterligare attribut som &quot;pattern&quot; och &quot;placeholder&quot; för att ange telefonnumrets format och beskrivning.
 
-## Användning {#reasons-to-use-reset-button}
+Telefoninmatningsfältet används ofta i kontaktformulär, registreringsformulär och andra formulär där ett telefonnummer krävs som kontaktmetod. Telefoninmatningsfältet kan också användas för att säkerställa att användaren anger ett giltigt telefonnummer, eftersom webbläsaren kan tillämpa vissa begränsningar, t.ex. telefonnumrets längd och format, baserat på mönsterattributet.
 
-Skälen till att du använder en återställningsknapp i ett adaptivt formulär är:
+![exempel](/help/adaptive-forms/assets/emailid-example.png)
 
-- **Användarbekvämlighet**: En återställningsknapp är ett snabbt och enkelt sätt för användare att rensa formuläret och börja om från början, utan att behöva ta bort varje fält manuellt.
+## Användning {#reasons-to-use-telephone-input}
 
-- **Förbättrad användbarhet**: En återställningsknapp kan förbättra användarupplevelsen genom att användarna enkelt kan rätta till misstag eller ändra sina indata.
+De vanligaste skälen till att använda ett telefoninmatningsfält i en adaptiv form är:
 
-- **Felförebyggande**: Genom att använda en återställningsknapp kan användare undvika att oavsiktligt skicka felaktiga data, vilket kan leda till fel eller bearbetningsproblem.
+- **Kontaktinformation**: Ett telefoninmatningsfält används ofta för att samla in en användares telefonnummer som kontaktmetod.
 
-- **Konsekvens**: Att ta med en återställningsknapp i ett formulär ger en konsekvent användarupplevelse, eftersom återställningsknappar är en vanlig funktion i formulär.
+- **Förbättrad datakvalitet**: Genom att använda ett telefoninmatningsfält kan formuläret begränsa telefonnumrets format, vilket kan säkerställa att de data som anges är korrekta och fullständiga.
 
-- **Bättre datahantering**: Genom att använda en återställningsknapp kan informationen i formuläret hållas organiserad och korrekt, eftersom det är mindre troligt att användare skickar inkonsekventa eller felaktiga data.
+- **Bättre användarupplevelser**: Ett telefoninmatningsfält är ett tydligt och intuitivt sätt för användare att ange sitt telefonnummer och kan förbättra användarupplevelsen genom att användarna snabbt och enkelt kan ange sin kontaktinformation.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -46,15 +45,13 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om den adaptiva Forms Reset-knappen Core Component (Core-komponent för återställning) i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/button/v1/button). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Få den senaste informationen om den adaptiva Forms telefonindatakärnkomponenten i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/telephoneinput/v1/telephoneinput). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Med dialogrutan Konfigurera kan du enkelt anpassa din Återställ-knappfunktion för besökare. Du kan också enkelt definiera alternativ för knappen Återställ för en smidig användarupplevelse.
+Du kan enkelt anpassa telefoninmatningen för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera telefoninmatningsalternativ för en smidig användarupplevelse.
 
-### Fliken Grundläggande {#basic-tab}
-
-![Fliken Grundläggande](/help/adaptive-forms/assets/button_basictab.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/telephoneinput_basictab.png)
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -64,24 +61,58 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din Återställ-knappfunktion 
 
   ![Stöd för RTF](/help/adaptive-forms/assets/richtext-support-title.png)
 
+- **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
+- **Platshållartext** - Platshållartext i en formulärkomponent refererar till en kort etikett eller en fråga som visas i ett inmatningsfält som ett tips till användaren om vilken typ av information som förväntas anges i det fältet. Platshållartext försvinner när användaren börjar skriva i fältet och visas igen om fältet lämnas tomt. Den ger användaren en visuell referens, men fungerar inte som en permanent etikett eller ett permanent värde för fältet.
+
 - **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
 
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
+
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
-  <!--   **Read-only** - Select the option to make the component non-editable. The user can see the value of the field but cannot modify it. The component remains accessible for other purposes, such as using it for calculations in the Rule Editor.-->
 
-### Fliken Hjälpinnehåll {#help-content}
+- **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
-![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/button_helptab.png)
+- **Standardvärde** - Med det här alternativet kan du lägga till ett standardvärde i ett formulärfält. If **Inaktiverad komponent** eller **Skrivskyddad komponent** är markerat visas standardvärdet på skärmen. Om användaren inte anger något värde i formulärfältet skickas det här värdet när formuläret skickas.
+
+- **Autofyll attribut**: Med det här alternativet kan användare ange ett värde som fylls i automatiskt i formulärfältet baserat på den lagrade informationen.
+
+### Fliken Validering {#validation-tab}
+
+![Fliken Validering](/help/adaptive-forms/assets/telephoneinput_validationtab.png)
+
+- **Obligatoriskt** - Välj det här alternativet om du vill visa komponenten i ett adaptivt formulär. När du har valt alternativet måste du ange ett värde innan du fortsätter med en formuläröverföring. Du kan inte välja **Dölj komponent** eller **Inaktivera komponent**  i **Grundläggande** när det här alternativet är markerat.
+
+- **Felmeddelande** - Med det här alternativet kan du ange ett meddelande som visas om **Obligatoriskt** kryssrutan är markerad och fältet lämnas tomt.
+
+- **Skriptverifieringsmeddelande** - Med det här alternativet kan du ange ett meddelande som ska visas om skriptvalideringen misslyckas.
+
+- **Maximalt antal tecken** - Med det här alternativet kan du ange det maximala antalet tecken som tillåts i komponenten. Om du anger tecken som är större än det värde som anges i **Maximalt antal tecken** visas ett felmeddelande på skärmen. The **Felmeddelande för högsta antal tecken** kan du lägga till ett eget felmeddelande.
+
+- **Felmeddelande för högsta antal tecken** - **Felmeddelande för högsta antal tecken** kan du lägga till ett anpassat felmeddelande om du anger tecken som är större än värdet som anges i **Maximalt antal tecken** alternativ.
+
+- **Minsta antal tecken** - Med det här alternativet kan du ange det minsta antalet tecken som tillåts i fältet. Om du anger tecken som är mindre än det värde som anges i **Minsta antal tecken** visas ett felmeddelande på skärmen. The **Felmeddelande för minsta antal tecken** kan du lägga till ett eget felmeddelande.
+
+- **Felmeddelande för minsta antal tecken** - **Felmeddelande för minsta antal tecken** kan du lägga till ett anpassat felmeddelande om du anger tecken som är mindre än värdet som anges i **Minsta antal tecken** alternativ.
+
+The **Valideringsmönster** kan du ange ett mönster för att validera det angivna telefonnumret. Det angivna telefonnumret valideras mot det värde som anges i **Mönster** alternativ. Om telefonnumret inte kan valideras med det värde som anges i **Mönster** visas felmeddelandet på skärmen.
+
+- **Mönster** - Med det här alternativet kan du ange tillåtna verifieringsmönster för telefonnummer. Reguljära uttryck tillåts också.
+
+- **Felmeddelande** - Med det här alternativet kan du ange ett meddelande som visas på skärmen om det angivna telefonnumret inte kan valideras med det värde som anges i **Mönster** option
+
+### Fliken Hjälpinnehåll {#help-content-tab}
+
+![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/telephoneinput_helptab.png)
 
 - **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
 - **Visa alltid kort beskrivning** - Aktivera alternativet att visa den korta beskrivningen under komponenten.
+
 - **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa sig fylla i ett formulärfält på rätt sätt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
 
-### Tillgänglighet {#accessibility}
+### Fliken Tillgänglighet {#accessibility-tab}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/button_accessibilitytab.png)
+![Fliken Tillgänglighet](/help/adaptive-forms/assets/telephoneinput_accessibilitytab.png)
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
    - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
@@ -92,22 +123,21 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din Återställ-knappfunktion 
 
 ## Designdialogruta {#design-dialog}
 
-Designdialogrutan används för att definiera och hantera CSS-format för komponenten Återställ.
-
+Designdialogrutan används för att definiera och hantera CSS-format för telefonkomponenten.
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för återställningsknappen i Adaptive Forms stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Den adaptiva Forms Phone Core-komponenten stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
 
-![Designdialogruta](/help/adaptive-forms/assets/checkbox-style.png)
+![Designdialogruta](/help/adaptive-forms/assets/telephoneinput_designdialog.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms-återställningsknappen Core Component.
+- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Phone Core-komponenten.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Anpassade egenskaper
 
-![Dialogrutan Anpassade egenskaper](/help/adaptive-forms/assets/checkbox-customproperties.png)
+![Dialogrutan Anpassade egenskaper](/help/adaptive-forms/assets/telephoneinput-customproperties.png)
 
 Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till en anpassad formulärets kärnkomponent med hjälp av formulärmallen. De anpassade egenskaperna återspeglas i egenskapsavsnittet i den headless-renderingen av komponenten. Det gör att du kan skapa dynamiskt formulärbeteende som anpassas baserat på anpassade attributvärden. Utvecklare kan till exempel utforma olika renderingar av en Headless Forms-komponent för mobiler, datorer eller webbplattformar, vilket avsevärt förbättrar användarupplevelsen på en mängd olika enheter.
 
@@ -118,6 +148,27 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
    - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
    - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+### Fliken Format {#format-tab}
+
+På fliken Format kan du ange standardtalformat och anpassade talformat.
+
+![Fliken Format](/help/adaptive-forms/assets/telephoneinput_format.png)
+
+### Fliken Valideringsmönster {#validation-patterns-tab}
+
+På fliken Valideringsmönster kan du ange värden i ett visst format eller uppfylla vissa villkor. Vissa alternativ är tillgängliga som standard, som du kan välja genom att markera motsvarande kryssruta. Du kan dessutom lägga till ett anpassat format genom att klicka på **Lägg till** -knappen.
+
+![Fliken Validering](/help/adaptive-forms/assets/telephoneinput-validationpatterns.png)
+
+<!--
+
+## Related article {#related-article}
+
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+
+-->
+
 
 ## Relaterade artiklar {#related-articles}
 

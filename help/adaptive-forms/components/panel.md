@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - panelbehållare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms-panelbehållaren.
 role: Architect, Developer, Admin, User
 exl-id: 104836fe-8325-47de-978d-1ff2d6a9dd15
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '2166'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
 
 # Panelkomponent{#panel-container-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 I ett adaptivt formulär är en panel ett behållarelement som kan användas för att gruppera relaterade formulärelement. Det gör att du kan gruppera och ordna olika formulärelement på ett logiskt och meningsfullt sätt. Detta kan förbättra formulärets övergripande struktur och läsbarhet, vilket gör det lättare för användarna att förstå och navigera.
 
@@ -130,12 +128,17 @@ Om du vill hantera upprepningsbara avsnitt i panelbehållaren på ett effektivt 
 
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 - **HTML roll som skärmläsaren kan meddela** - Rollen HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 ## Designdialogruta {#design-dialog}
 
-Designdialogrutan används för att definiera och hantera CSS-format för komponenten Formulärbehållare.
+Designdialogrutan används för att definiera och hantera CSS-format för panelkomponenten.
 
 ### Fliken Tillåtna komponenter {#allowed-components-tab}
 

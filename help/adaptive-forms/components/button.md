@@ -3,16 +3,14 @@ title: Adaptiv Forms Core-komponent - knapp
 description: Använda eller anpassa den adaptiva Forms-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: cb75929b-8c86-49d1-b51a-368f5b80b1a9
-source-git-commit: 58a0f0f2ef6d9dec3ce2436dad954a8a7aca188c
+source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
 
 # Button-komponent {#button-component-adaptive-forms-core-component}
-
-<span class="preview"> Den här artikeln innehåller innehåll om   **Tillåt RTF-text för rubrik**    en förhandsversion. Förhandsversionen är bara tillgänglig via vår [kanal för förhandsversion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 En knapp i ett adaptivt formulär är ett gränssnittselement som gör att användare kan initiera en åtgärd när de klickar på den. Knappelementet kan användas för att skicka ett formulär, återställa ett formulär eller utföra andra åtgärder som att navigera till en annan sida eller utlösa anpassad kod. Knappen kan skapas med komponenten Button Core.
 
@@ -102,6 +100,11 @@ Du kan enkelt anpassa knappupplevelsen för besökare med dialogrutan Konfigurer
 
 
 - **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+   - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
+   - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
+   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
 
 ## Designdialogruta {#design-dialog}
 
