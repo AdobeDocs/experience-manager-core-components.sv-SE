@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - datumväljare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms Date-väljaren.
 role: Architect, Developer, Admin, User
 exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: b4a66a407e92398a98441c65ab588b9720777dfa
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2299'
 ht-degree: 0%
 
 ---
@@ -131,6 +131,21 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 - **Visningsformat** - Det representerar det datumformat som visas för användaren. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
 
 - **Redigera format** - Det representerar ett datumformat där användaren kan redigera datumet. The **Typ** gör att användaren kan välja datumformat. Du kan också anpassa datumformatet med **Egen** i **Typ** listrutemeny.
+- **Formatera felmeddelande** - Med det här alternativet kan du ange meddelandet som visas på skärmen när det angivna datumet inte har rätt format.
+- **Språk** - Den här funktionen används för att formatera det specifika fältet. När en användare väljer ett språkalternativ i dialogrutan **Typ** nedrullningsbar meny **IETF BCP 47-språktagg** visas på panelen. Du kan välja språk för fältformatering när du översätter ett adaptivt formulär till ett visst språk.
+
+Språkuppsättningen är inte synlig som standard, men användare kan ange en anpassad **IETF BCP 47-språktagg** genom att uppdatera mallprincipen:
+
+1. Öppna motsvarande mall som är kopplad till ett adaptivt formulär i mallredigeraren.
+2. Välj den befintliga profilen som `datepicker-default-policy` i listrutan.
+
+   ![Mallpolicy för datumväljare](/help/adaptive-forms/assets/date-picker-template-policy.png)
+
+3. Klicka **Klar**.
+
+   >[!NOTE]
+   >
+   > Mer information om hur du översätter ett anpassat formulär till ett specifikt språk finns i [klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components).
 
 ## Designdialogruta {#design-dialog}
 

@@ -3,16 +3,16 @@ title: Adaptiv Forms Core-komponent - talindata
 description: Använda eller anpassa den adaptiva kärnkomponenten Forms Number.
 role: Architect, Developer, Admin, User
 exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: b4a66a407e92398a98441c65ab588b9720777dfa
 workflow-type: tm+mt
-source-wordcount: '2163'
+source-wordcount: '2283'
 ht-degree: 0%
 
 ---
 
 # Numerisk rutkomponent{#number-input-adaptive-forms-core-component}
 
-En Number Input-komponent i ett adaptivt formulär är en typ av formulärfält där användarna kan ange numeriska värden. Komponenten representeras vanligtvis av ett textfält med upp- och nedpilar som ökar och minskar talet.
+En NumericBox-komponent i ett adaptivt formulär är en typ av formulärfält där användarna kan ange numeriska värden. Komponenten representeras vanligtvis av ett textfält med upp- och nedpilar som ökar och minskar talet.
 
 Den kan också användas med attribut som min, max, step, value med mera. Dessa attribut kan användas för att ange de lägsta och högsta värden som tillåts i fältet, stegintervallet för att öka eller minska talet och fältets standardvärde.
 
@@ -127,10 +127,21 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din talinmatning för besökar
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/numberinput_formattab.png)
 
 - **Visningsformat** - Med det här alternativet kan du välja alternativ från olika heltalsnummerformat för visning. När användaren väljer något alternativ på menyn **Typ** nedrullningsbar meny **Format** visas på panelen. Du kan välja ett specifikt format där tal visas för användaren.
+- **Språk** - Den här funktionen används för att formatera det specifika fältet. När en användare väljer ett språkalternativ i dialogrutan **Typ** nedrullningsbar meny **IETF BCP 47-språktagg** visas på panelen. Du kan välja språk för fältformatering när du översätter ett adaptivt formulär till ett visst språk.
 
-<!--   **Number of digits before the decimal separator (1234.000)** - Use this option to specify the number of digits to display before the decimal point. 
+Språkuppsättningen är inte synlig som standard, men användare kan ange en anpassad **IETF BCP 47-språktagg** genom att uppdatera mallprincipen:
 
-- **Number of digits after the decimal separator (1234.000)** - Use this option to specify the number of digits to display after the decimal point. -->
+1. Öppna motsvarande mall som är kopplad till ett adaptivt formulär i mallredigeraren.
+2. Välj den befintliga profilen som `numberinput-default-policy` i listrutan.
+
+   ![Mallpolicy för datumväljare](/help/adaptive-forms/assets/numberinput-template-policy.png)
+
+3. Klicka **Klar**.
+
+   >[!NOTE]
+   >
+   > Mer information om hur du översätter ett anpassat formulär till ett specifikt språk finns i [klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components).
+
 
 ## Designdialogruta {#design-dialog}
 

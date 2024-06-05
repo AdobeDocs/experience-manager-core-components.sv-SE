@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - telefoninmatning, telefon
 description: Använda eller anpassa den adaptiva kärnkomponenten för telefoninmatning från Forms.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: b4a66a407e92398a98441c65ab588b9720777dfa
 workflow-type: tm+mt
-source-wordcount: '2198'
+source-wordcount: '2197'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Telefonkomponent{#telephone-input-adaptive-forms-core-component}
 
-Med den adaptiva formulärens telefoningång Core Component kan användare ange ett telefonnummer. I fältet för telefonindata visas tangentbord i mobila enheter som är relevanta för telefonnummer. Den kan anpassas med ytterligare attribut som &quot;pattern&quot; och &quot;placeholder&quot; för att ange telefonnumrets format och beskrivning.
+Med den adaptiva Form Phone Core Component kan man ange ett telefonnummer. I fältet för telefonindata visas tangentbord i mobila enheter som är relevanta för telefonnummer. Den kan anpassas med ytterligare attribut som &quot;pattern&quot; och &quot;placeholder&quot; för att ange telefonnumrets format och beskrivning.
 
 Telefoninmatningsfältet används ofta i kontaktformulär, registreringsformulär och andra formulär där ett telefonnummer krävs som kontaktmetod. Telefoninmatningsfältet kan också användas för att säkerställa att användaren anger ett giltigt telefonnummer, eftersom webbläsaren kan tillämpa vissa begränsningar, t.ex. telefonnumrets längd och format, baserat på mönsterattributet.
 
