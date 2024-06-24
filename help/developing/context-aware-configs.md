@@ -3,9 +3,9 @@ title: Sling Context-Aware Configurations and Core Components
 description: Core Components använder kontextmedvetna Sling-konfigurationer för vissa funktioner
 role: Architect, Developer, Admin
 exl-id: d35210f7-a65d-4768-ab9e-f12ec406da2d
-source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+source-git-commit: b72defe1bbe6cb286730ac3f508f7d6c14b3fc33
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '174'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,9 @@ Ett antal grundkomponentfunktioner utnyttjar kontextmedvetna konfigurationer. Al
 
 * `/conf/<my-site>/sling:configs/<my-configuration>`
 
-Enskilda konfigurationer beror på den specifika komponenten eller funktionen. Funktioner för de kärnkomponenter som använder kontextmedvetna konfigurationer är:
+Enskilda konfigurationer beror på den specifika komponenten eller funktionen. Funktioner för de kärnkomponenter som använder kontextmedvetna konfigurationer är bland annat:
 
+* [Sidkomponenten](https://github.com/adobe/aem-core-wcm-components/tree/main/content/src/content/jcr_root/apps/core/wcm/components/page/v3/page#loading-of-context-aware-cssjs) är beroende av sammanhangsberoende konfiguration vid återgivning `link`, `script` och `meta` -taggar.
 * [PDF Viewer Component](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/pdfviewer/v1/pdfviewer#context-aware-config)
 * [Adobe-klientdatalager](/help/developing/data-layer/overview.md#installation-activation)
 * [Stöd för AMP](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
