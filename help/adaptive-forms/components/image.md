@@ -14,7 +14,7 @@ ht-degree: 0%
 
 En bildkomponent i ett adaptivt formulär är ett sätt att inkludera bilder i ett formulär. Dessa bilder kan användas för att förbättra formulärets övergripande design, ge ytterligare information eller fungera som visuell hjälp för att hjälpa användarna förstå formulärets syfte. Bildkomponenten kan användas för att lägga till en logotyp, ett foto eller en bild i formuläret.
 
-För tillgänglighet är det viktigt att du anger **Alternativ text** till bilden för att ge ett kort, beskrivande textalternativ för bilden som beskriver bilden för användare som inte kan se den.
+För hjälpmedel är det viktigt att ange **Alternativ text** till bilden för att ge bilden ett kort, beskrivande textalternativ som beskriver bilden för användare som inte kan se den.
 
 **Exempel**
 
@@ -25,13 +25,13 @@ För tillgänglighet är det viktigt att du anger **Alternativ text** till bilde
 
 Det finns många skäl till att det är bra att ta med en bildkomponent i en adaptiv form, bland annat:
 
-- **Varumärke**: En bild kan användas för att visa logotypen eller namnet på den organisation som skapade formuläret, vilket bidrar till att etablera varumärkesigenkänning och trovärdighet.
+- **Varumärkning**: En bild kan användas för att visa logotypen eller namnet på den organisation som skapade formuläret, vilket bidrar till att etablera varumärkesigenkänning och trovärdighet.
 
-- **Visuella hjälpmedel**: En bild kan bidra till att ge användarna en extra nivå av information genom att den är ett visuellt hjälpmedel som hjälper dem att förstå formulärets syfte.
+- **Visuella hjälpmedel**: En bild kan bidra till att ge en extra nivå av information till användarna genom att den används som visuell hjälp för att hjälpa användarna förstå formulärets syfte.
 
-- **Dekoration**: En bild kan användas för att förbättra formulärdesignen och göra den mer visuellt tilltalande.
+- **Dekoration**: En bild kan användas för att förbättra formulärets allmänna design och göra den mer visuellt tilltalande.
 
-- **Användarupplevelse**: En bild kan användas för att göra formuläret mer användarvänligt genom ett tydligt och intuitivt sätt för användarna att komma åt och fylla i formulärfält.
+- **Användarupplevelse**: En bild kan användas för att göra formuläret mer användarvänligt genom att ge användarna ett tydligt och intuitivt sätt att komma åt och fylla i formulärfält.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -39,9 +39,9 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+| v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -50,7 +50,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om den adaptiva Forms Image Core-komponenten i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/image/v1/image). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om den adaptiva Forms Image Core-komponenten i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/image/v1/image). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 
 ## Konfigurera dialogruta {#configure-dialog}
@@ -61,7 +61,7 @@ Du kan enkelt anpassa din bildupplevelse för besökare med dialogrutan Konfigur
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
-- **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+- **Titel** - Med titeln kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
 
@@ -69,12 +69,12 @@ Du kan enkelt anpassa din bildupplevelse för besökare med dialogrutan Konfigur
 
 - **Beskrivning** - En beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med en viss bild.
 
-- **Släpp en resurs här eller bläddra efter en fil att överföra** - Med det här alternativet kan du släppa en resurs som en bild genom att dra och släppa med musen. Du kan också överföra en fil från ett lokalt filsystem med **Bläddra** -knappen. När du har lagt till en bild visas tre knappar längst ned i bilden:
-   - **Redigera** - Tryck eller klicka **Redigera** om du vill hantera återgivningarna av resursen i Resursredigeraren.
-   - **Rensa** - Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
-   - **Välj** - Tryck eller klicka **Välj**  om du vill välja en annan bild från resursmappen.
+- **Släpp en resurs här eller bläddra efter en fil som ska överföras** - Med det här alternativet kan du släppa en resurs som en bild genom att dra och släppa med musen. Du kan också överföra en fil från ett lokalt filsystem med knappen **Bläddra** . När du har lagt till en bild visas tre knappar längst ned i bilden:
+   - **Redigera** - Tryck eller klicka på **Redigera** för att hantera återgivningarna av resursen i Assets Editor.
+   - **Radera** - Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
+   - **Välj** - Tryck eller klicka på alternativet **Välj** om du vill välja en annan bild från Assets-mappen.
 
-- **Alternativ text** - Det här alternativet används för att ange texten som ger ett kort och beskrivande textalternativ för bilden, som beskriver bilden för synskadade.
+- **Alternativ text** - Det här alternativet används för att ange texten som ger ett kort och beskrivande textalternativ för bilden, som beskriver bilden för användare med nedsatt syn.
 
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 
@@ -87,13 +87,13 @@ Designdialogrutan används för att definiera och hantera CSS-format för bildko
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Den adaptiva Forms Image Core-komponenten stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Den adaptiva Forms Image Core-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-![Designdialogruta](/help/adaptive-forms/assets/checkbox-style.png)
+![Designdialogrutan](/help/adaptive-forms/assets/checkbox-style.png)
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Image Core-komponenten.
+- **Standard-CSS-klasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Image Core-komponenten.
 
-- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i listrutan **Format**. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Anpassade egenskaper
 
@@ -103,7 +103,7 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
 - **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
 
-   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på **Lägg till** för varje anpassad egenskapsgrupp.
+   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på knappen **Lägg till** för varje anpassad egenskapsgrupp.
 
    - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 

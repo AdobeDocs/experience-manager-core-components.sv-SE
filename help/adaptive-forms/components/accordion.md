@@ -20,21 +20,21 @@ Med Accordion Core Component kan man skapa expanderbara och komprimerbara sektio
 
 Det finns många skäl till att det är bra att ta med ett dragspel i en adaptiv form, bland annat:
 
-- **Spara utrymme**: Med ett dragspel kan användare expandera och komprimera avsnitt i ett formulär, vilket minskar det utrymme som krävs för att visa alla formulärfält samtidigt.
+- **Utrymmessparande**: Med ett dragspel kan användare expandera och komprimera avsnitt i ett formulär, vilket minskar det utrymme som krävs för att visa alla formulärfält samtidigt.
 
 - **Navigering**: Ett dragspel kan användas för att skapa en hierarkisk navigeringsstruktur, vilket gör det enklare för användarna att hitta de formulärfält de behöver.
 
-- **Användarupplevelse**: Dragspel kan användas för att göra formuläret mer användarvänligt genom att ge användarna ett tydligt och intuitivt sätt att komma åt och fylla i formulärfält.
+- **Användarupplevelse**: Dragspel kan användas för att göra formuläret mer användarvänligt genom att tillhandahålla ett tydligt och intuitivt sätt för användare att komma åt och fylla i formulärfält.
 
-- **Long Forms**: Accordion är en idealisk komponent för att hantera långa formulär, eftersom det gör att användarna kan fokusera på ett avsnitt i taget, i stället för att försöka bearbeta mycket information samtidigt.
+- **Lång Forms**: Accordion är en idealisk komponent för att hantera långa formulär, eftersom det gör att användare kan fokusera på ett avsnitt i taget, i stället för att försöka bearbeta mycket information samtidigt.
 
 Du kan använda
 
-- The [konfigurera dialogruta](#configure-dialog) för att ange egenskaper för dragspelskomponenten.
+- Dialogrutan [Konfigurera](#configure-dialog) för att ange egenskaper för dragspelskomponenten.
 
-- The [Välj panelpekare](#select-panel-popover)  för att definiera ordningen på panelerna i dragspelet. Detta gör att författaren kan ordna panelerna i den ordning som panelerna ska visas.
+- [Välj panelpekaren](#select-panel-popover) för att definiera ordningen på panelerna i dragspelet. Detta gör att författaren kan ordna panelerna i den ordning som panelerna ska visas.
 
-- Alternativ för formulärförfattare att aktivera eller inaktivera vissa funktioner i [designdialogruta](#design-dialog). En författare kan till exempel välja att inaktivera vissa fält eller avsnitt i ett formulär. Med dessa alternativ får författaren bättre kontroll över formulärens utformning och funktion, vilket gör det enklare att skapa formulär som är anpassade efter organisationens specifika behov.
+- Alternativ för formulärförfattare att aktivera eller inaktivera vissa funktioner i [designdialogrutan](#design-dialog). En författare kan till exempel välja att inaktivera vissa fält eller avsnitt i ett formulär. Med dessa alternativ får författaren bättre kontroll över formulärens utformning och funktion, vilket gör det enklare att skapa formulär som är anpassade efter organisationens specifika behov.
 
 Dialogrutan för att konfigurera och välja panel-pover och designdialogrutan är alla en del av de centrala komponenter som gör det enkelt att skapa formulären och som är ett effektivt sätt att skapa komplexa formulär.
 
@@ -47,9 +47,9 @@ Den adaptiva kärnkomponenten i Forms Accordion lanserades i februari 2023 som e
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
 | — | — |
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
+| v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -58,7 +58,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om Accordion-komponenten i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/accordion/v1/accordion). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om dragspelskomponenten i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/accordion/v1/accordion). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -66,19 +66,19 @@ Du kan enkelt anpassa dragspelsupplevelsen för besökare med dialogrutan Konfig
 
 ### Fliken Grundläggande {#basic-tab}
 
-![fliken Grundläggande](/help/adaptive-forms/assets/acc-basic.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/acc-basic.png)
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
-- **Titel** - Med dess titel kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
+- **Titel** - Med titeln kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
-- **Tillåt RTF-text för rubrik** - Med den här funktionen kan användare formatera vanliga texttitlar med funktioner som fet, kursiv, understruken text, olika teckensnitt, teckenstorlekar, färger och ytterligare alternativ för att förbättra visuell presentation och anpassning. Det ger större flexibilitet och kreativ kontroll när det gäller att få titlar att sticka ut i dokument, på webbplatser och i tillämpningar.\
-  När du markerar kryssrutan för **Tillåt RTF-text för rubrik** blir formateringsalternativen synliga för att formatera komponentens titel. Om du vill visa alla tillgängliga formateringsalternativ klickar du på ![Helskärmsikon](/help/adaptive-forms/assets/fullscreen-icon.png) -fliken.
+- **Tillåt RTF-text för rubrik** - Med den här funktionen kan användare formatera oformaterad text med funktioner som fet, kursiv, understruken text, olika teckensnitt, teckenstorlekar, färger och ytterligare alternativ för att förbättra visuell presentation och anpassning. Det ger större flexibilitet och kreativ kontroll när det gäller att få titlar att sticka ut i dokument, på webbplatser och i tillämpningar.\
+  När du markerar kryssrutan för **Tillåt RTF-text för titel** visas formateringsalternativ som formaterar komponentens titel. Om du vill visa alla tillgängliga formateringsalternativ klickar du på fliken ![Helskärmsikon](/help/adaptive-forms/assets/fullscreen-icon.png) .
 
-  ![Stöd för RTF](/help/adaptive-forms/assets/richtext-support-title.png)
+  ![RTF-stöd](/help/adaptive-forms/assets/richtext-support-title.png)
 
-- **Dölj titel** - Välj alternativet om du vill dölja komponentens titel.
-- **Gruppera underordnade komponenters data när formulär skickas (kapsla in data i objekt)** - När alternativet är markerat kapslas data från dess underordnade komponenter in i den överordnade komponentens JSON-objekt. Om alternativet inte är markerat har inskickade JSON-data en platt struktur utan objekt för den överordnade komponenten. Till exempel:
+- **Dölj titel** - Välj alternativet för att dölja komponentens titel.
+- **Gruppera underordnade komponenters data för formuläröverföring (kapsla in data i objekt)** - När alternativet är markerat kapslas data från dess underordnade komponenter in i den överordnade komponentens JSON-objekt. Om alternativet inte är markerat har inskickade JSON-data en platt struktur utan objekt för den överordnade komponenten. Till exempel:
 
    - När alternativet är markerat kapslas data från de underordnade komponenterna (till exempel Street, City och Zip Code) in i den överordnade komponenten (Address) som ett JSON-objekt. Detta skapar en hierarkisk struktur och data ordnas under den överordnade komponenten.
 
@@ -103,13 +103,13 @@ Du kan enkelt anpassa dragspelsupplevelsen för besökare med dialogrutan Konfig
 
 <!--  **Layout** - You can have either a fixed layout (Simple) or a flexible layout (Responsive Grid) for your wizard. The Simple layout keeps everything fixed in the place, while the Responsive Grid allows you to adjust the position of components to suit your needs. For example, use Responsive Grid to align "First Name", "Middle Name" and "Last Name" in a form in a single row. -->
 
-- **Bindningsreferens** - En bind referens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
+- **Bindningsreferens** - En bindningsreferens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
-- **Skrivskyddad** - Välj alternativet att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
+- **Skrivskyddad** - Välj alternativet för att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
 ### Upprepa dragspel {#repeat-accordion}
 
@@ -117,11 +117,11 @@ Du kan enkelt anpassa dragspelsupplevelsen för besökare med dialogrutan Konfig
 
 Du kan använda alternativen för upprepning för att duplicera dragspelspaneler och dess underordnade komponenter, definiera ett minsta och högsta antal upprepningar och underlätta replikering av liknande avsnitt i ett formulär. När du interagerar med dragspelskomponenten och använder dess inställningar visas följande alternativ:
 
-- **Gör dragspelspanelen upprepningsbar**: En växlingsfunktion som gör att användarna kan aktivera eller inaktivera repeteringsfunktionen.
+- **Gör dragspelspanelen upprepningsbar**: En växlingsfunktion som gör att användare kan aktivera eller inaktivera upprepningsfunktionen.
 - **Minsta antal upprepningar**: Anger det minsta antal gånger dragspelspanelen kan upprepas. Värdet noll anger att dragspelspanelen inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger dragspelspanelen kan upprepas. Som standard är det här värdet obegränsat.
 
-Om du vill hantera upprepningsbara avsnitt i dragspelet på ett effektivt sätt följer du stegen i [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) artikel.
+Om du effektivt vill hantera upprepningsbara avsnitt i dragspelet följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
 
 ### Fliken Objekt {#items-tab}
 
@@ -138,25 +138,25 @@ Med knappen Lägg till kan du markera en komponent som ska läggas till som en p
 
 ![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/acc-helpcontent.png)
 
-- **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera **Visa alltid kort beskrivning** för att visa den under komponenten.
+- **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera alternativet **Visa alltid kort beskrivning** för att visa det under komponenten.
 
 - **Visa alltid kort beskrivning** - Aktivera alternativet att visa den korta beskrivningen under komponenten.
 
-- **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa sig fylla i ett formulärfält på rätt sätt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
+- **Hjälptext** - Hjälptexten hänvisar till ytterligare information eller vägledning som användaren får för att hjälpa dem att fylla i ett formulärfält korrekt. Det visas när användaren klickar på hjälpikonen (i) som finns bredvid komponenten. Hjälptexten ger mer detaljerad information än etiketten eller platshållartexten för ett formulärfält och är utformad för att hjälpa användaren förstå fältets krav eller begränsningar. Den kan också ge förslag eller exempel som gör det enklare och exaktare att fylla i formuläret.
 
 ### Fliken Tillgänglighet {#accessibility}
 
 ![Fliken Tillgänglighet](/help/adaptive-forms/assets/acc-accessisbilty.png)
 
-På **Tillgänglighet** tabb, värden anges för [Tillgänglighet för ARIA](https://www.w3.org/WAI/standards-guidelines/aria/) -etiketter för komponenten. Det finns olika alternativ för att använda texten för skärmläsare:
+På fliken **Hjälpmedel** anges värden för [ARIA-hjälpmedelsetiketter](https://www.w3.org/WAI/standards-guidelines/aria/) för komponenten. Det finns olika alternativ för att använda texten för skärmläsare:
 
-- **Text för skärmläsare** - Text för skärmläsare avser text som är avsedd att läsas av hjälpmedelstekniker, t.ex. skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
+- **Text för skärmläsare** - Text för skärmläsare hänvisar till ytterligare text som är särskilt avsedd att läsas av hjälpmedelstekniker, som skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
 
    - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
-   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för hjälpmedelsetiketter för ARIA.
+   - **Beskrivning**: Välj det här alternativet om du vill använda beskrivningen för ARIA-hjälpmedelsetiketter.
    - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
    - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
-   - **Ingen**: Välj det här alternativet om du inte vill lägga till hjälpmedelsetiketter för ARIA.
+   - **Inget**: Välj det här alternativet om du inte vill lägga till för hjälpmedelsetiketter för ARIA.
 
 <!--
 
@@ -199,27 +199,27 @@ Detta gör det enklare och effektivare att skapa och anpassa formulär.
 
 På fliken Egenskaper kan mallskapare ange standardrubrikelement och tillåtna rubrikelement för HTML för formulärförfattare:
 
-![Egenskapflik i designdialogrutan](/help//adaptive-forms/assets/accordion-design-properties.png)
+![Egenskaper för designdialogruta, flik](/help//adaptive-forms/assets/accordion-design-properties.png)
 
-- **Tillåtna rubrikelement**: En nedrullningsbar lista med flera alternativ som gör att mallskaparen kan välja vilka rubrikelement som kan användas av formulärförfattaren för dragspelspanelen.
+- **Tillåtna rubrikelement**: En nedrullningsbar lista med flera alternativ där mallens författare kan välja vilka rubrikelement som formulärförfattaren kan använda för dragspelspanelen.
 
-- **Standardrubrikelement**: En nedrullningsbar lista anger standardelementet Rubrik för dragspelskomponenten.
+- **Standardrubrikelement**: En nedrullningsbar lista anger standardrubrikelementet för dragspelskomponenten.
 
 ### Fliken Tillåtna komponenter {#allowed-components-tab}
 
-![Tillåten komponentflik i designdialogrutan](/help//adaptive-forms/assets/accordion-allowed-components.png)
+![Komponentfliken tillåts i designdialogrutan](/help//adaptive-forms/assets/accordion-allowed-components.png)
 
-The **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i dragspelskomponenten i den adaptiva Forms-redigeraren.
+På fliken **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter som kan läggas till som objekt på panelerna i dragspelskomponenten i den adaptiva Forms-redigeraren.
 
 ### Fliken Format {#styles-tab}
 
-![Fliken Designdialogformat](/help/adaptive-forms/assets/accordion-styles-tab.png)
+![Formatflik i designdialogrutan](/help/adaptive-forms/assets/accordion-styles-tab.png)
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-- **CSS-standardklasser**: Du kan ange en standard-CSS-klass för dragspelskomponenten.
+- **Standard-CSS-klasser**: Du kan ange en standard-CSS-klass för dragspelskomponenten.
 
-- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i dialogrutan **Stilar** listruta. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
+- **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i listrutan **Format**. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
 ### Anpassade egenskaper
 
@@ -228,7 +228,7 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
 - **Gruppnamn**: Du kan ange ett namn som identifierar den anpassade egenskapsgruppen. Du kan lägga till, ta bort eller ordna om flera anpassade egenskapsgrupper. När du har lagt till den anpassade egenskapsgruppen kan du se följande alternativ:
 
-   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på **Lägg till** för varje anpassad egenskapsgrupp.
+   - **Nyckelvärdepar**: Du kan lägga till flera anpassade egenskapsnamn och anpassade egenskapsvärden genom att klicka på knappen **Lägg till** för varje anpassad egenskapsgrupp.
 
    - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 

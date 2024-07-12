@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Anpassa kärnkomponenter{#customizing-core-components}
 
-The [Kärnkomponenter](overview.md) implementera flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
+[Kärnkomponenterna](overview.md) implementerar flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
 
 ## Flexibel arkitektur {#flexible-architecture}
 
@@ -21,27 +21,27 @@ Kärnkomponenterna var från början utformade för att vara flexibla och utökn
 ![Kärnkomponentarkitektur](/help/assets/screen_shot_2018-12-07at093742.png)
 
 * [Designdialogrutan](/help/get-started/authoring.md#edit-and-design-dialogs) definierar vad författare kan eller inte kan göra i redigeringsdialogrutan.
-* [Redigeringsdialogrutan](/help/get-started/authoring.md#edit-and-design-dialogs) visar bara de alternativ som författare kan använda.
+* [I redigeringsdialogrutan](/help/get-started/authoring.md#edit-and-design-dialogs) visas endast de alternativ som författare kan använda.
 * [Sling-modellen](#customizing-the-logic-of-a-core-component) verifierar och förbereder innehållet för vyn (mallen).
-* [Resultatet av Sling-modellen](#customizing-the-logic-of-a-core-component) kan serialiseras till JSON för SPA fall.
-* [HTML återger HTML](#customizing-the-markup) serversidan för traditionell återgivning på serversidan.
-* [Utdata från HTML](#customizing-the-markup) är semantiskt, tillgängligt, sökmotoroptimerat och enkelt att formatera.
+* [Resultatet av Sling-modellen ](#customizing-the-logic-of-a-core-component) kan serialiseras till JSON för SPA användningsfall.
+* [HTML återger serversidan HTML](#customizing-the-markup) för traditionell återgivning på serversidan.
+* [Utdata från HTML](#customizing-the-markup) är semantiska, tillgängliga, sökmotoroptimerade och enkla att formatera.
 
-Och alla kärnkomponenter implementerar [Formatsystem](#styling-the-components).
+Och alla kärnkomponenter implementerar [Style System](#styling-the-components).
 
 ## AEM Project Archettype {#aem-project-archetype}
 
-[AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på en anpassad HTML-komponent med SlingModels för att logika och implementera Core Components korrekt med det rekommenderade proxymönstret.
+[AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på en anpassad HTML-komponent med SlingModels för logik och korrekt implementering av Core Components med det rekommenderade proxymönstret.
 
 ## Anpassningsmönster {#customization-patterns}
 
 ### Anpassa dialogrutor {#customizing-dialogs}
 
-Du kan behöva anpassa de konfigurationsalternativ som finns i en kärnkomponentdialogruta, oavsett om det är [Designdialogrutan eller dialogrutan Redigera](/help/get-started/authoring.md).
+Du kan behöva anpassa de konfigurationsalternativ som är tillgängliga i en huvudkomponentdialogruta, oavsett om det är [designdialogrutan eller redigeringsdialogrutan](/help/get-started/authoring.md).
 
-Varje dialogruta har en konsekvent nodstruktur. Vi rekommenderar att den här strukturen replikeras i en ärvande komponent så att [Samla resurser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/sling-resource-merger.html) och [Dölj villkor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/hide-conditions.html) kan användas för att dölja, ersätta och ändra ordning på avsnitt i den ursprungliga dialogrutan. Strukturen som ska replikeras definieras som allt upp till tabbobjektets nodnivå.
+Varje dialogruta har en konsekvent nodstruktur. Vi rekommenderar att den här strukturen replikeras i en ärvande komponent så att [Dela resurssammanfogning](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/sling-resource-merger.html) och [Dölj villkor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/hide-conditions.html) kan användas för att dölja, ersätta eller ordna om avsnitt i den ursprungliga dialogrutan. Strukturen som ska replikeras definieras som allt upp till tabbobjektets nodnivå.
 
-För att vara helt kompatibelt med ändringar som gjorts i en dialogruta i den aktuella versionen är det mycket viktigt att strukturer under flikobjektsnivån inte rörs (dold, läggs till, ersätts, sorteras om osv.). I stället ska ett tabbobjekt från det överordnade objektet döljas via `sling:hideResource` egenskap (se [Sammanfogningsegenskaper för segmenteringsresurs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/sling-resource-merger.html)) och nya flikar som innehåller anpassade konfigurationsfält läggs till. `sling:orderBefore` kan vid behov användas för att ändra ordningen på flikobjekt.
+För att vara helt kompatibelt med ändringar som gjorts i en dialogruta i den aktuella versionen är det mycket viktigt att strukturer under flikobjektsnivån inte rörs (dold, läggs till, ersätts, sorteras om osv.). I stället ska ett flikobjekt från det överordnade objektet döljas via egenskapen `sling:hideResource` (se [Egenskaper för sammanslagning av delningar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/sling-resource-merger.html)) och nya flikobjekt som innehåller de anpassade konfigurationsfälten läggas till. `sling:orderBefore` kan användas för att ändra ordningen på flikobjekt om det behövs.
 
 I dialogrutan nedan visas den rekommenderade dialogstrukturen samt hur du döljer och ersätter en ärvd flik enligt beskrivningen ovan:
 
@@ -78,7 +78,7 @@ I dialogrutan nedan visas den rekommenderade dialogstrukturen samt hur du dölje
 
 Affärslogiken för kärnkomponenterna implementeras i Sling Models. Den här logiken kan utökas med hjälp av ett delegeringsmönster för Sling.
 
-I huvudkomponenten för title används till exempel `jcr:title` egenskapen för den begärda resursen som tillhandahåller titeltexten. Om nej `jcr:title` -egenskapen är definierad, en återgång till den aktuella sidrubriken implementeras. Vi vill ändra beteendet så att den aktuella sidans rubrik alltid visas.
+I huvudkomponenten för titeln används egenskapen `jcr:title` för den begärda resursen för att ge titeltexten. Om ingen `jcr:title`-egenskap har definierats, kommer en reservdel till den aktuella sidrubriken att implementeras. Vi vill ändra beteendet så att den aktuella sidans rubrik alltid visas.
 
 Eftersom implementeringen av Core Components modeller är privata måste de utökas med ett delegeringsmönster.
 
@@ -103,23 +103,23 @@ public class PageHeadline implements Title {
 }
 ```
 
-Mer information om delegeringsmönstret finns i Wiki-artikeln Core Components GitHub [Delegeringsmönster för segmenteringsmodeller](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models).
+Mer information om delegeringsmönstret finns i Wiki-artikeln [Delegeringsmönster för segmentmodeller](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) för grundkomponenterna.
 
 ### Anpassa markeringen {#customizing-the-markup}
 
 Ibland kräver avancerad formatering en annan kodstruktur för komponenten.
 
-Detta kan du enkelt göra genom att kopiera HTML-filerna som behöver ändras från Core Component (kärnkomponenten) till [-proxykomponent.](guidelines.md#proxy-component-pattern)
+Detta kan du enkelt göra genom att kopiera HTML-filerna som behöver ändras från kärnkomponenten till [proxykomponenten.](guidelines.md#proxy-component-pattern)
 
-Med hjälp av Core Breadcrumb Component kan du nu anpassa kodresultatet i `breadcrumb.html` filen måste kopieras till den platsspecifika komponent som har en `sling:resourceSuperTypes` som pekar på kärnkomponenten Breadcrumb.
+Om du än en gång tar exemplet med kärnkomponenten Breadcrumb, måste filen `breadcrumb.html` kopieras till den platsspecifika komponenten som har en `sling:resourceSuperTypes` som pekar på kärnkomponenten.
 
 ### Formatera komponenterna {#styling-the-components}
 
 Den första formen av anpassning är att tillämpa CSS-format.
 
-För att förenkla detta återges semantiska markeringar med Core Components och en standardiserad namnkonvention som inspireras av [Bootstrap](https://getbootstrap.com/). För att enkelt ange format för de enskilda komponenterna som mål och namnrymd, kapslas varje Core Component in i ett DIV-element med &quot; `cmp`och &quot; `cmp-<name>`&quot;.
+För att förenkla detta återges semantisk markering med Core Components och en standardiserad namnkonvention som inspirerats av [Bootstrap](https://getbootstrap.com/) följs. För att det ska vara enkelt att rikta in och namnge formaten för de enskilda komponenterna kapslas varje Core Component in i ett DIV-element med klasserna `cmp` och `cmp-<name>`.
 
-Titta till exempel på HTML-filen för Breadcrumb-komponenten v1: [breadcrumb.html](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v2/breadcrumb/breadcrumb.html)ser vi att hierarkin för elementutdata är `ol.breadcrumb > li.breadcrumb-item > a`. För att vara säker på att en CSS-regel bara påverkar den komponentens klass breadcrumb ska alla regler ha ett namn enligt nedan:
+Om du till exempel tittar på HTML-filen för komponenten v1 Core Breadcrumb: [breadcrumb.html](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v2/breadcrumb/breadcrumb.html) ser vi att hierarkin för elementutdata är `ol.breadcrumb > li.breadcrumb-item > a`. För att vara säker på att en CSS-regel bara påverkar den komponentens klass breadcrumb ska alla regler ha ett namn enligt nedan:
 
 ```shell
 .cmp-breadcrumb .breadcrumb {}  
@@ -127,7 +127,7 @@ Titta till exempel på HTML-filen för Breadcrumb-komponenten v1: [breadcrumb.ht
 .cmp-breadcrumb a {}
 ```
 
-Dessutom utnyttjar var och en av kärnkomponenterna AEM [Style System-funktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html) som gör att mallskapare kan definiera ytterligare CSS-klassnamn som kan användas på komponenten av sidförfattarna. På så sätt kan du definiera en lista med tillåtna komponentformat för varje mall och om ett av dem ska användas som standard för alla komponenter av den typen.
+Dessutom utnyttjar var och en av kärnkomponenterna AEM [Style System-funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html) som gör att mallskapare kan definiera ytterligare CSS-klassnamn som kan tillämpas på komponenten av sidförfattarna. På så sätt kan du definiera en lista med tillåtna komponentformat för varje mall och om ett av dem ska användas som standard för alla komponenter av den typen.
 
 ## Uppgraderingskompatibilitet för anpassningar {#upgrade-compatibility-of-customizations}
 
@@ -137,7 +137,7 @@ Det finns tre olika typer av uppgraderingar:
 * uppgradera kärnkomponenterna till en ny mindre version
 * uppgradera kärnkomponenterna till en större version
 
-Om du uppgraderar AEM till en ny version påverkas inte huvudkomponenterna eller de anpassningar som görs, förutsatt att komponenternas versioner också har stöd för den nya AEM-versionen som migreras och att anpassningarna inte använder API:er som har [borttagen eller ersatt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+I allmänhet påverkas inte huvudkomponenterna eller anpassningarna om du uppgraderar AEM till en ny version, förutsatt att komponenternas versioner även stöder den nya AEM-versionen som migreras och att anpassningarna inte använder API:er som [är inaktuella eller har tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Om du uppgraderar kärnkomponenterna utan att växla till en senare huvudversion bör det inte påverka anpassningar, så länge som de anpassningsmönster som beskrivs på den här sidan används.
 
@@ -153,15 +153,15 @@ Precis som för alla AEM finns det ett antal saker att tänka på när det gäll
 
 1. **Anpassad kod är ditt eget ansvar.**
 
-   Vårt supportprogram täcker inte anpassad kod och rapporterade problem som inte kan reproduceras med vanliga kärnkomponenter som är [används som dokumenterat](/help/get-started/using.md) Jag är inte berättigad.
+   Vårt supportprogram täcker inte anpassad kod och rapporterade problem som inte kan reproduceras med vanilj Core Components som [används som dokumenterat](/help/get-started/using.md) kvalificerar inte.
 
-1. **Se borttagna funktioner som är borttagna och har tagits bort.**
+1. **Titta på borttagna och borttagna funktioner.**
 
-   Se till att alla API:er som används fortfarande är aktuella när varje ny AEM uppgraderas till genom att hålla ett öga på [Föråldrade och borttagna funktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html) sida.
+   Kontrollera att alla API:er som används fortfarande är aktuella när varje ny AEM uppgraderas till genom att hålla ett öga på sidan [Föråldrade och Borttagna funktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
-Se även [Stöd för kärnkomponenter](overview.md#core-component-support) -avsnitt.
+Se även avsnittet [Stöd för kärnkomponent](overview.md#core-component-support).
 
 **Läs nästa:**
 
 * [Använda kärnkomponenter](/help/get-started/using.md) - Kom igång med Core Components i ditt eget projekt.
-* [Riktlinjer för komponenter](guidelines.md) - för att lära sig implementeringsmönstren för kärnkomponenterna.
+* [Riktlinjer för komponenter](guidelines.md) - om du vill lära dig implementeringsmönstren för kärnkomponenterna.

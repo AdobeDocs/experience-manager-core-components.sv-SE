@@ -6,7 +6,7 @@ role: Architect, Developer, Admin, User
 exl-id: d6fbc596-cb42-4478-8a3c-aa5aead3be0a
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '491'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Med komponenten Core Component Form Text kan du skriva in formulärtext.
 
 ## Användning {#usage}
 
-Komponenten Form Text tillåter olika typer av text och är avsedd att användas tillsammans med [formulärbehållarkomponent](form-container-v1.md).
+Med Form Text Component kan du skicka olika typer av text och den är avsedd att användas tillsammans med [formulärbehållarkomponenten](form-container-v1.md).
 
-Typen av textvalidering, etiketter och hjälpmeddelanden kan definieras av innehållsredigeraren i [konfigurera dialogruta](#configure-dialog).
+Typen av textvalidering, etiketter och hjälpmeddelanden kan definieras av innehållsredigeraren i dialogrutan [Konfigurera](#configure-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -29,18 +29,18 @@ I följande tabell visas kompatibiliteten för v1 för Form Text Component.
 
 | AEM | Formulärtextkomponent v1 |
 |--- |--- |
-| 6.3 | Kompatibel |
-| 6.4 | Kompatibel |
+| 6,3 | Kompatibel |
+| 6,4 | Kompatibel |
 
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs v1 för Form Text Component.
 >
->Information om den aktuella versionen av formulärtextkomponenten finns i [Formulärtextkomponent](/help/components/forms/form-text.md) -dokument.
+>Information om den aktuella versionen av formulärtextkomponenten finns i dokumentet [Formulärtextkomponent](/help/components/forms/form-text.md) .
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -88,7 +88,7 @@ Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md) för mer information.
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för kärnkomponenter v1](/help/versions.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -105,13 +105,13 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
    * **E-post**
    * **Tel**
    * **Datum**
-   * **Siffra**
+   * **Number**
    * **Lösenord**
 
-* **Textrader** - Antal rader som ska visas i textområdet (visas endast när **Begränsning** är inställd på **Textområde**)
+* **Textrader** - Antal rader som ska visas i textområdet (visas bara när **Begränsning** är inställt på **Textområde**)
 
 * **Etikett** - Etiketten som ska visas för fältet
-* **Dölj etiketten som visas** - Behövs om etiketten endast krävs för hjälpmedelsändamål och inte ger någon ytterligare visuell information om fältet
+* **Dölj etiketten så att den inte visas** - Behövs om etiketten endast är nödvändig för hjälpmedelssyften och inte tillför någon ytterligare visuell information om fältet
 * **Elementnamn** - Namnet på fältet som skickas med formulärdata
 * **Värde** - Standardvärde som är förifyllt i fältet
 
@@ -120,7 +120,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
 ![](/help/assets/chlimage_1-24.png)
 
 * **Hjälpmeddelande** - Ett tips till användaren om vad som kan anges i fältet
-* **Visa hjälpmeddelande som platshållare** - Visa hjälpmeddelandet i formulärindata när det är tomt och inte i fokus
+* **Visa hjälpmeddelandet som platshållare** - Om du vill visa hjälpmeddelandet i formulärindata när det är tomt och inte i fokus
 
 ### Begränsningar {#constraints}
 
@@ -129,10 +129,10 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilken typ av tex
 * **Begränsningsmeddelande**
 
    * Meddelande som visas som verktygstips när formuläret skickas om värdet inte validerar vald typ
-   * Visas inte för **Text** och **Textområde** begränsningstyper
+   * Visas inte för begränsningstyperna **Text** och **Textområde**
 
 * **Obligatoriskt** - Om det här alternativet är markerat måste användaren fylla i ett värde innan formuläret skickas
-* **Gör skrivskyddad** - Om du väljer det här alternativet kan användaren inte ändra fältets värde
+* **Gör skrivskyddad** - Om det här alternativet är markerat kan användaren inte ändra fältets värde
 
 ## Designdialogruta {#design-dialog}
 
@@ -142,6 +142,6 @@ Det finns ingen designdialogruta för komponenten Formulärtext.
 
 Den senaste tekniska dokumentationen om Form Text Component [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/text/v1/text).
 
-Hela kärnkomponentprojektet kan laddas ned från GitHub.
+Hela kärnkomponentprojektet kan hämtas från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).

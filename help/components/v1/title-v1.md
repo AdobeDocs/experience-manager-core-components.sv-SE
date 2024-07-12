@@ -6,7 +6,7 @@ role: Architect, Developer, Admin, User
 exl-id: 79549ac0-82f2-4ea0-9cce-d534d0b47b5c
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '320'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering p
 
 Titelkomponenten är avsedd att användas som rubrik eller rubrik för ett avsnitt i innehållet.
 
-De tillgängliga rubriknivåerna kan definieras av mallskaparen i [designdialogruta](#design-dialog). Innehållsredigeraren kan välja bland tillgängliga rubriknivåer i [redigeringsdialogruta](#edit-dialog). För att underlätta redigeringen av rubriktexten är det också enkelt att redigera texten på plats.
+De tillgängliga rubriknivåerna kan definieras av mallskaparen i [designdialogrutan](#design-dialog). Innehållsredigeraren kan välja bland tillgängliga rubriknivåer i dialogrutan [Redigera](#edit-dialog). För att underlätta redigeringen av rubriktexten är det också enkelt att redigera texten på plats.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -29,18 +29,18 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Title.
 
 | AEM | Titelkomponent v1 |
 |--- |--- |
-| 6.3 | Kompatibel |
-| 6.4 | Kompatibel |
+| 6,3 | Kompatibel |
+| 6,4 | Kompatibel |
 
 >[!CAUTION]
 >
 >Det här dokumentet beskriver version 1 av komponenten Title.
 >
->Mer information om den aktuella versionen av komponenten Title finns i [Titelkomponent](/help/components/title.md) -dokument.
+>Mer information om den aktuella versionen av komponenten Title finns i dokumentet [Title Component](/help/components/title.md) (Rubrikkomponent).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -67,7 +67,7 @@ Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md) för mer information.
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för kärnkomponenter v1](/help/versions.md).
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -93,6 +93,6 @@ I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titel
 
 Den senaste tekniska dokumentationen om Title Component [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/title/v1/title).
 
-Hela kärnkomponentprojektet kan laddas ned från GitHub.
+Hela kärnkomponentprojektet kan hämtas från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).

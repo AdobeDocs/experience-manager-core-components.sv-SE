@@ -1,5 +1,5 @@
 ---
-title: Stöd för fjärrresurser
+title: Stöd för fjärranslutna Assets
 description: Lär dig hur du konfigurerar Core Component Image och Teaser Components som stöd för fjärrresurser med Dynamic Media med OpenAPI.
 role: Architect, Developer, Admin, User
 exl-id: b462c1f3-a6c8-4a2a-abf4-d08ec82d4371
@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Stöd för fjärrresurser {#remote-assets-support}
+# Stöd för fjärranslutna Assets {#remote-assets-support}
 
 Lär dig hur du konfigurerar Core Component Image och Teaser Components som stöd för fjärrresurser med Dynamic Media med OpenAPI.
 
@@ -34,7 +34,7 @@ Det rekommenderas i allmänhet att du kör alla dina produktions- AEM instanser 
 
 ## Konfigurera OSGi {#osgi}
 
-Platsen för fjärrresurserna måste definieras i en OSGi-konfiguration. Konfigurera **Nästa generations Dynamic Media Config** OSGi-konfigurationen så här ersätter du värdena med värdena i din resursmiljö.
+Platsen för fjärrresurserna måste definieras i en OSGi-konfiguration. Konfigurera OSGi-konfigurationen för **nästa generations Dynamic Media Config** enligt följande och ersätt värdena med värdena i din fjärrresursmiljö.
 
 ```text
 imsClient="<ims-client-name>"
@@ -43,7 +43,7 @@ imsOrg="<ims-org>@AdobeOrg"
 repositoryId="<repo-id>.adobeaemcloud.com"
 ```
 
-![Konfigurationsfönstret för nästa generations Dynamic Media Config OSGi](/help/assets/remote-assets-osgi.png)
+![Nästa generations konfigurationsfönster för Dynamic Media Config OSGi](/help/assets/remote-assets-osgi.png)
 
 Mer information om hur du konfigurerar OSGi finns i följande dokument:
 
@@ -54,8 +54,8 @@ Mer information om hur du konfigurerar OSGi finns i följande dokument:
 
 Nu kan du verifiera att funktionen för fjärrresurser med Dynamic Media med OpenAPI fungerar. Det gör du genom att installera WKND-exempelplatsen och kärnkomponenterna.
 
-* [Kärnkomponenter](https://github.com/adobe/aem-core-wcm-components/releases/download/core.wcm.components.reactor-2.23.2/core.wcm.components.all-2.23.2.zip) version 2.23.2 eller senare krävs.
-* [WKND Sample site](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-3.2.0/aem-guides-wknd.all-3.2.0-classic.zip) version 3.2.0 eller senare krävs.
+* [Core Components](https://github.com/adobe/aem-core-wcm-components/releases/download/core.wcm.components.reactor-2.23.2/core.wcm.components.all-2.23.2.zip) version 2.23.2 eller senare krävs.
+* [WKND-exempelwebbplats](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-3.2.0/aem-guides-wknd.all-3.2.0-classic.zip) version 3.2.0 eller senare krävs.
 
 När du har installerat Core Components och WKND kan du testa funktionen på alla WKND-sidor.
 
@@ -65,20 +65,20 @@ När du har installerat Core Components och WKND kan du testa funktionen på all
 
 1. Lägg till en bildkomponent på sidan.
 
-1. Avmarkera alternativet i dialogrutan Konfigurera för komponenten **Ärv bild från sida** på **Tillgång** och klicka **Välj**.
+1. Avmarkera alternativet **Ärv aktuell bild från sida** på fliken **Resurs** i dialogrutan Konfigurera för komponenten och klicka på **Välj**.
 
 1. Om konfigurationen är korrekt visas en listruta med alternativen **Lokal** och **Fjärr**. Välj **Fjärr**.
 
-   ![Alternativ för fjärrval och lokala val av bild](/help/assets/remote-asset-selection.png)
+   ![Alternativ för fjärrval och lokal val av bild](/help/assets/remote-asset-selection.png)
 
 1. En dialogruta öppnas och du måste autentisera till fjärrtjänsten.
 
-1. När den har autentiserats öppnas en resurshanterare för fjärrtjänsten. Välj önskad resurs och tryck eller klicka på **Välj**.
+1. När den har autentiserats öppnas en resurshanterare för fjärrtjänsten. Markera önskad resurs och tryck eller klicka på **Välj**.
 
    ![Välja en fjärrresurs](/help/assets/remote-asset-picker.png)
 
 Fjärrresursen läggs till på den lokala AEM sidan och du har verifierat att funktionen är korrekt konfigurerad.
 
-## Använda fjärrresurser {#using}
+## Använda Remote Assets {#using}
 
-När konfigurationen är klar kan du välja fjärrresurser där du vill välja resurser med hjälp av kärnkomponenterna, som i [Bildkomponent](/help/components/image.md) och [Teaser Component.](/help/components/teaser.md)
+När du har konfigurerat fjärrresurserna kan du välja resurser där du vill välja resurser med hjälp av kärnkomponenterna, till exempel i [Image Component](/help/components/image.md) och [Teaser Component.](/help/components/teaser.md)

@@ -15,7 +15,7 @@ ht-degree: 1%
 En tabb-på-plats-layout i ett adaptivt formulär är ett sätt att ordna och gruppera relaterade fält och avsnitt i ett formulär på olika flikar. Varje flik representeras av en fliketikett, som vanligtvis finns högst upp i formuläret, och som innehåller en viss uppsättning formulärfält och avsnitt. Med den här layouten kan användarna enkelt navigera och komma åt olika delar av formuläret, vilket gör det mer användarvänligt och mindre överväldigande. Det används vanligtvis när formuläret innehåller många fält och avsnitt, och det är nödvändigt att dela upp dem i mindre, hanterbara segment. Flikar kan också förbättra tillgängligheten genom att användarna kan navigera i formuläret med kortkommandon, vilket gör det enklare för användare med funktionshinder att komma åt formuläret.
 **Exempel**
 
-![tabbar överst](/help/adaptive-forms/assets/tabs.png)
+![flikar överst](/help/adaptive-forms/assets/tabs.png)
 
 ## Användning {#reasons-to-use-tab-on-the-top-layout}
 
@@ -23,11 +23,11 @@ Det finns flera skäl att använda tabbar i den översta layouten i ett adaptivt
 
 * **Organisation**: Du kan använda flikar för att ordna olika avsnitt i ett formulär i olika kategorier, vilket gör det enklare för användarna att navigera och hitta den information de behöver.
 
-* **Utrymmesbevarande**: Flikar kan spara utrymme på en sida genom att bara ett avsnitt i formuläret kan vara synligt åt gången.
+* **Platsbevarande**: Med flikar kan du spara utrymme på en sida genom att bara tillåta att ett avsnitt i formuläret visas åt gången.
 
 * **Förbättrad användarupplevelse**: Flikar kan förbättra användarupplevelsen genom att göra formuläret mer visuellt tilltalande och lättare att använda.
 
-* **Mobilvänligt**: Flikar gör formulär mer mobilvänliga genom att minska bläddringen och gör det enkelt att växla mellan fält.
+* **Mobilvänlig**: Med flikar blir formulär mer mobilvänliga genom att rullningen minskas och det blir enkelt att växla mellan fälten.
 
 Kort och gott: Med flikarna blir formulären mer välorganiserade, utrymmeseffektiva, användarvänliga och tillgängliga.
 
@@ -37,9 +37,9 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+| v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -47,7 +47,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Få den senaste informationen om de adaptiva Forms-flikarna i Top Core-komponenten i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/tabsontop/v1/tabsontop). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om de adaptiva Forms-flikarna i huvudkomponenten i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/tabsontop/v1/tabsontop). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -68,8 +68,8 @@ Med dialogrutan Konfigurera kan du enkelt anpassa flikarna efter besökarna. Du 
 >* [Knapp](/help/adaptive-forms/components/button.md)
 >* [Kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
 >* [Datumväljaren](/help/adaptive-forms/components/date-picker.md)
->* [Nedrullningsbar lista](/help/adaptive-forms/components/drop-down.md)
->* [E-postinmatning](/help/adaptive-forms/components/email-input.md)
+>* [Listruta](/help/adaptive-forms/components/drop-down.md)
+>* [E-postindata](/help/adaptive-forms/components/email-input.md)
 >* [Formulärbehållare](/help/adaptive-forms/components/form-container.md)
 >* [Bifogad fil](/help/adaptive-forms/components/file-attachment.md)
 >* [Sidfot](/help/adaptive-forms/components/footer.md)
@@ -85,7 +85,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa flikarna efter besökarna. Du 
 >* [Textindata](/help/adaptive-forms/components/text-input.md)
 >* [Text](/help/adaptive-forms/components/text.md)
 >* [Titel](/help/adaptive-forms/components/title.md)
->* [guide](/help/adaptive-forms/components/wizard.md)
+>* [Guiden](/help/adaptive-forms/components/wizard.md)
 
 ## Se även {#see-also}
 

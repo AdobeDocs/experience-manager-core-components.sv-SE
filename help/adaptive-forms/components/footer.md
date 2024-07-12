@@ -5,8 +5,8 @@ role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
 source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 1%
+source-wordcount: '769'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +24,13 @@ Det finns flera skäl till att det är bra att ta med en sidfotskomponent i ett 
 
 - **Juridiska krav**: Vissa formulär kan behöva innehålla en ansvarsfriskrivning, ett copyrightmeddelande eller annan juridisk information. En sidfot är ett bra sätt att inkludera den här informationen.
 
-- **Navigering**: En sidfot kan innehålla länkar till andra viktiga sidor på webbplatsen, till exempel en integritetspolicy, användarvillkor eller kontaktsida.
+- **Navigering**: En sidfot kan innehålla länkar till andra viktiga sidor på webbplatsen, till exempel en sekretesspolicy, användarvillkor eller kontaktsida.
 
-- **Varumärke**: En sidfot kan användas för att inkludera en logotyp eller andra varumärkeselement, vilket kan förstärka organisationens eller webbplatsens identitet.
+- **Varumärkning**: En sidfot kan användas för att inkludera en logotyp eller andra märkeselement, vilket stärker organisationens eller webbplatsens identitet.
 
-- **Konsekvens**: En sidfot ger en konsekvent design och layout av formuläret, vilket gör det mer intuitivt och enkelt för användarna att navigera.
+- **Konsekvens**: En sidfot ger en konsekvent design och layout för formuläret, vilket gör det mer intuitivt och enkelt för användarna att navigera.
 
-- **Ytterligare kontext**: En sidfot kan ge formuläret ytterligare kontext, t.ex. en text som beskriver formuläret eller en länk till relaterade resurser, vilket gör formuläret mer informativt och användarvänligt.
+- **Ytterligare sammanhang**: En sidfot kan ge formuläret ytterligare kontext, t.ex. en text som beskriver formuläret eller en länk till relaterade resurser, vilket gör formuläret mer informativt och användarvänligt.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -38,9 +38,9 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+| v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -48,7 +48,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Den senaste informationen om den adaptiva Forms Footer Core Component finns i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/footer/v1/footer). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om den adaptiva Forms Footer Core-komponenten i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/footer/v1/footer). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 
 ## Konfigurera dialogruta {#configure-dialog}
@@ -60,20 +60,20 @@ Du kan enkelt anpassa sidfotsupplevelsen för besökare med dialogrutan Konfigur
 - **Dialogrutan Redigera**
 I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som gör att användaren kan skapa text för sidfoten.
 
-- **Fet** - Det här alternativet använder fet stil på markerad text eller fetstilt formatera text som skrivs efter markören. `Ctrl+B` är ett kortkommando.
+- **Fet** - Det här alternativet använder fet stil på markerad text eller fet   formatera text som anges efter markören. `Ctrl+B` är ett kortkommando.
 
-- **Kursiv** - Med det här alternativet används kursiv formatering på markerad text eller kursiv stil som anges efter markören. `Ctrl+I` är ett kortkommando.
+- **Kursiv** - Med det här alternativet används kursiv formatering på markerad text eller   kursivera text som anges efter markören. `Ctrl+I` är ett kortkommando.
 
 ![Punktalternativ](/help/adaptive-forms/assets/footer_bullet.png)
 
 
 - **Punkt**
 
-   - **Punktlikon** - Den markerade texten formateras som en punktlista eller börjar infogningen av en punktlista efter markören. Om du vill avsluta en punktlista trycker eller klickar du på knappen Bullet en gång till eller anger två vagnreturer.
+   - **Bullet icon** - Den formaterar den markerade texten som en punktlista eller börjar infoga en punktlista efter markören. Om du vill avsluta en punktlista trycker eller klickar du på knappen Bullet en gång till eller anger två vagnreturer.
 
-   - **Ikon för numrerad lista** - Den markerade texten formateras som en numrerad lista eller börjar infogningen av en numrerad lista efter markören. Om du vill avsluta en numrerad lista trycker eller klickar du på knappen Numrerad igen eller anger två radmatningstecken.
+   - **Ikon för numrerad lista** - Formatera den markerade texten som en numrerad lista eller börja infoga en numrerad lista efter markören. Om du vill avsluta en numrerad lista trycker eller klickar du på knappen Numrerad igen eller anger två radmatningstecken.
 
-   - **Ikon för Minska indrag** - Den minskar indragsnivån för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
+   - **Dra ut ikon** - Minskar indraget för den markerade texten eller texten som anges efter markören. Endast aktivt om markörens markerade text eller position redan är indragen.
 
    - **Ikon för indrag** - Ökar indraget för den markerade texten eller texten som anges efter markören.
 
@@ -81,7 +81,7 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
 
 - **Hyperlänk**
 
-   - **Bana** - Ange sökvägen
+   - **Sökväg** - Ange sökvägen
       1. Använd dialogrutan Öppna markering för att välja en bana i AEM.
       1. Om länken inte finns i AEM anger du den absoluta URL:en.
       1. Icke-absoluta sökvägar tolkas som relativa AEM.
@@ -95,9 +95,9 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
       - Överordnad ram
       - Övre bildruta
 
-   - **Ikonen Bryt länk** - Det här alternativet tar bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt om länken redan är markerad.
+   - **Ikonen Bryt länk** - Det här alternativet tar bort en länk som redan har tillämpats på den markerade texten. Det här alternativet är bara aktivt om länken redan är markerad.
 
-   - **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering på den markerade texten. Det är också praktiskt att formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
+   - **Ikon för styckeformat** - Med det här alternativet kan du använda styckeformatering för den markerade texten. Det är också praktiskt att formatera texten som infogats efter markören. Den definierar rubriknivån för titeln.
 
 - **ID**: Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i datalagret.
 

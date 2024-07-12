@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Exempelteman, mallar och formulärdatamodeller {#sample-themes-templates-and-data-models}
 
-[!DNL AEM Forms] Med kärnkomponenterna kan du snabbt skapa flexibla formulär med färdiga exempelteman, mallar och formulärdatamodeller. Dessa hjälper också formulärförfattare att lära sig hur flexibla de är och hur lyhörda de är [Adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) att skapa enkla formulär på nolltid och komplexa formulär enkelt och smidigt ansluta till databasen.
+[!DNL AEM Forms] Core Components tillhandahåller färdiga exempelteman, mallar och formulärdatamodeller för att snabbt skapa flexibla formulär. Dessa hjälper också formulärförfattare att lära sig hur flexibla [adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) är och hur snabbt de ska kunna skapa enkla formulär på nolltid och komplexa formulär utan problem när de ansluter till databasen.
 
 Exempelteman, mallar och formulärdatamodeller som ingår i referensinnehållspaketet är:
 
@@ -23,33 +23,33 @@ Exempelteman, mallar och formulärdatamodeller som ingår i referensinnehållspa
 ---------|----------|---------
 | [Tom](#Blank) | [Arbetsyta](#Canvas) | Microsoft® Dynamics 365 |
 | [Kontakta oss](#Contact-Us) | [WKND](#WKND) | Salesforce |
-| [Uppdatering av kontaktinformation](#Contact-Details-Update) | [Easel](#Easel) |   |
+| [Uppdatera kontaktinformation](#Contact-Details-Update) | [Easel](#Easel) |   |
 | [Samtyckesformulär](#Consent-Form) | [FSI](#FSI) |  |
-| [Loggtjänstbegäran](#Log-Service-Request) | [Sjukvård](#Healthcare) |  |
+| [Loggtjänstbegäran](#Log-Service-Request) | [Hälsovård](#Healthcare) |  |
 | [Ge feedback](#Give-Feedback) |  |  |
 | [Registrering av förmåner](#Benefits-Enrollment) |  |   |
-| [Sammanfattning av löneförmåner för medarbetare](#Employee-Benefits-Summary) |   |   |
-| [Kontoutdrag för begäran](#Request-for-Account-Statement) |   |   |
+| [Sammanfattning av medarbetarförmåner](#Employee-Benefits-Summary) |   |   |
+| [Begär kontoutdrag](#Request-for-Account-Statement) |   |   |
 | [Formulär för säkerhetskontroll](#Safety-Inspection) |   |   |
-| [Kvalitetskontroll](#Quality-Control-Inspection) |   |   |
+| [Kvalitetskontrollsinspektion](#Quality-Control-Inspection) |   |   |
 | [Inköpsbegäran](#Purchase-Request) |  |  |
 
 ## Exempelteman {#Sample-Themes}
 
 Med exempelteman kan man använda, definiera och anpassa formateringen efter blanketterna - författare med t.o.m. grundläggande kunskaper i CSS kan anpassa temat efter behov.
 
-**Hur skaffar man dessa teman?**
-Du får dessa teman genom att följa stegen nedan för **AEM as a Cloud Service** miljö:
+**Hur skaffar jag teman?**
+Du får dessa teman genom att följa stegen nedan för **AEM as a Cloud Service** -miljön:
 
-1. [Aktivera kärnkomponenter i adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)
+1. [Aktivera kärnkomponenter för adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)
 1. [Distribuera ett AEM Archetype 47-projekt eller senare till din miljö](https://github.com/adobe/aem-project-archetype)
 
 
-När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina formulär. Om du vill anpassa teman efter dina behov kan du [Använda pipeline för framände](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) för att distribuera teman.
+När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina formulär. Om du vill anpassa teman efter dina behov kan du [använda frontpipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) för att distribuera teman.
 
 >[!NOTE]
 >
-> * Temana är inte tillgängliga för **AEM 6.5** miljö.
+> * Temana är inte tillgängliga för miljön **AEM 6.5**.
 
 <!--
 
@@ -82,7 +82,7 @@ You can get these themes by deploying an [AEM Archetype 47 or later](https://git
 
 -->
 
-The **ur lådan** [Kärnkomponenter i adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) teman är:
+**i rutan** [Kärnkomponenter för adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) innehåller följande teman:
 
 ![OTB-teman](/help/adaptive-forms/assets/archetype-45-themes-1.png)
 
@@ -90,11 +90,11 @@ The **ur lådan** [Kärnkomponenter i adaptiv form](https://experienceleague.ado
 
 Arbetsytans tema är standardtema för formulär och betonar användningen av grundläggande färger, genomskinlighet och platta ikoner. På skärmbilden nedan ser du hur Canvas-temat ser ut.
 
-![Tema Canvas](/help/adaptive-forms/assets/Safety-Inspection-Theme-Canvas.png)
+![Arbetsytans tema](/help/adaptive-forms/assets/Safety-Inspection-Theme-Canvas.png)
 
 ### WKND {#WKND}
 
-WKND-temat innehåller en livlig, fantasifull och engagerande design som visar ett snyggt utseende på dina formulär. Temat baseras på utseendet och stilen hos [WKND-webbplats](https://wknd.site/us/en.html) som är en rese- och reklamwebbplats som bygger på [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
+WKND-temat innehåller en livlig, fantasifull och engagerande design som visar ett snyggt utseende på dina formulär. Temat baseras på utseendet och formatet på [WKND-webbplatsen](https://wknd.site/us/en.html), som är en rese- och äventyrswebbplats som bygger på [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
 
 ![WKND-tema](/help/adaptive-forms/assets/Safety-Inspection-Form-Theme.png)
 
@@ -116,7 +116,7 @@ FSI-temat lägger vikt vid att ge din form ett rent och praktiskt utseende. Den 
 
 Temat för hälso- och sjukvård använder avancerade, övertoningar för att framhäva element som tabbar, paneler, textrutor och knappar i formuläret.
 
-![Sjukvårdstema](/help/adaptive-forms/assets/healthcare-new-theme.png)
+![Vårdtema](/help/adaptive-forms/assets/healthcare-new-theme.png)
 
 
 ## Exempelmallar {#Sample-templates}
@@ -125,7 +125,7 @@ Mallar definierar den inledande formulärstrukturen, innehållet och de åtgärd
 
 **Hur skaffar jag mallarna?**
 
-Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 47 eller senare](https://github.com/adobe/aem-project-archetype) till **AEM Forms as a Cloud Service** miljö eller **AEM 6.5 Forms** miljö.
+Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 47 eller senare](https://github.com/adobe/aem-project-archetype) till din **AEM Forms as a Cloud Service** -miljö eller **AEM 6.5 Forms** -miljö.
 
 <!--
 
@@ -137,7 +137,7 @@ Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 47 eller 
 -->
 
 
-The **ur lådan** [Kärnkomponenter i adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) är:
+**i rutan** [Kärnkomponenter för adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) är:
 
 ![Referensmallar](/help/adaptive-forms/assets/reference-templates-core-components.png)
 
@@ -179,7 +179,7 @@ Blankettmallen för samtycke används för att skapa ett formulär för att köp
 
 Med loggtjänstens begärandemall kan du skapa ett formulär som begär loggspecifika loggningstjänster från en tjänsteleverantör. Formuläret fungerar som en formell begäran om att skapa en biljett för händelser, aktiviteter eller dataloggar för övervakning eller spårningsstatus.
 
-![Mall för loggtjänstbegäran](/help/adaptive-forms/assets/Log-service-request-desktop-view.png)
+![Loggtjänstbegärandemall](/help/adaptive-forms/assets/Log-service-request-desktop-view.png)
 
 
 ### Ge feedback {#Give-Feedback}
@@ -193,13 +193,13 @@ Ge feedback-formulärmallar hjälper till att skapa ett formulär som ger konstr
 
 Blankettmall för förmånsregistrering används för att skapa ett formulär som samlar in viktig information från medarbetarna om vilka förmåner de föredrar och vilka täckningsalternativ de har. Det är vanligtvis en del av den årliga perioden för förmånsregistrering.
 
-![Mall för förmånsregistrering](/help/adaptive-forms/assets/Benefits-enrollment-form-template.png)
+![Registreringsmall för förmåner](/help/adaptive-forms/assets/Benefits-enrollment-form-template.png)
 
 
 ### Sammanfattning av medarbetarförmåner {#Employee-Benefits-Summary}
 
 En mall för en sammanfattande mall för löneförmåner används för att skapa ett formulär som samlar in viktig information om en persons förmåner. Det hjälper till att snabbt och korrekt utvärdera täckningen och ger en heltäckande översikt för effektivt stöd och stöd.
-![Sammanfattning av medarbetarförmåner](/help/adaptive-forms/assets/Employee-benefits-summary.png)
+![Sammanfattning av anställningsförmåner](/help/adaptive-forms/assets/Employee-benefits-summary.png)
 
 
 ### Kontoutdrag för förfrågan {#Request-for-Account-Statement}
@@ -212,7 +212,7 @@ En mall för kontoutdrag hjälper till att skapa ett formulär som initierar pro
 
 Formulärmallen för säkerhetsinspektioner hjälper till att skapa ett formulär med inmatningsinformation för en säker arbetsmiljö. Genom regelbundna inspektioner med hjälp av denna blankett kan potentiella risker identifieras. Formuläret omfattar olika aspekter såsom nödutgångar, brandsäkerhet, elsäkerhet, farligt material, personlig skyddsutrustning, arbetsstationens ergonomi för anställdas, besökares och kunders säkerhet och välbefinnande.
 
-![Formulär för säkerhetskontroll](/help/adaptive-forms/assets/Safety-inspection-form.png)
+![Säkerhetskontrollformulär](/help/adaptive-forms/assets/Safety-inspection-form.png)
 
 ### Kvalitetskontrollinspektion {#Quality-Control-Inspection}
 
@@ -229,16 +229,16 @@ Formulärmallen för inköpsbegäran hjälper till att skapa ett formulär som i
 
 ## Referensformulärdatamodeller {#reference-models}
 
-När du har skapat ett adaptivt formulär baserat på [Kärnkomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)kan du koppla ditt formulär till databasservrarna Microsoft® Dynamics 365 och Salesforce för att aktivera arbetsflöden. Till exempel:
+När du har skapat ett adaptivt formulär baserat på [kärnkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) kan du ansluta formuläret med databasservrarna Microsoft® Dynamics 365 och Salesforce för att aktivera arbetsflöden. Till exempel:
 
 * Skriv data i Microsoft® Dynamics 365 och Salesforce när du skickar adaptiva formulär.
 * Skriv data i Microsoft® Dynamics 365 och Salesforce via anpassade entiteter som definierats i formulärdatamodellen och vice versa.
 * Fråga Microsoft® Dynamics 365- och Salesforce-servern efter data och fyll i Adaptiv Forms i förväg.
 * Läs data från Microsoft® Dynamics 365- och Salesforce-servern.
 
-Du kan hämta följande formulärdatamodeller genom att installera [Referensinnehållspaket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
+Du kan hämta följande formulärdatamodeller genom att installera [referensinnehållspaketet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html?package=/content/software-distribution/en/details.html/content/dam/aemcloud/public/aem-forms-reference-content.ui.content-2.1.0.zip):
 
 * Microsoft® Dynamics 365
 * Salesforce
 
-Mer information om hur du använder dessa modeller finns i [Konfigurera molntjänsterna Microsoft® Dynamics 365 och Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
+Information om hur du använder de här modellerna finns i [Konfigurera molntjänsterna Microsoft® Dynamics 365 och Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)

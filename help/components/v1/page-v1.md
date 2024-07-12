@@ -6,20 +6,20 @@ role: Architect, Developer, Admin, User
 exl-id: 522f32f0-fc06-4ca0-ada2-61bdbc8761e0
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
 
 # Sidkomponent (v1) {#page-component-v}
 
-Sidkomponenten är en utökningsbar sidkomponent som är avsedd att fungera med [mallredigerare](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) och gör det möjligt att sammanfoga sidhuvud/sidfot och strukturkomponenter med mallredigeraren.
+Sidkomponenten är en utökningsbar sidkomponent som är avsedd att fungera med [mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
 
 ## Användning {#usage}
 
 Page Component (Sidkomponent) utgör grunden för alla sidor som har utformats med de viktigaste komponenterna samt redigerbara mallar. Med hjälp av sidkomponenten kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra huvudkomponenterna.
 
-Använda [designdialogruta](#design-dialog)kan anpassade klientbibliotek definieras för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, eftersom komponenten är själva sidan, är [redigeringsdialogruta](#edit-dialog) för sidkomponenten är sidegenskapsfönstret.
+Med hjälp av [designdialogrutan](#design-dialog) kan anpassade klientbibliotek definieras för sidan. Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, är sidkomponentens [redigeringsdialogruta](#edit-dialog) sidegenskapsfönster, eftersom komponenten är själva sidan.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -29,22 +29,22 @@ I följande tabell visas kompatibiliteten för v1 för sidkomponenten.
 
 | AEM | Sidkomponent v1 |
 |--- |--- |
-| 6.3 | Kompatibel |
-| 6.4 | Kompatibel |
+| 6,3 | Kompatibel |
+| 6,4 | Kompatibel |
 
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs v1 för sidkomponenten.
 >
->Information om den aktuella versionen av sidkomponenten finns i [Sidkomponent](/help/components/page.md) -dokument.
+>Information om den aktuella versionen av sidkomponenten finns i dokumentet [Sidkomponent](/help/components/page.md) .
 
 >[!NOTE]
 >
->v1 i sidkomponenten stöder inte sidomdirigering. Använd [aktuell version av sidkomponenten](/help/components/page.md) för stöd för omdirigering av sidor.
+>v1 i sidkomponenten stöder inte sidomdirigering. Använd den [aktuella versionen av sidkomponenten](/help/components/page.md) om du vill ha stöd för sidomdirigering.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -678,11 +678,11 @@ Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md) för mer information.
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för kärnkomponenter v1](/help/versions.md).
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan, finns de inställningar som normalt skulle finnas i en redigeringsdialogruta i [Sidegenskaper](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html) -fönstret.
+Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/editing-page-properties.html).
 
 ## Designdialogruta {#design-dialog}
 
@@ -692,18 +692,18 @@ Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Si
 
 I fönstret Siddesign kan du definiera klientbibliotek som ska läsas in tillsammans med sidan.
 
-* Om du vill lägga till ett nytt fält klickar du på **Lägg till** knappen under fälten.
+* Klicka eller tryck på knappen **Lägg till** under fälten om du vill lägga till ett nytt fält.
 * Om du vill ta bort ett fält klickar du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder klientbibliotek finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
 
 ![](/help/assets/chlimage_1-95.png)
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Page Component [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page).
+Den senaste tekniska dokumentationen om sidkomponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/page/v1/page).
 
-Hela kärnkomponentprojektet kan laddas ned från GitHub.
+Hela kärnkomponentprojektet kan hämtas från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).

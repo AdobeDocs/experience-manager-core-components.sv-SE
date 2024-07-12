@@ -5,23 +5,23 @@ role: Architect, Developer, Admin, User
 exl-id: 9bc6b730-0d2a-4e5b-891c-d2f67f600bcc
 source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 1%
+source-wordcount: '604'
+ht-degree: 0%
 
 ---
 
 
 # E-postinnehållets fragmentkomponent {#email-content-fragment-component}
 
-Med komponenten E-postinnehållsfragment kan du visa en [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) i innehållet.
+Med komponenten E-postinnehållsfragment kan du visa ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) i ditt innehåll.
 
 ## Användning {#usage}
 
-Med e-postinnehållets fragmentkomponent kan en [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) i ditt e-postinnehåll. Innehållsfragment är flerkanaligt strukturerat innehåll som kan redigeras centralt och enkelt återanvändas.
+Med e-postinnehållets fragmentkomponent kan du inkludera ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) i ditt e-postinnehåll. Innehållsfragment är flerkanaligt strukturerat innehåll som kan redigeras centralt och enkelt återanvändas.
 
-* Fragmentet och dess egenskaper kan markeras i [dialogrutan konfigurera.](#configure-dialog)
-* Resurstyper för att hantera vissa bilder och stödraster kan definieras i [designdialog.](#design-dialog)
-* Redigeringsalternativet öppnar det markerade fragmentet i [innehållsfragmentredigerare,](#edit-dialog) anpassade för användning med e-postkärnkomponenter.
+* Fragmentet och dess egenskaper kan väljas i dialogrutan [Konfigurera.](#configure-dialog)
+* Resurstyper för att hantera vissa bilder och stödraster kan definieras i dialogrutan [Design.](#design-dialog)
+* Redigeringsalternativet öppnar det valda fragmentet i [innehållsfragmentredigeraren ](#edit-dialog), som är anpassad för användning med e-postkärnkomponenterna.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -33,13 +33,13 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |---|---|---|
 | v1 | Kompatibel | - |
 
-Mer information om e-postkärnkomponentversioner och -versioner finns i dokumentet [E-postkärnkomponentversioner.](/help/email/versions.md)
+Mer information om grundkomponentversioner och releaser för e-postmeddelanden finns i dokumentet [E-postversioner av grundkomponenter.](/help/email/versions.md)
 
 ## Teknisk information {#technical-details}
 
 Den senaste tekniska dokumentationen om e-postinnehållets fragmentkomponent [finns på GitHub.](https://adobe.com/go/aem_cmp_tech_email_cf_v1)
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentens utvecklare.](/help/developing/overview.md)
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen till utvecklaren av kärnkomponenter.](/help/developing/overview.md)
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -52,13 +52,13 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilket innehålls
 * **Innehållsfragment**
 
    * Sökväg till önskat innehållsfragment
-   * The **Dialogrutan Markering** kan användas för att hitta fragmentet
+   * Du kan använda dialogrutan **Markering** för att hitta fragmentet
 
 * **Visningsläge**
-   * **Enkelt textelement** - Aktiverar markering av ett flerradigt textelement och aktiverar alternativ för styckekontroll
-* **Variation** - Vilken variant av innehållsfragmentet som ska användas (standard är **Överordnad**)
+   * **Enkelt textelement** - Aktiverar markering av ett flerradigt textelement och aktiverar styckekontrollalternativ
+* **Variation** - Vilken variant av innehållsfragmentet som ska användas (standard är **Master**)
 
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML.
+* **ID** - Med det här alternativet kan du kontrollera den unika identifieraren för komponenten i HTML.
    * Om du inte anger något värde genereras ett unikt ID automatiskt och du hittar det genom att kontrollera innehållet.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka CSS.
@@ -71,18 +71,18 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilket innehålls
    * **Alla** - Visa alla stycken
    * **Intervall**
       * Ange styckeintervall som ska visas, avgränsade med semikolon
-      * Till exempel `1;3-5;7;9-*` som omfattar det första, tredje till femte, sjunde och nionde till de sista styckena
+      * `1;3-5;7;9-*` ska till exempel inkludera det första, tredje till femte, sjunde och nionde till det sista stycket
 * **Hantera rubrik som egna stycken**
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-När du har konfigurerat ett innehållsfragment med hjälp av komponenten för att skicka e-postinnehållsfragment, visas en **Redigera** alternativ.
+När du har konfigurerat ett innehållsfragment med komponenten för e-postinnehållsfragment visas ett **redigeringsalternativ** när du väljer komponenten i innehållsredigeraren.
 
-![Verktygsfält för komponent för e-postinnehållsfragment](/help/email/assets/email-content-fragment-edit-toolbar.png)
+![Verktygsfält för e-postinnehållets fragmentkomponent](/help/email/assets/email-content-fragment-edit-toolbar.png)
 
-Tryck eller klicka på **Redigera** knappen öppnar innehållsfragmentredigeraren. Innehållsfragmentsredigeraren har utökats till att omfatta knappar för **Välj Adobe Campaign-variabel** om du vill infoga Adobe Campaign-variabler i dina innehållsfragment.
+Om du trycker eller klickar på knappen **Redigera** öppnas redigeraren för innehållsfragment. Innehållsfragmentsredigeraren har utökats så att den innehåller knappar för **Välj Adobe Campaign-variabel** för att infoga Adobe Campaign-variabler i dina innehållsfragment.
 
-![Redigera innehållsfragment för e-post](/help/email/assets/email-content-fragment-editor.png)
+![Innehållsfragmentredigerare för e-post](/help/email/assets/email-content-fragment-editor.png)
 
 Mer information om redigering och redigering av innehållsfragment finns i dokumentet [Skapa fragmentinnehåll.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)
 
@@ -93,7 +93,7 @@ När en komponent för e-postinnehållsfragment konfigureras med ett innehållsf
 
 ### Huvudflik {#main-tab}
 
-![Designdialogrutan för komponenten E-postinnehållsfragment](/help/email/assets/email-content-fragment-design.png)
+![Dialogrutan Design för komponenten E-postinnehållsfragment](/help/email/assets/email-content-fragment-design.png)
 
 * **Intern responsiv stödraster**
 
@@ -101,4 +101,4 @@ När en komponent för e-postinnehållsfragment konfigureras med ett innehållsf
 
 ### Fliken Format {#styles-tab}
 
-E-postupplevelsefragmentkomponenten stöder AEM [Formatsystem.](/help/get-started/authoring.md#component-styling)
+E-postupplevelsefragmentkomponenten stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)

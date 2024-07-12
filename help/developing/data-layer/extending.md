@@ -6,7 +6,7 @@ role: Architect, Developer, Admin
 exl-id: f3d5555b-4f08-49de-ab0f-dc0fb04aadf8
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -17,15 +17,15 @@ Du kan utöka kärnkomponenterna med anpassade dialogrutealternativ som gör att
 
 Om du vill ta med de här fälten i datalagret som tillhandahålls av kärnkomponenterna, måste du utöka komponentmodellen som implementerar sina egna speciella datalagermetoder.
 
-## Exempel: Titelkomponent {#example}
+## Exempel: Rubrikkomponent {#example}
 
-En kärnkomponent som [Titelkomponent](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) extends [Komponent](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) som har `getData` metod som returnerar som standard [`ComponentData`.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/datalayer/ComponentData.java)
+En kärnkomponent som [Title-komponenten](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) utökar [Component](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/Title.java) som har en `getData` -metod som som returnerar [`ComponentData` som standard.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/models/datalayer/ComponentData.java)
 
-`ComponentData` serialiserar fördefinierade fält som komponenten kan implementera, som `getDataLayerLinkUrl` och `getDataLayerTitle` för [`TitleImpl`.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/TitleImpl.java)
+`ComponentData` serialiserar fördefinierade fält som din komponent kan implementera, som `getDataLayerLinkUrl` och `getDataLayerTitle` för [`TitleImpl`.](https://github.com/adobe/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/TitleImpl.java)
 
-Därför kan din anpassade Sling-modell ha en `getData` metod som returnerar ett objekt som utökas `ComponentData` för att returnera fler fält.
+Därför kan din anpassade Sling-modell ha en `getData`-metod som returnerar ett objekt som utökar `ComponentData` för att returnera fler fält.
 
-Om du gör det lägger du till en `data-cmp-data-layer` -attributet till elementet HTML i komponenten med JSON för de data som ska fyllas i till datalagret. Nu kan du implementera skript som lyssnar på dessa data eller relaterade händelser.
+Då läggs ett `data-cmp-data-layer`-attribut till i komponentens HTML-element med JSON för data som ska fyllas i i datalagret. Nu kan du implementera skript som lyssnar på dessa data eller relaterade händelser.
 
 >[!TIP]
 >

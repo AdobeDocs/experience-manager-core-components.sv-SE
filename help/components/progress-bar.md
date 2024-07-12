@@ -5,8 +5,8 @@ role: Architect, Developer, Admin, User
 exl-id: 47afc5a6-ac57-4b6c-92c4-015ca956a20b
 source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 2%
+source-wordcount: '336'
+ht-degree: 1%
 
 ---
 
@@ -26,24 +26,24 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
 |---|---|---|---|
-| v1 | Kompatibel med<br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Progress Bar-komponenten samt exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek](https://adobe.com/go/aem_cmp_library_progressbar).
+Om du vill visa Progress Bar-komponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_progressbar).
 
 ### Teknisk information {#technical-details}
 
 Den senaste tekniska dokumentationen om Progress Bar-komponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_progress_v1).
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
 ![Förloppsindikatorkomponentens redigeringsdialogruta](/help/assets/progress-bar-edit.png)
 
-* **Slutförande** - förloppet i procent
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
+* **Slutförande** - förloppet representerat av en procentandel
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
@@ -54,8 +54,8 @@ I designdialogrutan kan mallskaparen definiera de format som ska användas för 
 
 ### Fliken Format {#styles-tab}
 
-Komponenten Progress Bar stöder AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Förloppsindikatorkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ## Adobe-klientdatalager {#data-layer}
 
-Komponenten Progress Bar har stöd för [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
+Komponenten Progress Bar stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)

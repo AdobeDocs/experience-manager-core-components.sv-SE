@@ -20,13 +20,13 @@ En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formul�
 
 ## Användning {#reasons-to-use-header}
 
-- **Varumärke**: En rubrik kan användas för att visa logotypen eller namnet på den organisation som skapade formuläret, vilket bidrar till att etablera varumärkesigenkänning och trovärdighet.
+- **Varumärke**: Ett sidhuvud kan användas för att visa logotypen eller namnet på den organisation som skapade formuläret, vilket bidrar till att etablera varumärkesigenkänning och trovärdighet.
 
-- **Kontext**: En rubrik kan ge en kort beskrivning av syftet med formuläret, vilket hjälper användarna att förstå i vilket sammanhang formuläret används.
+- **Kontext**: En rubrik kan ge en kort beskrivning av formulärets syfte, vilket hjälper användarna att förstå i vilket sammanhang formuläret används.
 
-- **Navigering**: Ett sidhuvud kan innehålla länkar eller knappar som gör att användare kan navigera till andra delar av webbplatsen eller programmet.
+- **Navigering**: En rubrik kan innehålla länkar eller knappar som gör att användare kan navigera till andra delar av webbplatsen eller programmet.
 
-- **Information**: Ett sidhuvud kan innehålla kontaktinformation eller länkar till hjälpresurser, vilket gör det enklare för användarna att få hjälp om de behöver det.
+- **Information**: En rubrik kan innehålla kontaktinformation eller länkar till hjälpresurser, vilket gör det enklare för användare att få hjälp om de behöver det.
 
 - **Användarupplevelse**: En rubrik kan användas för att göra formuläret mer användarvänligt genom att ge användarna ett tydligt och intuitivt sätt att komma åt och fylla i formulärfält.
 
@@ -36,9 +36,9 @@ Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en d
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
-| v1 | Kompatibel med<br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med<br>[version 1.1.12](/help/adaptive-forms/version.md) och senare men mindre än 2.0.0. |
+| v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
 
-Mer information om versioner och versioner av kärnkomponenter finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md) -dokument.
+Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 
 
 <!-- ## Sample Component Output {#sample-component-output}
@@ -47,7 +47,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Få den senaste informationen om den adaptiva huvudkomponenten i Forms Header i den tekniska dokumentationen om [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/pageheader/v1/pageheader). Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om den adaptiva huvudkomponenten i Forms Header i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/pageheader/v1/pageheader). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -59,21 +59,21 @@ Den här delen av sidhuvudet innehåller rubriktiteln och bilden.
 
 ![Imagetab](/help/adaptive-forms/assets/header_image.png)
 
-- **Bildresurs** - Med det här alternativet kan du släppa en resurs som en bild genom att dra och släppa med musen. Du kan också överföra en fil från ett lokalt filsystem med **Bläddra** -knappen. När du har lagt till en bild visas tre knappar längst ned i bilden. När du har lagt till en bild visas tre knappar längst ned i bilden:
-   - **Redigera** - Tryck eller klicka **Redigera** om du vill hantera återgivningarna av resursen i Resursredigeraren.
-   - **Rensa** - Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
-   - **Välj** - Tryck eller klicka **Välj**  om du vill välja en annan bild från resursmappen.
+- **Bildresurs** - Med det här alternativet kan du släppa en resurs, till exempel en bild, genom att dra och släppa med musen. Du kan också överföra en fil från ett lokalt filsystem med knappen **Bläddra** . När du har lagt till en bild visas tre knappar längst ned i bilden. När du har lagt till en bild visas tre knappar längst ned i bilden:
+   - **Redigera** - Tryck eller klicka på **Redigera** för att hantera återgivningarna av resursen i Assets Editor.
+   - **Radera** - Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
+   - **Välj** - Tryck eller klicka på alternativet **Välj** om du vill välja en annan bild från Assets-mappen.
 
-- **Titel** - Det här alternativet används för att lägga till rubriken i sidhuvudet. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren.
-- **Länka till** - Du kan länka rubriken till mappen med **Bläddra** -ikon.
+- **Rubrik** - Det här alternativet används för att lägga till rubriken i rubriken. Den fördefinierade texten tas med i dialogrutan och kan ändras av användaren.
+- **Länka till** - Du kan länka rubriken till mappen med hjälp av ikonen **Bläddra** .
 - **Beskrivning** - En beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med en viss bild.
 - **Storlek (px)** - Det hjälper till att justera längden och bredden på bilden genom att öka eller minska pixlarna.
 
 ![hjälpmedelsflik](/help/adaptive-forms/assets/header_accessibility.png)
 
-- **Alternativ text** - Det här alternativet används för att ange texten som ger ett kort och beskrivande textalternativ för bilden, som beskriver bilden för synskadade.
+- **Alternativ text** - Det här alternativet används för att ange texten som ger ett kort och beskrivande textalternativ för bilden, som beskriver bilden för användare med nedsatt syn.
 
-- **Bilden är dekorativ** - Kontrollera om bilden ska ignoreras av hjälpmedel och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
+- **Bilden är dekorativ** - Kontrollera om bilden ska ignoreras av hjälpmedelstekniken och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
 
 ### Fliken Text {#text-tab}
 

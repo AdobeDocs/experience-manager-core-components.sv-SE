@@ -19,7 +19,7 @@ Identifiera de exakta versionerna av både Forms Core Components och WCM Core Co
 
 De Core Components-versioner som är kompatibla med AEM as a Cloud Service är tillgängliga på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
 
-Om du vill se versionshistoriken för kärnkomponenterna för AEM as a Cloud Service, [klicka här](https://github.com/adobe/aem-core-forms-components/blob/master/VERSIONS.md).
+[Klicka här](https://github.com/adobe/aem-core-forms-components/blob/master/VERSIONS.md) om du vill se versionshistoriken för kärnkomponenter för AEM as a Cloud Service.
 
 
 <!--
@@ -117,9 +117,9 @@ Om du vill se versionshistoriken för kärnkomponenterna för AEM as a Cloud Ser
 
 ## AEM 6.5 Forms - versionshistorik {#aem-as-form-version-history}
 
-Core Components releases that are compatible with AEM 6.5 Form on persone and AMS which are available on [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
+Core Components-versionerna är kompatibla med AEM 6.5 Form On Premise och AMS som är tillgängliga på [GitHub tillsammans med omfattande information om deras releaser](https://github.com/adobe/aem-core-forms-components/releases).
 
-Om du vill se versionshistoriken för kärnkomponenterna för AEM 6.5-formuläret på plats och AMS, [klicka här](https://github.com/adobe/aem-core-forms-components/blob/release/650/VERSIONS.md).
+[Klicka här](https://github.com/adobe/aem-core-forms-components/blob/release/650/VERSIONS.md) om du vill se versionshistoriken för kärnkomponenter för AEM 6.5-formulär på plats och AMS.
 
 <!--
 | Forms Core Components | WCM Core Components | AEM 6.5 | Java  | Maven  |  

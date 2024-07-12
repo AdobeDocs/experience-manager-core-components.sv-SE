@@ -5,16 +5,16 @@ role: Architect, Developer, Admin
 exl-id: 1fd9b6b5-0e4d-48c7-8faa-42e0d4a6bbd0
 source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
 # AMP-stöd för kärnkomponenterna {#amp-support}
 
-Från och med [version 2.11.0](/help/versions.md) av kärnkomponenterna, [AMP - Accelererade mobilsidor](https://developers.google.com/amp) - stöds fullt ut.
+Från och med [version 2.11.0](/help/versions.md) av kärnkomponenterna stöds [AMP - accelererade mobilsidor](https://developers.google.com/amp) fullt ut.
 
-Det här dokumentet ger en översikt över hur AMP stöds och hur du aktiverar det för dina webbplatser. Fullständig teknisk information finns dock på [Dokumentation för GitHub-utvecklare.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
+Det här dokumentet ger en översikt över hur AMP stöds och hur du aktiverar det för dina webbplatser. Fullständig teknisk information finns dock i dokumentationen för [GitHub-utvecklaren.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
 
 ## Vad är AMP? {#what-is-amp}
 
@@ -22,9 +22,9 @@ Accelerated Mobile Pages eller AMP är ett ramverk med öppen källkod som urspr
 
 ## AMP i kärnkomponenterna {#amp-in-core-components}
 
-Stödet för AMP i kärnkomponenterna är [fullt konfigureringsbar.](#enabling-amp) AMP-versioner av sidor kan hanteras exklusivt, tillsammans med HTML-standardversionerna eller inte alls.
+Stöd för AMP i kärnkomponenterna är [fullt konfigurerbart.](#enabling-amp) AMP-versioner av sidor kan hanteras exklusivt, tillsammans med HTML-standardversionerna, eller inte alls.
 
-Kärnkomponenterna använder `amp` som en Sling-väljare för att återge en AMP-sida. Till exempel `example.html` återger normal sida och `example.amp.html` är AMP-versionen.
+Core Components använder `amp` som en Sling-väljare för att återge en AMP-sida. `example.html` skulle till exempel återge den normala sidan och `example.amp.html` skulle vara AMP-versionen.
 
 Enskilda projekt kan avgöra om de ska utnyttja AMP eller inte. Eftersom AMP- och HTML-standardsidor kan levereras parallellt kan ett projekt välja att använda AMP endast på vissa sidor i projektet.
 
@@ -33,7 +33,7 @@ Enskilda projekt kan avgöra om de ska utnyttja AMP eller inte. Eftersom AMP- oc
 AMP-stödet ger stor flexibilitet, men för att komma igång snabbt krävs bara några få enkla steg:
 
 1. Installera AMP-supporttillägget om det behövs.
-   * För AEM as a Cloud Service projekt är tillägget automatiskt tillgängligt med kärnkomponenterna och ingen installation behövs.
+   * För AEM as a Cloud Service-projekt är tillägget automatiskt tillgängligt med kärnkomponenterna och ingen installation behövs.
    * För anläggningsprojekt och AMS-projekt måste tillägget vara explicit installerat när du installerar Core Components.
 1. När AMP-tillägget har installerats måste komponentförfattaren helt enkelt peka komponentens supertyper mot dem i tillägget.
 1. [Aktivera stöd för AMP](#enabling-amp) på mallnivå eller på enskilda sidor.
@@ -41,26 +41,26 @@ AMP-stödet ger stor flexibilitet, men för att komma igång snabbt krävs bara 
 
 ### Aktivera AMP för sidor {#enabling-amp}
 
-Om du vill aktivera AMP för en sida **AMP-läge** måste markeras i [Sidprofil.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-page-policy-template-author-developer)
+Om du vill aktivera AMP för en sida måste **AMP-läget** väljas i [Sidprincipen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-page-policy-template-author-developer)
 
-![Alternativ för AMP-sidprofil](/help/assets/amp-policy.png)
+![Alternativ för AMP-sidprincip](/help/assets/amp-policy.png)
 
-* **Ingen AMP** - Sidan levereras endast som HTML.
-* **Kopplad AMP** - Sidan levereras som både AMP och HTML.
+* **Ingen AMP** - Sidan levereras endast som HTML som standard.
+* **Parade AMP** - Sidan levereras som både AMP och HTML.
 * **Endast AMP** - Sidan levereras endast som AMP.
 
 AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) för en enskild sida.
 
-![Egenskaper för AMP-sida](/help/assets/amp-page-properties.png)
+![Sidegenskaper för AMP](/help/assets/amp-page-properties.png)
 
-* **Ärv från sidmall** - Det här är standardvärdet, vilket gör att inställningen kan hämtas från sidmallens policy.
-* **Ingen AMP** - Sidan levereras endast som HTML.
-* **Kopplad AMP** - Sidan levereras som både AMP och HTML.
+* **Ärv från sidmall** - Det här är standardvärdet, vilket gör att inställningen kan hämtas från sidmallens princip.
+* **Ingen AMP** - Sidan levereras endast som HTML som standard.
+* **Parade AMP** - Sidan levereras som både AMP och HTML.
 * **Endast AMP** - Sidan levereras endast som AMP.
 
 ### CSS-krav {#css-requirements}
 
-När du använder AMP med Core Components är den största skillnaden att AMP kräver alla [CSS som ska infogas](including-clientlibs.md#inlining) i `<head>` -element och optimerat.
+När du använder AMP med kärnkomponenterna är den största skillnaden att AMP kräver att alla [CSS är infogade](including-clientlibs.md#inlining) i elementet `<head>` samt optimerade.
 
 Som stöd för detta används en anpassad sidkomponent, som bara läser in den AMP-specifika CSS:en för komponenter som finns på sidan.
 
@@ -68,4 +68,4 @@ Som stöd för detta används en anpassad sidkomponent, som bara läser in den A
 >
 >På grund av begränsningar i AMP-design stöder inte Adobe användning av det responsiva rutnätet med AMP-versionen av din sida.
 
-Mer information om krav och tekniska detaljer finns i [Dokumentation för GitHub-utvecklare.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
+Mer information om krav och teknisk information finns i dokumentationen för [GitHub-utvecklaren.](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)

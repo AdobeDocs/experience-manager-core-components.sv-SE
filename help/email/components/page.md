@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 exl-id: 17fd0f5e-2b85-41a1-abaf-8ad190a5341a
 source-git-commit: c16dd8696e89f89c7b178ece11f57a565d73588b
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -13,14 +13,14 @@ ht-degree: 0%
 
 # E-postsidkomponent {#email-page-component}
 
-E-postsidkomponenten är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigerare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och gör att sidhuvud/sidfot och strukturkomponenter kan monteras med mallredigeraren, som är anpassad för att skapa Adobe Campaign-innehåll.
+Sidkomponenten för e-post är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren, som är anpassad för att skapa Adobe Campaign-innehåll.
 
 ## Användning {#usage}
 
 Sidkomponenten E-post utgör grunden för alla sidor som utformats med e-postkärnkomponenter och redigerbara mallar. Genom att använda Sidkomponent för e-post kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra huvudkomponenterna för e-post.
 
-* Använda [Designdialog.](#design-dialog) anpassade klientbibliotek kan definieras för sidan.
-* Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, eftersom e-postsidkomponenten är själva sidan, är [redigeringsdialogruta](#edit-dialog) för e-postsidkomponenten är sidegenskapsfönstret.
+* Med hjälp av designdialogrutan [kan ](#design-dialog) anpassade klientbibliotek definieras för sidan.
+* Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, eftersom e-postsidkomponenten är själva sidan, är [redigeringsdialogrutan](#edit-dialog) för e-postsidkomponenten sidegenskapsfönstret.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -32,29 +32,29 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |---|---|---|
 | v1 | Kompatibel | - |
 
-Mer information om e-postkärnkomponentversioner och -versioner finns i dokumentet [Huvudkomponentversioner för e-post](/help/email/versions.md)
+Mer information om grundkomponentversioner och releaser för e-postmeddelanden finns i dokumentet [E-postversioner av kärnkomponenter](/help/email/versions.md)
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Page Component [finns på GitHub.](https://adobe.com/go/aem_cmp_tech_email_page_v1)
+Den senaste tekniska dokumentationen om sidkomponenten [finns på GitHub.](https://adobe.com/go/aem_cmp_tech_email_page_v1)
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan, finns de inställningar som normalt skulle finnas i en redigeringsdialogruta i [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) -fönstret.
+Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
-### Fliken Cloud Services {#cloud-services}
+### Fliken Cloud Service {#cloud-services}
 
 För att e-postkärnkomponenterna ska kunna hämta kampanjvariabler och data måste sidan vara länkad till en Adobe Campaign-konfiguration.
 
 ![Egenskaper för e-postsida](/help/email/assets/email-page-properties.png)
 
-Under **Konfiguration av Cloud Service** rubrik, i listrutan väljer **Lägg till konfiguration**.
+Under rubriken **Konfiguration av Cloud Service** väljer du **Lägg till konfiguration** i listrutan.
 
-Under **Adobe Campaign** väljer du konfiguration för integrering med Adobe Campaign.
+Under rubriken **Adobe Campaign** väljer du konfigurationen för din integrering med Adobe Campaign.
 
-Se dokumentet [Använda e-postkärnkomponenter](/help/email/using.md) om du vill ha mer information om hur du konfigurerar E-postkärnkomponenter.
+Mer information om hur du konfigurerar e-postkärnkomponenter finns i dokumentet [Använda e-postkärnkomponenter](/help/email/using.md).
 
 ### Fliken E-post {#email-tab}
 
@@ -62,42 +62,42 @@ Fliken E-post definierar egenskaper för e-postmeddelanden som skickas via Adobe
 
 ![Egenskaper för e-postsida](/help/email/assets/email-page-properties-email.png)
 
-* **Ämne** - Ämnet för det e-postmeddelande som Adobe Campaign skickar baserat på denna sida
-   * Klicka på **Välj Adobe Campaign-variabel** -ikonen för att öppna [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) för att infoga dynamiskt innehåll från Adobe Campaign.
+* **Ämne** - Ämnet för e-postmeddelandet som skickas av Adobe Campaign baserat på den här sidan
+   * Klicka på ikonen **Välj Adobe Campaign-variabel** för att öppna dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) och infoga dynamiskt innehåll från Adobe Campaign.
 * **Förrubrik**
-   * Klicka på **Välj Adobe Campaign-variabel** -ikonen för att öppna [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) för att infoga dynamiskt innehåll från Adobe Campaign.
+   * Klicka på ikonen **Välj Adobe Campaign-variabel** för att öppna dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) och infoga dynamiskt innehåll från Adobe Campaign.
 * **Oformaterad text** - Den oformaterade textversionen av e-postmeddelandet som skickas av Adobe Campaign
-   * Klicka på **Välj Adobe Campaign-variabel** -ikonen för att öppna [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) för att infoga dynamiskt innehåll från Adobe Campaign.
+   * Klicka på ikonen **Välj Adobe Campaign-variabel** för att öppna dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) och infoga dynamiskt innehåll från Adobe Campaign.
 * **Referens-URL**
 
 ## Designdialogruta {#design-dialog}
 
 Eftersom komponenten representerar hela sidan öppnas designdialogrutan via **Sidinformation -> Sidprofil** när du redigerar sidmallen.
 
-![Sidprofil](/help/assets/page-policy.png)
+![Sidprincip](/help/assets/page-policy.png)
 
 ### Fliken Egenskaper {#properties-tab}
 
 I fönstret Siddesign kan du definiera vilka klientbibliotek som ska läsas in samt webbresursbiblioteket för sidan.
 
-![Designdialogruta för e-postsidkomponent](/help/email/assets/email-page-design.png)
+![Dialogrutan Utformning av sidkomponent för e-post](/help/email/assets/email-page-design.png)
 
 * **Klientbibliotek** - Detta definierar de klientbibliotekskategorier som ska läsas in. JavaScript läggs till i innehållsslutet och CSS läggs till i sidhuvudet.
-* **Client Libraries JavaScript Page Head** - Detta definierar de JavaScript-klientbibliotekskategorier som ska läsas in i sidhuvudet.
-   * Kategorier som definieras här och som också finns i **Klientbibliotek** ska JavaScript läsas in i sidhuvudet i stället för i slutet.
-   * Ingen CSS läses in såvida inte kategorin också finns i **Klientbibliotek** fält.
+* **Klientbibliotek JavaScript sidhuvud** - Här definieras de JavaScript klientbibliotekskategorier som ska läsas in i sidhuvudet.
+   * För de kategorier som definieras här och som också finns i fältet **Klientbibliotek** läses JavaScript in i sidhuvudet i stället för i innehållsslutet.
+   * Ingen CSS läses in om inte kategorin också finns i fältet **Klientbibliotek**.
 * **Läs in JavaScript-bibliotek asynkront** - Om det här alternativet är aktiverat läses de anpassade JavaScript-biblioteken in asynkront.
 * **Klientbibliotek för webbresurser** - Klientbibliotekskategorin som används för webbresurser som till exempel favoritikoner.
-* **Gå till elementväljaren för huvudinnehåll** - Används som hjälpmedelsfunktion för att hoppa direkt till huvudinnehållet på sidan
+* **Hoppa till väljaren för elementet i huvudinnehållet** - Används som hjälpmedelsfunktion för att hoppa direkt till huvudinnehållet på sidan
 
-Bibliotek kan konfigureras för båda **Klientbibliotek** och **Client Libraries JavaScript Page Head** fält enligt följande:
+Bibliotek kan konfigureras för både fälten **Klientbibliotek** och **Klientbibliotek JavaScript sidhuvud** enligt följande:
 
-* Om du vill lägga till ett nytt fält klickar eller trycker du på **Lägg till** knappen under fälten.
+* Klicka eller tryck på knappen **Lägg till** under fälten om du vill lägga till ett nytt fält.
 * Om du vill ta bort ett fält klickar eller trycker du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder klientbibliotek finns i [Använda bibliotek på klientsidan.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 
 ### Fliken Format {#styles-tab}
 
-Page Component har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Sidkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).

@@ -6,7 +6,7 @@ role: Architect, Developer, Admin
 exl-id: 503dd3dc-fe95-4a17-83f5-1f0c1960993d
 source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -22,15 +22,15 @@ Adobe Client Data Layer kan integreras med era anpassade komponenter och integre
 Så här lägger du automatiskt till en anpassad komponent i datalagret:
 
 1. Definiera egenskaperna för den anpassade komponentmodellen som behöver spåras.
-1. Lägg till `data-cmp-data-layer` -attribut till den anpassade komponentens HTML. T.ex. `data-cmp-data-layer="${mycomponent.data.json}"`.
+1. Lägg till attributet `data-cmp-data-layer` i den anpassade komponentens HTML-kod. Exempel: `data-cmp-data-layer="${mycomponent.data.json}"`.
 
-Aktivera datalagrets utlösare automatiskt `cmp:click` varje gång någon klickar på ett visst element i den anpassade komponenten lägger du till `data-cmp-clickable` -attribut till elementet som ska spåras i den anpassade komponentens HTML-kod.
+Om du automatiskt vill att datalagret ska utlösa en `cmp:click`-händelse varje gång någon klickar på ett visst element i den anpassade komponenten lägger du till attributet `data-cmp-clickable` i elementet som ska spåras i den anpassade komponentens HTML.
 
-The `data-cmp-data-layer-enabled` kan frågas på klientsidan för att kontrollera om datalagret är aktiverat.
+Attributet `data-cmp-data-layer-enabled` kan efterfrågas på klientsidan för att kontrollera om datalagret är aktiverat.
 
 >[!TIP]
 >
->Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components och om hur du aktiverar datalagret för dina anpassade komponenter finns i [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
+>Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components och om hur du aktiverar datalagret för dina anpassade komponenter finns i filen [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
 
 ## Integrera med Adobe Analytics och Adobe Target {#analytics-target}
 
@@ -40,10 +40,10 @@ Tillsammans med Adobe Analytics och Adobe Target är Adobe Client Data Layer gru
 
 Lär dig använda de inbyggda funktionerna i Adobe Client Data Layer med AEM Core Components för att samla in data om en sida i Adobe Experience Manager Sites. Experience Platform Launch och Adobe Analytics kommer att användas för att skapa regler för att skicka siddata till Adobe Analytics.
 
-[Se självstudiekursen här.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html)
+[Visa självstudiekursen här.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/collect-data-analytics.html)
 
 ### Spåra komponenter som klickats med Adobe Analytics {#track-clicked-components}
 
 Använd det händelsestyrda Adobe Client Data Layer med AEM Core Components för att spåra klick på specifika komponenter på en Adobe Experience Manager-plats. Lär dig hur du använder regler i Experience Platform Launch för att lyssna efter klickhändelser, filtrera efter komponent och skicka data till en Adobe Analytics med en spårlänkssignal.
 
-[Se självstudiekursen här.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/track-clicked-component.html)
+[Visa självstudiekursen här.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/analytics/track-clicked-component.html)

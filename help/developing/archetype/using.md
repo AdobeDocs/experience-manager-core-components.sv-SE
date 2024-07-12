@@ -20,15 +20,15 @@ Det fokuserar på allmänna användningsmönster och vad arkitypen gör för dig
 
 >[!TIP]
 >
->Den senaste AEM Project Archetype och tillhörande teknisk dokumentation [finns på GitHub.](https://github.com/adobe/aem-project-archetype)
+>Den senaste AEM Project Archetype och tillhörande tekniska dokumentationen [finns på GitHub.](https://github.com/adobe/aem-project-archetype)
 
 ## Komma igång {#getting-started}
 
 Projektets arkityp gör det enkelt att komma igång med AEM. Du kan utföra de första stegen med arkitypen på flera olika sätt.
 
-* **WKND - självstudiekurs** - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar arkitekturen, finns i [Komma igång med AEM Sites - WKND självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) för ett praktiskt exempel som visar hur du använder arkitypen för att implementera ett enkelt projekt.
-* **Självstudiekurs om WKND-händelser** - Om du är särskilt intresserad av utveckling av SPA på AEM ska du ta en titt på [WKND Events, självstudiekurs.](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
-* **Börja på egen hand!** - Du kan enkelt ladda ned [aktuell projekttyp tillgänglig på GitHub](https://github.com/adobe/aem-project-archetype) och skapa ditt första projekt själv.
+* **WKND-självstudiekurs** - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar arkivtypen, finns i [Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) som visar hur du använder arkitypen för att implementera ett enkelt projekt.
+* **Självstudiekurs om WKND-händelser** - Om du är särskilt intresserad av att utveckla ett program (SPA) för en enda sida på AEM ska du titta på den dedikerade självstudiekursen [WKND Events.](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
+* **Börja på egen hand!** - Du kan enkelt hämta den [aktuella projekttypen som finns på GitHub](https://github.com/adobe/aem-project-archetype) och skapa ditt första projekt på egen hand.
 
 ## Använda arkitekturen {#how-to-use-the-archetype}
 
@@ -36,7 +36,7 @@ Det första steget med att använda arkitypen är att skapa ett projekt som gene
 
 >[!TIP]
 >
->När du skapar en arkityp genereras även en serie Viktigt-filer som ger dig den tekniska informationen och hur modulerna används som [nedan.](#what-you-get)
+>När du skapar en arkityp genereras även en serie Viktigt-filer som ger dig teknisk information och användning av varje modul som [länkad nedan.](#what-you-get)
 
 Genom att bygga projektet med Maven skapas artefakter (paket och OSGi-paket) som kan distribueras till AEM. Ytterligare Maven-kommandon och profiler kan användas för att distribuera projektartefakter till en AEM instans.
 
@@ -44,18 +44,18 @@ Genom att bygga projektet med Maven skapas artefakter (paket och OSGi-paket) som
 
 Arkitypen består av moduler, som alla skapas automatiskt när du använder typen architype.
 
-* **[kärna](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/core)** är ett Java-paket som innehåller alla kärnfunktioner som OSGi-tjänster, avlyssnare och schemaläggare, samt komponentrelaterad Java-kod som servrar och efterfrågningsfilter.
+* **[core](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/core)** är ett Java-paket som innehåller alla kärnfunktioner som OSGi-tjänster, avlyssnare och schemaläggare, liksom komponentrelaterad Java-kod som servrar och begärandefilter.
 * **[it.tests](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)** är Java-baserade integreringstester.
-* **[ui.apps](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.apps)** innehåller `/apps` och `/etc` delar av projektet, t.ex. JS- och CSS-klienter, komponenter och mallar.
-* **[ui.content](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.content)** innehåller exempelinnehåll med hjälp av komponenterna från modulen ui.apps.
-* **[ui.config](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.config)** innehåller runmode-specifika OSGi-konfigurationer för projektet.
+* **[ui.apps](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.apps)** innehåller `/apps` och `/etc` delar av projektet, dvs. JS- och CSS-klienter, komponenter och mallar.
+* **[ui.content](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.content)** innehåller exempelinnehåll med komponenterna från modulen ui.apps.
+* **[ui.config](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.config)** innehåller körlägesspecifika OSGi-konfigurationer för projektet.
 * **[ui.front.general](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.frontend.general)** innehåller de artefakter som krävs för att använda den allmänna Webpack-baserade frontendmodulen (valfritt).
 * **[ui.front.response](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.frontend.react)** **(valfritt)** innehåller de artefakter som krävs när du använder arkivtypen för att skapa ett SPA som baseras på React (valfritt, beror på build-parametrar).
-* **[ui.front.angular](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.frontend.angular)** **(valfritt)** innehåller de artefakter som krävs när du använder arraytypen för att skapa ett SPA baserat på Angular (valfritt, beror på byggparametrar).
+* **[ui.front.angular](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.frontend.angular)** **(valfritt)** innehåller de artefakter som krävs när du använder arkivtypen för att skapa ett SPA projekt baserat på Angular (valfritt, beror på build-parametrar).
 * **[ui.tests](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.tests)** innehåller selenbaserade UI-tester.
-* **[alla](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/all)** är ett enda innehållspaket som bäddar in alla kompilerade moduler (paket och innehållspaket) inklusive eventuella leverantörsberoenden.
-* **[dispatcher.ams](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.ams)** innehåller grundläggande konfigurationer för AMS/på-plats-projekt (valfritt, beror på build-parametrar).
-* **[dispatcher.cloud](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud)** innehåller grundläggande konfigurationer för AEMaaCS-projekt (valfritt, beror på build-parametrar).
+* **[all](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/all)** är ett enda innehållspaket som bäddar in alla kompilerade moduler (paket och innehållspaket) inklusive eventuella leverantörsberoenden.
+* **[dispatcher.ams](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.ams)** innehåller grundläggande dispatcherkonfigurationer för AMS-/on-prem-projekt (valfritt, beror på build-parametrar).
+* **[dispatcher.cloud](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/dispatcher.cloud)** innehåller grundläggande dispatcherkonfigurationer för AEMaaCS-projekt (valfritt, beror på build-parametrar).
 
 ![Ordna innehållspaket](/help/assets/content-package-organization.png)
 
@@ -63,15 +63,15 @@ Modulerna för den arkityp som representeras i Maven distribueras till AEM som i
 
 ## Överordnad POM {#parent-pom}
 
-The `pom.xml` i projektets rot (`<src-directory>/<project>/pom.xml`) kallas överordnad POM och driver projektets struktur samt hanterar beroenden och vissa globala egenskaper för projektet.
+`pom.xml` i projektets rot (`<src-directory>/<project>/pom.xml`) kallas för överordnad POM och driver projektets struktur samt hanterar beroenden och vissa globala egenskaper för projektet.
 
 ### Egenskaper för globala projekt {#global-properties}
 
-The `<properties>` i den överordnade POM-strukturen definieras flera globala egenskaper som är viktiga för distributionen av ditt projekt på en AEM instans, som användarnamn/lösenord, värdnamn/port osv.
+Avsnittet `<properties>` i den överordnade POM definierar flera globala egenskaper som är viktiga för distributionen av ditt projekt på en AEM instans som användarnamn/lösenord, värdnamn/port osv.
 
-Dessa egenskaper är konfigurerade för att distribueras till en lokal AEM, eftersom detta är den vanligaste versionen som utvecklare kommer att göra. Observera att det finns egenskaper att distribuera till en författarinstans samt en publiceringsinstans. Det är också här som inloggningsuppgifterna ställs in för att autentiseras med AEM. Standardvärdet `admin:admin` autentiseringsuppgifter används.
+Dessa egenskaper är konfigurerade för att distribueras till en lokal AEM, eftersom detta är den vanligaste versionen som utvecklare kommer att göra. Observera att det finns egenskaper att distribuera till en författarinstans samt en publiceringsinstans. Det är också här som inloggningsuppgifterna ställs in för att autentiseras med AEM. Standardautentiseringsuppgifterna för `admin:admin` används.
 
-Dessa egenskaper är konfigurerade så att de kan åsidosättas vid distribution till miljöer på högre nivå. På så sätt behöver inte POM-filerna ändras, utan variabler som `aem.host` och `sling.password` kan åsidosättas via kommandoradsargument:
+Dessa egenskaper är konfigurerade så att de kan åsidosättas vid distribution till miljöer på högre nivå. På så sätt behöver inte POM-filerna ändras, men variabler som `aem.host` och `sling.password` kan åsidosättas via kommandoradsargument:
 
 ```shell
 mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.password=productionpasswd
@@ -79,23 +79,23 @@ mvn -PautoInstallPackage clean install -Daem.host=production.hostname -Dsling.pa
 
 ### Modulstruktur {#module-structure}
 
-The `<modules>` i överordnad POM definieras de moduler som projektet ska bygga. Som standard byggs projektet [de standardmoduler som tidigare definierats.](#what-you-get) Fler moduler kan alltid läggas till när ett projekt utvecklas.
+Avsnittet `<modules>` i den överordnade POM definierar modulerna som projektet ska bygga. Som standard skapar projektet [de standardmoduler som tidigare definierats.](#what-you-get) Fler moduler kan alltid läggas till när ett projekt utvecklas.
 
 ### Beroenden {#dependencies}
 
-The `<dependencyManagement>` i överordnad POM definieras alla beroenden och versioner av API:er som används i projektet. Versioner ska hanteras i den överordnade POM. Undermoduler bör inte innehålla någon versionsinformation.
+Avsnittet `<dependencyManagement>` i den överordnade POM definierar alla beroenden och versioner av API:er som används i projektet. Versioner ska hanteras i den överordnade POM. Undermoduler bör inte innehålla någon versionsinformation.
 
 #### Uber-Jar {#uber-jar}
 
-Ett av nyckelberoendena är [AEM Java API Jar.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) Detta inkluderar alla AEM API:er med bara en enda beroendepost för AEM.
+Ett av nyckelberoendena är Java API Jar för [AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) Detta inkluderar alla AEM API:er med endast en beroendepost för AEM.
 
 >[!NOTE]
 >
->Som en god vana bör du uppdatera användarversionen så att den matchar målversionen av AEM. Om du t.ex. tänker driftsätta till AEM 6.5 ska du uppdatera versionen till 6.5.X, där `X` är det senaste Service Pack-paketet.
+>Som en god vana bör du uppdatera användarversionen så att den matchar målversionen av AEM. Om du t.ex. planerar att distribuera till AEM 6.5 ska du uppdatera användarversionen till 6.5.X, där `X` är den senaste Service Pack-versionen.
 
 #### Kärnkomponenter {#core-components}
 
-Arketypen utnyttjar förstås [Kärnkomponenter.](/help/introduction.md) För att kunna utnyttja kärnkomponenterna i alla installationer är det därför en god vana att inkludera dem i Maven-projektet.
+Arkitypen utnyttjar förstås [kärnkomponenterna.](/help/introduction.md) Därför är det bäst att inkludera dem som en del av Maven-projektet för att kunna utnyttja kärnkomponenterna i alla distributioner.
 
 core.wcm.components.examples är en uppsättning exempelsidor som illustrerar exempel på kärnkomponenterna. Ett tips är att när du distribuerar ett projekt för produktion bör du ta bort beroendet och delpaketinkluderingen.
 
@@ -111,4 +111,4 @@ Det finns tre testnivåer i projektet och eftersom de är olika typer av tester 
 
 * **[Enhetstester](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/core)** - Klassisk enhetstestning av koden i paketet
 * **[Integrationstester](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/it.tests)** - Integrationstester på serversidan som kör enhetsliknande tester i AEM-miljön, dvs. på den AEM servern
-* **[UI-tester](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.tests)** - Selenbaserade test på webbläsarsidan som kontrollerar webbläsarsidans beteende
+* **[UI-tester](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype/ui.tests)** - Seleniumbaserade webbläsarbaserade tester som verifierar beteendet på webbläsarsidan

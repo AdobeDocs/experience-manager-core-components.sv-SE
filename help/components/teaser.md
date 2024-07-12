@@ -18,7 +18,7 @@ Core Component Teaser Component Component Component kan visa en bild, en titel, 
 
 Teaser Component (Teaser Component) gör det enkelt för innehållsförfattaren att skapa ett suddgummi för ytterligare innehåll med hjälp av en bild, en titel eller formaterad text och länka till ytterligare innehåll eller andra åtgärder.
 
-Mallförfattaren kan använda [designdialogruta](#design-dialog) för att definiera om alternativen för att skapa anrop till åtgärder och lägga till länkar är tillgängliga samt inaktivera olika visningsalternativ. Innehållsförfattaren kan använda [konfigurera dialogruta](#configure-dialog) för att ställa in en bild, definiera CTA, ange titlar och beskrivningar och konfigurera länkar till den enskilda teaser. The [redigeringsdialogruta](image.md#edit-dialog) i [Bildkomponent](image.md) kan användas för att ändra suddgummibilden.
+Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera om alternativen för att skapa anrop till åtgärder och lägga till länkar är tillgängliga samt inaktivera olika visningsalternativ. Innehållsförfattaren kan använda dialogrutan [Konfigurera](#configure-dialog) för att ange en bild, definiera CTA, ange titlar och beskrivningar och konfigurera länkar till det enskilda lagret. Dialogrutan [Redigera](image.md#edit-dialog) för [bildkomponenten](image.md) är tillgänglig för att ändra suddgummibilden.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -31,32 +31,32 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 | v2 | - | Kompatibel | Kompatibel |
 | [v1](v1/teaser.md) | Kompatibel | Kompatibel | Kompatibel |
 
-## Stöd för fjärrresurser {#remote-assets}
+## Fjärrsupport för Assets {#remote-assets}
 
-Teaser Component (från och med [version 2.23.2](/help/versions.md)) har stöd för fjärrresurser. [När konfigurationen är klar](/help/developing/remote-assets.md) du kan välja resurser från en fjärrtjänst för din teaserkomponent.
+Teaser Component (från och med [version 2.23.2](/help/versions.md)) stöder fjärrresurser. [När du har konfigurerat](/help/developing/remote-assets.md) kan du välja resurser från en fjärrtjänst för din teaserkomponent.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både Teaser Component och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [Komponentbibliotek](https://adobe.com/go/aem_cmp_library_teaser).
+Om du vill se både Teaser Component (Teaser-komponenten) och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_teaser).
 
 ### Teknisk information {#technical-details}
 
 Den senaste tekniska dokumentationen om Teaser Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_teaser_v1).
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera egenskaperna för det enskilda lagret. Det finns också en [redigeringsdialogruta](#edit-dialog) om du vill ändra suddgummibilden om en sådan är markerad.
+Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera egenskaperna för det enskilda lagret. Det finns också en [redigeringsdialogruta](#edit-dialog) där du kan ändra suddgummibilden om en sådan är markerad.
 
 ### Fliken Länkar {#links-tab}
 
-![Länkflik i redigeringsdialogrutan för Teaser Component](/help/assets/teaser-edit-links.png)
+![Länkflik i redigeringsdialogrutan för komponenten Teaser](/help/assets/teaser-edit-links.png)
 
 Teaser title, description and image can be inherited from the linked page, or from the page linked in the first call to action. Om varken en länk eller ett anrop till en åtgärd anges ärvs titeln, beskrivningen och bilden från den aktuella sidan.
 
-* **Länk** - Den här filen länkas till en innehållssida, extern URL eller sidankarpunkt.
-* **Öppna länk på ny flik** - Om det här alternativet är aktiverat öppnas länken på en ny webbläsarflik.
+* **Länk** - Den här filen länkar till en innehållssida, extern URL eller sidankarpunkt.
+* **Öppna länken på den nya fliken** - Om den är aktiverad öppnas länken på en ny webbläsarflik.
 * **Call-to-actions** - Med det här alternativet kan du länka till flera mål.
    * Den sida som är länkad i det första anropet används när du ärver teasertitel, beskrivning eller bild.
 
@@ -64,45 +64,45 @@ Teaser title, description and image can be inherited from the linked page, or fr
 
 ![Textflik i redigeringsdialogrutan för Teaser Component](/help/assets/teaser-edit-text.png)
 
-* **Förtitel** - Förrubriken visas före teaser titel.
+* **Förrubrik** - Förrubriken visas före teasertiteln.
 * **Titel** - Definierar en titel som ska visas som rubrik för suddgummit.
-   * **Hämta rubrik från länkad sida** - När det här alternativet är markerat fylls rubriken i med den länkade sidans rubrik.
+   * **Hämta rubrik från länkad sida** - Om det här alternativet är markerat fylls rubriken i med den länkade sidans rubrik.
 * **Beskrivning** - Definierar en beskrivning som ska visas som underrubrik till suddgummit.
-   * **Hämta beskrivning från länkad sida** - När det här alternativet är markerat fylls beskrivningen i med den länkade sidans beskrivning.
-* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [Datalager](/help/developing/data-layer/overview.md).
+   * **Hämta beskrivning från länkad sida** - Om det här alternativet är markerat fylls beskrivningen i med den länkade sidans beskrivning.
+* **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
 ### Fliken Resurser {#asset-tab}
 
-![Fliken Redigera i dialogrutan Teaser Component](/help/assets/teaser-edit-image.png)
+![Fliken Redigera dialogruta för Teaser Component](/help/assets/teaser-edit-image.png)
 
-* **Ärv bild från sida** - Använd bilden som är definierad i sidegenskaperna för den länkade sidan eller den aktuella sidan om ingen finns.
-* **Bildresurs** - Släpp en resurs från [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på **bläddra** för överföring från ett lokalt filsystem.
-   * Tryck eller klicka **Rensa** för att avmarkera den markerade bilden.
-   * Tryck eller klicka **Välj** för att öppna [resursläsare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) för att markera en bild.
-      * If [Stöd för fjärrresurser](#remote-assets) är aktiverat har du flera alternativ för att välja en resurs:
+* **Ärv bild från sida** - Använd bilden som definierats i sidegenskaperna för den länkade sidan eller den aktuella sidan om ingen finns.
+* **Bildresurs** - Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
+   * Tryck eller klicka på **Välj** för att öppna [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) och välja en bild.
+      * Om [Fjärrsupport för Assets](#remote-assets) är aktiverat har du flera alternativ för att välja en resurs:
          * **Lokal** väljer från det lokala AEM resursbiblioteket.
          * **Fjärr** väljer från ett Dynamic Media-bibliotek utanför din AEM.
-   * Tryck eller klicka **Redigera** till [hantera återgivningar av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
-* **Alternativ text för tillgänglighet** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
-   * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade tillgångsvärdet för `dc:description` metadata i DAM eller på den aktuella sidan om ingen resurs är länkad.
-* **Ange inte en alternativ text** - Med det här alternativet markeras den bild som ska ignoreras av hjälpmedelstekniker, som skärmläsare, om bilden är helt dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
+* **Alternativ text för hjälpmedel** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
+   * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade objektvärdet för `dc:description` -metadata i DAM eller för den aktuella sidan om ingen resurs är länkad.
+* **Tillhandahåll inte alternativ text** - Med det här alternativet markeras bilden som ska ignoreras av hjälpmedelstekniker som skärmläsare om bilden är enbart dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.
 
 ### Fliken Format {#styles-tab-edit}
 
-![Fliken Stilar i redigeringsdialogrutan för komponenten Teaser List](/help/assets/teaser-edit-styles.png)
+![Fliken Stilar i redigeringsdialogrutan för komponenten Teaser List ](/help/assets/teaser-edit-styles.png)
 
-Teaser Component har stöd för AEM [Formatsystem.](/help/get-started/authoring.md#component-styling).
+Teaser Component har stöd för AEM [Style System.](/help/get-started/authoring.md#component-styling).
 
 Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
 
-Format måste konfigureras för den här komponenten i [designdialogruta](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
+Format måste konfigureras för den här komponenten i [designdialogrutan](#design-dialog) för att den nedrullningsbara menyn ska vara tillgänglig.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Teaser Component delegerar bildåtergivning till [Bildkomponent](image.md). Därför [redigeringsdialogruta](image.md#edit-dialog of the Image Component is available to the content author to manipulate the teaser image.
+Teaser Component (Teaser-komponenten) delegerar bildåtergivning till [Image Component (Bildkomponent)](image.md). Därför är dialogrutan [redigera](image.md#edit-dialog för Image Component tillgänglig för innehållsförfattaren så att den kan manipulera teaserbilden.
 
 ## Designdialogruta {#design-dialog}
 
@@ -110,22 +110,22 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 
 ### Teaser Tab {#teaser-tab}
 
-![Teaser Component&#39;s design dialog](/help/assets/teaser-design.png)
+![Teaser Components designdialogruta](/help/assets/teaser-design.png)
 
 * **Call-to-actions**
-   * **Inaktivera anrop till åtgärder** - Dölj **Call-to-actions** alternativ för innehållsförfattare
-* **Element**
-   * **Dölj pretitle** - Döljer **Förtitel** alternativ för innehållsförfattare
-   * **Dölj titel** - Döljer **Titel** alternativ för innehållsförfattare
-      * När du har valt **Titeltyp** är dold
-   * **Dölj beskrivning** - Dölj **Beskrivning** alternativ för innehållsförfattare
+   * **Inaktivera Call-To-Actions** - Dölj alternativet **Call-To-Actions** för innehållsförfattare
+* **Elements**
+   * **Dölj pretitle** - Döljer alternativet **Pretitle** för innehållsförfattare
+   * **Dölj titel** - Döljer alternativet **Titel** för innehållsförfattare
+      * När **titeltypen** är markerad döljs den
+   * **Dölj beskrivning** - Dölj alternativet **Beskrivning** för innehållsförfattare
 * **Standardtiteltyp** - Definierar H-taggen som ska användas av teaser-titeln.
-* **Bildombud** - Informativ visning som anger vilken komponent Teaser delegerar bildhanteringen.
+* **Bilddelegat** - Informativ visning som anger till vilken komponent Teaser delegerar bildhantering.
 
 ### Fliken Format {#styles-tab}
 
-Teaser Component har stöd för AEM [Formatsystem](/help/get-started/authoring.md#component-styling).
+Teaser Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ## Adobe-klientdatalager {#data-layer}
 
-Teaser Component har stöd för [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)
+Teaser-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

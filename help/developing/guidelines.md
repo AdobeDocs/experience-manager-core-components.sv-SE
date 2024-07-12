@@ -5,16 +5,16 @@ role: Architect, Developer, Admin
 exl-id: e8c58fa5-c991-433c-8d38-575dacfc3433
 source-git-commit: ee18626280f74a51a799f16d6bf3f5b0be9cd6b9
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
 
 # Riktlinjer för komponenter {#component-guidelines}
 
-The [Kärnkomponenter](overview.md) följer moderna implementeringsmönster som är helt annorlunda än de grundläggande komponenterna.
+[Kärnkomponenterna](overview.md) följer moderna implementeringsmönster som skiljer sig mycket från grundkomponenterna.
 
-På den här sidan förklaras de här mönstren och när du ska använda dem för att skapa egna författarskapande komponenter. Första avsnittet [Allmänna komponentmönster](#general-component-patterns) gäller för alla typer av komponenter, medan andra avsnittet [Återanvändbara komponentmönster](#reusable-component-patterns) används för komponenter som är avsedda att återanvändas på webbplatser eller i projekt, som till exempel kärnkomponenterna.
+På den här sidan förklaras de här mönstren och när du ska använda dem för att skapa egna författarskapande komponenter. Det första avsnittet [Allmänna komponentmönster](#general-component-patterns) gäller alla typer av komponenter, medan det andra avsnittet [Återanvändbara komponentmönster](#reusable-component-patterns) gäller komponenter som är avsedda att återanvändas på platser eller i projekt, till exempel kärnkomponenter.
 
 ## Allmänna komponentmönster {#general-component-patterns}
 
@@ -26,11 +26,11 @@ Komponenter kan ha dialogrutor med en mängd olika alternativ. Detta bör utnytt
 
 Om en trådram eller design innehåller variationer av liknande element bör dessa variationer vanligtvis inte implementeras som olika komponenter, utan som den enda komponenten med alternativ att välja mellan variationerna.
 
-Om du vill gå ett steg längre och om komponenter återanvänds på olika webbplatser eller i olika projekt, se [Förkonfigurerbara funktioner](#pre-configurable-capabilities) -avsnitt.
+Om du vill gå ett steg längre och återanvända komponenter mellan webbplatser eller projekt läser du avsnittet [Förkonfigurerbara funktioner](#pre-configurable-capabilities).
 
 ### Separation av oro {#separation-of-concerns}
 
-Att hålla logiken (eller modellen) för en komponent åtskild från markeringsmallen (eller vyn) är vanligtvis en bra vana. Det finns flera sätt att uppnå det, men det rekommenderas att använda [Sling Models](https://sling.apache.org/documentation/bundles/models.html) för logiken och [HTML mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) (HTML) för markeringen, precis som Core Components också.
+Att hålla logiken (eller modellen) för en komponent åtskild från markeringsmallen (eller vyn) är vanligtvis en bra vana. Det finns flera sätt att uppnå det, men det rekommenderas att du använder [segmentmodeller](https://sling.apache.org/documentation/bundles/models.html) för logiken och [HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) (HTL) för koden, precis som med kärnkomponenterna.
 
 Sling Models är en uppsättning Java-anteckningar som gör det enkelt att komma åt nödvändiga variabler från POJO:er och därför erbjuder ett enkelt, kraftfullt och effektivt sätt att implementera Java-logik för komponenter.
 
@@ -42,23 +42,23 @@ Riktlinjerna i det här avsnittet kan även användas för alla typer av kompone
 
 ### Förkonfigurerbara funktioner {#pre-configurable-capabilities}
 
-Förutom redigeringsdialogrutan som används av sidförfattare kan komponenterna även ha en designdialogruta där mallförfattare kan förkonfigurera dem. The [Mallredigerare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) I kan du konfigurera alla dessa förkonfigurationer, som kallas för &quot;Principer&quot;.
+Förutom redigeringsdialogrutan som används av sidförfattare kan komponenterna även ha en designdialogruta där mallförfattare kan förkonfigurera dem. Med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) kan du konfigurera alla dessa förkonfigurationer, som kallas för principer.
 
 För att göra komponenterna så återanvändbara som möjligt bör de ha meningsfulla alternativ för förkonfiguration. Detta gör att du kan aktivera eller inaktivera funktioner i komponenterna för att passa de specifika behoven på olika platser.
 
 ### Proxykomponentmönster {#proxy-component-pattern}
 
-Varje innehållsresurs har en `sling:resourceType` som refererar till komponenten för att återge den, är det oftast bra att ha dessa egenskaper som pekar på platsspecifika komponenter, i stället för att peka på komponenter som delas av flera platser. Detta ger större flexibilitet och undviker innehållsomfaktorisering om en webbplats behöver ett annat beteende för en komponent, eftersom den här anpassningen då kan göras på den platsspecifika komponenten och inte påverkar de andra platserna.
+Eftersom varje innehållsresurs har en `sling:resourceType`-egenskap som refererar till komponenten för att återge den, är det oftast bra att låta dessa egenskaper peka på platsspecifika komponenter, i stället för att peka på komponenter som delas av flera platser. Detta ger större flexibilitet och undviker innehållsomfaktorisering om en webbplats behöver ett annat beteende för en komponent, eftersom den här anpassningen då kan göras på den platsspecifika komponenten och inte påverkar de andra platserna.
 
-För att de projektspecifika komponenterna inte ska duplicera någon kod bör de referera till den delade överordnade komponenten med `sling:resourceSuperType` -egenskap. Dessa projektspecifika komponenter som oftast bara refererar till överordnade komponenter kallas&quot;proxykomponenter&quot;. Proxykomponenter kan vara helt tomma om de helt ärver funktionaliteten, eller så kan de definiera om vissa aspekter av komponenten.
+Om de projektspecifika komponenterna inte ska duplicera någon kod bör de referera till den delade överordnade komponenten med egenskapen `sling:resourceSuperType`. Dessa projektspecifika komponenter som oftast bara refererar till överordnade komponenter kallas&quot;proxykomponenter&quot;. Proxykomponenter kan vara helt tomma om de helt ärver funktionaliteten, eller så kan de definiera om vissa aspekter av komponenten.
 
 >[!TIP]
 >
->Se [Använda kärnkomponenter](/help/get-started/using.md#create-proxy-components) om du vill ha mer information om hur du skapar proxykomponenter.
+>Mer information om hur du skapar proxykomponenter finns i [Använda kärnkomponenter](/help/get-started/using.md#create-proxy-components).
 
 ### Komponentversionshantering {#component-versioning}
 
-Komponenterna bör vara helt kompatibla över tid, men ibland krävs ändringar som inte kan hållas kompatibla. En lösning på de motsatta behoven är att införa komponentversionshantering genom att lägga till en siffra i resurstypsökvägen och i de fullständiga Java-klassnamnen för implementeringarna. Versionsnumret representerar en huvudversion som definieras av [riktlinjer för semantisk versionshantering](https://semver.org/), som endast ökas för ändringar som inte är bakåtkompatibla.
+Komponenterna bör vara helt kompatibla över tid, men ibland krävs ändringar som inte kan hållas kompatibla. En lösning på de motsatta behoven är att införa komponentversionshantering genom att lägga till en siffra i resurstypsökvägen och i de fullständiga Java-klassnamnen för implementeringarna. Det här versionsnumret representerar en huvudversion enligt definitionen i [riktlinjerna för semantisk versionshantering](https://semver.org/), som endast ökas för ändringar som inte är bakåtkompatibla.
 
 Inkompatibla ändringar i följande aspekter av komponenterna resulterar i en ny version av dem:
 
@@ -68,42 +68,42 @@ Inkompatibla ändringar i följande aspekter av komponenterna resulterar i en ny
 * JSON-representation
 * Dialogrutor
 
-Mer information finns i [Versionsprinciper](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-Policies) -dokument i GitHub.
+Mer information finns i dokumentet [Versionsprinciper](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-Policies) i GitHub.
 
-Komponentversionshantering skapar en typ av kontrakt som är viktig för uppgraderingar eftersom den klargör när något behöver ändras. Se även avsnittet [Uppgraderingskompatibilitet för anpassningar](customizing.md#upgrade-compatibility-of-customizations), som förklarar vad olika typer av anpassningar kräver för en uppgradering.
+Komponentversionshantering skapar en typ av kontrakt som är viktig för uppgraderingar eftersom den klargör när något behöver ändras. Se även avsnittet [Kompatibilitet för uppgradering av anpassningar](customizing.md#upgrade-compatibility-of-customizations), där det förklaras vilka överväganden olika former av anpassningar kräver för en uppgradering.
 
-För att undvika krånglig innehållsmigrering är det viktigt att aldrig peka direkt på versionskomponenter från innehållsresurser. Som tumregel är `sling:resourceType` av innehållet får aldrig ha något versionsnummer, eller om du uppgraderar komponenter måste innehållet också ändras. Det bästa sättet att undvika detta är att följa [Proxykomponentmönster](#proxy-component-pattern) som beskrivs ovan.
+För att undvika krånglig innehållsmigrering är det viktigt att aldrig peka direkt på versionskomponenter från innehållsresurser. Som tumregel får en/ett `sling:resourceType` av innehållet aldrig ha något versionsnummer, annars måste innehållet omfaktoriseras om för att kunna uppgradera komponenter. Det bästa sättet att undvika detta är att följa [Proxykomponentmönstret](#proxy-component-pattern) som beskrivs ovan.
 
 ### Modellgränssnitt {#model-interfaces}
 
-Det här mönstret handlar om HTML:er `data-sly-use` -instruktion som pekar på ett Java-gränssnitt, medan implementeringen av Sling-modellen också registrerar sig själv för komponentens resurstyp.
+Det här mönstret handlar om HTML:s `data-sly-use`-instruktion att peka på ett Java-gränssnitt, medan implementeringen av Sling-modellen också registrerar sig för komponentens resurstyp.
 
-I kombination med [Proxykomponentmönster](#proxy-component-pattern) som beskrivs ovan, den här typen av dubbelbindningserbjudanden som följer efter fina tilläggspunkter:
+I kombination med det [Proxy-komponentmönster](#proxy-component-pattern) som beskrivs ovan erbjuder den här typen av dubbelbindning följande fina tilläggspunkter:
 
 1. En webbplats kan definiera om implementeringen av en Sling-modell genom att registrera den i proxykomponentens resurstyp, utan att behöva tänka på HTML-filen, som fortfarande kan peka på gränssnittet.
 1. En webbplats kan definiera om HTML-koden för en komponent, utan att behöva tänka på vilken implementeringslogik den ska peka på.
 
 ## Sammanställ allt {#putting-it-all-together}
 
-Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i exemplet med kärnkomponenten Title. Det visar hur en platsspecifik proxykomponent kan lösa komponentversionshantering, så att innehållsresursen inte innehåller något versionsnummer. Sedan visas hur komponenten `title.html` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) filen använder till modellgränssnittet, medan implementeringen binder till den specifika versionen av komponenten via [Sling Model](https://sling.apache.org/documentation/bundles/models.html) anteckningar.
+Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i exemplet med kärnkomponenten Title. Det visar hur en platsspecifik proxykomponent kan lösa komponentversionshantering, så att innehållsresursen inte innehåller något versionsnummer. Sedan visas hur komponentens `title.html` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) -fil använder i modellgränssnittet, medan implementeringen binder till den specifika versionen av komponenten via [Sling Model](https://sling.apache.org/documentation/bundles/models.html) -anteckningar.
 
-![Översikt över resursbindning](/help/assets/chlimage_1-32.png)
+![Resursbindningsöversikt](/help/assets/chlimage_1-32.png)
 
-Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur den associerade [mallar och policyer](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html) refereras.
+Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur de associerade [mallarna och profilerna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html) refereras.
 
-The `cq:allowedTemplates` anger vilka mallar som kan användas för en plats, och `cq:template` anger för varje sida vad den associerade mallen är. Varje mall består av följande tre delar:
+Egenskapen `cq:allowedTemplates` anger vilka mallar som kan användas för en plats och `cq:template` anger för varje sida vilken mall som är associerad. Varje mall består av följande tre delar:
 
-* **struktur** - Innehåller resurser som kommer att tvingas på varje sida att finnas och som sidförfattaren inte kommer att kunna ta bort, till exempel sidhuvuds- och sidfotskomponenterna.
-* **initial** - Innehåller det ursprungliga innehållet som kommer att dupliceras till sidan när den skapas.
-* **policyer** - Innehåller för varje komponent mappningen till en princip, som är komponentens förkonfiguration. Med den här mappningen kan profiler återanvändas i olika mallar och därför hanteras centralt.
+* **struktur** - Innehåller resurser som kommer att tvingas att finnas på varje sida och som sidförfattaren inte kommer att kunna ta bort, till exempel sidhuvuds- och sidfotskomponenterna.
+* **initial** - Innehåller det ursprungliga innehåll som ska dupliceras till sidan när den skapas.
+* **profiler** - Innehåller för varje komponent mappningen till en princip, som är komponentens förkonfiguration. Med den här mappningen kan profiler återanvändas i olika mallar och därför hanteras centralt.
 
 ![Mallar och principöversikt](/help/assets/screen_shot_2018-12-07at093102.png)
 
-## AEM Project Archetype {#aem-project-archetype}
+## AEM Project Archettype {#aem-project-archetype}
 
-[AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på anpassade HTML-komponenter med SlingModels för att logiken och implementeringen av Core Components med det rekommenderade proxymönstret ska fungera.
+[AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på anpassade HTML-komponenter med SlingModels för logik och korrekt implementering av Core Components med det rekommenderade proxymönstret.
 
 **Läs nästa:**
 
 * [Använda kärnkomponenter](/help/get-started/using.md) - Kom igång med Core Components i ditt eget projekt.
-* [Anpassa kärnkomponenter](customizing.md) - för att lära sig att utforma och anpassa kärnkomponenterna.
+* [Anpassa kärnkomponenter](customizing.md) - för att lära dig hur du formaterar och anpassar kärnkomponenterna.

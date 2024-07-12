@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 exl-id: 4aa192f6-8314-40e7-8732-c6626d647986
 source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
 workflow-type: tm+mt
-source-wordcount: '2291'
+source-wordcount: '2261'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ E-posttextkomponenten är en textredigerings- och dispositionskomponent med funk
 
 E-posttextkomponenten är en robust textredigerare som gör det enkelt att redigera text i en förenklad, textbunden redigerare och i ett helskärmsformat.
 
-* The [redigeringsdialogruta](#edit-dialog) funktioner för infogad redigering med begränsade alternativ med full funktionalitet i redigeringsdialogrutan i helskärmsläge.
-* Använda [Designdialog.](#design-dialog) textformateringsalternativ som rubriker, specialtecken och styckeformat kan konfigureras för mallen för innehållsförfattaren.
+* Dialogrutan [Redigera](#edit-dialog) innehåller redigeringsfunktioner i rad med begränsade alternativ med full funktionalitet i redigeringsdialogrutan i helskärmsläge.
+* Med hjälp av designdialogrutan [kan ](#design-dialog)-textformateringsalternativ som rubriker, specialtecken och styckeformat konfigureras för mallen för innehållsförfattaren.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -32,23 +32,23 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM versione
 |---|---|---|
 | v1 | Kompatibel | - |
 
-Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [E-postkärnkomponentversioner.](/help/email/versions.md)
+Mer information om Core Component-versioner och -versioner finns i dokumentet [Email Core Components Versions.](/help/email/versions.md)
 
 ### Teknisk information {#technical-details}
 
 Den senaste tekniska dokumentationen om e-posttextkomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_email_text_v1).
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## E-posttextkomponenten och RTF-redigeraren {#the-text-component-and-the-rich-text-editor}
 
-Komponenten för e-posttext använder AEM RTF-redigeraren. RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur RTE kan konfigureras finns i artiklarna [Konfigurera RTF-redigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för RTF-redigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Komponenten för e-posttext använder AEM RTF-redigeraren. RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 Resten av det här dokumentet demonstrerar standardkonfigurationen för e-posttextkomponenten med den färdiga RTE-konfigurationen.
 
 >[!NOTE]
 >
->Endast alternativ aktiverade av [Gränssnittskonfigurationer för RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) finns i E-posttextkomponenten.
+>Endast alternativ som har aktiverats av [gränssnittskonfigurationer för RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i e-posttextkomponenten.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -84,13 +84,13 @@ Används för att tillämpa understruken formatering på markerad text eller und
 
 #### Nedsänkt
 
-![Nedsänkt, ikon](/help/assets/text-subscript.png)
+![Ikon för nedsänkt text](/help/assets/text-subscript.png)
 
 Används för att formatera markerad text eller text som skrivs efter markören som nedsänkt.
 
 #### Upphöjd
 
-![Upphöjd, ikon](/help/assets/text-superscript.png)
+![Upphöjd ikon](/help/assets/text-superscript.png)
 
 Används för att formatera markerad text eller text som skrivs efter markören som upphöjd text.
 
@@ -102,7 +102,7 @@ Klistrar in kopierad text som oformaterad text utan formatering.
 
 När du väljer det här alternativet öppnas ett fönster där texten kan klistras in som oformaterad text utan formatering som en förhandsvisning innan den infogas i texten. Acceptera genom att trycka eller klicka på bockmarkeringen, avbryt genom att trycka eller klicka på x.
 
-![Klistra in som textexempel](/help/assets/text-paste-text-example.png)
+![Exempel på inklistring som text](/help/assets/text-paste-text-example.png)
 
 #### Klistra in från Word
 
@@ -110,20 +110,20 @@ När du väljer det här alternativet öppnas ett fönster där texten kan klist
 
 När du väljer det här alternativet öppnas ett fönster där texten kan klistras in med bibehållen formatering som en förhandsvisning innan den infogas i texten. Acceptera genom att trycka eller klicka på bockmarkeringen, avbryt genom att trycka eller klicka på x.
 
-![Klistra in från Word-exempel](/help/assets/text-paste-word-example.png)
+![Exempel på Klistra in från Word](/help/assets/text-paste-word-example.png)
 
 #### Hyperlänk
 
-![Ikon för hyperlänk](/help/assets/text-hyperlink.png)
+![Hyperlänkikon](/help/assets/text-hyperlink.png)
 
 Använd det här alternativet om du vill konvertera den markerade texten till en hyperlänk eller ändra en redan definierad länk. Med det här alternativet öppnas ett fönster med ytterligare alternativ för att ange länken.
 
 ![Exempel på hyperlänk](/help/assets/text-hyperlink-example.png)
 
 * Ange banan
-   * Använd **Öppna markering** för att välja en bana i AEM
+   * Använd dialogrutan **Öppna markering** för att välja en bana i AEM
    * Om länken inte finns i AEM anger du den absoluta URL:en
-      * Icke-absoluta sökvägar tolkas som relativa AEM
+      * Icke-absoluta sökvägar tolkas som relativa till AEM
 * Ange alternativ beskrivande text för länken
 * Välj länkbeteende
    * Mål
@@ -138,7 +138,7 @@ Tryck eller klicka på bockmarkeringen för att använda länken eller på kryss
 
 ![Ikonen Bryt länk](/help/assets/text-unlink.png)
 
-Använd det här alternativet om du vill ta bort en länk som redan används för den markerade texten. Det här alternativet är bara aktivt när en länk redan är markerad.
+Använd det här alternativet om du vill ta bort en länk som redan har tillämpats på den markerade texten. Det här alternativet är bara aktivt när en länk redan är markerad.
 
 #### Ankarpunkt {#anchor}
 
@@ -154,11 +154,11 @@ Använd det här alternativet om du vill söka efter förekomsten av en angiven 
 
 ![Sök exempel](/help/assets/text-find-example.png)
 
-Ange texten som du vill söka efter och tryck eller klicka på **Sök** för att påbörja sökningen. Tryck eller klicka på x för att avbryta.
-Om du vill göra en exakt matchning utifrån skiftläget väljer du alternativet **Matcha gemener/VERSALER** innan sökningen påbörjas.
-Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Tryck eller klicka på **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst.
+Ange den text som du vill söka efter och tryck eller klicka på **Sök** för att påbörja sökningen. Tryck eller klicka på x för att avbryta.
+Om du vill göra en exakt matchning utifrån skiftläget, markerar du alternativet **Matcha skiftläge** innan du startar sökningen.
+Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Tryck eller klicka på knappen **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst.
 
-![Sök efter exempel](/help/assets/text-find-example-found.png)
+![Exempel på sökning hittades](/help/assets/text-find-example-found.png)
 
 Om inga fler förekomster hittas visas ett meddelande och sökningen startas om från textens början.
 
@@ -174,11 +174,11 @@ Använd det här alternativet om du vill söka efter förekomster av en angiven 
 
 Ange den text som du vill söka efter samt den text som den ska ersättas med.
 
-* Tryck eller klicka **Sök** för att påbörja sökningen. Klicka eller tryck på x för att avbryta.
-* Om du vill göra en exakt matchning utifrån skiftläget väljer du alternativet **Matcha gemener/VERSALER** innan sökningen påbörjas.
+* Tryck eller klicka på **Sök** för att påbörja sökningen. Klicka eller tryck på x för att avbryta.
+* Om du vill göra en exakt matchning utifrån skiftläget, markerar du alternativet **Matcha skiftläge** innan du startar sökningen.
 * Välj **Ersätt alla** om du vill ersätta alla förekomster av texten samtidigt.
 
-Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Klicka på **Sök** igen i den nedtonade dialogrutan för att söka efter nästa förekomst eller markera **Ersätt** om du vill ersätta den markerade, matchade texten. The **Ersätt** är bara aktiv när en träff har gjorts.
+Om en matchning hittas markeras den och sökdialogrutan är nedtonad. Klicka på knappen **Sök** igen i den nedtonade dialogrutan om du vill söka efter nästa förekomst, eller välj knappen **Ersätt** om du vill ersätta den markerade, matchade texten. Knappen **Ersätt** är bara aktiv när en matchning har gjorts.
 
 Dialogrutan Sök och ersätt blir genomskinlig när du klickar på Sök och blir ogenomskinlig när du klickar på Ersätt. Detta gör att författaren kan granska texten som författaren ska ersätta.
 
@@ -200,7 +200,7 @@ Används för att ångra en redigering som ångrats med ikonen Ångra.
 
 #### Vänsterjustera text
 
-![Vänsterjusteringsikon](/help/assets/text-left.png)
+![Ikonen Vänsterjustera](/help/assets/text-left.png)
 
 Används för att justera texten mot vänstermarginalen.
 
@@ -212,17 +212,17 @@ Används för att centrera texten.
 
 #### Högerjustera text
 
-![Högerjusteringsikon](/help/assets/text-right.png)
+![Högerjustera ikon](/help/assets/text-right.png)
 
 Används för att justera texten mot högermarginalen.
 
 #### Punkt
 
-![Punktlikon](/help/assets/text-bullet.png)
+![Bullet icon](/help/assets/text-bullet.png)
 
 Används för att formatera den markerade texten som en punktlista eller börja infoga en punktlista efter markören.
 
-Avsluta en punktlista genom att trycka eller klicka på **Punkt** igen eller ange två vagnreturer.
+Om du vill avsluta en punktlista trycker eller klickar du på knappen **Bullet** igen eller anger två vagnreturer.
 
 #### Numrerad
 
@@ -230,7 +230,7 @@ Avsluta en punktlista genom att trycka eller klicka på **Punkt** igen eller ang
 
 Används för att formatera den markerade texten som en numrerad lista eller börja infoga en numrerad lista efter markören.
 
-Avsluta en numrerad lista genom att trycka eller klicka på **Numrerad** igen eller ange två vagnreturer.
+Om du vill avsluta en numrerad lista trycker eller klickar du på knappen **Numrerad** igen eller anger två radmatningar.
 
 #### Minska indrag
 
@@ -252,21 +252,21 @@ Används för att öka indragsnivån för den markerade texten eller texten som 
 
 Används för att infoga en tabell i texten. Om du väljer det här alternativet öppnas ett fönster där du kan ange tabellinformation.
 
-![Tabellexempel](/help/assets/text-table-example.png)
+![Exempel på tabell](/help/assets/text-table-example.png)
 
 * **Kolumner** - Antal kolumner i tabellen (obligatoriskt)
-* **Rader** - Antal rader i tabellen (obligatoriskt)
+* **Rader** - antalet rader i tabellen (obligatoriskt)
 * **Bredd** - Tabellens bredd
 * **Höjd** - tabellens höjd
 * **Cellutfyllnad** - Utrymmet runt cellinnehållet
-* **Cellmellanrum** - Avståndet mellan celler
-* **Kant** - Bredden på tabellens kantlinjer
+* **Cellmellanrum** - Mellanrummet mellan celler
+* **Kant** - vikten på tabellens kantlinjer
    * Om för tabellrubriken:
       * Den första raden ska användas
       * Den första kolumnen ska användas
       * Den första raden och den första kolumnen ska användas
       * Eller så får ingen rubrik användas.
-* **Bildtext** - Tabellens beskrivning
+* **Beskrivning** - Tabellens beskrivning
 
 #### Bild
 
@@ -280,7 +280,7 @@ Används för att justera en infogad bild.
 
 Används för att kontrollera stavningen i textinnehållet. Eventuella felstavningar stryks under med brutna, röda linjer.
 
-Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program för RTF-redigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 #### Specialtecken {#special-characters}
 
@@ -290,25 +290,25 @@ Används för att infoga specialtecken i texten. Om du väljer det här alternat
 
 ![Exempel på specialtecken](/help/assets/text-special-characters-example.png)
 
-Tryck eller klicka på det önskade tecknet för att infoga det i texten efter markören. Flera tecken kan infogas. Tryck eller klicka på x för att stänga markeringsfönstret.
+Tryck eller klicka på det önskade tecknet för att infoga det i texten efter markören. Det går att infoga flera tecken. Tryck eller klicka på x för att stänga markeringsfönstret.
 
-#### Redigera källa
+#### Source Edit
 
-![Ikon för källredigering](/help/assets/text-source.png)
+![Source redigeringsikon](/help/assets/text-source.png)
 
 Används för att visa och ändra textens HTML-källa.
 
-Tryck eller klicka på **Redigera källa** om du vill ändra textens innehåll från den formaterade vyn så att HTML visas i Raw-format. I det här läget är alla andra formateringsalternativ inaktiverade. Tryck eller klicka på **Redigera källa** om du vill återgå till den formaterade vyn.
+Tryck eller klicka på ikonen **Source Edit** om du vill ändra textens innehåll från den formaterade vyn så att du kan visa HTML i Raw-format. I det här läget är alla andra formateringsalternativ inaktiverade. Tryck eller klicka på ikonen **Source Edit** igen för att återgå till den formaterade vyn.
 
 >[!CAUTION]
 >
->Som alltid när det gäller tillgång till obehandlad HTML måste försiktighet iakttas när **Redigera källa** option!
+>Som alltid när du har åtkomst till Raw-HTML måste du vara försiktig när du använder alternativet **Source Edit**!
 >
->HTML via **Redigera källa** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. HTML med felaktigt format angavs **Redigera källa** kan bryta sidans mall vilket resulterar i oväntad formatering eller återgivning av den resulterande sidan som inte kan användas.
+>HTML som anges via **Source Edit** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felformaterad HTML som angetts i **Source Edit** kan emellertid bryta sidans mall, vilket resulterar i oväntad formatering eller oanvändbar återgivning av den resulterande sidan.
 
 >[!NOTE]
 >
->På grund av att HTML gick via **Redigera källa** genomsöks efter XSS-risker och eventuella skript och tar automatiskt bort dem som hittas. Det faktiska innehållet som behålls kan variera från det som angetts i **Redigera källa**. Därför bör du spara ändringar som gjorts med **Redigera källa** måste du först avsluta **Redigera källa** om du vill visa texten i den normala redigeraren innan du sparar.
+>Eftersom HTML som anges via **Source Edit** genomsöks efter XSS-risker och eventuella skript och automatiskt tar bort dem som hittas, kan det faktiska innehållet som behålls variera från det som angavs i **Source Edit**. Om du vill spara ändringar som gjorts med **Source Edit** måste du därför först avsluta **Source Edit** och visa texten i den vanliga redigeraren innan du sparar.
 
 #### Styckeformat
 
@@ -320,9 +320,9 @@ Används för att tillämpa styckeformatering på den markerade texten eller på
 
 #### Välj Adobe Campaign-variabel
 
-![Välj Adobe Campaign Variable-ikon](/help/email/assets/select-adobe-campaign-variable-icon.png)
+![Välj Adobe Campaign-variabelikon](/help/email/assets/select-adobe-campaign-variable-icon.png)
 
-Öppnar [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) för att infoga dynamiskt innehåll från Adobe Campaign.
+Öppnar dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) där du kan infoga dynamiskt innehåll från Adobe Campaign.
 
 ### Textbunden redigering {#in-line-editing}
 
@@ -330,7 +330,7 @@ Textkomponenten kan även redigeras online. Om du vill redigera textbunden marke
 
 ![Välj e-posttextkomponent](/help/email/assets/email-text-select-component.png)
 
-Tryck eller klicka sedan på **Redigera** -ikonen i verktygsfältet som visas över komponenten. Verktygsfältet ändras och visar begränsade textformateringsalternativ (inklusive åtkomst till **Välj Adobe Campaign-variabel** och du kan redigera texten textbundet.
+Tryck eller klicka sedan på ikonen **Redigera** i verktygsfältet som visas över komponenten. Verktygsfältet ändras och visar begränsade textformateringsalternativ (inklusive åtkomst till alternativet **Välj Adobe Campaign-variabel** ), och du kan redigera texten textbundet.
 
 ![Exempel på infogad redigering](/help/email/assets/email-text-edit-inline-example.png)
 
@@ -352,7 +352,7 @@ I designdialogrutan kan mallskaparen definiera vilka textformateringsalternativ 
 
 ### Fliken Plugins {#plugins-tab}
 
-The **Plugins** -fliken används för att aktivera och inaktivera olika textformateringsalternativ som är tillgängliga för innehållsförfattarna.
+Fliken **Plugins** används för att aktivera och inaktivera olika textformateringsalternativ som är tillgängliga för innehållsförfattarna.
 
 ### Funktioner {#features}
 
@@ -370,7 +370,7 @@ Följande funktioner kan aktiveras eller inaktiveras för komponenten.
 
 ### Formatering {#formatting}
 
-![Formatering av designdialogrutor](/help/assets/text-design-formatting.png)
+![Formatering i designdialogrutan](/help/assets/text-design-formatting.png)
 
 Följande formateringsalternativ kan aktiveras eller inaktiveras för komponenten.
 
@@ -379,7 +379,7 @@ Följande formateringsalternativ kan aktiveras eller inaktiveras för komponente
 * Justering (vänster, höger, centrerad)
 * Fet, kursiv, understruken
 * Länkning (och bryta länkar)
-* Sub/superscript
+* Under/upphöjd
 
 ### Styckeformat {#paragraph-styles}
 
@@ -387,22 +387,22 @@ Följande formateringsalternativ kan aktiveras eller inaktiveras för komponente
 
 Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alternativet är aktiverat kan du definiera vilka format som tillåts.
 
-* Tryck eller klicka på **Lägg till** om du vill infoga ett nytt format.
+* Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt format.
 * Ange koden för formatet och en beskrivning som ska visas i redigeringsdialogrutan.
-* Om du vill ta bort en stil trycker eller klickar du på **Ta bort** -knappen.
+* Om du vill ta bort en stil trycker du på eller klickar på knappen **Ta bort** .
 * Om du vill ändra ordningen på formaten trycker eller klickar du och drar i handtagen.
 
 ### Specialtecken {#configuring-special-characters}
 
-![Specialtecken för designdialogrutor](/help/assets/text-design-special-characters.png)
+![Specialtecken i designdialogrutan](/help/assets/text-design-special-characters.png)
 
-Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för komponenten. När du aktiverar det här alternativet kan du definiera tillåtna tecken.
+Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för komponenten. När det här alternativet är aktiverat kan du definiera tillåtna tecken.
 
-* Tryck eller klicka på **Lägg till** om du vill infoga ett nytt tecken.
+* Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt tecken.
 * Ange HTML-koden för tecknet och en beskrivning som ska visas i redigeringsdialogrutan.
-* Om du vill ta bort ett tecken trycker eller klickar du på **Ta bort** -knappen.
+* Om du vill ta bort ett tecken trycker du på eller klickar på knappen **Ta bort** .
 * Om du vill ändra ordningen på tecknen trycker du eller klickar och drar i handtagen.
 
 ## Fliken Format {#styles-tab}
 
-E-posttextkomponenten stöder AEM [formatsystem](/help/get-started/authoring.md#component-styling).
+Komponenten för e-posttext har stöd för AEM [style system](/help/get-started/authoring.md#component-styling).

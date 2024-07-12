@@ -148,12 +148,12 @@ ht-degree: 5%
    + [Inkluderar klientbibliotek](/help/developing/including-clientlibs.md)
    + [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md)
    + [Webboptimerad bildleverans](/help/developing/web-optimized-image-delivery.md)
-   + [Stöd för fjärrresurser](/help/developing/remote-assets.md)
-   + Adobe-klientdatalager {#data-layer}
+   + [Fjärrsupport för Assets](/help/developing/remote-assets.md)
+   + Adobe-klientdatalagret {#data-layer}
       + [Översikt över datalagret](/help/developing/data-layer/overview.md)
       + [Integrering med datalagret](/help/developing/data-layer/integrations.md)
       + [Utöka datalagret](/help/developing/data-layer/extending.md)
-   + AEM Project Archettype {#archetype}
+   + AEM Project Archetype {#archetype}
       + [Arketype - översikt](/help/developing/archetype/overview.md)
       + [Använda Arketype](/help/developing/archetype/using.md)
       + [Front-End-utveckling](/help/developing/archetype/front-end.md)

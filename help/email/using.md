@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 exl-id: 0e79ca8f-eb0a-4519-b1e8-a9d3b0b99987
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '610'
 ht-degree: 1%
 
 ---
@@ -17,17 +17,17 @@ Lär dig mer om grundläggande installation, konfiguration och användning av e-
 
 ## Installera e-postkärnkomponenterna {#installation}
 
-E-postkärnkomponenterna kan användas med AEM 6.5. Se [Krav-avsnittet i introduktionsdokumentet för e-postkomponenter](introduction.md#requirements) för mer information.
+E-postkärnkomponenterna kan användas med AEM 6.5. Mer information finns i avsnittet [Krav i introduktionsdokumentet om kärnkomponenter för e-post](introduction.md#requirements).
 
 ### Installera kärnkomponenter {#core-components}
 
 E-postkärnkomponenterna bygger på AEM kärnkomponenter. Eftersom kärnkomponenterna inte levereras med AEM 6.5 måste du först installera de AEM kärnkomponenterna innan du installerar e-postkärnkomponenterna.
 
-Se avsnittet [Hämta och installera](/help/get-started/using.md#download-and-install) i dokumentet Using Core Components för mer information om hur du installerar Core Components.
+Mer information om hur du installerar kärnkomponenterna finns i avsnittet [Hämta och installera](/help/get-started/using.md#download-and-install) i dokumentet Använda kärnkomponenter.
 
 ### Installera e-postkärnkomponenter {#email-core-components}
 
-När kärnkomponenterna har installerats i din instans måste du även installera e-postkärnkomponenterna. E-postkärnkomponenterna är ännu inte en del av den AEM projektarkitekturen, så du måste lägga till dem manuellt i projektet. Följ dokumentationen i [E-postkärnkomponenterna GitHub wiki som ska installeras.](https://github.com/adobe/aem-core-email-components/wiki/Adding-to-Existing-Project)
+När kärnkomponenterna har installerats i din instans måste du även installera e-postkärnkomponenterna. E-postkärnkomponenterna är ännu inte en del av den AEM projektarkitekturen, så du måste lägga till dem manuellt i projektet. Följ dokumentationen i [e-postkärnkomponenterna GitHub wiki för att installera.](https://github.com/adobe/aem-core-email-components/wiki/Adding-to-Existing-Project)
 
 Du kan följa samma anvisningar om du vill anpassa ett befintligt projekt till att använda e-postkärnkomponenterna.
 
@@ -42,7 +42,7 @@ Du måste konfigurera integreringen mellan AEM och Adobe Campaign för att de tv
 * Konfigurera Adobe Campaign-integreringen
    * Adobe Campaign Classic: [Integrera med Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html)
    * Adobe Campaign Standard: [Integrera med Adobe Campaign Standard](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignstandard.html)
-* [Länka integrationskonfigurationen för Adobe Campaign](/help/email/components/page.md#cloud-services-tab) till innehållssidan där du ska använda e-postkärnkomponenterna
+* [Länka integrationskonfigurationen för Adobe Campaign](/help/email/components/page.md#cloud-services-tab) till innehållssidan där du ska använda kärnkomponenterna för e-post
 
 ### Lägg till AEM resurstypfilter för e-postkomponenter {#aem-resource-filter}
 
@@ -50,18 +50,18 @@ För att Adobe Campaign ska kunna återge e-postmeddelanden baserat på e-postk�
 
 1. Logga in på Adobe Campaign som administratör med klientkonsolen.
 
-1. Välj **verktyg** -> **Utforskaren** på menyraden.
+1. Välj **Verktyg** -> **Utforskaren** på menyraden.
 
-1. I Utforskaren går du till **Administration** -> **Plattform** -> **Alternativ** nod.
+1. Gå till noden **Administration** -> **Plattform** -> **Alternativ** i Utforskaren.
 
-1. Välj `AEMResourceTypeFilter` i listan.
+1. Välj alternativet `AEMResourceTypeFilter` i listan.
 
-1. I **Värde** fält, lägga till `core/email/components/page/<v1>/page` om den inte redan finns.
+1. Lägg till `core/email/components/page/<v1>/page` i fältet **Värde** om det inte redan finns.
 
-   * Ersätt `<v1>` med den aktuella versionen av e-postkärnkomponenterna [Sidkomponent](/help/email/components/page.md) som `v1`.
-   * Observera att värdena i **Värden** fältet måste vara kommaavgränsat.
+   * Ersätt `<v1>` med den aktuella versionen av E-postkärnkomponenterna [Sidkomponent](/help/email/components/page.md), till exempel `v1`.
+   * Observera att värdena i fältet **Värden** måste vara kommaavgränsade.
 
-1. Klicka **Spara**.
+1. Klicka på **Spara**.
 
 ## Använda e-postkärnkomponenter {#using-components}
 
@@ -70,9 +70,9 @@ När e-postkomponenterna har installerats och integreringen med Adobe Campaign h
 | Steg | Beskrivning | Lösning |
 |---|---|---|
 | 1 | Författare skapar en kostnadsfri hierarkisk struktur med mappar och e-postinnehåll som sidor. | AEM |
-| 2 | Använda [mallredigerare,](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) författare konfigurerar ett e-posthuvud och/eller en sidfot som ska delas mellan alla e-postsidor som skapas från den här sidmallen. | AEM |
-| 3 | Författare använder [sidredigerare](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html) om du vill skapa e-postinnehåll med textredigeraren där de kan välja Adobe Campaign-variabler och använda Segmenteringskomponenten för att visa villkorsstyrd information om mottagaren uppfyller vissa villkor. | AEM |
-| 4 | När e-postinnehållet är klart, [ett arbetsflöde körs](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/workflows/overview.html) för att godkänna innehållet och skicka till Campaign. | AEM |
+| 2 | Med mallredigeraren [konfigurerar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) författare ett e-posthuvud och/eller en sidfot som ska delas mellan alla e-postsidor som skapas från den här sidmallen. | AEM |
+| 3 | Författare använder [sidredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html) för att skapa e-postinnehåll med textredigeraren där de kan välja Adobe Campaign-variabler och använda Segmenteringskomponenten för att visa villkorsstyrd information om mottagaren uppfyller vissa villkor. | AEM |
+| 4 | När e-postinnehållet är klart körs [ett arbetsflöde](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/workflows/overview.html) för att godkänna innehållet och skicka det till Campaign. | AEM |
 | 5 | En leverans skapas som definierar en lista med mottagare. | Campaign |
 | 6 | Innehållet som skapas i AEM väljs som innehåll i leveransen. | Campaign |
 | 7 | Innehållet skickas till mottagarna och Adobe Campaign-variablerna ersätts med mottagarnas personliga information. | Campaign |

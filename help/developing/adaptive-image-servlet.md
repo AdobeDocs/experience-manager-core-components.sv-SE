@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 exl-id: d9199d51-6f09-4000-9525-afc30474437e
 source-git-commit: 785aa82930e3bcf6ef16d7a1cdc614d230e8daa8
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '397'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Lär dig hur Core Components använder Adaptive Image Servlet för bildleverans 
 Image Core Component kan använda två metoder för att leverera bilder.
 
 * Standardinställningen är Adaptiv bildserver.
-* [Webboptimerad bildleverans](/help/developing/web-optimized-image-delivery.md) är tillgängligt för AEMaaCS och minskar hämtningsstorleken med i genomsnitt 25 %.
+* [Webboptimerad bildleverans](/help/developing/web-optimized-image-delivery.md) är tillgänglig för AEMaaCS och minskar hämtningsstorleken med i genomsnitt 25 %.
 
 Det här dokumentet beskriver standardservern för adaptiv bildhantering.
 
-## Översikt {#overview}
+## Ökning {#overview}
 
-Som standard använder Image Component (Bildkomponent) Core-komponentens Adaptive Image Servlet för att leverera bilder. [Adaptiv bildserver](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbehandling och direktuppspelning och kan utnyttjas av utvecklare i [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
+Som standard använder Image Component (Bildkomponent) Core-komponentens Adaptive Image Servlet för att leverera bilder. [Den adaptiva bildservern ](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbearbetning och direktuppspelning och kan utnyttjas av utvecklare i deras [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
 
 ## Återgivningsmarkering {#rendition-selection}
 
@@ -48,6 +48,6 @@ Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktig
 
 ## Använda senast ändrade rubriker {#last-modified}
 
-Villkorliga begäranden via `Last-Modified` -huvudet stöds av Adaptive Image Servlet, men cachelagringen av `Last-Modified` header [måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
+Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [ måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
 
-[AEM Project Archetype](/help/developing/archetype/overview.md)Exempelkonfigurationen för Dispatcher innehåller redan den här konfigurationen.
+[Den AEM Dispatcher-exempelkonfigurationen för Project Archetype](/help/developing/archetype/overview.md) innehåller redan den här konfigurationen.

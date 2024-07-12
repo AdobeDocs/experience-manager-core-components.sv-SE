@@ -6,7 +6,7 @@ role: Architect, Developer, Admin, User
 exl-id: a5e8656b-eddd-48ec-876b-39bbaa70edf6
 source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ Alternativkomponenten Core Component Form gör att du kan välja bland fördefin
 
 ## Användning {#usage}
 
-Komponenten Core Component Form Options gör det möjligt att skicka in olika typer av alternativ som presenteras på många olika sätt och är avsedd att användas tillsammans med [formulärbehållarkomponent](form-container-v1.md).
+Komponenten Core Component Form Options gör det möjligt att skicka olika typer av alternativ som presenteras på många olika sätt och är avsedd att användas tillsammans med [formulärbehållarkomponenten](form-container-v1.md).
 
-Presentationen av alternativ, etiketter och enskilda alternativ kan definieras av innehållsredigeraren i [konfigurera dialogruta](#configure-dialog).
+Presentationen av alternativ, etiketter och enskilda alternativ kan definieras av innehållsredigeraren i dialogrutan [Konfigurera](#configure-dialog).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -36,11 +36,11 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Formuläralte
 >
 >I det här dokumentet beskrivs v1 för komponenten Formuläralternativ.
 >
->Information om den aktuella versionen av komponenten Formuläralternativ finns i [Komponent för formuläralternativ](/help/components/forms/form-options.md) -dokument.
+>Mer information om den aktuella versionen av formuläralternativskomponenten finns i dokumentet [Formuläralternativkomponent](/help/components/forms/form-options.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -110,7 +110,7 @@ Följande prov tas från [Vi.butik](https://helpx.adobe.com/experience-manager/6
 
 >[!NOTE]
 >
->JSON-export från Core Components kräver version 1.1.0 av Core Components. Se [kompatibilitetsinformation för kärnkomponenter v1](/help/versions.md) för mer information.
+>JSON-export från Core Components kräver version 1.1.0 av Core Components. Mer information finns i [kompatibilitetsinformationen för kärnkomponenter v1](/help/versions.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -123,25 +123,25 @@ Hur alternativen presenteras
 
    * **Kryssrutor**
    * **Alternativknappar**
-   * **Nedrullningsbar meny**
+   * **Listruta**
    * **Listruta för flera val**
 
 * **Titel** - Den rubrik som ska visas som etikett för alternativen
-* **Namn** - Namnet på det fält som har skickats med formulärdata
-* **Källa** - Där alternativen är definierade
+* **Namn** - Namnet på fältet som skickats med formulärdata
+* **Source** - Där alternativen har definierats
 
-   * **Lokal** - Definierad i komponenten
-      * Tryck eller klicka på **Lägg till** knapp för att lägga till ett värde, **Ta bort** ta bort ett värde
+   * **Lokal** - definieras i komponenten
+      * Tryck eller klicka på knappen **Lägg till** för att lägga till ett värde, **Ta bort** för att ta bort ett värde
       * **Värde** - Det värde som sparas när det alternativet väljs när formuläret skickas
       * **Text** - Etiketten för alternativet som visas i formuläret
       * **Aktiv** - Alternativet markeras som markerat när formuläret läses in
-      * **Handikappade** - Alternativet kan inte markeras men visas ändå
-      * **Lista** - En statisk lista som definieras någon annanstans i AEM används som alternativ
+      * **Inaktiverad** - Alternativet kan inte markeras men visas ändå
+      * **Lista** - En statisk lista som definierats någon annanstans i AEM används för alternativet
          * **Lista** - Sökvägen till den statiska listan i AEM
             * Använd knappen Bläddra för att hitta listresursen
       * **Datakälla** - En datakälla används för alternativen
          * **Datakälla** - datakällans resurstyp
-* **Hjälpmeddelande** - Ett tips till användaren om vad som kan anges i fältet
+* **Hjälpmeddelande** - Ett tips för användaren om vad som kan anges i fältet
 
 ## Designdialogruta {#design-dialog}
 
@@ -149,8 +149,8 @@ Det finns ingen designdialogruta för komponenten Formuläralternativ.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om komponenten Formuläralternativ [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v1/options).
+Den senaste tekniska dokumentationen om Form Options-komponenten [finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/options/v1/options).
 
-Hela kärnkomponentprojektet kan laddas ned från GitHub.
+Hela kärnkomponentprojektet kan hämtas från GitHub.
 
-Mer information om hur du utvecklar kärnkomponenter finns i [Dokumentation för grundkomponentutvecklare](/help/developing/overview.md).
+Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).

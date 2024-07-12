@@ -5,7 +5,7 @@ role: Architect, Developer, Admin, User
 exl-id: 0a411f28-bd6a-4bad-b473-6bc27c1d1055
 source-git-commit: 33976c0e745ad091a142109f70541f01a31edc5b
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Skapa övertygande e-postinnehåll med flexibiliteten i E-postkärnkomponenterna och leverera det med kraften i Adobe Campaign.
 
-## Översikt {#overview}
+## Ökning {#overview}
 
-E-postkärnkomponenterna bygger på samma kraftfulla grund som kärnkomponenterna. De gör det enkelt och flexibelt att dra och släppa e-postinnehåll som sedan kan levereras till er målgrupp med hjälp av Adobe Campaign kraftfulla funktioner.
+E-postkärnkomponenterna är byggda på samma kraftfulla grund som kärnkomponenterna. De gör det enkelt och flexibelt att dra och släppa e-postinnehåll som sedan kan levereras till er målgrupp med hjälp av Adobe Campaign kraftfulla funktioner.
 
 ## Fördelar {#benefits}
 
@@ -28,12 +28,12 @@ E-post är en del av varumärkesupplevelsen och kundresan. Med e-postkärnkompon
 
 ## Funktioner {#features}
 
-* De centrala e-postkomponenterna är baserade på [Kärnkomponenter,](/help/introduction.md) och därför även [Redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och [Formatsystem.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)
-* Det finns [tio e-postoptimerade produktionsklara komponenter](#components) för att skapa e-postinnehåll.
+* De centrala e-postkomponenterna är baserade på [kärnkomponenterna](/help/introduction.md) och stöder därför även [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och [formatsystemet.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)
+* Det finns [tio e-postoptimerade produktionsklara komponenter](#components) som kan användas för att skapa e-postinnehåll.
 * De centrala e-postkomponenterna erbjuder avancerad personalisering tack vare infogningen av [Adobe Campaign-variabler](campaign-variables.md) i de flesta dialogrutefält.
-* Den flexibla [Segmenteringskomponent](/help/email/components/segmentation.md) möjliggör avancerad segmentering av ert innehåll.
-* De centrala e-postkomponenterna ger optimala e-postanpassade HTML-utdata tack vare [Inline för CSS-format,](https://github.com/adobe/aem-core-email-components/wiki/CSS-Styles-Inliner:-Technical-documentation) [Inliner för HTML-attribut.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner) och [HTML saneringsföretaget.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Sanitizing)
-* Du kan skapa e-postinnehåll var som helst nedan `/content`.
+* Den flexibla [segmenteringskomponenten](/help/email/components/segmentation.md) möjliggör avancerad segmentering av ditt innehåll.
+* De centrala e-postkomponenterna ger optimala e-postvänliga utdata i HTML tack vare [CSS-formaten inliner,](https://github.com/adobe/aem-core-email-components/wiki/CSS-Styles-Inliner:-Technical-documentation) [HTML-attributet inliner,](https://github.com/adobe/aem-core-email-components/wiki/HTML-Inliner) och [HTML sanitizer.](https://github.com/adobe/aem-core-email-components/wiki/HTML-Sanitizing)
+* Du kan skapa e-postinnehåll var som helst under `/content`.
 * E-postkärnkomponenterna är [öppen källkod.](https://github.com/adobe/aem-core-email-components)
 
 ## Krav {#requirements}
@@ -42,11 +42,11 @@ E-postkärnkomponenterna har följande krav.
 
 | AEM | Adobe Campaign | Kärnkomponenter |
 |---|---|---|
-| AEM 6.5.14.0+<br>Lokal eller AMS | Adobe Campaign Classic<br>Adobe Campaign Standard | [Version 2.21.2](/help/versions.md)+ |
+| AEM 6.5.14.0+<br>På plats eller AMS | Adobe Campaign Classic<br>Adobe Campaign Standard | [Version 2.21.2](/help/versions.md)+ |
 
 >[!NOTE]
 >
->Eftersom Adobe Campaign-integreringar inte stöds i AEM as a Cloud Service stöds inte heller E-postkärnkomponenterna i AEM as a Cloud Service.
+>Eftersom Adobe Campaign-integreringar inte stöds i AEM as a Cloud Service stöds inte heller e-postkärnkomponenterna i AEM as a Cloud Service.
 
 ## E-postkomponenterna {#components}
 
@@ -65,4 +65,4 @@ Den aktuella versionen av E-postkärnkomponenterna innehåller följande kompone
 
 ## Installation och användning {#installation-usage}
 
-Se [Använda e-postkärnkomponenter](using.md) om du vill ha information om hur du installerar e-postkärnkomponenterna.
+Se dokumentet [Använda E-postkärnkomponenter](using.md) för mer information om hur du installerar E-postkärnkomponenter.
