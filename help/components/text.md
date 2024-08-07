@@ -3,9 +3,9 @@ title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+source-git-commit: 418f1b6c967760d801d0973a35e0a31343ddca6b
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2181'
 ht-degree: 0%
 
 ---
@@ -302,9 +302,9 @@ Textkomponenten kan även redigeras textbundet, men på grund av utrymmesbegrän
 
 ![Exempel på infogad redigering](/help/assets/text-edit-inline-example.png)
 
-### Inställning och ID {#setting-id}
+### Ange ett ID {#setting-id}
 
-Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
+Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret.](/help/developing/data-layer/overview.md)
 
 * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
 * Om ett ID anges är det författarens ansvar att se till att det är unikt.
