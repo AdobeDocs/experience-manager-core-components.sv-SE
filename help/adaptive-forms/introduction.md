@@ -3,9 +3,9 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 4b05fb9d8db515289095f4d3c6a4efbe872dbde5
+source-git-commit: fd4debea8510b2ae415dd09847444ad96f3478d9
 workflow-type: tm+mt
-source-wordcount: '2229'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,6 @@ Den aktuella versionen av AEM Forms har följande huvudkomponenter, [Foundation 
 | Adaptivt formulärfragment | ✔️ | ✔️ | | För Foundation Components (Foundation-komponenter) kan du [lägga till ett fragment](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/adaptive-form-fragments#insert-a-fragment-in-an-adaptive-form) från Assets Browser. |
 | Adaptiv form reCAPTCHA | ✔️ | ✔️ | ✔️ | För Foundation-komponenter använder du Captcha-komponenten för att [lägga till Google reCaptcha i ett formulär](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms#google-reCAPTCHA). |
 | Knapp | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/button.md)</span> | ✔️ | |
-| CAPTCHA | ✔️ |  |  | För Foundation-komponenter använder du Captcha-komponenten för att [lägga till Google reCaptcha i ett formulär](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/captcha-adaptive-forms#google-reCAPTCHA). |
 | Diagram | ✔️ | | | |
 | Kryssruta | ✔️ | ✔️ | | |
 | Kryssrutegrupp | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/checkbox-group.md)</span> | ✔️ | För Foundation-komponenter använder du kryssrutekomponenten för att lägga till flera kryssrutor |
@@ -105,12 +104,11 @@ Den aktuella versionen av AEM Forms har följande huvudkomponenter, [Foundation 
 | Panel | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/panel.md)</span> | ✔️ | |
 | Lösenordsruta | ✔️ | | ✔️ | |
 | Telefon | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/phone.md)</span> | ✔️ | |
-| Knappen Föregående | ✔️ | | | Använd [guidekomponenten](/help/adaptive-forms/components/wizard.md) för nästa och föregående knappar för att flytta mellan flera paneler. |
-| Alternativknapp | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/radio-button.md)</span> | | |
-| Grupp med alternativknappar | | | ✔️ | |
+| Knappen Föregående | ✔️ | ✔️ | | Använd [guidekomponenten](/help/adaptive-forms/components/wizard.md) för nästa och föregående knappar för att flytta mellan flera paneler. |
+| Grupp med alternativknappar | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/radio-button.md)</span> | ✔️ | |
 | Återställ knapp | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/reset-button.md)</span> | ✔️ | |
 | Klottersignatur | ✔️ | | | |
-| Avgränsare | ✔️ | | | |
+| Avgränsare | ✔️ | | | Använd WCM-komponenten [Seperator](/help/components/separator.md) |
 | Skicka-knapp | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/submit-button.md)</span> | ✔️ | |
 | Sammanfattningssteg | ✔️ | | | |
 | Byt | ✔️ | <span style="color:blue"> [ ✔️](/help/adaptive-forms/components/adaptive-form-switch.md) | | |
@@ -118,7 +116,6 @@ Den aktuella versionen av AEM Forms har följande huvudkomponenter, [Foundation 
 | Villkor | ✔️ | ✔️ | | |
 | Text | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/text.md)</span> | ✔️ | |
 | Textruta | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/text-box.md)</span> | ✔️ | |
-| Titel | ✔️ | | | Använd komponenten [Formulärtitel](/help/adaptive-forms/components/form-title.md) för kärnkomponenter. |
 | Turnstile Captcha | ✔️ | | | [Turnstile Captcha](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-turnstile) är bara tillgängligt för Foundation-komponenter. |
 | Lodräta tabbar | ✔️ | ✔️ | | För Foundation-komponenter kan du konfigurera [flikarna till vänster (lodräta flikar) layout](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms#panel-layout) i panelkomponentegenskaperna |
 | guide | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/wizard.md)</span> | ✔️ | För Foundation-komponenter kan du konfigurera [guidelayouten](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms#panel-layout) i panelkomponentegenskaperna |
