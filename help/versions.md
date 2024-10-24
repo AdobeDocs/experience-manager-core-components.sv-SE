@@ -3,9 +3,9 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 1df528aec070c21c836f2fd6a92c7c6460f30798
+source-git-commit: b723ad29b035bbff58c56c8a5cce3a2b50e8b2b2
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3103'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
+| [2.27.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.27.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 10 september 2024 |
 | [2.26.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.26.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 31 juli 2024 |
 | [2.25.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.4) | Det här är en mindre release som åtgärdar vissa IT-fel. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 10 maj 2024 |
 | [2.25.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.2) | Det här är en mindre release som åtgärdar vissa IT-fel. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 9 maj 2024 |
