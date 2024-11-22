@@ -4,8 +4,7 @@ description: Förbättra formulärsäkerheten med Captcha&reg; service utan prob
 feature-set: Experience Manager Sites, Experience Manager Forms
 feature: Adaptive Forms, Core Components
 role: Architect, Developer, Admin, User
-exl-id: eecb38d5-711e-4dc5-bc19-498e003f37e7
-source-git-commit: 330e07af360377bf85169296647b43ae7023694b
+source-git-commit: 9a691fc2aa656f5a96d8cd4b6285e6bd473cdaa4
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%
