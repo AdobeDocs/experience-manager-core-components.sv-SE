@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites, Experience Manager Forms
-source-git-commit: d41cf56f3889ff6aa1bf6f753dc5331248d1ae2e
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '381'
 ht-degree: 5%
 
 ---
@@ -121,6 +121,7 @@ ht-degree: 5%
       + [Anpassningsbara vågräta Forms-flikar](/help/adaptive-forms/components/horizontal-tabs.md)
       + [Adaptiv Forms-bild](/help/adaptive-forms/components/image.md)
       + [Adaptiv numerisk Forms-ruta](/help/adaptive-forms/components/numeric-box.md)
+      + [Adaptiv lösenordsruta för Forms](/help/adaptive-forms/components/password-box.md)
       + [Adaptiv Forms-panel](/help/adaptive-forms/components/panel.md)
       + [Adaptiv Forms CAPTCHA](/help/adaptive-forms/components/adaptive-form-recaptcha.md)
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)

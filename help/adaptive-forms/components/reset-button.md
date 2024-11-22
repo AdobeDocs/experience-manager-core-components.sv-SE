@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - återställningsknapp
 description: Använda eller anpassa den adaptiva Forms-återställningsknappen Core Component.
 role: Architect, Developer, Admin, User
 exl-id: e5aa9d89-aece-491e-80a1-7fb9ea6c4b60
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '1550'
+source-wordcount: '1551'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Skälen till att du använder en återställningsknapp i ett adaptivt formulär 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (Core-komponent) för adaptiv återställning av Forms-knapp släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

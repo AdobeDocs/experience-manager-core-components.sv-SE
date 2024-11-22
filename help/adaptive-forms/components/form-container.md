@@ -3,14 +3,16 @@ title: Adaptiv Forms Core-komponent - formulärbehållare
 description: Lägg till ett anpassat formulär på en webbsida.
 role: Architect, Developer, Admin, User
 exl-id: 03c4cf7c-51d6-4850-a566-1c0514d52dab
-source-git-commit: 8bba79956a04020647d5d04f9fe6fa674affedf1
+source-git-commit: 86a30bc396d89340106177deb08323bfc5640e0e
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1525'
 ht-degree: 0%
 
 ---
 
 # Formulärbehållare {#form-container-adaptive-forms-core-component}
+
+<span class="preview"> I den här artikeln beskrivs funktionen **Utkast** <!--and **Hamburger Menu Support** --> , som är en förhandsversion. Förhandsversionen är bara tillgänglig via vår [förhandsutgåva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
 
 Med Forms kan besökare interagera med webbplatsen genom att tillhandahålla värdefull information, vilket kan öka engagemanget och få nöjdare användare. Med en adaptiv formulärbehållare i Adobe Experience Manager (AEM) kan webbplatsägare enkelt lägga till formulär på sina sidor. Detta underlättar kommunikationen mellan webbplatsens besökare och webbplatsens ägare eller organisation genom att ge besökarna ett smidigt sätt att ge feedback, ställa frågor och slutföra andra åtgärder
 
@@ -58,16 +60,21 @@ Du kan enkelt anpassa formulärbehållarupplevelsen för besökare med dialogrut
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/formcontainer_basictab.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/formcontainer_basictab1.png)
 
 - **Titel** - Med titeln kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
 - **Förifyll tjänster** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [hur du skapar och konfigurerar en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=en#aem-forms-custom-prefill-service).
 
-- **Klientbibliotekskategori** - Användaren kan konfigurera ett anpassat JavaScript-bibliotek per anpassat formulär. Vi rekommenderar att du bara behåller återanvändbara funktioner i biblioteket, som är beroende av jquery- och underscore.js-bibliotek från tredje part.
-Ibland, om det finns **komplexa valideringsregler**, finns det exakta valideringsskriptet i anpassade funktioner och användarna anropar dessa anpassade funktioner från fältvalideringsuttryck. Om du vill att det här anpassade funktionsbiblioteket ska vara känt och tillgängligt när du utför validering på serversidan, kan formuläranvändaren konfigurera namnet på AEM klientbibliotek på fliken **[!UICONTROL Basic]** i egenskaperna för den anpassade formulärbehållaren enligt nedan.
+- **Roll**: Rollen är ett HTML-attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
+- **Klientbibliotekskategori** - Användaren kan konfigurera ett anpassat JavaScript-bibliotek per anpassat formulär. Vi rekommenderar att du bara behåller återanvändbara funktioner i biblioteket, som är beroende av jquery- och underscore.js-bibliotek från tredje part.
+Ibland, om det finns **komplexa valideringsregler**, finns det exakta valideringsskriptet i anpassade funktioner och användarna anropar dessa anpassade funktioner från fältvalideringsuttryck. Om du vill att det här anpassade funktionsbiblioteket ska vara känt och tillgängligt vid validering på serversidan kan formuläranvändaren konfigurera namnet på AEM klientbibliotek på fliken **[!UICONTROL Basic]** i egenskaper för adaptiv formulärbehållare.
 Användaren kan konfigurera customJavaScript-bibliotek per adaptiv form. I biblioteket behåller du bara återanvändbara funktioner som är beroende av jquery- och underscore.js-bibliotek från tredje part.
+
+<!--
+- **Enable the hamburger menu for mobile view** - Select the checkbox to integrate a hamburger menu into your form for mobile view. Represented by three horizontal lines stacked vertically, this menu provides a clear and uncluttered display for panels on smaller devices, especially on mobile devices. For more information about the hamburger menu, refer to the [Learn more about the hamburger menu](#learn-more-about-the-hamburger-menu) section. -->
+
 
 ### Fliken Datamodell {#data-model-tab}
 
@@ -76,6 +83,14 @@ Användaren kan konfigurera customJavaScript-bibliotek per adaptiv form. I bibli
 Du kan använda formulärdatamodellen för att ansluta ett formulär till en Data Source för att skicka och ta emot data baserat på användaråtgärder. Du kan också ansluta ett formulär till ett JSON-schema för att ta emot skickade data i ett fördefinierat format. Beroende på vad som krävs kan du ansluta formuläret till ett JSON-schema eller en formulärdatamodell:
 - Skapa ett JSON-schema och överför det till din miljö
 - Skapa en formulärdatamodell
+
+### Utkast
+
+![fliken Skicka](/help/adaptive-forms/assets/formcontainer_autosavetab.png)
+
+- **Spara utkast automatiskt**: Markera kryssrutan **Spara utkast automatiskt** om du vill kunna spara formulär som utkast.
+- **Spara inställningar**: Konfigurera **Spara inställningar** som **Spara utkast med regelbundna intervall** om du vill spara formuläret automatiskt efter ett visst tidsintervall.
+  **Spara intervallfrekvens (sekunder)**: Ange tidsintervallet (i sekunder) för att ange den längd som utlöser det automatiska sparandet av formuläret vid det definierade intervallet.
 
 ### Fliken Skicka {#submission-tab}
 
@@ -138,11 +153,67 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
    - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
 <!--
+## Learn more about the hamburger menu
 
-## Related article {#related-article}
+A hamburger menu, often referred to as a mobile menu or navigation drawer, is a popular design element in mobile user interfaces. It features three horizontal lines stacked vertically, resembling a hamburger. The design efficiently conserves screen space by hiding secondary navigation options until they are needed, especially on smaller devices such as mobile. AEM forms can be efficiently organized within the hamburger menu, enabling users to access various panels within a form without overwhelming the main interface.
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+Consider a scenario, where a financial institution offers an online loan application form that requires users to provide detailed information across several panels, such as personal details, financial information, loan preferences, and supporting documents. The form includes multiple panels and options that can clutter the interface, especially on mobile devices. Users need an organized way to navigate through these panels without feeling overwhelmed. The hamburger menu is implemented to enhance the user experience on mobile devices.
 
+### Components of hamburger menu
+
+![Hamburger Menu](/help/adaptive-forms/assets/hamburger-menu.png){width=50%, align=center}
+
+**A. Hamburger menu**: The hamburger menu features a navigation panel that slides out or drops down when the hamburger icon is clicked or tapped. The menu displays the panel headings, and selecting a panel shifts the focus to that panel. It allows users to easily navigate between different panels.
+
+![Hamburger Menu](/help/adaptive-forms/assets/hamburger-menu-icon.png){width=50%}
+
+**B. Breadcrumb**: Breadcrumbs indicate the user’s current location within the form. They offer a hierarchical trail that shows the user’s navigation path and helps them understand their position in the form.
+
+**C. Active panel**: The active panel refers to the section or part of the form that is currently being displayed. When a user selects an option from the hamburger menu, the corresponding panel becomes the active panel, showing the relevant fields and information for that section.
+
+### Points to consider while working with the hamburger menu
+
+- The hamburger menu displays only the names of the panels. Here are different scenarios illustrating how the panel name appears in the navigation pane of the hamburger menu based on the configuration properties of the panel:  
+  
+  - If you set the properties of the panel to hidden, the panel's name does not appear in the navigation pane of the hamburger menu. For example, if you configure the properties of the `Financial Information` panel as `hidden`, the panel name does not appear in the navigation pane of the hamburger menu.
+    
+    ![Hidden panel](/help/adaptive-forms/assets/hidden-panel.png){width=50%}
+
+  - If you set the properties of the panel to `disabled`, its name appears in the navigation pane of the hamburger menu, but you cannot select or edit it. For example, if you configure the properties of the `Financial Information` panel as `disabled`, the panel name appears in the navigation pane, but it cannot be selected or edited. 
+     
+    ![Disabled panel](/help/adaptive-forms/assets/disabled-panel.png){width=50%}
+
+  - If you hide the  title of the panel, it does not appear in the navigation pane of the hamburger menu. A blank space shows up instead, but you can navigate to the fields of the panel by clicking on that space. For example, if you hide the title of the `Financial Information` panel, the blank space appears in its place in the navigation pane of the hamburger menu. You can navigate to the fields of the panel by clicking on the blank space.
+    
+    ![Hidden title panel](/help/adaptive-forms/assets/hidden-title-panel.png){width=50%}
+
+- By default, the navigation pane in the breadcrumb component supports up to three levels of navigation. However, with the custom component, you can configure the navigation hierarchy to accommodate as many levels as needed.
+- When using the hamburger menu, the user can navigate between panels using arrows. However, once a panel is selected, the menu automatically closes, and focus shifts to the fields within the chosen panel.
+
+### Advantages to use hamburger menu
+
+- **Space efficiency**: By hiding form navigation options until needed, the hamburger menu maximizes screen space, which is especially beneficial on smaller devices.
+
+- **Clutter reduction**: It minimizes visual clutter by consolidating various form navigation links into a single, collapsible menu.
+
+- **Improved focus**: With fewer visible navigation elements, users can concentrate on the main content of the form without being distracted by secondary options.
+
+- **Simplified design**: It creates a more streamlined user interface, resulting in a cleaner and more organized form layout.
+
+- **Enhanced mobile experience**: On mobile devices, where screen space is limited, the hamburger menu offers an efficient way to access all form navigation options without overwhelming the user.
+
+### How to enable hamburger menu for your form?
+
+To enable hamburger menu for form, perform the following steps:
+
+1. Open form in an edit mode.
+1. Open the Content browser, and select the **[!UICONTROL Guide Container]** component of your Adaptive Form. 
+1. Click the Guide Container properties ![Guide properties](/help/adaptive-forms/assets/configure_icon.png) icon. The Adaptive Form Container dialog box opens. 
+1. Click the  **[!UICONTROL Basic]** tab. 
+1. Select the **[!UICONTROL Add hamburger menu support]** checkbox.
+1. Click **[!UICONTROL Done]**.
+
+![Basic tab](/help/adaptive-forms/assets/formcontainer_basictab.png)
 -->
 
 ## Relaterade artiklar {#related-articles}

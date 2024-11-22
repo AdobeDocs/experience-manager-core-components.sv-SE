@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '2185'
+source-wordcount: '2188'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Listrutan kan dessutom konfigureras att ha olika bearbetningsvärden för varje 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (komponent) i den adaptiva Forms-listrutan släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -62,6 +62,8 @@ Hämta den senaste informationen om Core-komponenten för listrutan Adaptiv Form
 ## Konfigurera dialogruta {#configure-dialog}
 
 Du kan enkelt anpassa den nedrullningsbara listan för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera alternativ för nedrullningsbara listor för en smidig användarupplevelse.
+
+### fliken Grundläggande
 
 ![Fliken Grundläggande](/help/adaptive-forms/assets/dropdown_basictab.png)
 

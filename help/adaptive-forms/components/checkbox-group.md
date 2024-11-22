@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - kryssrutegrupp
 description: Använda eller anpassa den adaptiva Forms Checkbox Group Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 2ced0223-e664-470b-a400-b6865d3a67c9
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '2102'
+source-wordcount: '2103'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Det finns många skäl till att det är bra att inkludera en kryssrutegrupp i et
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component i gruppen Core Component (Adaptiv Forms-kryssruta) släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

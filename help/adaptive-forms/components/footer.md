@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - sidfot
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Footer.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: e0ed415bd7f45fdca6fbbb8ba409604d9e82a647
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Det finns flera skäl till att det är bra att ta med en sidfotskomponent i ett 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva huvudkomponenten i Forms Footer Core släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

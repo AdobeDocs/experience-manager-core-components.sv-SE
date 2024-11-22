@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - rubrik
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Header.
 role: Architect, Developer, Admin, User
 exl-id: aa18def9-0bec-4475-8dde-213860621ef5
-source-git-commit: e4274194026c3370b52be17171776847374a86b5
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
 source-wordcount: '674'
 ht-degree: 0%
@@ -32,7 +32,7 @@ En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formul�
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva huvudkärnkomponenten i Forms lanserades i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

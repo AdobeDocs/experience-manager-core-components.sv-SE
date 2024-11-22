@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - kryssruta
 description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1838'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,8 @@ Hämta den senaste informationen om kärnkomponenten i den adaptiva Forms-kryssr
 ## Konfigurera dialogruta {#configure-dialog}
 
 Du kan enkelt anpassa kryssruteupplevelsen för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera kryssrutealternativ för en smidig användarupplevelse.
+
+### fliken Grundläggande
 
 ![Fliken Grundläggande](/help/adaptive-forms/assets/checkbox-basic.png)
 

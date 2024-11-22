@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - telefoninmatning, telefon
 description: Använda eller anpassa den adaptiva kärnkomponenten för telefoninmatning från Forms.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: b4a66a407e92398a98441c65ab588b9720777dfa
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2199'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ De vanligaste skälen till att använda ett telefoninmatningsfält i en adaptiv 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Phone Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -50,6 +50,8 @@ Hämta den senaste informationen om den adaptiva Forms telefonindatakärnkompone
 ## Konfigurera dialogruta {#configure-dialog}
 
 Du kan enkelt anpassa telefoninmatningen för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera telefoninmatningsalternativ för en smidig användarupplevelse.
+
+### fliken Grundläggande
 
 ![Grundläggande flik](/help/adaptive-forms/assets/telephoneinput_basictab.png)
 

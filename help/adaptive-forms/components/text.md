@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - text
 description: Använda eller anpassa den adaptiva Forms Text Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: b8de68e4-ca0d-4ae5-9a04-104cc617f1be
-source-git-commit: 8bba79956a04020647d5d04f9fe6fa674affedf1
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '996'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Det finns flera skäl till att använda text i ett formulär:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Text Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -53,6 +53,8 @@ Hämta den senaste informationen om den adaptiva Forms-textkärnkomponenten i de
 ## Konfigurera dialogruta {#configure-dialog}
 
 Du kan enkelt anpassa din textupplevelse för besökare med dialogrutan Konfigurera. Du kan också enkelt definiera textalternativ för en smidig användarupplevelse.
+
+### fliken Grundläggande
 
 ![Fliken Grundläggande](/help/adaptive-forms/assets/text_properties.png)
 

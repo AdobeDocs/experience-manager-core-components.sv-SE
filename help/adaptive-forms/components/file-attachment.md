@@ -3,14 +3,16 @@ title: Adaptiv Forms Core-komponent - bifogad fil
 description: Använda eller anpassa den adaptiva Forms-filbilagan Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 64a54fc6-db52-481f-bf5a-60c05122004d
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 724940e8fe7eb5cfe3dc4edf7568049c993b1255
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '2043'
 ht-degree: 0%
 
 ---
 
 # Bifogad fil-komponent {#file-attachment-adaptive-forms-core-component}
+
+<span class="preview"> Datatypen **för det skickade värdet** är tillgänglig i ett program för tidig användning. Du kan skriva till aem-forms-ea@adobe.com från ditt officiella e-post-id för att gå med i det tidiga adopterprogrammet och begära åtkomst till funktionen. </span>
 
 En bifogad fil i ett adaptivt formulär gör att användarna kan välja och överföra filer från sin lokala dator eller enhet. Komponenten för bifogad fil kan konfigureras så att den tillåter specifika filtyper, storleksbegränsningar och flera bifogade filer.
 
@@ -35,7 +37,7 @@ Det finns många skäl till att det är bra att ta med en bifogad fil i ett adap
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component för den adaptiva Forms-filbilagan släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -57,7 +59,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/fileattachement_basictab.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/fileattachement_basictab1.png)
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -72,6 +74,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
 - **Knapptitel** - Det här alternativet används för att ange etiketten för knappen som visas i ett adaptivt formulär.
 - **Bindningsreferens** - En bindningsreferens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
+- **Datatypen för det skickade värdet**: Välj alternativet för att bestämma hur den bifogade filen ska skickas till servern. Om du vill skicka den bifogade filen som binära data väljer du alternativet `File`. Om du vill skicka den bifogade filen som en Base64-kodad sträng väljer du alternativet `String`. Om `String` väljs skickas filen i det binära formatet till servern som en data-URL. Servern konverterar automatiskt data-URL:en tillbaka till binärt format, vilket säkerställer kompatibilitet med befintliga åtgärder, som att skicka e-post och generera dokument för post, utan att användare behöver göra några ändringar. Som standard är alternativet `File` markerat.
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 - **Skrivskyddad** - Välj alternativet för att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.

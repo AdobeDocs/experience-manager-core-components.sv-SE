@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - switch-komponent
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-switchen.
 role: Architect, Developer, Admin, User
 exl-id: 6ff2ca76-1514-42eb-bde3-60259af2d187
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 04a89892aafe26fda253bcc5971c03eda27237f9
 workflow-type: tm+mt
 source-wordcount: '1922'
 ht-degree: 0%
@@ -81,7 +81,6 @@ Med dialogrutan Konfigurera kan du enkelt anpassa hur din switch-komponent funge
 
 - **Bindningsreferens** - En bindningsreferens är en referens till ett dataelement som lagras i en extern datakälla och används i ett formulär. Med den binda referensen kan du binda data dynamiskt till formulärfält så att formuläret kan visa de senaste data från datakällan. En bindningsreferens kan till exempel användas för att visa en kunds namn och adress i ett formulär baserat på kundens ID som anges i formuläret. Bindningsreferensen kan också användas för att uppdatera datakällan med data som anges i formuläret. På så sätt kan du med AEM Forms skapa formulär som interagerar med externa datakällor, vilket ger en smidig användarupplevelse för att samla in och hantera data.
 - **Markera som obundet formulärelement**: Välj alternativet att konfigurera ett formulärfält som inte är länkat till något schema. Med det här alternativet kan du spara data utan att uppdatera datakällan. Det gör det också möjligt att hantera data på ett anpassat sätt, skilt från standarddatabasintegrering.
-
 - **Datatypen för det skickade värdet**: Det här alternativet anger datatypen för det värde som skickas när något alternativ har valts. Om datatypen **för det skickade värdet** är inställd på `Number` och du lägger till strängdata i &#x200B; **Datavärde** på fliken **Alternativ** visas ett `Value type mismatch`-felmeddelande.
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 

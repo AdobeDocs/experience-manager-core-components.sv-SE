@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - villkor
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Terms and Conditions.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
 workflow-type: tm+mt
-source-wordcount: '3254'
+source-wordcount: '3256'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Mer information om olika komponenter i villkorskomponenten finns i avsnittet [Un
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Accordion Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.62 för Cloud Service och Core Components 1.1.28 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Kärnkomponenten för adaptiva Forms-villkor släpptes i februari 2023 som en del av kärnkomponenterna 2.0.62 för Cloud Service och Core Components 1.1.28 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

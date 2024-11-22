@@ -1,43 +1,48 @@
 ---
-title: Adaptiv Forms Core-komponent - textinmatning (textruta)
-description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-textinmatning.
+title: Adaptiv Forms Core-komponent - lösenordsruta
+description: Använda eller anpassa kärnkomponenten i den adaptiva Forms-lösenordsrutan.
 role: Architect, Developer, Admin, User
-exl-id: 49d9fe69-0578-4489-beaa-a18cdb14add7
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+hide: true
+hidefromtoc: true
+source-git-commit: 86a30bc396d89340106177deb08323bfc5640e0e
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '1916'
 ht-degree: 0%
 
 ---
 
-# Textrutekomponent{#text-input-adaptive-forms-core-component}
+# Lösenordsrutekomponent
 
-Med en textinmatningskomponent (textruta) kan användaren ange och redigera en eller flera rader med text, beroende på inmatningselementets type-attribut. Textindatakomponenten kan placeras i ett formulär och är vanligtvis märkt med en användbar text som lätt identifierar dess syfte. Dessa är ett grundläggande element i alla typer av formulär som ofta används för att samla in olika typer av data från användarna, de är enkla, flexibla och kan konfigureras för att validera indata och förbättra informationsinsamlingen.
+<span class="preview"> Den här funktionen är en förhandsversion och kan nås via vår [förhandsutgåva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
+
+Med en lösenordsrutekomponent kan användare ange och redigera känslig information, normalt maskerad för sekretess. Lösenordskomponenten kan konfigureras med olika valideringsregler för att säkerställa att data är korrekta. De lösenordsfält som ofta används i formulär är enkla och förbättrar datasäkerheten.
 
 **Exempel**
 
-![exempel](/help/adaptive-forms/assets/text-input.png)
+![exempel på lösenordsruta](/help/adaptive-forms/assets/password.png)
 
+Användaren kan klicka på ögonikonen för att visa den lösenordstext som har angetts. Det förbättrar säkerheten samtidigt som användarna kan ange konfidentiell information korrekt.
 
-## Användning {#reasons-to-use-text-input-field}
+## Användning
 
-Det finns flera skäl till att använda textinmatningskomponenten i ett adaptivt formulär:
+Det finns flera skäl till att använda lösenordsrutekomponenten i ett adaptivt formulär:
 
-- **Datainsamling**: Textinmatningsfält är ett av de vanligaste formulärelementen som används för att samla in en mängd information från användare, till exempel namn, e-postadresser, telefonnummer och andra typer av textdata.
+- **Säker datainsamling**: Fältet för lösenordsruta används för att samla in känslig information, t.ex. lösenord, PIN-koder och andra konfidentiella poster, och visa maskerade tecken för sekretess.
 
-- **Användarvänligt**: Textinmatningsfält är enkla och enkla att använda, vilket gör det enkelt för användarna att ange och redigera text.
+- **Användarvänlig**: I lösenordsfältet kan användare ange och redigera information på ett säkert sätt utan att visa den på skärmen.
 
-- **Flexibilitet**: Textinmatningsfält kan användas för att samla in en mängd olika typer av information, från korta textinmatningar med en rad till längre textinmatningar med flera rader.
+- **Flexibilitet**: Komponenten för lösenordsruta kan konfigureras för att uppfylla säkerhetskrav, till exempel minsta teckenlängd, specialtecken eller andra anpassade valideringar för att säkerställa starkt dataskydd och precision.
 
-## Version och kompatibilitet {#version-and-compatibility}
+<!--
+## Version and Compatibility {#version-and-compatibility}
 
-Kärnkomponenten i den adaptiva Forms-textrutan lanserades i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+The Adaptive Forms Password box Core Component was released in Feb 2023 as part of the Core Components 2.0.4 for Cloud Service and Core Components 1.1.12 for AEM 6.5.16.0 Forms or later. Here's a table showing all supported versions, AEM compatibility, and links to corresponding documentation:
 
-| Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
+|Component Version|AEM as a Cloud Service|AEM 6.5.16.0 Forms or later|
 |---|---|---|
-| v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
+|v1|Compatible with<br>[release 2.0.4](/help/adaptive-forms/version.md) and later| Compatible with<br>[release 1.1.12](/help/adaptive-forms/version.md) and later but less than 2.0.0.|
 
-Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
+For information on Core Component versions and releases, refer to the [Core Components Versions](/help/adaptive-forms/version.md) document.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -53,7 +58,7 @@ Du kan enkelt anpassa textinmatningen för besökare med dialogrutan Konfigurera
 
 ### fliken Grundläggande
 
-![Grundläggande flik](/help/adaptive-forms/assets/textinput_basictab.png)
+![Grundläggande flik](/help/adaptive-forms/assets/password-basic.png)
 
 - **Namn** - Du kan enkelt identifiera en formulärkomponent med dess unika namn både i formuläret och i regelredigeraren, men namnet får inte innehålla blanksteg eller specialtecken.
 
@@ -75,15 +80,9 @@ Du kan enkelt anpassa textinmatningen för besökare med dialogrutan Konfigurera
 
 - **Skrivskyddad** - Välj alternativet för att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 
-- **Standardvärde** - Med det här alternativet kan du lägga till ett standardvärde i ett formulärfält. Texten försvinner när användaren börjar skriva i fältet. Om **Inaktiverad komponent** eller **skrivskyddad komponent** har valts visas standardvärdet på skärmen. Om användaren inte anger något värde i formulärfältet skickas det här värdet när formuläret skickas.
-
-- **Tillåt flera rader** - Med det här alternativet kan användaren ange flera rader i ett formulärfält.
-
-- **Fyll i attribut automatiskt** - Med det här alternativet kan användare ange ett värde som fylls i automatiskt i formulärfältet baserat på den lagrade informationen.
-
 ### Fliken Validering {#validation-tab}
 
-![Fliken Validering](/help/adaptive-forms/assets/textinput_validationtab.png)
+![Fliken Validering](/help/adaptive-forms/assets/password-validation.png)
 
 - **Obligatoriskt** - Välj det här alternativet om du vill visa komponenten i ett adaptivt formulär. När du har valt alternativet måste du ange ett värde innan du fortsätter med en formuläröverföring. Du kan inte välja **Dölj komponent** eller **Inaktivera komponent** på fliken **Grundläggande** när det här alternativet är valt.
 
@@ -107,7 +106,7 @@ Med alternativet **Valideringsmönster** kan du ange ett mönster som validerar 
 
 ### Fliken Hjälpinnehåll {#help-content-tab}
 
-![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/textinput_helptab.png)
+![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/password-help.png)
 
 - **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera alternativet **Visa alltid kort beskrivning** för att visa det under komponenten.
 
@@ -117,7 +116,7 @@ Med alternativet **Valideringsmönster** kan du ange ett mönster som validerar 
 
 ### Fliken Tillgänglighet {#accessibility-tab}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/textinput_accessibiltytab.png)
+![Fliken Tillgänglighet](/help/adaptive-forms/assets/password-accessibilty.png)
 
 - **Text för skärmläsare** - Text för skärmläsare hänvisar till ytterligare text som är särskilt avsedd att läsas av hjälpmedelstekniker, som skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
    - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
