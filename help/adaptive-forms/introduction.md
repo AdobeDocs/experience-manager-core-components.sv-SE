@@ -3,9 +3,9 @@ title: Introduktion till AEM adaptiva Forms Core-komponenter
 description: Skapa övertygande registreringsupplevelser (formulär) med flexibiliteten i de adaptiva Forms Core Components och leverera dem med kraften i Adobe Experience Manager.
 role: Architect, Developer, Admin, User
 exl-id: 6d0f2845-bbb8-4488-a254-b69d7a6290b1
-source-git-commit: 86a30bc396d89340106177deb08323bfc5640e0e
+source-git-commit: b37b6315312ecee0a74d8830d96a72f8a5a04e43
 workflow-type: tm+mt
-source-wordcount: '2198'
+source-wordcount: '2215'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Den aktuella versionen av AEM Forms har följande huvudkomponenter, [Foundation 
 | Fotnotsplatshållare | ✔️ | | | |
 | Formulärbehållare | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/form-container.md)</span> | ✔️ | Använd komponenten [Rotpanel](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/forms/create-first-af/configure-root-panel) för Foundation-komponenter. |
 | Formulärtitel | ✔️ | ✔️ | | Använd komponenten title för Foundation-komponenter. |
-| hCaptcha | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/hcaptcha.md)</span> |  | |
+| hCaptcha | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/hcaptcha.md)</span> |  | För Foundation-komponenter kan du [ansluta dina adaptiva formulär med hCaptcha](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-turnstile.html) för grundläggande komponentbaserade formulär. |
 | Sidhuvud | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/header.md)</span> | ✔️ | |
 | Vågräta flikar | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/horizontal-tabs.md)</span> | | För Foundation Components (Foundation-komponenter) kan du konfigurera layouten [tabbar överst (vågräta flikar)](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/layout-capabilities-adaptive-forms#panel-layout) i panelkomponentegenskaperna. |
 | Bild | ✔️ | <span style="color:blue">[ ✔️](/help/adaptive-forms/components/image.md)</span> | ✔️ | |
