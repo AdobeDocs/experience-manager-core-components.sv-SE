@@ -3,9 +3,9 @@ title: Adaptiv bildserver
 description: Lär dig hur Core Components använder Adaptive Image Servlet för bildleverans och hur du kan optimera användningen.
 role: Architect, Developer, Admin, User
 exl-id: d9199d51-6f09-4000-9525-afc30474437e
-source-git-commit: 785aa82930e3bcf6ef16d7a1cdc614d230e8daa8
+source-git-commit: 87a96c1c9476b9d66fdc94d6c24123cdf24b9d91
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,12 @@ ht-degree: 0%
 # Adaptiv bildserver {#adaptive-image-servlet}
 
 Lär dig hur Core Components använder Adaptive Image Servlet för bildleverans och hur du kan optimera användningen.
+
+>[!WARNING]
+>
+>Av prestandaskäl rekommenderar vi att du lagrar bilder i DAM och använder webboptimerad bildleverans.
+>
+>Lagring av bilder direkt under komponentnoden är avsedd för tillfällig användning. Det utnyttjar inte DAM-renderingarna för att minska bearbetningen i Adaptive Image Servlet och ger inga prestandafördelar vid webboptimerad bildleverans, vilket kan leda till prestandaproblem.
 
 ## Adaptiv bildserver eller webboptimerad bildleverans? {#options}
 
@@ -50,4 +56,4 @@ Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktig
 
 Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [ måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
 
-[Den AEM Dispatcher-exempelkonfigurationen för Project Archetype](/help/developing/archetype/overview.md) innehåller redan den här konfigurationen.
+[Dispatcher-exempelkonfigurationen för AEM Project Archetype](/help/developing/archetype/overview.md) innehåller redan den här konfigurationen.
