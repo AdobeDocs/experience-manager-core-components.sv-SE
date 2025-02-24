@@ -3,9 +3,9 @@ title: Adaptiv bildserver
 description: Lär dig hur Core Components använder Adaptive Image Servlet för bildleverans och hur du kan optimera användningen.
 role: Architect, Developer, Admin, User
 exl-id: d9199d51-6f09-4000-9525-afc30474437e
-source-git-commit: 87a96c1c9476b9d66fdc94d6c24123cdf24b9d91
+source-git-commit: 3f6e40c4dbfbd1287213d9d16d96183d24f2ad0a
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -41,9 +41,9 @@ Den adaptiva bildservern väljer automatiskt den rendering som passar bäst för
 1. Endast de som har samma MIME/Type för den ursprungliga refererade resursen markeras.
    * Om den ursprungliga resursen till exempel är en PNG-fil kommer endast PNG-renderingar att användas.
 1. Av dessa återgivningar beaktas dimensionerna och de jämförs med storleken på behållaren som bilden ska visas i.
-   1. Om återgivningen är >= behållarstorleken läggs den till i en lista över möjliga återgivningar.
-   1. Om återgivningen är &lt; behållarstorleken ignoreras den.
-   1. Dessa kriterier säkerställer att återgivningen inte skalas upp, vilket skulle påverka bildkvaliteten.
+1. Om återgivningen är >= behållarstorleken läggs den till i en lista över möjliga återgivningar.
+1. Om återgivningen är &lt; behållarstorleken ignoreras den.
+1. Dessa kriterier säkerställer att återgivningen inte skalas upp, vilket skulle påverka bildkvaliteten.
 1. Den adaptiva bildservern väljer sedan den rendering som har den minsta filstorleken från listan över kandidater.
 
 ## Optimera återgivningsmarkering {#optimizing-rendition-selection}
