@@ -1,33 +1,34 @@
 ---
 title: Huvudkomponentversioner
-description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är releaser och versioner och hur man förstår kompatibiliteten med kärnkomponenter och AEM.
+description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är en release och version och hur man förstår kompatibiliteten med Core Components och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: b723ad29b035bbff58c56c8a5cce3a2b50e8b2b2
+source-git-commit: 44d9b267f4d26b0ea4c00c7ceed9879abcdbd76d
 workflow-type: tm+mt
-source-wordcount: '3103'
+source-wordcount: '3019'
 ht-degree: 0%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [lokala AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)-installationer.
+Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [ AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)-installationer på plats.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
-Core Components är utformade för att vara flexibla och kompatibla med alla AEM som stöds. På grund av detta kan en version av komponenterna innehålla flera versioner av samma komponent.
+Core Components är utformade för att vara flexibla och kompatibla med alla AEM-versioner som stöds. På grund av detta kan en version av komponenterna innehålla flera versioner av samma komponent.
 
 I följande tabeller visas kompatibiliteten för de versioner av kärnkomponenterna som ingår i releaserna.
 
 ### Versionshistorik och krav {#release-history-requirements}
 
-Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig versionsinformation](https://github.com/adobe/aem-core-wcm-components/releases), ger en översikt över de olika versionerna av kärnkomponenterna och deras kompatibilitet med AEM och Java-versioner.
+Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig versionsinformation](https://github.com/adobe/aem-core-wcm-components/releases), ger en översikt över de olika versionerna av kärnkomponenterna och deras kompatibilitet med AEM-versioner och Java-versioner.
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|
-| [2.27.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.27.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 10 september 2024 |
-| [2.26.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.26.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 31 juli 2024 |
+| [2.28.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.28.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 17 mars 2025 |
+| [2.27.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.27.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 11 | 10 september 2024 |
+| [2.26.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.26.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 11 | 31 juli 2024 |
 | [2.25.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.4) | Det här är en mindre release som åtgärdar vissa IT-fel. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 10 maj 2024 |
 | [2.25.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.2) | Det här är en mindre release som åtgärdar vissa IT-fel. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 9 maj 2024 |
 | [2.25.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.25.0) | Den här versionen innehåller stöd för namngivna smartbeskärningar i Dynamic Media, bland annat prestanda- och tillgänglighetsförbättringar samt olika felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 2 maj 2024 |
@@ -36,8 +37,8 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 | [2.24.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.2) | Den här korrigeringsversionen förbättrar stabiliteten i integrationstester. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 22 februari 2024 |
 | [2.24.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.24.0) | Den här versionen har stöd för Google Tag Manager-datalagret och innehåller olika felkorrigeringar. | - | 6.5.21.0+ | Kontinuerlig | 8, 11 | 14 februari 2024 |
 | [2.23.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.4) | Den här korrigeringsversionen innehåller olika felkorrigeringar. | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 15 september 2023 |
-| [2.23.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.2) | Den här korrigeringen har lagt till en smart Dynamic Media-beskärning för fjärrresurser i [bilden](/help/components/image.md) och [Teaser Components](/help/components/teaser.md) och åtgärdat ett antal buggar. | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 4 augusti 2023 |
-| [2.23.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0) | I den här versionen har stöd för [nästa generations Dynamic Media-fjärrresurser lagts till.](/help/developing/remote-assets.md) | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 6 juni 2023 |
+| [2.23.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.2) | Den här korrigeringen lade till smart beskärning av dynamiska media för fjärrresurser i [bilden](/help/components/image.md) och [Teaser Components](/help/components/teaser.md) och åtgärdade ett antal fel. | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 4 augusti 2023 |
+| [2.23.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.23.0) | Den här versionen har lagt till stöd för [nästa generations dynamiska mediefunktioner.](/help/developing/remote-assets.md) | - | 6.5.17.0+ | Kontinuerlig | 8, 11 | 6 juni 2023 |
 | [2.22.12](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.12) | Den här korrigeringsversionen åtgärdar två problem. | - | 6.5.14.0+ | Kontinuerlig | 8, 11 | 25 maj 2023 |
 | [2.22.10](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.10) | Den här korrigeringsversionen åtgärdar två regressioner. | - | 6.5.14.0+ | Kontinuerlig | 8, 11 | 11 maj 2023 |
 | [2.22.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.8) | Den här korrigeringsversionen återför funktioner som togs bort av misstag i en tidigare version. | - | 6.5.14.0+ | Kontinuerlig | 8, 11 | 9 maj 2023 |
@@ -67,16 +68,16 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 | [2.16.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.2) | Det här var en korrigeringsversion som huvudsakligen åtgärdade ett problem med den nya länkhanteraren och lade till en förbättring som stöder flersidiga program för [PWA.](/help/components/page.md#pwa-support) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 15 maj 2021 |
 | [2.16.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.16.0) | Den här versionen fokuserar på tillgänglighetsförbättringar och introducerar en ny länkhanterare för befintliga komponenter. | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 22 april 2021 |
 | [2.15.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.2) | Det här var en korrigeringsrelease som huvudsakligen åtgärdar problem med bakåtkompatibilitet för [datalager](/help/developing/data-layer/overview.md) och IT-tester misslyckas i vissa situationer. | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 16 mars 2021 |
-| [2.15.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Den här versionen har stöd för [progressiva webbprogram (PWA) i sidkomponenten ](/help/components/page.md#pwa-support) och stöder version 2.0.0 i datalagret [Adobe.](/help/developing/data-layer/overview.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 23 februari 2021 |
+| [2.15.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.15.0) | Den här versionen har stöd för [progressiva webbprogram (PWA) i Page Component](/help/components/page.md#pwa-support) och har stöd för version 2.0.0 i [Adobe Data Layer.](/help/developing/data-layer/overview.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 23 februari 2021 |
 | [2.14.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.14.0) | Den här versionen innehåller nya alternativ för [inbäddningskomponenten](/help/components/embed.md) och introducerar varumärkesinstruktionen på [sidnivå](/help/components/page.md) samt åtgärdar många problem. | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 9 februari 2021 |
 | [2.13.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.2) | Det här var en patch som åtgärdade ett problem med RTE när den användes i AEMaaCS | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 16 december 2020 |
-| [2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0) | Den här versionen innehåller nya Dynamic Media-funktioner för [Image-komponenten.](/help/components/image.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 4 december 2020 |
+| [2.13.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.13.0) | Den här versionen innehåller nya dynamiska mediefunktioner för [Image-komponenten.](/help/components/image.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 4 december 2020 |
 | [2.12.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.2) | Det här var en patch-version för 2.12.0 med smärre korrigeringar. | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 11 november 2020 |
 | [2.12.1](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.1) | Det här var en korrigeringsversion för 2.12.0 som åtgärdar ett större fel i [Image Component.](/help/components/image.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 5 november 2020 |
-| [2.12.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) | I den här versionen introducerades [en ny formulärhanterare för POST;](/help/components/forms/form-container.md#post-data) möjlighet att inkludera anpassade CSS-, Javascript- och metadata [-taggar via kontextmedveten konfiguration;](/help/developing/including-clientlibs.md#context-aware-loading) och ett `DataLayerBuilder`-verktyg för att [förenkla integrering av datalager i anpassade komponenter.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 29 oktober 2020 |
+| [2.12.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.12.0) | I den här versionen introducerades [en ny POST-formulärhanterare;](/help/components/forms/form-container.md#post-data) möjlighet att inkludera anpassade CSS-, Javascript- och metadata [-taggar via kontextmedveten konfiguration;](/help/developing/including-clientlibs.md#context-aware-loading) och ett `DataLayerBuilder`-verktyg för att [förenkla integrering av datalager i anpassade komponenter.](/help/developing/data-layer/integrations.md#enabling-custom-components) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 29 oktober 2020 |
 | [2.11.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.11.0) | I den här versionen introducerades [AMP-stöd.](/help/developing/amp.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 20 juli 2020 |
-| [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | I den här versionen introducerades komponenten [PDF Viewer.](/help/components/pdf-viewer.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 17 juni 2020 |
-| [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Den här versionen aktiverade integrering med [Adobe-klientdatalagret](/help/developing/data-layer/overview.md) och introducerade komponenten [Progress Bar.](/help/components/progress-bar.md) | 6.4.8.0+ | 6.5.4.0+ | Kontinuerlig | 8, 11 | 29 maj 2020 |
+| [2.10.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.10.0) | Den här versionen innehåller [PDF Viewer-komponenten.](/help/components/pdf-viewer.md) | 6.4.8.1+ | 6.5.5.0+ | Kontinuerlig | 8, 11 | 17 juni 2020 |
+| [2.9.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.9.0) | Den här versionen aktiverade integrering med [Adobe Client Data Layer](/help/developing/data-layer/overview.md) och introducerade komponenten [Progress Bar.](/help/components/progress-bar.md) | 6.4.8.0+ | 6.5.4.0+ | Kontinuerlig | 8, 11 | 29 maj 2020 |
 | [2.8.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.8.0) | Den här versionen fokuserar på korrigeringar med små förbättringar. | 6.4.4.0+ | 6.5.0.0+ | Kontinuerlig | 8, 11 | 5 december 2019 |
 | [2.7.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.7.0) | I den här versionen introducerades den nya [inbäddningskomponenten.](/help/components/embed.md) | 6.4.4.0+ | 6.5.0.0+ | Kontinuerlig | 8, 11 | 25 september 2019 |
 | [2.6.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.6.0) | I den här versionen introducerades den nya [Experience Fragment-komponenten.](/help/components/experience-fragment.md) | 6.4.4.0+ | 6.5.0.0+ | Kontinuerlig | 8, 11 | 6 september 2019 |
@@ -139,9 +140,9 @@ Tabellen nedan visar vilka versioner av vilka komponenter som ingår i vilka ver
 
 ## Versioner och releaser {#versions-and-releases}
 
-Kärnkomponenter distribueras via GitHub. Detta gör att Adobe snabbare kan lägga till funktioner i komponenterna och även göra det möjligt för communityanvändare utanför AEM.
+Kärnkomponenter distribueras via GitHub. Detta gör att Adobe snabbare kan lägga till funktioner i komponenterna och även ge möjlighet till communityindata utanför AEM releasecykel.
 
-Core-komponenterna är tillgängliga med definierade AEM som de är kompatibla med. Detta innebär att en AEM kan ha stöd för flera versioner eller versioner av de centrala komponenterna.
+Core-komponenterna är tillgängliga med definierade AEM-versioner som de är kompatibla med. Detta innebär att en AEM-version kan ha stöd för flera versioner eller versioner av de centrala komponenterna.
 
 ### Versioner {#versions}
 
@@ -172,16 +173,16 @@ Core Components är en integrerad del av AEM och stöds enligt samma villkor som
 I likhet med andra produktfunktioner är den allmänna regeln om produktlivslängd:
 
 * Komponenterna meddelas först att bli borttagna innan de tas bort
-* Först tas de bort från AEM efter meddelandet.
+* Som tidigast tas de bort från AEM-utgåvan efter meddelandet.
 
 Detta ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan supporten upphör.
 
-Versionen för varje komponent anger tydligt vilka AEM som stöds. När stödet upphör för en version av AEM gör det även stödet för kärnkomponenterna för den versionen av AEM.
+Versionen för varje komponent anger tydligt vilka AEM-versioner som stöds. När supporten för en version av AEM upphör, gör det också stödet för Core Components för den versionen av AEM.
 
 Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kärnkomponenter](developing/customizing.md) i den relevanta Core Components-versionen.
 
 ## Stöd för Foundation Component {#foundation-component-support}
 
-Adobe-utvecklingsbetoningen har flyttats till kärnkomponenterna och nya funktioner kommer att läggas till.
+Adobe betoning på utveckling har gått över till kärnkomponenterna och nya funktioner kommer att läggas till.
 
 [Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) och endast större felkorrigeringar kommer att övervägas för Foundation-komponenterna som fortsätter.
