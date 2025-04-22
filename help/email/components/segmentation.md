@@ -3,9 +3,9 @@ title: E-postsegmentkomponent
 description: E-postsegmentkomponenten
 role: Architect, Developer, Admin, User
 exl-id: 6c88b8c5-189a-40c0-ab28-04d37dc5fbac
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Som ett alternativ till att använda konfigurationsdialogrutan kan innehållsfö
 
 Den aktuella versionen av e-postsegmentkomponenten är v1, som introducerades med version x av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 ### Teknisk information {#technical-details}
 
@@ -135,6 +135,6 @@ Tryck eller klicka på knappen **Lägg till** för att skapa nya villkor.
 * **Segmentvillkorsnamn** - en beskrivning av villkoret
 * **Segmentvillkor** - Det faktiska villkor som måste uppfyllas, baserat på Adobe Campaign personaliseringsvariabler
    * [Här finns information om Adobe Campaign Standard personaliseringsresurser.](https://experienceleague.adobe.com/docs/campaign-standard/using/designing-content/personalization.html?)
-   * [Här finns information om Adobe Campaign Classic personaliseringsresurser.](https://experienceleague.adobe.com/docs/)
+   * [Här finns information om Adobe Campaign Classic personaliseringsresurser.]&#x200B;(https://experienceleague.adobe.com/docs/)
 * **Ta bort** - Tryck för att klicka för att ta bort villkoret
 * **Ordna om** - Tryck eller klicka och dra för att ändra ordningen på villkoren

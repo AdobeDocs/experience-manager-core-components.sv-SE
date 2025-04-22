@@ -3,9 +3,9 @@ title: Teaser Component
 description: Teaser-komponenten kan visa en bild, en titel, RTF-text och eventuellt länka till ytterligare innehåll.
 role: Architect, Developer, Admin, User
 exl-id: ec75e168-6f3b-4dff-8df6-06ca7dc18688
-source-git-commit: 5d2d79c96dc934efd7cccefb1a6a343813376483
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att defin
 
 Den aktuella versionen av Teaser Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/teaser.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/teaser.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 ## Fjärrsupport för Assets {#remote-assets}
 
@@ -37,7 +37,7 @@ Teaser Component (från och med [version 2.23.2](/help/versions.md)) stöder fj�
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både Teaser Component (Teaser-komponenten) och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_teaser).
+Om du vill se både Teaser Component (Teaser-komponenten) och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_teaser).
 
 ### Teknisk information {#technical-details}
 
@@ -58,7 +58,7 @@ Teaser title, description and image can be inherited from the linked page, or fr
 * **Länk** - Den här filen länkar till en innehållssida, extern URL eller sidankarpunkt.
 * **Öppna länken på den nya fliken** - Om den är aktiverad öppnas länken på en ny webbläsarflik.
 * **Call-to-actions** - Med det här alternativet kan du länka till flera mål.
-   * Den sida som är länkad i det första anropet används när du ärver teasertitel, beskrivning eller bild.
+   * Den sida som är länkad i den första call-to-action-filen används när du ärver teaser titel, beskrivning eller bild.
 
 ### Fliken Text {#text-tab}
 
@@ -83,8 +83,8 @@ Teaser title, description and image can be inherited from the linked page, or fr
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
    * Tryck eller klicka på **Välj** för att öppna [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) och välja en bild.
       * Om [Fjärrsupport för Assets](#remote-assets) är aktiverat har du flera alternativ för att välja en resurs:
-         * **Lokal** väljer från det lokala AEM resursbiblioteket.
-         * **Fjärr** väljer från ett Dynamic Media-bibliotek utanför din AEM.
+         * **Lokal** väljer från det lokala AEM-resursbiblioteket.
+         * **Fjärr** väljer från ett dynamiskt mediebibliotek utanför din AEM-instans.
    * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 * **Alternativ text för hjälpmedel** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
    * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade objektvärdet för `dc:description` -metadata i DAM eller för den aktuella sidan om ingen resurs är länkad.
@@ -102,7 +102,7 @@ Format måste konfigureras för den här komponenten i [designdialogrutan](#desi
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Teaser Component (Teaser-komponenten) delegerar bildåtergivning till [Image Component (Bildkomponent)](image.md). Därför är dialogrutan [redigera](image.md#edit-dialog för Image Component tillgänglig för innehållsförfattaren så att den kan manipulera teaserbilden.
+Teaser Component (Teaser-komponenten) delegerar bildåtergivning till [Image Component (Bildkomponent)](image.md). Därför är dialogrutan [redigera]&#x200B;(image.md#edit-dialog för Image Component tillgänglig för innehållsförfattaren så att den kan manipulera teaserbilden.
 
 ## Designdialogruta {#design-dialog}
 
@@ -126,6 +126,6 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 
 Teaser Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Teaser-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
+Teaser-komponenten stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)

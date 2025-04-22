@@ -3,9 +3,9 @@ title: Språknavigeringskomponent
 description: Språknavigeringskomponenten tillhandahåller en språk-/landsnavigering för en webbplats, så att besökare kan navigera till samma sida på en annan språkinställning.
 role: Architect, Developer, Admin, User
 exl-id: 10b218b4-c439-4a0f-a46f-0b15d78b0360
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '949'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,18 @@ I [redigeringsdialogrutan](#edit-dialog) kan du definiera den globala platsnavig
 
 Den aktuella versionen av språknavigeringskomponenten är v2, som introducerades i version 2.18.0 av grundkomponenterna i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/language-navigation.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/language-navigation.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både Language Navigation Component (Språknavigeringskomponenten) och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_langnav).
+Om du vill se både språknavigeringskomponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_langnav).
 
 ## Teknisk information {#technical-details}
 
@@ -124,6 +124,6 @@ Format måste konfigureras för den här komponenten i [designdialogrutan](#desi
 
 ![Fliken Format i redigeringsdialogrutan för språknavigeringskomponenten](/help/assets/language-navigation-edit-styles.png)
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Språknavigeringskomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Språknavigeringskomponenten har stöd för [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

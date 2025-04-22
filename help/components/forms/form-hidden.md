@@ -3,9 +3,9 @@ title: Komponent för dolt formulär
 description: Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
 role: Architect, Developer, Admin, User
 exl-id: 0364cd3b-3c09-46db-9392-a67e3f9ea7a5
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '429'
 ht-degree: 1%
 
 ---
@@ -24,18 +24,18 @@ Fältegenskaperna kan definieras av innehållsredigeraren i dialogrutan [Konfigu
 
 Den aktuella versionen av Form Hidden Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018 och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/form-hidden-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
+| [v1](/help/components/v1/form-hidden-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Form Hidden-komponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_hidden).
+Om du vill visa Form Hidden-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_hidden).
 
 ### Teknisk information {#technical-details}
 

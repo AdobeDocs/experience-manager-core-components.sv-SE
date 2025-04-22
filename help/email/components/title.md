@@ -3,9 +3,9 @@ title: E-posttitelkomponent
 description: E-posttitelkomponenten är en avsnittsrubrikkomponent för dina e-postmeddelanden som innehåller redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: f65b6973-bb36-406f-bbea-f85a23f5340b
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ För att underlätta redigeringen av rubriktexten är det också enkelt att redi
 
 Den aktuella versionen av E-posttitelkomponenten är v1, som introducerades i och med version x av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Email Components Versions](/help/versions.md).
 

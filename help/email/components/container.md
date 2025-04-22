@@ -3,9 +3,9 @@ title: E-postbehållarkomponent
 description: Med e-postbehållarkomponenten kan du skapa en behållare för flera ytterligare komponenter i e-postinnehållet.
 role: Architect, Developer, Admin, User
 exl-id: 3b271e95-0093-4cb1-bb83-8446ba12a821
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ När en e-postbehållarkomponent har lagts till på en sida kan en innehållsfö
 
 Den aktuella versionen av e-postbehållarkomponenten är v1, som introducerades med version X av E-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om grundkomponentversioner och releaser för e-postmeddelanden finns i dokumentet [E-postversioner av grundkomponenter.](/help/email/versions.md)
 
@@ -54,7 +54,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera behållarobjektet
    * **en-tredjedel|två-tredjedel**
    * **två-tredje|en-tredjedel**
    * **tredje|tredje|tredje|tredje**
-* **Bakgrundsfärg** - Definierbar antingen som RGB med valfri form eller med färgväljaren, [beroende på konfiguration](#container-settings-tab)
+* **Bakgrundsfärg** - Definierbar antingen som RGB-värden med valfri form eller med färgväljaren, [beroende på konfiguration](#container-settings-tab)
 * **Bakgrundsbild** - Definierar en bakgrundsbild för behållaren, [beroende på konfiguration](#container-settings-tab)
 * **ID** - Med det här alternativet kan du kontrollera den unika identifieraren för komponenten i HTML.
    * Om du inte anger något värde genereras ett unikt ID automatiskt och du hittar det genom att kontrollera innehållet.

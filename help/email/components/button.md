@@ -3,9 +3,9 @@ title: E-postknappkomponent
 description: Med komponenten E-postknapp kan du konfigurera och visa ett knappobjekt i ditt innehåll.
 role: Architect, Developer, Admin, User
 exl-id: b144e8d1-1097-475d-b2eb-3353c176afb9
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '514'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Med komponenten E-postknapp kan du inkludera en knapp i innehållet, klickbar av
 
 Den aktuella versionen av e-postknappskomponenten är v1, som introducerades med version x av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Email Core Components Versions.](/help/email/versions.md)
 
@@ -51,7 +51,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappen och hur d
 * **Text** - Den text som ska visas på knappen
    * Klicka på Campaign-ikonen för att öppna dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) och infoga dynamiskt innehåll från Adobe Campaign.
 * **Länk** - Länka till en innehållssida i AEM, en extern resurs eller ett ankare
-   * Använd dialogrutan **Markering** för att välja en bana i AEM.
+   * Använd dialogrutan **Markering** för att välja en sökväg i AEM.
    * Klicka på Campaign-ikonen för att öppna dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) och infoga dynamiskt innehåll från Adobe Campaign.
 * **Ikon** - Identifierare för att visa en ikon i knappen
 * **ID** - Det här alternativet tillåter kontroll av den unika identifieraren för komponenten i HTML.
@@ -70,7 +70,7 @@ På fliken **Hjälpmedel** kan värden anges för [ARIA-hjälpmedelsetiketter](h
 
 ### Fliken Format {#styles-tab-edit}
 
-E-postknappkomponenten stöder AEM [Style System.](/help/get-started/authoring.md#component-styling).
+Knappkomponenten E-post stöder AEM [Style System.](/help/get-started/authoring.md#component-styling).
 
 Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
 
@@ -80,4 +80,4 @@ Format måste konfigureras för den här komponenten i [designdialogrutan](#desi
 
 ### Fliken Format {#styles-tab}
 
-E-postknappkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Knappkomponenten E-post stöder AEM [Style System](/help/get-started/authoring.md#component-styling).

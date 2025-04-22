@@ -3,9 +3,9 @@ title: Email Teaser Component
 description: Med e-postlaserkomponenten kan du visa en bild, en titel, RTF-text och eventuellt länka till mer innehåll.
 role: Architect, Developer, Admin, User
 exl-id: d6123b22-7cba-406c-986d-b6f00322d135
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Med e-postteamkomponenten kan innehållsförfattaren enkelt skapa ett suddgummi 
 
 Den aktuella versionen av E-postteamkomponenten är v1, som introducerades med version x av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 ### Teknisk information {#technical-details}
 
@@ -47,12 +47,12 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 
 ![Länk i redigeringsdialogrutan för e-postlaserkomponenten](/help/email/assets/email-teaser-edit-links.png)
 
-Teaser title, description och image kan ärvas från det länkade innehållet eller från det innehåll som länkats i den första anropet. Om varken en länk eller ett anrop till åtgärd anges ärvs titeln, beskrivningen och bilden från det aktuella innehållet.
+Teaser title, description och image kan ärvas från det länkade innehållet eller från det innehåll som är länkat i den första call-to-action. Om varken en länk eller en call-to-action anges ärvs titeln, beskrivningen och bilden från det aktuella innehållet.
 
 * **Länk** - Den här filen länkar till innehåll, extern URL eller ankarpunkt.
    * Klicka på Campaign-ikonen för att öppna dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) och infoga dynamiskt innehåll från Adobe Campaign.
 * **Call-to-actions** - Med det här alternativet kan du länka till flera mål.
-   * Den sida som är länkad i det första anropet används när du ärver teasertitel, beskrivning eller bild.
+   * Den sida som är länkad i den första call-to-action-filen används när du ärver teaser titel, beskrivning eller bild.
    * Klicka på Campaign-ikonen för att öppna dialogrutan [Välj Adobe Campaign-variabel](/help/email/campaign-variables.md) och infoga dynamiskt innehåll från Adobe Campaign.
 
 ### Fliken Text {#text-tab}
@@ -85,11 +85,11 @@ Teaser title, description och image kan ärvas från det länkade innehållet el
 
 >[!NOTE]
 >
->[Dynamic Media-funktioner](image.md#dynamic-media) är för närvarande inte tillgängliga i Teaser Component.
+>[Dynamiska mediefunktioner](image.md#dynamic-media) är för närvarande inte tillgängliga i Teaser Component.
 
 ### Fliken Format {#styles-tab-edit}
 
-Komponenten Email Teaser har stöd för AEM [Style System.](/help/get-started/authoring.md#component-styling)
+Komponenten Email Teaser stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)
 
 Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
 
@@ -107,8 +107,8 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 
 ![Email Teaser Components designdialogruta](/help/email/assets/email-teaser-design.png)
 
-* **Tillåtna rubrikelement** - Använd listrutan för att definiera vilka rubrikelement i HTML som kan väljas av en författare för teaserns titeltyp.
-* **Standardrubrikelement för rubriken** - Standardrubrikelementet HTML som används för teaser titeltyp
+* **Tillåtna rubrikelement** - Använd listrutan för att definiera vilken rubrik i HTML-element som kan väljas av en författare för lärarens titeltyp.
+* **Standardrubrikelement för rubriken** - Standardrubrikelementet för HTML som används för teaserns titeltyp
 * **Call-to-actions**
    * **Inaktivera Call-To-Actions** - Dölj alternativet **Call-To-Actions** för innehållsförfattare
 * **Elements**
@@ -121,4 +121,4 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 
 ### Fliken Format {#styles-tab}
 
-Komponenten Email Teaser har stöd för AEM [Style System.](/help/get-started/authoring.md#component-styling)
+Komponenten Email Teaser stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)

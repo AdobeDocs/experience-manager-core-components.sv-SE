@@ -3,9 +3,9 @@ title: Snabbsökningskomponent
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
 role: Architect, Developer, Admin, User
 exl-id: fc40ce1d-e69a-4a40-853e-67a37228271b
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -24,12 +24,12 @@ I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera va
 
 Den aktuella versionen av Quick Search Component är v2, som introducerades i version 2.18.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/quick-search.md) | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](/help/components/v1/quick-search.md) | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -37,7 +37,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 >[!NOTE]
 >
->Skydda Search-komponenten eller andra AEM program mot DOS-attacker ska implementeras på en högre nivå, till exempel genom att använda `mod_security` på dispatchern.
+>Skydda Search-komponenten eller något AEM-baserat program mot DOS-attacker bör implementeras på en högre nivå, till exempel genom att använda `mod_security` på dispatchern.
 
 Den senaste tekniska dokumentationen om snabbsökningskomponenten [finns på GitHub](https://adobe.com/go/aem_cmp_tech_search_v2).
 

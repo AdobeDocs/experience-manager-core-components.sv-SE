@@ -3,9 +3,9 @@ title: Innehållsförteckning, komponent
 description: Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras på rubrikerna i sidinnehållet, vilket gör att läsarna snabbt kan navigera på sidan.
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
-source-git-commit: 8beae61676340e8aafaee469018d865ea7ed934e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '758'
+source-wordcount: '762'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera in
 
 Den aktuella versionen av innehållsförteckningskomponenten är v1, som introducerades i version 2.20.0 av grundkomponenterna i maj 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -82,8 +82,8 @@ Med hjälp av designdialogrutan kan mallskaparen ange standardvärdet för namno
 
 ### Fliken Format {#styles-tab}
 
-Innehållsförteckningskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Innehållsförteckningskomponenten har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Innehållsförteckningskomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Innehållsförteckningskomponenten har stöd för [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

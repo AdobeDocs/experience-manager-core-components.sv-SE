@@ -3,9 +3,9 @@ title: Content Fragment List Component
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
 role: Architect, Developer, Admin, User
 exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
-source-git-commit: 395a1669cf3e17f649c23852addc37316b923bfd
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '802'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -25,18 +25,18 @@ Med listkomponenten Core Component Content Fragment kan du inkludera en lista me
 
 Den aktuella versionen av Content Fragment Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|----|---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/content-fragment-list.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|----|---|---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/content-fragment-list.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se komponenterna i listan Innehållsfragment och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_cflist).
+Om du vill se komponenterna i listan Innehållsfragment och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_cflist).
 
 ## Teknisk information {#technical-details}
 
@@ -101,4 +101,4 @@ Format måste konfigureras för den här komponenten i [designdialogrutan](#desi
 
 ### Fliken Format {#styles-tab}
 
-List-komponenten för innehållsfragment stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+List-komponenten för innehållsfragment har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).

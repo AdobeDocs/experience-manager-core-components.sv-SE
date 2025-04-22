@@ -3,9 +3,9 @@ title: Sidkomponent
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
 role: Architect, Developer, Admin, User
 exl-id: 2503e067-abed-427d-8a54-8b79e3451487
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -24,19 +24,19 @@ Med hjälp av [designdialogrutan](#design-dialog) kan anpassade klientbibliotek 
 
 Den aktuella versionen av Page Component är v3, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|
-| v3 | - | Kompatibel | Kompatibel |
-| [v2](v2/page.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/page-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|---|
+| v3 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v2](v2/page.md) | Kompatibel | Kompatibel | - | Kompatibel |
+| [v1](v1/page-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Progressivt stöd för webbappar {#pwa-support}
 
-I version 2.15.0 av Core Components introducerades stöd för AEM as a Cloud Service inbyggda [Progressiva webbprogram (PWA).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html) Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM till en PWA!
+I version 2.15.0 av Core Components introducerades stöd för AEM as a Cloud Service inbyggda funktioner i [Progressiva webbappar (PWA).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html) Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM-upplevelse till en PWA!
 
 ### Teknisk information {#technical-details}
 
@@ -91,6 +91,6 @@ Mer information om hur du använder bibliotek på klientsidan finns i [Använda 
 
 Sidkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Sidkomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Sidkomponenten stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)

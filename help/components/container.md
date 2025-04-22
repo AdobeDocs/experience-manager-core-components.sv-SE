@@ -3,9 +3,9 @@ title: Behållarkomponent
 description: Med komponenten Core Component Container kan du skapa en behållare för flera ytterligare komponenter på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 53c7190d-44cb-42ff-bc1a-483c7875bcf8
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,17 @@ Med komponenten Core Component Container kan du skapa en behållare för flera y
 
 Den aktuella versionen av Container Component är v1, som introducerades i version 2.5.0 av Core Components i juni 2019, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |---|---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Container-komponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_container).
+Om du vill visa Container-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_container).
 
 ## Teknisk information {#technical-details}
 
@@ -52,7 +52,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera behållarobjektet
 * **Layout** - Det här alternativet definierar beteendet eller layoutbeteendet för behållarkomponenten.
    * **Enkel** - Definierar en behållare som en enkel samling komponenter
    * **Responsivt stödraster** - Definierar en behållare som en [AEM responsiv layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
-* **Bakgrundsfärg** - Definierbar antingen som RGB med valfri form eller med färgväljaren, [beroende på konfiguration](#background-tab)
+* **Bakgrundsfärg** - Definierbar antingen som RGB-värden med valfri form eller med färgväljaren, [beroende på konfiguration](#background-tab)
 * **Bakgrundsbild** - Definierar en bakgrundsfärg för behållaren, [beroende på konfiguration](#background-tab)
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.

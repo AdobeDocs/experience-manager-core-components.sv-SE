@@ -3,9 +3,9 @@ title: Avgränsarkomponent
 description: Avgränsarkomponenten skapar en brytning mellan komponenter på en sida
 role: Architect, Developer, Admin, User
 exl-id: 79f19368-67fa-4864-93f7-2aa801d13fdb
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '306'
 ht-degree: 1%
 
 ---
@@ -22,15 +22,15 @@ Med avgränsningskomponenten kan innehållsförfattaren enkelt skapa en vågrät
 
 Den aktuella versionen av Separator Component är v1, som introducerades i version 2.3.0 av Core Components i februari 2019, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Separator-komponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_separator).
+Om du vill visa Separator-komponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_separator).
 
 ### Teknisk information {#technical-details}
 

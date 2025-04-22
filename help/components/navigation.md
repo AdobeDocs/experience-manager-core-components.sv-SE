@@ -3,9 +3,9 @@ title: Navigeringskomponent
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -26,12 +26,12 @@ I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera na
 
 Den aktuella versionen av Navigation Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/navigation.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/navigation.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -103,7 +103,7 @@ Navigeringskomponenten återger sedan menyn baserat på skuggwebbplatsens strukt
 
 ## Omdirigeringar i navigering {#redirects}
 
-När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM sida), är det en navigeringskomponent som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
+När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM-sida), är det en navigeringskomponent som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
 
 ### Exempel {#redirect-example}
 
@@ -114,7 +114,7 @@ När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL e
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa navigeringskomponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_navigation).
+Om du vill visa navigeringskomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_navigation).
 
 ## Teknisk information {#technical-details}
 
@@ -188,6 +188,6 @@ I designdialogrutan kan mallskaparen ange standardvärden för navigeringsrotsid
 
 Navigeringskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Navigeringskomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Navigeringskomponenten har stöd för [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

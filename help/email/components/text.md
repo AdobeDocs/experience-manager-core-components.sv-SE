@@ -3,9 +3,9 @@ title: E-posttextkomponent
 description: E-posttextkomponenten är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: 4aa192f6-8314-40e7-8732-c6626d647986
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '2261'
+source-wordcount: '2265'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ E-posttextkomponenten är en robust textredigerare som gör det enkelt att redig
 
 Den aktuella versionen av e-posttextkomponenten är v1, som introducerades i version X av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Email Core Components Versions.](/help/email/versions.md)
 
@@ -302,9 +302,9 @@ Tryck eller klicka på ikonen **Source Edit** om du vill ändra textens innehål
 
 >[!CAUTION]
 >
->Som alltid när du har åtkomst till Raw-HTML måste du vara försiktig när du använder alternativet **Source Edit**!
+>Som alltid när du har åtkomst till rå HTML måste du vara försiktig när du använder alternativet **Source Edit**!
 >
->HTML som anges via **Source Edit** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felformaterad HTML som angetts i **Source Edit** kan emellertid bryta sidans mall, vilket resulterar i oväntad formatering eller oanvändbar återgivning av den resulterande sidan.
+>HTML som angetts via **Source Edit** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felaktigt formaterade HTML som angavs i **Source Edit** kan emellertid bryta sidans mall, vilket kan leda till oväntad formatering eller oanvändbar återgivning av den resulterande sidan.
 
 >[!NOTE]
 >
@@ -399,10 +399,10 @@ Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alt
 Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för komponenten. När det här alternativet är aktiverat kan du definiera tillåtna tecken.
 
 * Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt tecken.
-* Ange HTML-koden för tecknet och en beskrivning som ska visas i redigeringsdialogrutan.
+* Ange HTML-koden för tecknet och en beskrivning som visas i redigeringsdialogrutan.
 * Om du vill ta bort ett tecken trycker du på eller klickar på knappen **Ta bort** .
 * Om du vill ändra ordningen på tecknen trycker du eller klickar och drar i handtagen.
 
 ## Fliken Format {#styles-tab}
 
-Komponenten för e-posttext har stöd för AEM [style system](/help/get-started/authoring.md#component-styling).
+E-posttextkomponenten stöder AEM [style system](/help/get-started/authoring.md#component-styling).

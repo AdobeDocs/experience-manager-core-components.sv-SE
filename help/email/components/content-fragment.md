@@ -3,9 +3,9 @@ title: E-postinnehållets fragmentkomponent
 description: Med komponenten E-postinnehållsfragment kan du visa ett innehållsfragment i ditt innehåll.
 role: Architect, Developer, Admin, User
 exl-id: 9bc6b730-0d2a-4e5b-891c-d2f67f600bcc
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Med e-postinnehållets fragmentkomponent kan du inkludera ett [innehållsfragmen
 
 Den aktuella versionen av E-postinnehållets fragmentkomponent är v1, som introducerades med version X av E-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om grundkomponentversioner och releaser för e-postmeddelanden finns i dokumentet [E-postversioner av grundkomponenter.](/help/email/versions.md)
 
@@ -101,4 +101,4 @@ När en komponent för e-postinnehållsfragment konfigureras med ett innehållsf
 
 ### Fliken Format {#styles-tab}
 
-E-postupplevelsefragmentkomponenten stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)
+Komponenten för e-postupplevelsefragment stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)

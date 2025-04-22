@@ -3,9 +3,9 @@ title: Carousel-komponent
 description: Med Carousel Component kan innehållsförfattaren presentera innehållet i en roterande karusell.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: d39fe0084522f67664203a026340b23d325c1883
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1317'
 ht-degree: 0%
 
 ---
@@ -25,17 +25,17 @@ I dialogrutan [Redigera](#edit-dialog) kan innehållsförfattaren skapa, namnge 
 
 Den aktuella versionen av Carousel Component är v1, som introducerades i version 2.2.0 av Core Components i oktober 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Carousel-komponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_carousel).
+Om du vill visa Carousel-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_carousel).
 
 ### Teknisk information {#technical-details}
 
@@ -50,7 +50,7 @@ Carousel, [Tabbar,](tabs.md) och [dragspelskomponenter](accordion.md) har stöd 
 Så här gör du:
 
 1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
-1. Inspect innehållet på sidan och identifierar panelens ID.
+1. Granska sidans innehåll och identifiera panelens ID.
    * Till exempel `id="carousel-bfe4fa6647-item-47f1a7ca67-tabpanel"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med hjälp av ett hash-tecken (`#`).
    * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#carousel-bfe4fa6647-item-47f1a7ca67-tabpanel`
@@ -156,6 +156,6 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 
 Carousel-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
 Carousel-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

@@ -3,9 +3,9 @@ title: Innehållsfragmentkomponent
 description: Komponenten Core Component Content Fragment gör det möjligt att visa ett innehållsfragment.
 role: Architect, Developer, Admin, User
 exl-id: 551ff2a1-f8db-490c-84a3-4255b364fc83
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ Komponenten Core Component Content Fragment tillåter att ett [innehållsfragmen
 
 Den aktuella versionen av Content Fragment Component är v1, som introducerades i version 1.1.0 av Core Components i oktober 2017, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |---|---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både Content Fragment Component (Innehållsfragmentkomponent) och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_cf).
+Om du vill se både Content Fragment Component och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_cf).
 
 ## Teknisk information {#technical-details}
 
@@ -110,6 +110,6 @@ I designdialogrutan kan mallskaparen definiera de resurstyper som används för 
 
    * Den Sling-resurstyp som används för det interna responsiva rutnätet
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Komponenten för innehållsfragment har stöd för datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Komponenten för innehållsfragment har stöd för [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

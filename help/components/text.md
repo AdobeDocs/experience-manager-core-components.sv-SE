@@ -3,9 +3,9 @@ title: Textkomponent
 description: Komponenten Text är en textredigerings- och dispositionskomponent med funktioner för redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: bcea202a-9ecb-4dcd-99b6-0848cbb9d500
-source-git-commit: 418f1b6c967760d801d0973a35e0a31343ddca6b
+source-git-commit: da947be103bd68abad82fcfcbee58d527bc14dbd
 workflow-type: tm+mt
-source-wordcount: '2181'
+source-wordcount: '2185'
 ht-degree: 0%
 
 ---
@@ -24,18 +24,18 @@ Dialogrutan [Redigera](#edit-dialog) innehåller redigeringsfunktioner i rad med
 
 Den aktuella versionen av Text Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|
-| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
-| [v1](v1/text-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|---|
+| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/text-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa textkomponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_text).
+Om du vill se textkomponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_text).
 
 ### Teknisk information {#technical-details}
 
@@ -45,7 +45,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 ## Textkomponenten och RTF-redigeraren {#the-text-component-and-the-rich-text-editor}
 
-Komponenten Core Components Text använder AEM RTF-redigeraren. RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Komponenten Core Components Text använder AEM Rich Text Editor (RTE). RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är mycket flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
 
 Resten av den här artikeln demonstrerar standardkonfigurationen för textkomponenten för kärnkomponenter med RTE-konfigurationen som är klar att användas.
 
@@ -280,9 +280,9 @@ Tryck eller klicka på ikonen **Source Edit** om du vill ändra textens innehål
 
 >[!CAUTION]
 >
->Som alltid när du har åtkomst till Raw-HTML måste du vara försiktig när du använder alternativet **Source Edit**!
+>Som alltid när du har åtkomst till rå HTML måste du vara försiktig när du använder alternativet **Source Edit**!
 >
->HTML som anges via **Source Edit** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felformaterad HTML som angetts i **Source Edit** kan emellertid bryta sidans mall, vilket resulterar i oväntad formatering eller oanvändbar återgivning av den resulterande sidan.
+>HTML som angetts via **Source Edit** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felaktigt formaterade HTML som angavs i **Source Edit** kan emellertid bryta sidans mall, vilket kan leda till oväntad formatering eller oanvändbar återgivning av den resulterande sidan.
 
 >[!NOTE]
 >
@@ -362,7 +362,7 @@ Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alt
 Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för komponenten. När det här alternativet är aktiverat kan du definiera tillåtna tecken.
 
 * Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt tecken.
-* Ange HTML-koden för tecknet och en beskrivning som ska visas i redigeringsdialogrutan.
+* Ange HTML-koden för tecknet och en beskrivning som visas i redigeringsdialogrutan.
 * Om du vill ta bort en teckentryckning eller klicka på knappen **Ta bort** .
 * Om du vill ändra ordningen på tecknen trycker du eller klickar och drar i handtagen.
 
@@ -370,6 +370,6 @@ Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för kompo
 
 Textkomponenten har stöd för AEM [style system](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Textkomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Textkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

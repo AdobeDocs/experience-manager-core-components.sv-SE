@@ -3,9 +3,9 @@ title: Experience Fragment Component
 description: Med Experience Fragment Component kan innehållsförfattaren lägga till en upplevelsefragmentvariant på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,12 @@ Med kärnkomponentens Experience Fragment-komponent kan innehållsförfattaren v
 
 Den aktuella versionen av Experience Fragment Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/experience-fragment.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |---|---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/experience-fragment.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
@@ -105,7 +105,7 @@ Experience Fragment-komponenten kommer att försöka hitta en motsvarande lokali
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Experience Fragment-komponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_xf).
+Om du vill visa Experience Fragment-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_xf).
 
 ## Teknisk information {#technical-details}
 

@@ -3,9 +3,9 @@ title: E-postbildkomponent
 description: E-postbildkomponenten är en adaptiv bildkomponent med redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: f5d40047-3082-4edd-a5f6-6ab3e33997f9
-source-git-commit: 3abc29e0c186a84f079d5938b8b716f4c7378d65
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1625'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ E-postbildkomponenten har adaptiv bildmarkering och responsivt beteende med lat 
 
 Den aktuella versionen av e-postbildkomponenten är v1, som introducerades med version x av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Email Core Components Versions](/help/email/versions.md).
 
@@ -44,13 +44,13 @@ Dessutom har e-postbildkomponenten stöd för lazy loading för att skjuta upp i
 >
 >Som standard drivs e-postbildkomponenten av den adaptiva bildservern. Se dokumentet [Adaptive Image Server](#adaptive-image-servlet) för mer information om hur det fungerar.
 
-## Dynamic Media Support {#dynamic-media}
+## Stöd för dynamiska media {#dynamic-media}
 
-E-postbildkomponenten stöder [Dynamic Media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till Dynamic Media-bildresurser genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+E-postbildkomponenten stöder [dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
-Dina e-postupplevelser som byggts med e-postkärnkomponenterna kan innehålla omfattande, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
+Dina e-postupplevelser som byggts med e-postkärnkomponenterna kan innehålla kraftfulla, Sensei-baserade, robusta, plattformsoberoende Dynamic Media Image-funktioner.
 
-## Stöd för SVG {#svg-support}
+## SVG Support {#svg-support}
 
 Scalable Vector Graphics (SVG) stöds av Email Image Component.
 
@@ -60,7 +60,7 @@ Scalable Vector Graphics (SVG) stöds av Email Image Component.
 
 ### Dokumentskydd {#security}
 
-Av säkerhetsskäl anropas aldrig SVG direkt av bildredigeraren. Den anropas via `<img src=“path-to-component”>`. Detta förhindrar webbläsaren från att köra skript som är inbäddade i filen SVG.
+Av säkerhetsskäl anropas aldrig den ursprungliga SVG direkt av bildredigeraren. Den anropas via `<img src=“path-to-component”>`. Detta förhindrar webbläsaren från att köra skript som är inbäddade i SVG-filen.
 
 ### Teknisk information {#technical-details}
 
@@ -97,16 +97,16 @@ E-postbildkomponenten innehåller en konfigureringsdialogruta där själva bilde
 
 ![Fliken Metadata i dialogrutan Konfigurera för Image Component (Bildkomponent)](/help/email/assets/email-image-configure-metadata.png)
 
-* **Förinställningstyp** - Detta definierar de typer av bildförinställningar som är tillgängliga, antingen **Bildförinställning** eller **Smart beskärning**, och är bara tillgängligt när [Dynamic Media-funktioner](#dynamic-meida) är aktiverade.
-   * **Bildförinställning** - När **Förinställningstyp** för **Bildförinställning** är markerad är den nedrullningsbara menyn **Bildförinställning** tillgänglig, vilket gör att du kan välja bland de tillgängliga Dynamic Media-förinställningarna. Detta är bara tillgängligt om förinställningar har definierats för den valda resursen.
+* **Förinställningstyp** - Detta definierar de typer av bildförinställningar som är tillgängliga, antingen **Bildförinställning** eller **Smart beskärning**, och är bara tillgängligt när [Dynamiska mediefunktioner](#dynamic-meida) är aktiverade.
+   * **Bildförinställning** - När **Förinställningstyp** för **Bildförinställning** är markerad är den nedrullningsbara menyn **Bildförinställning** tillgänglig, vilket gör att du kan välja bland de tillgängliga dynamiska medieförinställningarna. Detta är bara tillgängligt om förinställningar har definierats för den valda resursen.
    * **Smart beskärning** - När **förinställningstyp** för **smart beskärning** har valts är den nedrullningsbara menyn **Återgivning** tillgänglig, vilket gör att du kan välja bland de tillgängliga återgivningarna för den valda resursen. Detta är bara tillgängligt om återgivningar har definierats för den valda resursen.
-   * **Bildmodifierare** - Ytterligare Dynamic Media-kommandon för bildvisning kan definieras här avgränsade med `&`, oavsett vilken **förinställningstyp** som har valts.
+   * **Bildmodifierare** - Fler kommandon för visning av dynamiska media kan definieras här avgränsade med `&`, oavsett vilken **förinställningstyp** som har valts.
 * **Bildtext** - Ytterligare information om bilden, som visas under bilden som standard.
    * **Hämta bildtext från DAM** - När den är markerad fylls bildtexten i med värdet för `dc:title`-metadata i DAM. Endast tillgängligt när en resurs väljs från DAM.
    * **Visa bildtext som popup-fönster** - Om det här alternativet är markerat visas inte bildtexten under bilden, utan som ett popup-fönster som visas av vissa webbläsare när de hovrar över bilden.
 * **Länk** - Länka bilden till en annan resurs.
-   * Använd urvalsdialogrutan för att länka till en annan AEM.
-   * Om du inte länkar till en AEM resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
+   * Använd urvalsdialogrutan för att länka till en annan AEM-resurs.
+   * Om du inte länkar till en AEM-resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
    * **Öppna länk på ny flik** - Det här alternativet öppnar länken i ett nytt webbläsarfönster.
 * **ID** - Med det här alternativet kan du kontrollera den unika identifieraren för komponenten i HTML.
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
@@ -135,7 +135,7 @@ Format måste konfigureras för den här komponenten i [designdialogrutan](#desi
 
 ![Huvudflik i designdialogrutan för bildkomponenten](/help/email/assets/email-image-design-main.png)
 
-* **Aktivera DM-funktioner** - När det här alternativet är markerat är [Dynamic Media-funktioner](#dynamic-media) tillgängliga.
+* **Aktivera DM-funktioner** - När det här alternativet är markerat är [Dynamiska mediefunktioner](#dynamic-media) tillgängliga.
    * Det här alternativet visas bara när Dynamic Media är aktiverat i miljön.
 * **Aktivera webboptimerade bilder** - När det här alternativet är markerat [levererar den webboptimerade bildleveranstjänsten ](/help/developing/web-optimized-image-delivery.md) bilder i WebP-format, vilket minskar bildstorleken med i genomsnitt 25 %.
    * Det här alternativet är endast tillgängligt i AEMaaCS.
@@ -147,7 +147,7 @@ Format måste konfigureras för den här komponenten i [designdialogrutan](#desi
 * **Ändra storlek på bredd** - Det här värdet används för att ändra storlek på bredden på basbilderna som är DAM-resurser.
    * Bildernas proportioner bevaras.
    * Om värdet är större än bildens faktiska bredd har det här värdet ingen effekt.
-   * Det här värdet påverkar inte bilder i SVG.
+   * Det här värdet påverkar inte SVG-bilder.
 
 Du kan definiera en lista med bredder i pixlar för bilden så läser komponenten automatiskt in den mest lämpliga bredden baserat på webbläsarens storlek. Detta är en viktig del av [responsiva funktioner](#responsive-features) i e-postbildkomponenten.
 

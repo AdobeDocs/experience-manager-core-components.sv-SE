@@ -3,9 +3,9 @@ title: Dragspelskomponent
 description: Med komponenten Core Component Accordion kan du skapa en samling paneler som ordnas i ett dragspel på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 1deb570a-3d8d-409e-805f-8460c49cf9bb
-source-git-commit: d39fe0084522f67664203a026340b23d325c1883
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1102'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ Med komponenten Core Component Accordion kan du skapa en samling komponenter, so
 
 Den aktuella versionen av dragspelskomponenten är v1, som introducerades i version 2.5.0 av kärnkomponenterna i juni 2019, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |---|---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa dragspelskomponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_accordion).
+Om du vill visa dragspelskomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_accordion).
 
 ## Teknisk information {#technical-details}
 
@@ -52,7 +52,7 @@ Accordion, [Carousel,](carousel.md) och [Tabs Components](tabs.md) stöder länk
 Så här gör du:
 
 1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
-1. Inspect innehållet på sidan och identifierar panelens ID.
+1. Granska sidans innehåll och identifiera panelens ID.
    * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med hjälp av ett hash-tecken (`#`).
    * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
@@ -120,8 +120,8 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 ![Egenskaper för designdialogruta, flik](/help/assets/accordion-design-properties.png)
 
-* **Tillåtna rubrikelement** - Den här flervalslistrutan definierar det dragspelsobjektsrubrikens HTML-element som tillåts markeras av en författare.
-* **Standardrubrikelement** - Den här listrutan definierar standardobjektsrubrikelementet HTML.
+* **Tillåtna rubrikelement** - Den här flervalslistrutan definierar dragspelsobjektsrubrikens HTML-element som tillåts markeras av en författare.
+* **Standardrubrikelement** - Den här listrutan definierar standardobjektsrubrikens HTML-element.
 
 ### Fliken Tillåtna komponenter {#allowed-components-tab}
 
@@ -131,8 +131,8 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 
 ### Fliken Format {#styles-tab}
 
-Dragspelskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Dragspelskomponenten har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
 Accordion-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

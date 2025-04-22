@@ -1,42 +1,42 @@
 ---
-title: PDF Viewer Component
-description: Med PDF-visningsprogramkomponenten kan du visa ett PDF-dokument.
+title: PDF Viewer-komponent
+description: Med PDF Viewer Component kan du visa ett PDF-dokument.
 role: Architect, Developer, Admin, User
 exl-id: deb635f5-2b73-4e7a-9838-3a941e39e898
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
-# PDF Viewer Component {#pdf-viewer-component}
+# PDF Viewer-komponent {#pdf-viewer-component}
 
-Med komponenten Core Component PDF Viewer kan du ta med ett PDF-dokument på en sida.
+Med komponenten Core Component PDF Viewer kan du inkludera ett PDF-dokument på en sida.
 
 ## Användning {#usage}
 
-Core Component PDF Viewer-komponenten bäddar in ett visningsprogram som visar PDF-filer som sparats som resurser på.
+Komponenten Core Component PDF Viewer bäddar in ett visningsprogram som visar PDF-filer som lagras som resurser på sidan.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
 Den aktuella versionen av PDF Viewer Component är v1, som introducerades i version 2.10.0 av Core Components i juni 2020, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |---|---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa komponenterna i PDF Viewer samt se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_pdfviewer).
+Om du vill visa komponenterna i PDF Viewer samt se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_pdfviewer).
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om PDF Viewer-komponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1).
+Den senaste tekniska dokumentationen om PDF Viewer Component [finns på GitHub](https://adobe.com/go/aem_cmp_tech_pdfviewer_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
@@ -50,15 +50,15 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera visningsprogramme
 
 ### Fliken Konfiguration {#configuration-tab}
 
-På fliken Konfiguration kan författaren definiera vilken PDF som ska visas. Sökvägen kan definieras som en resurs i AEM eller en absolut sökväg till en annan resurs.
+På fliken Konfiguration kan författaren definiera vilken PDF som ska visas. Sökvägen kan definieras som en resurs i AEM eller som en absolut sökväg till en annan resurs.
 
-![Fliken Konfiguration i redigeringsdialogrutan för komponenten PDF Viewer](/help/assets/pdf-viewer-edit-configuration.png)
+![Fliken Konfiguration i redigeringsdialogrutan för PDF Viewer-komponenten](/help/assets/pdf-viewer-edit-configuration.png)
 
 ### Anpassa flik {#customize-tab}
 
 På fliken Anpassa kan författaren definiera vilka alternativ som är tillgängliga i visningsprogrammet för läsaren och hur visningsprogrammet ska visas.
 
-![Fliken Anpassa i redigeringsdialogrutan för komponenten PDF Viewer](/help/assets/pdf-viewer-edit-customize.png)
+![Fliken Anpassa i redigeringsdialogrutan för PDF Viewer-komponenten](/help/assets/pdf-viewer-edit-customize.png)
 
 Antalet tillgängliga alternativ beror på vilken **typ** som är vald.
 
@@ -70,7 +70,7 @@ Antalet tillgängliga alternativ beror på vilken **typ** som är vald.
 
 Visningsområdet återges i hela webbläsaren. Detta passar bäst för lagrings- och produktivitetsprogram.
 
-![Anpassa flikens alternativ för hela fönster i redigeringsdialogrutan för komponenten PDF Viewer](/help/assets/pdf-viewer-edit-customize-full.png)
+![Anpassa flikens alternativ för hela fönster i redigeringsdialogrutan för PDF Viewer Component](/help/assets/pdf-viewer-edit-customize-full.png)
 
 * **Standardvisningsläge** - Hur visningsprogrammet passar in på sidan där det visas
    * Anpassa till sida
@@ -88,7 +88,7 @@ Visningsområdet återges i hela webbläsaren. Detta passar bäst för lagrings-
 
 Visningsområdet återges i hela webbläsaren. Detta passar bäst för lagrings- och produktivitetsprogram.
 
-![Anpassa behållaralternativet för tabbstorlek i redigeringsdialogrutan för komponenten PDF Viewer](/help/assets/pdf-viewer-edit-customize-sized-container.png)
+![Anpassa behållaralternativet för tabbstorlek i redigeringsdialogrutan för PDF Viewer Component](/help/assets/pdf-viewer-edit-customize-sized-container.png)
 
 * **Helskärm** - När det här alternativet är aktiverat får visningsprogrammet hela visningsrutans höjd/bredd.
 * **Hämta PDF** - När det här alternativet är aktiverat visas hämtningsknappen.
@@ -101,11 +101,11 @@ Visningsområdet återges i hela webbläsaren. Detta passar bäst för lagrings-
 
 Alla PDF-sidor som återges i linje på en webbsida. Detta passar bäst för läsning av program.
 
-![Anpassa behållaralternativet för tabbstorlek i redigeringsdialogrutan för komponenten PDF Viewer](/help/assets/pdf-viewer-edit-customize-inline.png)
+![Anpassa behållaralternativet för tabbstorlek i redigeringsdialogrutan för PDF Viewer Component](/help/assets/pdf-viewer-edit-customize-inline.png)
 
 * **Hämta PDF** - När det här alternativet är aktiverat visas hämtningsknappen.
 * **Skriv ut PDF** - När det här alternativet är aktiverat visas utskriftsknappen.
 
 ## Designdialogruta {#design-dialog}
 
-Det finns ingen designdialogruta för PDF-visningsprogramkomponenten.
+Det finns ingen designdialogruta för PDF Viewer-komponenten.

@@ -3,9 +3,9 @@ title: Ladda ned komponent
 description: Med komponenten Core Component Download kan du skapa ett nedladdningsalternativ på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 48e7ade0-b849-4d1f-b836-51196e5ac507
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -25,18 +25,18 @@ Med komponenten Core Component Download kan du inkludera ett nedladdningsalterna
 
 Den aktuella versionen av Download Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/download.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |---|---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/download.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa hämtningskomponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_download).
+Om du vill visa Download Component och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [Component Library](https://adobe.com/go/aem_cmp_library_download).
 
 ## Teknisk information {#technical-details}
 
@@ -52,7 +52,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera nedladdningsobjek
 
 ### Fliken Resurser {#asset-tab}
 
-Valet av en hämtningsresurs liknar funktionen hos [Image Component](image.md) och utnyttjar även AEM DAM.
+Valet av en hämtningsresurs liknar funktionen hos [Image Component](image.md) och använder även AEM DAM.
 
 * **Hämta resurs**
    * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.

@@ -3,9 +3,9 @@ title: E-postupplevelsefragmentkomponent
 description: Med e-postupplevelsefragmentkomponenten kan innehållsförfattaren placera en Experience Fragment-variant i sitt innehåll samtidigt som den stöder en lokaliserad innehållsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 861c1fd1-6d6d-426c-a338-a558326fe16e
-source-git-commit: e5afead6bfdcc59cbd6da888f4e1e36038c6c0f8
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '862'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ Komponenten för e-postupplevelsefragment stöder en lokaliserad platsstruktur.
 
 Den aktuella versionen av e-postupplevelsefragmentkomponenten är v1, som introducerades med version X av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om e-postkärnkomponentens versioner och versioner finns i dokumentet [E-postkärnkomponentversioner.](/help/email/versions.md)
 
@@ -129,7 +129,7 @@ Du kan också definiera ett **ID**. Med det här alternativet kan du kontrollera
 
 ### Fliken Format {#styles-tab-edit}
 
-E-postupplevelsefragmentkomponenten stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)
+Komponenten för e-postupplevelsefragment stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)
 
 Använd listrutan för att välja de format som du vill använda på komponenten. Markeringar som görs i redigeringsdialogrutan har samma effekt som de som väljs i komponentverktygsfältet.
 
@@ -141,4 +141,4 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 ### Fliken Format {#styles-tab}
 
-E-postupplevelsefragmentkomponenten stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)
+Komponenten för e-postupplevelsefragment stöder AEM [Style System.](/help/get-started/authoring.md#component-styling)

@@ -1,22 +1,22 @@
 ---
 title: Bädda in komponent
-description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM innehållssida.
+description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM-innehållssida.
 role: Architect, Developer, Admin, User
 exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1343'
 ht-degree: 0%
 
 ---
 
 # Bädda in komponent {#embed-component}
 
-Med Core Components Embed Component (Bädda in kärnkomponenter) kan du bädda in externt innehåll på en AEM.
+Med Core Components Embed Component (Bädda in kärnkomponenter) kan du bädda in externt innehåll på en AEM-innehållssida.
 
 ## Användning {#usage}
 
-Med Core Component Embed Component (Bädda in kärnkomponent) kan innehållsförfattaren definiera markerat externt innehåll som ska bäddas in på en AEM innehållssida. Dessutom finns det ett alternativ för att definiera frihandsritad HTML som även ska bäddas in.
+Med Core Component Embed Component (Bädda in kärnkomponent) kan innehållsförfattaren definiera markerat externt innehåll som ska bäddas in på en AEM-innehållssida. Dessutom finns det ett alternativ för att definiera frihandsritade HTML som även ska bäddas in.
 
 * Komponentens egenskaper kan definieras i dialogrutan [Konfigurera](#configure-dialog).
 * Standardvärden för komponenten när du lägger till den på en sida kan definieras i [designdialogrutan](#design-dialog).
@@ -25,18 +25,18 @@ Med Core Component Embed Component (Bädda in kärnkomponent) kan innehållsför
 
 Den aktuella versionen av Embed Component är v2, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |---|---|
-| v2 | - | Kompatibel | Kompatibel |
-| [v1](v1/embed.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |---|---|---|
+| v2 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v1](v1/embed.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa den inbäddade komponenten samt exempel på dess konfigurationsalternativ och HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_embed).
+Om du vill visa den inbäddade komponenten samt exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_embed).
 
 ## Teknisk information {#technical-details}
 
@@ -68,7 +68,7 @@ Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resurse
 
 Den inbäddade komponenten levereras med processorer för följande typer av resurser:
 
-* Resurser som följer standarden [Inkludera ](https://oembed.com/) inklusive Facebook Post, Instagram, SoundCloud, Twitter och YouTube
+* Resurser som följer standarden [Inkludera ](https://oembed.com/), inklusive Facebook Post, Instagram, SoundCloud, Twitter och YouTube
 * Pinterest
 
 Utvecklare kan lägga till ytterligare URL-processorer genom att [följa utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
@@ -87,7 +87,7 @@ Fältet **Inbäddbar** definierar vilken typ av processor du vill använda. När
 * **Aktivera ljud av** - Den här parametern anger om videon spelas upp som standard. Om du aktiverar det här alternativet ökar risken för att Autoplay fungerar i moderna webbläsare.
 * **Aktivera automatisk uppspelning** - Den här parametern anger om den inledande videon automatiskt ska börja spelas upp när spelaren läses in. Detta gäller endast för publiceringsinstansen eller när alternativet **Visa som publicerad** används i redigeringsinstansen.
 * **Aktivera slinga** - Om det är en enda video anger den här parametern om spelaren ska spela upp den inledande videon upprepade gånger. När det gäller en spellista spelar spelaren upp hela spellistan och startar sedan igen vid den första videon.
-* **Aktivera textbunden uppspelning (iOS)** - Den här parametern kontrollerar om videofilmer spelas upp textbundet (på) eller helskärm (av) i en HTML5-spelare på iOS.
+* **Aktivera textbunden uppspelning (iOS)** - Den här parametern kontrollerar om videoklipp spelas upp textbundet (på) eller helskärm (av) i en HTML5-spelare på iOS.
 * **Obegränsade relaterade videoklipp** - Om det här alternativet är inaktiverat kommer relaterade videoklipp från samma kanal som videon som spelades upp, annars kommer de från vilken kanal som helst.
 
 Andra inbäddade tabeller kan innehålla liknande fält och kan definieras av en utvecklare av [efter utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
@@ -100,12 +100,12 @@ Andra inbäddade tabeller kan innehålla liknande fält och kan definieras av en
 
 #### HTML {#html}
 
-Du kan lägga till frihandskomponenten HTML på sidan med hjälp av komponenten Bädda in.
+Du kan lägga till frihandskomponenten HTML på sidan med hjälp av inbäddningskomponenten.
 
 ![Bädda in komponentens redigeringsdialogruta för HTML](/help/assets/embed-html.png)
 
 >[!NOTE]
->Alla osäkra taggar, till exempel skript, filtreras från det angivna HTML och återges inte på den resulterande sidan.
+>Alla osäkra taggar, till exempel skript, filtreras från den angivna HTML-filen och återges inte på den resulterande sidan.
 
 ##### Dokumentskydd {#security}
 
@@ -113,9 +113,9 @@ Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att und
 
 I allmänhet tas alla skript och `style`-element samt alla `on*` - och `style` -attribut bort från utdata.
 
-Reglerna är dock mer komplicerade eftersom Bädda in komponent följer AEM globala filterregeluppsättningen för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
+Reglerna är dock mer komplicerade eftersom Bädda in komponent följer AEM globala filterregeluppsättning för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
-Ytterligare säkerhetsinformation finns i [AEM-dokumentationen för utvecklare för såväl lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) som [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
+Ytterligare säkerhetsinformation finns i [AEM utvecklardokumentation för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) samt [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
 
 >[!NOTE]
 >

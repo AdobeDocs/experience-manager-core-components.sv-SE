@@ -3,9 +3,9 @@ title: Breadcrumb-komponent
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 role: Architect, Developer, Admin, User
 exl-id: 19d65b9d-a407-4f50-9c55-8de0f12222ed
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -24,19 +24,19 @@ Tillgängliga alternativ, till exempel standardnavigeringsnivån och möjlighete
 
 Den aktuella versionen av Breadcrumb Component är v3, som introducerades i version 2.18.0 av Core Components i februari 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- | --- |--- |---|
-| v3 | - | Kompatibel | Kompatibel |
-| [v2](v2/breadcrumb.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- | --- |--- |---|---|
+| v3 | - | Kompatibel | Kompatibel | Kompatibel |
+| [v2](v2/breadcrumb.md) | Kompatibel | Kompatibel | - | Kompatibel |
+| [v1](v1/breadcrumb-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se exempel på Breadcrumb Component (Breadcrumb-komponenten) och dess konfigurationsalternativ samt HTML- och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_breadcrumb).
+Om du vill visa Breadcrumb-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_breadcrumb).
 
 >[!NOTE]
 >
@@ -103,6 +103,6 @@ I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska anv
 
 Breadcrumb-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Breadcrumb-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
+Breadcrumb-komponenten stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)

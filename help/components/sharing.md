@@ -1,18 +1,18 @@
 ---
 title: Delningskomponent för sociala medier
-description: Komponenten för delning via sociala medier i kärnkomponenten är en delningswidget för Facebook och Pinterest.
+description: Core Component Social Sharing Component Component är en delningswidget för Facebook och Pinterest.
 role: Architect, Developer, Admin, User
 exl-id: 8bd53c76-da91-479b-b416-f978682a3d43
-source-git-commit: 327c239b02e0aecee878784c918bfa98d960530e
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
 
 # Delningskomponent för sociala medier{#social-sharing-component}
 
-Komponenten för delning via sociala medier i kärnkomponenten är en delningswidget för Facebook och Pinterest.
+Core Component Social Sharing Component Component är en delningswidget för Facebook och Pinterest.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ Komponenten för delning via sociala medier i kärnkomponenten är en delningswi
 
 ## Användning {#usage}
 
-Delningskomponenten för sociala medier lägger till Facebook- och Pinterest-delningslänkar på sidan. Den ingår ofta i sidhuvuden och sidfötter.
+Delningskomponenten för sociala medier lägger till länkar för delning mellan Facebook och Pinterest på sidan. Den ingår ofta i sidhuvuden och sidfötter.
 
 Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via [Inledande sidesegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och av innehållsförfattaren via [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
@@ -28,11 +28,11 @@ Till skillnad från andra komponenter görs inställningarna för komponenten f�
 
 Den aktuella versionen av den sociala delningskomponenten är v1, som introducerades i version 1.0.0 av de centrala komponenterna, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds och de AEM versionerna som komponenterna är kompatibla med.
+Följande tabell visar alla versioner av komponenten som stöds och de AEM-versioner som komponenterna är kompatibla med.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel, borttagen | Kompatibel, borttagen |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel, borttagen | Kompatibel, borttagen | Kompatibel, borttagen |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 

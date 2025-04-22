@@ -3,9 +3,9 @@ title: Progress Bar-komponent
 description: Förloppsindikatorkomponenten visar förloppet mot ett mål
 role: Architect, Developer, Admin, User
 exl-id: 47afc5a6-ac57-4b6c-92c4-015ca956a20b
-source-git-commit: 9767a3a10cb9a77f385edc0ac3fb00096c0087af
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '340'
 ht-degree: 1%
 
 ---
@@ -22,15 +22,15 @@ Med Progress Bar-komponenten kan innehållsförfattaren enkelt skapa en förlopp
 
 Den aktuella versionen av Progress Bar-komponenten är v1, som introducerades i version 2.9.0 av Core Components i maj 2020, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Progress Bar-komponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_progressbar).
+Om du vill visa Progress Bar-komponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_progressbar).
 
 ### Teknisk information {#technical-details}
 
@@ -56,6 +56,6 @@ I designdialogrutan kan mallskaparen definiera de format som ska användas för 
 
 Förloppsindikatorkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Komponenten Progress Bar stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Förloppsindikatorkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

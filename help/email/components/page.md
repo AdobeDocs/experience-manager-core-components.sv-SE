@@ -3,9 +3,9 @@ title: E-postsidkomponent
 description: E-postsidkomponenten
 role: Architect, Developer, Admin, User
 exl-id: 17fd0f5e-2b85-41a1-abaf-8ad190a5341a
-source-git-commit: c16dd8696e89f89c7b178ece11f57a565d73588b
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -26,11 +26,11 @@ Sidkomponenten E-post utgör grunden för alla sidor som utformats med e-postkä
 
 Den aktuella versionen av e-postsidkomponenten är v1, som introducerades i version X av e-postkärnkomponenterna i oktober 2022, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.5 | AEM as a Cloud Service |
-|---|---|---|
-| v1 | Kompatibel | - |
+| Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|---|---|---|---|
+| v1 | Kompatibel | Kompatibel | - |
 
 Mer information om grundkomponentversioner och releaser för e-postmeddelanden finns i dokumentet [E-postversioner av kärnkomponenter](/help/email/versions.md)
 
@@ -44,13 +44,13 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
-### Fliken Cloud Service {#cloud-services}
+### Fliken Molntjänster {#cloud-services}
 
 För att e-postkärnkomponenterna ska kunna hämta kampanjvariabler och data måste sidan vara länkad till en Adobe Campaign-konfiguration.
 
 ![Egenskaper för e-postsida](/help/email/assets/email-page-properties.png)
 
-Under rubriken **Konfiguration av Cloud Service** väljer du **Lägg till konfiguration** i listrutan.
+Under rubriken **Cloud Service Configuration** väljer du **Add Configuration** i listrutan.
 
 Under rubriken **Adobe Campaign** väljer du konfigurationen för din integrering med Adobe Campaign.
 

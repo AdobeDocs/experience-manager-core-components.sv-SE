@@ -3,9 +3,9 @@ title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
 role: Architect, Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: af908d77b30b7642b553f38c217136cfd5603108
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1204'
 ht-degree: 0%
 
 ---
@@ -22,20 +22,20 @@ List-komponenten kan användas för att skapa t.ex. en dynamisk lista med undero
 
 Den aktuella versionen av List Component är v4, som introducerades i version 2.2.0 av Core Components i februari 2023, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
 | v4 | - | Kompatibel | Kompatibel |
-| [v3](/help/components/v3/list.md) | - | Kompatibel | Kompatibel |
-| [v2](/help/components/v2/list.md) | Kompatibel | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/list-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| [v3](/help/components/v3/list.md) | - | Kompatibel | Kompatibel | Kompatibel |
+| [v2](/help/components/v2/list.md) | Kompatibel | Kompatibel | - | Kompatibel |
+| [v1](/help/components/v1/list-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Omdirigeringar i listor {#redirects}
 
-När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM sida), är det en lista som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
+När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM-sida), är det en lista som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
 
 ### Exempel {#redirect-example}
 
@@ -46,7 +46,7 @@ När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL e
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa List-komponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_list).
+Om du vill se List Component (List-komponenten) och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata, går du till [Component Library](https://adobe.com/go/aem_cmp_library_list).
 
 ### Teknisk information {#technical-details}
 
@@ -96,7 +96,7 @@ Tryck eller klicka på knappen **Lägg till** om du vill infoga ett nytt objekt 
 
 * I fältet **Link** anger du antingen
    * En fullständig URL
-   * En relativ URL till befintligt AEM
+   * En relativ URL till befintligt AEM-innehåll
       * Du kan använda dialogrutan **Markering** för att välja ett objekt från AEM.
 * I fältet **Text** anger du den text som ska visas för länken i listan.
 * Markera kryssrutan om länken ska öppnas på en ny webbläsarflik
@@ -108,7 +108,7 @@ När du har skapat mer än ett objekt för listan kan du ordna listan.
 
 #### Sök {#search-options}
 
-Listan kan skapas med hjälp av resultatet av en sökning AEM innehåll.
+Listan kan byggas med hjälp av resultatet från en sökning i AEM-innehåll.
 
 ![Alternativ för söklistor](/help/assets/list-edit-search.png)
 
@@ -116,7 +116,7 @@ Listan kan skapas med hjälp av resultatet av en sökning AEM innehåll.
 Strängen som en fulltextsökning ska köras för att generera listelementen
 * **Sök i**
 Var sökningen ska utföras
-   * Använd **urvalsdialogrutan** för att välja plats i AEM
+   * Använd dialogrutan **Markering** för att välja plats i AEM
    * Använd aktuell sida om inget anges
 
 #### Taggar {#tags}
@@ -127,7 +127,7 @@ Listan kan byggas med sidor som matchar vissa taggar under en viss plats.
 
 * **Överordnad sida**
 Där taggmatchningen ska börja
-   * Använd **urvalsdialogrutan** för att välja plats i AEM
+   * Använd dialogrutan **Markering** för att välja plats i AEM
    * Använd aktuell sida om inget anges
 * **Taggar**
 Vilka taggar som ska matchas
@@ -218,6 +218,6 @@ Aktivera alternativet Visa datum i dialogrutan [redigera ](#edit-dialog)
 
 Bildkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-List-komponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+List-komponenten stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)

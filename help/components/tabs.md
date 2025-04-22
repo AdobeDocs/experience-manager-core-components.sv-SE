@@ -3,9 +3,9 @@ title: Tabbar-komponent
 description: Med flikkomponenten kan du skapa flera flikar för att ordna innehåll på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 0031c5f3-447c-4932-898f-2f453801e492
-source-git-commit: d39fe0084522f67664203a026340b23d325c1883
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -31,17 +31,17 @@ I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera fl
 
 Den aktuella versionen av komponenten Tabs är v1, som introducerades i version 2.2.0 av Core Components i oktober 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v1 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både flikkomponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_tabs).
+Om du vill se både flikkomponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_tabs).
 
 ### Teknisk information {#technical-details}
 
@@ -56,7 +56,7 @@ Flikarna, [Carousel,](carousel.md) och [dragspelskomponenter](accordion.md) har 
 Så här gör du:
 
 1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
-1. Inspect innehållet på sidan och identifierar panelens ID.
+1. Granska sidans innehåll och identifiera panelens ID.
    * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med hjälp av ett hash-tecken (`#`).
    * Till exempel `https://wknd.site/content/wknd/language-masters/en/magazine/western-australia.html#accordion-86196c94d3-item-ca319dbb0b`
@@ -141,6 +141,6 @@ Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn 
 
 Tabbar-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Flikkomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Tabb-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

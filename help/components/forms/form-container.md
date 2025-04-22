@@ -3,9 +3,9 @@ title: Formulärbehållarkomponent
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
 role: Architect, Developer, Admin, User
 exl-id: 552f9dd5-6a3a-42d9-9969-e62a1f36e811
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -28,18 +28,18 @@ Genom att använda dialogrutan [Konfigurera](#configure-dialog) kan innehållsre
 
 Den aktuella versionen av Form Container Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018, och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel | Kompatibel |
+| [v1](/help/components/v1/form-container-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Form Container-komponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_container).
+Om du vill visa Form Container-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_container).
 
 ## Teknisk information {#technical-details}
 
@@ -53,17 +53,17 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera vilka åtgärder 
 
 Beroende på vald **åtgärdstyp** ändras de tillgängliga alternativen i behållaren. De tillgängliga åtgärdstyperna är:
 
-* [Post-formulärdata](#post-data)
+* [Bokför formulärdata](#post-data)
 * [E-post](#mail)
 * [Lagra innehåll](#store-content)
 
 Oavsett typ finns det [allmänna inställningar](#general-settings) som gäller för varje åtgärd.
 
-### Post-formulärdata {#post-data}
+### Bokför formulärdata {#post-data}
 
 När formuläret skickas skickar dataåtgärden post form till en tredje part som JSON för bearbetning.
 
-![Alternativ för Post-formulärdata i formulärbehållarkomponentens redigeringsdialogruta](/help/assets/form-container-edit-post.png)
+![Alternativ för att skicka formulärdata i formulärbehållarkomponentens redigeringsdialogruta](/help/assets/form-container-edit-post.png)
 
 * **Slutpunkt** - Den fullständiga HTTPS-tjänsten som bearbetar data
 * **Felmeddelande** - Meddelande som visas om överföringen inte lyckas
@@ -100,7 +100,7 @@ När formuläret skickas kommer innehållet i formuläret att lagras på en angi
 >
 >För att förenkla hanteringen av användardata och för att framtvinga olika problemområden rekommenderar vi i allmänhet inte att användargenererat innehåll lagras i databasen.
 >
->Använd i stället åtgärdstypen [Post Form Data](#post-data) för att skicka användarinnehåll till en dedikerad tjänsteleverantör.
+>Använd i stället åtgärdstypen [Skicka formulärdata](#post-data) för att skicka användarinnehåll till en dedikerad tjänsteleverantör.
 
 ### Allmänna inställningar {#general-settings}
 

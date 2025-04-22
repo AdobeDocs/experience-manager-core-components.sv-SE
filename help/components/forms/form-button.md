@@ -3,9 +3,9 @@ title: Komponent för formulärknapp
 description: Komponenten Core Component Form Hidden gör det möjligt att inkludera ett dolt fält i ett formulär.
 role: Architect, Developer, Admin, User
 exl-id: 1e5cff43-57db-4bfc-b2d2-23307eaf5eb3
-source-git-commit: 16930ccaa281f9d9c4ddbb890d4222e128557580
+source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '413'
 ht-degree: 1%
 
 ---
@@ -24,18 +24,18 @@ Knappegenskaperna kan definieras av innehållsredigeraren i dialogrutan [Konfigu
 
 Den aktuella versionen av Form Button Component är v2, som introducerades i version 2.0.0 av Core Components i januari 2018 och som beskrivs i det här dokumentet.
 
-Följande tabell visar alla versioner av komponenten som stöds, de AEM versionerna som komponenterna är kompatibla med och länkar till dokumentation för tidigare versioner.
+Följande tabell visar alla versioner av komponenten som stöds, de AEM-versioner som komponenterna är kompatibla med samt länkar till dokumentation för tidigare versioner.
 
-| Komponentversion | AEM 6.4 | AEM 6.5 | AEM as a Cloud Service |
-|--- |--- |--- |---|
-| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kompatibel |
-| [v1](/help/components/v1/form-button-v1.md) | Kompatibel | Kompatibel | Kompatibel |
+| Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
+|--- |--- |--- |---|---|
+| v2 | Kompatibel med <br>[version 2.17.4](/help/versions.md) och tidigare | Kompatibel | Kampatibel | Kompatibel |
+| [v1](/help/components/v1/form-button-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Form Button-komponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_button).
+Om du vill visa Form Button-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_form_button).
 
 ### Teknisk information {#technical-details}
 
@@ -72,4 +72,4 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappens parametr
 
 ### Fliken Format {#styles-tab}
 
-Komponenten Form Button stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Komponenten Form Button har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
