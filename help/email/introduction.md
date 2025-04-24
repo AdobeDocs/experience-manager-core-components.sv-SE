@@ -3,9 +3,9 @@ title: Introduktion till viktiga e-postkomponenter
 description: Skapa övertygande e-postinnehåll med flexibiliteten i E-postkärnkomponenterna och leverera det med kraften i Adobe Campaign.
 role: Architect, Developer, Admin, User
 exl-id: 0a411f28-bd6a-4bad-b473-6bc27c1d1055
-source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
+source-git-commit: 91cf78d4c6622bbdec5ac7d22954c9c081c839d2
 workflow-type: tm+mt
-source-wordcount: '377'
+source-wordcount: '376'
 ht-degree: 0%
 
 ---

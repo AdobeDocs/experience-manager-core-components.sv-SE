@@ -3,7 +3,7 @@ title: Huvudversioner av e-postkomponenter
 description: Huvudkomponenter för e-post publiceras som versioner.
 role: Architect, Developer, Admin, User
 exl-id: 9733659a-641c-4a98-8d10-84e93e0e0a5d
-source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
+source-git-commit: 91cf78d4c6622bbdec5ac7d22954c9c081c839d2
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Huvudversioner av e-postkomponenter {#core-components-versions}
 
-Den aktuella versionen av E-postkärnkomponenterna är 1.3.0 och är kompatibel med AEM 6.5 och AEM 6.5 LTS.
+Den aktuella versionen av E-postkärnkomponenterna är 1.3.0 och är kompatibel med AEM 6.5, både lokalt och AMS.
 
 Mer information om krav och installation finns i avsnittet [Krav](/help/email/introduction.md#requirements) i introduktionsdokumentet för e-postkärnkomponenter och i avsnittet [Installation](/help/email/using.md#installing-the-email-core-components) i dokumentet Använda E-postkärnkomponenter.
 
