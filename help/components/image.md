@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Komponenten Core Component Image är en adaptiv bildkomponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: ad911040d7e47fc3884071005c17accf8edd0a62
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2062'
 ht-degree: 0%
 
 ---
@@ -46,6 +46,14 @@ Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsn
 >[!TIP]
 >
 >Som standard drivs Image-komponenten av Adaptive Image Server. Se [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) för mer information om hur den fungerar.
+
+### Skillnader med v2 {#v2-differences}
+
+Till skillnad från version 2 av Image Component (Bildkomponent) använder version 3 webbläsarbaserad svarstider. Det innebär att webbläsaren får en uppsättning källor för en bild med olika bredder och att webbläsaren väljer det bästa.
+
+För det mesta föredrar webbläsarna att lokalt minska bredden så att den passar en mindre visningsruta i stället för att hämta en bild med mindre bredd från servern. Detta är förväntat och varför bildkomponenten inte ska användas för grafisk riktning (olika bilder/beskärningar för olika visningsrutor).
+
+[Mer information finns i den tekniska dokumentationen för bildkomponenten](https://github.com/adobe/aem-core-wcm-components/tree/main/content/src/content/jcr_root/apps/core/wcm/components/image/v3/image#javascript-data-attribute-bindings).
 
 ## Stöd för dynamiska media {#dynamic-media}
 
