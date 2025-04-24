@@ -3,9 +3,9 @@ title: E-postupplevelsefragmentkomponent
 description: Med e-postupplevelsefragmentkomponenten kan innehållsförfattaren placera en Experience Fragment-variant i sitt innehåll samtidigt som den stöder en lokaliserad innehållsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 861c1fd1-6d6d-426c-a338-a558326fe16e
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '865'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
 |---|---|---|---|
-| v1 | Kompatibel | Kompatibel | - |
+| v1 | Kompatibel | - | - |
 
 Mer information om e-postkärnkomponentens versioner och versioner finns i dokumentet [E-postkärnkomponentversioner.](/help/email/versions.md)
 

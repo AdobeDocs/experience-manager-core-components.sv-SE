@@ -3,9 +3,9 @@ title: E-postsidkomponent
 description: E-postsidkomponenten
 role: Architect, Developer, Admin, User
 exl-id: 17fd0f5e-2b85-41a1-abaf-8ad190a5341a
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '780'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
 |---|---|---|---|
-| v1 | Kompatibel | Kompatibel | - |
+| v1 | Kompatibel | - | - |
 
 Mer information om grundkomponentversioner och releaser för e-postmeddelanden finns i dokumentet [E-postversioner av kärnkomponenter](/help/email/versions.md)
 

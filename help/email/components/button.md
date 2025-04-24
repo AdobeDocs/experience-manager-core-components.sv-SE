@@ -3,9 +3,9 @@ title: E-postknappkomponent
 description: Med komponenten E-postknapp kan du konfigurera och visa ett knappobjekt i ditt innehåll.
 role: Architect, Developer, Admin, User
 exl-id: b144e8d1-1097-475d-b2eb-3353c176afb9
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
 |---|---|---|---|
-| v1 | Kompatibel | Kompatibel | - |
+| v1 | Kompatibel | - | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Email Core Components Versions.](/help/email/versions.md)
 

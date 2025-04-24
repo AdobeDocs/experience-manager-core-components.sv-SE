@@ -3,9 +3,9 @@ title: E-postbildkomponent
 description: E-postbildkomponenten är en adaptiv bildkomponent med redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: f5d40047-3082-4edd-a5f6-6ab3e33997f9
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1624'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
 |---|---|---|---|
-| v1 | Kompatibel | Kompatibel | - |
+| v1 | Kompatibel | - | - |
 
 Mer information om Core Component-versioner och -versioner finns i dokumentet [Email Core Components Versions](/help/email/versions.md).
 

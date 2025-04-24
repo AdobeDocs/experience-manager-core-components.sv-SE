@@ -3,9 +3,9 @@ title: Huvudversioner av e-postkomponenter
 description: Huvudkomponenter för e-post publiceras som versioner.
 role: Architect, Developer, Admin, User
 exl-id: 9733659a-641c-4a98-8d10-84e93e0e0a5d
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ E-postkärnkomponenterna är utformade för att vara flexibla och kompatibla med
 
 | Frigör | Beskrivning | AEM 6.5 | AEM 6.5 LTS | Kärnkomponenter | Java | Releasedatum |
 |---|---|---|---|---|---|---|
-| [1.3.0](https://github.com/adobe/aem-core-email-components/releases/tag/core.email.components.reactor-1.3.0) | Den här versionen uppdaterar det inbäddade jsop-biblioteket. | 6.5.14.0+ | 6,5 LTS GA | [2.21.2+](/help/versions.md) | 8, 11 | 28 juni 2024 |
+| [1.3.0](https://github.com/adobe/aem-core-email-components/releases/tag/core.email.components.reactor-1.3.0) | Den här versionen uppdaterar det inbäddade jsop-biblioteket. | 6.5.14.0+ | - | [2.21.2+](/help/versions.md) | 8, 11 | 28 juni 2024 |
 | [1.2.2](https://github.com/adobe/aem-core-email-components/releases/tag/core.email.components.reactor-1.2.2) | Den här underhållsreleasen korrigerade väljarfiltrering, löste en `SelectorParseException` och åtgärdade andra fel. | 6.5.14.0+ | - | [2.21.2+](/help/versions.md) | 8, 11 | 24 maj 2023 |
 | [1.2.0](https://github.com/adobe/aem-core-email-components/releases/tag/core.email.components.reactor-1.2.0) | I den här versionen introducerades Selenium e2e-tester och ett antal felkorrigeringar ingick. | 6.5.14.0+ | - | [2.21.2+](/help/versions.md) | 8, 11 | 29 november 2022 |
 | [1.0.0](https://github.com/adobe/aem-core-email-components/releases/tag/core.email.components.reactor-1.0.0) | Första offentliga versionen, se versionsinformation för utförlig information | 6.5.14.0+ | - | [2.21.2+](/help/versions.md) | 8, 11 | 29 november 2022 |
