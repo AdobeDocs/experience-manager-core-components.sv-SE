@@ -70,7 +70,7 @@ Precis som andra AEMaaCS-projekt måste du också lägga till ett beroende i AEM
 </dependency>
 ```
 
-Mer information om AEMaaCS-projekt finns i dokumentet [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
+Mer information om AEMaaCS-projekt finns i dokumentet [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=sv-SE).
 
 ## Stöd för kärnkomponenter {#core-component-support}
 
@@ -92,7 +92,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | **Funktion** | **Kärnkomponent** | **Foundation Component** |
 |-----|---|---|
 | Logic implementation | Java-POJO med [delningsmodeller](https://sling.apache.org/documentation/bundles/models.html) anteckningar | JSP-kod |
-| Markeringsdefinition | [HTML-syntax för HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) (HTML) | JSP-kod |
+| Markeringsdefinition | [HTML-syntax för HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) (HTML) | JSP-kod |
 | XSS-sanering | Automatiserad av HTML | Mest manuella |
 | Namnge CSS-klasser | Standardiserad namnkonvention baserad på [Blockelementets modifierare](https://getbem.com/) (BEM)-notation (från och med version 2.0.0) | Anpassade scheman |
 | Dialogdefinition | [Korall 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Coral 2 + Classic UI |
@@ -102,7 +102,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | Leverans | [Via offentlig GitHub](https://github.com/adobe/aem-core-wcm-components) | Via QuickStart |
 | Licens | [Apache-licens](https://www.apache.org/licenses/LICENSE-2.0) | Adobe |
 | Bidrag | Via pull-begäran | Inte möjligt |
-| Tillgänglighet | Fullt kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Endast delvis kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
+| Tillgänglighet | Fullt kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html?lang=sv-SE) | Endast delvis kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html?lang=sv-SE) |
 
 ## Komponentlista {#component-list}
 
@@ -144,6 +144,6 @@ I följande tabell visas de tillgängliga kärnkomponenterna, som länkar till d
 
 En fördel med versionskomponenter är att det går att separera migreringen till en ny AEM från migreringen till nya komponentversioner. Om det finns nya komponentversioner är det också möjligt att migrera varje komponent individuellt till den nya versionen.
 
-Migreringar till en ny AEM kommer inte att påverka hur kärnkomponenterna fungerar, förutsatt att deras versioner även stöder den nya AEM som migreras till. Anpassningar som görs för kärnkomponenterna ska inte heller påverkas, så länge de inte använder API:er som har [tagits bort eller tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
+Migreringar till en ny AEM kommer inte att påverka hur kärnkomponenterna fungerar, förutsatt att deras versioner även stöder den nya AEM som migreras till. Anpassningar som görs för kärnkomponenterna ska inte heller påverkas, så länge de inte använder API:er som har [tagits bort eller tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=sv-SE).
 
 Migreringar till nya versioner av kärnkomponenterna kommer inte heller att påverka hur komponenten fungerar, men nya funktioner kan introduceras för sidförfattare, vilket kan kräva viss konfiguration av en mallredigerare om standardbeteendet inte önskas. Anpassningar kan dock behöva anpassas. Mer information finns på sidan [Anpassa kärnkomponenter](customizing.md#upgrade-compatibility-of-customizations).

@@ -54,6 +54,6 @@ Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktig
 
 ## Använda senast ändrade rubriker {#last-modified}
 
-Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [ måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
+Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [ måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#caching-http-response-headers).
 
 [Dispatcher-exempelkonfigurationen för AEM Project Archetype](/help/developing/archetype/overview.md) innehåller redan den här konfigurationen.

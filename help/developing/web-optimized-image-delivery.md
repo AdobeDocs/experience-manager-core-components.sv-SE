@@ -87,7 +87,7 @@ com.adobe.cq.wcm.spi.AssetDelivery.getDeliveryURL(Resource resource, Map<String,
 
 >[!WARNING]
 >
->Direkt URL-inbäddning i en upplevelse som inte har byggts via den tidigare SPI (som är tillgänglig på AEM as a Cloud Service Sites) bryter mot [Media Library användningsvillkor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en#use-media-library).
+>Direkt URL-inbäddning i en upplevelse som inte har byggts via den tidigare SPI (som är tillgänglig på AEM as a Cloud Service Sites) bryter mot [Media Library användningsvillkor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=sv-SE#use-media-library).
 
 ### Kan bilder inte visas när webboptimerade bilder har aktiverats? {#failure-to-deliver}
 
@@ -96,4 +96,4 @@ Nej, det ska aldrig ske av följande skäl.
 * I HTML ändras inte markeringen när du aktiverar webboptimerade bilder, bara värdet för attributet `src` i bildelementet ändras.
 * När den nya bildtjänsten inte är tillgänglig eller inte kan bearbeta den önskade bilden kommer den URL som genereras att [återgå till den adaptiva bildservern.](#fallback)
 
-Dispatcheringsregler kan dock blockera den webboptimerade bildleveranstjänsten. URL:er för bildleveranstjänsten börjar med `/adobe`, och i dispatcherloggarna görs en undersökning av avvisade begäranden, som [beskrivs här](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html#filter-rejects), så att du kan felsöka eventuella fel som uppstår vid leveransen av bilderna till webbläsaren.
+Dispatcheringsregler kan dock blockera den webboptimerade bildleveranstjänsten. URL:er för bildleveranstjänsten börjar med `/adobe`, och i dispatcherloggarna görs en undersökning av avvisade begäranden, som [beskrivs här](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html?lang=sv-SE#filter-rejects), så att du kan felsöka eventuella fel som uppstår vid leveransen av bilderna till webbläsaren.

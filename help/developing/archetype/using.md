@@ -26,7 +26,7 @@ Det fokuserar på allmänna användningsmönster och vad arkitypen gör för dig
 
 Projektets arkityp gör det enkelt att komma igång med AEM. Du kan utföra de första stegen med arkitypen på flera olika sätt.
 
-* **WKND-självstudiekurs** - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar arkivtypen, finns i [Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) som visar hur du använder arkitypen för att implementera ett enkelt projekt.
+* **WKND-självstudiekurs** - En bra introduktion till hur du utvecklar AEM, inklusive hur du utnyttjar arkivtypen, finns i [Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE) som visar hur du använder arkitypen för att implementera ett enkelt projekt.
 * **Självstudiekurs om WKND-händelser** - Om du är särskilt intresserad av att utveckla ett program (SPA) för en enda sida på AEM ska du titta på den dedikerade självstudiekursen [WKND Events.](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)
 * **Börja på egen hand!** - Du kan enkelt hämta den [aktuella projekttypen som finns på GitHub](https://github.com/adobe/aem-project-archetype) och skapa ditt första projekt på egen hand.
 
@@ -87,7 +87,7 @@ Avsnittet `<dependencyManagement>` i den överordnade POM definierar alla beroen
 
 #### Uber-Jar {#uber-jar}
 
-Ett av nyckelberoendena är Java API Jar för [AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html) Detta inkluderar alla AEM API:er med endast en beroendepost för AEM.
+Ett av nyckelberoendena är Java API Jar för [AEM.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-as-a-cloud-service-sdk.html?lang=sv-SE) Detta inkluderar alla AEM API:er med endast en beroendepost för AEM.
 
 >[!NOTE]
 >

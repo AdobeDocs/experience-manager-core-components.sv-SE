@@ -21,8 +21,8 @@ Innan du börjar anpassa adaptiva Forms Core-komponenter
 * Lär dig mer om [arkitekturen för en kärnkomponent](customizing.md#customizing-the-markup-customizing-the-markup) och gå igenom den [officiella dokumentationen för Adobe Experience Manager Core Components](customizing.md). Dessa omfattande resurser är en guide under hela anpassningsprocessen.
 * Konfigurera utvecklingsmiljön Detta ger ett smidigt arbetsflöde för att göra ändringar i kärnkomponenterna. När du konfigurerar utvecklingsmiljön ska du använda ett AEM Archetype-projekt baserat på det senaste AEM Archetype-projektet. Beroende på din miljö kan du:
 
-   * [Konfigurera en lokal utvecklingsmiljö för Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html).
-   * [Konfigurera en lokal utvecklingsmiljö för AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
+   * [Konfigurera en lokal utvecklingsmiljö för Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?lang=sv-SE).
+   * [Konfigurera en lokal utvecklingsmiljö för AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=sv-SE)
 
 ## Anpassa en adaptiv Forms Core-komponent
 
@@ -52,7 +52,7 @@ Följ stegen nedan för att ändra utseendet, beteendet och funktionaliteten fö
 
 1. **Distribuera och testa komponenten i den lokala utvecklingsmiljön**
 
-   Använd [maven för att skapa och distribuera komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#building-and-installing) i din lokala utvecklingsmiljö. När komponenten har distribuerats skapar du ett adaptivt formulär för att testa den anpassade komponenten.
+   Använd [maven för att skapa och distribuera komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=sv-SE#building-and-installing) i din lokala utvecklingsmiljö. När komponenten har distribuerats skapar du ett adaptivt formulär för att testa den anpassade komponenten.
 
 1. **Distribuera den anpassade komponenten i din produktionsmiljö**
 

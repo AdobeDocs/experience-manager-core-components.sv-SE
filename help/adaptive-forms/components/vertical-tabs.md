@@ -106,7 +106,7 @@ Du kan använda alternativen för upprepning för att duplicera en komponent med
 - **Minsta antal upprepningar**: Anger det minsta antal gånger som komponenten Vertical-tabs kan upprepas. Värdet noll anger att komponenten Vertical-tabs inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger som komponenten Vertical-tabs kan upprepas. Som standard är det här värdet obegränsat.
 
-Om du effektivt vill hantera upprepningsbara avsnitt på de lodräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
+Om du effektivt vill hantera upprepningsbara avsnitt på de lodräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) .
 
 ### Fliken Objekt {#items-tab}
 

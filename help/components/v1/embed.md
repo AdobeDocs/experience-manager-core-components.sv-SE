@@ -109,7 +109,7 @@ Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att und
 
 Reglerna är dock mer komplicerade eftersom Bädda in komponent följer AEM globala filterregeluppsättningen för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
-Ytterligare säkerhetsinformation finns i [AEM-dokumentationen för utvecklare för såväl lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) som [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
+Ytterligare säkerhetsinformation finns i [AEM-dokumentationen för utvecklare för såväl lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html?lang=sv-SE) som [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html?lang=sv-SE)
 
 >[!NOTE]
 >Trots att reglerna för antiSamy-sanitets ramverk kan konfigureras genom att `/libs/cq/xssprotection/config.xml` åsidosätts, påverkar de alla HTML- och JSP-beteenden och inte bara Bädda in kärnkomponent.

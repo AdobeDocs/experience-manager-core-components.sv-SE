@@ -30,7 +30,7 @@ Om du vill gå ett steg längre och återanvända komponenter mellan webbplatser
 
 ### Separation av oro {#separation-of-concerns}
 
-Att hålla logiken (eller modellen) för en komponent åtskild från markeringsmallen (eller vyn) är vanligtvis en bra vana. Det finns flera sätt att uppnå det, men det rekommenderas att du använder [segmentmodeller](https://sling.apache.org/documentation/bundles/models.html) för logiken och [HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) (HTL) för koden, precis som med kärnkomponenterna.
+Att hålla logiken (eller modellen) för en komponent åtskild från markeringsmallen (eller vyn) är vanligtvis en bra vana. Det finns flera sätt att uppnå det, men det rekommenderas att du använder [segmentmodeller](https://sling.apache.org/documentation/bundles/models.html) för logiken och [HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) (HTL) för koden, precis som med kärnkomponenterna.
 
 Sling Models är en uppsättning Java-anteckningar som gör det enkelt att komma åt nödvändiga variabler från POJO:er och därför erbjuder ett enkelt, kraftfullt och effektivt sätt att implementera Java-logik för komponenter.
 
@@ -42,7 +42,7 @@ Riktlinjerna i det här avsnittet kan även användas för alla typer av kompone
 
 ### Förkonfigurerbara funktioner {#pre-configurable-capabilities}
 
-Förutom redigeringsdialogrutan som används av sidförfattare kan komponenterna även ha en designdialogruta där mallförfattare kan förkonfigurera dem. Med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) kan du konfigurera alla dessa förkonfigurationer, som kallas för principer.
+Förutom redigeringsdialogrutan som används av sidförfattare kan komponenterna även ha en designdialogruta där mallförfattare kan förkonfigurera dem. Med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) kan du konfigurera alla dessa förkonfigurationer, som kallas för principer.
 
 För att göra komponenterna så återanvändbara som möjligt bör de ha meningsfulla alternativ för förkonfiguration. Detta gör att du kan aktivera eller inaktivera funktioner i komponenterna för att passa de specifika behoven på olika platser.
 
@@ -85,11 +85,11 @@ I kombination med det [Proxy-komponentmönster](#proxy-component-pattern) som be
 
 ## Sammanställ allt {#putting-it-all-together}
 
-Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i exemplet med kärnkomponenten Title. Det visar hur en platsspecifik proxykomponent kan lösa komponentversionshantering, så att innehållsresursen inte innehåller något versionsnummer. Sedan visas hur komponentens `title.html` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) -fil använder i modellgränssnittet, medan implementeringen binder till den specifika versionen av komponenten via [Sling Model](https://sling.apache.org/documentation/bundles/models.html) -anteckningar.
+Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i exemplet med kärnkomponenten Title. Det visar hur en platsspecifik proxykomponent kan lösa komponentversionshantering, så att innehållsresursen inte innehåller något versionsnummer. Sedan visas hur komponentens `title.html` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) -fil använder i modellgränssnittet, medan implementeringen binder till den specifika versionen av komponenten via [Sling Model](https://sling.apache.org/documentation/bundles/models.html) -anteckningar.
 
 ![Resursbindningsöversikt](/help/assets/chlimage_1-32.png)
 
-Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur de associerade [mallarna och profilerna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html) refereras.
+Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur de associerade [mallarna och profilerna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=sv-SE) refereras.
 
 Egenskapen `cq:allowedTemplates` anger vilka mallar som kan användas för en plats och `cq:template` anger för varje sida vilken mall som är associerad. Varje mall består av följande tre delar:
 

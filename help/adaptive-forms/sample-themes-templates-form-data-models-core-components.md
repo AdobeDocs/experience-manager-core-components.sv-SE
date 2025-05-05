@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Exempelteman, mallar och formulärdatamodeller {#sample-themes-templates-and-data-models}
 
-[!DNL AEM Forms] Core Components tillhandahåller färdiga exempelteman, mallar och formulärdatamodeller för att snabbt skapa flexibla formulär. Dessa hjälper också formulärförfattare att lära sig hur flexibla [adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) är och hur snabbt de ska kunna skapa enkla formulär på nolltid och komplexa formulär utan problem när de ansluter till databasen.
+[!DNL AEM Forms] Core Components tillhandahåller färdiga exempelteman, mallar och formulärdatamodeller för att snabbt skapa flexibla formulär. Dessa hjälper också formulärförfattare att lära sig hur flexibla [adaptiva Forms Core-komponenter](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) är och hur snabbt de ska kunna skapa enkla formulär på nolltid och komplexa formulär utan problem när de ansluter till databasen.
 
 Exempelteman, mallar och formulärdatamodeller som ingår i referensinnehållspaketet är:
 
@@ -41,11 +41,11 @@ Med exempelteman kan man använda, definiera och anpassa formateringen efter bla
 **Hur skaffar jag teman?**
 Du får dessa teman genom att följa stegen nedan för **AEM as a Cloud Service** -miljön:
 
-1. [Aktivera kärnkomponenter för adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html)
+1. [Aktivera kärnkomponenter för adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=sv-SE)
 1. [Distribuera ett AEM Archetype 47-projekt eller senare till din miljö](https://github.com/adobe/aem-project-archetype)
 
 
-När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina formulär. Om du vill anpassa teman efter dina behov kan du [använda frontpipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) för att distribuera teman.
+När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina formulär. Om du vill anpassa teman efter dina behov kan du [använda frontpipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=sv-SE) för att distribuera teman.
 
 >[!NOTE]
 >
@@ -55,11 +55,11 @@ När du distribuerar en AEM-arkitektur kan du bara använda OTB-teman i dina for
 
 1. **AEM 6.5**
 
-    1. [Enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html)
+    1. [Enable Adaptive Form Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=sv-SE)
     1. [Deploy an AEM Archetype 47 or later project to your environment](https://github.com/adobe/aem-project-archetype)
 
 
-    When you deploy an AEM Archetype, you can only use the OOTB themes in your forms, To customize the themes as per your requirements, [Use the front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) to deploy the themes.
+    When you deploy an AEM Archetype, you can only use the OOTB themes in your forms, To customize the themes as per your requirements, [Use the front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=sv-SE) to deploy the themes.
 
 -->
 
@@ -72,17 +72,17 @@ You can get these themes by deploying an [AEM Archetype 47 or later](https://git
 
 ### Enable core components and use front-end pipeline to deploy themes {#use-front-end-pipeline-to-deploy-themes}
 
-1. To get these themes on **Forms as a Cloud Service** environment, [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) and use the [front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) to deploy these themes.
+1. To get these themes on **Forms as a Cloud Service** environment, [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=sv-SE) and use the [front-end pipeline](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=sv-SE) to deploy these themes.
     
-1. To get these themes on **AEM 6.5 Forms** environment, [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html) and use the [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html) to deploy these themes.
+1. To get these themes on **AEM 6.5 Forms** environment, [enable Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=sv-SE) and use the [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=sv-SE) to deploy these themes.
 
-[Learn to use and customize themes in AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html). 
+[Learn to use and customize themes in AEM Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=sv-SE). 
 
-[Learn to use and customize themes in AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html).
+[Learn to use and customize themes in AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/create-or-customize-themes-for-adaptive-forms-core-components.html?lang=sv-SE).
 
 -->
 
-**i rutan** [Kärnkomponenter för adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) innehåller följande teman:
+**i rutan** [Kärnkomponenter för adaptiv form](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) innehåller följande teman:
 
 ![OTB-teman](/help/adaptive-forms/assets/archetype-45-themes-1.png)
 
@@ -94,7 +94,7 @@ Arbetsytans tema är standardtema för formulär och betonar användningen av gr
 
 ### WKND {#WKND}
 
-WKND-temat innehåller en livlig, fantasifull och engagerande design som visar ett snyggt utseende på dina formulär. Temat baseras på utseendet och formatet på [WKND-webbplatsen](https://wknd.site/us/en.html), som är en rese- och äventyrswebbplats som bygger på [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html).
+WKND-temat innehåller en livlig, fantasifull och engagerande design som visar ett snyggt utseende på dina formulär. Temat baseras på utseendet och formatet på [WKND-webbplatsen](https://wknd.site/us/en.html), som är en rese- och äventyrswebbplats som bygger på [Adobe Experience Manager Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE).
 
 ![WKND-tema](/help/adaptive-forms/assets/Safety-Inspection-Form-Theme.png)
 
@@ -137,7 +137,7 @@ Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 47 eller 
 -->
 
 
-**i rutan** [Kärnkomponenter för adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) är:
+**i rutan** [Kärnkomponenter för adaptiva formulär](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) är:
 
 ![Referensmallar](/help/adaptive-forms/assets/reference-templates-core-components.png)
 
@@ -145,7 +145,7 @@ Du kan hämta de här mallarna genom att distribuera en [AEM Archetype 47 eller 
 
 ### Basic {#Basic}
 
-A basic template helps you quickly create an enrollment experience form. You can also use it to preview the functionality of [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html). It provides a wizard layout for section-by-section presentation of data.
+A basic template helps you quickly create an enrollment experience form. You can also use it to preview the functionality of [Adaptive Forms Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE). It provides a wizard layout for section-by-section presentation of data.
 
 ![Basic Template](/help/adaptive-forms/assets/Basic-template-desktop-view.png)
 
@@ -229,7 +229,7 @@ Formulärmallen för inköpsbegäran hjälper till att skapa ett formulär som i
 
 ## Referensformulärdatamodeller {#reference-models}
 
-När du har skapat ett adaptivt formulär baserat på [kärnkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) kan du ansluta formuläret med databasservrarna Microsoft® Dynamics 365 och Salesforce för att aktivera arbetsflöden. Till exempel:
+När du har skapat ett adaptivt formulär baserat på [kärnkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=sv-SE) kan du ansluta formuläret med databasservrarna Microsoft® Dynamics 365 och Salesforce för att aktivera arbetsflöden. Till exempel:
 
 * Skriv data i Microsoft® Dynamics 365 och Salesforce när du skickar adaptiva formulär.
 * Skriv data i Microsoft® Dynamics 365 och Salesforce via anpassade entiteter som definierats i formulärdatamodellen och vice versa.
@@ -241,4 +241,4 @@ Du kan hämta följande formulärdatamodeller genom att installera [referensinne
 * Microsoft® Dynamics 365
 * Salesforce
 
-Information om hur du använder de här modellerna finns i [Konfigurera molntjänsterna Microsoft® Dynamics 365 och Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html#configure-dynamics-cloud-service)
+Information om hur du använder de här modellerna finns i [Konfigurera molntjänsterna Microsoft® Dynamics 365 och Salesforce](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html?lang=sv-SE#configure-dynamics-cloud-service)

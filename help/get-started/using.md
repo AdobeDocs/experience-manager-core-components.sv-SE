@@ -22,7 +22,7 @@ För att komma igång med Core Components i ditt eget projekt finns det fyra ste
 >[!TIP]
 >
 >För mer omfattande instruktioner om hur du kommer igång från grunden med projektkonfigurationen, kärnkomponenter, redigerbara mallar, klientbibliotek och komponentutveckling kan följande självstudiekurs i flera delar vara av intresse:\
->[Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+>[Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
 
 >[!TIP]
 >
@@ -52,7 +52,7 @@ Tänk på några saker när du använder kärnkomponenterna i AEMaaCS:
 
 Kärnkomponenterna är inte en del av snabbstarten när de startas i produktionsläge (utan exempelinnehåll). Därför är det första steget att [hämta det senaste släppta innehållspaketet från GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) och installera det i dina AEM miljöer.
 
-Det finns flera sätt att automatisera detta, men det enklaste sättet att snabbt installera ett innehållspaket på en instans är att använda pakethanteraren. Se [Installera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#installing-packages). När du dessutom kör en publiceringsinstans måste du replikera paketet till utgivaren. Se [Replikera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#replicating-packages).
+Det finns flera sätt att automatisera detta, men det enklaste sättet att snabbt installera ett innehållspaket på en instans är att använda pakethanteraren. Se [Installera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=sv-SE#installing-packages). När du dessutom kör en publiceringsinstans måste du replikera paketet till utgivaren. Se [Replikera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=sv-SE#replicating-packages).
 
 ## Skapa proxykomponenter {#create-proxy-components}
 
@@ -88,7 +88,7 @@ Titta till exempel på [titelkomponenten för WKND-webbplatsen](https://github.c
 
 ## Läs in kärnformat {#load-the-core-styles}
 
-1. Om det inte är klart än skapar du ett [klientbibliotek](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html) som innehåller alla CSS- och JS-filer som behövs för platsen.
+1. Om det inte är klart än skapar du ett [klientbibliotek](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=sv-SE) som innehåller alla CSS- och JS-filer som behövs för platsen.
 1. Lägg till beroenden till de kärnkomponenter som kan behövas i webbplatsens klientbibliotek. Detta görs genom att en `embed`-egenskap läggs till.
 
    Om du till exempel vill inkludera klientbiblioteken för alla v1 Core-komponenter blir den egenskap som ska läggas till:
@@ -107,7 +107,7 @@ Kontrollera att dina proxykomponenter och klientbibliotek har distribuerats till
 
 ## Tillåt komponenterna {#allow-the-components}
 
-Följande steg utförs i [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Följande steg utförs i [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE).
 
 1. Markera layoutbehållaren i mallredigeraren och öppna dess profil.
 1. I listan över tillåtna komponenter väljer du de proxykomponenter som skapats tidigare, som ska visas under komponentgruppen som de tilldelats. När du är klar tillämpar du ändringarna.

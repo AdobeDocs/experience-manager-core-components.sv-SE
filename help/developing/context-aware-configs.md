@@ -18,7 +18,7 @@ Kontextmedvetna konfigurationer är en [funktion i Sling](https://sling.apache.o
 
 Din plats kan behöva olika konfigurationer för olika webbplatsregioner, till exempel där vissa parametrar kan delas, vilket kräver arv för kapslade kontexter och globala reservvärden. AEM utnyttjar konfigurationer som är anpassade till Sling-kontext, vilket möjliggör detta.
 
-Mer information om konfigurationer i AEM finns i [dokumentationen för konfigurationer och konfigurationsläsaren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
+Mer information om konfigurationer i AEM finns i [dokumentationen för konfigurationer och konfigurationsläsaren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=sv-SE)
 
 ## Använd i kärnkomponenterna {#core-components}
 

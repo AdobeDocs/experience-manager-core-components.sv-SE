@@ -109,7 +109,7 @@ Du kan använda alternativen för upprepning för att duplicera en komponent med
 - **Gör flikar högst upp repeterbara**: En växlingsfunktion som gör att användare kan aktivera eller inaktivera repeteringsfunktionen.
 - **Minsta antal upprepningar**: Anger det minsta antal gånger som komponenten för vågräta flikar kan upprepas. Värdet noll anger att komponenten Vågräta flikar inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger som komponenten för vågräta flikar kan upprepas. Som standard är det här värdet obegränsat.
-Om du effektivt vill hantera upprepningsbara avsnitt på de vågräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
+Om du effektivt vill hantera upprepningsbara avsnitt på de vågräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) .
 
 ### Fliken Objekt {#items-tab}
 

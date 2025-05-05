@@ -68,7 +68,7 @@ Med [Storybook](https://storybook.js.org) kan du utföra mer atomiska framend-ut
 
 ## Översikt över Clientlibs {#clientlibs}
 
-Framtend-modulen är tillgänglig med ett [AEM-klientlib.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html). När NPM-byggskriptet körs skapas appen och paketet `aem-clientlib-generator` tar det resulterande build-utdata och omvandlar det till ett sådant clientlib.
+Framtend-modulen är tillgänglig med ett [AEM-klientlib.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=sv-SE). När NPM-byggskriptet körs skapas appen och paketet `aem-clientlib-generator` tar det resulterande build-utdata och omvandlar det till ett sådant clientlib.
 
 En clientlib består av följande filer och kataloger:
 
@@ -80,4 +80,4 @@ En clientlib består av följande filer och kataloger:
 
 >[!TIP]
 >
->Läs mer om hur AEM hanterar klientlibs i [AEM-utvecklingsdokumentationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html) om hur du inkluderar dem i [kärnkomponentdokumentationen.](/help/developing/including-clientlibs.md)
+>Läs mer om hur AEM hanterar klientlibs i [AEM-utvecklingsdokumentationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=sv-SE) om hur du inkluderar dem i [kärnkomponentdokumentationen.](/help/developing/including-clientlibs.md)
