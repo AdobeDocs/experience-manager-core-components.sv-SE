@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - bifogad fil
 description: Använda eller anpassa den adaptiva Forms-filbilagan Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 64a54fc6-db52-481f-bf5a-60c05122004d
-source-git-commit: 724940e8fe7eb5cfe3dc4edf7568049c993b1255
+source-git-commit: 8a5133d8551f9e35340b40aa00876cfa0231deb5
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2061'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Det finns många skäl till att det är bra att ta med en bifogad fil i ett adap
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component för den adaptiva Forms-filbilagan släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component för den adaptiva Forms-filbilagan släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -103,6 +103,11 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
 
 - **Felmeddelande för filtyp** - Med det här alternativet kan du ange ett felmeddelande som visas när du överför andra filformat än de som listas i alternativet **Tillåtna filtyper**.
 
+>
+>
+> Om du skickar en fil genom att ändra dess typ till ett tillåtet filformat, genereras ett fel när formuläret skickas.
+
+
 ### Fliken Hjälpinnehåll {#help-content-tab}
 
 ![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/fileattachement_helpcontenttab.png)
@@ -157,7 +162,7 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

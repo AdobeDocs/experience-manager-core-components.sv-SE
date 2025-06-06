@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - textinmatning (textruta)
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-textinmatning.
 role: Architect, Developer, Admin, User
 exl-id: 49d9fe69-0578-4489-beaa-a18cdb14add7
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 9f151ae26c9d2006b74656ec5086f1a5e9fc4b30
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2120'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Det finns flera skäl till att använda textinmatningskomponenten i ett adaptivt
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Kärnkomponenten i den adaptiva Forms-textrutan lanserades i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (kärnkomponent) för den adaptiva Forms-textrutan släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -45,7 +45,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om de adaptiva Forms-flikarna i huvudkomponenten i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/textinput/v1/textinput). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om den adaptiva Forms TextBox Core-komponenten i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/textinput/v1/textinput). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -132,7 +132,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för textru
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för textrutan Adaptiv Forms stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för textrutan Adaptiv Forms har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
@@ -164,7 +164,7 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

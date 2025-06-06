@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - guide
 description: Använda eller anpassa den adaptiva Forms Wizard Core Component.
 role: Architect, Developer, Admin, User
 exl-id: fd785cd2-5ed6-4efb-997f-ce9056ed113d
-source-git-commit: 8bba79956a04020647d5d04f9fe6fa674affedf1
+source-git-commit: 9f151ae26c9d2006b74656ec5086f1a5e9fc4b30
 workflow-type: tm+mt
 source-wordcount: '2186'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Generellt sett kan en guidelayout göra det enklare och effektivare att fylla i 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Kärnkomponenten i den adaptiva Forms-guiden Layout släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Kärnkomponenten i den adaptiva Forms-guiden Layout släpptes i februari 2023 som en del av kärnkomponenterna 2.0.4. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
@@ -63,7 +63,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om den adaptiva huvudkomponenten i Forms Title i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/wizard/v1/wizard). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om kärnkomponenten i den adaptiva Forms-guiden i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/wizard/v1/wizard). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -124,7 +124,7 @@ Du kan använda alternativen för upprepning för att duplicera guiden och dess 
 - **Minsta antal upprepningar**: Anger det minsta antal gånger som guidepanelen kan upprepas. Värdet noll anger att guidepanelen inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger som guidepanelen kan upprepas. Som standard är det här värdet obegränsat.
 
-Om du effektivt vill hantera repeterbara avsnitt i guiden följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) .
+Om du effektivt vill hantera repeterbara avsnitt i guiden följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
 
 ### Fliken Objekt {#items-tab}
 
@@ -154,7 +154,7 @@ Med det här alternativet kan du lägga till adaptiva formulärkomponenter genom
    - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
    - **Inget**: Välj det här alternativet om du inte vill lägga till för hjälpmedelsetiketter för ARIA.
 
-- **HTML-roll för skärmläsare som ska tillkännages** - HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpfunktioner som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
+- **HTML-roll för skärmläsare som ska tillkännages** - HTML-rollen är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 
 ## Designdialogruta {#design-dialog}

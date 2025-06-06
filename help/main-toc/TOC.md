@@ -5,15 +5,15 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: Redigerare kan enkelt skapa innehåll genom att använda de utökningsbara grundläggande komponenterna.
 feature-set: Experience Manager Sites, Experience Manager Forms
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 9f151ae26c9d2006b74656ec5086f1a5e9fc4b30
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '384'
 ht-degree: 5%
 
 ---
 
 
-# Hjälp för AEM Core Components {#using}
+# Hjälp om AEM Core Components {#using}
 
 + [Introduktion till kärnkomponenter](/help/introduction.md)
 + [Responsiv design](/help/responsive.md)
@@ -28,7 +28,7 @@ ht-degree: 5%
    + [Dragspel](/help/components/accordion.md)
    + [Breadcrumb](/help/components/breadcrumb.md)
    + [Knapp](/help/components/button.md)
-   + [Carousel](/help/components/carousel.md)
+   + [Karusell](/help/components/carousel.md)
    + [Behållare](/help/components/container.md)
    + [Innehållsfragment](/help/components/content-fragment-component.md)
    + [Innehållsfragmentlista](/help/components/content-fragment-list.md)
@@ -126,6 +126,7 @@ ht-degree: 5%
       + [Adaptiv Forms CAPTCHA](/help/adaptive-forms/components/adaptive-form-recaptcha.md)
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
       + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
+      + [Adaptiv granskning av formulär](/help/adaptive-forms/components/review.md)
       + [Adaptiv Forms-sändningsknapp](/help/adaptive-forms/components/submit-button.md)
       + [Adaptiv Forms-switch](/help/adaptive-forms/components/adaptive-form-switch.md)
       + [Adaptiv Forms Phone](/help/adaptive-forms/components/phone.md)
@@ -138,10 +139,10 @@ ht-degree: 5%
       + [Sidfot](/help/adaptive-forms/components/footer.md)
    + [Anpassa adaptiva Forms Core-komponenter](/help/developing/customize-adaptive-forms-core-components.md)
    + [Exempelteman och mallar](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
-+ Utveckling {#developing}
++ Utvecklar {#developing}
    + [Utveckla kärnkomponenter](/help/developing/overview.md)
-   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=sv-SE)
-   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
+   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
+   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](/help/developing/customizing.md)
    + [Riktlinjer för komponenter](/help/developing/guidelines.md)
    + [Stöd för AMP](/help/developing/amp.md)
@@ -150,7 +151,7 @@ ht-degree: 5%
    + [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md)
    + [Webboptimerad bildleverans](/help/developing/web-optimized-image-delivery.md)
    + [Fjärrsupport för Assets](/help/developing/remote-assets.md)
-   + Adobe-klientdatalagret {#data-layer}
+   + Adobe Client Data Layer {#data-layer}
       + [Översikt över datalagret](/help/developing/data-layer/overview.md)
       + [Integrering med datalagret](/help/developing/data-layer/integrations.md)
       + [Utöka datalagret](/help/developing/data-layer/extending.md)

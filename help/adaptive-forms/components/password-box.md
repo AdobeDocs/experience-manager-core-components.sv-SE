@@ -4,16 +4,17 @@ description: Använda eller anpassa kärnkomponenten i den adaptiva Forms-lösen
 role: Architect, Developer, Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: 86a30bc396d89340106177deb08323bfc5640e0e
+exl-id: 7e70d9e9-b066-4ba3-b7ed-e4aad026c5e0
+source-git-commit: 12a829c164839fdcb2c98d52e409ec3ac2079c41
 workflow-type: tm+mt
-source-wordcount: '1916'
+source-wordcount: '1914'
 ht-degree: 0%
 
 ---
 
 # Lösenordsrutekomponent
 
-<span class="preview"> Den här funktionen är en förhandsversion och kan nås via vår [förhandsutgåva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=sv-SE#new-features). </span>
+<span class="preview"> Den här funktionen är en förhandsversion och kan nås via vår [förhandsutgåva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features). </span>
 
 Med en lösenordsrutekomponent kan användare ange och redigera känslig information, normalt maskerad för sekretess. Lösenordskomponenten kan konfigureras med olika valideringsregler för att säkerställa att data är korrekta. De lösenordsfält som ofta används i formulär är enkla och förbättrar datasäkerheten.
 
@@ -50,7 +51,7 @@ To experience the Accordion Component as well as see examples of its configurati
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om de adaptiva Forms-flikarna i huvudkomponenten i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/textinput/v1/textinput). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste informationen om kärnkomponenten för det adaptiva Forms-lösenordet i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/textinput/v1/textinput). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -131,7 +132,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för textru
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för textrutan Adaptiv Forms stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för textrutan Adaptiv Forms har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
@@ -163,7 +164,7 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 
