@@ -3,7 +3,7 @@ title: Adaptiv Forms Core-komponent - bifogad fil
 description: Använda eller anpassa den adaptiva Forms-filbilagan Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 64a54fc6-db52-481f-bf5a-60c05122004d
-source-git-commit: a1a274b152b3a0fe0bcc72858721ef9830487bb9
+source-git-commit: b6ed89048065830171b70f105e755f2279dd7b01
 workflow-type: tm+mt
 source-wordcount: '2061'
 ht-degree: 0%
@@ -101,12 +101,8 @@ Med dialogrutan Konfigurera kan du enkelt anpassa den bifogade filen för besök
    - **Ta bort** - Tryck eller klicka för att ta bort specifika filtyper.
    - **Ordna om** - Tryck eller klicka och dra för att ordna om tillåtna filtyper.
 
+  Om du skickar en fil genom att ändra dess typ till ett tillåtet filformat, genereras ett fel när formuläret skickas.
 - **Felmeddelande för filtyp** - Med det här alternativet kan du ange ett felmeddelande som visas när du överför andra filformat än de som listas i alternativet **Tillåtna filtyper**.
-
->
->
-> Om du skickar en fil genom att ändra dess typ till ett tillåtet filformat, genereras ett fel när formuläret skickas.
-
 
 ### Fliken Hjälpinnehåll {#help-content-tab}
 
@@ -162,7 +158,7 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 
