@@ -124,7 +124,7 @@ Du kan använda alternativen för upprepning för att duplicera guiden och dess 
 - **Minsta antal upprepningar**: Anger det minsta antal gånger som guidepanelen kan upprepas. Värdet noll anger att guidepanelen inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger som guidepanelen kan upprepas. Som standard är det här värdet obegränsat.
 
-Om du effektivt vill hantera repeterbara avsnitt i guiden följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
+Om du effektivt vill hantera repeterbara avsnitt i guiden följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) .
 
 ### Fliken Objekt {#items-tab}
 
