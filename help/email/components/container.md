@@ -78,11 +78,11 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som kan läggas till som objekt i e-postbehållarkomponenten av innehållsförfattaren.
 
-Fliken **Tillåtna komponenter** fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+Fliken **Tillåtna komponenter** fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
 
 ### Fliken Standardkomponenter {#default-components-tab}
 
-Fliken **Standardkomponenter** används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, ungefär som [hur standardkomponenter definieras i sidmallen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+Fliken **Standardkomponenter** används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, ungefär som [hur standardkomponenter definieras i sidmallen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
 
 ### Fliken Inställningar för behållare {#container-settings-tab}
 

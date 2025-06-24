@@ -70,7 +70,7 @@ Du kan enkelt anpassa Google reCAPTCHA-upplevelsen för besökare med dialogruta
 
   >[!NOTE]
   >
-  > Läs artikeln [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) om du vill veta mer om hur du skapar och konfigurerar Google reCAPTCHA för din miljö.
+  > Läs artikeln [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) om du vill veta mer om hur du skapar och konfigurerar Google reCAPTCHA för din miljö.
 
 - **Typ**: Välj det här alternativet om du vill välja storlek för reCAPTCHA.
    - **Normal**: Avser den större standardversionen av reCAPTCHA-widgeten, som kan vara mer synlig och lättare att interagera med, särskilt på enheter med större skärmar.

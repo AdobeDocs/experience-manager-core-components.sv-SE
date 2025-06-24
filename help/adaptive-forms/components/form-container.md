@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Formulärbehållare {#form-container-adaptive-forms-core-component}
 
-<span class="preview"> I den här artikeln beskrivs funktionen **Utkast** <!--and **Hamburger Menu Support** --> , som är en förhandsversion. Förhandsversionen är bara tillgänglig via vår [förhandsutgåva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html#new-features).</span>
+<span class="preview"> I den här artikeln beskrivs funktionen **Utkast** <!--and **Hamburger Menu Support** --> , som är en förhandsversion. Förhandsversionen är bara tillgänglig via vår [förhandsutgåva](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/release-notes/prerelease.html?lang=sv-SE#new-features).</span>
 
 Med Forms kan besökare interagera med webbplatsen genom att tillhandahålla värdefull information, vilket kan öka engagemanget och få nöjdare användare. Med en adaptiv formulärbehållare i Adobe Experience Manager (AEM) kan webbplatsägare enkelt lägga till formulär på sina sidor. Detta underlättar kommunikationen mellan webbplatsens besökare och webbplatsens ägare eller organisation genom att ge besökarna ett smidigt sätt att ge feedback, ställa frågor och slutföra andra åtgärder
 
@@ -67,7 +67,7 @@ Du kan enkelt anpassa formulärbehållarupplevelsen för besökare med dialogrut
 
 - **Titel** - Med titeln kan du enkelt identifiera en komponent i ett formulär. Som standard visas titeln ovanpå komponenten. Om du inte lägger till en titel visas komponentens namn i stället för rubriktexten.
 
-- **Förifyll tjänster** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [hur du skapar och konfigurerar en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=en#aem-forms-custom-prefill-service).
+- **Förifyll tjänster** - Med det här alternativet kan användaren välja en förifyllningstjänst för att hämta data när det adaptiva formuläret återges. Läs mer om [hur du skapar och konfigurerar en förifyllningstjänst](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/prepopulate-adaptive-form-fields.html?lang=sv-SE#aem-forms-custom-prefill-service).
 
 - **Roll**: Rollen är ett HTML-attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
@@ -99,7 +99,7 @@ Du kan använda formulärdatamodellen för att ansluta ett formulär till en Dat
 
 Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 
-- **Omdirigerings-URL/sökväg** - Med det här alternativet kan användaren konfigurera en sida för varje formulär som formuläranvändarna omdirigeras till efter att ha skickat ett anpassat formulär. Klicka här för mer information om [hur du konfigurerar omdirigeringssidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html).
+- **Omdirigerings-URL/sökväg** - Med det här alternativet kan användaren konfigurera en sida för varje formulär som formuläranvändarna omdirigeras till efter att ha skickat ett anpassat formulär. Klicka här för mer information om [hur du konfigurerar omdirigeringssidor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-redirect-page.html?lang=sv-SE).
 
 ![fliken Skicka](/help/adaptive-forms/assets/formcontainer_submissiontab.png)
 
@@ -107,7 +107,7 @@ Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 
 ![Visa fliken Meddelande](/help/adaptive-forms/assets/formconatiner_showmessage.png)
 
-- **Skicka åtgärd** - En Skicka-åtgärd utlöses när en användare klickar på Skicka-knappen i ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur du [konfigurerar en Skicka-åtgärd på fliken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#supporting-custom-functions-in-validation-expressions-br).
+- **Skicka åtgärd** - En Skicka-åtgärd utlöses när en användare klickar på Skicka-knappen i ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur du [konfigurerar en Skicka-åtgärd på fliken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=sv-SE#supporting-custom-functions-in-validation-expressions-br).
 
 ## Designdialogruta {#design-dialog}
 

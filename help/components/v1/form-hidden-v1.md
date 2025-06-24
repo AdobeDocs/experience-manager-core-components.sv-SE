@@ -41,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### HTML {#html}
 

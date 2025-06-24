@@ -53,7 +53,7 @@ Accordion, [Carousel,](carousel.md) och [Tabs Components](tabs.md) stöder länk
 
 Så här gör du:
 
-1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
+1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=sv-SE#view-as-published)** i sidredigeraren.
 1. Granska sidans innehåll och identifiera panelens ID.
    * Till exempel `id="accordion-86196c94d3-item-ca319dbb0b"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med hjälp av ett hash-tecken (`#`).
@@ -84,7 +84,7 @@ Använd knappen **Lägg till** för att öppna komponentväljaren och välja vil
 
 >[!TIP]
 >
->Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i dragspelskomponenten genom att [dra från komponentwebbläsaren och släppa dragspelskomponenten i sidredigeraren](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent).
+>Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i dragspelskomponenten genom att [dra från komponentwebbläsaren och släppa dragspelskomponenten i sidredigeraren](https://helpx.adobe.com/se/experience-manager/6-5/sites/authoring/using/editing-content.html#InsertingaComponent).
 
 ### Fliken Egenskaper {#properties-tab}
 
@@ -129,7 +129,7 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som innehållsförfattaren kan lägga till som objekt i paneler i dragspelskomponenten.
 
-Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-layout-template-author)
+Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE#editing-a-template-layout-template-author)
 
 ### Fliken Format {#styles-tab}
 

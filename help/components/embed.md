@@ -118,7 +118,7 @@ I allmänhet tas alla skript och `style`-element samt alla `on*` - och `style` -
 
 Reglerna är dock mer komplicerade eftersom Bädda in komponent följer AEM globala filterregeluppsättning för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
-Ytterligare säkerhetsinformation finns i [AEM utvecklardokumentation för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) samt [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
+Ytterligare säkerhetsinformation finns i [AEM utvecklardokumentation för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html?lang=sv-SE) samt [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html?lang=sv-SE)
 
 >[!NOTE]
 >
