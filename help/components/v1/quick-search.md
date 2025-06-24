@@ -35,7 +35,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs v1 för snabbsökningskomponenten.
->>Information om den aktuella versionen av snabbsökningskomponenten finns i dokumentet [Snabbsökningskomponent](/help/components/quick-search.md).
+>&#x200B;>Information om den aktuella versionen av snabbsökningskomponenten finns i dokumentet [Snabbsökningskomponent](/help/components/quick-search.md).
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 

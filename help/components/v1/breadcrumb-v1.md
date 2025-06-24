@@ -36,7 +36,7 @@ I följande tabell visas kompatibiliteten för v1 för Breadcrumb Component.
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs v1 för Breadcrumb-komponenten.
->>Information om den aktuella versionen av Breadcrumb-komponenten finns i dokumentet [Breadcrumb Component](/help/components/breadcrumb.md) .
+>&#x200B;>Information om den aktuella versionen av Breadcrumb-komponenten finns i dokumentet [Breadcrumb Component](/help/components/breadcrumb.md) .
 
 ## Exempel på komponentutdata {#sample-component-output}
 
