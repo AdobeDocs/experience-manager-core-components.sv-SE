@@ -3,18 +3,21 @@ title: Adaptiv Forms Core-komponent - skicka-knapp
 description: Använda eller anpassa den adaptiva Forms Submit-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: e4b8e475-79b9-4c4d-9f11-a125a424d32b
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1508'
 ht-degree: 0%
 
 ---
+
 
 # Skicka-knappkomponent {#submit-button}
 
 En Skicka-knapp i ett adaptivt formulär är en knapp som gör att användare kan skicka formulärdata till en server för bearbetning. När användaren klickar på knappen Skicka skickas formulärdata till servern, där de kan lagras, bearbetas eller användas i olika syften, som att skicka ett e-postmeddelande eller uppdatera en databas.
 
 Knappen Skicka är vanligtvis det sista steget i ifyllningsprocessen och används för att initiera processen att skicka formulärdata till servern.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -32,7 +35,7 @@ Skälen till att du använder en skicka-knapp i en adaptiv form är:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (komponent) för den adaptiva Forms-knappen Submit släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (kärnkomponent) för den adaptiva Forms-sändningsknappen släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -97,7 +100,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för kompon
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten för den adaptiva Forms-knappen stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för den adaptiva Forms-knappen stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Designdialogrutan](/help/adaptive-forms/assets/checkbox-style.png)
 

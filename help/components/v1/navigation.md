@@ -3,12 +3,14 @@ title: Navigeringskomponent (v1)
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 0b7de79a-e0c7-4cf9-b5a9-c78cbc3ecd2f
-source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+index: n
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '1424'
 ht-degree: 0%
 
 ---
+
 
 # Navigeringskomponent (v1) {#navigation-component}
 
@@ -100,7 +102,7 @@ Navigeringskomponenten återger sedan menyn baserat på skuggwebbplatsens strukt
 
 ## Omdirigeringar i navigering {#redirects}
 
-När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM sida), är det en navigeringskomponent som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
+När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL eller en annan AEM-sida), är det en navigeringskomponent som innehåller länkar till den punkten direkt till URL:en för omdirigeringsmålet.
 
 ### Exempel {#redirect-example}
 
@@ -111,7 +113,7 @@ När en sida har ett omdirigeringsmål (oavsett om det pekar på en extern URL e
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa navigeringskomponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_navigation).
+Om du vill visa navigeringskomponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_navigation).
 
 ## Teknisk information {#technical-details}
 
@@ -175,6 +177,6 @@ I designdialogrutan kan mallskaparen ange standardvärden för navigeringsrotsid
 
 Navigeringskomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Navigeringskomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Navigeringskomponenten har stöd för [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

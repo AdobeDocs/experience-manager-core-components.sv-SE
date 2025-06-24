@@ -3,7 +3,8 @@ title: E-postinnehållets fragmentkomponent
 description: Med komponenten E-postinnehållsfragment kan du visa ett innehållsfragment i ditt innehåll.
 role: Architect, Developer, Admin, User
 exl-id: 9bc6b730-0d2a-4e5b-891c-d2f67f600bcc
-source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
+index: false
+source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -13,11 +14,11 @@ ht-degree: 0%
 
 # E-postinnehållets fragmentkomponent {#email-content-fragment-component}
 
-Med komponenten E-postinnehållsfragment kan du visa ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE) i ditt innehåll.
+Med komponenten E-postinnehållsfragment kan du visa ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) i ditt innehåll.
 
 ## Användning {#usage}
 
-Med e-postinnehållets fragmentkomponent kan du inkludera ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE) i ditt e-postinnehåll. Innehållsfragment är flerkanaligt strukturerat innehåll som kan redigeras centralt och enkelt återanvändas.
+Med e-postinnehållets fragmentkomponent kan du inkludera ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) i ditt e-postinnehåll. Innehållsfragment är flerkanaligt strukturerat innehåll som kan redigeras centralt och enkelt återanvändas.
 
 * Fragmentet och dess egenskaper kan väljas i dialogrutan [Konfigurera.](#configure-dialog)
 * Resurstyper för att hantera vissa bilder och stödraster kan definieras i dialogrutan [Design.](#design-dialog)
@@ -84,7 +85,7 @@ Om du trycker eller klickar på knappen **Redigera** öppnas redigeraren för in
 
 ![Innehållsfragmentredigerare för e-post](/help/email/assets/email-content-fragment-editor.png)
 
-Mer information om redigering och redigering av innehållsfragment finns i dokumentet [Skapa fragmentinnehåll.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html?lang=sv-SE)
+Mer information om redigering och redigering av innehållsfragment finns i dokumentet [Skapa fragmentinnehåll.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/content-fragments/content-fragments-variations.html)
 
 ## Designdialogruta {#design-dialog}
 

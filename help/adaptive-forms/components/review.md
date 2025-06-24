@@ -4,7 +4,8 @@ description: Använda eller anpassa den adaptiva Forms Review Core-komponenten.
 role: Architect, Developer, Admin, User
 hide: true
 hidefromtoc: true
-source-git-commit: 04a685cfa2616839f4fec715847bf0821808bd59
+exl-id: acd230ed-284b-4df2-98e0-a0090cd73611
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
 source-wordcount: '742'
 ht-degree: 0%
@@ -15,6 +16,8 @@ ht-degree: 0%
 # Granskningskomponent
 
 Med Review Component in Adaptive Forms kan man granska och verifiera den information man angett innan man skickar in blanketten. Det fungerar som en sammanfattningssida och ger en skrivskyddad vy över alla fält och deras värden i ett strukturerat och användarvänligt format. Med den här funktionen kan användare identifiera och korrigera fel och utelämnanden innan de skickar in formuläret, vilket förbättrar den övergripande formulärupplevelsen. Genom att klicka på redigeringsikonen kan de ändra den angivna informationen innan formuläret skickas.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -76,4 +79,3 @@ I videon nedan visas hur du konfigurerar komponenten **Review** så att använda
 ## Se även {#see-also}
 
 {{see-also}}
-

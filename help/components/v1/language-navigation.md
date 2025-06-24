@@ -3,12 +3,14 @@ title: Språknavigeringskomponent (v1)
 description: Språknavigeringskomponenten tillhandahåller en språk-/landsnavigering för en webbplats, så att besökare kan navigera till samma sida på en annan språkinställning.
 role: Architect, Developer, Admin, User
 exl-id: 41194ba0-6833-40e5-88d9-036e9c231edd
-source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+index: n
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
 
 ---
+
 
 # Språknavigeringskomponent (v1) {#language-navigation-component}
 
@@ -35,7 +37,7 @@ I det här dokumentet beskrivs v1 av språknavigeringskomponenten, som introduce
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både Language Navigation Component (Språknavigeringskomponenten) och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_langnav).
+Om du vill se både språknavigeringskomponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_langnav).
 
 ## Teknisk information {#technical-details}
 
@@ -103,6 +105,6 @@ Dessutom kan du ange ett **ID**. Med det här alternativet kan du styra den unik
 
 ![Redigeringsdialogrutan för språknavigeringskomponenten](/help/assets/language-navigation-edit.png)
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Språknavigeringskomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Språknavigeringskomponenten har stöd för [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

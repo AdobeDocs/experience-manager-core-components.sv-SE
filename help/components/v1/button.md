@@ -3,12 +3,14 @@ title: Knappkomponent (v1)
 description: Med komponenten Core Component Button kan du skapa och visa en knapp.
 role: Architect, Developer, Admin, User
 exl-id: 63af16e4-dd4d-426d-88ef-769ecd1b3175
-source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+index: n
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
 
 ---
+
 
 # Knappkomponent (v1) {#button-component}
 
@@ -33,7 +35,7 @@ I dokumentet beskrivs v1 för Button-komponenten, som introducerades i version 2
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa Button-komponenten och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_button).
+Om du vill visa Button-komponenten och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_button).
 
 ## Teknisk information {#technical-details}
 
@@ -51,7 +53,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera knappen och hur d
 
 * **Text** - Den text som ska visas på knappen
 * **Länk** - Länka till en innehållssida i AEM, en extern resurs eller ett ankare
-   * Använd dialogrutan **Markering** för att välja en bana i AEM.
+   * Använd dialogrutan **Markering** för att välja en sökväg i AEM.
 * **Ikon** - Identifierare för att visa en ikon i knappen
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
    * Om inget anges genereras ett unikt ID automatiskt åt dig och du hittar det genom att granska den resulterande sidan.
@@ -72,6 +74,6 @@ På fliken **Hjälpmedel** kan värden anges för [ARIA-hjälpmedelsetiketter](h
 
 Button-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
 Button-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

@@ -3,12 +3,14 @@ title: Ladda ned komponent (v1)
 description: Med komponenten Core Component Download kan du skapa ett nedladdningsalternativ på en sida.
 role: Architect, Developer, Admin, User
 exl-id: ebd63522-218d-4784-bea0-1627c64f5230
-source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+index: n
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
 
 ---
+
 
 # Ladda ned komponent (v1) {#download-component}
 
@@ -33,7 +35,7 @@ I det här dokumentet beskrivs v1 i Download Component, som introducerades i ver
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill visa hämtningskomponenten och se exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_download).
+Om du vill visa Download Component och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [Component Library](https://adobe.com/go/aem_cmp_library_download).
 
 ## Teknisk information {#technical-details}
 
@@ -49,12 +51,12 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera nedladdningsobjek
 
 ### Fliken Resurser {#asset-tab}
 
-Valet av en hämtningsresurs liknar funktionen hos [Image Component](image-v1.md) och utnyttjar även AEM DAM.
+Valet av en hämtningsresurs liknar funktionen hos [Image Component](image-v1.md) och använder även AEM DAM.
 
 * **Hämta resurs**
-   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=sv-SE) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=sv-SE) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 ### Fliken Egenskaper {#properties-tab}
 

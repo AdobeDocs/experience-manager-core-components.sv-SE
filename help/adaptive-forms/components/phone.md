@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - telefoninmatning, telefon
 description: Använda eller anpassa den adaptiva kärnkomponenten för telefoninmatning från Forms.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2197'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ Telefoninmatningsfältet används ofta i kontaktformulär, registreringsformulä
 
 ![exempel](/help/adaptive-forms/assets/emailid-example.png)
 
+{{traditional-aem}}
+
 ## Användning {#reasons-to-use-telephone-input}
 
 De vanligaste skälen till att använda ett telefoninmatningsfält i en adaptiv form är:
@@ -31,7 +33,7 @@ De vanligaste skälen till att använda ett telefoninmatningsfält i en adaptiv 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Phone Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Phone Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -167,7 +169,7 @@ På fliken Valideringsmönster kan du ange värden i ett visst format eller uppf
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

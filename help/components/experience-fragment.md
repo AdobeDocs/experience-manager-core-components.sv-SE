@@ -3,16 +3,19 @@ title: Experience Fragment Component
 description: Med Experience Fragment Component kan innehållsförfattaren lägga till en upplevelsefragmentvariant på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
 
 ---
 
+
 # Experience Fragment Component{#experience-fragment-component}
 
 Med kärnkomponentens Experience Fragment-komponent kan innehållsförfattaren placera en variant av upplevelsefragment på en sida med stöd för en lokaliserad webbplatsstruktur.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 

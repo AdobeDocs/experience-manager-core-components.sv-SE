@@ -3,7 +3,8 @@ title: Email Teaser Component
 description: Med e-postlaserkomponenten kan du visa en bild, en titel, RTF-text och eventuellt länka till mer innehåll.
 role: Architect, Developer, Admin, User
 exl-id: d6123b22-7cba-406c-986d-b6f00322d135
-source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
+index: false
+source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 0%
@@ -76,9 +77,9 @@ Teaser title, description och image kan ärvas från det länkade innehållet el
 ![Fliken Redigera dialogruta för e-postunderkomponentredigering](/help/email/assets/email-teaser-edit-image.png)
 
 * **Ärv bild från sida** - Använd bilden som definierats i sidegenskaperna för den länkade sidan eller den aktuella sidan om ingen finns.
-* **Bildresurs** - Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=sv-SE) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+* **Bildresurs** - Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=sv-SE) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 * **Alternativ text för hjälpmedel** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
    * **Ärv alternativ text från sida** - Det här alternativet använder den alternativa beskrivningen av det länkade objektvärdet för `dc:description` -metadata i DAM eller för den aktuella sidan om ingen resurs är länkad.
 * **Tillhandahåll inte alternativ text** - Med det här alternativet markeras bilden som ska ignoreras av hjälpmedelstekniker som skärmläsare om bilden är enbart dekorativ eller på annat sätt inte förmedlar någon ytterligare information till sidan.

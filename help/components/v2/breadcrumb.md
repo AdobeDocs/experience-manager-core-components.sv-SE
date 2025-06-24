@@ -3,12 +3,14 @@ title: Breadcrumb-komponent (v2)
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
 role: Architect, Developer, Admin, User
 exl-id: 5f2e6fef-e2f6-48e2-8dac-008db3131044
-source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+index: n
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 0%
 
 ---
+
 
 # Breadcrumb-komponent (v2) {#breadcrumb-component}
 
@@ -32,7 +34,7 @@ I det här dokumentet beskrivs v2 av Breadcrumb Component, som introducerades i 
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se exempel på Breadcrumb Component (Breadcrumb-komponenten) och dess konfigurationsalternativ samt HTML- och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_breadcrumb).
+Om du vill visa Breadcrumb-komponenten och se exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_breadcrumb).
 
 >[!NOTE]
 >
@@ -87,6 +89,6 @@ I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska anv
 
 Breadcrumb-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Breadcrumb-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
+Breadcrumb-komponenten stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)

@@ -4,12 +4,13 @@ description: Komponenten Text är en textredigerings- och dispositionskomponent 
 index: n
 role: Architect, Developer, Admin, User
 exl-id: c9fe3052-a33d-412e-9456-52c9a0cea292
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '1639'
 ht-degree: 0%
 
 ---
+
 
 # Textkomponent (v1) {#text-component-v}
 
@@ -27,7 +28,7 @@ I det här dokumentet beskrivs v1 av textkomponenten, som ursprungligen introduc
 
 I följande tabell visas kompatibiliteten för v1 för textkomponenten.
 
-| AEM | Textkomponent v1 |
+| AEM Version | Textkomponent v1 |
 |--- |--- |
 | 6,3 | Kompatibel |
 | 6,4 | Kompatibel |
@@ -40,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för textkomponenten.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -296,10 +297,10 @@ I redigeringsdialogrutan finns de standardverktyg för RTF-formatering som en an
 
   >[!CAUTION]
   >
-  >Som alltid när du har åtkomst till Raw-HTML måste du vara försiktig när du använder alternativet **Source Edit**!
+  >Som alltid när du har åtkomst till rå HTML måste du vara försiktig när du använder alternativet **Source Edit**!
   >
   >
-  >HTML som anges via **Source Edit** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felformaterad HTML som angetts i **Source Edit** kan emellertid bryta sidans mall, vilket resulterar i oväntad formatering eller oanvändbar återgivning av den resulterande sidan.
+  >HTML som angetts via **Source Edit** genomsöks efter XSS-risker och eventuella infogade skript tas bort och visas inte på den resulterande sidan. Felaktigt formaterade HTML som angavs i **Source Edit** kan emellertid bryta sidans mall, vilket kan leda till oväntad formatering eller oanvändbar återgivning av den resulterande sidan.
 
 * Styckeformat
 
@@ -360,7 +361,7 @@ Styckeformat kan aktiveras eller inaktiveras för komponenten. När det här alt
 Alternativet att infoga specialtecken kan aktiveras eller inaktiveras för komponenten. När det här alternativet är aktiverat kan du definiera tillåtna tecken.
 
 * Tryck eller klicka på knappen **Lägg till** för att infoga ett nytt tecken.
-* Ange HTML-koden för tecknet och en beskrivning som ska visas i redigeringsdialogrutan.
+* Ange HTML-koden för tecknet och en beskrivning som visas i redigeringsdialogrutan.
 * Om du vill ta bort en teckentryckning eller klicka på knappen **Ta bort** .
 * Om du vill ändra ordningen på tecknen trycker du eller klickar och drar i handtagen.
 

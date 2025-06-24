@@ -3,18 +3,21 @@ title: Adaptiv Forms Core-komponent - återställningsknapp
 description: Använda eller anpassa den adaptiva Forms-återställningsknappen Core Component.
 role: Architect, Developer, Admin, User
 exl-id: e5aa9d89-aece-491e-80a1-7fb9ea6c4b60
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '1551'
+source-wordcount: '1549'
 ht-degree: 0%
 
 ---
+
 
 # Återställ knappkomponent {#reset-button}
 
 En återställningsknapp i ett adaptivt formulär är en knapp som gör att användare kan rensa eller återställa alla formulärfält till sina standardvärden. När du klickar på återställningsknappen tas alla data som har angetts i formulärfälten bort och fälten återgår till sitt ursprungliga läge. Återställningsknappen används vanligtvis som ett alternativ till skicka-knappen och är ett sätt för användarna att börja om om om de har angett felaktiga eller oönskade data i formuläret.
 
 ![exempel](/help/adaptive-forms/assets/example-reset.png)
+
+{{traditional-aem}}
 
 ## Användning {#reasons-to-use-reset-button}
 
@@ -32,7 +35,7 @@ Skälen till att du använder en återställningsknapp i ett adaptivt formulär 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (Core-komponent) för adaptiv återställning av Forms-knapp släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (kärnkomponent) för adaptiv återställning av Forms-knapp släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

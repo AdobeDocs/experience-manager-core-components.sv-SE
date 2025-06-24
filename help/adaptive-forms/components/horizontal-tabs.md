@@ -3,12 +3,13 @@ title: Adaptiv Forms Core-komponent - horisontella flikar
 description: Använda eller anpassa den adaptiva, vågräta Forms-flikkomponenten Core.
 role: Architect, Developer, Admin, User
 exl-id: fbdf330b-3b85-4f94-9dab-eea8465fba67
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
 source-wordcount: '2153'
 ht-degree: 0%
 
 ---
+
 
 # Komponent för vågräta flikar (tabbar överst){#horizontal-tabs-adaptive-forms-core-component}
 
@@ -17,6 +18,8 @@ Vågräta flikar i ett adaptivt formulär avser ett designmönster där flera av
 Flikarna skapas vanligtvis som en serie länkar eller knappar, där varje länk eller knapp motsvarar ett avsnitt i formuläret. När en användare klickar på en flik uppdateras formulärinnehållet dynamiskt för att visa motsvarande avsnitt.
 
 ![exempel](/help/adaptive-forms/assets/horizontal-example-new.png)
+
+{{traditional-aem}}
 
 ## Användning {#reasons-to-use-horizontal-tabs}
 
@@ -32,7 +35,7 @@ De vanligaste skälen att använda vågräta flikar i en adaptiv form är:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (kärnkomponent) för de adaptiva horisontella Forms-flikarna släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (kärnkomponent) för de adaptiva horisontella Forms-flikarna släpptes i februari 2023 som en del av Core Components 2.0.4. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
@@ -109,7 +112,7 @@ Du kan använda alternativen för upprepning för att duplicera en komponent med
 - **Gör flikar högst upp repeterbara**: En växlingsfunktion som gör att användare kan aktivera eller inaktivera repeteringsfunktionen.
 - **Minsta antal upprepningar**: Anger det minsta antal gånger som komponenten för vågräta flikar kan upprepas. Värdet noll anger att komponenten Vågräta flikar inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger som komponenten för vågräta flikar kan upprepas. Som standard är det här värdet obegränsat.
-Om du effektivt vill hantera upprepningsbara avsnitt på de vågräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) .
+Om du effektivt vill hantera upprepningsbara avsnitt på de vågräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
 
 ### Fliken Objekt {#items-tab}
 
@@ -142,7 +145,7 @@ Med knappen **Lägg till** kan du markera en komponent som ska läggas till som 
    - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
    - **Inget**: Välj det här alternativet om du inte vill lägga till för hjälpmedelsetiketter för ARIA.
 
-- **HTML-roll för skärmläsare som ska tillkännages** - HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpfunktioner som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
+- **HTML-roll för skärmläsare som ska tillkännages** - HTML-rollen är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 ## Designdialogruta {#design-dialog}
 
@@ -161,7 +164,7 @@ Fliken **Tillåtna komponenter** gör att mallredigeraren kan ange vilka kompone
 
 ### Fliken Format {#styles-tab}
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för de adaptiva vågräta Forms-flikarna stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Core-komponenten för de adaptiva horisontella Forms-flikarna stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Fliken Format](/help/adaptive-forms/assets/tabs-styles-tab.png)
 

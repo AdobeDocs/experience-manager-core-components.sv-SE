@@ -4,12 +4,13 @@ description: Core Component Image Component Component är en adaptiv bildkompone
 index: n
 role: Architect, Developer, Admin, User
 exl-id: 625ce8de-5c4a-476d-b749-895493d169b1
-source-git-commit: 5f25aee6ebcb7a5c6b8db0df5b8b853f15af97d0
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 0%
 
 ---
+
 
 # Bildkomponent (v1) {#image-component-v}
 
@@ -27,7 +28,7 @@ I det här dokumentet beskrivs v1 av Image Component, som ursprungligen introduc
 
 I följande tabell visas kompatibiliteten för v1 för Image-komponenten.
 
-| AEM | Bildkomponent v1 |
+| AEM Version | Bildkomponent v1 |
 |--- |--- |
 | 6,3 | Kompatibel |
 | 6,4 | Kompatibel |
@@ -40,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för Image-komponenten.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -82,16 +83,16 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 ![](/help/assets/chlimage_1-50.png)
 
 * **Bildresurs**
-   * Släpp en resurs från [resursläsaren](https://helpx.adobe.com/se/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://helpx.adobe.com/se/experience-manager/6-3/assets/using/managing-assets-touch-ui.html#main-pars_title_19) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://helpx.adobe.com/experience-manager/6-3/assets/using/managing-assets-touch-ui.html#main-pars_title_19) i resursredigeraren.
 
 * **Bilden är dekorativ** - Kontrollera om bilden ska ignoreras av hjälpmedelstekniken och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
 * **Alternativ text** - Textalternativ för innebörden eller funktionen i bilden för läsare med nedsatt syn.
 * **Länk**
    * Länka bilden till en annan resurs.
-   * Använd urvalsdialogrutan för att länka till en annan AEM.
-   * Om du inte länkar till en AEM resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
+   * Använd urvalsdialogrutan för att länka till en annan AEM-resurs.
+   * Om du inte länkar till en AEM-resurs anger du den absoluta URL:en. Icke-lösliga URL:er tolkas som relativa till AEM.
 
 * **Bildtext** - Ytterligare information om bilden, som visas under bilden, är standard.
 * **Visa bildtext som popup-fönster** -   När det här alternativet är markerat visas inte bildtexten nedanför bilden, utan som en popup-ruta som visas av vissa webbläsare när de hovrar över bilden.
@@ -175,7 +176,7 @@ Du kan även använda redigeraren på plats för att ändra bilden. På grund av
 
 >[!NOTE]
 >
->Bildredigeringsåtgärder (beskärning, vändning, rotering) stöds inte för bilder i GIF. Alla sådana ändringar som görs i redigeringsläget för GIF bevaras inte.
+>Bildredigeringsåtgärder (beskärning, vändning, rotering) stöds inte för GIF-bilder. Alla sådana ändringar som görs i redigeringsläget för GIF-filer bevaras inte.
 
 ## Designdialogruta {#design-dialog}
 
@@ -237,7 +238,7 @@ Använd det här alternativet om du vill tillåta innehållsförfattaren att anv
 
   >[!CAUTION]
   >
-  >Observera att beskärningsproportionerna definieras som **höjd/bredd** i AEM. Detta skiljer sig från den vanliga definitionen av bredd/höjd och görs av bakåtkompatibilitetsskäl. Innehållsförfattarna är inte medvetna om några skillnader så länge du anger ett tydligt namn på förhållandet eftersom namnet visas i gränssnittet och inte själva förhållandet.
+  >Observera att beskärningsproportioner definieras som **höjd/bredd** i AEM. Detta skiljer sig från den vanliga definitionen av bredd/höjd och görs av bakåtkompatibilitetsskäl. Innehållsförfattarna är inte medvetna om några skillnader så länge du anger ett tydligt namn på förhållandet eftersom namnet visas i gränssnittet och inte själva förhållandet.
 
 ## Teknisk information {#technical-details}
 

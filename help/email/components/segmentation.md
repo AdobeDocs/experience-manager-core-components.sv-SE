@@ -3,7 +3,8 @@ title: E-postsegmentkomponent
 description: E-postsegmentkomponenten
 role: Architect, Developer, Admin, User
 exl-id: 6c88b8c5-189a-40c0-ab28-04d37dc5fbac
-source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
+index: false
+source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
@@ -56,14 +57,14 @@ Använd knappen **Lägg till segment** för att öppna komponentväljaren och v�
    * **Standard** - Definierar standardsegmentet så att det visas om inga andra villkor uppfylls
    * **Anpassad** - Låter författaren definiera ett villkor
       * Villkoren baseras på Adobe Campaign personaliseringsvariabler
-      * [Här finns information om Adobe Campaign Standard personaliseringsresurser.](https://experienceleague.adobe.com/docs/campaign-standard/using/designing-content/personalization.html?lang=sv-SE&)
-      * [Här finns information om Adobe Campaign Classic personaliseringsresurser.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html?lang=sv-SE)
+      * [Här finns information om Adobe Campaign Standard personaliseringsresurser.](https://experienceleague.adobe.com/docs/campaign-standard/using/designing-content/personalization.html?)
+      * [Här finns information om Adobe Campaign Classic personaliseringsresurser.](https://experienceleague.adobe.com/docs/campaign-classic/using/sending-messages/personalizing-deliveries/personalization-fields.html)
 * **Ta bort** - Tryck eller klicka för att ta bort segmentet från e-postsegmentkomponenten.
 * **Ordna om** - Tryck eller klicka och dra för att ordna om segmenten.
 
 >[!TIP]
 >
->Om visningsrutan för innehållet minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i e-postsegmentkomponenten genom att [dra från komponentwebbläsaren och släppa på e-postsegmentkomponenten i innehållsredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=sv-SE#inserting-a-component)
+>Om visningsrutan för innehållet minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i e-postsegmentkomponenten genom att [dra från komponentwebbläsaren och släppa på e-postsegmentkomponenten i innehållsredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component)
 
 ### Fliken Egenskaper {#properties-tab}
 
@@ -118,7 +119,7 @@ I designdialogrutan kan mallskaparen definiera vilka komponenter som kan läggas
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som kan läggas till som segment i e-postsegmentkomponenten av innehållsförfattaren.
 
-Fliken **Tillåtna komponenter** fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
+Fliken **Tillåtna komponenter** fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Fliken Format {#styles-tab}
 
@@ -134,7 +135,7 @@ Tryck eller klicka på knappen **Lägg till** för att skapa nya villkor.
 
 * **Segmentvillkorsnamn** - en beskrivning av villkoret
 * **Segmentvillkor** - Det faktiska villkor som måste uppfyllas, baserat på Adobe Campaign personaliseringsvariabler
-   * [Här finns information om Adobe Campaign Standard personaliseringsresurser.](https://experienceleague.adobe.com/docs/campaign-standard/using/designing-content/personalization.html?lang=sv-SE&)
-   * [Här finns information om Adobe Campaign Classic personaliseringsresurser.]&#x200B;(https://experienceleague.adobe.com/docs/?lang=sv-SE)
+   * [Här finns information om Adobe Campaign Standard personaliseringsresurser.](https://experienceleague.adobe.com/docs/campaign-standard/using/designing-content/personalization.html?)
+   * [Här finns information om Adobe Campaign Classic personaliseringsresurser.]&#x200B;(https://experienceleague.adobe.com/docs/)
 * **Ta bort** - Tryck för att klicka för att ta bort villkoret
 * **Ordna om** - Tryck eller klicka och dra för att ändra ordningen på villkoren

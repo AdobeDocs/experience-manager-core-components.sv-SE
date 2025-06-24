@@ -3,18 +3,21 @@ title: Adaptiv Forms Core-komponent - bild
 description: Använda eller anpassa den adaptiva Forms Image Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9ee42d5d-16e3-4973-8364-5bc512ebe72e
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
+
 
 # Bildkomponent{#image-adaptive-forms-core-component}
 
 En bildkomponent i ett adaptivt formulär är ett sätt att inkludera bilder i ett formulär. Dessa bilder kan användas för att förbättra formulärets övergripande design, ge ytterligare information eller fungera som visuell hjälp för att hjälpa användarna förstå formulärets syfte. Bildkomponenten kan användas för att lägga till en logotyp, ett foto eller en bild i formuläret.
 
 För hjälpmedel är det viktigt att ange **Alternativ text** till bilden för att ge bilden ett kort, beskrivande textalternativ som beskriver bilden för användare som inte kan se den.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -35,7 +38,7 @@ Det finns många skäl till att det är bra att ta med en bildkomponent i en ada
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Image Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Image Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

@@ -3,16 +3,19 @@ title: Behållarkomponent
 description: Med komponenten Core Component Container kan du skapa en behållare för flera ytterligare komponenter på en sida.
 role: Architect, Developer, Admin, User
 exl-id: 53c7190d-44cb-42ff-bc1a-483c7875bcf8
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
 
 ---
 
+
 # Behållarkomponent{#container-component}
 
 Med komponenten Core Component Container kan du skapa en behållare för flera ytterligare komponenter på en sida.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 
@@ -51,7 +54,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera behållarobjektet
 
 * **Layout** - Det här alternativet definierar beteendet eller layoutbeteendet för behållarkomponenten.
    * **Enkel** - Definierar en behållare som en enkel samling komponenter
-   * **Responsivt stödraster** - Definierar en behållare som en [AEM responsiv layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=sv-SE)
+   * **Responsivt stödraster** - Definierar en behållare som en [AEM responsiv layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
 * **Bakgrundsfärg** - Definierbar antingen som RGB-värden med valfri form eller med färgväljaren, [beroende på konfiguration](#background-tab)
 * **Bakgrundsbild** - Definierar en bakgrundsfärg för behållaren, [beroende på konfiguration](#background-tab)
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
@@ -67,11 +70,11 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som kan läggas till som objekt i behållarkomponenten av innehållsförfattaren.
 
-Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
+Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Fliken Standardkomponenter {#default-components-tab}
 
-Fliken Standardkomponenter används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, på ungefär [hur standardkomponenter definieras på sidmallen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE).
+Fliken Standardkomponenter används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, på ungefär [hur standardkomponenter definieras på sidmallen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 ### Fliken Responsiva inställningar {#responsive-settings-tab}
 

@@ -3,18 +3,21 @@ title: Adaptiv Forms Core-komponent - Google reCAPTCHA
 description: Förbättra säkerheten med Google reCAPTCHA-tjänsten utan problem med AEM Forms. Förklara egenskaperna för den adaptiva formen reCaptcha
 role: Architect, Developer, Admin, User
 exl-id: 2d986b90-e596-4e8f-9a32-0ebced5461c8
-source-git-commit: b97687e7f7437af57e2a8b9f442d4e0c8322a3d2
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
 source-wordcount: '1325'
 ht-degree: 0%
 
 ---
 
+
 # Adaptiv form reCAPTCHA {#google-recaptcha}
 
 CAPTCHA (Completely Automated Public Turing Test to tell Computers and Humans Apart) är ett program som ofta används vid onlinetransaktioner för att skilja mellan människor och automatiserade program eller organ. Det utgör en utmaning och utvärderar användarens svar för att avgöra om det är en människa eller en robot som interagerar med webbplatsen. Det förhindrar användaren att fortsätta om testet misslyckas och gör onlinetransaktionerna säkra genom att förhindra att skräppost eller skadliga syften publiceras.
 
 AEM Forms as a Cloud Service stöder Google reCAPTCHA v2 i Adaptiv Forms. Du kan använda den för att presentera en CAPTCHA-utmaning när du skickar in formulär
+
+{{traditional-aem}}
 
 ## Användning {#reasons-to-use-google-recaptcha}
 
@@ -31,7 +34,7 @@ AEM Forms as a Cloud Service stöder Google reCAPTCHA v2 i Adaptiv Forms. Du kan
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Google reCAPTCHA Core-komponenten släpptes i augusti 2023 som en del av Core Components &#39;version&#39;. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Google reCAPTCHA Core-komponenten släpptes i augusti 2023 som en del av Core Components &#39;version&#39;. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 
 | Komponentversion | AEM as a Cloud Service |
@@ -67,7 +70,7 @@ Du kan enkelt anpassa Google reCAPTCHA-upplevelsen för besökare med dialogruta
 
   >[!NOTE]
   >
-  > Läs artikeln [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) om du vill veta mer om hur du skapar och konfigurerar Google reCAPTCHA för din miljö.
+  > Läs artikeln [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) om du vill veta mer om hur du skapar och konfigurerar Google reCAPTCHA för din miljö.
 
 - **Typ**: Välj det här alternativet om du vill välja storlek för reCAPTCHA.
    - **Normal**: Avser den större standardversionen av reCAPTCHA-widgeten, som kan vara mer synlig och lättare att interagera med, särskilt på enheter med större skärmar.
@@ -93,7 +96,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för kompon
 
 ### Fliken Format {#styles-design-tab}
 
-Den adaptiva kärnkomponenten Forms reCAPTCHA stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Den adaptiva Forms reCAPTCHA Core-komponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Designdialogrutan](/help/adaptive-forms/assets/checkbox-style.png)
 

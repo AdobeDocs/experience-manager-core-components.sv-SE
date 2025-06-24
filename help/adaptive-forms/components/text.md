@@ -3,18 +3,21 @@ title: Adaptiv Forms Core-komponent - text
 description: Använda eller anpassa den adaptiva Forms Text Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: b8de68e4-ca0d-4ae5-9a04-104cc617f1be
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
+
 
 # Textkomponent {#text-adaptive-forms-core-component}
 
 I ett adaptivt formulär avser text det innehåll som visas i formuläret och som användaren kan läsa. Detta kan inkludera den text som används för att etikettera en grupp formulärelement, t.ex. textfält, samt eventuella ytterligare instruktioner eller information som tillhandahålls användaren.
 
 Detta kan också bidra till att dela upp ett formulärs struktur i logiska avsnitt, vilket gör det lättare för användarna att förstå och fylla i formuläret. Dessutom kan den användas för hjälpmedelssyften för att ge en kort beskrivning av det element den är kopplad till. Sådana textfält visas vanligtvis i närheten av formulärkomponenterna, till exempel före eller efter det.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -34,7 +37,7 @@ Det finns flera skäl till att använda text i ett formulär:
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Text Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Text Core-komponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

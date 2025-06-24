@@ -1,20 +1,22 @@
 ---
 title: Riktlinjer för komponenter
-description: Core Components följer moderna implementeringsmönster som skiljer sig mycket från grundkomponenterna.
+description: Core Components följer implementeringsmönster som skiljer sig mycket från grundkomponenterna.
 role: Architect, Developer, Admin
 exl-id: e8c58fa5-c991-433c-8d38-575dacfc3433
-source-git-commit: ee18626280f74a51a799f16d6bf3f5b0be9cd6b9
+source-git-commit: 5994133947ff697f7c866fe61598c58e37e77008
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1225'
 ht-degree: 0%
 
 ---
 
 # Riktlinjer för komponenter {#component-guidelines}
 
-[Kärnkomponenterna](overview.md) följer moderna implementeringsmönster som skiljer sig mycket från grundkomponenterna.
+[Kärnkomponenterna](overview.md) följer implementeringsmönster som skiljer sig mycket från grundkomponenterna.
 
 På den här sidan förklaras de här mönstren och när du ska använda dem för att skapa egna författarskapande komponenter. Det första avsnittet [Allmänna komponentmönster](#general-component-patterns) gäller alla typer av komponenter, medan det andra avsnittet [Återanvändbara komponentmönster](#reusable-component-patterns) gäller komponenter som är avsedda att återanvändas på platser eller i projekt, till exempel kärnkomponenter.
+
+{{traditional-aem}}
 
 ## Allmänna komponentmönster {#general-component-patterns}
 
@@ -30,7 +32,7 @@ Om du vill gå ett steg längre och återanvända komponenter mellan webbplatser
 
 ### Separation av oro {#separation-of-concerns}
 
-Att hålla logiken (eller modellen) för en komponent åtskild från markeringsmallen (eller vyn) är vanligtvis en bra vana. Det finns flera sätt att uppnå det, men det rekommenderas att du använder [segmentmodeller](https://sling.apache.org/documentation/bundles/models.html) för logiken och [HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) (HTL) för koden, precis som med kärnkomponenterna.
+Att hålla logiken (eller modellen) för en komponent åtskild från markeringsmallen (eller vyn) är vanligtvis en bra vana. Det finns flera sätt att uppnå det, men det rekommenderas att du använder [segmentmodeller](https://sling.apache.org/documentation/bundles/models.html) för logiken och [HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) (HTML) för koden, precis som med kärnkomponenterna.
 
 Sling Models är en uppsättning Java-anteckningar som gör det enkelt att komma åt nödvändiga variabler från POJO:er och därför erbjuder ett enkelt, kraftfullt och effektivt sätt att implementera Java-logik för komponenter.
 
@@ -42,7 +44,7 @@ Riktlinjerna i det här avsnittet kan även användas för alla typer av kompone
 
 ### Förkonfigurerbara funktioner {#pre-configurable-capabilities}
 
-Förutom redigeringsdialogrutan som används av sidförfattare kan komponenterna även ha en designdialogruta där mallförfattare kan förkonfigurera dem. Med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) kan du konfigurera alla dessa förkonfigurationer, som kallas för principer.
+Förutom redigeringsdialogrutan som används av sidförfattare kan komponenterna även ha en designdialogruta där mallförfattare kan förkonfigurera dem. Med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) kan du konfigurera alla dessa förkonfigurationer, som kallas för principer.
 
 För att göra komponenterna så återanvändbara som möjligt bör de ha meningsfulla alternativ för förkonfiguration. Detta gör att du kan aktivera eller inaktivera funktioner i komponenterna för att passa de specifika behoven på olika platser.
 
@@ -64,7 +66,7 @@ Inkompatibla ändringar i följande aspekter av komponenterna resulterar i en ny
 
 * Sling Models (i enlighet med riktlinjerna för semantisk versionshantering)
 * HTML-skript och mallar
-* HTML Markup och CSS-väljare
+* HTML Markup and CSS Selectors
 * JSON-representation
 * Dialogrutor
 
@@ -85,11 +87,11 @@ I kombination med det [Proxy-komponentmönster](#proxy-component-pattern) som be
 
 ## Sammanställ allt {#putting-it-all-together}
 
-Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i exemplet med kärnkomponenten Title. Det visar hur en platsspecifik proxykomponent kan lösa komponentversionshantering, så att innehållsresursen inte innehåller något versionsnummer. Sedan visas hur komponentens `title.html` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) -fil använder i modellgränssnittet, medan implementeringen binder till den specifika versionen av komponenten via [Sling Model](https://sling.apache.org/documentation/bundles/models.html) -anteckningar.
+Nedan visas en översikt över hela bindningsstrukturen för resurstyper, som i exemplet med kärnkomponenten Title. Det visar hur en platsspecifik proxykomponent kan lösa komponentversionshantering, så att innehållsresursen inte innehåller något versionsnummer. Sedan visas hur komponentens `title.html` [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) -fil använder i modellgränssnittet, medan implementeringen binder till den specifika versionen av komponenten via [Sling Model](https://sling.apache.org/documentation/bundles/models.html) -anteckningar.
 
 ![Resursbindningsöversikt](/help/assets/chlimage_1-32.png)
 
-Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur de associerade [mallarna och profilerna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=sv-SE) refereras.
+Nedan finns en annan översikt som inte visar information om implementeringens POJO, men som visar hur de associerade [mallarna och profilerna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html) refereras.
 
 Egenskapen `cq:allowedTemplates` anger vilka mallar som kan användas för en plats och `cq:template` anger för varje sida vilken mall som är associerad. Varje mall består av följande tre delar:
 
@@ -99,7 +101,7 @@ Egenskapen `cq:allowedTemplates` anger vilka mallar som kan användas för en pl
 
 ![Mallar och principöversikt](/help/assets/screen_shot_2018-12-07at093102.png)
 
-## AEM Project Archettype {#aem-project-archetype}
+## AEM Project Archetype {#aem-project-archetype}
 
 [AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på anpassade HTML-komponenter med SlingModels för logik och korrekt implementering av Core Components med det rekommenderade proxymönstret.
 

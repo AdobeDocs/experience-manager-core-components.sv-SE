@@ -3,7 +3,7 @@ title: Carousel-komponent
 description: Med Carousel Component kan innehållsförfattaren presentera innehållet i en roterande karusell.
 role: Architect, Developer, Admin, User
 exl-id: 3331214c-a05c-47e1-b54c-fbfd1045bd60
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 # Carousel-komponent{#carousel-component}
 
 Med Core Component Carousel Component kan innehållsförfattaren presentera innehållet i en navigerbar karusell.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 
@@ -49,7 +51,7 @@ Carousel, [Tabbar,](tabs.md) och [dragspelskomponenter](accordion.md) har stöd 
 
 Så här gör du:
 
-1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=sv-SE#view-as-published)** i sidredigeraren.
+1. Visa sidan med komponenten med alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** i sidredigeraren.
 1. Granska sidans innehåll och identifiera panelens ID.
    * Till exempel `id="carousel-bfe4fa6647-item-47f1a7ca67-tabpanel"`
 1. ID:t blir det ankare som du kan lägga till i URL:en med hjälp av ett hash-tecken (`#`).
@@ -80,7 +82,7 @@ Använd knappen **Lägg till** för att öppna komponentväljaren och välja vil
 
 >[!TIP]
 >
->Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i Carousel-komponenten genom att [dra från komponentwebbläsaren och släppa på Carousel-komponenten i sidredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=sv-SE#inserting-a-component-from-the-components-browser).
+>Om sidans visningsruta minskas så att redigeringsdialogrutan blir helskärm, döljs knappen **Lägg till**. Komponenter kan fortfarande läggas till i Carousel-komponenten genom att [dra från komponentwebbläsaren och släppa på Carousel-komponenten i sidredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#inserting-a-component-from-the-components-browser).
 
 ### Fliken Egenskaper {#properties-tab}
 
@@ -99,9 +101,9 @@ På fliken **Egenskaper** kan innehållsförfattaren ange att bildrutorna ska ö
 
 >[!NOTE]
 >
->Avancerade kontroller för bildrutor är inte aktiverade i läget **Redigera**. Använd [**Förhandsgranska** läge](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=sv-SE#preview-mode) eller alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=sv-SE#view-as-published)** om du vill interagera med karusellen på samma sätt som en läsare av det publicerade innehållet.
+>Avancerade kontroller för bildrutor är inte aktiverade i läget **Redigera**. Använd [**Förhandsgranska** läge](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#preview-mode) eller alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill interagera med karusellen på samma sätt som en läsare av det publicerade innehållet.
 >
->Funktionen för automatiskt framflyttning är inte aktiverad i läget **Redigera**. Använd alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html?lang=sv-SE#view-as-published)** om du vill se den automatiska funktionen som en läsare av det publicerade innehållet gör.
+>Funktionen för automatiskt framflyttning är inte aktiverad i läget **Redigera**. Använd alternativet **[Visa som publicerad](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/editing-content.html#view-as-published)** om du vill se den automatiska funktionen som en läsare av det publicerade innehållet gör.
 
 ### Fliken Tillgänglighet {#accessibility-tab}
 
@@ -150,7 +152,7 @@ Fliken **Egenskaper** används för att definiera standardinställningarna för 
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som innehållsförfattaren kan lägga till som bildrutor i Carousel-komponenten.
 
-Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
+Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Fliken Format {#styles-tab}
 

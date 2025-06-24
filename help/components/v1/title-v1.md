@@ -4,12 +4,13 @@ description: Komponenten Core Component Title är en avsnittsrubrikkomponent med
 index: n
 role: Architect, Developer, Admin, User
 exl-id: 79549ac0-82f2-4ea0-9cce-d534d0b47b5c
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '320'
 ht-degree: 0%
 
 ---
+
 
 # Titelkomponent (v1) {#title-component-v}
 
@@ -27,7 +28,7 @@ I det här dokumentet beskrivs v1 i Title Component, som ursprungligen introduce
 
 I följande tabell visas kompatibiliteten för v1 för komponenten Title.
 
-| AEM | Titelkomponent v1 |
+| AEM Version | Titelkomponent v1 |
 |--- |--- |
 | 6,3 | Kompatibel |
 | 6,4 | Kompatibel |
@@ -40,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Title.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 

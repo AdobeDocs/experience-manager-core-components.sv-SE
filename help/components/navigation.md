@@ -3,16 +3,19 @@ title: Navigeringskomponent
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
 role: Architect, Developer, Admin, User
 exl-id: 9154f2a3-3d1e-4865-a413-298748fa66d3
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 0%
 
 ---
 
+
 # Navigeringskomponent{#navigation-component}
 
 Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 

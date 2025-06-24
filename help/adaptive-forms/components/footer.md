@@ -3,16 +3,19 @@ title: Adaptiv Forms Core-komponent - sidfot
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Footer.
 role: Architect, Developer, Admin, User
 exl-id: c8e7d3fe-4b82-4a80-8da2-19f6cff1e3e9
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '769'
+source-wordcount: '767'
 ht-degree: 0%
 
 ---
 
+
 # Sidfot {#footer-adaptive-forms-core-component}
 
 En sidfotskomponent i ett adaptivt formulär är ett område som vanligtvis visas längst ned i formuläret och som innehåller information som ett copyrightmeddelande, länkar till relaterade resurser eller kontaktinformation. En sidfot kan innehålla ytterligare information, t.ex. datumet för den senaste uppdateringen, vilket kan vara bra för användare med hjälpmedelsbehov.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -34,7 +37,7 @@ Det finns flera skäl till att det är bra att ta med en sidfotskomponent i ett 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva huvudkomponenten i Forms Footer Core släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva huvudkomponenten för Forms Footer Core släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -84,7 +87,7 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
    - **Sökväg** - Ange sökvägen
       1. Använd dialogrutan Öppna markering för att välja en bana i AEM.
       1. Om länken inte finns i AEM anger du den absoluta URL:en.
-      1. Icke-absoluta sökvägar tolkas som relativa AEM.
+      1. Icke-absoluta sökvägar tolkas som relativa till AEM.
 
    - **Alternativ text** - Ange alternativ beskrivande text för länken.
 
@@ -109,7 +112,7 @@ I redigeringsdialogrutan finns standardverktyg för formatering av RTF-text som 
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

@@ -3,18 +3,21 @@ title: Dragspel med adaptiv form
 description: Använd dragspelspanelen för att ordna och förenkla ett långt eller komplext formulär genom att dela upp det i mindre, mer hanterbara avsnitt.
 role: Architect, Developer, Admin, User
 exl-id: 0ed38eee-fc22-4708-82eb-3fb1839b1ff2
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
 source-wordcount: '2237'
 ht-degree: 0%
 
 ---
 
+
 # Dragspelskomponent {#accordion-component-adaptive-forms-core-component}
 
 Med Accordion Core Component kan man skapa expanderbara och komprimerbara sektioner i en adaptiv form. Det används ofta för att organisera och förenkla långa eller komplexa formulär genom att dela upp dem i mindre, mer hanterbara avsnitt. Varje avsnitt i ett dragspel representeras vanligtvis av ett sidhuvud som användaren kan klicka på för att expandera eller komprimera motsvarande innehåll. Innehållet kan vara vilken kärnkomponent som helst.
 
 ![exempel](/help/adaptive-forms/assets/example-accordion.png)
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 
@@ -41,7 +44,7 @@ Dialogrutan för att konfigurera och välja panel-pover och designdialogrutan ä
 ## Version och kompatibilitet {#version-and-compatibility}
 
 
-Den adaptiva kärnkomponenten i Forms Accordion lanserades i februari 2023 som en del av Core Components 2.0.4. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva kärnkomponenten i Forms Accordion lanserades i februari 2023 som en del av Core Components 2.0.4. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
@@ -121,7 +124,7 @@ Du kan använda alternativen för upprepning för att duplicera dragspelspaneler
 - **Minsta antal upprepningar**: Anger det minsta antal gånger dragspelspanelen kan upprepas. Värdet noll anger att dragspelspanelen inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger dragspelspanelen kan upprepas. Som standard är det här värdet obegränsat.
 
-Om du effektivt vill hantera upprepningsbara avsnitt i dragspelet följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) .
+Om du effektivt vill hantera upprepningsbara avsnitt i dragspelet följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
 
 ### Fliken Objekt {#items-tab}
 
@@ -189,7 +192,7 @@ The **Select Panel** option (![Select panel icon](/help/assets/select-panel-icon
 
 I designdialogrutan kan mallskapare styra hur saker visas som standard. För den adaptiva Forms-dragspelskomponenten kan du ange följande:
 
-- Den typ av rubrikelement som är tillåtna och inställda som standard i HTML (t.ex. H1, H2, H3)
+- Den typ av rubrikelement i HTML som är tillåtna och inställda som standard (t.ex. H1, H2, H3)
 - De kärnkomponenter som en formulärskapare kan lägga till i dragspelet i den adaptiva Forms-redigeraren
 - Enkla namn på format (CSS-klasser) som kan användas i egenskapsdialogrutan för dragspelskomponenten i den adaptiva Forms-redigeraren.
 
@@ -215,7 +218,7 @@ På fliken **Tillåtna komponenter** kan mallredigeraren ange vilka komponenter 
 
 ![Formatflik i designdialogrutan](/help/adaptive-forms/assets/accordion-styles-tab.png)
 
-Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Designdialogrutan används för att definiera och hantera CSS-format för en komponent. Den adaptiva kärnkomponenten i Forms Accordion har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 - **Standard-CSS-klasser**: Du kan ange en standard-CSS-klass för dragspelskomponenten.
 

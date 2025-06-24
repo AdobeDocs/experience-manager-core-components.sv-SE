@@ -3,16 +3,19 @@ title: Bädda in komponent
 description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM-innehållssida.
 role: Architect, Developer, Admin, User
 exl-id: 985fa304-70a3-4329-957e-76d1832a06f1
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '1343'
 ht-degree: 0%
 
 ---
 
+
 # Bädda in komponent {#embed-component}
 
 Med Core Components Embed Component (Bädda in kärnkomponenter) kan du bädda in externt innehåll på en AEM-innehållssida.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 
@@ -115,7 +118,7 @@ I allmänhet tas alla skript och `style`-element samt alla `on*` - och `style` -
 
 Reglerna är dock mer komplicerade eftersom Bädda in komponent följer AEM globala filterregeluppsättning för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
-Ytterligare säkerhetsinformation finns i [AEM utvecklardokumentation för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html?lang=sv-SE) samt [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html?lang=sv-SE)
+Ytterligare säkerhetsinformation finns i [AEM utvecklardokumentation för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) samt [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
 
 >[!NOTE]
 >

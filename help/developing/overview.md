@@ -3,32 +3,18 @@ title: Utveckla kärnkomponenter
 description: Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
 role: Architect, Developer, Admin
 exl-id: 0f79cac1-a3b0-487e-90be-0bd8263d3912
-source-git-commit: 614bc5fd01a76a6888606faa4576e1695b77ba58
+source-git-commit: 5994133947ff697f7c866fe61598c58e37e77008
 workflow-type: tm+mt
-source-wordcount: '1287'
-ht-degree: 1%
+source-wordcount: '1130'
+ht-degree: 2%
 
 ---
 
 # Utveckla kärnkomponenter {#developing-core-components}
 
-## När ska kärnkomponenterna användas? {#when-to-use-the-core-components}
+Med Core Components får du robusta och utbyggbara baskomponenter med funktionsrika funktioner, kontinuerlig leverans, versionshantering av komponenter, modern implementering, tunn markering och JSON-export av innehåll.
 
-Eftersom kärnkomponenterna är helt nya och har många fördelar rekommenderar vi att du använder dem i nya AEM. För befintliga projekt bör en migrering ingå i en större projektinsats, till exempel en omprofilering eller en övergripande omfaktorisering.
-
-Adobe ger därför följande rekommendationer:
-
-* **Nya projekt**
-Nya projekt bör alltid försöka använda kärnkomponenter. Om det inte går att använda kärnkomponenter direkt eller [extended](customizing.md) för att uppfylla projektkraven skapar du en anpassad komponent enligt komponentarkitekturen som anges i kärnkomponenterna. Undvik att använda [Foundation-komponenterna](/help/versions.md#foundation-component-support) om inte annat är möjligt.
-* **Befintliga projekt**
-Rekommendationen fortsätter att använda [ Foundation-komponenterna ](/help/versions.md#foundation-component-support) om inte en webbplats- eller komponentomfaktorisering planeras.\
-  Eftersom de används mycket ofta i de flesta befintliga projekt stöds även grundkomponenterna [.](/help/versions.md#foundation-component-support)
-* **Nya anpassade komponenter**
-Utvärdera om en befintlig [Core-komponent kan anpassas](customizing.md).\
-  Om det inte gör det bör du skapa en ny anpassad komponent enligt riktlinjerna för [komponenter](guidelines.md).
-* **Befintliga anpassade komponenter**
-Om komponenterna fungerar som de ska bör du behålla dem som de är.\
-  Om inte, se&quot;Nya anpassade komponenter&quot; ovan.
+{{traditional-aem}}
 
 ## Så här lyckas du med kärnkomponenterna {#how-to-succeed}
 
@@ -40,9 +26,9 @@ Alla nya projekt ska implementeras med kärnkomponenter. Befintliga projekt har 
 
 ### Migrerar från Foundation Components {#from-foundation}
 
-En större insats i ett befintligt projekt (till exempel en omprofilering eller en övergripande omfaktorisering) ger ofta möjlighet att migrera till kärnkomponenterna. För att underlätta denna migration har Adobe tillhandahållit ett antal migreringsverktyg för att uppmuntra till användning av kärnkomponenterna och den senaste AEM tekniken.
+En större insats i ett befintligt projekt (till exempel en omprofilering eller en övergripande omfaktorisering) ger ofta möjlighet att migrera till kärnkomponenterna. För att underlätta migreringen har Adobe tillhandahållit ett antal migreringsverktyg för att uppmuntra användningen av kärnkomponenterna och den senaste AEM-tekniken.
 
-[Med verktygen AEM modernisering](https://opensource.adobe.com/aem-modernize-tools/) kan du enkelt konvertera:
+[Med AEM moderniseringsverktyg](https://opensource.adobe.com/aem-modernize-tools/) kan du enkelt konvertera:
 
 * Statiska mallar till redigerbara mallar
 * Designkonfigurationer till policyer
@@ -53,15 +39,15 @@ Mer information om hur dessa verktyg används finns i [dokumentationen för dem]
 
 >[!NOTE]
 >
->De AEM verktygen är en del av communityn och stöds inte eller motiveras inte av Adobe.
+>AEM Modernize Tools är en community-åtgärd som inte stöds eller garanteras av Adobe.
 
 ## Migrering via Move to AEM as a Cloud Service {#via-aemaacs}
 
-Eftersom AEM as a Cloud Service automatiskt har den senaste versionen av Core Components måste du ta bort alla beroenden till Core Components i din `pom.xml`-projektfil när du flyttar från en lokal AEM.
+Eftersom AEM as a Cloud Service har den senaste versionen av Core Components automatiskt måste du ta bort alla beroenden till Core Components i din `pom.xml`-projektfil när du flyttar från en lokal AEM-installation.
 
 Proxykomponenterna fungerar fortfarande som de gjorde tidigare eftersom   utkast pekar på den nödvändiga supertypen och den överordnade textbanan har versionen i den. På så sätt kan du bara ta bort beroendet och få Core Components att fungera i AEMaaCS på samma sätt som lokalt.
 
-Precis som andra AEMaaCS-projekt måste du också lägga till ett beroende i AEM SDK jar. Detta är inte specifikt för kärnkomponenterna, men krävs.
+Precis som andra AEMaaCS-projekt måste du också lägga in ett beroende i AEM SDK jar. Detta är inte specifikt för kärnkomponenterna, men krävs.
 
 ```xml
 <dependency>
@@ -70,15 +56,15 @@ Precis som andra AEMaaCS-projekt måste du också lägga till ett beroende i AEM
 </dependency>
 ```
 
-Mer information om AEMaaCS-projekt finns i dokumentet [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=sv-SE).
+Mer information om AEMaaCS-projekt finns i dokumentet [AEM Project Structure](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html).
 
 ## Stöd för kärnkomponenter {#core-component-support}
 
-Kärnkomponenter är en integrerad del av AEM och stöds som de är, på samma villkor som om de levererades som en del av QuickStart.
+Core Components är en integrerad del av AEM och stöds som det är, på samma villkor som om de levererades som en del av QuickStart.
 
-Liksom andra AEM produktfunktioner är den allmänna regeln: Komponenter tillkännages först som borttagna och den tidigaste borttagningen för nästa AEM. Det ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan stödet släpps.
+Precis som för andra AEM-produktfunktioner är den allmänna regeln: Komponenter tillkännages först som inaktuella och den tidigaste borttagningen för följande AEM-version. Det ger kunderna minst en releasecykel att gå över till den nya versionen av komponenten innan stödet släpps.
 
-Versionen för varje komponent anger tydligt vilka AEM som stöds. När stödet upphör för en version av AEM gör det även stödet för kärnkomponenterna för den versionen av AEM.
+Versionen för varje komponent anger tydligt vilka AEM-versioner som stöds. När supporten för en version av AEM upphör, gör det också stödet för Core Components för den versionen av AEM.
 
 Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kärnkomponenter](customizing.md).
 
@@ -92,7 +78,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | **Funktion** | **Kärnkomponent** | **Foundation Component** |
 |-----|---|---|
 | Logic implementation | Java-POJO med [delningsmodeller](https://sling.apache.org/documentation/bundles/models.html) anteckningar | JSP-kod |
-| Markeringsdefinition | [HTML-syntax för HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) (HTML) | JSP-kod |
+| Markeringsdefinition | [Syntax för HTML-mallspråk](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) (HTML) | JSP-kod |
 | XSS-sanering | Automatiserad av HTML | Mest manuella |
 | Namnge CSS-klasser | Standardiserad namnkonvention baserad på [Blockelementets modifierare](https://getbem.com/) (BEM)-notation (från och med version 2.0.0) | Anpassade scheman |
 | Dialogdefinition | [Korall 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) | Coral 2 + Classic UI |
@@ -102,7 +88,7 @@ Mer information om deras redigeringsfunktioner och alternativ för att förkonfi
 | Leverans | [Via offentlig GitHub](https://github.com/adobe/aem-core-wcm-components) | Via QuickStart |
 | Licens | [Apache-licens](https://www.apache.org/licenses/LICENSE-2.0) | Adobe |
 | Bidrag | Via pull-begäran | Inte möjligt |
-| Tillgänglighet | Fullt kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html?lang=sv-SE) | Endast delvis kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html?lang=sv-SE) |
+| Tillgänglighet | Fullt kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) | Endast delvis kompatibel med [WCAG 2.0 AA-standarden](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/accessible-content.html) |
 
 ## Komponentlista {#component-list}
 
@@ -116,7 +102,7 @@ I följande tabell visas de tillgängliga kärnkomponenterna, som länkar till d
 | [Text](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/text/v2/text) | RTF | `/libs/foundation/components/text /libs/foundation/components/table /libs/wcm/foundation/components/text` |
 | [Bild](https://adobe.com/go/aem_cmp_tech_image_v2) | Smart och lat inläsning av optimal återgivningsstorlek | `/libs/foundation/components/image /libs/foundation/components/adaptiveimage /libs/foundation/components/logo /libs/foundation/components/mobileimage  /libs/foundation/components/mobilelogo /libs/wcm/foundation/components/image` |
 | [Lista](https://adobe.com/go/aem_cmp_tech_list_v2) | Lista över sidor | `/libs/foundation/components/list /libs/foundation/components/mobilelist /libs/wcm/foundation/components/list` |
-| [Delning av sociala medier](https://adobe.com/go/aem_cmp_tech_sharing_v1) | Delningswidgeten facebook och Pinterest | `-` |
+| [Delning av sociala medier](https://adobe.com/go/aem_cmp_tech_sharing_v1) | Delningswidgeten Facebook och Pinterest | `-` |
 | [Formulärbehållare](https://adobe.com/go/aem_cmp_tech_form_container_v2) | Styckesystem för responsiva formulär | `/libs/foundation/components/form/start /libs/foundation/components/form/end` |
 | [Formulärtext](https://adobe.com/go/aem_cmp_tech_form_text_v2) | Textinmatningsfält | `/libs/foundation/components/form/text /libs/foundation/components/form/password` |
 | [Formuläralternativ](https://adobe.com/go/aem_cmp_tech_form_options_v2) | Indatafält för flera alternativ | `/libs/foundation/components/form/checkbox /libs/foundation/components/form/radio /libs/foundation/components/form/dropdown` |
@@ -142,8 +128,8 @@ I följande tabell visas de tillgängliga kärnkomponenterna, som länkar till d
 
 ## Uppgradering av kärnkomponenter {#upgrade-of-core-components}
 
-En fördel med versionskomponenter är att det går att separera migreringen till en ny AEM från migreringen till nya komponentversioner. Om det finns nya komponentversioner är det också möjligt att migrera varje komponent individuellt till den nya versionen.
+En fördel med versionskomponenter är att det går att separera migreringen till en ny AEM-version från migreringen till nya komponentversioner. Om det finns nya komponentversioner är det också möjligt att migrera varje komponent individuellt till den nya versionen.
 
-Migreringar till en ny AEM kommer inte att påverka hur kärnkomponenterna fungerar, förutsatt att deras versioner även stöder den nya AEM som migreras till. Anpassningar som görs för kärnkomponenterna ska inte heller påverkas, så länge de inte använder API:er som har [tagits bort eller tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=sv-SE).
+Migreringar till en ny AEM-version påverkar inte hur Core Components fungerar, förutsatt att deras versioner även stöder den nya AEM-versionen som migreras till. Anpassningar som görs för kärnkomponenterna ska inte heller påverkas, så länge de inte använder API:er som har [tagits bort eller tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Migreringar till nya versioner av kärnkomponenterna kommer inte heller att påverka hur komponenten fungerar, men nya funktioner kan introduceras för sidförfattare, vilket kan kräva viss konfiguration av en mallredigerare om standardbeteendet inte önskas. Anpassningar kan dock behöva anpassas. Mer information finns på sidan [Anpassa kärnkomponenter](customizing.md#upgrade-compatibility-of-customizations).

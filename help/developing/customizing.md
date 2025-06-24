@@ -3,7 +3,7 @@ title: Anpassa kärnkomponenter
 description: Core Components implementerar flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
 role: Architect, Developer, Admin
 exl-id: ec4b918b-bc70-4d72-ba84-a24556aedb41
-source-git-commit: bd688d422a072a9d5627c27817ac67f95829de4f
+source-git-commit: 5994133947ff697f7c866fe61598c58e37e77008
 workflow-type: tm+mt
 source-wordcount: '1041'
 ht-degree: 0%
@@ -14,6 +14,8 @@ ht-degree: 0%
 
 [Kärnkomponenterna](overview.md) implementerar flera mönster som gör det enkelt att anpassa, från enkel formatering till avancerad återanvändning av funktioner.
 
+{{traditional-aem}}
+
 ## Flexibel arkitektur {#flexible-architecture}
 
 Kärnkomponenterna var från början utformade för att vara flexibla och utökningsbara. En översikt över deras arkitektur visar var anpassningar kan göras.
@@ -23,13 +25,13 @@ Kärnkomponenterna var från början utformade för att vara flexibla och utökn
 * [Designdialogrutan](/help/get-started/authoring.md#edit-and-design-dialogs) definierar vad författare kan eller inte kan göra i redigeringsdialogrutan.
 * [I redigeringsdialogrutan](/help/get-started/authoring.md#edit-and-design-dialogs) visas endast de alternativ som författare kan använda.
 * [Sling-modellen](#customizing-the-logic-of-a-core-component) verifierar och förbereder innehållet för vyn (mallen).
-* [Resultatet av Sling-modellen ](#customizing-the-logic-of-a-core-component) kan serialiseras till JSON för SPA användningsfall.
+* [Resultatet av Sling-modellen ](#customizing-the-logic-of-a-core-component) kan serialiseras till JSON för SPA-användningsfall.
 * [HTML återger serversidan HTML](#customizing-the-markup) för traditionell återgivning på serversidan.
 * [Utdata från HTML](#customizing-the-markup) är semantiska, tillgängliga, sökmotoroptimerade och enkla att formatera.
 
 Och alla kärnkomponenter implementerar [Style System](#styling-the-components).
 
-## AEM Project Archettype {#aem-project-archetype}
+## AEM Project Archetype {#aem-project-archetype}
 
 [AEM Project Archetype](/help/developing/archetype/overview.md) skapar ett minimalt Adobe Experience Manager-projekt som startpunkt för dina egna projekt, inklusive ett exempel på en anpassad HTML-komponent med SlingModels för logik och korrekt implementering av Core Components med det rekommenderade proxymönstret.
 
@@ -39,9 +41,9 @@ Och alla kärnkomponenter implementerar [Style System](#styling-the-components).
 
 Du kan behöva anpassa de konfigurationsalternativ som är tillgängliga i en huvudkomponentdialogruta, oavsett om det är [designdialogrutan eller redigeringsdialogrutan](/help/get-started/authoring.md).
 
-Varje dialogruta har en konsekvent nodstruktur. Vi rekommenderar att den här strukturen replikeras i en ärvande komponent så att [Dela resurssammanfogning](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/sling-resource-merger.html) och [Dölj villkor](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/hide-conditions.html) kan användas för att dölja, ersätta eller ordna om avsnitt i den ursprungliga dialogrutan. Strukturen som ska replikeras definieras som allt upp till tabbobjektets nodnivå.
+Varje dialogruta har en konsekvent nodstruktur. Vi rekommenderar att den här strukturen replikeras i en ärvande komponent så att [Dela resurssammanfogning](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/sling-resource-merger.html) och [Dölj villkor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/hide-conditions.html) kan användas för att dölja, ersätta eller ordna om avsnitt i den ursprungliga dialogrutan. Strukturen som ska replikeras definieras som allt upp till tabbobjektets nodnivå.
 
-För att vara helt kompatibelt med ändringar som gjorts i en dialogruta i den aktuella versionen är det mycket viktigt att strukturer under flikobjektsnivån inte rörs (dold, läggs till, ersätts, sorteras om osv.). I stället ska ett flikobjekt från det överordnade objektet döljas via egenskapen `sling:hideResource` (se [Egenskaper för sammanslagning av delningar](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/sling-resource-merger.html)) och nya flikobjekt som innehåller de anpassade konfigurationsfälten läggas till. `sling:orderBefore` kan användas för att ändra ordningen på flikobjekt om det behövs.
+För att vara helt kompatibelt med ändringar som gjorts i en dialogruta i den aktuella versionen är det mycket viktigt att strukturer under flikobjektsnivån inte rörs (dold, läggs till, ersätts, sorteras om osv.). I stället ska ett flikobjekt från det överordnade objektet döljas via egenskapen `sling:hideResource` (se [Egenskaper för sammanslagning av delningar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/sling-resource-merger.html)) och nya flikobjekt som innehåller de anpassade konfigurationsfälten läggas till. `sling:orderBefore` kan användas för att ändra ordningen på flikobjekt om det behövs.
 
 I dialogrutan nedan visas den rekommenderade dialogstrukturen samt hur du döljer och ersätter en ärvd flik enligt beskrivningen ovan:
 
@@ -127,17 +129,17 @@ Om du till exempel tittar på HTML-filen för komponenten v1 Core Breadcrumb: [b
 .cmp-breadcrumb a {}
 ```
 
-Dessutom utnyttjar var och en av kärnkomponenterna AEM [Style System-funktionen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html?lang=sv-SE) som gör att mallskapare kan definiera ytterligare CSS-klassnamn som kan tillämpas på komponenten av sidförfattarna. På så sätt kan du definiera en lista med tillåtna komponentformat för varje mall och om ett av dem ska användas som standard för alla komponenter av den typen.
+Dessutom utnyttjar var och en av kärnkomponenterna AEM [Style System-funktion](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/style-system.html) som gör att mallskapare kan definiera ytterligare CSS-klassnamn som kan tillämpas på komponenten av sidförfattarna. På så sätt kan du definiera en lista med tillåtna komponentformat för varje mall och om ett av dem ska användas som standard för alla komponenter av den typen.
 
 ## Uppgraderingskompatibilitet för anpassningar {#upgrade-compatibility-of-customizations}
 
 Det finns tre olika typer av uppgraderingar:
 
-* uppgradera AEM version
+* uppgradera AEM
 * uppgradera kärnkomponenterna till en ny mindre version
 * uppgradera kärnkomponenterna till en större version
 
-I allmänhet påverkas inte huvudkomponenterna eller anpassningarna om du uppgraderar AEM till en ny version, förutsatt att komponenternas versioner även stöder den nya AEM-versionen som migreras och att anpassningarna inte använder API:er som [är inaktuella eller har tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=sv-SE).
+I allmänhet påverkas inte huvudkomponenterna eller de anpassningar som gjorts om du uppgraderar AEM till en ny version, förutsatt att komponenternas versioner även stöder den nya AEM-versionen som migreras och att anpassningarna inte använder API:er som [är inaktuella eller har tagits bort](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Om du uppgraderar kärnkomponenterna utan att växla till en senare huvudversion bör det inte påverka anpassningar, så länge som de anpassningsmönster som beskrivs på den här sidan används.
 
@@ -145,7 +147,7 @@ Att byta till en senare större version av Core Components är bara kompatibelt 
 
 ## Stöd för anpassningar {#support-of-customizations}
 
-Precis som för alla AEM finns det ett antal saker att tänka på när det gäller anpassningar:
+Precis som för alla AEM-komponenter finns det ett antal saker att tänka på när det gäller anpassningar:
 
 1. **Ändra aldrig koden för kärnkomponenter direkt.**
 
@@ -157,7 +159,7 @@ Precis som för alla AEM finns det ett antal saker att tänka på när det gäll
 
 1. **Titta på borttagna och borttagna funktioner.**
 
-   Kontrollera att alla API:er som används fortfarande är aktuella när varje ny AEM uppgraderas till genom att hålla ett öga på sidan [Föråldrade och Borttagna funktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html?lang=sv-SE).
+   Kontrollera att alla API:er som används fortfarande är aktuella när varje ny AEM-version uppgraderas till genom att hålla ett öga på sidan [Föråldrade och Borttagna funktioner](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/release-notes/deprecated-removed-features.html).
 
 Se även avsnittet [Stöd för kärnkomponent](overview.md#core-component-support).
 

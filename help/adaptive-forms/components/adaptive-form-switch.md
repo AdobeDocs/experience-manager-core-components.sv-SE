@@ -3,12 +3,13 @@ title: Adaptiv Forms Core-komponent - switch-komponent
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-switchen.
 role: Architect, Developer, Admin, User
 exl-id: 6ff2ca76-1514-42eb-bde3-60259af2d187
-source-git-commit: 04a89892aafe26fda253bcc5971c03eda27237f9
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
 source-wordcount: '1922'
 ht-degree: 0%
 
 ---
+
 
 # Komponent för adaptiv blankettväxling{#switch-adaptive-forms-core-component}
 
@@ -17,6 +18,8 @@ Switch-komponenten är ett grafiskt användargränssnitt som används i formulä
 Switch-komponenten är ett booleskt kontrollelement som anger värdet till true eller false. Den används till exempel för att växla mellan aktivering och inaktivering av en funktion, som att stänga av eller stänga av ljud, eller aktivera eller inaktivera Bluetooth eller WiFi.
 
 ![Exempel på växlingskomponent](/help/adaptive-forms/assets/switch-example.png)
+
+{{traditional-aem}}
 
 ## Användning {#reasons-to-use-switch}
 
@@ -28,11 +31,11 @@ De vanligaste skälen att använda en switch i en adaptiv form är:
 
 - **Visuell representation**: Växlingskomponenten visar visuellt dess aktuella läge genom att ändra färg eller position.
 
-- **Kontrollfunktioner**: Växlingskomponenten används för att aktivera eller inaktivera vissa funktioner i ett AEM formulär. Användaren kan till exempel aktivera eller inaktivera en funktion.
+- **Kontrollfunktioner**: Växlingskomponenten används för att aktivera eller inaktivera vissa funktioner i ett AEM-formulär. Användaren kan till exempel aktivera eller inaktivera en funktion.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva kärnkomponenten i Forms-switchen släpptes som en del av kärnkomponenterna 2.0.64. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva kärnkomponenten i Forms-switchen släpptes som en del av kärnkomponenterna 2.0.64. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
@@ -133,7 +136,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för kompon
 
 ### Fliken Format {#styles-design-tab}
 
-Kärnkomponenten för den adaptiva Forms-switchen har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
+Den adaptiva kärnkomponenten i Forms-switchen har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Designdialogrutan](/help/adaptive-forms/assets/checkbox-style.png)
 

@@ -3,7 +3,8 @@ title: E-postbehållarkomponent
 description: Med e-postbehållarkomponenten kan du skapa en behållare för flera ytterligare komponenter i e-postinnehållet.
 role: Architect, Developer, Admin, User
 exl-id: 3b271e95-0093-4cb1-bb83-8446ba12a821
-source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
+index: false
+source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -77,11 +78,11 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som kan läggas till som objekt i e-postbehållarkomponenten av innehållsförfattaren.
 
-Fliken **Tillåtna komponenter** fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
+Fliken **Tillåtna komponenter** fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Fliken Standardkomponenter {#default-components-tab}
 
-Fliken **Standardkomponenter** används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, ungefär som [hur standardkomponenter definieras i sidmallen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
+Fliken **Standardkomponenter** används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, ungefär som [hur standardkomponenter definieras i sidmallen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
 
 ### Fliken Inställningar för behållare {#container-settings-tab}
 

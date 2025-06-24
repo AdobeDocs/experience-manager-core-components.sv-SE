@@ -4,12 +4,13 @@ description: Komponenten Core Component Form Hidden gör det möjligt att visa e
 index: n
 role: Architect, Developer, Admin, User
 exl-id: 8e30dac0-5b4b-4fc7-af99-5791c98c90bf
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '316'
 ht-degree: 0%
 
 ---
+
 
 # Komponent för dolt formulär (v1) {#form-hidden-component-v}
 
@@ -27,7 +28,7 @@ I det här dokumentet beskrivs v1 i Form Hidden Component, som ursprungligen int
 
 I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 
-| AEM | Formulärets dolda komponent v1 |
+| AEM Version | Formulärets dolda komponent v1 |
 |--- |--- |
 | 6,3 | Kompatibel |
 | 6,4 | Kompatibel |
@@ -40,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### HTML {#html}
 

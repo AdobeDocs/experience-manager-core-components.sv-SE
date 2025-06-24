@@ -3,7 +3,8 @@ title: E-postsidkomponent
 description: E-postsidkomponenten
 role: Architect, Developer, Admin, User
 exl-id: 17fd0f5e-2b85-41a1-abaf-8ad190a5341a
-source-git-commit: 91969e4956bef1a511b8d588d5290a7999bf86ec
+index: false
+source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
 workflow-type: tm+mt
 source-wordcount: '780'
 ht-degree: 0%
@@ -13,7 +14,7 @@ ht-degree: 0%
 
 # E-postsidkomponent {#email-page-component}
 
-Sidkomponenten för e-post är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren, som är anpassad för att skapa Adobe Campaign-innehåll.
+Sidkomponenten för e-post är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren, som är anpassad för att skapa Adobe Campaign-innehåll.
 
 ## Användning {#usage}
 
@@ -42,7 +43,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE).
+Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ### Fliken Molntjänster {#cloud-services}
 
@@ -96,7 +97,7 @@ Bibliotek kan konfigureras för både fälten **Klientbibliotek** och **Klientbi
 * Om du vill ta bort ett fält klickar eller trycker du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan.](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/clientlibs.html)
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 
 ### Fliken Format {#styles-tab}
 

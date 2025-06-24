@@ -3,19 +3,23 @@ title: Adaptiv Forms Core-komponent - nedrullningsbar lista
 description: Använda eller anpassa den adaptiva Forms-nedrullningsbara kärnkomponenten.
 role: Architect, Developer, Admin, User
 exl-id: 9d59d0d2-d38f-4ed5-8b43-984c45f26f27
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '2188'
+source-wordcount: '2186'
 ht-degree: 0%
 
 ---
+
 
 # Komponent för nedrullningsbar lista{#drop-down-list-adaptive-forms-core-component}
 
 Med en nedrullningsbar lista i ett adaptivt formulär kan användarna välja ett eller flera alternativ i en lista med fördefinierade alternativ. Alternativen kan vara av typen String, Number eller Boolean. Dessutom kan den nedrullningsbara listkomponenten konfigureras så att den har olika validerings- och standardvärden.
 
+{{traditional-aem}}
+
 **Exempel**
-![example](/help/adaptive-forms/assets/drop-down-list.png)
+
+![exempel](/help/adaptive-forms/assets/drop-down-list.png)
 
 ## Användning {#reasons-to-use-drop-down-list}
 
@@ -43,7 +47,7 @@ Listrutan kan dessutom konfigureras att ha olika bearbetningsvärden för varje 
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (komponent) i den adaptiva Forms-listrutan släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core Component (Core-komponent) för den adaptiva Forms-listrutan släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -143,7 +147,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för den ne
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Core Component (Core-komponent) för den adaptiva Forms-listrutan stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core Component (Core-komponent) i listrutan Adaptiv Forms har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Designdialogrutan](/help/adaptive-forms/assets/checkbox-style.png)
 

@@ -3,12 +3,13 @@ title: Adaptiv Forms Core-komponent - villkor
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms Terms and Conditions.
 role: Architect, Developer, Admin, User
 exl-id: c607d554-ad2d-4434-856d-91e174ef3149
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '3256'
+source-wordcount: '3253'
 ht-degree: 0%
 
 ---
+
 
 # Villkor - komponent
 
@@ -18,7 +19,9 @@ Komponenten **Villkor** är en sammansatt komponent som består av komponenterna
 
 >[!NOTE]
 >
-> För AEM 6.5 Forms introducerades denna komponent i AEM 6.5 Forms Service Pack 19 (6.5.19.0). Om du vill aktivera den här komponenten kontrollerar du att de nödvändiga versionerna av både Forms Core Components och WCM Core Components är installerade. Mer information om de olika versionerna av adaptiva Forms Core-komponenter finns i [Adaptiva Forms Core-komponentreleaser](/help/adaptive-forms/version.md)
+> För AEM 6.5 Forms introducerades den här komponenten med AEM 6.5 Forms Service Pack 19 (6.5.19.0). Om du vill aktivera den här komponenten kontrollerar du att de nödvändiga versionerna av både Forms Core Components och WCM Core Components är installerade. Mer information om de olika versionerna av adaptiva Forms Core-komponenter finns i [Adaptiva Forms Core-komponentreleaser](/help/adaptive-forms/version.md)
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -40,7 +43,7 @@ Mer information om olika komponenter i villkorskomponenten finns i avsnittet [Un
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Kärnkomponenten för adaptiva Forms-villkor släpptes i februari 2023 som en del av kärnkomponenterna 2.0.62 för Cloud Service och Core Components 1.1.28 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Kärnkomponenten för villkor för adaptiva Forms lanserades i februari 2023 som en del av kärnkomponenterna 2.0.62 för Cloud Service och Core Components 1.1.28 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -124,7 +127,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa dina villkor och komponentuppl
    - **Titel**: Välj det här alternativet om du vill använda titeln för ARIA-hjälpmedelsetiketter.
    - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
    - **Inget**: Välj det här alternativet om du inte vill lägga till för hjälpmedelsetiketter för ARIA.
-- **HTML-roll för skärmläsare som ska tillkännages** - HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpfunktioner som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
+- **HTML-roll för skärmläsare som ska tillkännages** - HTML-rollen är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 ## Designdialogruta {#design-dialog}
 

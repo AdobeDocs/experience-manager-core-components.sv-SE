@@ -3,12 +3,14 @@ title: Titelkomponent (v2)
 description: Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering på plats.
 role: Architect, Developer, Admin, User
 exl-id: f853ec46-19fd-4569-a9d3-5c376d2a2101
-source-git-commit: e291d4c1bfd37292d68c236178f9681c4e5ee741
+index: n
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 0%
 
 ---
+
 
 # Titelkomponent (v2) {#title-component}
 
@@ -30,7 +32,7 @@ I det här dokumentet beskrivs v2 av Title Component, som introducerades i versi
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både komponenten Title och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata, går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_title).
+Om du vill se både Title Component (Rubrik-komponenten) och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [Component Library](https://adobe.com/go/aem_cmp_library_title).
 
 ### Teknisk information {#technical-details}
 
@@ -78,8 +80,8 @@ I designdialogrutan kan mallskaparen definiera den standardrubriknivå som titel
 
 ### Fliken Format {#styles-tab}
 
-Titelkomponenten stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Title Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Titelkomponenten stöder datalagret [Adobe Client.](/help/developing/data-layer/overview.md)
+Titelkomponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)

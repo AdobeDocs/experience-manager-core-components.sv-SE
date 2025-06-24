@@ -3,12 +3,13 @@ title: Adaptiv Forms Core-komponent - knapp
 description: Använda eller anpassa den adaptiva Forms-knappens kärnkomponent.
 role: Architect, Developer, Admin, User
 exl-id: cb75929b-8c86-49d1-b51a-368f5b80b1a9
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1658'
 ht-degree: 0%
 
 ---
+
 
 # Button-komponent {#button-component-adaptive-forms-core-component}
 
@@ -19,6 +20,8 @@ Med den adaptiva Forms-regelredigeraren kan användare ange olika åtgärder fö
 Adaptiv Forms har olika komponenter för [Skicka-knappen](/help/adaptive-forms/components/submit-button.md) och [Återställ-knappen](/help/adaptive-forms/components/reset-button.md), vilket gör att användare enkelt kan skicka eller återställa ett formulär. Button-komponenten kan konfigureras flexibelt för att köra dessa åtgärder baserat på specifika behov.
 
 Användare kan komma åt den fullständiga listan över åtgärder som stöds för knappkomponenten med den adaptiva Forms-regelredigeraren. Med regelredigeraren kan användare skapa regler som aktiveras av olika händelser, till exempel när användaren klickar på en knapp, när ett formulär läses in eller när ett fältvärde ändras. Dessa regler kan sedan användas för att utföra olika åtgärder, som att visa eller dölja komponenter, ange fältvärden eller skicka formuläret.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -40,7 +43,7 @@ Det finns många skäl till att det är bra att ta med en knapp i en adaptiv for
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Button Core-komponenten för knappar släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Button Core-komponenten för knappar släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|

@@ -3,20 +3,23 @@ title: Content Fragment List Component
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
 role: Architect, Developer, Admin, User
 exl-id: 0f2295b1-d287-4f72-8ee4-fa98c4850e53
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
 
 ---
 
+
 # Content Fragment List Component{#content-fragment-list-component}
 
-Komponenten Core Component Content Fragment List gör det möjligt att visa en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE).
+Komponenten Core Component Content Fragment List gör det möjligt att visa en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 
-Med listkomponenten Core Component Content Fragment kan du inkludera en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE) på en sida baserat på en Content Fragment-modell. Detta kan vara särskilt användbart när du skapar [headless-innehåll](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) som enkelt kan användas av andra program.
+Med listkomponenten Core Component Content Fragment kan du inkludera en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) på en sida baserat på en Content Fragment-modell. Detta kan vara särskilt användbart när du skapar [headless-innehåll](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) som enkelt kan användas av andra program.
 
 * Listan och dess egenskaper kan väljas i dialogrutan [Konfigurera](#configure-dialog).
 * Format kan användas på komponenten i [designdialogrutan](#design-dialog).

@@ -1,33 +1,36 @@
 ---
-title: Använda Adobe-klientdatalagret med kärnkomponenterna
-description: Använda Adobe-klientdatalagret med kärnkomponenterna
+title: Använda Adobe Client Data Layer med Core Components
+description: Använda Adobe Client Data Layer med Core Components
 feature: Core Components, Adobe Client Data Layer
 role: Architect, Developer, Admin
 exl-id: 55c984d3-deb7-4eda-a81d-7768791d2b46
-source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+source-git-commit: 5994133947ff697f7c866fe61598c58e37e77008
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
 
 ---
 
-# Använda Adobe-klientdatalagret med kärnkomponenterna {#data-layer-core-components}
+
+# Använda Adobe Client Data Layer med Core Components {#data-layer-core-components}
 
 Målet med Adobe Client Data Layer är att minska ansträngningarna att instrumentera webbplatser genom att tillhandahålla en standardiserad metod för att exponera och få tillgång till alla typer av data för alla typer av skript.
 
 Adobe Client Data Layer är plattformsoberoende, men är helt integrerad i de centrala komponenterna för användning med AEM.
 
-Precis som Core-komponenterna är koden för Adobe-klientdatalagret tillgänglig på GitHub tillsammans med utvecklardokumentationen. Det här dokumentet ger en översikt över hur kärnkomponenterna interagerar med datalagret, men fullständig teknisk information finns i GitHub-dokumentationen.
+Precis som Core-komponenterna är koden för Adobe Client Data Layer tillgänglig på GitHub tillsammans med utvecklardokumentationen. Det här dokumentet ger en översikt över hur kärnkomponenterna interagerar med datalagret, men fullständig teknisk information finns i GitHub-dokumentationen.
 
 >[!TIP]
 >
 >Mer information om Adobe Client Data Layer finns i [resurserna i dess GitHub-databas.](https://github.com/adobe/adobe-client-data-layer)
 >
->Mer teknisk information om integreringen av Adobe Client Data Layer med Core Components finns i filen [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
+>Mer teknisk information om integrationen av Adobe Client Data Layer med Core Components finns i filen [`DATA_LAYER_INTEGRATION.md`](https://github.com/adobe/aem-core-wcm-components/blob/master/DATA_LAYER_INTEGRATION.md) i Core Components-databasen.
+
+{{traditional-aem}}
 
 ## Installation och aktivering {#installation-activation}
 
-Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som ett AEM klientbibliotek och ingen installation behövs. Alla projekt som genereras av [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) innehåller som standard ett aktiverat datalager.
+Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som ett AEM-klientbibliotek och ingen installation behövs. Alla projekt som genereras av [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) innehåller som standard ett aktiverat datalager.
 
 Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konfiguration](/help/developing/context-aware-configs.md) för den:
 
@@ -42,7 +45,7 @@ Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konf
 
 1. Lägg till en `sling:configRef`-egenskap till `jcr:content`-noden för din webbplats under `/content` (t.ex. `/content/<mySite>/jcr:content`) och ställ in den på `/conf/<mySite>` från föregående steg.
 
-1. När den är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren, till exempel med alternativet **Visa som publicerad** i redigeraren. Inspect sidkällan och taggen `<body>` ska innehålla attributet `data-cmp-data-layer-enabled`
+1. När den är aktiverad kan du verifiera aktiveringen genom att läsa in en sida utanför redigeraren, till exempel med alternativet **Visa som publicerad** i redigeraren. Kontrollera sidkällan och taggen `<body>` ska innehålla attributet `data-cmp-data-layer-enabled`
 
    ```html
    <body class="page basicpage" id="page-id" data-cmp-data-layer-enabled>
@@ -71,7 +74,7 @@ Följande komponenter har stöd för datalagret.
 * [Dragspel](/help/components/accordion.md)
 * [Breadcrumb](/help/components/breadcrumb.md)
 * [Knapp](/help/components/button.md)
-* [Carousel](/help/components/carousel.md)
+* [Karusell](/help/components/carousel.md)
 * [Innehållsfragment](/help/components/content-fragment-component.md)
 * [Bild](/help/components/image.md)
 * [Språknavigering](/help/components/language-navigation.md)
@@ -153,7 +156,7 @@ Behållarschemat används av följande komponenter:
 
 * [Dragspel](/help/components/accordion.md)
 * [Tabbar](/help/components/tabs.md)
-* [Carousel](/help/components/carousel.md)
+* [Karusell](/help/components/carousel.md)
 
 Behållarschemat definieras så här.
 
@@ -253,7 +256,7 @@ Schemat som används för elementet Content Fragment är följande.
 
 Det finns ett antal händelser som kärnkomponenter utlöser via datalagret. Det bästa sättet att interagera med datalagret är att [registrera en händelseavlyssnare](https://github.com/adobe/adobe-client-data-layer/wiki#addeventlistener) och *sedan* vidta en åtgärd baserat på händelsetypen och/eller komponenten som utlöste händelsen. På så sätt undviks potentiella konkurrensförhållanden med asynkrona skript.
 
-Nedan visas några av de färdiga händelserna som AEM Core Components tillhandahåller:
+Nedan visas några av de färdiga händelserna som ingår i AEM Core Components:
 
 * **`cmp:click`** - Om du klickar på ett klickbart element (ett element som har ett `data-cmp-clickable` -attribut) utlöser datalagret en `cmp:click` -händelse.
 * **`cmp:show`** och **`cmp:hide`** - Om du ändrar dragspelet (utöka/komprimera), karusellen (nästa/föregående knappar) och flikarna (tabbmarkera) utlöser datalagret `cmp:show` - respektive `cmp:hide` -händelser. En `cmp:show`-händelse skickas också vid sidinläsning och förväntas vara den första händelsen.
@@ -306,7 +309,7 @@ window.adobeDataLayer.push(function (dl) {
 
 ## Självstudiekurs
 
-Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Kolla in den här självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=sv-SE).
+Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Kolla in den här självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
 
 >[!TIP]
 >

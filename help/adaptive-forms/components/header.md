@@ -3,16 +3,19 @@ title: Adaptiv Forms Core-komponent - rubrik
 description: Använda eller anpassa den adaptiva huvudkomponenten i Forms Header.
 role: Architect, Developer, Admin, User
 exl-id: aa18def9-0bec-4475-8dde-213860621ef5
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
 
+
 # Sidhuvud {#header-adaptive-forms-core-component}
 
 En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formuläret som vanligtvis innehåller formulärets rubrik, logotyp eller namn. Rubriken kan även innehålla annan information, t.ex. en kort beskrivning av formulärets syfte, namnet på den organisation som skapade formuläret eller kontaktinformation för att få hjälp med formuläret. Rubriken används för att ge användarna en översikt över formuläret och ge kontext för den information de ska fylla i. Den används för att hjälpa användarna att förstå syftet med formuläret och hur det ska fyllas i på rätt sätt.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -32,7 +35,7 @@ En rubrikkomponent i ett adaptivt formulär är ett avsnitt högst upp i formul�
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva huvudkärnkomponenten i Forms lanserades i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core-komponenten för den adaptiva Forms-huvudkomponenten släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -83,7 +86,7 @@ I det här avsnittet kan du ange den text som ska inkluderas i sidhuvudet.
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

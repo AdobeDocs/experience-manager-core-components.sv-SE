@@ -3,16 +3,19 @@ title: Button-komponent
 description: Med komponenten Core Component Button kan du skapa och visa en knapp.
 role: Architect, Developer, Admin, User
 exl-id: e17efd1d-90d4-497a-9e7d-45934d81bc28
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
 
 ---
 
+
 # Button-komponent{#button-component}
 
 Komponenten Core Component Button gör det möjligt att konfigurera och visa ett knappobjekt på en sida.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 

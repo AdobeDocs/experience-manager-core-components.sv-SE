@@ -4,12 +4,13 @@ description: Med Core Component List Component kan du enkelt skapa både dynamis
 index: n
 role: Architect, Developer, Admin, User
 exl-id: 510d059c-e60a-40aa-9032-66a901109f6e
-source-git-commit: 3ebe1a42d265185b36424b01844f4a00f05d4724
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
 
 ---
+
 
 # List Component (v1) {#list-component-v}
 
@@ -27,7 +28,7 @@ I det här dokumentet beskrivs v1 i List Component, som ursprungligen introducer
 
 I följande tabell visas kompatibiliteten för v1 för List-komponenten.
 
-| AEM | List Component v1 |
+| AEM Version | List Component v1 |
 |--- |--- |
 | 6,3 | Kompatibel |
 | 6,4 | Kompatibel |
@@ -40,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för List-komponenten.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -180,13 +181,13 @@ Tryck eller klicka på knappen **Lägg till** om du vill infoga ett nytt objekt 
 
 #### Sök {#search-list}
 
-Listan kan skapas med hjälp av resultatet av en sökning AEM innehåll.
+Listan kan byggas med hjälp av resultatet från en sökning i AEM-innehåll.
 
 ![](/help/assets/chlimage_1-41.png)
 
 * **Sökfråga** - Strängen som en fulltextsökning ska köras för att generera listelementen
 * **Sök i** - Där sökningen ska köras
-   * Använd **urvalsdialogrutan** för att välja plats i AEM
+   * Använd dialogrutan **Markering** för att välja plats i AEM
    * Använd aktuell sida om inget anges
 
 #### Taggar {#tags}
@@ -196,7 +197,7 @@ Listan kan byggas med sidor som matchar vissa taggar under en viss plats.
 ![](/help/assets/chlimage_1-42.png)
 
 * **Överordnad sida** - Där taggmatchningen ska börja
-   * Använd **urvalsdialogrutan** för att välja plats i AEM
+   * Använd dialogrutan **Markering** för att välja plats i AEM
    * Använd aktuell sida om inget anges
 * **Taggar** - Vilka taggar ska matchas
    * Välj taggarna i dialogrutan **Bläddra**

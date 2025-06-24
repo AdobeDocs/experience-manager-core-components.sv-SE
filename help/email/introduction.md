@@ -3,7 +3,8 @@ title: Introduktion till viktiga e-postkomponenter
 description: Skapa övertygande e-postinnehåll med flexibiliteten i E-postkärnkomponenterna och leverera det med kraften i Adobe Campaign.
 role: Architect, Developer, Admin, User
 exl-id: 0a411f28-bd6a-4bad-b473-6bc27c1d1055
-source-git-commit: 91cf78d4c6622bbdec5ac7d22954c9c081c839d2
+index: false
+source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
 workflow-type: tm+mt
 source-wordcount: '376'
 ht-degree: 0%
@@ -28,7 +29,7 @@ E-post är en del av varumärkesupplevelsen och kundresan. Med e-postkärnkompon
 
 ## Funktioner {#features}
 
-* De centrala e-postkomponenterna är baserade på [kärnkomponenterna](/help/introduction.md) och stöder därför även [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) och [formatsystemet.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=sv-SE)
+* De centrala e-postkomponenterna är baserade på [kärnkomponenterna](/help/introduction.md) och stöder därför även [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och [formatsystemet.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)
 * Det finns [tio e-postoptimerade produktionsklara komponenter](#components) som kan användas för att skapa e-postinnehåll.
 * De centrala e-postkomponenterna erbjuder avancerad personalisering tack vare infogningen av [Adobe Campaign-variabler](campaign-variables.md) i de flesta dialogrutefält.
 * Den flexibla [segmenteringskomponenten](/help/email/components/segmentation.md) möjliggör avancerad segmentering av ditt innehåll.

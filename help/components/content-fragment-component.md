@@ -3,28 +3,31 @@ title: Innehållsfragmentkomponent
 description: Komponenten Core Component Content Fragment gör det möjligt att visa ett innehållsfragment.
 role: Architect, Developer, Admin, User
 exl-id: 551ff2a1-f8db-490c-84a3-4255b364fc83
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
 
 ---
 
+
 # Innehållsfragmentkomponent{#content-fragment-component}
 
-Komponenten Core Component Content Fragment gör det möjligt att visa ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE).
+Komponenten Core Component Content Fragment gör det möjligt att visa ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 >[!NOTE]
 >
 >Före version 2.4.0 av Core Components var Content Fragment-komponenten tillgänglig som ett tillägg till kärnkomponenterna och måste laddas ned separat och uttryckligen aktiveras.
 
+{{traditional-aem}}
+
 ## Användning {#usage}
 
-Komponenten Core Component Content Fragment tillåter att ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE) inkluderas på en sida.
+Komponenten Core Component Content Fragment tillåter att ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) inkluderas på en sida.
 
 * Fragmentet och dess egenskaper kan väljas i dialogrutan [Konfigurera](#configure-dialog).
 * Resurstyper för att hantera vissa bilder och stödraster kan definieras i [designdialogrutan](#design-dialog).
-* Redigeringsalternativet öppnar det markerade fragmentet i [redigeraren för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=sv-SE).
+* Redigeringsalternativet öppnar det markerade fragmentet i [redigeraren för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 

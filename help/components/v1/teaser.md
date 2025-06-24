@@ -3,12 +3,14 @@ title: Teaser Component (v1)
 description: Teaser-komponenten kan visa en bild, en titel, RTF-text och eventuellt länka till ytterligare innehåll.
 role: Architect, Developer, Admin, User
 exl-id: 48e56938-660a-43e7-9e62-8069283ae73f
-source-git-commit: 84e09fa64b3a7ae40ff3ff1a04ea1c7504db29d2
+index: n
+source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%
 
 ---
+
 
 # Teaser Component (v1) {#teaser-component}
 
@@ -32,7 +34,7 @@ Detta dokument beskriver v1 av Teaser Component, som introducerades i version 2.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Om du vill se både Teaser Component (Teaser-komponenten) och exempel på dess konfigurationsalternativ samt HTML och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_teaser).
+Om du vill se både Teaser Component (Teaser-komponenten) och exempel på dess konfigurationsalternativ samt HTML- och JSON-utdata går du till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library_teaser).
 
 ### Teknisk information {#technical-details}
 
@@ -49,13 +51,13 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 ![Fliken Redigera dialogruta för Teaser Component](/help/assets/teaser-edit-image.png)
 
 * **Bildresurs**
-   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=sv-SE) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=sv-SE) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 >[!NOTE]
 >
->[Dynamic Media-funktioner](image-v1.md#dynamic-media) är för närvarande inte tillgängliga i Teaser Component.
+>[Dynamiska mediefunktioner](image-v1.md#dynamic-media) är för närvarande inte tillgängliga i Teaser Component.
 
 ### Text {#text}
 
@@ -76,7 +78,7 @@ Innehållsförfattaren kan använda dialogrutan Konfigurera för att definiera e
 ![Länk till redigeringsdialogruta för Teaser Component](/help/assets/teaser-edit-link.png)
 
 * **Länk** - Länken används på suddgummit. Använd sökvägsläsaren för att välja länkmålet.
-* **Aktivera anrop-till-åtgärder** - När det här alternativet är markerat aktiveras definitionen av anrop-till-åtgärder. Den första Call-To-Action-länken i listan används som länk för andra teaserelement.
+* **Aktivera anrop-till-åtgärder** - När det här alternativet är markerat aktiveras definitionen av anrop-till-åtgärder. Den första Call-to-action-länken i listan används som länk för andra teaser-element.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -107,6 +109,6 @@ I designdialogrutan kan mallskaparen definiera de laseralternativ som innehålls
 
 Teaser Component har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
-## Adobe-klientdatalager {#data-layer}
+## Adobe Client Data Layer {#data-layer}
 
-Teaser-komponenten stöder [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
+Teaser-komponenten stöder [Adobe Client Data Layer.](/help/developing/data-layer/overview.md)

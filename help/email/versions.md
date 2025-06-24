@@ -3,7 +3,8 @@ title: Huvudversioner av e-postkomponenter
 description: Huvudkomponenter för e-post publiceras som versioner.
 role: Architect, Developer, Admin, User
 exl-id: 9733659a-641c-4a98-8d10-84e93e0e0a5d
-source-git-commit: 91cf78d4c6622bbdec5ac7d22954c9c081c839d2
+index: false
+source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%

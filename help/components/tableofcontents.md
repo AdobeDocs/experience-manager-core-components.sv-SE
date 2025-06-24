@@ -3,16 +3,19 @@ title: Innehållsförteckning, komponent
 description: Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras på rubrikerna i sidinnehållet, vilket gör att läsarna snabbt kan navigera på sidan.
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
 workflow-type: tm+mt
 source-wordcount: '762'
 ht-degree: 0%
 
 ---
 
+
 # Innehållsförteckning, komponent {#table-of-contents-component}
 
 Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras på rubrikerna i sidinnehållet, vilket gör att läsarna snabbt kan navigera på sidan.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 

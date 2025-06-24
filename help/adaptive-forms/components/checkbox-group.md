@@ -3,16 +3,20 @@ title: Adaptiv Forms Core-komponent - kryssrutegrupp
 description: Använda eller anpassa den adaptiva Forms Checkbox Group Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 2ced0223-e664-470b-a400-b6865d3a67c9
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '2103'
+source-wordcount: '2101'
 ht-degree: 0%
 
 ---
 
+
 # Gruppkomponent för kryssruta {#button-component-adaptive-forms-core-component}
 
 En kryssrutegrupp i ett adaptivt formulär är en uppsättning relaterade kryssrutor som gör att användare kan välja ett eller flera alternativ i en lista. Varje kryssruta representeras av ett datavärde (värde som används för att bearbeta objekt i en kryssrutegrupp) och ett visningsvärde (etikett för varje kryssruteobjekt som beskriver dess syfte)
+
+{{traditional-aem}}
+
 **Exempel**
 
 ![exempel på kryssrutegrupp](/help/adaptive-forms/assets/checkbox-group.png)
@@ -45,7 +49,7 @@ Det finns många skäl till att det är bra att inkludera en kryssrutegrupp i et
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component i gruppen Core Component (Adaptiv Forms-kryssruta) släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Gruppen Core Component (Core-komponent) för adaptiv Forms-kryssruta släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -147,7 +151,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för gruppk
 
 ### Fliken Format {#styles-tab}
 
-Kärnkomponenten för gruppen med adaptiva Forms-kryssrutor stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Core-komponenten för gruppen för adaptiva Forms-kryssrutor har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Designdialogrutan](/help/adaptive-forms/assets/checkbox-style.png)
 

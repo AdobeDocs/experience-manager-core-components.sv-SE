@@ -3,27 +3,30 @@ title: Adaptivt formulärfragment
 description: Använd formulärfragment för att skapa formulärsegment eller fältgrupper och återanvänd dem i adaptiva Forms för att förbättra effektiviteten och återanvändbarheten.
 role: Architect, Developer, Admin, User
 exl-id: bde4a416-1d6b-4e9e-ac74-70fccef473cb
-source-git-commit: 4c510b8fe59f4be6e1b329ee4257ab1b780fbf22
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '1954'
+source-wordcount: '1952'
 ht-degree: 0%
 
 ---
 
+
 # Adaptiv komponent för formulärfragment {#form-fragment-component-adaptive-forms-core-component}
 
-Adaptiv Forms är ett bekvämt sätt att skapa formulärsegment, t.ex. paneler eller fältgrupper, så att de kan återanvändas i olika adaptiva Forms. Dessa återanvändbara och fristående segment kallas [adaptiva formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE).
+Adaptiv Forms är ett bekvämt sätt att skapa formulärsegment, t.ex. paneler eller fältgrupper, så att de kan återanvändas i olika adaptiva Forms. Dessa återanvändbara och fristående segment kallas [adaptiva formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html).
 
-Du kan [lägga till ett fragment flera gånger i ett dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE#insert-a-fragment-in-an-adaptive-form) och använda databindningsegenskaper för dess komponenter för att länka det till olika datakällor eller scheman. Du kan till exempel använda samma adressfragment för permanent adress, kommunikations- och faktureringsadress och ansluta det till olika fält i en datakälla eller ett schema.
+Du kan [lägga till ett fragment flera gånger i ett dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#insert-a-fragment-in-an-adaptive-form) och använda databindningsegenskaper för dess komponenter för att länka det till olika datakällor eller scheman. Du kan till exempel använda samma adressfragment för permanent adress, kommunikations- och faktureringsadress och ansluta det till olika fält i en datakälla eller ett schema.
 
 ![exempel](/help/adaptive-forms/assets/using-multiple-fragment-af.gif)
 
 
-Du kan också använda alternativet [repeterbarhet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) för att duplicera formulärfragmentkomponenten och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär.
+Du kan också använda alternativet [repeterbarhet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) för att duplicera formulärfragmentkomponenten och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär.
 
 >[!NOTE]
 >
-> Du kan [skapa ett adaptivt formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE#create-a-fragment) från början eller spara en panel i ett befintligt adaptivt formulär som fragment.
+> Du kan [skapa ett adaptivt formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#create-a-fragment) från början eller spara en panel i ett befintligt adaptivt formulär som fragment.
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 
@@ -37,7 +40,7 @@ Du kan också använda alternativet [repeterbarhet](https://experienceleague.ado
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva kärnkomponenten i Forms Fragment släpptes som en del av Core Components 2.0.50 för Cloud Service och Core Components 1.1.26 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva kärnkomponenten i Forms Fragment släpptes som en del av Core Components 2.0.50 för Cloud Service och Core Components 1.1.26 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -126,7 +129,7 @@ Du kan enkelt anpassa fragmentupplevelsen för besökare med dialogrutan Konfigu
    - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
    - **Inget**: Välj det här alternativet om du inte vill lägga till för hjälpmedelsetiketter för ARIA.
 
-- **HTML-roll för skärmläsare som ska tillkännages** - HTML är ett attribut som används för att ange syftet med ett HTML-element för hjälpfunktioner som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
+- **HTML-roll för skärmläsare som ska tillkännages** - HTML-rollen är ett attribut som används för att ange syftet med ett HTML-element för hjälpmedelstekniker som skärmläsare. Rollattributet används för att ge ytterligare kontext och semantisk innebörd till ett element, vilket gör det enklare för skärmläsare att tolka och meddela innehållet till användaren. I AEM Forms kan till exempel etiketten för ett formulärfält ha rollen&quot;label&quot;, och inmatningsfältet kan ha rollen&quot;texbox&quot;. Detta gör att skärmläsaren förstår förhållandet mellan etiketten och inmatningsfältet och kan meddela användaren dem på rätt sätt.
 
 ## Designdialogruta {#design-dialog}
 

@@ -3,12 +3,13 @@ title: Adaptiv Forms Core-komponent - talindata
 description: Använda eller anpassa den adaptiva kärnkomponenten Forms Number.
 role: Architect, Developer, Admin, User
 exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
-source-git-commit: 732efc9ed450aa31078ecaad65c0c306679fe97e
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
+
 
 # Numerisk rutkomponent{#number-input-adaptive-forms-core-component}
 
@@ -19,6 +20,8 @@ Den kan också användas med attribut som min, max, step, value med mera. Dessa 
 Den här komponenten kan användas för att samla in numeriska data som ålder, kvantitet med mera. Den kan också användas för att utföra matematiska operationer som addition och subtraktion. Den här komponenten kan också användas för att validera numeriska data som anges av användaren.
 
 För hjälpmedel är det viktigt att ange &quot;label&quot; som beskriver syftet med talinmatningsfältet och vilken typ av inmatning som förväntas.
+
+{{traditional-aem}}
 
 **Exempel**
 
@@ -36,7 +39,7 @@ Det finns flera skäl till att det är bra att ta med en numerisk indatakomponen
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Den adaptiva Forms Numeric box Core Component släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Core-komponenten för den adaptiva Forms NumericBox släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
@@ -140,7 +143,7 @@ Språkuppsättningen är inte synlig som standard, men användare kan ange en an
 
    >[!NOTE]
    >
-   > [Klicka här](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
+   > [Klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
 
 
 ## Designdialogruta {#design-dialog}
@@ -149,7 +152,7 @@ Designdialogrutan används för att definiera och hantera CSS-format för kompon
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Kärnkomponenten för indata för adaptiva Forms Number stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för indata för adaptiva Forms Number stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
@@ -181,7 +184,7 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

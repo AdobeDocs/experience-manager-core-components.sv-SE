@@ -1,15 +1,17 @@
 ---
-title: Kaptcha i AEM Adaptiv Forms
+title: Captcha in AEM Adaptive Forms
 description: Förbättra formulärsäkerheten med Captcha&reg; service utan problem. Stegvisa anvisningar inifrån!
 feature-set: Experience Manager Sites, Experience Manager Forms
 feature: Adaptive Forms, Core Components
 role: Architect, Developer, Admin, User
-source-git-commit: 9a691fc2aa656f5a96d8cd4b6285e6bd473cdaa4
+exl-id: eecb38d5-711e-4dc5-bc19-498e003f37e7
+source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
 workflow-type: tm+mt
 source-wordcount: '572'
 ht-degree: 0%
 
 ---
+
 
 # hCaptcha-komponent{#hCaptcha-component-adaptive-forms-core-component}
 
@@ -18,6 +20,8 @@ ht-degree: 0%
 Med tjänsten Captcha® kan du skydda dina formulär från stötar, skräppost och automatiskt missbruk. Det utgör en utmaning för kryssrutewidgeten och utvärderar användarens svar för att avgöra om det är en människa eller en robot som interagerar med formuläret. Det förhindrar användaren att fortsätta om testet misslyckas och gör onlinetransaktionerna säkra genom att förhindra att skräppost eller skadliga aktiviteter publiceras.
 
 ![hCaptcha®](/help/adaptive-forms/assets/hCaptcha-challenge.png)
+
+{{traditional-aem}}
 
 ## Användning {#usage}
 
@@ -42,7 +46,7 @@ Ange egenskaperna för Capture-komponenten med hjälp av dialogrutan [Konfigurer
 ## Version och kompatibilitet {#version-and-compatibility}
 
 
-Den adaptiva Forms Captcha-komponenten släpptes i maj 2024 som en del av [Core Components 3.0.20](https://github.com/adobe/aem-core-forms-components/commit/a4cb97131ffad47137a8f5f173401128a1cf3491). Här är en tabell med alla versioner som stöds, AEM kompatibilitet och länkar till motsvarande dokumentation:
+Den adaptiva Forms Captcha-komponenten släpptes i maj 2024 som en del av [Core Components 3.0.20](https://github.com/adobe/aem-core-forms-components/commit/a4cb97131ffad47137a8f5f173401128a1cf3491). Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
 
 |  |  |
 |---|---|
@@ -76,13 +80,13 @@ Du kan enkelt anpassa egenskaperna för din hCaptcha-komponent med hjälp av dia
 
 **Lär dig mer** om andra **Captcha-komponenter** och deras tjänster, till exempel:
 
-- [Använd hCaptcha i ett adaptivt formulär för kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)
+- [Använd hCaptcha i ett adaptivt formulär för kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)
 
-- [Använd hCaptcha i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-hcaptcha)
+- [Använd hCaptcha i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-hcaptcha)
 
-- [Använd Turnstile CAPTCHA i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-turnstile)
+- [Använd Turnstile CAPTCHA i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-turnstile)
 
-- [Använd Google reCAPTCHA i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)
+- [Använd Google reCAPTCHA i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)
 
 ## Relaterade artiklar {#related-articles}
 
