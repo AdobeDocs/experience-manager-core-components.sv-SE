@@ -2,15 +2,17 @@
 title: Adaptiv Forms Core-komponent - klok signatur
 description: Använda eller anpassa den adaptiva Forms Scribble Signature Core-komponenten.
 role: Architect, Developer, Admin, User
-source-git-commit: 4218af42d947e19a65efe8839ccd4eb102fe2f21
+source-git-commit: 246a608e4c23a9075813a64691d583584164578c
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
 
 
 # Skriptsignaturkomponent
+
+<span>Komponenten Scribble Signature finns under Tidigt Adobe-program. Du kan skriva till `aem-forms-ea@adobe.com` från ditt officiella e-post-id för att gå med i det tidiga adopterprogrammet och begära åtkomst till funktionen.</span>
 
 En komponent för klottersignatur i ett adaptivt formulär är ett element i användargränssnittet som gör att användare kan rita sin **signatur** direkt i formuläret med hjälp av en mus, penna eller pekskärm. Det säkerställer korrekt inhämtning av handskrivet samtycke, godkännanden och verifiering i digitala arbetsflöden.
 
