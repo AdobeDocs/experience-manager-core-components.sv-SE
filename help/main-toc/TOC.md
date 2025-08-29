@@ -5,9 +5,9 @@ breadcrumb-title: Användarhandbok om grundläggande komponenter
 feature: Core Components
 user-guide-description: För traditionella AEM-projekt, använd de utökningsbara grundläggande komponenterna för att låta upphovsmän enkelt skapa innehåll.
 feature-set: Experience Manager Sites, Experience Manager Forms
-source-git-commit: 5c4c72b2f52806cbcc889b676dfa2b2b65b08562
+source-git-commit: bf6953f24388ed08cd5a66bb51011b3ac82fb58e
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '397'
 ht-degree: 6%
 
 ---
@@ -111,6 +111,7 @@ ht-degree: 6%
       + [Adaptiv Forms-kryssruta](/help/adaptive-forms/components/checkbox.md)
       + [Adaptiv Forms-kryssrutegrupp](/help/adaptive-forms/components/checkbox-group.md)
       + [Adaptiv Forms-behållare](/help/adaptive-forms/components/form-container.md)
+      + [Anpassat datum och tid för Forms](/help/adaptive-forms/components/date-time-component.md)
       + [Anpassad datumväljare för Forms](/help/adaptive-forms/components/date-picker.md)
       + [Adaptiv listruta för Forms](/help/adaptive-forms/components/drop-down-list.md)
       + [Adaptiv Forms-e-post](/help/adaptive-forms/components/email.md)
@@ -127,6 +128,7 @@ ht-degree: 6%
       + [Adaptiv Forms-alternativknapp](/help/adaptive-forms/components/radio-button.md)
       + [Knapp för återställning av adaptiv Forms](/help/adaptive-forms/components/reset-button.md)
       + [Adaptiv granskning av formulär](/help/adaptive-forms/components/review.md)
+      + [Adaptiv Forms Scribble Signature](/help/adaptive-forms/components/scribble-signature.md)
       + [Adaptiv Forms-sändningsknapp](/help/adaptive-forms/components/submit-button.md)
       + [Adaptiv Forms-switch](/help/adaptive-forms/components/adaptive-form-switch.md)
       + [Adaptiv Forms Phone](/help/adaptive-forms/components/phone.md)
@@ -141,8 +143,8 @@ ht-degree: 6%
    + [Exempelteman och mallar](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
 + Utvecklar {#developing}
    + [Utveckla kärnkomponenter](/help/developing/overview.md)
-   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=sv-SE)
-   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
+   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
+   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](/help/developing/customizing.md)
    + [Riktlinjer för komponenter](/help/developing/guidelines.md)
    + [Stöd för AMP](/help/developing/amp.md)

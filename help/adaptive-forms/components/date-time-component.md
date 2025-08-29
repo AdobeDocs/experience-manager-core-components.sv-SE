@@ -1,65 +1,55 @@
 ---
-title: Adaptiv Forms Core-komponent - datumväljare
-description: Använda eller anpassa Core-komponenten för den adaptiva Forms Date-väljaren.
+title: Adaptiv Forms Core-komponent - datum och tid
+description: Använda eller anpassa den adaptiva Forms Core-komponenten för datum och tid.
 role: Architect, Developer, Admin, User
-exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
 source-git-commit: daeabccaff39e255c111c6af2540ca4d5be0c709
 workflow-type: tm+mt
-source-wordcount: '2298'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
 
 
-# Datumväljarkomponent{#date-picker-adaptive-forms-core-component}
+# Datum- och tidskomponent
 
-En datumväljarkomponent i ett adaptivt formulär är ett element i användargränssnittet som gör att användare kan välja ett datum i en kalender eller ange ett datum manuellt i ett visst format. Datumväljarkomponenten kan konfigureras så att den har olika formaterings-, validerings- och standardvärden.
+En datum- och tidskomponent i ett adaptivt formulär är ett element i användargränssnittet som gör att användare kan välja både **datum och tid** med hjälp av ett kalender- och klockgränssnitt, eller genom att ange värden manuellt i ett visst format. Det säkerställer korrekta, standardiserade indata för användning där både datum och tid är viktiga.
 
 **Exempel**
 
-![exempel](/help/adaptive-forms/assets/date-picker.png)
+![exempel](/help/adaptive-forms/assets/date-time-picker.png)
 
-## Användning {#reasons-to-use-drop-date-picker}
+## Användning {#reasons-to-use-date-time-picker}
 
-Det finns många skäl till att det är bra att ta med en datumväljare i en anpassad form, bland annat:
+Det finns många skäl till att det är bra att ta med en datum- och tidväljare i ett formulär, bland annat:
 
-- **Bekvämlighet**: Med en datumväljarkomponent kan användare enkelt välja ett datum från en kalender utan att behöva ange datumet manuellt i ett textfält. Detta kan spara tid och minska antalet fel.
-
-- **Användarupplevelse**: Datumväljarkomponenten kan användas för att göra formuläret mer användarvänligt genom att tillhandahålla ett tydligt och intuitivt sätt för användarna att välja datum.
-
-- **Dataanalys**: Datumväljarkomponenten kan användas för att samla in data från olika källor och analysera den, eller använda den som indata för vidare bearbetning.
-
-- **Händelsehantering**: Datumväljarkomponenten kan användas på webbplatser för händelsehantering för att välja händelsedatumet.
-
-- **Bokning och reservation**: Datumväljarkomponenten kan användas på webbplatser för bokning och bokning för att välja datum för in- och utcheckning.
-
-- **Datumformat**: Datumväljarkomponenten kan användas för att korrigera det format i vilket datumet visas och anges. Se till att datumformatet är enhetligt i hela formuläret för att säkerställa en konsekvent användarupplevelse.
+- **Praktisk**: Används för att enkelt välja både ett datum och en tid utan att användaren behöver ange värden manuellt.
+- **Konsekvens**: Tillämpar ett standardformat för datum- och tidsinmatningar i hela formuläret.
+- **Förbättrad användarupplevelse**: Tillhandahåller ett intuitivt användargränssnitt med kalender- och tidsväljare.
+- **Händelseplanering**: Användbart i formulär för bokning av möten, intervjuer eller schemaläggning av möten.
+- **Resor och reservationer**: Låter användarna välja datum och tid för in- och utcheckning.
+- **Datakvalitet**: Minskar indatafel jämfört med fritextinmatning.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
-Core Component (kärnkomponent) för den adaptiva Forms-datumväljaren släpptes i februari 2023 som en del av Core Components 2.0.4 för Cloud Service och Core Components 1.1.12 för AEM 6.5.16.0 Forms eller senare. Här är en tabell som visar alla versioner som stöds, kompatibiliteten med AEM och länkar till motsvarande dokumentation:
+Den adaptiva Forms Core-komponenten för datum och tid släpptes **augusti 2025** som en del av **Core Components 2.24.6** för Cloud Service och senare.
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
-| v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
+| v1 | Kompatibel med <br>[version 2.24.6](/help/adaptive-forms/version.md) och senare | |
 
-Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
-
-<!-- ## Sample Component Output {#sample-component-output}
-
-To experience the Accordion Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_accordion). -->
+Mer information om versioner finns i [Huvudkomponentversioner](/help/adaptive-forms/version.md).
 
 ## Teknisk information {#technical-details}
 
-Hämta den senaste informationen om Core-komponenten för datumväljaren för adaptiv Forms i den tekniska dokumentationen för [GitHub](https://github.com/adobe/aem-core-forms-components/tree/master/ui.af.apps/src/main/content/jcr_root/apps/core/fd/components/form/datepicker/v1/datepicker). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
+Hämta den senaste tekniska informationen om den adaptiva Forms Core-komponenten för datum och tid på [GitHub](https://github.com/adobe/aem-core-forms-components). Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för grundkomponentsutvecklare](/help/developing/overview.md).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
-Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse för besökare. Du kan också enkelt definiera datumväljaralternativ för en smidig användarupplevelse.
+I dialogrutan Konfigurera kan du anpassa datum och tid.
 
 ### Fliken Grundläggande {#basic-tab}
 
-![Fliken Grundläggande](/help/adaptive-forms/assets/datepicker_basictab.png)
+![Fliken Grundläggande](/help/adaptive-forms/assets/datetime_basictab.png)
 
 - **Namn** - Namnet identifierar komponenten i regelredigeraren unikt. Specialtecken och mellanslag är inte tillåtna i namnsträngarna.
 
@@ -79,12 +69,11 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 - **Dölj komponent** - Välj alternativet att dölja komponenten från formuläret. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren. Detta är användbart när du behöver lagra information som inte behöver visas eller ändras direkt av användaren.
 - **Inaktivera komponent** - Välj alternativet att inaktivera komponenten. Den inaktiverade komponenten är inte aktiv eller redigerbar av slutanvändaren. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
 - **Skrivskyddad** - Välj alternativet för att göra komponenten icke-redigerbar. Användaren kan se fältets värde, men kan inte ändra det. Komponenten är fortfarande tillgänglig för andra syften, som att använda den för beräkningar i regelredigeraren.
-- **Standarddatum** - Med det här alternativet kan du lägga till ett datum i formulärfältet. Det angivna datumet visas som standard i stället för komponenten. Om inget datum anges av användaren skickas det här värdet när formuläret skickas. Om **Inaktiverad komponent** eller **skrivskyddad komponent** väljs visas standarddatumet på skärmen och skickas när formuläret skickas.
-
+- **Standarddatum och standardtid** - Med det här alternativet kan du lägga till ett datum och en tid i formulärfältet. Det angivna datumet visas som standard i stället för komponenten. Om användaren inte anger något datum eller ingen tid skickas värdet när formuläret skickas. Om **Inaktiverad komponent** eller **skrivskyddad komponent** väljs visas standarddatum och -tid på skärmen och skickas när formuläret skickas.
 
 ### Fliken Validering {#validation-tab}
 
-![Fliken Validering](/help/adaptive-forms/assets/datepicker_validation.png)
+![Fliken Validering](/help/adaptive-forms/assets/datetime_validation.png)
 
 - **Obligatoriskt** - Välj det här alternativet om du vill visa komponenten i ett adaptivt formulär. När du har valt alternativet måste du göra ett val innan du kan fortsätta med en formuläröverföring. Du kan inte välja **Dölj komponent** eller **Inaktivera komponent** på fliken **Grundläggande** när det här alternativet är valt.
 
@@ -92,20 +81,17 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 
 - **Skriptvalideringsmeddelande** - Med det här alternativet kan du ange ett meddelande som ska visas om skriptvalideringen misslyckas.
 
-- **Minimidatum** - Med det här alternativet kan du ange det minsta obligatoriska datumet. Om du anger ett datum som är tidigare än det som anges i Minimidatum visas ett felmeddelande på skärmen. I dialogrutan **Minimalt felmeddelande** kan du lägga till ett eget felmeddelande.
+- **Minimidatum** - Med det här alternativet kan du ange det minsta obligatoriska datumet. Om du anger ett datum som är tidigare än det som anges i Minimidatum och tid visas ett felmeddelande på skärmen. I dialogrutan **Minimalt felmeddelande** kan du lägga till ett eget felmeddelande.
 
-- **Minimalt felmeddelande** - I dialogrutan **Minimalt felmeddelande** kan du lägga till ett anpassat felmeddelande som ska visas om du anger ett datum som infaller före det datum som anges i alternativet **Minimidatum**.
-- **Undanta minimidatum** - Det här alternativet tillåter att minimidatum utelämnas i ett visst intervall eller en viss datumuppsättning.
+- **Minimalt felmeddelande** - I dialogrutan **Minimalt felmeddelande** kan du lägga till ett anpassat felmeddelande som ska visas om du anger ett datum eller en tid som är tidigare än det datum eller den tid som anges i alternativet **Minimalt datum** .
 
-- **Maximalt datum** - Med det här alternativet kan du ange maximalt obligatoriskt datum. Om du anger ett datum som är senare än det som anges i Maximalt datum visas ett felmeddelande på skärmen. I dialogrutan **Maximalt felmeddelande** kan du lägga till ett anpassat felmeddelande.
+- **Maximalt datum** - Med det här alternativet kan du ange maximalt datum och tid som krävs. Om du anger ett datum eller en tid som är senare än det datum eller den tid som anges i Maximalt datum visas ett felmeddelande på skärmen. I dialogrutan **Maximalt felmeddelande** kan du lägga till ett anpassat felmeddelande.
 
-- **Maximalt felmeddelande** - I dialogrutan **Maximalt felmeddelande** kan du lägga till ett anpassat felmeddelande som ska visas om du anger ett datum som infaller senare än det datum som anges i alternativet **Maximalt datum**.
-
-- **Uteslut maximalt datum** - Med det här alternativet kan du utelämna maximalt datum i ett visst intervall eller en viss datumuppsättning.
+- **Maximalt felmeddelande** - I dialogrutan **Maximalt felmeddelande** kan du lägga till ett anpassat felmeddelande som ska visas om du anger ett datum eller en tid senare än det datum eller den tid som anges i alternativet **Maximalt datum** .
 
 ### Fliken Hjälpinnehåll {#help-content-tab}
 
-![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/datepicker_helptab.png)
+![Fliken Hjälpinnehåll](/help/adaptive-forms/assets/datetime_helptab.png)
 
 - **Kort beskrivning** - En kort beskrivning är en kort textförklaring som ger ytterligare information eller förtydliganden om syftet med ett visst formulärfält. Det hjälper användaren att förstå vilken typ av data som ska anges i fältet och kan ge riktlinjer eller exempel som hjälper till att säkerställa att den angivna informationen är giltig och uppfyller de önskade kriterierna. Som standard är korta beskrivningar dolda. Aktivera alternativet **Visa alltid kort beskrivning** för att visa det under komponenten.
 
@@ -116,7 +102,7 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
 
 ### Fliken Tillgänglighet {#accessibility-tab}
 
-![Fliken Tillgänglighet](/help/adaptive-forms/assets/datepicker_accessibilitytab.png)
+![Fliken Tillgänglighet](/help/adaptive-forms/assets/datetime_accessibilitytab.png)
 
 - **Text för skärmläsare** - Text för skärmläsare hänvisar till ytterligare text som är särskilt avsedd att läsas av hjälpmedelstekniker, som skärmläsare, som används av personer med nedsatt syn. Den här texten innehåller en ljudbeskrivning av formulärfältets syfte och kan innehålla information om fältets titel, beskrivning, namn och relevanta meddelanden (anpassad text). Skärmläsartexten ser till att formuläret är tillgängligt för alla användare, även användare med nedsatt syn, och ger dem en fullständig förståelse för formulärfältet och dess krav.
    - **Egen text**: Välj det här alternativet om du vill använda den anpassade texten för ARIA-hjälpmedelsetiketter. Om du väljer det här alternativet visas dialogrutan Egen text. Du kan lägga till relevant information i dialogrutan Egen text.
@@ -125,40 +111,42 @@ Med dialogrutan Konfigurera kan du enkelt anpassa din datumväljarupplevelse fö
    - **Namn**: Välj det här alternativet om du vill använda namnet på ARIA-hjälpmedelsetiketter.
    - **Inget**: Välj det här alternativet om du inte vill lägga till för hjälpmedelsetiketter för ARIA.
 
-### Fliken Format {#format-tab}
+<!--
+### Formats Tab {#format-tab}
 
-![Fliken Format](/help/adaptive-forms/assets/datepicker_formattab.png)
+![Formats tab](/help/adaptive-forms/assets/datepicker_formattab.png)
 
-- **Visningsformat** - Det representerar det datumformat som visas för användaren. Med alternativet **Typ** kan användaren välja datumformat. Du kan också anpassa datumformatet med alternativet **Egen** i listrutan **Typ** .
+-   **Display Format** - It represents the date format that is displayed to the user. The **Type** option allows the user to select the date format. You can also customize the date format using the **Custom** option in the **Type** dropdown menu.
 
-- **Redigera format** - Det representerar ett datumformat där användaren kan redigera datumet. Med alternativet **Typ** kan användaren välja datumformat. Du kan också anpassa datumformatet med alternativet **Egen** i listrutan **Typ** .
-- **Formatfelmeddelande** - Med det här alternativet kan du ange meddelandet som visas på skärmen när det angivna datumet inte har rätt format.
-- **Språk** - Den här funktionen används för att formatera det specifika fältet. När en användare väljer ett språkalternativ i listrutan **Typ** visas alternativet **IETF BCP 47-språktagg** på panelen. Du kan välja språk för fältformatering när du översätter ett adaptivt formulär till ett visst språk.
+-   **Edit Format** - It represents a date format in which the user can edit the date. The **Type** option allows the user to select the date format. You can also customize the date format using the **Custom** option in the **Type** dropdown menu.
+-  **Format error message** - This option allows you to enter the message displayed on the screen when the entered date is not in the correct format.
+- **Language** - This feature is used for formatting the specific field. When a user selects any language option from the **Type** drop-down menu, the **IETF BCP 47 language tag** option appears in the panel. You can choose the language for field formatting when translating an Adaptive Form into a specific language.
+  
+The set of languages is not visible by default, but users can input a custom **IETF BCP 47 language tag** by updating the template policy:
 
-Språkuppsättningen är inte synlig som standard, men användare kan ange en anpassad **IETF BCP 47-språktagg** genom att uppdatera mallprincipen:
+  1. Open the corresponding template associated with an Adaptive Form in the template editor.
+  2. Select the existing policy as `datepicker-default-policy` from the drop-down menu.
+   
+        ![Date Picker template Policy](/help/adaptive-forms/assets/date-picker-template-policy.png)
 
-1. Öppna motsvarande mall som är kopplad till ett adaptivt formulär i mallredigeraren.
-2. Välj den befintliga profilen som `datepicker-default-policy` på den nedrullningsbara menyn.
+  3. Click **Done**.
 
-   ![Mallprincip för datumväljare](/help/adaptive-forms/assets/date-picker-template-policy.png)
-
-3. Klicka på **Klar**.
-
-   >[!NOTE]
-   >
-   > [Klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
+        >[!NOTE]
+        >
+        > For further information on how to translate an Adaptive Form to a specific locale, [click here](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components).
+-->
 
 ## Designdialogruta {#design-dialog}
 
-Designdialogrutan används för att definiera och hantera CSS-format för komponenten Date-Picker.
+Designdialogrutan används för att definiera och hantera CSS-format för komponenten Datum och Tid.
 
 ### Fliken Format {#styles-tab}
 
-Fliken används för att definiera och hantera CSS-format för en komponent. Core-komponenten för datumväljaren i den adaptiva Forms stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
+Fliken används för att definiera och hantera CSS-format för en komponent. Den adaptiva Forms Core-komponenten för datum och tid stöder AEM [Style System](/help/get-started/authoring.md#component-styling).
 
 ![Fliken Format](/help/adaptive-forms/assets/datepicker_styletab.png)
 
-- **Standard-CSS-klasser**: Du kan ange en standard-CSS-klass för den adaptiva Forms Date-picker-kärnkomponenten.
+- **Standardklasser för CSS**: Du kan ange en standardklass för CSS för den adaptiva kärnkomponenten Forms Date and Time.
 
 - **Tillåtna format**: Du kan definiera format genom att ange ett namn och den CSS-klass som representerar formatet. Du kan till exempel skapa ett format med namnet&quot;bold text&quot; och ge CSS-klassen&quot;font-weight: bold&quot;. Du kan använda eller tillämpa dessa format på ett adaptivt formulär i en anpassad Forms-redigerare. Om du vill använda ett format väljer du den komponent du vill använda formatet på i Adaptiv Forms-redigerare, navigerar till egenskapsdialogrutan och väljer önskat format i listrutan **Format**. Om du behöver uppdatera eller ändra formaten går du tillbaka till designdialogrutan, uppdaterar formaten på formatfliken och sparar ändringarna.
 
@@ -176,13 +164,14 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
    - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
-### Fliken Format {#formats-tab}
-
-På fliken Format kan du ange standardformat och anpassade datumformat.
-
-![Formateringsflik](/help/adaptive-forms/assets/datepicker_formatpolicy.png)
-
 <!--
+### Formats Tab {#formats-tab}
+
+The formats tab allows you to specify default and custom date formats.
+
+![Formattab](/help/adaptive-forms/assets/datepicker_formatpolicy.png)
+
+
 
 ## Related article {#related-article}
 
