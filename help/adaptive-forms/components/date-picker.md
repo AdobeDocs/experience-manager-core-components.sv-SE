@@ -146,7 +146,7 @@ Språkuppsättningen är inte synlig som standard, men användare kan ange en an
 
    >[!NOTE]
    >
-   > [Klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
+   > [Klicka här](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
 
 ## Designdialogruta {#design-dialog}
 
@@ -186,7 +186,7 @@ På fliken Format kan du ange standardformat och anpassade datumformat.
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
 
 -->
 
