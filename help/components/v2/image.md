@@ -4,7 +4,7 @@ description: Core Component Image Component Component är en adaptiv bildkompone
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
 index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+source-git-commit: 3908828cf62043483a74e908204c3e9bf540300b
 workflow-type: tm+mt
 source-wordcount: '2048'
 ht-degree: 0%
@@ -40,11 +40,11 @@ Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsn
 
 >[!TIP]
 >
->Image Component (Bildkomponenten) drivs av Adaptive Image Server. Se dokumentet [Adaptive Image Server](#adaptive-image-servlet) för mer information om hur det fungerar.
+>Image Component (Bildkomponenten) drivs av Adaptive Image Server. Se dokumentet [Adaptive Image Server](/help/developing/adaptive-image-servlet.md) för mer information om hur det fungerar.
 
 ## Stöd för dynamiska media {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=sv-SE#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina webbupplevelser som skapats med Core Components har inga omfattande, Sensei-baserade, robusta, plattformsoberoende Dynamic Media Image-funktioner.
 
@@ -81,9 +81,9 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 ![Fliken Resurser i dialogrutan Konfigurera i bildkomponenten](/help/assets/image-configure-asset.png)
 
 * **Bildresurs**
-   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=sv-SE) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=sv-SE) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 ### Fliken Metadata {#metadata-tab}
 
@@ -206,7 +206,7 @@ Dessutom kan du definiera vilka allmänna komponentalternativ som automatiskt el
 
 >[!TIP]
 >
->I dokumentet [Adaptiv bildserver](#adaptive-image-servlet) finns tips om hur du kan optimera markeringen av återgivning genom att definiera dina bredder noggrant.
+>I dokumentet [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md) finns tips om hur du kan optimera markeringen av återgivning genom att definiera dina bredder noggrant.
 
 ### Fliken Funktioner {#features-tab}
 
