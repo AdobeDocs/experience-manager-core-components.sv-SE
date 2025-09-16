@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [ AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)-installationer på plats.
+Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=sv-SE) och [ AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=sv-SE)-installationer på plats.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -187,4 +187,4 @@ Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kä
 
 Adobe betoning på utveckling har gått över till kärnkomponenterna och nya funktioner kommer att läggas till.
 
-[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) och endast större felkorrigeringar kommer att övervägas för Foundation-komponenterna som fortsätter.
+[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html?lang=sv-SE) och endast större felkorrigeringar kommer att övervägas för Foundation-komponenterna som fortsätter.
