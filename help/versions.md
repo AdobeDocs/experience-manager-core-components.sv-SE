@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är en release och version och hur man förstår kompatibiliteten med Core Components och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: 821530ce1958566f0a2c1fb88c5017572057f88f
+source-git-commit: b6b850237bdab1cb59a81c3162182e5b25fbdb68
 workflow-type: tm+mt
-source-wordcount: '3056'
+source-wordcount: '3087'
 ht-degree: 0%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=sv-SE) och [ AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=sv-SE)-installationer på plats.
+Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [ AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)-installationer på plats.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,6 +26,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|---|
+| [2.30.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.30.0) | Den här versionen åtgärdade ett antal problem med resurser och dynamiska media, klargör LTS-stödet och åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | 6,5 LTS GA | Kontinuerlig | 8, 11 | 4 september 2025 |
 | [2.29.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.29.0) | I den här versionen finns stöd för redigering av förhandsgranskningsversioner av resurser i kärnkomponenten för webbplatser, och många felkorrigeringar har åtgärdats. | - | 6.5.21.0+ | 6,5 LTS GA | Kontinuerlig | 8, 11 | 21 april 2025 |
 | [2.28.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.28.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | 6,5 LTS GA | Kontinuerlig | 8, 11 | 17 mars 2025 |
 | [2.27.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.27.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | - | Kontinuerlig | 11 | 10 september 2024 |
@@ -186,4 +187,4 @@ Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kä
 
 Adobe betoning på utveckling har gått över till kärnkomponenterna och nya funktioner kommer att läggas till.
 
-[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html?lang=sv-SE) och endast större felkorrigeringar kommer att övervägas för Foundation-komponenterna som fortsätter.
+[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) och endast större felkorrigeringar kommer att övervägas för Foundation-komponenterna som fortsätter.
