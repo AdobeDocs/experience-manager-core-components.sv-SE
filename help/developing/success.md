@@ -55,7 +55,7 @@ Tillsammans med den uppdaterade JSON-exporteraren kan strukturerade innehållsfr
 
 ### Upplevelsefragmentmallar {#experience-fragment-templates}
 
-Om en författare vill återanvända delar (ett fragment av en upplevelse) av en sida. Utan [Experience Fragments ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html?lang=sv-SE) måste författaren kopiera och klistra in det fragmentet. Att skapa och underhålla dessa klipp-och-klistra-upplevelser är tidskrävande och leder ofta till användarfel. Upplevelsefragment eliminerar behovet av att kopiera/klistra in.
+Om en författare vill återanvända delar (ett fragment av en upplevelse) av en sida. Utan [Experience Fragments &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html?lang=sv-SE) måste författaren kopiera och klistra in det fragmentet. Att skapa och underhålla dessa klipp-och-klistra-upplevelser är tidskrävande och leder ofta till användarfel. Upplevelsefragment eliminerar behovet av att kopiera/klistra in.
 
 ### Komponenten Embed {#embed-component}
 

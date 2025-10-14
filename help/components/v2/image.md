@@ -44,7 +44,7 @@ Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsn
 
 ## Stöd för dynamiska media {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=sv-SE#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=sv-SE#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda &#x200B;](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina webbupplevelser som skapats med Core Components har inga omfattande, Sensei-baserade, robusta, plattformsoberoende Dynamic Media Image-funktioner.
 
@@ -70,7 +70,7 @@ Den senaste tekniska dokumentationen om Image-komponenten [finns på GitHub](htt
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
-Bildkomponenten stöder [schema.org ](https://schema.org).
+Bildkomponenten stöder [schema.org &#x200B;](https://schema.org).
 
 ## Konfigurera dialogruta {#configure-dialog}
 

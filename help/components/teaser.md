@@ -95,7 +95,7 @@ Teaser title, description and image can be inherited from the linked page, or fr
 
 ### Fliken Format {#styles-tab-edit}
 
-![Fliken Stilar i redigeringsdialogrutan för komponenten Teaser List ](/help/assets/teaser-edit-styles.png)
+![Fliken Stilar i redigeringsdialogrutan för komponenten Teaser List &#x200B;](/help/assets/teaser-edit-styles.png)
 
 Teaser Component har stöd för AEM [Style System.](/help/get-started/authoring.md#component-styling).
 

@@ -25,7 +25,7 @@ Kärnkomponenterna var från början utformade för att vara flexibla och utökn
 * [Designdialogrutan](/help/get-started/authoring.md#edit-and-design-dialogs) definierar vad författare kan eller inte kan göra i redigeringsdialogrutan.
 * [I redigeringsdialogrutan](/help/get-started/authoring.md#edit-and-design-dialogs) visas endast de alternativ som författare kan använda.
 * [Sling-modellen](#customizing-the-logic-of-a-core-component) verifierar och förbereder innehållet för vyn (mallen).
-* [Resultatet av Sling-modellen ](#customizing-the-logic-of-a-core-component) kan serialiseras till JSON för SPA-användningsfall.
+* [Resultatet av Sling-modellen &#x200B;](#customizing-the-logic-of-a-core-component) kan serialiseras till JSON för SPA-användningsfall.
 * [HTML återger serversidan HTML](#customizing-the-markup) för traditionell återgivning på serversidan.
 * [Utdata från HTML](#customizing-the-markup) är semantiska, tillgängliga, sökmotoroptimerade och enkla att formatera.
 

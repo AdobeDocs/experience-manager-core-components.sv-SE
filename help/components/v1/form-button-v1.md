@@ -109,7 +109,7 @@ Det finns ingen designdialogruta för komponenten Formulärknapp.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Form Button-komponenten [ finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
+Den senaste tekniska dokumentationen om Form Button-komponenten [&#x200B; finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
 
 Hela kärnkomponentprojektet kan hämtas från GitHub.
 

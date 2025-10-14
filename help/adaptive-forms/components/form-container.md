@@ -107,7 +107,7 @@ Användare kan konfigurera olika åtgärder för att skicka adaptiva formulär.
 
 ![Visa fliken Meddelande](/help/adaptive-forms/assets/formconatiner_showmessage.png)
 
-- **Skicka åtgärd** - En Skicka-åtgärd utlöses när en användare klickar på Skicka-knappen i ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur du [konfigurerar en Skicka-åtgärd på fliken ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=sv-SE#supporting-custom-functions-in-validation-expressions-br).
+- **Skicka åtgärd** - En Skicka-åtgärd utlöses när en användare klickar på Skicka-knappen i ett anpassat formulär. Användarna kan välja Skicka åtgärder i listrutan som stöds direkt. Lär dig hur du [konfigurerar en Skicka-åtgärd på fliken &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=sv-SE#supporting-custom-functions-in-validation-expressions-br).
 
 ## Designdialogruta {#design-dialog}
 

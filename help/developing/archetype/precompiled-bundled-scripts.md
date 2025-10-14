@@ -35,7 +35,7 @@ Distribuera skript som förkompilerade skript har följande fördelar:
 
 OSGi-ramverket är ett kraftfullt sätt att definiera [krav och funktioner](https://docs.osgi.org/specification/osgi.core/7.0.0/framework.module.html#framework.module.dependencies) för att uttrycka kontrakt mellan olika komponenter. Dessa beskrivs via metadata och används vid körning. Paketerade skript använder den här mekanismen för att uttrycka både arvsrelationer (`sling:resourceSuperType`) och delegering (inklusive andra resurstyper i återgivningsprocessen).
 
-Plugin-programmet `bnd` från projektet [scriptingbundle-maven-plugin](https://sling.apache.org/components/scriptingbundle-maven-plugin/bnd.html) kan användas för att extrahera de krav och funktioner som motsvarar skripten från [`ui.apps`.Innehållspaket ](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=sv-SE#code-packages-%2F-osgi-bundles)
+Plugin-programmet `bnd` från projektet [scriptingbundle-maven-plugin](https://sling.apache.org/components/scriptingbundle-maven-plugin/bnd.html) kan användas för att extrahera de krav och funktioner som motsvarar skripten från [`ui.apps`.Innehållspaket &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=sv-SE#code-packages-%2F-osgi-bundles)
 
 ## Stöd för AEM Project Archetype {#support}
 

@@ -46,7 +46,7 @@ Eftersom dessa komponenter är öppen källkod kan utvecklare dessutom enkelt an
 | Tillgänglig | De innehåller ARIA-etiketter, stöd för tangentbordsnavigering och text för hjälpmedelstekniker som skärmläsare. |
 | Temabell | Komponenterna implementerar [Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=sv-SE) och koden följer [BEM CSS-konventioner](https://getbem.com/). |
 | Anpassningsbar | Flera mönster gör det enkelt att anpassa, från att justera HTML till avancerad återanvändning av funktioner. |
-| Versioner | Versionsprincipen [för ](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
+| Versioner | Versionsprincipen [för &#x200B;](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Öppen källkod | Om något inte är som det ska, bidrar du till förbättringen. |
 
 <!-- comply with [WCAG 2.1 standard](https://www.w3.org/TR/WCAG21/), -->

@@ -39,7 +39,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 | Mångsidig | Komponenterna representerar generiska begrepp som författarna kan använda för att sätta ihop nästan vilken layout som helst. |
 | Konfigurerbar | [Innehållsprinciper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/components-templates/templates.html?lang=sv-SE#content-policies) på mallnivå definierar vilka funktioner sidförfattarna får använda eller inte använda. |
 | [Responsiv](responsive.md) | Alla kärnkomponenter är utformade för att vara fullt responsiva och ger en sömlös upplevelse på alla enheter |
-| Spårbar | Integreringen av [Adobe Client Data Layer ](/help/developing/data-layer/overview.md) gör att du kan spåra alla aspekter av besökarupplevelsen. |
+| Spårbar | Integreringen av [Adobe Client Data Layer &#x200B;](/help/developing/data-layer/overview.md) gör att du kan spåra alla aspekter av besökarupplevelsen. |
 | Tillgänglig | De är kompatibla med standarden [WCAG 2.1](https://www.w3.org/TR/WCAG21/), har ARIA-etiketter och stöder tangentbordsnavigering ([kända fel](https://github.com/adobe/aem-core-wcm-components/issues?utf8=✓&q=is%3Aissue+is%3Aopen+accessibility+in%3Atitle)). |
 | SEO-vänlig | Utdata från HTML är semantiska och innehåller mikrodatsanteckningar för [schema.org](https://schema.org). |
 | WebApp-Ready | Med [strömlinjeformade JSON-utdata](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=sv-SE) kan klientsidan renderas, men ändå med en möjlighet till [kontextredigering](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=sv-SE). |
@@ -47,7 +47,7 @@ Core Components är en uppsättning standardiserade WCM-komponenter (Web Content
 | Design Kit | Med ett [gränssnittspaket för Adobe XD](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=sv-SE) kan designers skapa trådramar som de sedan kan [formatera efter behov](https://github.com/adobe/aem-guides-wknd/releases/download/aem-guides-wknd-0.0.2/AEM_UI-kit-WKND.xd). |
 | Temaperbar | Komponenterna implementerar [Style System](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=sv-SE) och koden följer [BEM CSS-konventioner](https://getbem.com/). |
 | Anpassningsbar | Flera mönster tillåter [enkel anpassning](developing/customizing.md), från justering av HTML till avancerad återanvändning av funktioner. |
-| Versioner | Versionsprincipen [för ](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
+| Versioner | Versionsprincipen [för &#x200B;](https://github.com/adobe/aem-core-wcm-components/wiki/Versioning-policies) säkerställer att kärnkomponenterna inte bryter din plats när du förbättrar saker som kan påverka dig. |
 | Lokaliserbart | Med smart referensupplösning kan vissa komponenter hitta och [återge motsvarande lokaliserat innehåll automatiskt](get-started/localization.md). |
 | Öppen källkod | Om något inte är som det ska, [bidrar du med dina förbättringar!](https://github.com/adobe/aem-core-wcm-components/blob/master/CONTRIBUTING.md) |
 

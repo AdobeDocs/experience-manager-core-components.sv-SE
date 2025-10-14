@@ -59,7 +59,7 @@ Om du vill se både Content Fragment Component och exempel på dess konfiguratio
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Content Fragment-komponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_cf_v1).
+Den senaste tekniska dokumentationen om Content Fragment-komponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_cf_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

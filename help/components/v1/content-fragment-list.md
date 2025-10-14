@@ -39,7 +39,7 @@ Om du vill se komponenterna i listan Innehållsfragment och se exempel på dess 
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om List-komponenten för innehållsfragment [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
+Den senaste tekniska dokumentationen om List-komponenten för innehållsfragment [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

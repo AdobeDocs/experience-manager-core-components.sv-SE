@@ -99,7 +99,7 @@ Det finns ingen designdialogruta för komponenten Formulär-dold.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om den dolda formulärkomponenten [ finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
+Den senaste tekniska dokumentationen om den dolda formulärkomponenten [&#x200B; finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
 
 Hela kärnkomponentprojektet kan hämtas från GitHub.
 

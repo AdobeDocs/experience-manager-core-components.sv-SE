@@ -44,7 +44,7 @@ Tänk på några saker när du använder kärnkomponenterna i AEMaaCS:
 * Projektets pipeline genererar varningar i loggen om den innehåller kärnkomponenterna igen som en del av `/apps` och ignorerar den version som är inbäddad som en del av ditt projekt.
    * I en kommande version, inklusive Core Components igen, kommer pipeline-bygget att misslyckas.
 * Om ditt projekt tidigare innehöll kärnkomponenterna i `/apps` kan [du behöva justera ditt projekt.](/help/developing/overview.md#via-aemaacs)
-* Även om kärnkomponenterna nu finns i `/libs` rekommenderar vi inte att du skapar någon övertäckning med samma sökväg i `/apps`. [Proxykomponentmönstret ](/help/developing/guidelines.md#proxy-component-pattern) bör användas i stället om någon aspekt av komponenterna behöver anpassas.
+* Även om kärnkomponenterna nu finns i `/libs` rekommenderar vi inte att du skapar någon övertäckning med samma sökväg i `/apps`. [Proxykomponentmönstret &#x200B;](/help/developing/guidelines.md#proxy-component-pattern) bör användas i stället om någon aspekt av komponenterna behöver anpassas.
 * För att komponenten [Innehållsförteckning](/help/components/tableofcontents.md) ska kunna återge sitt innehåll måste ett filter konfigureras i OSGi.
    * [Mer information finns i GitHub-dokumentationen för komponenten](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
 

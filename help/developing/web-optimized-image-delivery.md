@@ -51,11 +51,11 @@ Om du återgår till den adaptiva bildservern ändras attributet `src` för elem
 
 ### Varför finns det inget alternativ för att aktivera webboptimerade bilder i min miljö? {#missing-option}
 
-Funktionen är bara tillgänglig på AEM as a Cloud Service. Om du kör AEM lokalt eller lokalt återgår bildkomponenten [till att använda den adaptiva bildservern ](#fallback).
+Funktionen är bara tillgänglig på AEM as a Cloud Service. Om du kör AEM lokalt eller lokalt återgår bildkomponenten [till att använda den adaptiva bildservern &#x200B;](#fallback).
 
 ### Varför fungerar inte tjänsten med den lokala SDK:n? {#local-sdk}
 
-När du använder AEM SDK på `localhost` är inte bildtjänsten tillgänglig, och bildåtergivningen [ återgår ](#fallback) till att använda den adaptiva bildservern.
+När du använder AEM SDK på `localhost` är inte bildtjänsten tillgänglig, och bildåtergivningen [&#x200B; återgår &#x200B;](#fallback) till att använda den adaptiva bildservern.
 
 Om du vill använda den webboptimerade bildleveranstjänsten ska du driftsätta projektet i en AEMaaCS-utvecklingsmiljö och exakt testa hur bildtjänsten fungerar med bildtjänsten.
 

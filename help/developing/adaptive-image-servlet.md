@@ -31,7 +31,7 @@ Det här dokumentet beskriver standardservern för adaptiv bildhantering.
 
 ## Ökning {#overview}
 
-Som standard använder Image Component (Bildkomponent) Core-komponentens Adaptive Image Servlet för att leverera bilder. [Den adaptiva bildservern ](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbearbetning och direktuppspelning och kan utnyttjas av utvecklare i deras [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
+Som standard använder Image Component (Bildkomponent) Core-komponentens Adaptive Image Servlet för att leverera bilder. [Den adaptiva bildservern &#x200B;](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbearbetning och direktuppspelning och kan utnyttjas av utvecklare i deras [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
 
 ## Återgivningsmarkering {#rendition-selection}
 
@@ -54,6 +54,6 @@ Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktig
 
 ## Använda senast ändrade rubriker {#last-modified}
 
-Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [ måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#caching-http-response-headers).
+Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [&#x200B; måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#caching-http-response-headers).
 
 [Dispatcher-exempelkonfigurationen för AEM Project Archetype](/help/developing/archetype/overview.md) innehåller redan den här konfigurationen.

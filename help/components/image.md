@@ -59,7 +59,7 @@ För det mesta föredrar webbläsarna att lokalt minska bredden så att den pass
 
 ## Stöd för dynamiska media {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media.html?lang=sv-SE)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media.html?lang=sv-SE)-resurser. [När det här alternativet är aktiverat kan du använda &#x200B;](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina webbupplevelser som byggts med Core Components kan innehålla kraftfulla, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
@@ -89,7 +89,7 @@ Den senaste tekniska dokumentationen om Image-komponenten [finns på GitHub](htt
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
-Bildkomponenten stöder [schema.org ](https://schema.org).
+Bildkomponenten stöder [schema.org &#x200B;](https://schema.org).
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -145,7 +145,7 @@ Du kan även använda redigeraren på plats för att ändra bilden. På grund av
 
 ### Dynamisk redigering av mediatillgångar {#dynamic-media-assets}
 
-Om du har aktiverat [dynamiska mediefunktioner måste ](#dynamic-media) redigering av själva bilden utföras i resurskonsolen.
+Om du har aktiverat [dynamiska mediefunktioner måste &#x200B;](#dynamic-media) redigering av själva bilden utföras i resurskonsolen.
 
 ## Konfigurera dialogruta {#configure-dialog}
 

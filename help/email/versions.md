@@ -20,7 +20,7 @@ Mer information om krav och installation finns i avsnittet [Krav](/help/email/in
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
-E-postkärnkomponenterna är utformade för att vara flexibla och kompatibla med alla AEM-versioner som stöds. Den fullständiga informationen om versionshistoriken för e-postkärnkomponenterna [ finns på GitHub.](https://github.com/adobe/aem-core-email-components/releases) I följande tabell visas dock en översikt över de utgåvor av E-postkärnkomponenterna som är kompatibla med AEM-versioner och Java-versioner.
+E-postkärnkomponenterna är utformade för att vara flexibla och kompatibla med alla AEM-versioner som stöds. Den fullständiga informationen om versionshistoriken för e-postkärnkomponenterna [&#x200B; finns på GitHub.](https://github.com/adobe/aem-core-email-components/releases) I följande tabell visas dock en översikt över de utgåvor av E-postkärnkomponenterna som är kompatibla med AEM-versioner och Java-versioner.
 
 | Frigör | Beskrivning | AEM 6.5 | AEM 6.5 LTS | Kärnkomponenter | Java | Releasedatum |
 |---|---|---|---|---|---|---|

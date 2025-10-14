@@ -47,7 +47,7 @@ Dessutom har e-postbildkomponenten stöd för lazy loading för att skjuta upp i
 
 ## Stöd för dynamiska media {#dynamic-media}
 
-E-postbildkomponenten stöder [dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=sv-SE#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+E-postbildkomponenten stöder [dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=sv-SE#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda &#x200B;](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
 Dina e-postupplevelser som byggts med e-postkärnkomponenterna kan innehålla kraftfulla, Sensei-baserade, robusta, plattformsoberoende Dynamic Media Image-funktioner.
 
@@ -138,7 +138,7 @@ Format måste konfigureras för den här komponenten i [designdialogrutan](#desi
 
 * **Aktivera DM-funktioner** - När det här alternativet är markerat är [Dynamiska mediefunktioner](#dynamic-media) tillgängliga.
    * Det här alternativet visas bara när Dynamic Media är aktiverat i miljön.
-* **Aktivera webboptimerade bilder** - När det här alternativet är markerat [levererar den webboptimerade bildleveranstjänsten ](/help/developing/web-optimized-image-delivery.md) bilder i WebP-format, vilket minskar bildstorleken med i genomsnitt 25 %.
+* **Aktivera webboptimerade bilder** - När det här alternativet är markerat [levererar den webboptimerade bildleveranstjänsten &#x200B;](/help/developing/web-optimized-image-delivery.md) bilder i WebP-format, vilket minskar bildstorleken med i genomsnitt 25 %.
    * Det här alternativet är endast tillgängligt i AEMaaCS.
    * När det är omarkerat eller när den webboptimerade bildleveranstjänsten inte är tillgänglig används [Adaptiv bildserver](/help/developing/adaptive-image-servlet.md).
 * **Bilden är dekorativ** - Definiera om alternativet för dekorativ bild automatiskt är aktiverat när du lägger till bildkomponenten på en sida.
