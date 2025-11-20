@@ -143,8 +143,8 @@ ht-degree: 6%
    + [Exempelteman och mallar](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
 + Utvecklar {#developing}
    + [Utveckla kärnkomponenter](/help/developing/overview.md)
-   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=sv-SE)
-   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
+   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
+   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](/help/developing/customizing.md)
    + [Riktlinjer för komponenter](/help/developing/guidelines.md)
    + [Stöd för AMP](/help/developing/amp.md)
