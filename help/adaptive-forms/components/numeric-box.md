@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - talindata
 description: Använda eller anpassa den adaptiva kärnkomponenten Forms Number.
 role: Architect, Developer, Admin, User
 exl-id: 75604ecf-1ec5-4e97-b934-d6ed49726147
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: f0c4d6adf7266bdb6ebc7cde49656efaf3027624
 workflow-type: tm+mt
-source-wordcount: '2282'
+source-wordcount: '2384'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Språkuppsättningen är inte synlig som standard, men användare kan ange en an
 
    >[!NOTE]
    >
-   > [Klicka här](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
+   > [Klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
 
 
 ## Designdialogruta {#design-dialog}
@@ -176,15 +176,31 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
 ### Fliken Format {#formats-tab}
 
-På fliken Format kan du ange standardformat och anpassade datumformat.
+På fliken Format kan du ange standardformat och anpassade datumformat. Dessutom kan du lägga till ett nytt anpassat nummerformat med knappen **Lägg till** .
 
 ![Formateringsflik](/help/adaptive-forms/assets/emailinput_formattab.png)
+
+#### Lägg till format i komponentens mallpolicy
+
+Om du vill visa tillgängliga format för komponenten måste du lägga till dem i komponentens mallpolicy.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3477976?quality=12&learn=on)
+
+Så här lägger du till format i mallprofilen:
+
+1. Öppna motsvarande mall som är kopplad till ett anpassat formulär eller webbplatser i mallredigeraren.
+2. Markera komponenten **i avsnittet** Tillåtna komponenter **[!UICONTROL Number Input]**.
+   ![Mallprincip för datumväljare](/help/adaptive-forms/assets/number-input-policy.png)
+3. Klicka på ikonen **[!UICONTROL Add]** för att skapa en ny profil för Number Input-komponenten.
+4. Ange ett namn för profilen och välj alla obligatoriska format på fliken **Format**.
+   ![Skapa princip](/help/adaptive-forms/assets/date-picker-format-policy.png)
+5. Klicka på **[!UICONTROL Done]**.
 
 <!--
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

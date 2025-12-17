@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - telefoninmatning, telefon
 description: Använda eller anpassa den adaptiva kärnkomponenten för telefoninmatning från Forms.
 role: Architect, Developer, Admin, User
 exl-id: d06179ac-04bd-4af4-b6ac-c4c78086058c
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: f0c4d6adf7266bdb6ebc7cde49656efaf3027624
 workflow-type: tm+mt
-source-wordcount: '2197'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
 ### Fliken Format {#format-tab}
 
-På fliken Format kan du ange standardtalformat och anpassade talformat.
+På fliken Format kan du ange standardtalformat och anpassade talformat. Du kan dessutom lägga till ett anpassat nummerformat genom att klicka på knappen **Lägg till**.
 
 ![Fliken Formatera](/help/adaptive-forms/assets/telephoneinput_format.png)
 
@@ -169,7 +169,7 @@ På fliken Valideringsmönster kan du ange värden i ett visst format eller uppf
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 
