@@ -3,9 +3,9 @@ title: Bildkomponent
 description: Komponenten Core Component Image är en adaptiv bildkomponent.
 role: Architect, Developer, Admin, User
 exl-id: c5e57f4b-139f-40e7-8d79-be9a74360b63
-source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
+source-git-commit: 8952f6c574fe1e21ff35e95bc0af6433f0363e77
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2064'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,9 @@ För det mesta föredrar webbläsarna att lokalt minska bredden så att den pass
 
 ## Stöd för dynamiska media {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media.html?lang=sv-SE)-resurser. [När det här alternativet är aktiverat kan du använda &#x200B;](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media.html)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
-Dina webbupplevelser som byggts med Core Components kan innehålla kraftfulla, Sensei-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
+Dina webbupplevelser som byggts med Core Components kan innehålla avancerade, Adobe AI-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
 ## Fjärrsupport för Assets {#remote-assets}
 
@@ -89,7 +89,7 @@ Den senaste tekniska dokumentationen om Image-komponenten [finns på GitHub](htt
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
-Bildkomponenten stöder [schema.org &#x200B;](https://schema.org).
+Bildkomponenten stöder [schema.org ](https://schema.org).
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -145,7 +145,7 @@ Du kan även använda redigeraren på plats för att ändra bilden. På grund av
 
 ### Dynamisk redigering av mediatillgångar {#dynamic-media-assets}
 
-Om du har aktiverat [dynamiska mediefunktioner måste &#x200B;](#dynamic-media) redigering av själva bilden utföras i resurskonsolen.
+Om du har aktiverat [dynamiska mediefunktioner måste ](#dynamic-media) redigering av själva bilden utföras i resurskonsolen.
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -159,13 +159,13 @@ I bildkomponenten finns en konfigurationsdialogruta där själva bilden definier
 
 * **Bildresurs** - Detta fylls i automatiskt om **Ärv bild från sida** har valts. Avmarkera om du vill definiera bilden manuellt genom att ange följande alternativ.
 
-   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html?lang=sv-SE) eller tryck på alternativet **bläddra** så att du kan överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** så att du kan överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Välj** för att öppna [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html?lang=sv-SE) så att du kan välja en bild.
+   * Tryck eller klicka på **Välj** för att öppna [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/environment-tools.html) så att du kan välja en bild.
       * Om [Stöd för fjärrresurser](#remote-assets) är aktiverat har du flera alternativ för att välja en resurs:
          * **Lokal** väljer från det lokala AEM-resursbiblioteket.
          * **Fjärr** väljer från ett dynamiskt mediebibliotek utanför din AEM-instans.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=sv-SE) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 * **Alternativ text för hjälpmedel** - I det här fältet kan du definiera en beskrivning av bilden för användare med nedsatt syn.
 

@@ -4,9 +4,9 @@ description: Core Component Image Component Component är en adaptiv bildkompone
 role: Architect, Developer, Admin, User
 exl-id: 3f2b93f9-c48d-43ef-a78a-accd5090fe6f
 index: n
-source-git-commit: 3908828cf62043483a74e908204c3e9bf540300b
+source-git-commit: 8952f6c574fe1e21ff35e95bc0af6433f0363e77
 workflow-type: tm+mt
-source-wordcount: '2048'
+source-wordcount: '2050'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ Dessutom har Image Component stöd för lazy loading för att skjuta upp inläsn
 
 ## Stöd för dynamiska media {#dynamic-media}
 
-Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=sv-SE#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda &#x200B;](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
+Bildkomponenten (från och med [version 2.13.0](/help/versions.md)) har stöd för [Dynamiska media](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/dynamic-media.html?lang=en#dynamicmedia)-resurser. [När det här alternativet är aktiverat kan du använda ](#design-dialog) för att lägga till bildresurser i dynamiska media genom att dra och släppa eller via resursläsaren på samma sätt som med andra bilder. Dessutom stöds även bildmodifierare, bildförinställningar och smarta beskärningar.
 
-Dina webbupplevelser som skapats med Core Components har inga omfattande, Sensei-baserade, robusta, plattformsoberoende Dynamic Media Image-funktioner.
+Dina webbupplevelser som byggts med Core Components har inga avancerade, Adobe AI-baserade, robusta, högpresterande, plattformsoberoende Dynamic Media Image-funktioner.
 
 ## SVG Support {#svg-support}
 
@@ -70,7 +70,7 @@ Den senaste tekniska dokumentationen om Image-komponenten [finns på GitHub](htt
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
-Bildkomponenten stöder [schema.org &#x200B;](https://schema.org).
+Bildkomponenten stöder [schema.org ](https://schema.org).
 
 ## Konfigurera dialogruta {#configure-dialog}
 
@@ -81,9 +81,9 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 ![Fliken Resurser i dialogrutan Konfigurera i bildkomponenten](/help/assets/image-configure-asset.png)
 
 * **Bildresurs**
-   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html?lang=sv-SE) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/environment-tools.html) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html?lang=sv-SE) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/manage/manage-digital-assets.html) i resursredigeraren.
 
 ### Fliken Metadata {#metadata-tab}
 
