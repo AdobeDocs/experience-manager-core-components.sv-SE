@@ -3,16 +3,16 @@ title: Huvudkomponentversioner
 description: Kärnkomponenter publiceras som releaser som kan innehålla mer än en version av samma kärnkomponenter. I det här dokumentet förklaras vad som är en release och version och hur man förstår kompatibiliteten med Core Components och AEM.
 role: Architect, Developer, Admin, User
 exl-id: 7d4dbe46-4013-4217-b815-cdb1462072c6
-source-git-commit: b6b850237bdab1cb59a81c3162182e5b25fbdb68
+source-git-commit: 684bdb4168be00f02bb306dd7ab183e8c439b9e7
 workflow-type: tm+mt
-source-wordcount: '3087'
+source-wordcount: '3110'
 ht-degree: 0%
 
 ---
 
 # Huvudkomponentversioner {#core-components-versions}
 
-Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html?lang=sv-SE) och [&#x200B; AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html?lang=sv-SE)-installationer på plats.
+Core-komponenterna är kompatibla med [AEM as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/landing/home.html) och [ AEM](https://experienceleague.adobe.com/docs/experience-manager-65/user-guide/home.html)-installationer på plats.
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
@@ -26,6 +26,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 
 | Frigör | Beskrivning | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service | Java | Releasedatum |
 |---|---|---|---|---|---|---|---|
+| [2.30.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.30.2) | Den här versionen korrigerade en olokaliserad sträng som är relaterad till PDF-visningsprogrammet. | - | 6.5.21.0+ | 6,5 LTS GA | Kontinuerlig | 8, 11 | 23 oktober 2025 |
 | [2.30.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.30.0) | Den här versionen åtgärdade ett antal problem med resurser och dynamiska media, klargör LTS-stödet och åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | 6,5 LTS GA | Kontinuerlig | 8, 11 | 4 september 2025 |
 | [2.29.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.29.0) | I den här versionen finns stöd för redigering av förhandsgranskningsversioner av resurser i kärnkomponenten för webbplatser, och många felkorrigeringar har åtgärdats. | - | 6.5.21.0+ | 6,5 LTS GA | Kontinuerlig | 8, 11 | 21 april 2025 |
 | [2.28.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.28.0) | Den här versionen åtgärdar flera felkorrigeringar. | - | 6.5.21.0+ | 6,5 LTS GA | Kontinuerlig | 8, 11 | 17 mars 2025 |
@@ -49,7 +50,7 @@ Följande tabell, vars innehåll är [tillgängligt på GitHub med fullständig 
 | [2.22.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.2) | Det här är en underhållsversion som åtgärdar två problem som introducerades i 2.22.0 | - | 6.5.14.0+ | - | Kontinuerlig | 8, 11 | 31 mars 2023 |
 | [2.22.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.22.0) | Den här versionen innehåller en ny version av [List Component](/help/components/list.md) plus förbättringar av [Teaser](/help/components/teaser.md) och uppdatering av [PDF Viewer](/help/components/pdf-viewer.md) och [Carousel](/help/components/carousel.md) | - | 6.5.14.0+ | - | Kontinuerlig | 8, 11 | 9 februari 2023 |
 | [2.21.2](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.2) | Det här är en korrigeringsrelease som åtgärdar ett problem med v1 och v2 [Teaser Components.](/help/components/teaser.md) | - | 6.5.13.0+ | - | Kontinuerlig | 8, 11 | 12 september 2022 |
-| [2.21.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.0) | Den här versionen innehåller ett antal förbättringar, bland annat publicering av LinkHandler-API:t, förbättringar av [Image Component](/help/components/image.md) och [&#x200B; Data Layer,](/help/developing/data-layer/overview.md) samt förbättringar av komponenter för flera paneler. | - | 6.5.13.0+ | - | Kontinuerlig | 8, 11 | 12 september 2022 |
+| [2.21.0](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.21.0) | Den här versionen innehåller ett antal förbättringar, bland annat publicering av LinkHandler-API:t, förbättringar av [Image Component](/help/components/image.md) och [ Data Layer,](/help/developing/data-layer/overview.md) samt förbättringar av komponenter för flera paneler. | - | 6.5.13.0+ | - | Kontinuerlig | 8, 11 | 12 september 2022 |
 | [2.20.8](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.8) | Den här versionen åtgärdar ett problem med leveransen av SVG-bilder via AdaptiveImageServlet. | - | 6.5.13.0+ | - | Kontinuerlig | 8, 11 | 4 augusti 2022 |
 | [2.20.6](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.6) | Den här korrigeringsversionen åtgärdar ett problem med den nya komponenten [Innehållsförteckning.](/help/components/tableofcontents.md) | - | 6.5.13.0+ | - | Kontinuerlig | 8, 11 | 7 juli 2022 |
 | [2.20.4](https://github.com/adobe/aem-core-wcm-components/releases/tag/core.wcm.components.reactor-2.20.4) | Den här korrigeringsversionen åtgärdar ett problem med den nya komponenten [Innehållsförteckning.](/help/components/tableofcontents.md) | - | 6.5.13.0+ | - | Kontinuerlig | 8, 11 | 29 juni 2022 |
@@ -187,4 +188,4 @@ Mer information om stöd för komponentanpassningar finns på sidan [Anpassa kä
 
 Adobe betoning på utveckling har gått över till kärnkomponenterna och nya funktioner kommer att läggas till.
 
-[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html?lang=sv-SE) och endast större felkorrigeringar kommer att övervägas för Foundation-komponenterna som fortsätter.
+[Nästan alla Foundation-komponenter har ersatts med AEM 6.5](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/default-components-foundation.html) och endast större felkorrigeringar kommer att övervägas för Foundation-komponenterna som fortsätter.

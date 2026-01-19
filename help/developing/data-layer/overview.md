@@ -4,9 +4,9 @@ description: Använda Adobe Client Data Layer med Core Components
 feature: Core Components, Adobe Client Data Layer
 role: Architect, Developer, Admin
 exl-id: 55c984d3-deb7-4eda-a81d-7768791d2b46
-source-git-commit: 5994133947ff697f7c866fe61598c58e37e77008
+source-git-commit: 8f0ece0eed42f72e919535c6da6e729e54d1d339
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -119,6 +119,10 @@ id: {                   // component ID
     parentId            // parent component ID
 }
 ```
+
+>[!NOTE]
+>
+>Det här schemat är det generiska komponentobjektschemat som används som basmönster för flera kärnkomponenter. Detta garanterar inte att alla listade komponenter fyller i alla dessa fält i varje objekt.
 
 Följande [händelse](#events) är relevant för schema för komponent-/behållarobjekt:
 
@@ -309,7 +313,7 @@ window.adobeDataLayer.push(function (dl) {
 
 ## Självstudiekurs
 
-Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Kolla in den här självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=sv-SE).
+Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Kolla in den här självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
 
 >[!TIP]
 >
