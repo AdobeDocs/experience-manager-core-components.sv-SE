@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - kryssruta
 description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
 role: Architect, Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: 2be68aa708131486f7d89f33952153a7a90c3d0a
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1817'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ En kryssruta representeras vanligtvis som en liten fyrkant som du kan aktivera e
 
 >[!NOTE]
 >
-> För AEM 6.5 Forms introducerades den här komponenten med AEM 6.5 Forms Service Pack 19 (6.5.19.0). Om du vill aktivera den här komponenten kontrollerar du att de nödvändiga versionerna av både Forms Core Components och WCM Core Components är installerade. Mer information om de olika versionerna av adaptiva Forms Core-komponenter finns i [Adaptiva Forms Core-komponentreleaser](/help/adaptive-forms/version.md)
+> För AEM 6.5 Forms introducerades den här komponenten med AEM 6.5 Forms Service Pack 19 (6.5.19.0). Mer information om de olika versionerna av adaptiva Forms Core-komponenter finns i [Adaptiva Forms Core-komponentreleaser](/help/adaptive-forms/version.md)
 
 {{traditional-aem}}
 
