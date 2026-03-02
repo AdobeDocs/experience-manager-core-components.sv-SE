@@ -144,8 +144,8 @@ ht-degree: 0%
    + [Aktivera valideringsmönster för textinmatning](/help/adaptive-forms/enable-validation-patterns.md)
 + Utvecklar {#developing}
    + [Utveckla kärnkomponenter](/help/developing/overview.md)
-   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
-   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=sv-SE)
+   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
    + [Anpassa kärnkomponenter](/help/developing/customizing.md)
    + [Riktlinjer för komponenter](/help/developing/guidelines.md)
    + [Stöd för AMP](/help/developing/amp.md)
