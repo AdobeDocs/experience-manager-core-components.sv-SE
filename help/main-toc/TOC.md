@@ -1,14 +1,14 @@
 ---
 sub-product: AEM Core Components
-user-guide-title: Grundläggande komponenter i AEM
-breadcrumb-title: Användarhandbok om grundläggande komponenter
+user-guide-title: AEM Core Components
+breadcrumb-title: Guide för kärnkomponenter
 feature: Core Components
-user-guide-description: För traditionella AEM-projekt, använd de utökningsbara grundläggande komponenterna för att låta upphovsmän enkelt skapa innehåll.
+user-guide-description: För traditionella AEM-projekt använder du de utbyggbara Core Components som gör det enkelt att skapa innehåll.
 feature-set: Experience Manager Sites, Experience Manager Forms
-source-git-commit: bf6953f24388ed08cd5a66bb51011b3ac82fb58e
+source-git-commit: 1ac3d987337f8279e762ab5357d32bb732dea0be
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 6%
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 6%
    + [Dragspel](/help/components/accordion.md)
    + [Breadcrumb](/help/components/breadcrumb.md)
    + [Knapp](/help/components/button.md)
-   + [Karusell](/help/components/carousel.md)
+   + [Carousel](/help/components/carousel.md)
    + [Behållare](/help/components/container.md)
    + [Innehållsfragment](/help/components/content-fragment-component.md)
    + [Innehållsfragmentlista](/help/components/content-fragment-list.md)
@@ -141,10 +141,11 @@ ht-degree: 6%
       + [Sidfot](/help/adaptive-forms/components/footer.md)
    + [Anpassa adaptiva Forms Core-komponenter](/help/developing/customize-adaptive-forms-core-components.md)
    + [Exempelteman och mallar](/help/adaptive-forms/sample-themes-templates-form-data-models-core-components.md)
+   + [Aktivera valideringsmönster för textinmatning](/help/adaptive-forms/enable-validation-patterns.md)
 + Utvecklar {#developing}
    + [Utveckla kärnkomponenter](/help/developing/overview.md)
-   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html?lang=sv-SE)
-   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
+   + [Sökvägar till lyckade](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/success.html)
+   + [WKND Developer Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
    + [Anpassa kärnkomponenter](/help/developing/customizing.md)
    + [Riktlinjer för komponenter](/help/developing/guidelines.md)
    + [Stöd för AMP](/help/developing/amp.md)
