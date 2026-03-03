@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: e9354f24e1f2f8cd1e899dbd999e80406b5ce2bc
 workflow-type: tm+mt
-source-wordcount: '2135'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -49,9 +49,15 @@ Core-komponenten för den adaptiva Forms-alternativknappen släpptes i februari 
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
+| v2 | Kompatibel med <br>[version 3.0.142](/help/adaptive-forms/version.md) och senare | |
 | v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
 
+
 Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
+
+>[!NOTE]
+>
+> v1-versionen av CheckBox Group Core Component stöder WCAG 2.1, som fokuserar på att göra innehåll tillgängligt genom att följa bästa praxis för användbarhet och läsbarhet. v2-versionen har stöd för WCAG 2.2, som går ett steg längre genom att betona tydlig, förutsägbar och otvetydig tillgänglighet genom logisk och semantisk gruppering av relaterade fält, vilket gör det till ett kritiskt krav för inkluderande formulärdesign.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -166,6 +172,16 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
    - **Ta bort**: Tryck eller klicka för att ta bort det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
    - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
+
+## Fältuppsättningar och förklaringsstöd för alternativknappar (v2)
+
+<span class="preview"> Den här funktionen är tillgänglig via programmet Tidig åtkomst. Om du vill begära åtkomst skickar du ett e-postmeddelande från din officiella adress till [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+Adaptiva Forms Core-komponenter använder semantiska `<fieldset>`- och `<legend>` HTML-element för att förbättra tillgängligheten för alternativknappsgrupper. Med dessa element kan skärmläsare tolka formulärstrukturen korrekt och förmedla relationerna mellan gruppetiketter och deras alternativ.
+
+Radio button (v2) components render within a `<fieldset>` element, with the group label wrapped in a `<legend>` as its first child. Överflödiga eller ogiltiga ARIA-attribut tas bort och enskilda etiketter kopplas korrekt till respektive indata. Detta gör att skärmläsare läser upp varje alternativknappsetikett tydligt, tillsammans med gruppsammanhanget.
+
+![alternativknapp](/help/adaptive-forms/assets/radiobutton-fieldset.png)
 
 ## Relaterade artiklar {#related-articles}
 

@@ -3,9 +3,9 @@ title: Adaptiv Forms Core-komponent - kryssrutegrupp
 description: Använda eller anpassa den adaptiva Forms Checkbox Group Core Component.
 role: Architect, Developer, Admin, User
 exl-id: 2ced0223-e664-470b-a400-b6865d3a67c9
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: e9354f24e1f2f8cd1e899dbd999e80406b5ce2bc
 workflow-type: tm+mt
-source-wordcount: '2101'
+source-wordcount: '2315'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,14 @@ Gruppen Core Component (Core-komponent) för adaptiv Forms-kryssruta släpptes i
 
 | Komponentversion | AEM as a Cloud Service | AEM 6.5.16.0 Forms eller senare |
 |---|---|---|
+| v2 | Kompatibel med <br>[version 3.0.142](/help/adaptive-forms/version.md) och senare | |
 | v1 | Kompatibel med <br>[version 2.0.4](/help/adaptive-forms/version.md) och senare | Kompatibel med <br>[version 1.1.12](/help/adaptive-forms/version.md) och senare, men mindre än 2.0.0. |
 
 Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
+
+>[!NOTE]
+>
+> v1-versionen av CheckBox Group Core Component stöder WCAG 2.1, som fokuserar på att göra innehåll tillgängligt genom att följa bästa praxis för användbarhet och läsbarhet. v2-versionen har stöd för WCAG 2.2, som går ett steg längre genom att betona tydlig, förutsägbar och otvetydig tillgänglighet genom logisk och semantisk gruppering av relaterade fält, vilket gör det till ett kritiskt krav för inkluderande formulärdesign.
 
 <!-- ## Sample Component Output {#sample-component-output}
 
@@ -173,9 +178,19 @@ Med anpassade egenskaper kan du koppla anpassade attribut (nyckelvärdepar) till
 
    - **Ordna om**: Tryck eller klicka och dra för att ändra ordningen på det anpassade egenskapsnamnet och det anpassade egenskapsvärdet.
 
+## Stöd för fält och förklaringar för kryssrutegrupp(v2)
+
+<span class="preview"> Den här funktionen är tillgänglig via programmet Tidig åtkomst. Om du vill begära åtkomst skickar du ett e-postmeddelande från din officiella adress till [aem-forms-ea@adobe.com](mailto:aem-forms-ea@adobe.com). </span>
+
+Adaptiva Forms Core-komponenter använder semantiska `<fieldset>`- och `<legend>` HTML-element för att förbättra tillgängligheten för kryssrutegrupper. Med dessa element kan skärmläsare tolka formulärstrukturen korrekt och förmedla relationerna mellan gruppetiketter och deras alternativ.
+
+Checkbox group(v2) component render within a `<fieldset>` element, with the group label wrapped in a `<legend>` as its first child. Den här strukturen gör att skärmläsare meddelar gruppetiketten innan de läser enskilda kryssrutealternativ, vilket gör det enklare för användare med hjälpmedelstekniker att förstå kontexten och syftet med varje alternativ.
+
+![kryssrutefältuppsättning](/help/adaptive-forms/assets/checkbox-fieldset.png)
+
 ## Relaterade artiklar {#related-articles}
 
-{{more-like-this}})
+{{more-like-this}}
 
 ## Se även {#see-also}
 
