@@ -3,9 +3,9 @@ title: Innehållsförteckning, komponent
 description: Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras på rubrikerna i sidinnehållet, vilket gör att läsarna snabbt kan navigera på sidan.
 role: Architect, Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
-source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
+source-git-commit: 1987431c99a1e4b834c86ea731c52a19909b297b
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om innehållsförteckningskomponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
+Den senaste tekniska dokumentationen om innehållsförteckningskomponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 
@@ -85,8 +85,4 @@ Med hjälp av designdialogrutan kan mallskaparen ange standardvärdet för namno
 
 ### Fliken Format {#styles-tab}
 
-Innehållsförteckningskomponenten har stöd för AEM [Style System](/help/get-started/authoring.md#component-styling).
-
-## Adobe Client Data Layer {#data-layer}
-
-Innehållsförteckningskomponenten har stöd för [Adobe-klientdatalagret.](/help/developing/data-layer/overview.md)
+Innehållsförteckningskomponenten stöder AEM [Style System.](/help/get-started/authoring.md#component-styling).
