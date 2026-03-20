@@ -71,7 +71,7 @@ Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resurse
 
 Den inbäddade komponenten levereras med processorer för följande typer av resurser:
 
-* Resurser som följer standarden [Inkludera ](https://oembed.com/), inklusive Facebook Post, Instagram, SoundCloud, Twitter och YouTube
+* Resurser som följer standarden [Inkludera &#x200B;](https://oembed.com/), inklusive Facebook Post, Instagram, SoundCloud, Twitter och YouTube
 * Pinterest
 
 Utvecklare kan lägga till ytterligare URL-processorer genom att [följa utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)

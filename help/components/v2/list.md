@@ -193,7 +193,7 @@ Aktivera alternativet Länka objekt i [redigeringsdialogrutan](#edit-dialog)
 * **Visa beskrivningar**
 Aktivera alternativet Visa beskrivningar i [redigeringsdialogrutan](#edit-dialog)
 * **Visa datum**
-Aktivera alternativet Visa datum i dialogrutan [redigera ](#edit-dialog)
+Aktivera alternativet Visa datum i dialogrutan [redigera &#x200B;](#edit-dialog)
 
 ### Fliken Format {#styles-tab}
 

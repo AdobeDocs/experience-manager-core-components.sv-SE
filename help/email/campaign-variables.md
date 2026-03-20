@@ -27,7 +27,7 @@ Listan med tillgängliga anpassningsfält synkroniseras med din Adobe Campaign-i
 Dialogrutan Välj Adobe Campaign-variabel är tillgänglig i många redigeringsdialogrutor för e-postkärnkomponenter. Om du vill använda den klickar du på ikonen **Välj Adobe Campaign-variabel** bredvid det aktuella fältet. Den här ikonen kan ha två former.
 
 ![Adobe Campaign-knapp](/help/email/assets/campaign-button.png)
-![Välj Adobe Campaign-variabelikon ](/help/email/assets/select-adobe-campaign-variable-icon.png)
+![Välj Adobe Campaign-variabelikon &#x200B;](/help/email/assets/select-adobe-campaign-variable-icon.png)
 
 Om du klickar på båda ikonerna öppnas dialogrutan **Välj Adobe Campaign-variabel**.
 

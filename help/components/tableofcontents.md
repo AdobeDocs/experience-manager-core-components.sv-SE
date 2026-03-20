@@ -47,7 +47,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om innehållsförteckningskomponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
+Den senaste tekniska dokumentationen om innehållsförteckningskomponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

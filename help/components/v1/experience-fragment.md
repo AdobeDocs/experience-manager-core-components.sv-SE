@@ -108,7 +108,7 @@ Om du vill visa Experience Fragment-komponenten och se exempel på dess konfigur
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Experience Fragment-komponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_xf_v1).
+Den senaste tekniska dokumentationen om Experience Fragment-komponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_xf_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

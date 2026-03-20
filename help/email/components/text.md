@@ -21,7 +21,7 @@ E-posttextkomponenten är en textredigerings- och dispositionskomponent med funk
 E-posttextkomponenten är en robust textredigerare som gör det enkelt att redigera text i en förenklad, textbunden redigerare och i ett helskärmsformat.
 
 * Dialogrutan [Redigera](#edit-dialog) innehåller redigeringsfunktioner i rad med begränsade alternativ med full funktionalitet i redigeringsdialogrutan i helskärmsläge.
-* Med hjälp av designdialogrutan [kan ](#design-dialog)-textformateringsalternativ som rubriker, specialtecken och styckeformat konfigureras för mallen för innehållsförfattaren.
+* Med hjälp av designdialogrutan [kan &#x200B;](#design-dialog)-textformateringsalternativ som rubriker, specialtecken och styckeformat konfigureras för mallen för innehållsförfattaren.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 

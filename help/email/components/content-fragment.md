@@ -22,7 +22,7 @@ Med e-postinnehållets fragmentkomponent kan du inkludera ett [innehållsfragmen
 
 * Fragmentet och dess egenskaper kan väljas i dialogrutan [Konfigurera.](#configure-dialog)
 * Resurstyper för att hantera vissa bilder och stödraster kan definieras i dialogrutan [Design.](#design-dialog)
-* Redigeringsalternativet öppnar det valda fragmentet i [innehållsfragmentredigeraren ](#edit-dialog), som är anpassad för användning med e-postkärnkomponenterna.
+* Redigeringsalternativet öppnar det valda fragmentet i [innehållsfragmentredigeraren &#x200B;](#edit-dialog), som är anpassad för användning med e-postkärnkomponenterna.
 
 ## Version och kompatibilitet {#version-and-compatibility}
 

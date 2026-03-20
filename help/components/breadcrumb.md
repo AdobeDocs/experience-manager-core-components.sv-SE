@@ -43,11 +43,11 @@ Om du vill visa Breadcrumb-komponenten och se exempel på dess konfigurationsalt
 
 >[!NOTE]
 >
->Från och med Core Components version 2.1.0 stöder Breadcrumb-komponenten [schema.org ](https://schema.org/BreadcrumbList).
+>Från och med Core Components version 2.1.0 stöder Breadcrumb-komponenten [schema.org &#x200B;](https://schema.org/BreadcrumbList).
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Breadcrumb-komponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v3).
+Den senaste tekniska dokumentationen om Breadcrumb-komponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v3).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

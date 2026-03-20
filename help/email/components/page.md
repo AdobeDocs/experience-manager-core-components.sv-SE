@@ -20,7 +20,7 @@ Sidkomponenten för e-post är en utökningsbar sidkomponent som är utformad f�
 
 Sidkomponenten E-post utgör grunden för alla sidor som utformats med e-postkärnkomponenter och redigerbara mallar. Genom att använda Sidkomponent för e-post kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra huvudkomponenterna för e-post.
 
-* Med hjälp av designdialogrutan [kan ](#design-dialog) anpassade klientbibliotek definieras för sidan.
+* Med hjälp av designdialogrutan [kan &#x200B;](#design-dialog) anpassade klientbibliotek definieras för sidan.
 * Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, eftersom e-postsidkomponenten är själva sidan, är [redigeringsdialogrutan](#edit-dialog) för e-postsidkomponenten sidegenskapsfönstret.
 
 ## Version och kompatibilitet {#version-and-compatibility}

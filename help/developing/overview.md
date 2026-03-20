@@ -18,7 +18,7 @@ Med Core Components får du robusta och utbyggbara baskomponenter med funktionsr
 
 ## Så här lyckas du med kärnkomponenterna {#how-to-succeed}
 
-Core Components är kraftfulla, flexibla och enkla att använda och anpassa. [Om du följer några viktiga riktlinjer ](success.md) ser du till att ditt projekt med kärnkomponenterna fungerar som det ska.
+Core Components är kraftfulla, flexibla och enkla att använda och anpassa. [Om du följer några viktiga riktlinjer &#x200B;](success.md) ser du till att ditt projekt med kärnkomponenterna fungerar som det ska.
 
 ## Migrera till kärnkomponenterna
 
