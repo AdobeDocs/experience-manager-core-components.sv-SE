@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Adaptiv komponent för formulärfragment {#form-fragment-component-adaptive-forms-core-component}
 
-Adaptiv Forms är ett bekvämt sätt att skapa formulärsegment, t.ex. paneler eller fältgrupper, så att de kan återanvändas i olika adaptiva Forms. Dessa återanvändbara och fristående segment kallas [adaptiva formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html).
+Adaptiv Forms är ett bekvämt sätt att skapa formulärsegment, t.ex. paneler eller fältgrupper, så att de kan återanvändas i olika adaptiva Forms. Dessa återanvändbara och fristående segment kallas [adaptiva formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE).
 
-Du kan [lägga till ett fragment flera gånger i ett dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#insert-a-fragment-in-an-adaptive-form) och använda databindningsegenskaper för dess komponenter för att länka det till olika datakällor eller scheman. Du kan till exempel använda samma adressfragment för permanent adress, kommunikations- och faktureringsadress och ansluta det till olika fält i en datakälla eller ett schema.
+Du kan [lägga till ett fragment flera gånger i ett dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE#insert-a-fragment-in-an-adaptive-form) och använda databindningsegenskaper för dess komponenter för att länka det till olika datakällor eller scheman. Du kan till exempel använda samma adressfragment för permanent adress, kommunikations- och faktureringsadress och ansluta det till olika fält i en datakälla eller ett schema.
 
 ![exempel](/help/adaptive-forms/assets/using-multiple-fragment-af.gif)
 
 
-Du kan också använda alternativet [repeterbarhet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) för att duplicera formulärfragmentkomponenten och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär.
+Du kan också använda alternativet [repeterbarhet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) för att duplicera formulärfragmentkomponenten och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär.
 
 >[!NOTE]
 >
-> Du kan [skapa ett adaptivt formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#create-a-fragment) från början eller spara en panel i ett befintligt adaptivt formulär som fragment.
+> Du kan [skapa ett adaptivt formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE#create-a-fragment) från början eller spara en panel i ett befintligt adaptivt formulär som fragment.
 
 {{traditional-aem}}
 

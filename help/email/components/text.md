@@ -43,13 +43,13 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 ## E-posttextkomponenten och RTF-redigeraren {#the-text-component-and-the-rich-text-editor}
 
-Komponenten för e-posttext använder AEM RTF-redigeraren. RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html) och [Konfigurera plugin-programmen för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Komponenten för e-posttext använder AEM RTF-redigeraren. RTE ger innehållsförfattare ett stort antal funktioner för att redigera textinnehåll. RTE är flexibelt i sin konfiguration och erbjuder ett antal alternativ. Mer information om hur textredigeraren kan konfigureras finns i artiklarna [Konfigurera textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/rich-text-editor.html?lang=sv-SE) och [Konfigurera plugin-programmen för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=sv-SE).
 
 Resten av det här dokumentet demonstrerar standardkonfigurationen för e-posttextkomponenten med den färdiga RTE-konfigurationen.
 
 >[!NOTE]
 >
->Endast alternativ som har aktiverats av [gränssnittskonfigurationer för RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html) är tillgängliga i e-posttextkomponenten.
+>Endast alternativ som har aktiverats av [gränssnittskonfigurationer för RTE](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=sv-SE) är tillgängliga i e-posttextkomponenten.
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -281,7 +281,7 @@ Används för att justera en infogad bild.
 
 Används för att kontrollera stavningen i textinnehållet. Eventuella felstavningar stryks under med brutna, röda linjer.
 
-Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html).
+Mer information om stavningskontroll och anpassning av stavningskontrollordlistor finns i dokumentet [Konfigurera plugin-program för textredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/configuring-and-extending/configure-rich-text-editor-plug-ins.html?lang=sv-SE).
 
 #### Specialtecken {#special-characters}
 

@@ -29,7 +29,7 @@ E-post är en del av varumärkesupplevelsen och kundresan. Med e-postkärnkompon
 
 ## Funktioner {#features}
 
-* De centrala e-postkomponenterna är baserade på [kärnkomponenterna](/help/introduction.md) och stöder därför även [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och [formatsystemet.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html)
+* De centrala e-postkomponenterna är baserade på [kärnkomponenterna](/help/introduction.md) och stöder därför även [redigerbara mallar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) och [formatsystemet.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/style-system.html?lang=sv-SE)
 * Det finns [tio e-postoptimerade produktionsklara komponenter](#components) som kan användas för att skapa e-postinnehåll.
 * De centrala e-postkomponenterna erbjuder avancerad personalisering tack vare infogningen av [Adobe Campaign-variabler](campaign-variables.md) i de flesta dialogrutefält.
 * Den flexibla [segmenteringskomponenten](/help/email/components/segmentation.md) möjliggör avancerad segmentering av ditt innehåll.

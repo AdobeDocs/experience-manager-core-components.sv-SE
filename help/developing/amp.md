@@ -41,7 +41,7 @@ AMP-stödet ger stor flexibilitet, men för att komma igång snabbt krävs bara 
 
 ### Aktivera AMP för sidor {#enabling-amp}
 
-Om du vill aktivera AMP för en sida måste **AMP-läget** väljas i [Sidprincipen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-page-policy-template-author-developer)
+Om du vill aktivera AMP för en sida måste **AMP-läget** väljas i [Sidprincipen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE#editing-a-template-page-policy-template-author-developer)
 
 ![Alternativ för AMP-sidprincip](/help/assets/amp-policy.png)
 
@@ -49,7 +49,7 @@ Om du vill aktivera AMP för en sida måste **AMP-läget** väljas i [Sidprincip
 * **Parade AMP** - Sidan levereras som både AMP och HTML.
 * **Endast AMP** - Sidan levereras endast som AMP.
 
-AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) för en enskild sida.
+AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE) för en enskild sida.
 
 ![Sidegenskaper för AMP](/help/assets/amp-page-properties.png)
 

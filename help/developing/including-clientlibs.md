@@ -28,7 +28,7 @@ Core Components innehåller följande klientbibliotek som är färdiga.
 
 ## Inkluderar klientbibliotek {#including}
 
-Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/front-end.md#clientlibs) beroende på ditt användningssätt. Följande är exempel med exempel på [HTML-fragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) för varje.
+Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/front-end.md#clientlibs) beroende på ditt användningssätt. Följande är exempel med exempel på [HTML-fragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) för varje.
 
 ### Rekommenderad standardanvändning {#recommended-default-usage}
 

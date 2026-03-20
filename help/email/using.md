@@ -41,8 +41,8 @@ När du har installerat Core Components bör du slutföra två viktiga konfigura
 Du måste konfigurera integreringen mellan AEM och Adobe Campaign för att de två lösningarna ska kunna kommunicera.
 
 * Konfigurera Adobe Campaign-integreringen
-   * Adobe Campaign Classic: [Integrera med Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html)
-   * Adobe Campaign Standard: [Integrera med Adobe Campaign Standard](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignstandard.html)
+   * Adobe Campaign Classic: [Integrera med Adobe Campaign Classic](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignonpremise.html?lang=sv-SE)
+   * Adobe Campaign Standard: [Integrera med Adobe Campaign Standard](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/campaignstandard.html?lang=sv-SE)
 * [Länka integrationskonfigurationen för Adobe Campaign](/help/email/components/page.md#cloud-services-tab) till innehållssidan där du ska använda kärnkomponenterna för e-post
 
 ### Lägg till AEM-resurstypfilter för e-postkomponenter {#aem-resource-filter}
@@ -71,13 +71,13 @@ När e-postkomponenterna har installerats och integreringen med Adobe Campaign h
 | Steg | Beskrivning | Lösning |
 |---|---|---|
 | 1 | Författare skapar en kostnadsfri hierarkisk struktur med mappar och e-postinnehåll som sidor. | AEM |
-| 2 | Med mallredigeraren [konfigurerar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) författare ett e-posthuvud och/eller en sidfot som ska delas mellan alla e-postsidor som skapas från den här sidmallen. | AEM |
-| 3 | Författare använder [sidredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html) för att skapa e-postinnehåll med textredigeraren där de kan välja Adobe Campaign-variabler och använda Segmenteringskomponenten för att visa villkorsstyrd information om mottagaren uppfyller vissa villkor. | AEM |
-| 4 | När e-postinnehållet är klart körs [ett arbetsflöde](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/workflows/overview.html) för att godkänna innehållet och skicka det till Campaign. | AEM |
+| 2 | Med mallredigeraren [konfigurerar](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) författare ett e-posthuvud och/eller en sidfot som ska delas mellan alla e-postsidor som skapas från den här sidmallen. | AEM |
+| 3 | Författare använder [sidredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/fundamentals/editing-content.html?lang=sv-SE) för att skapa e-postinnehåll med textredigeraren där de kan välja Adobe Campaign-variabler och använda Segmenteringskomponenten för att visa villkorsstyrd information om mottagaren uppfyller vissa villkor. | AEM |
+| 4 | När e-postinnehållet är klart körs [ett arbetsflöde](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/workflows/overview.html?lang=sv-SE) för att godkänna innehållet och skicka det till Campaign. | AEM |
 | 5 | En leverans skapas som definierar en lista med mottagare. | Campaign |
 | 6 | Innehållet som skapas i AEM väljs som innehåll i leveransen. | Campaign |
 | 7 | Innehållet skickas till mottagarna och Adobe Campaign-variablerna ersätts med mottagarnas personliga information. | Campaign |
 
 Ett exempel på hur du skapar e-postinnehåll i AEM och levererar i Adobe Campaign finns i följande resurser.
 
-* AEM 6.5: [Arbeta med Adobe Campaign Classic och Adobe Campaign Standard](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/aem-adobe-campaign/campaign.html)
+* AEM 6.5: [Arbeta med Adobe Campaign Classic och Adobe Campaign Standard](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/aem-adobe-campaign/campaign.html?lang=sv-SE)

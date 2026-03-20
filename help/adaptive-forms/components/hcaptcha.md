@@ -80,13 +80,13 @@ Du kan enkelt anpassa egenskaperna för din hCaptcha-komponent med hjälp av dia
 
 **Lär dig mer** om andra **Captcha-komponenter** och deras tjänster, till exempel:
 
-- [Använd hCaptcha i anpassad form för kärnkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)
+- [Använd hCaptcha i anpassad form för kärnkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/integrate-adaptive-forms-hcaptcha-core-components)
 
-- [Använd Captcha i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-hcaptcha)
+- [Använd Captcha i ett adaptivt formulär för Foundation-komponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-hcaptcha)
 
-- [Använd Turnstle CAPTCHA i ett adaptivt format för grundkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-turnstile)
+- [Använd Turnstle CAPTCHA i ett adaptivt format för grundkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-components-to-an-adaptive-form/integrate-adaptive-forms-turnstile)
 
-- [Använd Google reCAPTCHA i ett adaptivt formulär för grundkomponenter](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)
+- [Använd Google reCAPTCHA i ett adaptivt formulär för grundkomponenter](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components)
 
 ## Relaterade artiklar {#related-articles}
 

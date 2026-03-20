@@ -54,7 +54,7 @@ I dialogrutan Konfigurera kan innehållsförfattaren definiera behållarobjektet
 
 * **Layout** - Det här alternativet definierar beteendet eller layoutbeteendet för behållarkomponenten.
    * **Enkel** - Definierar en behållare som en enkel samling komponenter
-   * **Responsivt stödraster** - Definierar en behållare som en [AEM responsiv layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html)
+   * **Responsivt stödraster** - Definierar en behållare som en [AEM responsiv layout](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/responsive-layout.html?lang=sv-SE)
 * **Bakgrundsfärg** - Definierbar antingen som RGB-värden med valfri form eller med färgväljaren, [beroende på konfiguration](#background-tab)
 * **Bakgrundsbild** - Definierar en bakgrundsfärg för behållaren, [beroende på konfiguration](#background-tab)
 * **ID** - Med det här alternativet kan du styra den unika identifieraren för komponenten i HTML och i [datalagret](/help/developing/data-layer/overview.md).
@@ -70,11 +70,11 @@ I designdialogrutan kan mallskaparen definiera de alternativ som är tillgängli
 
 Fliken **Tillåtna komponenter** används för att definiera vilka komponenter som kan läggas till som objekt i behållarkomponenten av innehållsförfattaren.
 
-Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html)
+Fliken Tillåtna komponenter fungerar på samma sätt som fliken med samma namn när [du definierar principen och egenskaperna för en layoutbehållare i mallredigeraren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE)
 
 ### Fliken Standardkomponenter {#default-components-tab}
 
-Fliken Standardkomponenter används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, på ungefär [hur standardkomponenter definieras på sidmallen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Fliken Standardkomponenter används för att definiera vilken komponent som läggs till i komponenten när en viss resurstyp släpps i behållaren, på ungefär [hur standardkomponenter definieras på sidmallen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE).
 
 ### Fliken Responsiva inställningar {#responsive-settings-tab}
 

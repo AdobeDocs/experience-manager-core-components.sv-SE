@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Sidkomponent{#page-component}
 
-Sidkomponenten är en utökningsbar sidkomponent som är avsedd att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
+Sidkomponenten är en utökningsbar sidkomponent som är avsedd att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
 
 {{traditional-aem}}
 
@@ -39,7 +39,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 ## Progressivt stöd för webbappar {#pwa-support}
 
-I version 2.15.0 av Core Components introducerades stöd för AEM as a Cloud Service inbyggda [Progressiva webbprogram (PWA).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html) Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM-upplevelse till en PWA!
+I version 2.15.0 av Core Components introducerades stöd för AEM as a Cloud Service inbyggda [Progressiva webbprogram (PWA).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html?lang=sv-SE) Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM-upplevelse till en PWA!
 
 ### Teknisk information {#technical-details}
 
@@ -49,7 +49,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
+Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE).
 
 ## Designdialogruta {#design-dialog}
 
@@ -84,7 +84,7 @@ Bibliotek kan konfigureras för både fälten **Klientbibliotek** och **Klientbi
 * Om du vill ta bort ett fält klickar du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html).
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/clientlibs.html).
 
 >[!CAUTION]
 >

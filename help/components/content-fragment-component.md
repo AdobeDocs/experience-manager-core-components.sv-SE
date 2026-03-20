@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Innehållsfragmentkomponent{#content-fragment-component}
 
-Komponenten Core Component Content Fragment gör det möjligt att visa ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
+Komponenten Core Component Content Fragment gör det möjligt att visa ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE).
 
 >[!NOTE]
 >
@@ -23,11 +23,11 @@ Komponenten Core Component Content Fragment gör det möjligt att visa ett [inne
 
 ## Användning {#usage}
 
-Komponenten Core Component Content Fragment tillåter att ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) inkluderas på en sida.
+Komponenten Core Component Content Fragment tillåter att ett [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE) inkluderas på en sida.
 
 * Fragmentet och dess egenskaper kan väljas i dialogrutan [Konfigurera](#configure-dialog).
 * Resurstyper för att hantera vissa bilder och stödraster kan definieras i [designdialogrutan](#design-dialog).
-* Redigeringsalternativet öppnar det markerade fragmentet i [redigeraren för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html).
+* Redigeringsalternativet öppnar det markerade fragmentet i [redigeraren för innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments-variations.html?lang=sv-SE).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 

@@ -26,7 +26,7 @@ Core Component Social Sharing Component Component är en delningswidget för Fac
 
 Delningskomponenten för sociala medier lägger till länkar för delning mellan Facebook och Pinterest på sidan. Den ingår ofta i sidhuvuden och sidfötter.
 
-Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via [Inledande sidesegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och av innehållsförfattaren via [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
+Till skillnad från andra komponenter görs inställningarna för komponenten för delning via sociala medier av mallskaparen via [Inledande sidesegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) och av innehållsförfattaren via [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -55,8 +55,8 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
    * Om ett ID anges är det författarens ansvar att se till att det är unikt.
    * Om du ändrar ID:t kan det påverka spårningen av CSS, JS och datalager.
 
-Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är ytterligare redigeringsalternativ för delningskomponenten tillgängliga via delningsfliken i [sidegenskaperna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) för innehållsförfattaren.
+Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är ytterligare redigeringsalternativ för delningskomponenten tillgängliga via delningsfliken i [sidegenskaperna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE) för innehållsförfattaren.
 
 ## Designdialogruta {#design-dialog}
 
-Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är designalternativen för delningskomponenten tillgängliga för mallskaparen via de [ursprungliga sidegenskaperna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
+Eftersom delning kräver särskilda sidhuvuden måste delning vara aktiverat på sidnivå. Därför är designalternativen för delningskomponenten tillgängliga för mallskaparen via de [ursprungliga sidegenskaperna](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE).

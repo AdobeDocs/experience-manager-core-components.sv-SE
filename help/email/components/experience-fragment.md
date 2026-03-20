@@ -41,11 +41,11 @@ Mer information om e-postkärnkomponentens versioner och versioner finns i dokum
 
 Komponenten för e-postupplevelsefragment anpassar sig till lokaliserade innehållsstrukturer och återger rätt Experience Fragment baserat på innehållets lokalisering. För att göra detta måste Experience Fragment uppfylla följande villkor.
 
-* E-postupplevelsefragmentkomponenten har lagts till i en [sidmall.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/templates.html)
+* E-postupplevelsefragmentkomponenten har lagts till i en [sidmall.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/authoring/features/templates.html?lang=sv-SE)
 * Den mallen används för att skapa en ny innehållssida som är en del av en lokaliserad struktur under `/content/<site>`.
 * Experience Fragment som refereras på en innehållssida är en del av en lokaliserad Experience Fragment-struktur under `/content/experience-fragments` som följer samma mönster som webbplatsen under `/content/<site>`, inklusive användning av samma komponentnamn.
 
-I det här fallet återges fragmentet med samma lokalisering ([språk, utkast eller live-kopia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html)) som den aktuella sidan som en del av mallen.
+I det här fallet återges fragmentet med samma lokalisering ([språk, utkast eller live-kopia](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm-and-translation.html?lang=sv-SE)) som den aktuella sidan som en del av mallen.
 
 Det här beteendet är begränsat till e-postupplevelsefragmentkomponenter som lagts till i mallar. Experience Fragment Components som lagts till på enskilda innehållssidor återger exakt de Experience Fragment-återgivningar som konfigurerats i komponenten.
 

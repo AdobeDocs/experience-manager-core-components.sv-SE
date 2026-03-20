@@ -20,7 +20,7 @@ Med komponenten Core Component Form Container Component kan man skapa enkla insk
 
 Komponenten Form Container gjorde det möjligt att skapa enkla formulär och funktioner för inlämning av information genom att stödja enkla WCM-formulär och genom att använda en kapslad struktur för att tillåta ytterligare formulärkomponenter.
 
-Genom att använda dialogrutan [inställning](#settings-dialog) kan innehållsredigeraren definiera vilken typ av åtgärd som utlöser formulärsändning, var det skickade innehållet ska lagras och om ett arbetsflöde ska utlösas. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera tillåt-komponenter och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html).
+Genom att använda dialogrutan [inställning](#settings-dialog) kan innehållsredigeraren definiera vilken typ av åtgärd som utlöser formulärsändning, var det skickade innehållet ska lagras och om ett arbetsflöde ska utlösas. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera tillåt-komponenter och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://helpx.adobe.com/se/experience-manager/6-4/sites/authoring/using/templates.html).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -105,7 +105,7 @@ Användaren omdirigeras till den angivna sidan när formuläret har skickats.
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för standardlayoutbehållaren [i mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html#main-pars_title_1754153843).
+I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för standardlayoutbehållaren [i mallredigeraren](https://helpx.adobe.com/se/experience-manager/6-4/sites/authoring/using/templates.html#main-pars_title_1754153843).
 
 ## Teknisk information {#technical-details}
 

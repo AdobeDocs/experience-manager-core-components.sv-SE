@@ -41,7 +41,7 @@ Referera till [komponentbiblioteket](https://adobe.com/go/aem_cmp_library) som r
 
 ### Använda UI Kit för Adobe XD {#ui-kit}
 
-Så snart det finns ett bevisat behov av en anpassad komponent kan du använda UI-paketet för Adobe XD, [som kan laddas ned här,](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd), så att designers kan börja bygga trådramar och designer med Core Components som byggstenar.
+Så snart det finns ett bevisat behov av en anpassad komponent kan du använda UI-paketet för Adobe XD, [som kan laddas ned här,](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/AEM-CoreComponents-UI-Kit.xd?lang=sv-SE), så att designers kan börja bygga trådramar och designer med Core Components som byggstenar.
 
 ## Glöm inte kraftfulla funktioner {#powerful-features}
 
@@ -49,13 +49,13 @@ Funktioner i AEM och de centrala komponenterna kan vara mycket kraftfulla, men o
 
 ### Innehållsfragment {#content-fragments}
 
-[Med innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html) kan du skapa kanalneutralt innehåll tillsammans med (eventuellt kanalspecifika) variationer. Du kan sedan använda dessa fragment och deras variationer när du redigerar innehållssidorna.
+[Med innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/content-fragments.html?lang=sv-SE) kan du skapa kanalneutralt innehåll tillsammans med (eventuellt kanalspecifika) variationer. Du kan sedan använda dessa fragment och deras variationer när du redigerar innehållssidorna.
 
 Tillsammans med den uppdaterade JSON-exporteraren kan strukturerade innehållsfragment även användas för att leverera AEM-innehåll via Content Services till andra kanaler än AEM-sidor.
 
 ### Upplevelsefragmentmallar {#experience-fragment-templates}
 
-Om en författare vill återanvända delar (ett fragment av en upplevelse) av en sida. Utan [Experience Fragments &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html) måste författaren kopiera och klistra in det fragmentet. Att skapa och underhålla dessa klipp-och-klistra-upplevelser är tidskrävande och leder ofta till användarfel. Upplevelsefragment eliminerar behovet av att kopiera/klistra in.
+Om en författare vill återanvända delar (ett fragment av en upplevelse) av en sida. Utan [Experience Fragments &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/experience-fragments.html?lang=sv-SE) måste författaren kopiera och klistra in det fragmentet. Att skapa och underhålla dessa klipp-och-klistra-upplevelser är tidskrävande och leder ofta till användarfel. Upplevelsefragment eliminerar behovet av att kopiera/klistra in.
 
 ### Komponenten Embed {#embed-component}
 
