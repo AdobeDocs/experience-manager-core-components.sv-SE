@@ -1,12 +1,12 @@
 ---
 title: Komponent för dolt formulär (v1)
 description: Komponenten Core Component Form Hidden gör det möjligt att visa ett dolt fält.
-index: n
-role: Architect, Developer, Admin, User
+index: false
+role: Developer, Admin, User
 exl-id: 8e30dac0-5b4b-4fc7-af99-5791c98c90bf
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 
 | AEM Version | Formulärets dolda komponent v1 |
 |--- |--- |
-| 6,3 | Kompatibel |
-| 6,4 | Kompatibel |
+| 6.3 | Kompatibel |
+| 6.4 | Kompatibel |
 
 >[!CAUTION]
 >
@@ -41,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Hidden.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### HTML {#html}
 
@@ -99,7 +99,7 @@ Det finns ingen designdialogruta för komponenten Formulär-dold.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om den dolda formulärkomponenten [&#x200B; finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
+Den senaste tekniska dokumentationen om den dolda formulärkomponenten [ finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/hidden/v1/hidden).
 
 Hela kärnkomponentprojektet kan hämtas från GitHub.
 

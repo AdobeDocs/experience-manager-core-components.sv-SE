@@ -1,11 +1,11 @@
 ---
 title: Experience Fragment Component
 description: Med Experience Fragment Component kan innehållsförfattaren lägga till en upplevelsefragmentvariant på en sida.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 103f729a-084d-4b6a-a239-d8ef8902eb95
-source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '895'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Om du vill visa Experience Fragment-komponenten och se exempel på dess konfigur
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Experience Fragment-komponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_xf_v2).
+Den senaste tekniska dokumentationen om Experience Fragment-komponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_xf_v2).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

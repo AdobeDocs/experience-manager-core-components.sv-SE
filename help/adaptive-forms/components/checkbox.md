@@ -1,11 +1,11 @@
 ---
 title: Adaptiv Forms Core-komponent - kryssruta
 description: Använda eller anpassa den adaptiva Forms Checkbox Core-komponenten.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: c6ca4800-bd10-4aeb-957a-fb1780cf94f3
-source-git-commit: 2be68aa708131486f7d89f33952153a7a90c3d0a
+source-git-commit: 6fc9e1732302f114ad5c9c037ce203af6324edf0
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1843'
 ht-degree: 0%
 
 ---
@@ -46,8 +46,8 @@ Kärnkomponenten i den adaptiva Forms-kryssrutan släpptes som en del av Core Co
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | — |
-| v1 | Kompatibel med <br>[version 2.0.52](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
+| --- | --- |
+| v1 | Kompatibel med <br>[version 2.0.52](/help/adaptive-forms/version.md) och senare\|Kompatibel\|Kompatibel |
 
 Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 

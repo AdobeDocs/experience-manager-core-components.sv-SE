@@ -1,11 +1,11 @@
 ---
 title: Adaptiv Forms Core-komponent - switch-komponent
 description: Använda eller anpassa den adaptiva kärnkomponenten i Forms-switchen.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 6ff2ca76-1514-42eb-bde3-60259af2d187
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: 6fc9e1732302f114ad5c9c037ce203af6324edf0
 workflow-type: tm+mt
-source-wordcount: '1922'
+source-wordcount: '1948'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,8 @@ Den adaptiva kärnkomponenten i Forms-switchen släpptes som en del av kärnkomp
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | — |
-| v1 | Kompatibel med <br>[version 2.0.64](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
+| --- | --- |
+| v1 | Kompatibel med <br>[version 2.0.64](/help/adaptive-forms/version.md) och senare\|Kompatibel\|Kompatibel |
 
 Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 

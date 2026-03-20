@@ -1,11 +1,11 @@
 ---
 title: AMP-stöd för kärnkomponenterna
 description: Kärnkomponenterna har stöd för AMP - accelererade mobilsidor
-role: Architect, Developer, Admin
+role: Developer, Admin
 exl-id: 1fd9b6b5-0e4d-48c7-8faa-42e0d4a6bbd0
-source-git-commit: 2ac16b15718128feefbe903e92f276b16fe96f69
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Accelerated Mobile Pages eller AMP är ett ramverk med öppen källkod som urspr
 
 ## AMP i kärnkomponenterna {#amp-in-core-components}
 
-Stöd för AMP i kärnkomponenterna är [fullt konfigurerbart.](#enabling-amp) AMP-versioner av sidor kan hanteras exklusivt, tillsammans med HTML-standardversionerna, eller inte alls.
+Stöd för AMP i kärnkomponenterna är [fullt konfigurerbart.](#enabling-amp) AMP-versioner av sidor kan hanteras exklusivt, tillsammans med HTML standardversioner, eller inte alls.
 
 Core Components använder `amp` som en Sling-väljare för att återge en AMP-sida. `example.html` skulle till exempel återge den normala sidan och `example.amp.html` skulle vara AMP-versionen.
 
@@ -41,20 +41,20 @@ AMP-stödet ger stor flexibilitet, men för att komma igång snabbt krävs bara 
 
 ### Aktivera AMP för sidor {#enabling-amp}
 
-Om du vill aktivera AMP för en sida måste **AMP-läget** väljas i [Sidprincipen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE#editing-a-template-page-policy-template-author-developer)
+Om du vill aktivera AMP för en sida måste **AMP-läget** väljas i [Sidprincipen.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html#editing-a-template-page-policy-template-author-developer)
 
 ![Alternativ för AMP-sidprincip](/help/assets/amp-policy.png)
 
-* **Ingen AMP** - Sidan levereras endast som HTML som standard.
+* **Ingen AMP** - Sidan levereras endast som standard-HTML.
 * **Parade AMP** - Sidan levereras som både AMP och HTML.
 * **Endast AMP** - Sidan levereras endast som AMP.
 
-AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE) för en enskild sida.
+AMP-inställningarna för en sida kan också åsidosättas i [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html) för en enskild sida.
 
 ![Sidegenskaper för AMP](/help/assets/amp-page-properties.png)
 
 * **Ärv från sidmall** - Det här är standardvärdet, vilket gör att inställningen kan hämtas från sidmallens princip.
-* **Ingen AMP** - Sidan levereras endast som HTML som standard.
+* **Ingen AMP** - Sidan levereras endast som standard-HTML.
 * **Parade AMP** - Sidan levereras som både AMP och HTML.
 * **Endast AMP** - Sidan levereras endast som AMP.
 

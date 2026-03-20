@@ -2,11 +2,11 @@
 title: Använda Adobe Client Data Layer med Core Components
 description: Använda Adobe Client Data Layer med Core Components
 feature: Core Components, Adobe Client Data Layer
-role: Architect, Developer, Admin
+role: Developer, Admin
 exl-id: 55c984d3-deb7-4eda-a81d-7768791d2b46
-source-git-commit: 8f0ece0eed42f72e919535c6da6e729e54d1d339
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Precis som Core-komponenterna är koden för Adobe Client Data Layer tillgängli
 
 ## Installation och aktivering {#installation-activation}
 
-Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som ett AEM-klientbibliotek och ingen installation behövs. Alla projekt som genereras av [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) innehåller som standard ett aktiverat datalager.
+Från och med Core Components version 2.9.0 distribueras datalagret med Core Components som ett AEM-klientbibliotek och ingen installation behövs. Alla projekt som genererats av [AEM Project Archetype v. 24+](/help/developing/archetype/overview.md) innehåller ett aktiverat datalager som standard.
 
 Om du vill aktivera datalagret manuellt måste du skapa en [kontextmedveten konfiguration](/help/developing/context-aware-configs.md) för den:
 
@@ -74,7 +74,7 @@ Följande komponenter har stöd för datalagret.
 * [Dragspel](/help/components/accordion.md)
 * [Breadcrumb](/help/components/breadcrumb.md)
 * [Knapp](/help/components/button.md)
-* [Karusell](/help/components/carousel.md)
+* [Carousel](/help/components/carousel.md)
 * [Innehållsfragment](/help/components/content-fragment-component.md)
 * [Bild](/help/components/image.md)
 * [Språknavigering](/help/components/language-navigation.md)
@@ -160,7 +160,7 @@ Behållarschemat används av följande komponenter:
 
 * [Dragspel](/help/components/accordion.md)
 * [Tabbar](/help/components/tabs.md)
-* [Karusell](/help/components/carousel.md)
+* [Carousel](/help/components/carousel.md)
 
 Behållarschemat definieras så här.
 
@@ -313,7 +313,7 @@ window.adobeDataLayer.push(function (dl) {
 
 ## Självstudiekurs
 
-Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Kolla in den här självstudiekursen](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html?lang=sv-SE).
+Vill du utforska datalagret och kärnkomponenterna mer i detalj? [Titta på den här självstudiekursen ](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/adobe-client-data-layer/data-layer-overview.html).
 
 >[!TIP]
 >

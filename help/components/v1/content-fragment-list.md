@@ -1,12 +1,12 @@
 ---
 title: Content Fragment List Component (v1)
 description: Med komponenten Core Component Content Fragment List kan du visa en lista med innehållsfragment.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 37d6632d-360d-4081-8279-8efbb369a82e
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Content Fragment List Component (v1) {#content-fragment-list-component}
 
-Komponenten Core Component Content Fragment List gör det möjligt att visa en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE).
+Komponenten Core Component Content Fragment List gör det möjligt att visa en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html).
 
 ## Användning {#usage}
 
-Med listkomponenten Core Component Content Fragment kan du inkludera en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html?lang=sv-SE) på en sida baserat på en Content Fragment-modell. Detta kan vara särskilt användbart när du skapar [headless-innehåll](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) som enkelt kan användas av andra program.
+Med listkomponenten Core Component Content Fragment kan du inkludera en lista med [innehållsfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/content-fragments/content-fragments.html) på en sida baserat på en Content Fragment-modell. Detta kan vara särskilt användbart när du skapar [headless-innehåll](https://helpx.adobe.com/experience-manager/6-5/sites/developing/user-guide.html?topic=/experience-manager/6-5/sites/developing/morehelp/headless.ug.js) som enkelt kan användas av andra program.
 
 * Listan och dess egenskaper kan väljas i dialogrutan [Konfigurera](#configure-dialog).
 * Format kan användas på komponenten i [designdialogrutan](#design-dialog).
@@ -39,7 +39,7 @@ Om du vill se komponenterna i listan Innehållsfragment och se exempel på dess 
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om List-komponenten för innehållsfragment [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
+Den senaste tekniska dokumentationen om List-komponenten för innehållsfragment [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_cflist_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

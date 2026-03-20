@@ -1,13 +1,13 @@
 ---
 title: Huvudversioner av e-postkomponenter
 description: Huvudkomponenter för e-post publiceras som versioner.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 9733659a-641c-4a98-8d10-84e93e0e0a5d
 index: false
-source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '444'
-ht-degree: 0%
+source-wordcount: '604'
+ht-degree: 10%
 
 ---
 
@@ -20,7 +20,7 @@ Mer information om krav och installation finns i avsnittet [Krav](/help/email/in
 
 ## Versionshistorik och kompatibilitet {#release-history-and-compatibility}
 
-E-postkärnkomponenterna är utformade för att vara flexibla och kompatibla med alla AEM-versioner som stöds. Den fullständiga informationen om versionshistoriken för e-postkärnkomponenterna [&#x200B; finns på GitHub.](https://github.com/adobe/aem-core-email-components/releases) I följande tabell visas dock en översikt över de utgåvor av E-postkärnkomponenterna som är kompatibla med AEM-versioner och Java-versioner.
+E-postkärnkomponenterna är utformade för att vara flexibla och kompatibla med alla AEM-versioner som stöds. Den fullständiga informationen om versionshistoriken för e-postkärnkomponenterna [ finns på GitHub.](https://github.com/adobe/aem-core-email-components/releases) I följande tabell visas dock en översikt över de utgåvor av E-postkärnkomponenterna som är kompatibla med AEM och Java-versioner.
 
 | Frigör | Beskrivning | AEM 6.5 | AEM 6.5 LTS | Kärnkomponenter | Java | Releasedatum |
 |---|---|---|---|---|---|---|

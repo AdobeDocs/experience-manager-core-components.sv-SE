@@ -1,11 +1,11 @@
 ---
 title: List-komponent
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 662ab508-0253-4d28-b95c-8c4cde8173bd
-source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
+source-git-commit: 6fc9e1732302f114ad5c9c037ce203af6324edf0
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 
 | Komponentversion | AEM 6.4 | AEM 6.5 | AEM 6.5 LTS | AEM as a Cloud Service |
 |--- |--- |--- |---|---|
-| v4 | - | Kompatibel | Kompatibel |
+| v4 | - | Kompatibel | Kompatibel | |
 | [v3](/help/components/v3/list.md) | - | Kompatibel | Kompatibel | Kompatibel |
 | [v2](/help/components/v2/list.md) | Kompatibel | Kompatibel | - | Kompatibel |
 | [v1](/help/components/v1/list-v1.md) | Kompatibel | Kompatibel | - | Kompatibel |
@@ -215,7 +215,7 @@ Aktivera alternativet Länka objekt i [redigeringsdialogrutan](#edit-dialog)
 * **Visa beskrivningar**
 Aktivera alternativet Visa beskrivningar i [redigeringsdialogrutan](#edit-dialog)
 * **Visa datum**
-Aktivera alternativet Visa datum i dialogrutan [redigera &#x200B;](#edit-dialog)
+Aktivera alternativet Visa datum i dialogrutan [redigera ](#edit-dialog)
 
 ### Fliken Format {#styles-tab}
 

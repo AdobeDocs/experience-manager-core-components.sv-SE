@@ -1,12 +1,12 @@
 ---
 title: E-postknappkomponent
 description: Med komponenten E-postknapp kan du konfigurera och visa ett knappobjekt i ditt innehåll.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: b144e8d1-1097-475d-b2eb-3353c176afb9
 index: false
-source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---

@@ -1,11 +1,11 @@
 ---
 title: Adaptiv bildserver
 description: Lär dig hur Core Components använder Adaptive Image Servlet för bildleverans och hur du kan optimera användningen.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: d9199d51-6f09-4000-9525-afc30474437e
-source-git-commit: 3f6e40c4dbfbd1287213d9d16d96183d24f2ad0a
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Det här dokumentet beskriver standardservern för adaptiv bildhantering.
 
 ## Ökning {#overview}
 
-Som standard använder Image Component (Bildkomponent) Core-komponentens Adaptive Image Servlet för att leverera bilder. [Den adaptiva bildservern &#x200B;](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbearbetning och direktuppspelning och kan utnyttjas av utvecklare i deras [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
+Som standard använder Image Component (Bildkomponent) Core-komponentens Adaptive Image Servlet för att leverera bilder. [Den adaptiva bildservern ](https://github.com/adobe/aem-core-wcm-components/wiki/The-Adaptive-Image-Servlet) ansvarar för bildbearbetning och direktuppspelning och kan utnyttjas av utvecklare i deras [anpassningar av kärnkomponenterna](/help/developing/customizing.md).
 
 ## Återgivningsmarkering {#rendition-selection}
 
@@ -39,7 +39,7 @@ Den adaptiva bildservern väljer automatiskt den rendering som passar bäst för
 
 1. Adaptive Image Servlet granskar alla tillgängliga återgivningar av bildresursen.
 1. Endast de som har samma MIME/Type för den ursprungliga refererade resursen markeras.
-   * Om den ursprungliga resursen till exempel är en PNG-fil kommer endast PNG-renderingar att användas.
+   * E.g. Om den ursprungliga resursen var en PNG-fil kommer endast PNG-renderingar att användas.
 1. Av dessa återgivningar beaktas dimensionerna och de jämförs med storleken på behållaren som bilden ska visas i.
 1. Om återgivningen är >= behållarstorleken läggs den till i en lista över möjliga återgivningar.
 1. Om återgivningen är &lt; behållarstorleken ignoreras den.
@@ -54,6 +54,6 @@ Detta förbättrar prestanda och förhindrar att vissa bilder bearbetas felaktig
 
 ## Använda senast ändrade rubriker {#last-modified}
 
-Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [&#x200B; måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=sv-SE#caching-http-response-headers).
+Villkorliga begäranden via `Last-Modified`-huvudet stöds av Adaptive Image Server, men cachelagringen av `Last-Modified` header [ måste aktiveras i Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-http-response-headers).
 
 [Dispatcher-exempelkonfigurationen för AEM Project Archetype](/help/developing/archetype/overview.md) innehåller redan den här konfigurationen.

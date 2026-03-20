@@ -1,11 +1,11 @@
 ---
 title: Anpassa adaptiva Forms Core-komponenter
 description: Lär dig att utöka eller skapa en adaptiv Forms Core-komponent för att implementera funktioner som är anpassade för din organisation.
-role: Architect, Developer, Admin
+role: Developer, Admin
 exl-id: f3ab12aa-d48d-47e9-a965-15052cac6f18
-source-git-commit: 5994133947ff697f7c866fe61598c58e37e77008
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Innan du börjar anpassa adaptiva Forms Core-komponenter
 * Lär dig mer om [arkitekturen för en kärnkomponent](customizing.md#customizing-the-markup-customizing-the-markup) och gå igenom den [officiella dokumentationen för Adobe Experience Manager Core Components](customizing.md). Dessa omfattande resurser är en guide under hela anpassningsprocessen.
 * Konfigurera utvecklingsmiljön Detta ger ett smidigt arbetsflöde för att göra ändringar i kärnkomponenterna. När du konfigurerar utvecklingsmiljön ska du använda ett AEM Archetype-projekt baserat på det senaste AEM Archetype-projektet. Beroende på din miljö kan du:
 
-   * [Konfigurera en lokal utvecklingsmiljö för Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html?lang=sv-SE).
-   * [Konfigurera en lokal utvecklingsmiljö för AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=sv-SE)
+   * [Konfigurera en lokal utvecklingsmiljö för Forms as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-local-development-environment.html).
+   * [Konfigurera en lokal utvecklingsmiljö för AEM 6.5 Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html)
 
 ## Anpassa en adaptiv Forms Core-komponent
 
@@ -54,7 +54,7 @@ Följ stegen nedan för att ändra utseendet, beteendet och funktionaliteten fö
 
 1. **Distribuera och testa komponenten i den lokala utvecklingsmiljön**
 
-   Använd [maven för att skapa och distribuera komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=sv-SE#building-and-installing) i din lokala utvecklingsmiljö. När komponenten har distribuerats skapar du ett adaptivt formulär för att testa den anpassade komponenten.
+   Använd [maven för att skapa och distribuera komponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html#building-and-installing) i din lokala utvecklingsmiljö. När komponenten har distribuerats skapar du ett adaptivt formulär för att testa den anpassade komponenten.
 
 1. **Distribuera den anpassade komponenten i din produktionsmiljö**
 

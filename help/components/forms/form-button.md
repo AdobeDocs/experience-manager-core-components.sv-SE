@@ -1,12 +1,12 @@
 ---
 title: Komponent för formulärknapp
 description: Komponenten Core Component Form Hidden gör det möjligt att inkludera ett dolt fält i ett formulär.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 1e5cff43-57db-4bfc-b2d2-23307eaf5eb3
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 1%
+source-wordcount: '416'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ Om du vill visa Form Button-komponenten och se exempel på dess konfigurationsal
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Form Button-komponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_form_button_v2).
+Den senaste tekniska dokumentationen om Form Button-komponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_form_button_v2).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

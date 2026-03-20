@@ -1,13 +1,13 @@
 ---
 title: Adaptiv Forms Core Component - Review Component
 description: Använda eller anpassa den adaptiva Forms Review Core-komponenten.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 hide: true
 hidefromtoc: true
 exl-id: acd230ed-284b-4df2-98e0-a0090cd73611
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '742'
+source-wordcount: '765'
 ht-degree: 0%
 
 ---

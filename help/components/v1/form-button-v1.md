@@ -1,12 +1,12 @@
 ---
 title: Komponent för formulärknapp (v1)
 description: Komponenten Core Component Form Hidden gör det möjligt att inkludera ett dolt fält i ett formulär.
-index: n
-role: Architect, Developer, Admin, User
+index: false
+role: Developer, Admin, User
 exl-id: 2c06a942-7ac5-4847-9d11-7bbcd0ea51bd
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Formulärknap
 
 | AEM Version | Komponent för formulärknapp v1 |
 |--- |--- |
-| 6,3 | Kompatibel |
-| 6,4 | Kompatibel |
+| 6.3 | Kompatibel |
+| 6.4 | Kompatibel |
 
 >[!CAUTION]
 >
@@ -41,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Formulärknap
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -109,7 +109,7 @@ Det finns ingen designdialogruta för komponenten Formulärknapp.
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Form Button-komponenten [&#x200B; finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
+Den senaste tekniska dokumentationen om Form Button-komponenten [ finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/form/button/v1/button).
 
 Hela kärnkomponentprojektet kan hämtas från GitHub.
 

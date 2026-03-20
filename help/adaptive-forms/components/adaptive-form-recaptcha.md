@@ -1,11 +1,11 @@
 ---
 title: Adaptiv Forms Core-komponent - Google reCAPTCHA
 description: Förbättra säkerheten med Google reCAPTCHA-tjänsten utan problem med AEM Forms. Förklara egenskaperna för den adaptiva formen reCaptcha
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 2d986b90-e596-4e8f-9a32-0ebced5461c8
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: 6fc9e1732302f114ad5c9c037ce203af6324edf0
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1382'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Den adaptiva Forms Google reCAPTCHA Core-komponenten släpptes i augusti 2023 so
 
 | Komponentversion | AEM as a Cloud Service |
 |--- |--- |
-| v1 | Kompatibel med <br>[version 2.0.4](/help/versions.md) och senare | Kompatibel | Kompatibel |
+| v1 | Kompatibel med <br>[version 2.0.4](/help/versions.md) och senare \| Kompatibel\|Kompatibel |
 
 Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md) .
 
@@ -70,7 +70,7 @@ Du kan enkelt anpassa Google reCAPTCHA-upplevelsen för besökare med dialogruta
 
   >[!NOTE]
   >
-  > Läs artikeln [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) om du vill veta mer om hur du skapar och konfigurerar Google reCAPTCHA för din miljö.
+  > Läs artikeln [Use Google reCAPTCHA in an AEM Adaptive Form based on Core Components](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/captcha-adaptive-forms-core-components) om du vill veta mer om hur du skapar och konfigurerar Google reCAPTCHA för din miljö.
 
 - **Typ**: Välj det här alternativet om du vill välja storlek för reCAPTCHA.
    - **Normal**: Avser den större standardversionen av reCAPTCHA-widgeten, som kan vara mer synlig och lättare att interagera med, särskilt på enheter med större skärmar.

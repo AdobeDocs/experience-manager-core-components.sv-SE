@@ -1,9 +1,9 @@
 ---
 title: Innehållsförteckning, komponent
 description: Innehållsförteckningskomponenten skapar en innehållsförteckning som baseras på rubrikerna i sidinnehållet, vilket gör att läsarna snabbt kan navigera på sidan.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 006adde2-ebff-4e74-8e79-325cccd43e8f
-source-git-commit: 1987431c99a1e4b834c86ea731c52a19909b297b
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Mer information om versioner och versioner av kärnkomponenter finns i dokumente
 
 ### Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om innehållsförteckningskomponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
+Den senaste tekniska dokumentationen om innehållsförteckningskomponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

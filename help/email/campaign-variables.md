@@ -1,12 +1,12 @@
 ---
 title: Kampanjvariabler
 description: Använd kampanjvariabler som platshållare för att skapa personaliserat e-postinnehåll.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 124ff5bf-6612-4baf-b0ff-6b1a95b455c1
 index: false
-source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Listan med tillgängliga anpassningsfält synkroniseras med din Adobe Campaign-i
 Dialogrutan Välj Adobe Campaign-variabel är tillgänglig i många redigeringsdialogrutor för e-postkärnkomponenter. Om du vill använda den klickar du på ikonen **Välj Adobe Campaign-variabel** bredvid det aktuella fältet. Den här ikonen kan ha två former.
 
 ![Adobe Campaign-knapp](/help/email/assets/campaign-button.png)
-![Välj Adobe Campaign-variabelikon &#x200B;](/help/email/assets/select-adobe-campaign-variable-icon.png)
+![Välj Adobe Campaign-variabelikon ](/help/email/assets/select-adobe-campaign-variable-icon.png)
 
 Om du klickar på båda ikonerna öppnas dialogrutan **Välj Adobe Campaign-variabel**.
 

@@ -1,12 +1,12 @@
 ---
 title: List Component (v3)
 description: Med Core Component List Component List Component (v3) kan du enkelt skapa både dynamiska och statiska listor.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 4aefce2e-9c22-4c6d-869e-aaa8c246b073
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1177'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Aktivera alternativet Länka objekt i [redigeringsdialogrutan](#edit-dialog)
 * **Visa beskrivningar**
 Aktivera alternativet Visa beskrivningar i [redigeringsdialogrutan](#edit-dialog)
 * **Visa datum**
-Aktivera alternativet Visa datum i dialogrutan [redigera &#x200B;](#edit-dialog)
+Aktivera alternativet Visa datum i dialogrutan [redigera ](#edit-dialog)
 
 ### Fliken Format {#styles-tab}
 

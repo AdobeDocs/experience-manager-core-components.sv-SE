@@ -1,12 +1,12 @@
 ---
 title: Snabbsökningskomponent (v1)
 description: Komponenten för snabbsökning innehåller sökfunktioner för en webbplats och presenterar sökresultat så att besökarna kan söka på webbplatsen och filtrera resultaten.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 60a043b7-d82c-4bc1-b91a-b77f748f7bc2
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Följande tabell visar alla versioner av komponenten som stöds, de AEM-versione
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs v1 för snabbsökningskomponenten.
->&#x200B;>Information om den aktuella versionen av snabbsökningskomponenten finns i dokumentet [Snabbsökningskomponent](/help/components/quick-search.md).
+>Information om den aktuella versionen av snabbsökningskomponenten finns i dokumentet [Snabbsökningskomponent](/help/components/quick-search.md).
 
 Mer information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/versions.md).
 

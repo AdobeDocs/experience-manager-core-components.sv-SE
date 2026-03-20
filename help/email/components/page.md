@@ -1,12 +1,12 @@
 ---
 title: E-postsidkomponent
 description: E-postsidkomponenten
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 17fd0f5e-2b85-41a1-abaf-8ad190a5341a
 index: false
-source-git-commit: eb77567dc32cccb81a9fc131493d11fb55b7e93b
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '780'
+source-wordcount: '817'
 ht-degree: 0%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 0%
 
 # E-postsidkomponent {#email-page-component}
 
-Sidkomponenten för e-post är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren, som är anpassad för att skapa Adobe Campaign-innehåll.
+Sidkomponenten för e-post är en utökningsbar sidkomponent som är utformad för att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren, som är anpassad för att skapa Adobe Campaign-innehåll.
 
 ## Användning {#usage}
 
 Sidkomponenten E-post utgör grunden för alla sidor som utformats med e-postkärnkomponenter och redigerbara mallar. Genom att använda Sidkomponent för e-post kan sidhuvuden, sidfötter och sidstrukturen definieras som en mall med hjälp av de andra huvudkomponenterna för e-post.
 
-* Med hjälp av designdialogrutan [kan &#x200B;](#design-dialog) anpassade klientbibliotek definieras för sidan.
+* Med hjälp av designdialogrutan [kan ](#design-dialog) anpassade klientbibliotek definieras för sidan.
 * Till skillnad från andra komponenter som har en redigeringsdialogruta som är tillgänglig direkt från komponenten, eftersom e-postsidkomponenten är själva sidan, är [redigeringsdialogrutan](#edit-dialog) för e-postsidkomponenten sidegenskapsfönstret.
 
 ## Version och kompatibilitet {#version-and-compatibility}
@@ -43,7 +43,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE).
+Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ### Fliken Molntjänster {#cloud-services}
 
@@ -97,7 +97,7 @@ Bibliotek kan konfigureras för både fälten **Klientbibliotek** och **Klientbi
 * Om du vill ta bort ett fält klickar eller trycker du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan.](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/clientlibs.html)
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html)
 
 ### Fliken Format {#styles-tab}
 

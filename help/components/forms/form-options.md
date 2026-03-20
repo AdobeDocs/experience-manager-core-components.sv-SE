@@ -1,11 +1,11 @@
 ---
 title: Komponent för formuläralternativ
 description: Alternativkomponenten Core Component Form gör att du kan välja bland fördefinierade alternativ i olika format.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 8a74bd37-9b12-4fa6-bff2-53e337b16251
-source-git-commit: 6fbc781db555bc6abaed1d122a9a8756e3d53222
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---

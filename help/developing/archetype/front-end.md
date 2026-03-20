@@ -1,30 +1,30 @@
 ---
-title: Front-end-utveckling med AEM Project Archetype
-description: Läs mer om AEM Project Archetypes valfria, dedikerade frontendkonstruktionsmekanism som bygger på WebPack.
+title: Front-End-utveckling med AEM Project Archetype
+description: Läs om AEM Project Archettypes valfria, dedikerade frontendkonstruktionsmekanism som bygger på WebPack.
 feature: Core Components, AEM Project Archetype
-role: Architect, Developer, Admin
+role: Developer, Admin
 exl-id: 99132b49-bd06-4ac2-9348-12c0dfdfe8b2
-source-git-commit: bd92a5d1884056ca7b44ea28e5817d8bde10a4d9
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
 
 
-# Front-end-utveckling med AEM Project Archetype {#front-end}
+# Front-End-utveckling med AEM Project Archetype {#front-end}
 
-AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir därmed den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. För att till fullo kunna utnyttja denna användbara och flexibla funktion är det viktigt att förstå hur frontendutvecklingen passar in i ett AEM projekt.
+AEM Project Archetype innehåller en dedikerad front-end-konstruktionsmekanism som bygger på WebPack som tillval. Modulen ui.front blir därmed den centrala platsen för alla projektets frontresurser, inklusive JavaScript- och CSS-filer. Om du vill utnyttja den här användbara och flexibla funktionen till fullo är det viktigt att du förstår hur frontendutvecklingen passar in i ett AEM-projekt.
 
 Det här dokumentet fokuserar på allmänna användningsmönster för frontendmodulen och vad det gör för dig. Detaljerade byggalternativ och tekniska anvisningar finns i dokumentationen i arkivtypens GitHub-databas.
 
 >[!TIP]
 >
->Den senaste AEM Project Archetype och tillhörande tekniska dokumentationen [finns på GitHub.](https://github.com/adobe/aem-project-archetype)
+>Den senaste AEM Project-arkitekturen och tillhörande tekniska dokumentation [finns på GitHub.](https://github.com/adobe/aem-project-archetype)
 
 ## AEM Front-End och Back-End Development {#front-end-back-end}
 
-I betydligt förenklade termer kan man tänka sig att AEM projekt består av två separata men sammanhörande delar:
+I betydligt förenklade termer kan man tänka sig att AEM-projekt består av två separata men sammanhörande delar:
 
 * Bakgrundsutveckling som driver logiken i AEM och skapar Java-bibliotek, OSGi-tjänster osv.
 * Framtidsutveckling som driver presentationen och beteendet på den slutliga webbplatsen och skapar JavaScript- och CSS-bibliotek
@@ -37,7 +37,7 @@ Alla resulterande projekt måste dock använda resultatet från båda dessa utve
 
 ## Bestämma markeringen {#determining-markup}
 
-Oavsett vilket utvecklingsarbetsflöde ni bestämmer er för att implementera för projektet måste backend-utvecklarna och front end-utvecklarna först komma överens om koden. AEM definierar vanligtvis koden, som tillhandahålls av kärnkomponenterna. [Detta kan dock anpassas om det behövs.](/help/developing/customizing.md#customizing-the-markup)
+Oavsett vilket utvecklingsarbetsflöde ni bestämmer er för att implementera för projektet måste backend-utvecklarna och front end-utvecklarna först komma överens om koden. Vanligtvis definierar AEM markeringen, som tillhandahålls av kärnkomponenterna. [Detta kan dock anpassas om det behövs.](/help/developing/customizing.md#customizing-the-markup)
 
 ## Möjliga arbetsflöden för utveckling i gränssnittet {#possible-workflows}
 
@@ -47,12 +47,12 @@ Framtidsmodulen är ett användbart och mycket flexibelt verktyg, men har ingen 
 
 Med Webpack kan du utforma och utveckla baserat på statiska utdata från AEM webbsidor i modulen ui.front.
 
-1. Förhandsgranska sidan i AEM med förhandsgranskningsläge eller skicka `wcmmode=disabled` i URL:en
+1. Förhandsgranska sidan i AEM i förhandsgranskningsläge eller skicka `wcmmode=disabled` i URL:en
 1. Visa sidkällan och spara som statisk HTML i modulen ui.front
 1. [Starta webbpaketet](#webpack-dev-server) och börja formatera och generera nödvändig JavaScript och CSS
 1. Kör `npm run dev` för att generera klientlibs
 
-I det här flödet kan en AEM utföra steg ett och två och skicka det statiska HTML vidare till den frontendutvecklare som utvecklar baserat på utdata från AEM HTML.
+I det här flödet kan en AEM-utvecklare utföra steg ett och två och skicka den statiska HTML vidare till den frontendutvecklare som utvecklar baserat på AEM HTML-utdata.
 
 >[!TIP]
 >
@@ -68,16 +68,16 @@ Med [Storybook](https://storybook.js.org) kan du utföra mer atomiska framend-ut
 
 ## Översikt över Clientlibs {#clientlibs}
 
-Framtend-modulen är tillgänglig med ett [AEM-klientlib.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=sv-SE). När NPM-byggskriptet körs skapas appen och paketet `aem-clientlib-generator` tar det resulterande build-utdata och omvandlar det till ett sådant clientlib.
+Framtend-modulen är tillgänglig med ett [AEM clientlib.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html). När NPM-byggskriptet körs skapas appen och `aem-clientlib-generator` -paketet tar det resulterande build-resultatet och omvandlar det till ett sådant clientlib.
 
 En clientlib består av följande filer och kataloger:
 
 * `css/`: CSS-filer som kan begäras i HTML
-* `css.txt`: AEM ordning och namn på filer i `css/` så att de kan sammanfogas
+* `css.txt`: Anger filernas ordning och namn i `css/` till AEM så att de kan sammanfogas
 * `js/`: JavaScript-filer som kan begäras i HTML
-* `js.txt` AEM filernas ordning och namn i `js/` så att de kan sammanfogas
+* `js.txt` anger filernas ordning och namn i `js/` för AEM så att de kan sammanfogas
 * `resources/`: Source-kartor, kodsegment som inte är ingångspunkter (till följd av koddelning), statiska resurser (till exempel ikoner) osv.
 
 >[!TIP]
 >
->Läs mer om hur AEM hanterar klientlibs i [AEM-utvecklingsdokumentationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=sv-SE) om hur du inkluderar dem i [kärnkomponentdokumentationen.](/help/developing/including-clientlibs.md)
+>Läs mer om hur AEM hanterar klientlibs i [AEM-utvecklingsdokumentationen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html) om hur du inkluderar dem i [dokumentationen för kärnkomponenter.](/help/developing/including-clientlibs.md)

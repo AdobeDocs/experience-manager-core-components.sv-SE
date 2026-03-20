@@ -1,12 +1,12 @@
 ---
 title: Språknavigeringskomponent (v1)
 description: Språknavigeringskomponenten tillhandahåller en språk-/landsnavigering för en webbplats, så att besökare kan navigera till samma sida på en annan språkinställning.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 41194ba0-6833-40e5-88d9-036e9c231edd
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---

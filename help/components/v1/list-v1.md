@@ -1,12 +1,12 @@
 ---
 title: List Component (v1)
 description: Med Core Component List Component kan du enkelt skapa både dynamiska och statiska listor.
-index: n
-role: Architect, Developer, Admin, User
+index: false
+role: Developer, Admin, User
 exl-id: 510d059c-e60a-40aa-9032-66a901109f6e
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ I följande tabell visas kompatibiliteten för v1 för List-komponenten.
 
 | AEM Version | List Component v1 |
 |--- |--- |
-| 6,3 | Kompatibel |
-| 6,4 | Kompatibel |
+| 6.3 | Kompatibel |
+| 6.4 | Kompatibel |
 
 >[!CAUTION]
 >
@@ -41,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för List-komponenten.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 

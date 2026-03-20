@@ -1,12 +1,12 @@
 ---
 title: Sidkomponent (v2)
 description: Page Component (Sidkomponent) är en utökningsbar sidkomponent som är avsedd att fungera tillsammans med mallredigeraren och som gör att sidhuvud/sidfot och strukturkomponenter kan monteras tillsammans med mallredigeraren.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: e85fe4db-6de4-4a84-a54c-bd07a67efed3
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Sidkomponent (v2) {#page-component}
 
-Sidkomponenten är en utökningsbar sidkomponent som är avsedd att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
+Sidkomponenten är en utökningsbar sidkomponent som är avsedd att fungera med [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html) och som gör att sidhuvud/sidfot och strukturkomponenter kan sättas ihop med mallredigeraren.
 
 ## Användning {#usage}
 
@@ -34,7 +34,7 @@ I det här dokumentet beskrivs v2 av Page Component, som introducerades i versio
 
 ## Progressivt stöd för webbappar {#pwa-support}
 
-I version 2.15.0 av Core Components introducerades stöd för AEM as a Cloud Service inbyggda funktioner i [Progressiva webbappar (PWA).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html?lang=sv-SE) Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM-upplevelse till en PWA!
+I version 2.15.0 av Core Components introducerades stöd för AEM as a Cloud Service inbyggda [Progressiva webbprogram (PWA).](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/enable-pwa.html) Med en enkel konfiguration på webbplatsnivå kan du omvandla din AEM-upplevelse till en PWA!
 
 ### Teknisk information {#technical-details}
 
@@ -44,7 +44,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 ## Dialogrutan Redigera {#edit-dialog}
 
-Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html?lang=sv-SE).
+Eftersom komponenten representerar hela sidan, finns inställningar som normalt skulle finnas i en redigeringsdialogruta i fönstret [Sidegenskaper](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/fundamentals/page-properties.html).
 
 ## Designdialogruta {#design-dialog}
 
@@ -77,7 +77,7 @@ Bibliotek kan konfigureras för både fälten **Klientbibliotek** och **Klientbi
 * Om du vill ta bort ett fält klickar du på papperskorgsikonen bredvid fältet som ska tas bort.
 * Om du vill ändra inläsningsordningen klickar eller trycker du och drar handtaget bredvid fältet som ska flyttas.
 
-Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/se/experience-manager/6-5/sites/developing/using/clientlibs.html).
+Mer information om hur du använder bibliotek på klientsidan finns i [Använda bibliotek på klientsidan](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/clientlibs.html).
 
 >[!CAUTION]
 >

@@ -1,11 +1,11 @@
 ---
 title: Adaptiv Forms Core-komponent - lodräta flikar
 description: Använda eller anpassa de adaptiva Forms-flikarna Core Component (Core-komponent).
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: d5cd1c18-6840-4f2f-a767-a69b803e6075
-source-git-commit: 2be68aa708131486f7d89f33952153a7a90c3d0a
+source-git-commit: 6fc9e1732302f114ad5c9c037ce203af6324edf0
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2214'
 ht-degree: 0%
 
 ---
@@ -43,8 +43,8 @@ Core Component (kärnkomponent) på de adaptiva, lodräta flikarna i Forms släp
 |  |  |
 |---|---|
 | Komponentversion | AEM as a Cloud Service |
-| — | — |
-| v1 | Kompatibel med <br>[version 2.0.18](/help/adaptive-forms/version.md) och senare | Kompatibel | Kompatibel |
+| --- | --- |
+| v1 | Kompatibel med <br>[version 2.0.18](/help/adaptive-forms/version.md) och senare\|Kompatibel\|Kompatibel |
 
 Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 
@@ -109,7 +109,7 @@ Du kan använda alternativen för upprepning för att duplicera en komponent med
 - **Minsta antal upprepningar**: Anger det minsta antal gånger som komponenten Vertical-tabs kan upprepas. Värdet noll anger att komponenten Vertical-tabs inte upprepas. Standardvärdet är noll.
 - **Maximalt antal upprepningar**: Anger maximalt antal gånger som komponenten Vertical-tabs kan upprepas. Som standard är det här värdet obegränsat.
 
-Om du effektivt vill hantera upprepningsbara avsnitt på de lodräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) .
+Om du effektivt vill hantera upprepningsbara avsnitt på de lodräta flikarna följer du stegen i artikeln [Skapa formulär med repeterbara avsnitt](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) .
 
 ### Fliken Objekt {#items-tab}
 

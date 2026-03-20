@@ -1,12 +1,12 @@
 ---
 title: Titelkomponent (v2)
 description: Komponenten Core Component Title är en avsnittsrubrikkomponent med redigering på plats.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: f853ec46-19fd-4569-a9d3-5c376d2a2101
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---

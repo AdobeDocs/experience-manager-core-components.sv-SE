@@ -1,11 +1,11 @@
 ---
 title: Sling Context-Aware Configurations and Core Components
 description: Core Components använder kontextmedvetna Sling-konfigurationer för vissa funktioner
-role: Architect, Developer, Admin
+role: Developer, Admin
 exl-id: d35210f7-a65d-4768-ab9e-f12ec406da2d
-source-git-commit: b72defe1bbe6cb286730ac3f508f7d6c14b3fc33
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Kontextmedvetna konfigurationer är en [funktion i Sling](https://sling.apache.o
 
 ## Sling Context-Aware Configurations {#context-aware-configurations}
 
-Din plats kan behöva olika konfigurationer för olika webbplatsregioner, till exempel där vissa parametrar kan delas, vilket kräver arv för kapslade kontexter och globala reservvärden. AEM utnyttjar konfigurationer som är anpassade till Sling-kontext, vilket möjliggör detta.
+Din plats kan behöva olika konfigurationer för olika webbplatsregioner, till exempel där vissa parametrar kan delas, vilket kräver arv för kapslade kontexter och globala reservvärden. AEM utnyttjar konfigurationer som känner av Sling-kontext, vilket möjliggör detta.
 
-Mer information om konfigurationer i AEM finns i [dokumentationen för konfigurationer och konfigurationsläsaren.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html?lang=sv-SE)
+Mer information om konfigurationer i AEM finns i [dokumentationen för konfigurationer och Configuration Browser.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/configurations.html)
 
 ## Använd i kärnkomponenterna {#core-components}
 
@@ -30,5 +30,5 @@ Enskilda konfigurationer beror på den specifika komponenten eller funktionen. F
 
 * [Sidkomponenten](https://github.com/adobe/aem-core-wcm-components/tree/main/content/src/content/jcr_root/apps/core/wcm/components/page/v3/page#loading-of-context-aware-cssjs) förlitar sig på kontextmedveten konfiguration vid återgivning av taggarna `link`, `script` och `meta`.
 * [PDF Viewer-komponent](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/pdfviewer/v1/pdfviewer#context-aware-config)
-* [Adobe-klientdatalager](/help/developing/data-layer/overview.md#installation-activation)
-* [AMP-support](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)
+* [Adobe Client Data Layer](/help/developing/data-layer/overview.md#installation-activation)
+* [Stöd för AMP](https://github.com/adobe/aem-core-wcm-components/tree/master/extensions/amp)

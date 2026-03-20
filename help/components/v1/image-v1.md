@@ -1,12 +1,12 @@
 ---
 title: Bildkomponent (v1)
 description: Core Component Image Component Component är en adaptiv bildkomponentfunktion för redigering på plats.
-index: n
-role: Architect, Developer, Admin, User
+index: false
+role: Developer, Admin, User
 exl-id: 625ce8de-5c4a-476d-b749-895493d169b1
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1369'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ I följande tabell visas kompatibiliteten för v1 för Image-komponenten.
 
 | AEM Version | Bildkomponent v1 |
 |--- |--- |
-| 6,3 | Kompatibel |
-| 6,4 | Kompatibel |
+| 6.3 | Kompatibel |
+| 6.4 | Kompatibel |
 
 >[!CAUTION]
 >
@@ -41,7 +41,7 @@ I följande tabell visas kompatibiliteten för v1 för Image-komponenten.
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -83,9 +83,9 @@ Förutom den vanliga [redigeringsdialogrutan](#edit-dialog) och [designdialogrut
 ![](/help/assets/chlimage_1-50.png)
 
 * **Bildresurs**
-   * Släpp en resurs från [resursläsaren](https://helpx.adobe.com/se/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
+   * Släpp en resurs från [resursläsaren](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/author-environment-tools.html#main-pars_title) eller tryck på alternativet **bläddra** om du vill överföra från ett lokalt filsystem.
    * Tryck eller klicka på **Radera** för att avmarkera den markerade bilden.
-   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://helpx.adobe.com/se/experience-manager/6-3/assets/using/managing-assets-touch-ui.html#main-pars_title_19) i resursredigeraren.
+   * Tryck eller klicka på **Redigera** om du vill [hantera återgivningarna av resursen](https://helpx.adobe.com/experience-manager/6-3/assets/using/managing-assets-touch-ui.html#main-pars_title_19) i resursredigeraren.
 
 * **Bilden är dekorativ** - Kontrollera om bilden ska ignoreras av hjälpmedelstekniken och därför inte kräver någon alternativ text. Detta gäller endast dekorativa bilder.
 * **Alternativ text** - Textalternativ för innebörden eller funktionen i bilden för läsare med nedsatt syn.

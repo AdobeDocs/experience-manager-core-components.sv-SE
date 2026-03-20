@@ -1,11 +1,11 @@
 ---
 title: Klientbibliotek och kärnkomponenter
 description: Core Components har ett antal klientbibliotek och ger möjlighet att inkludera egna.
-role: Architect, Developer, Admin
+role: Developer, Admin
 exl-id: 84e7c178-247b-42a2-99bf-6d1699ecee14
-source-git-commit: d39fe0084522f67664203a026340b23d325c1883
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -24,11 +24,11 @@ Core Components innehåller följande klientbibliotek som är färdiga.
 * Klientlibs för **redigeraren** används i redigeringsdialogrutan för att säkerställa den förväntade funktionen och utseendet.
 * Klientlibs **editorch** används på webbplatsen när den läses in i redigeringsläge.
    * De innehåller JavaScript-kod som körs på händelser som triggas av redigerare, vilket underlättar initieringen av dynamiska funktioner.
-* Vissa komponenter kan ha särskilda ytterligare klienten som är utformade för användning i vissa situationer, till exempel när de används tillsammans med [Dynamic Media](/help/components/image.md#dynamic-media).
+* Vissa komponenter kan ha särskilda ytterligare klienten som är utformade för användning i särskilda situationer, till exempel när de används tillsammans med [Dynamiska media](/help/components/image.md#dynamic-media).
 
 ## Inkluderar klientbibliotek {#including}
 
-Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/front-end.md#clientlibs) beroende på ditt användningssätt. Följande är exempel med exempel på [HTML-fragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html?lang=sv-SE) för varje.
+Det finns flera olika sätt att inkludera [klientbibliotek](/help/developing/archetype/front-end.md#clientlibs) beroende på ditt användningssätt. Följande är exempel med exempel på [HTML-fragment](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html) för varje.
 
 ### Rekommenderad standardanvändning {#recommended-default-usage}
 
@@ -64,7 +64,7 @@ Om du vill göra samma sak för flera klientbibliotekskategorier samtidigt kan e
 
 ### Endast CSS eller JS {#css-js-only}
 
-Ofta vill man montera CSS-elementet i elementet `head`, och JS-elementet inkluderar precis före stängningen av elementet `body`.
+Ofta vill man placera CSS-inkluderingarna i HTML `head`-elementet, och JS-elementet inkluderar precis före stängningen av `body` -elementet.
 
 I `head` använder du `cssIncludes` om du bara vill inkludera CSS, och inte JS:
 

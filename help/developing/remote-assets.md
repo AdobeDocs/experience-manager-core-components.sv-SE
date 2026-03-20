@@ -1,11 +1,11 @@
 ---
 title: Stöd för fjärranslutna Assets
-description: Lär dig hur du konfigurerar Core Component Image och Teaser Components som stöd för fjärrresurser med Dynamic Media med OpenAPI.
-role: Architect, Developer, Admin, User
+description: Lär dig hur du konfigurerar Core Component Image- och Teaser Components som stöd för fjärrresurser med Dynamic Media med OpenAPI.
+role: Developer, Admin, User
 exl-id: b462c1f3-a6c8-4a2a-abf4-d08ec82d4371
-source-git-commit: 36ef19d5b29fe21f86309719d1e3f6588e31a93b
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Stöd för fjärranslutna Assets {#remote-assets-support}
 
-Lär dig hur du konfigurerar Core Component Image och Teaser Components som stöd för fjärrresurser med Dynamic Media med OpenAPI.
+Lär dig hur du konfigurerar Core Component Image- och Teaser Components som stöd för fjärrresurser med Dynamic Media med OpenAPI.
 
 >[!NOTE]
 >
->Dynamic Media med OpenAPI kallades tidigare Dynamic Media för nästa generation. Funktionen och användningen är identiska.
+>Dynamic Media med OpenAPI kallades tidigare Next Generation Dynamic Media. Funktionen och användningen är identiska.
 
-## Hämta den senaste AEM versionen {#latest}
+## Hämta den senaste AEM-versionen {#latest}
 
 Stöd för fjärrresurser med Dynamic Media med OpenAPI kräver:
 
@@ -28,13 +28,13 @@ Stöd för fjärrresurser med Dynamic Media med OpenAPI kräver:
 
 ## Konfigurera HTTPS {#https}
 
-Det rekommenderas i allmänhet att du kör alla dina produktions- AEM instanser med HTTP. Dina lokala utvecklingsmiljöer kanske inte konfigureras som sådana. Fjärrresurser som använder Dynamic Media med OpenAPI kräver dock HTTPS för att fungera.
+Vi rekommenderar att du kör alla dina AEM-produktioner med HTTP. Dina lokala utvecklingsmiljöer kanske inte konfigureras som sådana. Fjärrresurser som använder Dynamic Media med OpenAPI kräver dock HTTPS för att fungera.
 
-[Använd den här guiden](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html?lang=sv-SE) för att konfigurera HTTPS var du vill använda fjärrresurser, inklusive utvecklingsmiljöer.
+[Använd den här guiden](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/use-the-ssl-wizard.html) för att konfigurera HTTPS var du vill använda fjärrresurser, inklusive utvecklingsmiljöer.
 
 ## Konfigurera OSGi {#osgi}
 
-Platsen för fjärrresurserna måste definieras i en OSGi-konfiguration. Konfigurera OSGi-konfigurationen för **nästa generations Dynamic Media Config** enligt följande och ersätt värdena med värdena i din fjärrresursmiljö.
+Platsen för fjärrresurserna måste definieras i en OSGi-konfiguration. Konfigurera OSGi-konfigurationen för **nästa generations dynamiska mediekonfiguration** enligt följande och ersätt värdena med värdena i din resursmiljö.
 
 ```text
 imsClient="<ims-client-name>"
@@ -43,12 +43,12 @@ imsOrg="<ims-org>@AdobeOrg"
 repositoryId="<repo-id>.adobeaemcloud.com"
 ```
 
-![Nästa generations konfigurationsfönster för Dynamic Media Config OSGi](/help/assets/remote-assets-osgi.png)
+![Nästa generations OSGi-konfigurationsfönster för Dynamic Media Config](/help/assets/remote-assets-osgi.png)
 
 Mer information om hur du konfigurerar OSGi finns i följande dokument:
 
-* [Konfigurera OSGi för Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html?lang=sv-SE) för AEM as a Cloud Service
-* [Konfigurerar OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html?lang=sv-SE) för AEM 6.5
+* [Konfigurera OSGi för Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/deploying/configuring-osgi.html) för AEM as a Cloud Service
+* [Konfigurerar OSGi](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-osgi.html) för AEM 6.5
 
 ## Verifiera konfiguration {#verify}
 
@@ -59,7 +59,7 @@ Nu kan du verifiera att funktionen för fjärrresurser med Dynamic Media med Ope
 
 När du har installerat Core Components och WKND kan du testa funktionen på alla WKND-sidor.
 
-1. Öppna AEM med HTTPS.
+1. Öppna AEM-instansen med HTTPS.
 
 1. Öppna en WKND-demosida i sidredigeraren, till exempel `https://<host>:<httpsPort>/editor.html/content/wknd/language-masters/en/magazine/arctic-surfing.html`
 
@@ -77,7 +77,7 @@ När du har installerat Core Components och WKND kan du testa funktionen på all
 
    ![Välja en fjärrresurs](/help/assets/remote-asset-picker.png)
 
-Fjärrresursen läggs till på den lokala AEM sidan och du har verifierat att funktionen är korrekt konfigurerad.
+Fjärrresursen läggs till på din lokala AEM-sida och du har verifierat att funktionen är korrekt konfigurerad.
 
 ## Använda Remote Assets {#using}
 

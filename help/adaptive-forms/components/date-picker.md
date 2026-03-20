@@ -1,11 +1,11 @@
 ---
 title: Adaptiv Forms Core-komponent - datumväljare
 description: Använda eller anpassa Core-komponenten för den adaptiva Forms Date-väljaren.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: aa9402de-ca57-4c19-8d36-2dd0a78d6806
-source-git-commit: f0c4d6adf7266bdb6ebc7cde49656efaf3027624
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '2400'
+source-wordcount: '2461'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,11 @@ Core Component (kärnkomponent) för den adaptiva Forms-datumväljaren släpptes
 
 Information om versioner och versioner av kärnkomponenter finns i dokumentet [Core Components Versions](/help/adaptive-forms/version.md) .
 
-<!-- ## Sample Component Output {#sample-component-output}
+<!--
+## Sample Component Output {#sample-component-output}
 
-To experience the Accordion Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_accordion). -->
+To experience the Accordion Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_accordion). 
+-->
 
 ## Teknisk information {#technical-details}
 
@@ -146,7 +148,7 @@ Språkuppsättningen är inte synlig som standard, men användare kan ange en an
 
    >[!NOTE]
    >
-   > [Klicka här](https://experienceleague.adobe.com/sv/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
+   > [Klicka här](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/supporting-new-language-localization-core-components) om du vill ha mer information om hur du översätter ett anpassat formulär till en viss språkinställning.
 
 ## Designdialogruta {#design-dialog}
 
@@ -191,7 +193,7 @@ Om du vill visa tillgängliga format för komponenten måste du lägga till dem 
 Så här lägger du till format i mallprofilen:
 
 1. Öppna motsvarande mall som är kopplad till ett anpassat formulär eller webbplatser i mallredigeraren.
-2. Markera komponenten **i avsnittet** Tillåtna komponenter **[!UICONTROL Date Picker]**.
+2. Markera komponenten **[!UICONTROL Date Picker]** i avsnittet **Tillåtna komponenter**.
    ![Mallprincip för datumväljare](/help/adaptive-forms/assets/date-picker-policy.png)
 3. Klicka på ikonen **[!UICONTROL Add]** för att skapa en ny profil för datumväljarkomponenten.
 4. Ange ett namn för profilen och välj alla obligatoriska format på fliken **Format**.
@@ -202,7 +204,7 @@ Så här lägger du till format i mallprofilen:
 
 ## Related article {#related-article}
 
-* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html?lang=sv-SE)
+* [Create a standalone Adaptive Form](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html)
 
 -->
 

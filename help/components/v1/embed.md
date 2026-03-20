@@ -1,12 +1,12 @@
 ---
 title: Bädda in komponent (v1)
 description: Med inbäddningskomponenten kan du bädda in externt innehåll på en AEM-innehållssida.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 28a2d196-cc1f-4e29-a8e4-c2e0acba3bfc
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1317'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Den enklaste inbäddningen är URL-adressen. Klistra bara in URL:en för resurse
 
 Den inbäddade komponenten levereras med processorer för följande typer av resurser:
 
-* Resurser som följer standarden [Inkludera &#x200B;](https://oembed.com/), inklusive Facebook Post, Instagram, SoundCloud, Twitter och YouTube
+* Resurser som följer standarden [Inkludera ](https://oembed.com/), inklusive Facebook Post, Instagram, SoundCloud, Twitter och YouTube
 * Pinterest
 
 Utvecklare kan lägga till ytterligare URL-processorer genom att [följa utvecklardokumentationen för den inbäddade komponenten.](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/embed/v1/embed#extending-the-embed-component)
@@ -103,7 +103,7 @@ Du kan lägga till frihandskomponenten HTML på sidan med hjälp av inbäddnings
 >[!NOTE]
 >Alla osäkra taggar, till exempel skript, filtreras från den angivna HTML-filen och återges inte på den resulterande sidan.
 
-#### Dokumentskydd {#security}
+#### Säkerhet {#security}
 
 Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att undvika serveröverskridande skriptattacker (cross-site scripting) som till exempel skulle kunna ge författare administratörsbehörighet.
 
@@ -111,7 +111,7 @@ Den HTML-kod som författaren kan ange filtreras av säkerhetsskäl för att und
 
 Reglerna är dock mer komplicerade eftersom Bädda in komponent följer AEM globala filterregeluppsättning för HTML AntiSamy-sanitets, som finns på `/libs/cq/xssprotection/config.xml`. Detta kan vid behov överlappas av en utvecklare för projektspecifik konfiguration.
 
-Ytterligare säkerhetsinformation finns i [AEM utvecklardokumentation för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html?lang=sv-SE) samt [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html?lang=sv-SE)
+Ytterligare säkerhetsinformation finns i [AEM utvecklardokumentation för lokala installationer](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/security.html) samt [AEM as a Cloud Service-installationer.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/security/home.html)
 
 >[!NOTE]
 >Trots att reglerna för antiSamy-sanitets ramverk kan konfigureras genom att `/libs/cq/xssprotection/config.xml` åsidosätts, påverkar de alla HTML- och JSP-beteenden och inte bara Bädda in kärnkomponent.

@@ -1,11 +1,11 @@
 ---
 title: Använda kärnkomponenter
-description: "För att komma igång med Core Components i ditt eget projekt finns det tre steg att följa: ladda ned och installera, skapa proxykomponenter, läsa in huvudformaten och tillåt komponenterna i dina mallar."
-role: Architect, Developer, Admin, User
+description: 'För att komma igång med Core Components i ditt eget projekt finns det tre steg att följa: ladda ned och installera, skapa proxykomponenter, läsa in huvudformaten och tillåta komponenterna i dina mallar.'
+role: Developer, Admin, User
 exl-id: ee2d25e4-e2b8-4ecc-a62c-f0066de2bf2d
-source-git-commit: 8beae61676340e8aafaee469018d865ea7ed934e
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -22,21 +22,21 @@ För att komma igång med Core Components i ditt eget projekt finns det fyra ste
 >[!TIP]
 >
 >För mer omfattande instruktioner om hur du kommer igång från grunden med projektkonfigurationen, kärnkomponenter, redigerbara mallar, klientbibliotek och komponentutveckling kan följande självstudiekurs i flera delar vara av intresse:\
->[Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=sv-SE)
+>[Komma igång med AEM Sites - WKND-självstudiekurs](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
 
 >[!TIP]
 >
->Om du använder [AEM Project Archetype](/help/developing/archetype/overview.md) inkluderas kärnkomponenterna automatiskt i ditt projekt baserat på rekommendationer om bästa praxis för Adobe.
+>Om du använder [AEM Project Archetype](/help/developing/archetype/overview.md) inkluderas kärnkomponenterna automatiskt i ditt projekt baserat på Adobe rekommendationer för bästa praxis.
 
 ## Hämta och installera {#download-and-install}
 
-En av de drivande idéerna bakom kärnkomponenterna är flexibilitet. Genom att lansera nya versioner av de centrala komponenterna oftare kan Adobe bli mer flexibelt när det gäller att leverera nya funktioner. Utvecklarna kan i sin tur vara flexibla när det gäller vilka komponenter de väljer att integrera i sina projekt och hur ofta de vill uppdatera dem. Detta resulterar i en separat versionsprocess för både AEM och kärnkomponenterna.
+En av de drivande idéerna bakom kärnkomponenterna är flexibilitet. Genom att släppa nya versioner av de centrala komponenterna oftare kan Adobe bli mer flexibelt när det gäller att leverera nya funktioner. Utvecklarna kan i sin tur vara flexibla när det gäller vilka komponenter de väljer att integrera i sina projekt och hur ofta de vill uppdatera dem. Detta resulterar i en separat versionsprocess för både AEM och Core Components.
 
 Därför avgör installationsstegen om du kör AEM som en molntjänst eller en lokal tjänst.
 
 ### AEM as a Cloud Service {#aemaacs}
 
-Det finns inget steg ett! AEM as a Cloud Service har automatiskt den senaste versionen av Core Components. Precis som AEMaaCS erbjuder de senaste funktionerna i AEM håller AEMaaCS automatiskt dig uppdaterad med den senaste versionen av Core Components.
+Det finns inget steg ett! AEM as a Cloud Service har automatiskt den senaste versionen av Core Components. Precis som AEMaaCS har de senaste funktionerna i AEM håller AEMaaCS automatiskt dig uppdaterad med den senaste versionen av Core Components.
 
 Tänk på några saker när du använder kärnkomponenterna i AEMaaCS:
 
@@ -44,15 +44,15 @@ Tänk på några saker när du använder kärnkomponenterna i AEMaaCS:
 * Projektets pipeline genererar varningar i loggen om den innehåller kärnkomponenterna igen som en del av `/apps` och ignorerar den version som är inbäddad som en del av ditt projekt.
    * I en kommande version, inklusive Core Components igen, kommer pipeline-bygget att misslyckas.
 * Om ditt projekt tidigare innehöll kärnkomponenterna i `/apps` kan [du behöva justera ditt projekt.](/help/developing/overview.md#via-aemaacs)
-* Även om kärnkomponenterna nu finns i `/libs` rekommenderar vi inte att du skapar någon övertäckning med samma sökväg i `/apps`. [Proxykomponentmönstret &#x200B;](/help/developing/guidelines.md#proxy-component-pattern) bör användas i stället om någon aspekt av komponenterna behöver anpassas.
+* Även om kärnkomponenterna nu finns i `/libs` rekommenderar vi inte att du skapar någon övertäckning med samma sökväg i `/apps`. [Proxykomponentmönstret ](/help/developing/guidelines.md#proxy-component-pattern) ska användas i stället om någon aspekt av komponenterna behöver anpassas.
 * För att komponenten [Innehållsförteckning](/help/components/tableofcontents.md) ska kunna återge sitt innehåll måste ett filter konfigureras i OSGi.
    * [Mer information finns i GitHub-dokumentationen för komponenten](https://adobe.com/go/aem_cmp_tech_tableofcontents_v1).
 
 ### AEM 6.5 och tidigare {#aem-65}
 
-Kärnkomponenterna är inte en del av snabbstarten när de startas i produktionsläge (utan exempelinnehåll). Därför är det första steget att [hämta det senaste släppta innehållspaketet från GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) och installera det i dina AEM miljöer.
+Kärnkomponenterna är inte en del av snabbstarten när de startas i produktionsläge (utan exempelinnehåll). Därför är det första steget att [hämta det senaste släppta innehållspaketet från GitHub](https://github.com/adobe/aem-core-wcm-components/releases/latest) och installera det i dina AEM-miljöer.
 
-Det finns flera sätt att automatisera detta, men det enklaste sättet att snabbt installera ett innehållspaket på en instans är att använda pakethanteraren. Se [Installera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=sv-SE#installing-packages). När du dessutom kör en publiceringsinstans måste du replikera paketet till utgivaren. Se [Replikera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=sv-SE#replicating-packages).
+Det finns flera sätt att automatisera detta, men det enklaste sättet att snabbt installera ett innehållspaket på en instans är att använda pakethanteraren. Se [Installera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#installing-packages). När du dessutom kör en publiceringsinstans måste du replikera paketet till utgivaren. Se [Replikera paket](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html#replicating-packages).
 
 ## Skapa proxykomponenter {#create-proxy-components}
 
@@ -88,7 +88,7 @@ Titta till exempel på [titelkomponenten för WKND-webbplatsen](https://github.c
 
 ## Läs in kärnformat {#load-the-core-styles}
 
-1. Om det inte är klart än skapar du ett [klientbibliotek](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=sv-SE) som innehåller alla CSS- och JS-filer som behövs för platsen.
+1. Om det inte är klart än skapar du ett [klientbibliotek](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html) som innehåller alla CSS- och JS-filer som behövs för platsen.
 1. Lägg till beroenden till de kärnkomponenter som kan behövas i webbplatsens klientbibliotek. Detta görs genom att en `embed`-egenskap läggs till.
 
    Om du till exempel vill inkludera klientbiblioteken för alla v1 Core-komponenter blir den egenskap som ska läggas till:
@@ -103,11 +103,11 @@ Titta till exempel på [titelkomponenten för WKND-webbplatsen](https://github.c
    ]"
    ```
 
-Kontrollera att dina proxykomponenter och klientbibliotek har distribuerats till din AEM innan du går vidare till nästa avsnitt.
+Kontrollera att dina proxykomponenter och klientbibliotek har distribuerats till din AEM-miljö innan du går vidare till nästa avsnitt.
 
 ## Tillåt komponenterna {#allow-the-components}
 
-Följande steg utförs i [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE).
+Följande steg utförs i [mallredigeraren](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html).
 
 1. Markera layoutbehållaren i mallredigeraren och öppna dess profil.
 1. I listan över tillåtna komponenter väljer du de proxykomponenter som skapats tidigare, som ska visas under komponentgruppen som de tilldelats. När du är klar tillämpar du ändringarna.

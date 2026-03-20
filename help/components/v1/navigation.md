@@ -1,12 +1,12 @@
 ---
 title: Navigeringskomponent (v1)
 description: Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera i en globaliserad platsstruktur.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 0b7de79a-e0c7-4cf9-b5a9-c78cbc3ecd2f
-index: n
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+index: false
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1435'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Med Navigation Component (Navigeringskomponent) kan användarna enkelt navigera 
 
 Navigeringskomponenten listar ett träd med sidor så att användare på en webbplats enkelt kan navigera i webbplatsstrukturen.
 
-Navigeringskomponenten kan automatiskt identifiera platsens globaliserade struktur och [anpassa automatiskt till en lokaliserad sida.](#localized-site-structure) Dessutom kan den ha stöd för valfri struktur för godtycklig plats genom att använda [skuggomdirigeringssidor](#shadow-structure) för att representera en annan struktur än huvudinnehållsstrukturen.
+Navigeringskomponenten kan automatiskt identifiera platsens globaliserade struktur och [anpassa automatiskt till en lokaliserad sida.](#localized-site-structure) Dessutom kan den stödja valfri godtycklig webbplatsstruktur genom att använda [skuggomdirigeringssidor](#shadow-structure) för att representera en annan struktur än huvudinnehållsstrukturen.
 
 I [redigeringsdialogrutan](#edit-dialog) kan innehållsförfattaren definiera navigeringsrotsidan tillsammans med navigeringsdjupet. I [designdialogrutan](#design-dialog) kan mallskaparen definiera standardvärden för navigeringsroten och -djupet.
 
@@ -123,7 +123,7 @@ Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen f�
 
 >[!NOTE]
 >
->Från och med Core Components version 2.1.0 stöder Navigation Component [schema.org &#x200B;](https://schema.org).
+>Från och med Core Components version 2.1.0 stöder Navigation Component [schema.org ](https://schema.org).
 
 ## Dialogrutan Redigera {#edit-dialog}
 
@@ -131,7 +131,7 @@ I redigeringsdialogrutan kan innehållsförfattaren definiera rotsidan för navi
 
 ### Fliken Egenskaper {#properties-tab}
 
-![Egenskaper för redigeringsdialogruta i navigeringskomponenten &#x200B;](/help/assets/navigation-edit-properties.png)
+![Egenskaper för redigeringsdialogruta i navigeringskomponenten ](/help/assets/navigation-edit-properties.png)
 
 * **Navigeringsrot** - Rotsidan som används för att generera navigeringsträdet.
 * **Uteslut rotnivåer** - ofta ska roten inte tas med i navigeringen. Med det här alternativet kan du ange hur många nivåer upp från roten som du vill utesluta. Till exempel:

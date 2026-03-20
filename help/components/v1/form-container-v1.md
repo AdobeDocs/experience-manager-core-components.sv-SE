@@ -1,12 +1,12 @@
 ---
 title: Formulärbehållarkomponent (v1)
 description: Med komponenten Core Component Form Container Component kan man skapa enkla inskickningsformulär.
-index: n
-role: Architect, Developer, Admin, User
+index: false
+role: Developer, Admin, User
 exl-id: 1e34219f-fa82-494e-82e2-1b4d63d37fea
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '650'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Med komponenten Core Component Form Container Component kan man skapa enkla insk
 
 Komponenten Form Container gjorde det möjligt att skapa enkla formulär och funktioner för inlämning av information genom att stödja enkla WCM-formulär och genom att använda en kapslad struktur för att tillåta ytterligare formulärkomponenter.
 
-Genom att använda dialogrutan [inställning](#settings-dialog) kan innehållsredigeraren definiera vilken typ av åtgärd som utlöser formulärsändning, var det skickade innehållet ska lagras och om ett arbetsflöde ska utlösas. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera tillåt-komponenter och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://helpx.adobe.com/se/experience-manager/6-4/sites/authoring/using/templates.html).
+Genom att använda dialogrutan [inställning](#settings-dialog) kan innehållsredigeraren definiera vilken typ av åtgärd som utlöser formulärsändning, var det skickade innehållet ska lagras och om ett arbetsflöde ska utlösas. Mallförfattaren kan använda [designdialogrutan](#design-dialog) för att definiera tillåt-komponenter och deras mappningar som liknar designdialogrutan för [standardlayoutbehållaren i mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html).
 
 ## Version och kompatibilitet {#version-and-compatibility}
 
@@ -30,8 +30,8 @@ I följande tabell visas kompatibiliteten för v1 för komponenten Form Containe
 
 | AEM Version | Formulärbehållarkomponent v1 |
 |--- |--- |
-| 6,3 | Kompatibel |
-| 6,4 | Kompatibel |
+| 6.3 | Kompatibel |
+| 6.4 | Kompatibel |
 
 >[!CAUTION]
 >
@@ -105,7 +105,7 @@ Användaren omdirigeras till den angivna sidan när formuläret har skickats.
 
 ## Designdialogruta {#design-dialog}
 
-I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för standardlayoutbehållaren [i mallredigeraren](https://helpx.adobe.com/se/experience-manager/6-4/sites/authoring/using/templates.html#main-pars_title_1754153843).
+I designdialogrutan kan mallskaparen definiera de tillåtna komponenterna och deras mappningar för behållaren som liknar designdialogrutan för standardlayoutbehållaren [i mallredigeraren](https://helpx.adobe.com/experience-manager/6-4/sites/authoring/using/templates.html#main-pars_title_1754153843).
 
 ## Teknisk information {#technical-details}
 

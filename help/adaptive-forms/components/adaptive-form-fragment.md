@@ -1,11 +1,11 @@
 ---
 title: Adaptivt formulärfragment
 description: Använd formulärfragment för att skapa formulärsegment eller fältgrupper och återanvänd dem i adaptiva Forms för att förbättra effektiviteten och återanvändbarheten.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: bde4a416-1d6b-4e9e-ac74-70fccef473cb
-source-git-commit: 6725784bd4c94d433c91d6bd65d14d03cbefd954
+source-git-commit: 6fc9e1732302f114ad5c9c037ce203af6324edf0
 workflow-type: tm+mt
-source-wordcount: '1952'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -13,18 +13,18 @@ ht-degree: 0%
 
 # Adaptiv komponent för formulärfragment {#form-fragment-component-adaptive-forms-core-component}
 
-Adaptiv Forms är ett bekvämt sätt att skapa formulärsegment, t.ex. paneler eller fältgrupper, så att de kan återanvändas i olika adaptiva Forms. Dessa återanvändbara och fristående segment kallas [adaptiva formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE).
+Adaptiv Forms är ett bekvämt sätt att skapa formulärsegment, t.ex. paneler eller fältgrupper, så att de kan återanvändas i olika adaptiva Forms. Dessa återanvändbara och fristående segment kallas [adaptiva formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html).
 
-Du kan [lägga till ett fragment flera gånger i ett dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE#insert-a-fragment-in-an-adaptive-form) och använda databindningsegenskaper för dess komponenter för att länka det till olika datakällor eller scheman. Du kan till exempel använda samma adressfragment för permanent adress, kommunikations- och faktureringsadress och ansluta det till olika fält i en datakälla eller ett schema.
+Du kan [lägga till ett fragment flera gånger i ett dokument](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#insert-a-fragment-in-an-adaptive-form) och använda databindningsegenskaper för dess komponenter för att länka det till olika datakällor eller scheman. Du kan till exempel använda samma adressfragment för permanent adress, kommunikations- och faktureringsadress och ansluta det till olika fält i en datakälla eller ett schema.
 
 ![exempel](/help/adaptive-forms/assets/using-multiple-fragment-af.gif)
 
 
-Du kan också använda alternativet [repeterbarhet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html?lang=sv-SE) för att duplicera formulärfragmentkomponenten och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär.
+Du kan också använda alternativet [repeterbarhet](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/create-forms-repeatable-sections.html) för att duplicera formulärfragmentkomponenten och dess underordnade komponenter, definiera ett minsta och högsta repetitionsantal och underlätta replikering av liknande avsnitt i ett formulär.
 
 >[!NOTE]
 >
-> Du kan [skapa ett adaptivt formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html?lang=sv-SE#create-a-fragment) från början eller spara en panel i ett befintligt adaptivt formulär som fragment.
+> Du kan [skapa ett adaptivt formulärfragment](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/adaptive-form-fragments-core-components.html#create-a-fragment) från början eller spara en panel i ett befintligt adaptivt formulär som fragment.
 
 {{traditional-aem}}
 

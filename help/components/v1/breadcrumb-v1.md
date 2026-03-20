@@ -1,12 +1,12 @@
 ---
 title: Breadcrumb-komponent (v1)
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
-index: n
-role: Architect, Developer, Admin, User
+index: false
+role: Developer, Admin, User
 exl-id: 4845e649-033a-43a8-b5ee-892a3f2a8b98
-source-git-commit: 92a3ec273a5be6751c1503835b9c2e5cbd61bb9e
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -30,17 +30,17 @@ I följande tabell visas kompatibiliteten för v1 för Breadcrumb Component.
 
 | AEM Version | Breadcrumb Component v1 |
 |--- |--- |
-| 6,3 | Kompatibel |
-| 6,4 | Kompatibel |
+| 6.3 | Kompatibel |
+| 6.4 | Kompatibel |
 
 >[!CAUTION]
 >
 >I det här dokumentet beskrivs v1 för Breadcrumb-komponenten.
->&#x200B;>Information om den aktuella versionen av Breadcrumb-komponenten finns i dokumentet [Breadcrumb Component](/help/components/breadcrumb.md) .
+>Information om den aktuella versionen av Breadcrumb-komponenten finns i dokumentet [Breadcrumb Component](/help/components/breadcrumb.md) .
 
 ## Exempel på komponentutdata {#sample-component-output}
 
-Följande är ett exempel från [We.Retail](https://helpx.adobe.com/se/experience-manager/6-4/sites/developing/using/we-retail.html).
+Följande är ett exempel från [We.Retail](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/we-retail.html).
 
 ### Skärmbild {#screenshot}
 
@@ -118,7 +118,7 @@ I designdialogrutan kan mallskaparen definiera vilka standardvärden som ska anv
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Breadcrumb-komponenten [&#x200B; finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v1/breadcrumb).
+Den senaste tekniska dokumentationen om Breadcrumb-komponenten [ finns på GitHub](https://github.com/adobe/aem-core-wcm-components/tree/master/content/src/content/jcr_root/apps/core/wcm/components/breadcrumb/v1/breadcrumb).
 
 Hela kärnkomponentprojektet kan hämtas från GitHub.
 

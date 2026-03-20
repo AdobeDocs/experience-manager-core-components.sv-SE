@@ -1,12 +1,12 @@
 ---
 title: Progress Bar-komponent
 description: Förloppsindikatorkomponenten visar förloppet mot ett mål
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 47afc5a6-ac57-4b6c-92c4-015ca956a20b
-source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 1%
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 

@@ -1,11 +1,11 @@
 ---
 title: Breadcrumb-komponent
 description: Komponenten Core Component Breadcrumb är en navigeringskomponent som skapar en rad länkar baserat på sidans plats i innehållshierarkin.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 19d65b9d-a407-4f50-9c55-8de0f12222ed
-source-git-commit: dd30def59a8f037864da875ef4c831b11f766e57
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ Om du vill visa Breadcrumb-komponenten och se exempel på dess konfigurationsalt
 
 >[!NOTE]
 >
->Från och med Core Components version 2.1.0 stöder Breadcrumb-komponenten [schema.org &#x200B;](https://schema.org/BreadcrumbList).
+>Från och med Core Components version 2.1.0 stöder Breadcrumb-komponenten [schema.org ](https://schema.org/BreadcrumbList).
 
 ## Teknisk information {#technical-details}
 
-Den senaste tekniska dokumentationen om Breadcrumb-komponenten [&#x200B; finns på GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v3).
+Den senaste tekniska dokumentationen om Breadcrumb-komponenten [ finns på GitHub](https://adobe.com/go/aem_cmp_tech_breadcrumb_v3).
 
 Mer information om hur du utvecklar kärnkomponenter finns i [dokumentationen för kärnkomponentutvecklare](/help/developing/overview.md).
 

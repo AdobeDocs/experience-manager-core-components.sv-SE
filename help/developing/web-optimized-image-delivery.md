@@ -1,11 +1,11 @@
 ---
 title: Webboptimerad bildleverans
 description: Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade funktioner för bildleverans för att leverera bilder effektivare.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 6080ab8b-f53c-4d5e-812e-16889da4d7de
-source-git-commit: eb1822cb41a849695afb5125745ed5f78e3e70a4
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
-source-wordcount: '1061'
+source-wordcount: '1130'
 ht-degree: 0%
 
 ---
@@ -16,13 +16,13 @@ Läs om hur Core Components kan utnyttja AEM as a Cloud Service webboptimerade f
 
 ## Ökning {#overview}
 
-Den webboptimerade bildleveransfunktionen i AEM som en molntjänst levererar bildresurser från DAM i [WebP-format.](https://developers.google.com/speed/webp) WebP kan minska hämtningsstorleken för en bild med i genomsnitt cirka 25 %, vilket ger snabbare sidinläsning.
+Den webboptimerade bildleveransfunktionen i AEM som en molntjänst levererar bildresurser från DAM i [WebP-format.](https://developers.google.com/speed/webp) WebP kan minska hämtningsstorleken för en bild med i genomsnitt 25 %, vilket ger snabbare sidinläsning.
 
 Det är enkelt att aktivera webboptimerad bildleverans i Core Components, och eftersom alla vanliga webbläsare har stöd för WebP blir upplevelsen transparent för slutanvändaren. Den enda skillnaden de kommer att märka är att innehållet laddas snabbare!
 
 ## Aktivera webboptimerad bildleverans för kärnkomponenter {#activating}
 
-Om du vill aktivera webboptimerad bildleverans redigerar du en sidmall och aktiverar bara alternativet **Aktivera webboptimerade bilder** i designdialogrutan för [bildkomponenten.](/help/components/image.md#design-dialog) Det här alternativet är tillgängligt för v1, v2 och v3 i Image-komponenten.
+Om du vill aktivera webboptimerad bildleverans redigerar du en sidmall och aktiverar bara alternativet **Aktivera webboptimerade bilder** i designdialogrutan för [bildkomponenten.](/help/components/image.md#design-dialog) Det här alternativet är tillgängligt för v1, v2 och v3 i Image Component.
 
 [Granska det här dokumentet om du inte känner till designdialogrutor och AEM sidmallar.](/help/get-started/authoring.md#pre-configuring-core-components)
 
@@ -43,7 +43,7 @@ Webboptimerad bildleverans är transparent för konsumenten. Det enda som slutan
 
 ## När webboptimerad bildleverans inte är tillgänglig {#fallback}
 
-Webboptimerad bildleverans är endast tillgängligt i AEM as a Cloud Service. Om den inte är tillgänglig, till exempel om AEM 6.5 körs lokalt eller på en lokal utvecklingsinstans, återgår bildleveransen till att använda [den adaptiva bildservern.](/help/developing/adaptive-image-servlet.md)
+Webboptimerad bildleverans är endast tillgängligt i AEM as a Cloud Service. Om det inte är tillgängligt, som att köra AEM 6.5 lokalt eller på en lokal utvecklingsinstans, återgår bildleveransen till att använda [den adaptiva bildservern.](/help/developing/adaptive-image-servlet.md)
 
 Om du återgår till den adaptiva bildservern ändras attributet `src` för elementen `img` i sidkällan.
 
@@ -51,11 +51,11 @@ Om du återgår till den adaptiva bildservern ändras attributet `src` för elem
 
 ### Varför finns det inget alternativ för att aktivera webboptimerade bilder i min miljö? {#missing-option}
 
-Funktionen är bara tillgänglig på AEM as a Cloud Service. Om du kör AEM lokalt eller lokalt återgår bildkomponenten [till att använda den adaptiva bildservern &#x200B;](#fallback).
+Funktionen är bara tillgänglig på AEM as a Cloud Service. Om du kör AEM lokalt eller lokalt återgår Image Component [från ](#fallback) till att använda Adaptive Image Server.
 
-### Varför fungerar inte tjänsten med den lokala SDK:n? {#local-sdk}
+### Varför fungerar inte tjänsten med SDK? {#local-sdk}
 
-När du använder AEM SDK på `localhost` är inte bildtjänsten tillgänglig, och bildåtergivningen [&#x200B; återgår &#x200B;](#fallback) till att använda den adaptiva bildservern.
+När du använder AEM SDK på `localhost` är bildtjänsten inte tillgänglig och bildåtergivningen [ återgår ](#fallback) till att använda den adaptiva bildservern.
 
 Om du vill använda den webboptimerade bildleveranstjänsten ska du driftsätta projektet i en AEMaaCS-utvecklingsmiljö och exakt testa hur bildtjänsten fungerar med bildtjänsten.
 
@@ -69,9 +69,9 @@ När bildobjekt under `/content/dam` bearbetas genererar AEM as a Cloud Service-
 
 För att bevara originalets återgivning skalförändras inte bilderna. Ovannämnda återgivningar definierar den bästa kvalitet som bildtjänsten kan leverera. Eftersom du ofta inte kan påverka storleken och/eller dimensionerna på den ursprungliga bildresursen bör du kontrollera att alla bildresurser har en zoomåtergivning på 2 048 pixlar och om de inte gör det, bearbeta om dem.
 
-### URL:en till mina bilder slutar fortfarande med .JPG eller .PNG, inte .WEBP, och det finns inget SRCSET-attribut eller PICTURE-element. Använder detta verkligen optimerade webbformat? {#content-negotiation}
+### URL-adressen till bilderna slutar fortfarande med .JPG eller .PNG, inte .WEBP, och det finns inget SRCSET-attribut eller PICTURE-element. Använder detta verkligen optimerade webbformat? {#content-negotiation}
 
-För att kunna leverera WebP-format utför den webboptimerade bildleveranstjänsten [serverdrivna innehållsförhandlingar.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#server-driven_content_negotiation) Detta hjälper till att välja det optimala utdataformatet för bilden baserat på klientannonserade funktioner, vilket gör att bildleveranstjänsten kan ignorera filtillägget.
+För att kunna leverera WebP-format utför den webboptimerade bildleveranstjänsten [serverdriven innehållsförhandling.](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation#server-driven_content_negotiation) Detta hjälper till att välja det optimala utdataformatet för bilden baserat på klientens annonserade funktioner, vilket gör att bildleveranstjänsten kan ignorera filtillägget.
 
 Fördelen med att använda innehållsförhandling är att webbläsare som inte annonserar stöd för WebP fortfarande får filformatet JPG eller PNG utan att behöva ändra sidans kod. Detta ger optimal kompatibilitet för befintliga webbplatser och garanterar en så smidig övergång som möjligt till webboptimerad bildleverans.
 
@@ -87,13 +87,13 @@ com.adobe.cq.wcm.spi.AssetDelivery.getDeliveryURL(Resource resource, Map<String,
 
 >[!WARNING]
 >
->Direkt URL-inbäddning i en upplevelse som inte har byggts via den tidigare SPI (som är tillgänglig på AEM as a Cloud Service Sites) bryter mot [Media Library användningsvillkor](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=sv-SE#use-media-library).
+>Direkt URL-inbäddning i en upplevelse som inte har byggts via tidigare nämnda SPI (som är tillgänglig på AEM as a Cloud Service Sites) bryter mot [användningsvillkoren för mediebiblioteket](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en#use-media-library).
 
 ### Kan bilder inte visas när webboptimerade bilder har aktiverats? {#failure-to-deliver}
 
 Nej, det ska aldrig ske av följande skäl.
 
-* I HTML ändras inte markeringen när du aktiverar webboptimerade bilder, bara värdet för attributet `src` i bildelementet ändras.
+* I HTML ändras inte markeringen när du aktiverar webboptimerade bilder. Endast värdet för attributet `src` i bildelementet ändras.
 * När den nya bildtjänsten inte är tillgänglig eller inte kan bearbeta den önskade bilden kommer den URL som genereras att [återgå till den adaptiva bildservern.](#fallback)
 
-Dispatcheringsregler kan dock blockera den webboptimerade bildleveranstjänsten. URL:er för bildleveranstjänsten börjar med `/adobe`, och i dispatcherloggarna görs en undersökning av avvisade begäranden, som [beskrivs här](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html?lang=sv-SE#filter-rejects), så att du kan felsöka eventuella fel som uppstår vid leveransen av bilderna till webbläsaren.
+Dispatcheringsregler kan dock blockera den webboptimerade bildleveranstjänsten. URL:er för bildleveranstjänsten börjar med `/adobe`, och i dispatcherloggarna görs en undersökning av avvisade begäranden, som [beskrivs här](https://experienceleague.adobe.com/docs/experience-manager-learn/ams/dispatcher/common-logs.html#filter-rejects), så att du kan felsöka eventuella fel som uppstår vid leveransen av bilderna till webbläsaren.

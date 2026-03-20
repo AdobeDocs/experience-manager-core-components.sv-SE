@@ -1,9 +1,9 @@
 ---
 title: Adaptiv Forms Core-komponent - alternativknapp
 description: Använda eller anpassa den adaptiva Forms Radio button Core Component.
-role: Architect, Developer, Admin, User
+role: Developer, Admin, User
 exl-id: 86b5e9ec-58ac-4cd5-9c7c-4269247ec34f
-source-git-commit: e9354f24e1f2f8cd1e899dbd999e80406b5ce2bc
+source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
 workflow-type: tm+mt
 source-wordcount: '2349'
 ht-degree: 0%
@@ -59,9 +59,11 @@ Information om versioner och versioner av kärnkomponenter finns i dokumentet [C
 >
 > v1-versionen av CheckBox Group Core Component stöder WCAG 2.1, som fokuserar på att göra innehåll tillgängligt genom att följa bästa praxis för användbarhet och läsbarhet. v2-versionen har stöd för WCAG 2.2, som går ett steg längre genom att betona tydlig, förutsägbar och otvetydig tillgänglighet genom logisk och semantisk gruppering av relaterade fält, vilket gör det till ett kritiskt krav för inkluderande formulärdesign.
 
-<!-- ## Sample Component Output {#sample-component-output}
+<!--
+## Sample Component Output {#sample-component-output}
 
-To experience the Accordion Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_accordion). -->
+To experience the Accordion Component as well as see examples of its configuration options as well as HTML and JSON output, visit the [Component Library](https://adobe.com/go/aem_cmp_library_accordion). 
+-->
 
 ## Teknisk information {#technical-details}
 
