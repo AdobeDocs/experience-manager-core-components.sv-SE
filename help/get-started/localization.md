@@ -3,7 +3,7 @@ title: Lokaliseringsfunktioner för kärnkomponenterna
 description: Lokaliseringsfunktioner för kärnkomponenterna
 role: Developer, Admin, User
 exl-id: 9140b65a-6dd7-4ec9-9095-6e8243ec8424
-source-git-commit: 7ba1374bd64686c2e7ac44398d77fb187ff60949
+source-git-commit: f3a3cfcadf76058eb0c927424fe41f03a55a58c8
 workflow-type: tm+mt
 source-wordcount: '727'
 ht-degree: 0%
@@ -20,7 +20,7 @@ De flesta webbplatser kräver att det finns en sidfot på alla sidor. Dessa sidf
 
 På samma sätt måste en navigeringskomponent vanligtvis visas på alla sidor. Det måste dock även återspegla innehållet på de lokaliserade sidorna.
 
-Det här blir en enkel uppgift med lokaliseringsfunktionerna i [kärnkomponenten för navigering](/help/components/navigation.md) och [kärnkomponenten för upplevelsefragment](/help/components/experience-fragment.md) tillsammans med de [redigerbara mallarna i AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html?lang=sv-SE). Exemplet kan utökas ytterligare för att även använda [språknavigeringskomponenten](/help/components/language-navigation.md).
+Det här blir en enkel uppgift med lokaliseringsfunktionerna i [kärnkomponenten för navigering](/help/components/navigation.md) och [kärnkomponenten för upplevelsefragment](/help/components/experience-fragment.md) tillsammans med de [redigerbara mallarna i AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/sites/authoring/features/templates.html). Exemplet kan utökas ytterligare för att även använda [språknavigeringskomponenten](/help/components/language-navigation.md).
 
 ## Innehållsstrukturen {#content-structure}
 
@@ -110,3 +110,4 @@ Navigeringskomponenten och Experience Fragment-komponenten kommer från sidmalle
 Här är en komplett bild av hur dessa enkla, men kraftfulla element samverkar för att leverera lokaliserade sidor till innehållsförfattarna.
 
 ![](/help/assets/screen-shot-2019-09-09-11.27.58.png)
+
